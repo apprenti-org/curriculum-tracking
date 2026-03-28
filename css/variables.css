@@ -1,0 +1,68 @@
+/* ============================================
+   COLOR SYSTEM — See tracking/COLOR-SYSTEM.md
+   Shared across all pages
+   ============================================ */
+
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+    --badge-bg: #219EBC;
+    --badge-text: #F0F0EC;
+    --note-text: #FFB703;
+    --note-bg: rgba(255, 183, 3, 0.08);
+    --note-border: rgba(255, 183, 3, 0.2);
+    --status-not-bg: #23242E;
+    --status-not-text: #8B8D98;
+    --status-progress-bg: rgba(33, 158, 188, 0.15);
+    --status-progress-text: #219EBC;
+    --status-complete-bg: rgba(63, 185, 80, 0.15);
+    --status-complete-text: #3fb950;
+    --toggle-bg: #23242E;
+    --toggle-border: #2E2F3A;
+    --toggle-icon: #FFB703;
+}
+
+:root[data-theme="light"] {
+    --bg: #F5F4F0;
+    --surface: #FFFFFF;
+    --surface-raised: #EDECE8;
+    --border: #D5D4D0;
+    --border-subtle: #E5E4E0;
+    --text-primary: #111117;
+    --text-secondary: #6B6D78;
+    --text-muted: #9B9DA8;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #023047;
+    --badge-bg: #023047;
+    --badge-text: #F0F0EC;
+    --note-text: #FB8500;
+    --note-bg: rgba(255, 183, 3, 0.08);
+    --note-border: rgba(251, 133, 0, 0.25);
+    --status-not-bg: #EDECE8;
+    --status-not-text: #6B6D78;
+    --status-progress-bg: rgba(33, 158, 188, 0.1);
+    --status-progress-text: #219EBC;
+    --status-complete-bg: rgba(63, 185, 80, 0.1);
+    --status-complete-text: #1a7f37;
+    --toggle-bg: #EDECE8;
+    --toggle-border: #D5D4D0;
+    --toggle-icon: #023047;
+}
