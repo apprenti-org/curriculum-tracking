@@ -1,206 +1,257 @@
 [
   {
     "file": "advanced-python.json",
-    "course": "Advanced Python"
+    "course": "Advanced Python",
+    "id": "advanced-python"
   },
   {
     "file": "agile-project-management.json",
-    "course": "Agile Project Management with Scrum"
+    "course": "Agile Project Management with Scrum",
+    "id": "agile-project-management-with-scrum"
   },
   {
     "file": "aspnet.json",
-    "course": "ASP.NET"
+    "course": "ASP.NET",
+    "id": "aspnet"
   },
   {
+    "file": "business-analysis-fundamentals.json",
     "course": "Business Analysis Fundamentals",
-    "file": "business-analysis-fundamentals.json"
+    "id": "business-analysis-fundamentals"
   },
   {
+    "file": "business-and-it-fundamentals.json",
     "course": "Business and IT Fundamentals",
-    "file": "business-and-it-fundamentals.json"
+    "id": "business-and-it-fundamentals"
   },
   {
     "file": "csharp-data-access.json",
-    "course": "C# Data Access"
+    "course": "C# Data Access",
+    "id": "csharp-data-access"
   },
   {
     "file": "csharp-language-fundamentals.json",
-    "course": "C# Language Fundamentals"
+    "course": "C# Language Fundamentals",
+    "id": "csharp-language-fundamentals"
   },
   {
     "file": "csharp-oop.json",
-    "course": "C# OOP"
+    "course": "C# OOP",
+    "id": "csharp-oop"
   },
   {
     "file": "cpp-coding-booster.json",
-    "course": "C++ Coding Booster Intensive"
+    "course": "C++ Coding Booster Intensive",
+    "id": "c-plus-plus-coding-booster-intensive"
   },
   {
     "file": "comptia-a-plus.json",
-    "course": "CompTIA A+"
+    "course": "CompTIA A+",
+    "id": "comptia-a-plus"
   },
   {
     "file": "comptia-network-plus.json",
-    "course": "CompTIA Network+"
+    "course": "CompTIA Network+",
+    "id": "comptia-network-plus"
   },
   {
     "file": "data-literacy.json",
-    "course": "Data Fundamentals — Data Literacy"
+    "course": "Data Fundamentals — Data Literacy",
+    "id": "data-fundamentals-data-literacy"
   },
   {
     "file": "data-viz-power-bi.json",
-    "course": "Data Fundamentals — Data Visualizations and Power BI"
+    "course": "Data Fundamentals — Data Visualizations and Power BI",
+    "id": "data-fundamentals-data-visualizations-and-power-bi"
   },
   {
     "file": "excel-for-data-analysts.json",
-    "course": "Data Fundamentals — Excel for Data Analysts"
+    "course": "Data Fundamentals — Excel for Data Analysts",
+    "id": "data-fundamentals-excel-for-data-analysts"
   },
   {
     "file": "data-fundamentals-sql.json",
-    "course": "Data Fundamentals — SQL for Data"
+    "course": "Data Fundamentals — SQL for Data",
+    "id": "data-fundamentals-sql-for-data"
   },
   {
     "file": "databases-in-java.json",
-    "course": "Databases in Java"
+    "course": "Databases in Java",
+    "id": "databases-in-java"
   },
   {
     "file": "helpdesk-software-fundamentals.json",
-    "course": "Helpdesk Software Fundamentals"
+    "course": "Helpdesk Software Fundamentals",
+    "id": "helpdesk-software-fundamentals"
   },
   {
     "file": "http-services.json",
-    "course": "HTTP Services"
+    "course": "HTTP Services",
+    "id": "http-services"
   },
   {
     "file": "instructor-onboarding.json",
-    "course": "Instructor Onboarding"
+    "course": "Instructor Onboarding",
+    "id": "instructor-onboarding"
   },
   {
     "file": "intro-advanced-concepts-java.json",
-    "course": "Introduction to Advanced Concepts in Java"
+    "course": "Introduction to Advanced Concepts in Java",
+    "id": "introduction-to-advanced-concepts-in-java"
   },
   {
     "file": "intro-to-aws.json",
-    "course": "Introduction to AWS Cloud Platform"
+    "course": "Introduction to AWS Cloud Platform",
+    "id": "introduction-to-aws-cloud-platform"
   },
   {
     "file": "intro-to-cloud-technology.json",
-    "course": "Introduction to Cloud Technology"
+    "course": "Introduction to Cloud Technology",
+    "id": "introduction-to-cloud-technology"
   },
   {
     "file": "intro-to-github.json",
-    "course": "Introduction to GitHub"
+    "course": "Introduction to GitHub",
+    "id": "introduction-to-github"
   },
   {
     "file": "intro-to-html-css.json",
-    "course": "Introduction to HTML & CSS"
+    "course": "Introduction to HTML & CSS",
+    "id": "introduction-to-html-and-css"
   },
   {
     "file": "intro-to-microsoft-teams.json",
-    "course": "Introduction to Microsoft Teams"
+    "course": "Introduction to Microsoft Teams",
+    "id": "introduction-to-microsoft-teams"
   },
   {
     "file": "it-fundamentals.json",
-    "course": "IT Fundamentals"
+    "course": "IT Fundamentals",
+    "id": "it-fundamentals"
   },
   {
     "file": "java-coding-booster.json",
-    "course": "Java Coding Booster Intensive"
+    "course": "Java Coding Booster Intensive",
+    "id": "java-coding-booster-intensive"
   },
   {
     "file": "java-language-fundamentals.json",
-    "course": "Java Language Fundamentals"
+    "course": "Java Language Fundamentals",
+    "id": "java-language-fundamentals"
   },
   {
     "file": "java-oop.json",
-    "course": "Java OOP"
+    "course": "Java OOP",
+    "id": "java-oop"
   },
   {
     "file": "javascript.json",
-    "course": "JavaScript"
+    "course": "JavaScript",
+    "id": "javascript"
   },
   {
     "file": "javascript-coding-booster.json",
-    "course": "JavaScript Coding Booster Intensive"
+    "course": "JavaScript Coding Booster Intensive",
+    "id": "javascript-coding-booster-intensive"
   },
   {
     "file": "layers-and-file-io-csharp.json",
-    "course": "Layers and File I/O for C#"
+    "course": "Layers and File I/O for C#",
+    "id": "layers-and-file-i-o-for-csharp"
   },
   {
     "file": "linq-and-dependency-injection.json",
-    "course": "LINQ and Dependency Injection"
+    "course": "LINQ and Dependency Injection",
+    "id": "linq-and-dependency-injection"
   },
   {
     "file": "linux-foundations.json",
-    "course": "Linux Foundations"
+    "course": "Linux Foundations",
+    "id": "linux-foundations"
   },
   {
     "file": "macos-administration.json",
-    "course": "macOS Administration Fundamentals"
+    "course": "macOS Administration Fundamentals",
+    "id": "macos-administration-fundamentals"
   },
   {
     "file": "microsoft-endpoint-administrator.json",
-    "course": "Microsoft 365 Endpoint Administrator"
+    "course": "Microsoft 365 Endpoint Administrator",
+    "id": "microsoft-365-endpoint-administrator"
   },
   {
     "file": "microsoft-365-fundamentals.json",
-    "course": "Microsoft 365 Fundamentals"
+    "course": "Microsoft 365 Fundamentals",
+    "id": "microsoft-365-fundamentals"
   },
   {
+    "file": "networking-fundamentals.json",
     "course": "Networking Fundamentals",
-    "file": "networking-fundamentals.json"
+    "id": "networking-fundamentals"
   },
   {
     "file": "non-relational-data.json",
-    "course": "Non-Relational Data"
+    "course": "Non-Relational Data",
+    "id": "non-relational-data"
   },
   {
     "file": "pandas.json",
-    "course": "Pandas"
+    "course": "Pandas",
+    "id": "pandas"
   },
   {
     "file": "python-basics.json",
-    "course": "Python Basics (for Software Dev)"
+    "course": "Python Basics (for Software Dev)",
+    "id": "python-basics-for-software-dev"
   },
   {
     "file": "python-coding-booster.json",
-    "course": "Python Coding Booster Intensive"
+    "course": "Python Coding Booster Intensive",
+    "id": "python-coding-booster-intensive"
   },
   {
     "file": "react.json",
-    "course": "React"
+    "course": "React",
+    "id": "react"
   },
   {
+    "file": "security-cybersecurity-fundamentals.json",
     "course": "Security and Cybersecurity Fundamentals",
-    "file": "security-cybersecurity-fundamentals.json"
+    "id": "security-and-cybersecurity-fundamentals"
   },
   {
     "file": "software-developer-prework.json",
-    "course": "Software Developer Pre-Work"
+    "course": "Software Developer Pre-Work",
+    "id": "software-developer-pre-work"
   },
   {
     "file": "software-development-lifecycle.json",
-    "course": "Software Development Lifecycle"
+    "course": "Software Development Lifecycle",
+    "id": "software-development-lifecycle"
   },
   {
     "file": "sql-coding-booster.json",
-    "course": "SQL Coding Booster Intensive"
+    "course": "SQL Coding Booster Intensive",
+    "id": "sql-coding-booster-intensive"
   },
   {
     "file": "sql-for-csharp.json",
-    "course": "SQL for C#"
+    "course": "SQL for C#",
+    "id": "sql-for-csharp"
   },
   {
     "file": "student-onboarding.json",
-    "course": "Student Onboarding"
+    "course": "Student Onboarding",
+    "id": "student-onboarding"
   },
   {
     "file": "troubleshooting-enterprise-environment.json",
-    "course": "Troubleshooting/Supporting in an Enterprise Environment"
+    "course": "Troubleshooting/Supporting in an Enterprise Environment",
+    "id": "troubleshooting-supporting-in-an-enterprise-environment"
   },
   {
     "file": "web-dev-javascript-react.json",
-    "course": "Web Development with JavaScript"
+    "course": "Web Development with JavaScript",
+    "id": "web-development-with-javascript"
   }
 ]
