@@ -1,0 +1,1108 @@
+{
+  "advanced-python": {
+    "source_container": {
+      "id": "11VyCOJfqaoaBzF0N1oGAfADEiBvLzLzb",
+      "name": "SOURCE DOCUMENTS",
+      "url": "https://drive.google.com/drive/folders/11VyCOJfqaoaBzF0N1oGAfADEiBvLzLzb"
+    },
+    "modules": {
+      "1": {
+        "id": "1VZyZv-33R6KGdrOrkiMbLgw2yicEozQh",
+        "name": "01. Introduction",
+        "url": "https://drive.google.com/drive/folders/1VZyZv-33R6KGdrOrkiMbLgw2yicEozQh"
+      },
+      "2": {
+        "id": "1K0JIta2KswN1CV16nSjz6cjWL93CY027",
+        "name": "02. Introduction to Advanced Python and Object Oriented Programming",
+        "url": "https://drive.google.com/drive/folders/1K0JIta2KswN1CV16nSjz6cjWL93CY027"
+      },
+      "3": {
+        "id": "1GXGkrjcsX239UQebFKzxHhcNyUzLL0un",
+        "name": "03. Classes",
+        "url": "https://drive.google.com/drive/folders/1GXGkrjcsX239UQebFKzxHhcNyUzLL0un"
+      },
+      "4": {
+        "id": "1RVVcozj1EgL4rlZ3uO77L9iWSfi2djih",
+        "name": "04. Magic Methods",
+        "url": "https://drive.google.com/drive/folders/1RVVcozj1EgL4rlZ3uO77L9iWSfi2djih"
+      },
+      "5": {
+        "id": "1uhQhSuGoUV1eaipe_kSQBAgUrjwEVSZA",
+        "name": "05. Decorators",
+        "url": "https://drive.google.com/drive/folders/1uhQhSuGoUV1eaipe_kSQBAgUrjwEVSZA"
+      },
+      "6": {
+        "id": "1UroM8eDBGFGYCoXJDaQ9o0TYLDraj84W",
+        "name": "06. Generators and Iterators",
+        "url": "https://drive.google.com/drive/folders/1UroM8eDBGFGYCoXJDaQ9o0TYLDraj84W"
+      },
+      "7": {
+        "id": "1DM8YmtYyFD7FvidDqO_xvVPjlTob5pjf",
+        "name": "07. Data Classes",
+        "url": "https://drive.google.com/drive/folders/1DM8YmtYyFD7FvidDqO_xvVPjlTob5pjf"
+      },
+      "8": {
+        "id": "1GcsivR8MDX8YudO3RxrHmmeU08jmJWuf",
+        "name": "08. Python and the Web",
+        "url": "https://drive.google.com/drive/folders/1GcsivR8MDX8YudO3RxrHmmeU08jmJWuf"
+      }
+    },
+    "course_folder": {
+      "id": "1-O-rT_oqlgdo1Qsz-7M0_p0MTblMTJ6v",
+      "name": "Advanced Python",
+      "url": "https://drive.google.com/drive/folders/1-O-rT_oqlgdo1Qsz-7M0_p0MTblMTJ6v"
+    }
+  },
+  "agile-project-management-with-scrum": {
+    "source_container": {
+      "id": "1w4ZvkZPPHPk7JzkllyleTVM7CcwOGaVJ",
+      "name": "SOURCE CONTENT",
+      "url": "https://drive.google.com/drive/folders/1w4ZvkZPPHPk7JzkllyleTVM7CcwOGaVJ"
+    },
+    "modules": {
+      "1": {
+        "id": "1YMjSwvDDBsCIuPWmzbJKElLQp16jNkku",
+        "name": "Module 1: Introduction to Agile and Scrum",
+        "url": "https://drive.google.com/drive/folders/1YMjSwvDDBsCIuPWmzbJKElLQp16jNkku"
+      },
+      "2": {
+        "id": "1tpEyfKcpmxOaazMSeUNi1MWXSv1zzoRD",
+        "name": "Module 2: Scrum Framework Overview",
+        "url": "https://drive.google.com/drive/folders/1tpEyfKcpmxOaazMSeUNi1MWXSv1zzoRD"
+      },
+      "3": {
+        "id": "1R5V3Hoel9CLDbmOTwgqbPEXra5aVrxud",
+        "name": "Module 3: Scrum Roles and Responsibilities",
+        "url": "https://drive.google.com/drive/folders/1R5V3Hoel9CLDbmOTwgqbPEXra5aVrxud"
+      },
+      "4": {
+        "id": "1No5-0IEyJulUkO-hoXBitux4hFtwkSdF",
+        "name": "Module 4: Scrum Ceremonies",
+        "url": "https://drive.google.com/drive/folders/1No5-0IEyJulUkO-hoXBitux4hFtwkSdF"
+      },
+      "5": {
+        "id": "1at-iff3tjoANrW8P1G1EuWQXTFP5YdCb",
+        "name": "Module 5: Scrum Artifacts",
+        "url": "https://drive.google.com/drive/folders/1at-iff3tjoANrW8P1G1EuWQXTFP5YdCb"
+      }
+    },
+    "course_folder": {
+      "id": "1roPHpPQD1LvTGz1xvWtbv-U-XFqr4VBo",
+      "name": "Agile Project Management with Scrum",
+      "url": "https://drive.google.com/drive/folders/1roPHpPQD1LvTGz1xvWtbv-U-XFqr4VBo"
+    }
+  },
+  "business-analysis-fundamentals": {
+    "source_container": {
+      "id": "1SEoEoyM7wQaPP4SkGstmysApIjsMNVvG",
+      "name": "_SOURCE DOCUMENTS",
+      "url": "https://drive.google.com/drive/folders/1SEoEoyM7wQaPP4SkGstmysApIjsMNVvG"
+    },
+    "modules": {
+      "1": {
+        "id": "1qVeM6Z0mj0yrqoAv2q1fRxLYSNFiyquu",
+        "name": "Module 1: Introduction to Business Analysis and Key Terms",
+        "url": "https://drive.google.com/drive/folders/1qVeM6Z0mj0yrqoAv2q1fRxLYSNFiyquu",
+        "lessons": {
+          "1": {
+            "id": "1F-eAvJ-o1kJtQRvQ_cV9a_fsdu4nmlZk",
+            "name": "Lesson 1: What is Business Analysis?",
+            "url": "https://drive.google.com/drive/folders/1F-eAvJ-o1kJtQRvQ_cV9a_fsdu4nmlZk"
+          },
+          "2": {
+            "id": "1D5BxY_UlaXozO_xtB-Go6UYJG5fUnhCN",
+            "name": "Lesson 2: Roles and Responsibilities of a Business Analyst",
+            "url": "https://drive.google.com/drive/folders/1D5BxY_UlaXozO_xtB-Go6UYJG5fUnhCN"
+          },
+          "3": {
+            "id": "1YUSK98nGAC0lLLqTLD_7w_rneWtNSa0b",
+            "name": "Lesson 3: Key Concepts \u2013 Needs, Stakeholders, Requirements, Solutions",
+            "url": "https://drive.google.com/drive/folders/1YUSK98nGAC0lLLqTLD_7w_rneWtNSa0b"
+          },
+          "4": {
+            "id": "1S1ufvFu--JuUEBOvJ5WVdcUlrCs_ZUJo",
+            "name": "Lesson 4: Overview of the BABOK\u00ae Framework",
+            "url": "https://drive.google.com/drive/folders/1S1ufvFu--JuUEBOvJ5WVdcUlrCs_ZUJo"
+          },
+          "5": {
+            "id": "1mV7pVdimchdCkBMWX3M2ZoX8312kNjI7",
+            "name": "Lesson 5: Business Analysis Terminology Essentials",
+            "url": "https://drive.google.com/drive/folders/1mV7pVdimchdCkBMWX3M2ZoX8312kNjI7"
+          },
+          "6": {
+            "id": "1dXvOBAZuUgLMCcPOdTRBJReBszlFL_jq",
+            "name": "Lesson 6: Types of Business Analysis \u2013 Strategic, Tactical, Operational",
+            "url": "https://drive.google.com/drive/folders/1dXvOBAZuUgLMCcPOdTRBJReBszlFL_jq"
+          }
+        }
+      },
+      "2": {
+        "id": "1pfejtY52dEJ78dI3xFOwK5ShSvW5pIoU",
+        "name": "Module 2: Business Analysis Planning, Monitoring, and Governance",
+        "url": "https://drive.google.com/drive/folders/1pfejtY52dEJ78dI3xFOwK5ShSvW5pIoU",
+        "lessons": {
+          "1": {
+            "id": "1-oFzx7B3XD6WLuGnCM1K3JinOtlnrG53",
+            "name": "Lesson 1: Purpose of Planning in Business Analysis",
+            "url": "https://drive.google.com/drive/folders/1-oFzx7B3XD6WLuGnCM1K3JinOtlnrG53"
+          },
+          "2": {
+            "id": "1hP07idAU7Q6Ys8IWBi_B3kn-SoCWNVPV",
+            "name": "Lesson 2: Identifying Stakeholders and Their Roles",
+            "url": "https://drive.google.com/drive/folders/1hP07idAU7Q6Ys8IWBi_B3kn-SoCWNVPV"
+          },
+          "3": {
+            "id": "1f3VVVyNkn7nk3su-aGxb3Zrejybib9-P",
+            "name": "Lesson 3: Planning the Business Analysis Approach (Predictive vs. Adaptive)",
+            "url": "https://drive.google.com/drive/folders/1f3VVVyNkn7nk3su-aGxb3Zrejybib9-P"
+          },
+          "4": {
+            "id": "1nGuhooXmeC9thRPhZ72eymsi4b2YG9YV",
+            "name": "Lesson 4: Planning Stakeholder Engagement and Scope Definition",
+            "url": "https://drive.google.com/drive/folders/1nGuhooXmeC9thRPhZ72eymsi4b2YG9YV"
+          },
+          "5": {
+            "id": "1Ls5qZsENUUeFgwZ7SZPXnZoyJgN6W0f3",
+            "name": "Lesson 5: Roles, Responsibilities, and Access Planning",
+            "url": "https://drive.google.com/drive/folders/1Ls5qZsENUUeFgwZ7SZPXnZoyJgN6W0f3"
+          },
+          "6": {
+            "id": "10X_S7wZlEKNPpzk6BKwGMKj5S9oIp0rC",
+            "name": "Lesson 6: Business Analysis Governance",
+            "url": "https://drive.google.com/drive/folders/10X_S7wZlEKNPpzk6BKwGMKj5S9oIp0rC"
+          },
+          "7": {
+            "id": "1DRuxtpf2Vl2awcQRE9zmf4gFqivBOKvY",
+            "name": "Lesson 7: Monitoring and Reporting BA Performance",
+            "url": "https://drive.google.com/drive/folders/1DRuxtpf2Vl2awcQRE9zmf4gFqivBOKvY"
+          }
+        }
+      },
+      "3": {
+        "id": "1oaUK3l6UbtplPO_fvCKlen9XwxqfaqWG",
+        "name": "Module 3: Elicitation and Collaboration",
+        "url": "https://drive.google.com/drive/folders/1oaUK3l6UbtplPO_fvCKlen9XwxqfaqWG",
+        "lessons": {
+          "1": {
+            "id": "1jD9SmDotAMkM3m0FGfrmuwUOdHpVRYUL",
+            "name": "Lesson 1: Preparing for Elicitation Activities",
+            "url": "https://drive.google.com/drive/folders/1jD9SmDotAMkM3m0FGfrmuwUOdHpVRYUL"
+          },
+          "2": {
+            "id": "18zr1_PhMQOJof-YYu0Ng6rzimU6trZ21",
+            "name": "Lesson 2: Elicitation Techniques Overview",
+            "url": "https://drive.google.com/drive/folders/18zr1_PhMQOJof-YYu0Ng6rzimU6trZ21"
+          },
+          "3": {
+            "id": "1ahVLz-YrbV7kJWNdEV0PKx3surKfY-JK",
+            "name": "Lesson 3: Conducting Elicitation Sessions",
+            "url": "https://drive.google.com/drive/folders/1ahVLz-YrbV7kJWNdEV0PKx3surKfY-JK"
+          },
+          "4": {
+            "id": "1qN49pxHl2OWvImh08Z8lQhR-IIRolZ0L",
+            "name": "Lesson 4: Confirming and Communicating Results",
+            "url": "https://drive.google.com/drive/folders/1qN49pxHl2OWvImh08Z8lQhR-IIRolZ0L"
+          },
+          "5": {
+            "id": "1_UThIvNjlGMMcrEQrazjfK5Js6fTNdt0",
+            "name": "Lesson 5: Stakeholder Collaboration and Scope Clarification",
+            "url": "https://drive.google.com/drive/folders/1_UThIvNjlGMMcrEQrazjfK5Js6fTNdt0"
+          },
+          "6": {
+            "id": "11CwXHoBgG5CYVc1V5AqyMZcW28c0-aJ_",
+            "name": "Lesson 6: Managing Elicitation Challenges",
+            "url": "https://drive.google.com/drive/folders/11CwXHoBgG5CYVc1V5AqyMZcW28c0-aJ_"
+          },
+          "7": {
+            "id": "1CzJFj5O_H1PwlSIS0FXZhVFZhFqb6OXR",
+            "name": "Lesson 7: Tools for Elicitation and Ideation",
+            "url": "https://drive.google.com/drive/folders/1CzJFj5O_H1PwlSIS0FXZhVFZhFqb6OXR"
+          }
+        }
+      },
+      "4": {
+        "id": "1pr0qOWQ5YyRWv2tC8UHtJr1zjya_KCHd",
+        "name": "Module 4: Requirements Life Cycle Management",
+        "url": "https://drive.google.com/drive/folders/1pr0qOWQ5YyRWv2tC8UHtJr1zjya_KCHd",
+        "lessons": {
+          "1": {
+            "id": "179sNCvDD3avAiEcdotpc2UafWIESFXf3",
+            "name": "Lesson 1: Introduction to the Requirements Life Cycle",
+            "url": "https://drive.google.com/drive/folders/179sNCvDD3avAiEcdotpc2UafWIESFXf3"
+          },
+          "2": {
+            "id": "1J_Iq8rsNzpvijEChAk2dKKHBksVrwN0L",
+            "name": "Lesson 2: Tracing and Maintaining Requirements",
+            "url": "https://drive.google.com/drive/folders/1J_Iq8rsNzpvijEChAk2dKKHBksVrwN0L"
+          },
+          "3": {
+            "id": "1kGZ_fg6x6u0aOQfle-jbdTQcvfif2m5g",
+            "name": "Lesson 3: Prioritizing and Approving Requirements",
+            "url": "https://drive.google.com/drive/folders/1kGZ_fg6x6u0aOQfle-jbdTQcvfif2m5g"
+          },
+          "4": {
+            "id": "1sBbkghAaq7opML_rNMS4egKGwoCOB_qF",
+            "name": "Lesson 4: Managing Requirements Changes",
+            "url": "https://drive.google.com/drive/folders/1sBbkghAaq7opML_rNMS4egKGwoCOB_qF"
+          },
+          "5": {
+            "id": "1lcxHtlgLcyj2jMlNeaGCPM60yyWMxngw",
+            "name": "Lesson 5: Impact Analysis and Risk Identification",
+            "url": "https://drive.google.com/drive/folders/1lcxHtlgLcyj2jMlNeaGCPM60yyWMxngw"
+          },
+          "6": {
+            "id": "1-Tkzem-1_pq-TKFQT3cxYc5xxo1GGgse",
+            "name": "Lesson 6: Advising on Requirements-Related Risks",
+            "url": "https://drive.google.com/drive/folders/1-Tkzem-1_pq-TKFQT3cxYc5xxo1GGgse"
+          }
+        }
+      },
+      "5": {
+        "id": "1h1vHNHDo_qbfWFX3ziQAj-RfF_5Uvyi2",
+        "name": "Module 5: Requirements Analysis, Design Definition, and Research",
+        "url": "https://drive.google.com/drive/folders/1h1vHNHDo_qbfWFX3ziQAj-RfF_5Uvyi2",
+        "lessons": {
+          "1": {
+            "id": "1OWBljZvW3hYqsBmXfFygoOwBEJhbr7pA",
+            "name": "Lesson 1: Specifying and Modeling Requirements",
+            "url": "https://drive.google.com/drive/folders/1OWBljZvW3hYqsBmXfFygoOwBEJhbr7pA"
+          },
+          "2": {
+            "id": "1bzk8AaQTIHPDEzeOhoIy-KuhUmWGGfTg",
+            "name": "Lesson 2: Verifying and Validating Requirements",
+            "url": "https://drive.google.com/drive/folders/1bzk8AaQTIHPDEzeOhoIy-KuhUmWGGfTg"
+          },
+          "3": {
+            "id": "1Xe8mRKMow4fs6oQRsBN6HpKHajOpYyvj",
+            "name": "Lesson 3: Defining and Analyzing Solution Options",
+            "url": "https://drive.google.com/drive/folders/1Xe8mRKMow4fs6oQRsBN6HpKHajOpYyvj"
+          },
+          "4": {
+            "id": "12ZzLnOq0u4zaEgNDpEDQGcmEDv-GDCaA",
+            "name": "Lesson 4: Evaluating Potential Value and Making Recommendations",
+            "url": "https://drive.google.com/drive/folders/12ZzLnOq0u4zaEgNDpEDQGcmEDv-GDCaA"
+          },
+          "5": {
+            "id": "1SMgnXr0fYHqPsIvEzullb-xty8HoSa7i",
+            "name": "Lesson 5: Introduction to Conceptual and Logical Design",
+            "url": "https://drive.google.com/drive/folders/1SMgnXr0fYHqPsIvEzullb-xty8HoSa7i"
+          },
+          "6": {
+            "id": "1zN8hwu7OcYdHT9hI9hcQlYtZmqfkMZ--",
+            "name": "Lesson 6: Researching Industry Trends and Best Practices",
+            "url": "https://drive.google.com/drive/folders/1zN8hwu7OcYdHT9hI9hcQlYtZmqfkMZ--"
+          }
+        }
+      }
+    },
+    "course_folder": {
+      "id": "1qotz71155ENbdEa_Fb6CIxc3-DqpAKqt",
+      "name": "Business Analysis Fundamentals",
+      "url": "https://drive.google.com/drive/folders/1qotz71155ENbdEa_Fb6CIxc3-DqpAKqt"
+    }
+  },
+  "business-and-it-fundamentals": {
+    "source_container": {
+      "id": "1sFSpytwBEOuJs5Z7sVjtQ-hUdbHAbjRN",
+      "name": "_SOURCE DOCUMENTS",
+      "url": "https://drive.google.com/drive/folders/1sFSpytwBEOuJs5Z7sVjtQ-hUdbHAbjRN"
+    },
+    "modules": {
+      "1": {
+        "id": "1j65v32w3kpVOYQacfET2iGhiymhrMk0k",
+        "name": "Module 01: Introduction to Business Forms and Market Systems",
+        "url": "https://drive.google.com/drive/folders/1j65v32w3kpVOYQacfET2iGhiymhrMk0k"
+      },
+      "2": {
+        "id": "1ghSxthbFNnvR44wy701h9VJPtd7Mw9-j",
+        "name": "Module 02: Business Strategies and Goals",
+        "url": "https://drive.google.com/drive/folders/1ghSxthbFNnvR44wy701h9VJPtd7Mw9-j"
+      },
+      "3": {
+        "id": "1Q5e-V9H76NVdwfRXFVuIB6efNerHmI_X",
+        "name": "Module 03: Business Opportunity Evaluation",
+        "url": "https://drive.google.com/drive/folders/1Q5e-V9H76NVdwfRXFVuIB6efNerHmI_X"
+      },
+      "4": {
+        "id": "1RT7S_YiDVWp3ul8Yp3C0Z7DgyqQd96Dv",
+        "name": "Module 04: Business Scenario Analysis and Troubleshooting",
+        "url": "https://drive.google.com/drive/folders/1RT7S_YiDVWp3ul8Yp3C0Z7DgyqQd96Dv"
+      },
+      "5": {
+        "id": "1FbFe_aMDniBAUew2rhBSKmQ9aOd-1tEJ",
+        "name": "Module 05: Operational Unit Inputs and Outputs",
+        "url": "https://drive.google.com/drive/folders/1FbFe_aMDniBAUew2rhBSKmQ9aOd-1tEJ"
+      },
+      "6": {
+        "id": "14Kcr0kg6U6-lozeOUL2GOvgXHgKlWuDd",
+        "name": "Module 06: Business Process Modeling",
+        "url": "https://drive.google.com/drive/folders/14Kcr0kg6U6-lozeOUL2GOvgXHgKlWuDd"
+      },
+      "7": {
+        "id": "1mLlMdjzgFK4Nm7mEf_cT7L50ezmWXN3z",
+        "name": "Module 07: IT Infrastructure Basics",
+        "url": "https://drive.google.com/drive/folders/1mLlMdjzgFK4Nm7mEf_cT7L50ezmWXN3z"
+      },
+      "8": {
+        "id": "1fM9CN0y2hlu8v-FAye99V-4Xwf3jsFqY",
+        "name": "Module 08: Software Development Lifecycle (SDLC)",
+        "url": "https://drive.google.com/drive/folders/1fM9CN0y2hlu8v-FAye99V-4Xwf3jsFqY"
+      }
+    },
+    "course_folder": {
+      "id": "1HksazKP6W9tqSJQWtJPbuEsbmslS7lfS",
+      "name": "Business and IT Fundamentals",
+      "url": "https://drive.google.com/drive/folders/1HksazKP6W9tqSJQWtJPbuEsbmslS7lfS"
+    }
+  },
+  "csharp-language-fundamentals": {
+    "source_container": {
+      "id": "1vdp4fOAzLB0adeLHHtsQy3vyCESOowme",
+      "name": "csharp-lang-fundamentals",
+      "url": "https://drive.google.com/drive/folders/1vdp4fOAzLB0adeLHHtsQy3vyCESOowme"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "187t9XrpPqtcHwhz2J6Jxt6xwqGjb5e0w",
+      "name": "C# Language Fundamentals",
+      "url": "https://drive.google.com/drive/folders/187t9XrpPqtcHwhz2J6Jxt6xwqGjb5e0w"
+    }
+  },
+  "data-fundamentals-data-literacy": {
+    "source_container": {
+      "id": "1q1SWpxsv4pbOYiGTuoX5L01UmcKk9LVP",
+      "name": "SOURCE DOCUMENTS - DATA LITERACY",
+      "url": "https://drive.google.com/drive/folders/1q1SWpxsv4pbOYiGTuoX5L01UmcKk9LVP"
+    },
+    "modules": {
+      "1": {
+        "id": "1wCaZQZAEDN2PTOcJc7-D87CKJUBvU_4j",
+        "name": "01. Course Introduction",
+        "url": "https://drive.google.com/drive/folders/1wCaZQZAEDN2PTOcJc7-D87CKJUBvU_4j"
+      },
+      "2": {
+        "id": "1a1pnW4n4XUCwNUqVW7O0G0uMBedudlid",
+        "name": "02. Introduction to Data",
+        "url": "https://drive.google.com/drive/folders/1a1pnW4n4XUCwNUqVW7O0G0uMBedudlid"
+      },
+      "3": {
+        "id": "1wsK1wOujVH7wxl9j6fTMTT0dwKNRok0W",
+        "name": "03. Bias in Data",
+        "url": "https://drive.google.com/drive/folders/1wsK1wOujVH7wxl9j6fTMTT0dwKNRok0W"
+      },
+      "4": {
+        "id": "1lRQCp99BwMYi5GRinAsK93MzM3-dSzbH",
+        "name": "04. Gathering Data",
+        "url": "https://drive.google.com/drive/folders/1lRQCp99BwMYi5GRinAsK93MzM3-dSzbH"
+      },
+      "5": {
+        "id": "1HicKN-5VekEfL_h8keJIo2YQYeJ7rcwF",
+        "name": "05. Questioning Data",
+        "url": "https://drive.google.com/drive/folders/1HicKN-5VekEfL_h8keJIo2YQYeJ7rcwF"
+      },
+      "6": {
+        "id": "1m-Cv6sGuwy_M5SWlxtIArY3UOa40izm-",
+        "name": "06. Relational Data",
+        "url": "https://drive.google.com/drive/folders/1m-Cv6sGuwy_M5SWlxtIArY3UOa40izm-"
+      },
+      "7": {
+        "id": "1kBUzs8Jj4YTxv7AN6Jnq2NwLB6utPQAJ",
+        "name": "07. Data Visualizations",
+        "url": "https://drive.google.com/drive/folders/1kBUzs8Jj4YTxv7AN6Jnq2NwLB6utPQAJ"
+      },
+      "8": {
+        "id": "11OxYt_hzku5UBFRVe6F0Eam5EhqqsHY-",
+        "name": "08. Statistics",
+        "url": "https://drive.google.com/drive/folders/11OxYt_hzku5UBFRVe6F0Eam5EhqqsHY-"
+      }
+    },
+    "course_folder": {
+      "id": "17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ",
+      "name": "Data Fundamentals \u2014 Data Literacy",
+      "url": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"
+    }
+  },
+  "data-fundamentals-data-visualizations-and-power-bi": {
+    "source_container": {
+      "id": "1BWXcqzsewp5cl2pEsbe7CzrmQ9AF7SHw",
+      "name": "SOURCE DOCUMENTS",
+      "url": "https://drive.google.com/drive/folders/1BWXcqzsewp5cl2pEsbe7CzrmQ9AF7SHw"
+    },
+    "modules": {
+      "1": {
+        "id": "1ybOy2FyfNlLZ8ctXnSyx6HD0N6AeLekJ",
+        "name": "01. Introduction to Data Visualizations",
+        "url": "https://drive.google.com/drive/folders/1ybOy2FyfNlLZ8ctXnSyx6HD0N6AeLekJ"
+      },
+      "2": {
+        "id": "1xo3ueJ71ZzlTFtnI5UXNzEaPCRkSa5Wz",
+        "name": "02. Introduction to Power BI",
+        "url": "https://drive.google.com/drive/folders/1xo3ueJ71ZzlTFtnI5UXNzEaPCRkSa5Wz"
+      },
+      "3": {
+        "id": "1efR3taJlW48rG1DxtqeDVTtAj9z0-AZI",
+        "name": "03. Slicers, Groups, and Bins",
+        "url": "https://drive.google.com/drive/folders/1efR3taJlW48rG1DxtqeDVTtAj9z0-AZI"
+      },
+      "4": {
+        "id": "17rwqWPBOmjDyNUX8nduK1L46n5PdpkhI",
+        "name": "04. Visualizations and Dashboards",
+        "url": "https://drive.google.com/drive/folders/17rwqWPBOmjDyNUX8nduK1L46n5PdpkhI"
+      },
+      "5": {
+        "id": "1eModPVisWCxP1VsWjvErnPtc9S5elOQV",
+        "name": "05. Excel and Power BI",
+        "url": "https://drive.google.com/drive/folders/1eModPVisWCxP1VsWjvErnPtc9S5elOQV"
+      },
+      "6": {
+        "id": "1o0Nh5I7jbNXR8GJbU-x1EbNvc3ALEtff",
+        "name": "06. Working with Census Data in Power BI",
+        "url": "https://drive.google.com/drive/folders/1o0Nh5I7jbNXR8GJbU-x1EbNvc3ALEtff"
+      },
+      "7": {
+        "id": "1xs1LwSjmuq97i0xkM4kyJLBlUiSV6T0A",
+        "name": "07. Excel Workbooks and Power BI",
+        "url": "https://drive.google.com/drive/folders/1xs1LwSjmuq97i0xkM4kyJLBlUiSV6T0A"
+      }
+    },
+    "course_folder": {
+      "id": "1PwOtz40wQ7-xcscKQTBMRqnVUjpkaM2f",
+      "name": "Data Fundamentals \u2014 Data Visualizations and Power BI",
+      "url": "https://drive.google.com/drive/folders/1PwOtz40wQ7-xcscKQTBMRqnVUjpkaM2f"
+    }
+  },
+  "data-fundamentals-excel-for-data-analysts": {
+    "source_container": {
+      "id": "18Mi5B12CYHUvgeOAfyfdE_TvPD3zIMAv",
+      "name": "SOURCE DOCUMENTS",
+      "url": "https://drive.google.com/drive/folders/18Mi5B12CYHUvgeOAfyfdE_TvPD3zIMAv"
+    },
+    "modules": {
+      "1": {
+        "id": "12uqhmeGrZuV9sbKjFayUqsufgJxd_a1k",
+        "name": "01. Introduction to Excel for Data Analysts",
+        "url": "https://drive.google.com/drive/folders/12uqhmeGrZuV9sbKjFayUqsufgJxd_a1k"
+      },
+      "2": {
+        "id": "1sKDcOIopsbzED5tFeZKqau_fLHXAT71b",
+        "name": "02. Getting Started with Excel for Data Analysis",
+        "url": "https://drive.google.com/drive/folders/1sKDcOIopsbzED5tFeZKqau_fLHXAT71b"
+      },
+      "3": {
+        "id": "1CccIIbojjriVpyoXt-7RRZ-u2lNoLV1t",
+        "name": "03. Importing Data",
+        "url": "https://drive.google.com/drive/folders/1CccIIbojjriVpyoXt-7RRZ-u2lNoLV1t"
+      },
+      "4": {
+        "id": "1Kdz3zw3cdoJgS8IEbWsy6tfCgdIjExj0",
+        "name": "04. Introduction to Power Query",
+        "url": "https://drive.google.com/drive/folders/1Kdz3zw3cdoJgS8IEbWsy6tfCgdIjExj0"
+      },
+      "5": {
+        "id": "1J-7LdyZBhjvjhh6nkUQuvXGq7cjvDnsJ",
+        "name": "05. Clean and Transform Data",
+        "url": "https://drive.google.com/drive/folders/1J-7LdyZBhjvjhh6nkUQuvXGq7cjvDnsJ"
+      },
+      "6": {
+        "id": "1su7tWrfllKByfQDHMrcxAkdpItTjJmbN",
+        "name": "06. Pivot Tables",
+        "url": "https://drive.google.com/drive/folders/1su7tWrfllKByfQDHMrcxAkdpItTjJmbN"
+      },
+      "7": {
+        "id": "1y0mZWqAckrRDqRlTjJ7hLwa2mWItgeRs",
+        "name": "07. Creating Charts",
+        "url": "https://drive.google.com/drive/folders/1y0mZWqAckrRDqRlTjJ7hLwa2mWItgeRs"
+      },
+      "8": {
+        "id": "131PZlKtdfJjTPDLwjXVpYJ9Bys_0DU0C",
+        "name": "08. Geographic Data and Data Exploration",
+        "url": "https://drive.google.com/drive/folders/131PZlKtdfJjTPDLwjXVpYJ9Bys_0DU0C"
+      },
+      "9": {
+        "id": "1AYU2yFnchsEG1oTpxIyIkgG8DEeHgKl5",
+        "name": "09. Data Analysis ToolPak and Correlation",
+        "url": "https://drive.google.com/drive/folders/1AYU2yFnchsEG1oTpxIyIkgG8DEeHgKl5"
+      },
+      "10": {
+        "id": "1KzoE7hbVZ12RPSh-2ow3DAoc-aM-N5on",
+        "name": "10. Rank Percentile Probability Distributions and Histograms",
+        "url": "https://drive.google.com/drive/folders/1KzoE7hbVZ12RPSh-2ow3DAoc-aM-N5on"
+      }
+    },
+    "course_folder": {
+      "id": "1RpKaf1sRrbX3F2s6as5fJn6MS1Aj8GB4",
+      "name": "Data Fundamentals \u2014 Excel for Data Analysts",
+      "url": "https://drive.google.com/drive/folders/1RpKaf1sRrbX3F2s6as5fJn6MS1Aj8GB4"
+    }
+  },
+  "data-fundamentals-sql-for-data": {
+    "source_container": {
+      "id": "1gFjSB_R9G87KDDWA2bOueQMkDWfCaMiO",
+      "name": "sql-for-data",
+      "url": "https://drive.google.com/drive/folders/1gFjSB_R9G87KDDWA2bOueQMkDWfCaMiO"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z",
+      "name": "Data Fundamentals \u2014 SQL for Data",
+      "url": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z"
+    }
+  },
+  "databases-in-java": {
+    "source_container": {
+      "id": "1yAO43l2BSYnMuMw-UHcp8iMVs-Nb0CJv",
+      "name": "_SOURCE DOCUMENTS - DATABASES IN JAVA",
+      "url": "https://drive.google.com/drive/folders/1yAO43l2BSYnMuMw-UHcp8iMVs-Nb0CJv"
+    },
+    "modules": {
+      "00": {
+        "id": "1NhlgU8n13oFcQxR0MrqMeyFXnubsVHmI",
+        "name": "00. Course Introduction",
+        "url": "https://drive.google.com/drive/folders/1NhlgU8n13oFcQxR0MrqMeyFXnubsVHmI"
+      },
+      "03": {
+        "id": "1og22HDlUhFoeSJ1YJtwsCtlIdoAqwib5",
+        "name": "03. Relational Modeling",
+        "url": "https://drive.google.com/drive/folders/1og22HDlUhFoeSJ1YJtwsCtlIdoAqwib5"
+      },
+      "04": {
+        "id": "13kJ2F3Qf8t6XSvGaqOy7OPozqy-B7ndo",
+        "name": "04. Database Instance Installs",
+        "url": "https://drive.google.com/drive/folders/13kJ2F3Qf8t6XSvGaqOy7OPozqy-B7ndo"
+      },
+      "05": {
+        "id": "1NEDFTMNBnMBPBxec4BWydPBOJN6SVHsX",
+        "name": "05. Database Creation & Maintenance",
+        "url": "https://drive.google.com/drive/folders/1NEDFTMNBnMBPBxec4BWydPBOJN6SVHsX"
+      },
+      "06": {
+        "id": "1zigign0uQEU4TMBiwIHiJeJiz-A3VGTF",
+        "name": "06. SQL Fundamentals",
+        "url": "https://drive.google.com/drive/folders/1zigign0uQEU4TMBiwIHiJeJiz-A3VGTF"
+      },
+      "07": {
+        "id": "1qW9CzL4pk3XgmTfYzPCbBIRUjmOgSEmd",
+        "name": "07. Intermediate SQL",
+        "url": "https://drive.google.com/drive/folders/1qW9CzL4pk3XgmTfYzPCbBIRUjmOgSEmd"
+      },
+      "08": {
+        "id": "1TAeEKvwWO_VQlQJMOto2_uOir_9CVJ-h",
+        "name": "08. Advanced SQL",
+        "url": "https://drive.google.com/drive/folders/1TAeEKvwWO_VQlQJMOto2_uOir_9CVJ-h"
+      },
+      "09": {
+        "id": "1Dj-nt1hChi7GaykCfraDdje9Tjc29H8F",
+        "name": "09. Stored Procedures and Transactions",
+        "url": "https://drive.google.com/drive/folders/1Dj-nt1hChi7GaykCfraDdje9Tjc29H8F"
+      },
+      "10": {
+        "id": "19yQmBUH6fVCZJgSAVGLDUviVgxS4RDzB",
+        "name": "10. JDBC",
+        "url": "https://drive.google.com/drive/folders/19yQmBUH6fVCZJgSAVGLDUviVgxS4RDzB"
+      }
+    },
+    "course_folder": {
+      "id": "1g22pGVb41S-Wzdp-04rB7r5iP7KVid0d",
+      "name": "Databases in Java",
+      "url": "https://drive.google.com/drive/folders/1g22pGVb41S-Wzdp-04rB7r5iP7KVid0d"
+    }
+  },
+  "introduction-to-advanced-concepts-in-java": {
+    "source_container": {
+      "id": "1IkAjnBB0KmBFBGMwBlFAvbBWcjbdR4RZ",
+      "name": "_SOURCE DOCUMENTS - ADVANCED CONCEPTS IN JAVA",
+      "url": "https://drive.google.com/drive/folders/1IkAjnBB0KmBFBGMwBlFAvbBWcjbdR4RZ"
+    },
+    "modules": {
+      "00": {
+        "id": "1-Rb2GN5mMRK28TrV7h0YeOe845obXLB2",
+        "name": "00. Course Introduction",
+        "url": "https://drive.google.com/drive/folders/1-Rb2GN5mMRK28TrV7h0YeOe845obXLB2"
+      },
+      "01": {
+        "id": "1J4UK5QyPMERkkkSJJ11JnmqoyyUxvNCM",
+        "name": "01. File IO and Design Patterns",
+        "url": "https://drive.google.com/drive/folders/1J4UK5QyPMERkkkSJJ11JnmqoyyUxvNCM"
+      },
+      "02": {
+        "id": "1pbuEHMLyzjQYTufEpY8UUp1fMukaWUkb",
+        "name": "02. Functional Idioms",
+        "url": "https://drive.google.com/drive/folders/1pbuEHMLyzjQYTufEpY8UUp1fMukaWUkb"
+      }
+    },
+    "course_folder": {
+      "id": "1XRc60zapZP8beSVim2PUVsuCBNGYZzkF",
+      "name": "Introduction to Advanced Concepts in Java",
+      "url": "https://drive.google.com/drive/folders/1XRc60zapZP8beSVim2PUVsuCBNGYZzkF"
+    }
+  },
+  "introduction-to-aws-cloud-platform": {
+    "source_container": {
+      "id": "1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM",
+      "name": "Course: Introduction to AWS Cloud Platform",
+      "url": "https://drive.google.com/drive/folders/1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM"
+    },
+    "modules": {
+      "1": {
+        "id": "1tK3nbkkr35JMwcK-c6oijrC2O9Kl60N2",
+        "name": "Module 1: Introduction to Amazon Web Services (AWS)",
+        "url": "https://drive.google.com/drive/folders/1tK3nbkkr35JMwcK-c6oijrC2O9Kl60N2"
+      },
+      "2": {
+        "id": "12W01Z13Vem0UKd36xnp3oq10q-uHOzY7",
+        "name": "Module 2: Introduction to Elastic Compute Cloud (EC2) Service",
+        "url": "https://drive.google.com/drive/folders/12W01Z13Vem0UKd36xnp3oq10q-uHOzY7"
+      },
+      "3": {
+        "id": "1UY8OxqJEeMX1Jks00cN_qC_fgFK99CpZ",
+        "name": "Module 3: Introduction to Virtual Private Cloud (VPC) Networking",
+        "url": "https://drive.google.com/drive/folders/1UY8OxqJEeMX1Jks00cN_qC_fgFK99CpZ"
+      },
+      "4": {
+        "id": "1EJyixYt2I857rqENV3F1wsDoPcS-Tbei",
+        "name": "Module 4: Introduction to Auto Scaling and Load Balancing",
+        "url": "https://drive.google.com/drive/folders/1EJyixYt2I857rqENV3F1wsDoPcS-Tbei"
+      },
+      "5": {
+        "id": "1C1pXN43DVhH4oYNoOzVOMx-BcHTGToFW",
+        "name": "Module 5: Introduction to Simple Storage Service (S3)",
+        "url": "https://drive.google.com/drive/folders/1C1pXN43DVhH4oYNoOzVOMx-BcHTGToFW"
+      },
+      "6": {
+        "id": "11Nqwv2F8Rf7cKVoEmp8ctcGr69RvMrjs",
+        "name": "Module 6: Introduction to Identity and Access Management (IAM)",
+        "url": "https://drive.google.com/drive/folders/11Nqwv2F8Rf7cKVoEmp8ctcGr69RvMrjs"
+      },
+      "7": {
+        "id": "1vGOPjfwx09qGuBKcnzcuU-1vHW_Vj7jc",
+        "name": "Module 7: Introduction to Cloud Notifications (SNS) and Message Queues (SQS)",
+        "url": "https://drive.google.com/drive/folders/1vGOPjfwx09qGuBKcnzcuU-1vHW_Vj7jc"
+      },
+      "8": {
+        "id": "1wHGrjW1_lPtTnaTJilU4cP5GzBMJHg1T",
+        "name": "Module 8: Introduction to Serverless Functions (Lambda)",
+        "url": "https://drive.google.com/drive/folders/1wHGrjW1_lPtTnaTJilU4cP5GzBMJHg1T"
+      },
+      "9": {
+        "id": "1N0SC4489BNXXAIQaZzeXSCxKWir_QC5z",
+        "name": "Module 9: AWS Pricing and Cost Management",
+        "url": "https://drive.google.com/drive/folders/1N0SC4489BNXXAIQaZzeXSCxKWir_QC5z"
+      },
+      "10": {
+        "id": "124ef8vJYjToIKJ13udVsRXKA4CL4Ekq7",
+        "name": "Module 10: Introduction to Management and Governance",
+        "url": "https://drive.google.com/drive/folders/124ef8vJYjToIKJ13udVsRXKA4CL4Ekq7"
+      }
+    },
+    "course_folder": {
+      "id": "1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM",
+      "name": "Introduction to AWS Cloud Platform",
+      "url": "https://drive.google.com/drive/folders/1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM"
+    }
+  },
+  "introduction-to-cloud-technology": {
+    "source_container": {
+      "id": "1_E7zM4Fb3R_xrADSWcqlS75_dgTRP1Py",
+      "name": "intro-to-cloud-technology",
+      "url": "https://drive.google.com/drive/folders/1_E7zM4Fb3R_xrADSWcqlS75_dgTRP1Py"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1JuELDVAwsj5-uOzNh1KXJ5aBTpc5vj4Q",
+      "name": "Introduction to Cloud Technology",
+      "url": "https://drive.google.com/drive/folders/1JuELDVAwsj5-uOzNh1KXJ5aBTpc5vj4Q"
+    }
+  },
+  "introduction-to-github": {
+    "source_container": {
+      "id": "1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN",
+      "name": "Course: Introduction to GitHub",
+      "url": "https://drive.google.com/drive/folders/1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN"
+    },
+    "modules": {
+      "01": {
+        "id": "1w1GLcwuDHpCI8SWok8KNy6O-Ckr2rCyR",
+        "name": "01. Introduction to GitHub",
+        "url": "https://drive.google.com/drive/folders/1w1GLcwuDHpCI8SWok8KNy6O-Ckr2rCyR"
+      }
+    },
+    "course_folder": {
+      "id": "1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN",
+      "name": "Introduction to GitHub",
+      "url": "https://drive.google.com/drive/folders/1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN"
+    }
+  },
+  "introduction-to-html-and-css": {
+    "source_container": {
+      "id": "16UVQpNFHouifMNadvQzr98pdin5jRgtB",
+      "name": "Course: Introduction to HTML & CSS",
+      "url": "https://drive.google.com/drive/folders/16UVQpNFHouifMNadvQzr98pdin5jRgtB"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "16UVQpNFHouifMNadvQzr98pdin5jRgtB",
+      "name": "Introduction to HTML & CSS",
+      "url": "https://drive.google.com/drive/folders/16UVQpNFHouifMNadvQzr98pdin5jRgtB"
+    }
+  },
+  "introduction-to-microsoft-teams": {
+    "source_container": {
+      "id": "1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW",
+      "name": "Course: Introduction to Microsoft Teams",
+      "url": "https://drive.google.com/drive/folders/1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW"
+    },
+    "modules": {
+      "1": {
+        "id": "1pqPqATv2F1nyEQ2rjSEGjIbmhfMGlf95",
+        "name": "IU: What is Microsoft Teams",
+        "url": "https://drive.google.com/drive/folders/1pqPqATv2F1nyEQ2rjSEGjIbmhfMGlf95"
+      },
+      "2": {
+        "id": "1prJH0tnbQqU1yp2oAnltPg3CtRtG-yoS",
+        "name": "IU: Creating and Managing Teams & Channels",
+        "url": "https://drive.google.com/drive/folders/1prJH0tnbQqU1yp2oAnltPg3CtRtG-yoS"
+      }
+    },
+    "course_folder": {
+      "id": "1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW",
+      "name": "Introduction to Microsoft Teams",
+      "url": "https://drive.google.com/drive/folders/1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW"
+    }
+  },
+  "it-fundamentals": {
+    "source_container": {
+      "id": "1tPlWTAMAWMKCN1SY1lSzhxqS7HJMNI4h",
+      "name": "02_source",
+      "url": "https://drive.google.com/drive/folders/1tPlWTAMAWMKCN1SY1lSzhxqS7HJMNI4h"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1fUbJerrPikWKXdvq0NyizzieFLJtkxEe",
+      "name": "IT Fundamentals",
+      "url": "https://drive.google.com/drive/folders/1fUbJerrPikWKXdvq0NyizzieFLJtkxEe"
+    }
+  },
+  "java-language-fundamentals": {
+    "source_container": {
+      "id": "1SH_HKAUCIjTp-SG6JRC0gNHhB-HBIBxx",
+      "name": "02_source",
+      "url": "https://drive.google.com/drive/folders/1SH_HKAUCIjTp-SG6JRC0gNHhB-HBIBxx"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK",
+      "name": "Java Language Fundamentals",
+      "url": "https://drive.google.com/drive/folders/1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK"
+    }
+  },
+  "java-oop": {
+    "source_container": {
+      "id": "17t_WxpRxaG2KvvjbYJwM0laKbQdXlBXQ",
+      "name": "02_source",
+      "url": "https://drive.google.com/drive/folders/17t_WxpRxaG2KvvjbYJwM0laKbQdXlBXQ"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1tv8SLDEgmhaODtDeM1HTQVqCcult6DhU",
+      "name": "Java OOP",
+      "url": "https://drive.google.com/drive/folders/1tv8SLDEgmhaODtDeM1HTQVqCcult6DhU"
+    }
+  },
+  "linux-foundations": {
+    "source_container": {
+      "id": "1qO9qnKsF-Aof10V7RC8DkCj4YrPDTUnv",
+      "name": "02_source",
+      "url": "https://drive.google.com/drive/folders/1qO9qnKsF-Aof10V7RC8DkCj4YrPDTUnv"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1ilPpEuWyes1hj1xuEwPixQbj8SUbEkR0",
+      "name": "Linux Foundations",
+      "url": "https://drive.google.com/drive/folders/1ilPpEuWyes1hj1xuEwPixQbj8SUbEkR0"
+    }
+  },
+  "non-relational-data": {
+    "source_container": {
+      "id": "1ftWMKHmGEQEHKdKsS8WxrXii3rKy2BCv",
+      "name": "02_source",
+      "url": "https://drive.google.com/drive/folders/1ftWMKHmGEQEHKdKsS8WxrXii3rKy2BCv"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1ikxlBfYTeB_ukUvuprJCz8RDMmK-wqYv",
+      "name": "Non-Relational Data",
+      "url": "https://drive.google.com/drive/folders/1ikxlBfYTeB_ukUvuprJCz8RDMmK-wqYv"
+    }
+  },
+  "pandas": {
+    "source_container": {
+      "id": "1Z6oSgFQGKQEH0MyH4PoZOOXw6P1XrPNg",
+      "name": "02_source",
+      "url": "https://drive.google.com/drive/folders/1Z6oSgFQGKQEH0MyH4PoZOOXw6P1XrPNg"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1rGEdXkwx1oq5ZgKL3EPXKtHRGOn-Da6y",
+      "name": "Pandas",
+      "url": "https://drive.google.com/drive/folders/1rGEdXkwx1oq5ZgKL3EPXKtHRGOn-Da6y"
+    }
+  },
+  "python-basics-for-software-dev": {
+    "source_container": {
+      "id": "1jXoF6uyjifRX5-1B_at3LmNgayobIjL0",
+      "name": "02_source",
+      "url": "https://drive.google.com/drive/folders/1jXoF6uyjifRX5-1B_at3LmNgayobIjL0"
+    },
+    "modules": {},
+    "course_folder": {
+      "id": "1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL",
+      "name": "Python Basics (for Software Dev)",
+      "url": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL"
+    }
+  },
+  "security-and-cybersecurity-fundamentals": {
+    "source_container": {
+      "id": "1cTMI9tuAfEBptboCMV06c4qJ2reEfAhu",
+      "name": "02_source",
+      "url": "https://drive.google.com/drive/folders/1cTMI9tuAfEBptboCMV06c4qJ2reEfAhu"
+    },
+    "modules": {
+      "1": {
+        "id": "1iVL6gffe44xLK_JgLFmgcLxC9rN_-8x0",
+        "name": "Module 1: Introduction to Cybersecurity Concepts",
+        "url": "https://drive.google.com/drive/folders/1iVL6gffe44xLK_JgLFmgcLxC9rN_-8x0"
+      },
+      "2": {
+        "id": "1DPIJNZjDhfQ_o_cVFreIGOt8ZJhMQBMd",
+        "name": "Module 2: Threats, Vulnerabilities, and Mitigations",
+        "url": "https://drive.google.com/drive/folders/1DPIJNZjDhfQ_o_cVFreIGOt8ZJhMQBMd"
+      },
+      "3": {
+        "id": "1YYqYsiOuyUtgESzpBRwMGEXfw_f-P0uQ",
+        "name": "Module 3: Security Architecture",
+        "url": "https://drive.google.com/drive/folders/1YYqYsiOuyUtgESzpBRwMGEXfw_f-P0uQ"
+      },
+      "4": {
+        "id": "1wCHi8X0EsXmUFbNdUsuT5iQCEMafsgbm",
+        "name": "Module 4: Security Operations",
+        "url": "https://drive.google.com/drive/folders/1wCHi8X0EsXmUFbNdUsuT5iQCEMafsgbm"
+      },
+      "5": {
+        "id": "1Eg2NGcn61d-k9q0T-sb5rG0uU1-WljoL",
+        "name": "Module 5: Security Program Management and Oversight",
+        "url": "https://drive.google.com/drive/folders/1Eg2NGcn61d-k9q0T-sb5rG0uU1-WljoL"
+      },
+      "6": {
+        "id": "1EsT2_qnLqD7UZveVeWbXaS2ksvrTnVva",
+        "name": "Module 6: Incident Response and Management",
+        "url": "https://drive.google.com/drive/folders/1EsT2_qnLqD7UZveVeWbXaS2ksvrTnVva"
+      },
+      "7": {
+        "id": "1pgGztBCW-BuPTKjIMiExgydl7WL6SGYJ",
+        "name": "Module 7: Reporting and Communication",
+        "url": "https://drive.google.com/drive/folders/1pgGztBCW-BuPTKjIMiExgydl7WL6SGYJ"
+      }
+    },
+    "course_folder": {
+      "id": "1joUPCKG-lZo1j5aYWzBAsvD_dwgGASy1",
+      "name": "Security and Cybersecurity Fundamentals",
+      "url": "https://drive.google.com/drive/folders/1joUPCKG-lZo1j5aYWzBAsvD_dwgGASy1"
+    }
+  },
+  "aspnet": {
+    "course_folder": {
+      "id": "1SyzTnafr9h0VJCXjJyKCZe4FzuaWsdfQ",
+      "name": "ASP.NET",
+      "url": "https://drive.google.com/drive/folders/1SyzTnafr9h0VJCXjJyKCZe4FzuaWsdfQ"
+    }
+  },
+  "csharp-data-access": {
+    "course_folder": {
+      "id": "1bejAPyvTFN5lhaPD_3Eoaa0alAxgZ6Cj",
+      "name": "C# Data Access",
+      "url": "https://drive.google.com/drive/folders/1bejAPyvTFN5lhaPD_3Eoaa0alAxgZ6Cj"
+    }
+  },
+  "csharp-oop": {
+    "course_folder": {
+      "id": "1LGCFMCWfYHOIoCz8rp5vNxR5JpZ8QQTd",
+      "name": "C# OOP",
+      "url": "https://drive.google.com/drive/folders/1LGCFMCWfYHOIoCz8rp5vNxR5JpZ8QQTd"
+    }
+  },
+  "c-plus-plus-coding-booster-intensive": {
+    "course_folder": {
+      "id": "1JAebFnmxFdqk6_PtvtMHKyf8bi21EOqn",
+      "name": "C++ Coding Booster Intensive",
+      "url": "https://drive.google.com/drive/folders/1JAebFnmxFdqk6_PtvtMHKyf8bi21EOqn"
+    }
+  },
+  "comptia-a-plus": {
+    "course_folder": {
+      "id": "1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o",
+      "name": "CompTIA A+",
+      "url": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o"
+    }
+  },
+  "comptia-network-plus": {
+    "course_folder": {
+      "id": "15YQcw0_TywkjXJ1D0DhQP9CeIPeSMlz0",
+      "name": "CompTIA Network+",
+      "url": "https://drive.google.com/drive/folders/15YQcw0_TywkjXJ1D0DhQP9CeIPeSMlz0"
+    }
+  },
+  "helpdesk-software-fundamentals": {
+    "course_folder": {
+      "id": "1vcee5L9CWraXObjJQwi2KwF-7NTGDdTJ",
+      "name": "Helpdesk Software Fundamentals",
+      "url": "https://drive.google.com/drive/folders/1vcee5L9CWraXObjJQwi2KwF-7NTGDdTJ"
+    }
+  },
+  "http-services": {
+    "course_folder": {
+      "id": "1VzQcpugiLw18KakVlxRROUW4hOuWcKwG",
+      "name": "HTTP Services",
+      "url": "https://drive.google.com/drive/folders/1VzQcpugiLw18KakVlxRROUW4hOuWcKwG"
+    }
+  },
+  "instructor-onboarding": {
+    "course_folder": {
+      "id": "1KehRfpSrrS4gOyhoLgGiGx6SpxAqJbL3",
+      "name": "Instructor Onboarding",
+      "url": "https://drive.google.com/drive/folders/1KehRfpSrrS4gOyhoLgGiGx6SpxAqJbL3"
+    }
+  },
+  "java-coding-booster-intensive": {
+    "course_folder": {
+      "id": "1SH-jSBKboZwxiLQVFaFfcLbGR4gEsh84",
+      "name": "Java Coding Booster Intensive",
+      "url": "https://drive.google.com/drive/folders/1SH-jSBKboZwxiLQVFaFfcLbGR4gEsh84"
+    }
+  },
+  "javascript": {
+    "course_folder": {
+      "id": "12iLgHoqrf4HuxzYCeMG1FY1Mry5yKj2W",
+      "name": "JavaScript",
+      "url": "https://drive.google.com/drive/folders/12iLgHoqrf4HuxzYCeMG1FY1Mry5yKj2W"
+    }
+  },
+  "javascript-coding-booster-intensive": {
+    "course_folder": {
+      "id": "1LeMbVEU2XbZjzjjilc4W-fxEa66rvWJa",
+      "name": "JavaScript Coding Booster Intensive",
+      "url": "https://drive.google.com/drive/folders/1LeMbVEU2XbZjzjjilc4W-fxEa66rvWJa"
+    }
+  },
+  "javascript-react-for-csharp": {
+    "course_folder": {
+      "id": "1YRYWWeYYO6VODNUCLaNcVETeD3MOygkH",
+      "name": "JavaScript React for C#",
+      "url": "https://drive.google.com/drive/folders/1YRYWWeYYO6VODNUCLaNcVETeD3MOygkH"
+    }
+  },
+  "layers-and-file-i-o-for-csharp": {
+    "course_folder": {
+      "id": "1h7usTWg71zrprq3td5ieED2k8eSj2RWi",
+      "name": "Layers and File I/O for C#",
+      "url": "https://drive.google.com/drive/folders/1h7usTWg71zrprq3td5ieED2k8eSj2RWi"
+    }
+  },
+  "linq-and-dependency-injection": {
+    "course_folder": {
+      "id": "1WLARrrkCaPGY5EeQXqqTBZd_2iPcDdcp",
+      "name": "LINQ and Dependency Injection",
+      "url": "https://drive.google.com/drive/folders/1WLARrrkCaPGY5EeQXqqTBZd_2iPcDdcp"
+    }
+  },
+  "macos-administration-fundamentals": {
+    "course_folder": {
+      "id": "1_knrkmWCfrnkEshYoD308zkk_ZIdmpMx",
+      "name": "macOS Administration Fundamentals",
+      "url": "https://drive.google.com/drive/folders/1_knrkmWCfrnkEshYoD308zkk_ZIdmpMx"
+    }
+  },
+  "microsoft-365-endpoint-administrator": {
+    "course_folder": {
+      "id": "1uB-40aGxQOQYt5Jb-61LrFFcsBnxWwSU",
+      "name": "Microsoft 365 Endpoint Administrator",
+      "url": "https://drive.google.com/drive/folders/1uB-40aGxQOQYt5Jb-61LrFFcsBnxWwSU"
+    }
+  },
+  "microsoft-365-fundamentals": {
+    "course_folder": {
+      "id": "1m6xk7KPhOgBuLGOXYfPbf5PinBx5Ir3z",
+      "name": "Microsoft 365 Fundamentals",
+      "url": "https://drive.google.com/drive/folders/1m6xk7KPhOgBuLGOXYfPbf5PinBx5Ir3z"
+    }
+  },
+  "networking-fundamentals": {
+    "course_folder": {
+      "id": "19RvnmX6uP5lLf5KGk5nLl1r_ZAFA1rrZ",
+      "name": "Networking Fundamentals",
+      "url": "https://drive.google.com/drive/folders/19RvnmX6uP5lLf5KGk5nLl1r_ZAFA1rrZ"
+    }
+  },
+  "python-coding-booster-intensive": {
+    "course_folder": {
+      "id": "1b50Og1_ySI4LMLWNzFpZDVizyhcFpNYI",
+      "name": "Python Coding Booster Intensive",
+      "url": "https://drive.google.com/drive/folders/1b50Og1_ySI4LMLWNzFpZDVizyhcFpNYI"
+    }
+  },
+  "react": {
+    "course_folder": {
+      "id": "1G3WGrajgwCOyaHmLpj31kT85xki_nWLA",
+      "name": "React",
+      "url": "https://drive.google.com/drive/folders/1G3WGrajgwCOyaHmLpj31kT85xki_nWLA"
+    }
+  },
+  "software-developer-pre-work": {
+    "course_folder": {
+      "id": "1ie5-gncPzKujrPurgNnc3-Y23flnsRvj",
+      "name": "Software Developer Pre-Work",
+      "url": "https://drive.google.com/drive/folders/1ie5-gncPzKujrPurgNnc3-Y23flnsRvj"
+    }
+  },
+  "software-development-lifecycle": {
+    "course_folder": {
+      "id": "1iVh0NXsgCoSTgYLWGdiPb1YdLWmCxvxb",
+      "name": "Software Development Lifecycle",
+      "url": "https://drive.google.com/drive/folders/1iVh0NXsgCoSTgYLWGdiPb1YdLWmCxvxb"
+    }
+  },
+  "sql-coding-booster-intensive": {
+    "course_folder": {
+      "id": "1V82NKMLAb1kQCR7TjlYqPGmA0Sbe7OG_",
+      "name": "SQL Coding Booster Intensive",
+      "url": "https://drive.google.com/drive/folders/1V82NKMLAb1kQCR7TjlYqPGmA0Sbe7OG_"
+    }
+  },
+  "sql-for-csharp": {
+    "course_folder": {
+      "id": "1cRbfmR099VxfhZ1iGHwZqTyRuMdBZq9w",
+      "name": "SQL for C#",
+      "url": "https://drive.google.com/drive/folders/1cRbfmR099VxfhZ1iGHwZqTyRuMdBZq9w"
+    }
+  },
+  "student-onboarding": {
+    "course_folder": {
+      "id": "1-M5hN2HXwRJs-mg4WpiyQMHMxfY7gUeG",
+      "name": "Student Onboarding",
+      "url": "https://drive.google.com/drive/folders/1-M5hN2HXwRJs-mg4WpiyQMHMxfY7gUeG"
+    }
+  },
+  "troubleshooting-supporting-in-an-enterprise-environment": {
+    "course_folder": {
+      "id": "1toy5qGCgyjMgT1k8ZkGxQvs-dRtK26J7",
+      "name": "Troubleshooting/Supporting in an Enterprise Environment",
+      "url": "https://drive.google.com/drive/folders/1toy5qGCgyjMgT1k8ZkGxQvs-dRtK26J7"
+    }
+  },
+  "web-development-with-javascript": {
+    "course_folder": {
+      "id": "1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv",
+      "name": "Web Development with JavaScript",
+      "url": "https://drive.google.com/drive/folders/1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv"
+    }
+  }
+}
