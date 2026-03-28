@@ -1,0 +1,1008 @@
+// Auto-generated from courses.json — do not edit directly
+const courseData = [
+  {
+    "name": "Advanced Python",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Advanced Python",
+    "outline": "Course Outline: Advanced Python",
+    "note": "Outline and syllabus complete — awaiting manual review",
+    "driveFolder": "https://drive.google.com/drive/folders/1-O-rT_oqlgdo1Qsz-7M0_p0MTblMTJ6v"
+  },
+  {
+    "name": "Agile Project Management with Scrum",
+    "hours": 40,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Agile Project Management with Scrum",
+    "outline": "Course Outline: Agile Project Management with Scrum",
+    "note": "Outline and syllabus complete — awaiting manual review",
+    "driveFolder": "https://drive.google.com/drive/folders/1roPHpPQD1LvTGz1xvWtbv-U-XFqr4VBo"
+  },
+  {
+    "name": "AI Foundations",
+    "hours": 20,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net New",
+    "driveFolder": null
+  },
+  {
+    "name": "ASP.NET",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: ASP.NET",
+    "note": "Outline extracted from C# Fundamentals Module 8 — awaiting manual review and hours estimation",
+    "driveFolder": "https://drive.google.com/drive/folders/1SyzTnafr9h0VJCXjJyKCZe4FzuaWsdfQ"
+  },
+  {
+    "name": "Business Analysis Fundamentals",
+    "hours": 120,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": "https://docs.google.com/document/d/1CVtG0gWmNPmZEK7W-r4O52kV4S_X_Y8XsODDFm5WoRY",
+    "outline": true,
+    "note": "",
+    "driveFolder": "https://drive.google.com/drive/folders/1qotz71155ENbdEa_Fb6CIxc3-DqpAKqt"
+  },
+  {
+    "name": "Business and IT Fundamentals",
+    "hours": 40,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": "https://docs.google.com/document/d/17pj5dW9TVNm2wDfolJDa8Jz2Mtds18d9raiTliZWl6o",
+    "outline": true,
+    "note": "",
+    "driveFolder": "https://drive.google.com/drive/folders/1HksazKP6W9tqSJQWtJPbuEsbmslS7lfS"
+  },
+  {
+    "name": "C# Data Access",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: C# Data Access",
+    "note": "Outline extracted from C# Fundamentals Module 7 — awaiting manual review and hours estimation",
+    "driveFolder": "https://drive.google.com/drive/folders/1bejAPyvTFN5lhaPD_3Eoaa0alAxgZ6Cj"
+  },
+  {
+    "name": "C# Language Fundamentals",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: C# Language Fundamentals",
+    "note": "Outline extracted from C# Fundamentals Module 2 — awaiting manual review and hours estimation",
+    "driveFolder": "https://drive.google.com/drive/folders/187t9XrpPqtcHwhz2J6Jxt6xwqGjb5e0w"
+  },
+  {
+    "name": "C# OOP",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: C# OOP",
+    "note": "Outline extracted from C# Fundamentals Module 3 — awaiting manual review and hours estimation",
+    "driveFolder": "https://drive.google.com/drive/folders/1LGCFMCWfYHOIoCz8rp5vNxR5JpZ8QQTd"
+  },
+  {
+    "name": "C++ Coding Booster Intensive",
+    "hours": 8,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: C++ Coding Booster Intensive",
+    "outline": "Course Outline: C++ Coding Booster Intensive",
+    "note": "One-day intensive workshop for Visa apprentices — full syllabus and lesson plan available",
+    "driveFolder": "https://drive.google.com/drive/folders/1JAebFnmxFdqk6_PtvtMHKyf8bi21EOqn"
+  },
+  {
+    "name": "CI/CD Pipeline Concepts",
+    "hours": 10,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net New",
+    "driveFolder": null
+  },
+  {
+    "name": "Cloud Fundamentals",
+    "hours": 16,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Pacing Guide: IT Support Professional",
+    "note": null,
+    "driveFolder": null
+  },
+  {
+    "name": "Compliance and Security Awareness",
+    "hours": 4,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Existing Content",
+    "driveFolder": null
+  },
+  {
+    "name": "CompTIA A+",
+    "hours": 120,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Curriculum IT Support Professional",
+    "outline": "Course Outline: CompTIA A+",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o"
+  },
+  {
+    "name": "CompTIA Network+",
+    "hours": 96,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: CompTIA Network+",
+    "outline": "Course Outline: CompTIA Network+",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/15YQcw0_TywkjXJ1D0DhQP9CeIPeSMlz0"
+  },
+  {
+    "name": "Data Fundamentals — Data Literacy",
+    "hours": 25,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Data Fundamentals — Data Literacy",
+    "note": "Existing content — full course outline, source docs, instructor guides, and summative quiz in Google Drive",
+    "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"
+  },
+  {
+    "name": "Data Fundamentals — Data Visualizations and Power BI",
+    "hours": 50,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Data Fundamentals — Data Visualizations and Power BI",
+    "note": "Existing content — full course outline, module folders, code-alongs, exercises, labs, and multi-part summative in Google Drive",
+    "driveFolder": "https://drive.google.com/drive/folders/1PwOtz40wQ7-xcscKQTBMRqnVUjpkaM2f"
+  },
+  {
+    "name": "Data Fundamentals — Excel for Data Analysts",
+    "hours": 50,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Data Fundamentals — Excel for Data Analysts",
+    "note": "Existing content — full course outline, instructor guide, course overview, scenario, exercises with learner keys, and summative assessment in Google Drive",
+    "driveFolder": "https://drive.google.com/drive/folders/1RpKaf1sRrbX3F2s6as5fJn6MS1Aj8GB4"
+  },
+  {
+    "name": "Data Fundamentals — SQL for Data",
+    "hours": 50,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Data Fundamentals — SQL for Data",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z"
+  },
+  {
+    "name": "Databases in Java",
+    "hours": 40,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Databases in Java",
+    "outline": "Course Outline: Databases in Java",
+    "note": "Rich source content — 10 content modules, 23 lesson docs, 17 code-alongs, 13 exercises, 4 install guides, 1 lab, summative assessment. INCOMPLETE folder has 4 unfinished modules (Database Programming, BigDecimal, JDBC Template, Advanced JDBC Template). Slides and instructor guides available.",
+    "driveFolder": "https://drive.google.com/drive/folders/1g22pGVb41S-Wzdp-04rB7r5iP7KVid0d"
+  },
+  {
+    "name": "Helpdesk Software Fundamentals",
+    "hours": 16,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Helpdesk Software Fundamentals",
+    "outline": "Course Outline: Helpdesk Software Fundamentals",
+    "note": "Rich source content — 7 lesson docs, 7 quizzes, 6 hands-on activities, slides folder in Google Drive. Covers ITSM fundamentals, helpdesk platforms (Zendesk, Freshdesk, ServiceNow), ticket lifecycle, knowledge management, automation, reporting, and best practices.",
+    "driveFolder": "https://drive.google.com/drive/folders/1vcee5L9CWraXObjJQwi2KwF-7NTGDdTJ"
+  },
+  {
+    "name": "HTTP Services",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: HTTP Services",
+    "note": "No formal course outline doc — outline constructed from two lesson documents in Google Drive. Related to Java M07 JDBC/HTTP Services module.",
+    "driveFolder": "https://drive.google.com/drive/folders/1VzQcpugiLw18KakVlxRROUW4hOuWcKwG"
+  },
+  {
+    "name": "Infrastructure as Code Fundamentals",
+    "hours": 22,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net New",
+    "driveFolder": null
+  },
+  {
+    "name": "Instructor Onboarding",
+    "hours": 48,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Instructor Onboarding",
+    "note": "Existing content — course info doc, full course text, and large combined doc in Google Drive. Originally designed for Java Bootcamp instructor prep, broadly applicable. 2020 draft.",
+    "driveFolder": "https://drive.google.com/drive/folders/1KehRfpSrrS4gOyhoLgGiGx6SpxAqJbL3"
+  },
+  {
+    "name": "Introduction to Advanced Concepts in Java",
+    "hours": 40,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Introduction to Advanced Concepts in Java",
+    "note": "Rich source content — 2 content modules, 16 lesson docs, 3 code-alongs, 10 exercises, 1 lab, 1 module assessment, 2 summative assessments (Sustainable Foraging, Airport Terminal Management System). Covers File I/O, design patterns (repository, domain, MVC), dependency injection, Spring DI (XML and annotations), BigDecimal, temporal types, lambdas, and streams.",
+    "driveFolder": "https://drive.google.com/drive/folders/1XRc60zapZP8beSVim2PUVsuCBNGYZzkF"
+  },
+  {
+    "name": "Introduction to AWS Cloud Platform",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Introduction to AWS Cloud Platform",
+    "note": "Existing content — full course folder with 10 module subfolders and lesson docs in Google Drive. Very large combined doc also available. Referenced as 16h in Cloud Ops Specialist syllabus.",
+    "driveFolder": "https://drive.google.com/drive/folders/1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM"
+  },
+  {
+    "name": "Introduction to Cloud Technology",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Introduction to Cloud Technology",
+    "note": "Existing content — full course outline, course intro, lesson docs, and demos (AWS/Azure/GCP portals) in Google Drive. Referenced as 'Introduction to Cloud' in SWD Java and Cloud Ops syllabi.",
+    "driveFolder": "https://drive.google.com/drive/folders/1JuELDVAwsj5-uOzNh1KXJ5aBTpc5vj4Q"
+  },
+  {
+    "name": "Introduction to GitHub",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Introduction to GitHub",
+    "note": "Existing content — course intro with 12 outcomes, detailed instructor guide with lesson structure, 4 lessons, 5 code-alongs, 1 exercise, quizzes. 8–16h per SWD Java syllabus.",
+    "driveFolder": "https://drive.google.com/drive/folders/1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN"
+  },
+  {
+    "name": "Introduction to HTML & CSS",
+    "hours": 40,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Introduction to HTML & CSS",
+    "outline": "Course Outline: Introduction to HTML & CSS",
+    "note": "Existing content — full syllabus with 3 modules, 40 hours, 16 lessons, 13 code-alongs, 4 exercises, and summative assessment. Part of Software Development Java curriculum as 'HTML & CSS'.",
+    "driveFolder": "https://drive.google.com/drive/folders/16UVQpNFHouifMNadvQzr98pdin5jRgtB"
+  },
+  {
+    "name": "Introduction to Microsoft Teams",
+    "hours": null,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Introduction to Microsoft Teams",
+    "note": "Existing content — 2 lesson docs with instructor guides covering Teams overview and creating/managing Teams & Channels. No formal syllabus. Related to Microsoft 365 Fundamentals track.",
+    "driveFolder": "https://drive.google.com/drive/folders/1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW"
+  },
+  {
+    "name": "IT Fundamentals",
+    "hours": 80,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: IT Fundamentals",
+    "outline": "Course Outline: IT Fundamentals",
+    "note": "Existing content — full syllabus (DRAFT), course intro, instructor guide with 10-day pacing, design document, lab/activity review. 7 modules, 22 lessons, 80 hours. Summative: practical exam + written exam.",
+    "driveFolder": "https://drive.google.com/drive/folders/1fUbJerrPikWKXdvq0NyizzieFLJtkxEe"
+  },
+  {
+    "name": "ITIL Foundations",
+    "hours": 20,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net New",
+    "driveFolder": null
+  },
+  {
+    "name": "ITIL Specialist 4",
+    "hours": 16,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net New",
+    "driveFolder": null
+  },
+  {
+    "name": "Java Coding Booster Intensive",
+    "hours": 16,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Java Coding Booster Intensive",
+    "outline": "Course Outline: Java Coding Booster Intensive",
+    "note": "Existing content — full syllabus, 2-day outline, course intro/conclusion, software requirements, 8 module folders in Google Drive. 16h over 2 days. Visa SWD apprentice intensive with 85% AI-assisted mandate.",
+    "driveFolder": "https://drive.google.com/drive/folders/1SH-jSBKboZwxiLQVFaFfcLbGR4gEsh84"
+  },
+  {
+    "name": "Java Language Fundamentals",
+    "hours": 56,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Curriculum Software Development Java",
+    "outline": "Course Outline: Java Language Fundamentals",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK"
+  },
+  {
+    "name": "Java OOP",
+    "hours": 40,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Java OOP",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1tv8SLDEgmhaODtDeM1HTQVqCcult6DhU"
+  },
+  {
+    "name": "JavaScript",
+    "hours": 16,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Curriculum Software Development Java",
+    "outline": "Course Outline: JavaScript",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/12iLgHoqrf4HuxzYCeMG1FY1Mry5yKj2W"
+  },
+  {
+    "name": "JavaScript Coding Booster Intensive",
+    "hours": 8,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: JavaScript Coding Booster Intensive",
+    "outline": "Course Outline: JavaScript Coding Booster Intensive",
+    "note": "Existing content — full syllabus, course outline, course intro/conclusion, software requirements, 4 module folders in Google Drive. 8h one-day intensive. Visa SWD apprentice front-end simulation with 85% AI-assisted mandate. Dynamics 365 focus.",
+    "driveFolder": "https://drive.google.com/drive/folders/1LeMbVEU2XbZjzjjilc4W-fxEa66rvWJa"
+  },
+  {
+    "name": "JavaScript React for C#",
+    "hours": 40,
+    "status": {
+      "design": "Scoping",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "C# track adaptation of 'Web Development with JavaScript and React' (40h). Course folder exists in Google Drive with assets/examples subfolder but no syllabus or outline docs yet.",
+    "driveFolder": "https://drive.google.com/drive/folders/1YRYWWeYYO6VODNUCLaNcVETeD3MOygkH"
+  },
+  {
+    "name": "Layers and File I/O for C#",
+    "hours": 40,
+    "status": {
+      "design": "In Progress",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: C# Fundamentals (Module 4)",
+    "note": "Module 4 of C# Fundamentals. Rich content: activities, assessments, examples, slides.",
+    "driveFolder": "https://drive.google.com/drive/folders/1h7usTWg71zrprq3td5ieED2k8eSj2RWi"
+  },
+  {
+    "name": "LINQ and Dependency Injection",
+    "hours": 40,
+    "status": {
+      "design": "In Progress",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: C# Fundamentals (Module 5)",
+    "note": "Module 5 of C# Fundamentals. Rich content: activities, assessments, examples.",
+    "driveFolder": "https://drive.google.com/drive/folders/1WLARrrkCaPGY5EeQXqqTBZd_2iPcDdcp"
+  },
+  {
+    "name": "Linux Foundations",
+    "hours": 80,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Linux Foundations",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1ilPpEuWyes1hj1xuEwPixQbj8SUbEkR0"
+  },
+  {
+    "name": "macOS Administration Fundamentals",
+    "hours": 24,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Curriculum IT Support Professional",
+    "outline": "Course Outline: macOS Administration Fundamentals",
+    "note": "IT Support track. Very detailed outline with full lesson plans, labs, quizzes, and capstone.",
+    "driveFolder": "https://drive.google.com/drive/folders/1_knrkmWCfrnkEshYoD308zkk_ZIdmpMx"
+  },
+  {
+    "name": "Microsoft 365 Endpoint Administrator",
+    "hours": 40,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Microsoft 365 Endpoint Administrator",
+    "note": "Rich source content — 11 modules (10 with content, 1 capstone placeholder), 10 lesson docs, 10 quizzes, 10 activities, 9 demos, 4 case studies, slides folder in Google Drive.",
+    "driveFolder": "https://drive.google.com/drive/folders/1uB-40aGxQOQYt5Jb-61LrFFcsBnxWwSU"
+  },
+  {
+    "name": "Microsoft 365 Fundamentals",
+    "hours": 16,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Microsoft 365 Fundamentals",
+    "note": "Rich source content — 4 modules, 8 lesson docs, 8 quizzes, 7 activities, 1 case study in Google Drive. Modules: Cloud Concepts, Productivity and Teamwork, Security and Compliance, Licensing and Support.",
+    "driveFolder": "https://drive.google.com/drive/folders/1m6xk7KPhOgBuLGOXYfPbf5PinBx5Ir3z"
+  },
+  {
+    "name": "Networking Fundamentals",
+    "hours": 220,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": "https://docs.google.com/document/d/1oLG43NJe_zfR9UFE6Ngi7aFCVBXoa6yEwbUq42nuZLQ",
+    "outline": true,
+    "note": "",
+    "driveFolder": "https://drive.google.com/drive/folders/19RvnmX6uP5lLf5KGk5nLl1r_ZAFA1rrZ"
+  },
+  {
+    "name": "Non-Relational Data",
+    "hours": 50,
+    "status": {
+      "design": "In Progress",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Non-Relational Data",
+    "note": "DANL track. Rich content: instructor guide, source docs, videos, PDFs, files. Uses Azure.",
+    "driveFolder": "https://drive.google.com/drive/folders/1ikxlBfYTeB_ukUvuprJCz8RDMmK-wqYv"
+  },
+  {
+    "name": "Pandas",
+    "hours": 50,
+    "status": {
+      "design": "In Progress",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Introduction: Pandas",
+    "note": "DANL track. Rich content: lessons, exercises, Jupyter Notebooks. Uses real-world datasets.",
+    "driveFolder": "https://drive.google.com/drive/folders/1rGEdXkwx1oq5ZgKL3EPXKtHRGOn-Da6y"
+  },
+  {
+    "name": "Productivity Tools for Technical Reporting",
+    "hours": 4,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net New",
+    "driveFolder": null
+  },
+  {
+    "name": "Professional Communication",
+    "hours": 4,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Extract from CompTIA A+",
+    "driveFolder": null
+  },
+  {
+    "name": "Python Basics (for Software Dev)",
+    "hours": 48,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "Syllabus: Course Python Basics for Software Development",
+    "outline": "Course Outline: Python Basics (for Software Dev)",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL"
+  },
+  {
+    "name": "Python Coding Booster Intensive",
+    "hours": 16,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Python Coding Booster Intensive",
+    "note": "Two-day advanced Scrum simulation with AI-assisted engineering",
+    "driveFolder": "https://drive.google.com/drive/folders/1b50Og1_ySI4LMLWNzFpZDVizyhcFpNYI"
+  },
+  {
+    "name": "Python for Infrastructure Automation",
+    "hours": 32,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net New",
+    "driveFolder": null
+  },
+  {
+    "name": "React",
+    "hours": 40,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: React",
+    "note": "Standalone React course — SPAs, hooks, routing, MUI, testing",
+    "driveFolder": "https://drive.google.com/drive/folders/1G3WGrajgwCOyaHmLpj31kT85xki_nWLA"
+  },
+  {
+    "name": "Security and Cybersecurity Fundamentals",
+    "hours": 220,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": "https://docs.google.com/document/d/107K3TF7jGpFCdnsnptD4_EDtjkXgqRC5O-Nn2OIKmFw",
+    "outline": true,
+    "note": "",
+    "driveFolder": "https://drive.google.com/drive/folders/1joUPCKG-lZo1j5aYWzBAsvD_dwgGASy1"
+  },
+  {
+    "name": "Software Developer Pre-Work",
+    "hours": 20,
+    "status": {
+      "design": "In Progress",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Curriculum Outline: Software Developer Pre-Work",
+    "note": "Foundational pre-work for incoming software dev apprentices",
+    "driveFolder": "https://drive.google.com/drive/folders/1ie5-gncPzKujrPurgNnc3-Y23flnsRvj"
+  },
+  {
+    "name": "Software Development Lifecycle",
+    "hours": 24,
+    "status": {
+      "design": "Needs Review",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Software Development Lifecycle",
+    "note": "Full SDLC walkthrough using Personal Budgeting App project",
+    "driveFolder": "https://drive.google.com/drive/folders/1iVh0NXsgCoSTgYLWGdiPb1YdLWmCxvxb"
+  },
+  {
+    "name": "SQL Coding Booster Intensive",
+    "hours": 8,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": "SQL Coding Booster Intensive Syllabus",
+    "outline": "Course Outline: SQL Coding Booster Intensive",
+    "note": "One-day Scrum simulation — ETL, data migration, Dynamics 365",
+    "driveFolder": "https://drive.google.com/drive/folders/1V82NKMLAb1kQCR7TjlYqPGmA0Sbe7OG_"
+  },
+  {
+    "name": "SQL for C#",
+    "hours": 50,
+    "status": {
+      "design": "Scoping",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: SQL for C#",
+    "note": "C# track adaptation of SQL for Data. Drive folder has code assets/examples but no outline docs yet.",
+    "driveFolder": "https://drive.google.com/drive/folders/1cRbfmR099VxfhZ1iGHwZqTyRuMdBZq9w"
+  },
+  {
+    "name": "SQL Fundamentals for Operations",
+    "hours": 20,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Reduce from SQL for Data",
+    "driveFolder": null
+  },
+  {
+    "name": "Student Onboarding",
+    "hours": 8,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Student Onboarding",
+    "note": "Success manual for all incoming apprentices — learning philosophy, strategies, tools setup, policies",
+    "driveFolder": "https://drive.google.com/drive/folders/1-M5hN2HXwRJs-mg4WpiyQMHMxfY7gUeG"
+  },
+  {
+    "name": "Technical Documentation",
+    "hours": 4,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net New",
+    "driveFolder": null
+  },
+  {
+    "name": "Troubleshooting/Supporting in an Enterprise Environment",
+    "hours": 32,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Troubleshooting/Supporting in an Enterprise Environment",
+    "note": "Rich source content — 7 modules, 12 lesson docs, 12 quizzes, 12 activities, 12 demos, 10 case studies in Google Drive. Covers troubleshooting methodology, startup/recovery, Group Policy, hardware/performance, network/remote connectivity, logon/access/security, and OS/applications.",
+    "driveFolder": "https://drive.google.com/drive/folders/1toy5qGCgyjMgT1k8ZkGxQvs-dRtK26J7"
+  },
+  {
+    "name": "Web Development with JavaScript",
+    "hours": 40,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Web Development with JavaScript",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv"
+  }
+];
+
+const curriculaData = [
+  {
+    "name": "Client Technical Support Engineer",
+    "groups": [
+      {
+        "name": "Foundational IT & Operations",
+        "hours": 120,
+        "courses": [
+          {
+            "name": "CompTIA A+"
+          }
+        ]
+      },
+      {
+        "name": "Foundations of IT Service Management",
+        "hours": 42,
+        "courses": [
+          {
+            "name": "Helpdesk Software Fundamentals",
+            "hoursOverride": 13
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cloud Operations Specialist",
+    "syllabus": "https://docs.google.com/document/d/1LAbkN66Y8pTV8iuLa0scT0L0WswWmQ0mSvHVgTXPEQM",
+    "courses": [
+      {
+        "name": "Network Fundamentals",
+        "hoursOverride": 80
+      },
+      {
+        "name": "Introduction to GitHub"
+      },
+      {
+        "name": "Linux Fundamentals",
+        "hoursOverride": 72
+      },
+      {
+        "name": "Database Technologies",
+        "hoursOverride": 48
+      },
+      {
+        "name": "Security Fundamentals",
+        "hoursOverride": 80
+      },
+      {
+        "name": "Python Programming",
+        "hoursOverride": 56
+      },
+      {
+        "name": "Cloud Essentials",
+        "hoursOverride": 80
+      },
+      {
+        "name": "Introduction to AWS Cloud Platform"
+      }
+    ]
+  },
+  {
+    "name": "CyberSecurity Analyst",
+    "syllabus": "https://docs.google.com/document/d/14-ByDX4VgO6S3azaJ9IbUsvJYKr99_7TOzygszBJWSc",
+    "courses": [
+      {
+        "name": "IT Fundamentals",
+        "hoursOverride": 80
+      },
+      {
+        "name": "Networking Fundamentals",
+        "hoursOverride": 220
+      },
+      {
+        "name": "Security and Cybersecurity Fundamentals",
+        "hoursOverride": 220
+      }
+    ]
+  },
+  {
+    "name": "IT Business Analyst",
+    "courses": [
+      {
+        "name": "Linux Foundations"
+      },
+      {
+        "name": "Python Basics (for Software Dev)"
+      },
+      {
+        "name": "Advanced Python"
+      },
+      {
+        "name": "Agile Project Management with Scrum"
+      },
+      {
+        "name": "Python for Infrastructure Automation"
+      }
+    ]
+  },
+  {
+    "name": "IT Support Professional",
+    "courses": [
+      {
+        "name": "CompTIA A+"
+      },
+      {
+        "name": "CompTIA Network+"
+      },
+      {
+        "name": "Microsoft 365 Fundamentals"
+      },
+      {
+        "name": "Microsoft 365 Endpoint Administrator"
+      },
+      {
+        "name": "macOS Administration Fundamentals"
+      },
+      {
+        "name": "Cloud Fundamentals"
+      },
+      {
+        "name": "Troubleshooting/Supporting in an Enterprise Environment"
+      },
+      {
+        "name": "Helpdesk Software Fundamentals"
+      }
+    ]
+  },
+  {
+    "name": "Operations Support Specialist — Network",
+    "groups": [
+      {
+        "name": "Core Systems & Networking Fundamentals",
+        "hours": 176,
+        "note": "RTI Area 1",
+        "courses": [
+          {
+            "name": "Linux Foundations"
+          },
+          {
+            "name": "CompTIA Network+"
+          }
+        ]
+      },
+      {
+        "name": "Reliability Monitoring & Operations",
+        "hours": 132,
+        "note": "RTI Area 2",
+        "courses": [
+          {
+            "name": "CompTIA A+",
+            "hoursOverride": 96
+          },
+          {
+            "name": "ITIL Foundations"
+          },
+          {
+            "name": "ITIL Specialist 4"
+          }
+        ]
+      },
+      {
+        "name": "Programming Automation & CI/CD",
+        "hours": 236,
+        "note": "RTI Area 3",
+        "courses": [
+          {
+            "name": "Python Basics (for Software Dev)"
+          },
+          {
+            "name": "Python for Infrastructure Automation"
+          },
+          {
+            "name": "Java Language Fundamentals",
+            "hoursOverride": 44,
+            "note": "Reduced from 56h for this deployment"
+          },
+          {
+            "name": "Web Development with JavaScript"
+          },
+          {
+            "name": "SQL Fundamentals for Operations"
+          },
+          {
+            "name": "CI/CD Pipeline Concepts"
+          },
+          {
+            "name": "Infrastructure as Code Fundamentals"
+          },
+          {
+            "name": "AI Foundations"
+          }
+        ]
+      },
+      {
+        "name": "Security & Professional Skills",
+        "hours": 16,
+        "note": "RTI Area 4",
+        "courses": [
+          {
+            "name": "Compliance and Security Awareness"
+          },
+          {
+            "name": "Technical Documentation"
+          },
+          {
+            "name": "Productivity Tools for Technical Reporting"
+          },
+          {
+            "name": "Professional Communication"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Software Development Java",
+    "courses": [
+      {
+        "name": "Java Language Fundamentals"
+      },
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "Web Development with JavaScript"
+      },
+      {
+        "name": "Data Fundamentals — SQL for Data"
+      }
+    ]
+  }
+];
+
+const courseStatusMap = {};
+courseData.forEach(c => { courseStatusMap[c.name] = c; });
