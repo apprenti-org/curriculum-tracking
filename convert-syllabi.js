@@ -285,6 +285,23 @@ code {
     font-size: 13px;
     color: var(--sky-blue);
 }
+.review-banner {
+    background: rgba(255, 183, 3, 0.10);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--amber);
+    font-weight: 600;
+}
+.review-banner i {
+    font-size: 16px;
+    flex-shrink: 0;
+}
 `;
 
 function escHtml(s) {
@@ -443,7 +460,8 @@ function parseSyllabusMd(text) {
     return result;
 }
 
-function buildHtml(data) {
+function buildHtml(data, designStatus) {
+    const needsReview = designStatus && designStatus.toLowerCase() === 'needs review';
     let html = `<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
@@ -457,7 +475,7 @@ function buildHtml(data) {
     <div class="page">
         <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
 
-        <div class="header">
+${needsReview ? `        <div class="review-banner"><i class="fa-solid fa-triangle-exclamation"></i> This syllabus is auto-generated and needs review</div>\n` : ''}        <div class="header">
             <h1>Syllabus: ${escHtml(data.title)}</h1>
             <div class="header-meta">
                 ${data.curriculum ? `<span><i class="fa-solid fa-layer-group"></i> ${escHtml(data.curriculum)}</span>` : ''}
@@ -545,6 +563,53 @@ const folders = fs.readdirSync(coursesDir).filter(d => {
     return stat.isDirectory() && d !== '.template' && d !== '.scorm-template';
 });
 
+// Load courses.json to look up design status per course
+const coursesJsonPath = path.join(syllabiDir, '..', 'courses.json');
+const coursesData = JSON.parse(fs.readFileSync(coursesJsonPath, 'utf8'));
+const courseById = {};
+const courseBySlug = {};  // fuzzy: maps folder slugs to course entries
+coursesData.courses.forEach(c => {
+    if (c.id) courseById[c.id] = c;
+});
+// Build slug lookup: for each course, also index by folder-style slug
+// (handles mismatches like "agile-project-management" folder vs "agile-project-management-with-scrum" ID)
+coursesData.courses.forEach(c => {
+    if (!c.id) return;
+    courseBySlug[c.id] = c;
+    // Also try shorter slug: take first 3 words
+    const parts = c.id.split('-');
+    if (parts.length > 3) {
+        const short = parts.slice(0, 3).join('-');
+        if (!courseBySlug[short]) courseBySlug[short] = c;
+    }
+});
+
+function findCourseForFolder(folder) {
+    // Exact match first
+    if (courseById[folder]) return courseById[folder];
+    // Check if any JSON ID contains the folder slug or vice versa
+    for (const c of coursesData.courses) {
+        if (!c.id) continue;
+        if (c.id.includes(folder) || folder.includes(c.id)) return c;
+    }
+    // Word overlap match (handles intro-to-aws vs introduction-to-aws-cloud-platform)
+    const normalize = w => w === 'intro' ? 'introduction' : w;
+    const folderWords = new Set(folder.split('-').filter(w => w.length > 2).map(normalize));
+    let bestMatch = null;
+    let bestScore = 0;
+    for (const c of coursesData.courses) {
+        if (!c.id) continue;
+        const idWords = new Set(c.id.split('-').filter(w => w.length > 2).map(normalize));
+        const overlap = [...folderWords].filter(w => idWords.has(w)).length;
+        const score = overlap / Math.max(folderWords.size, idWords.size);
+        if (overlap >= 2 && score > bestScore) {
+            bestScore = score;
+            bestMatch = c;
+        }
+    }
+    return bestMatch;
+}
+
 const syllabiMap = {};
 let converted = 0;
 let errors = [];
@@ -568,7 +633,9 @@ folders.forEach(folder => {
     }
 
     const htmlFilename = folder + '.html';
-    const html = buildHtml(data);
+    const courseEntry = findCourseForFolder(folder);
+    const designStatus = courseEntry && courseEntry.status ? courseEntry.status.design : null;
+    const html = buildHtml(data, designStatus);
     fs.writeFileSync(path.join(syllabiDir, htmlFilename), html);
 
     // We need to map course names. Read from courses.json
