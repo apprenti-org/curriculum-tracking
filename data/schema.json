@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rti.academy/schemas/curriculum.json",
+  "description": "Schema for RTI Academy curriculum tracking data (courses.json)",
+
+  "type": "object",
+  "required": ["courses", "curricula"],
+
+  "properties": {
+    "courses": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/course" }
+    },
+    "curricula": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/curriculum" }
+    }
+  },
+
+  "definitions": {
+    "course": {
+      "type": "object",
+      "required": ["id", "name", "status"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Stable course identifier (kebab-case). Never changes once set."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display name. Can be updated without breaking references."
+        },
+        "hours": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Total course hours. Null if not yet determined."
+        },
+        "status": {
+          "type": "object",
+          "required": ["design", "development"],
+          "properties": {
+            "design": { "$ref": "#/definitions/statusValue" },
+            "development": { "$ref": "#/definitions/statusValue" }
+          }
+        },
+        "syllabus": {
+          "type": ["string", "null"],
+          "description": "Syllabus reference — Google Doc title, URL, or null"
+        },
+        "outline": {
+          "type": ["string", "boolean", "null"],
+          "description": "Outline reference — title string, boolean, or null"
+        },
+        "note": {
+          "type": ["string", "null"],
+          "description": "Free-text note about course content or status"
+        },
+        "driveFolder": {
+          "type": ["string", "null"],
+          "description": "Google Drive folder URL for source materials"
+        }
+      }
+    },
+
+    "statusValue": {
+      "type": "string",
+      "enum": ["Not Started", "Scoping", "In Progress", "Needs Review", "In Review", "Complete"]
+    },
+
+    "curriculum": {
+      "type": "object",
+      "required": ["name"],
+      "description": "A curriculum has either 'groups' (with nested courses) or a flat 'courses' array",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "syllabus": {
+          "type": ["string", "null"],
+          "description": "Curriculum-level syllabus URL"
+        },
+        "groups": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/group" }
+        },
+        "courses": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/courseRef" }
+        }
+      }
+    },
+
+    "group": {
+      "type": "object",
+      "required": ["name", "courses"],
+      "properties": {
+        "name": { "type": "string" },
+        "hours": { "type": ["integer", "null"] },
+        "note": { "type": ["string", "null"] },
+        "courses": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/courseRef" }
+        }
+      }
+    },
+
+    "courseRef": {
+      "type": "object",
+      "required": ["name"],
+      "description": "Reference to a course within a curriculum. Uses name for display, id for stable linking.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Course display name"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Stable course ID — matches course.id in courses array"
+        },
+        "hoursOverride": {
+          "type": ["integer", "null"],
+          "description": "Per-deployment hour override for this curriculum"
+        },
+        "note": {
+          "type": ["string", "null"],
+          "description": "Per-deployment note"
+        }
+      }
+    }
+  }
+}

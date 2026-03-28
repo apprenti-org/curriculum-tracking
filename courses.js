@@ -843,7 +843,8 @@ const curriculaData = [
         "hours": 120,
         "courses": [
           {
-            "name": "CompTIA A+"
+            "name": "CompTIA A+",
+            "id": "comptia-a-plus"
           }
         ]
       },
@@ -853,7 +854,8 @@ const curriculaData = [
         "courses": [
           {
             "name": "Helpdesk Software Fundamentals",
-            "hoursOverride": 13
+            "hoursOverride": 13,
+            "id": "helpdesk-software-fundamentals"
           }
         ]
       }
@@ -868,7 +870,8 @@ const curriculaData = [
         "hoursOverride": 80
       },
       {
-        "name": "Introduction to GitHub"
+        "name": "Introduction to GitHub",
+        "id": "introduction-to-github"
       },
       {
         "name": "Linux Fundamentals",
@@ -891,7 +894,8 @@ const curriculaData = [
         "hoursOverride": 80
       },
       {
-        "name": "Introduction to AWS Cloud Platform"
+        "name": "Introduction to AWS Cloud Platform",
+        "id": "introduction-to-aws-cloud-platform"
       }
     ]
   },
@@ -901,15 +905,18 @@ const curriculaData = [
     "courses": [
       {
         "name": "IT Fundamentals",
-        "hoursOverride": 80
+        "hoursOverride": 80,
+        "id": "it-fundamentals"
       },
       {
         "name": "Networking Fundamentals",
-        "hoursOverride": 220
+        "hoursOverride": 220,
+        "id": "networking-fundamentals"
       },
       {
         "name": "Security and Cybersecurity Fundamentals",
-        "hoursOverride": 220
+        "hoursOverride": 220,
+        "id": "security-and-cybersecurity-fundamentals"
       }
     ]
   },
@@ -917,19 +924,24 @@ const curriculaData = [
     "name": "IT Business Analyst",
     "courses": [
       {
-        "name": "Linux Foundations"
+        "name": "Linux Foundations",
+        "id": "linux-foundations"
       },
       {
-        "name": "Python Basics (for Software Dev)"
+        "name": "Python Basics (for Software Dev)",
+        "id": "python-basics-for-software-dev"
       },
       {
-        "name": "Advanced Python"
+        "name": "Advanced Python",
+        "id": "advanced-python"
       },
       {
-        "name": "Agile Project Management with Scrum"
+        "name": "Agile Project Management with Scrum",
+        "id": "agile-project-management-with-scrum"
       },
       {
-        "name": "Python for Infrastructure Automation"
+        "name": "Python for Infrastructure Automation",
+        "id": "python-for-infrastructure-automation"
       }
     ]
   },
@@ -937,28 +949,36 @@ const curriculaData = [
     "name": "IT Support Professional",
     "courses": [
       {
-        "name": "CompTIA A+"
+        "name": "CompTIA A+",
+        "id": "comptia-a-plus"
       },
       {
-        "name": "CompTIA Network+"
+        "name": "CompTIA Network+",
+        "id": "comptia-network-plus"
       },
       {
-        "name": "Microsoft 365 Fundamentals"
+        "name": "Microsoft 365 Fundamentals",
+        "id": "microsoft-365-fundamentals"
       },
       {
-        "name": "Microsoft 365 Endpoint Administrator"
+        "name": "Microsoft 365 Endpoint Administrator",
+        "id": "microsoft-365-endpoint-administrator"
       },
       {
-        "name": "macOS Administration Fundamentals"
+        "name": "macOS Administration Fundamentals",
+        "id": "macos-administration-fundamentals"
       },
       {
-        "name": "Cloud Fundamentals"
+        "name": "Cloud Fundamentals",
+        "id": "cloud-fundamentals"
       },
       {
-        "name": "Troubleshooting/Supporting in an Enterprise Environment"
+        "name": "Troubleshooting/Supporting in an Enterprise Environment",
+        "id": "troubleshooting-supporting-in-an-enterprise-environment"
       },
       {
-        "name": "Helpdesk Software Fundamentals"
+        "name": "Helpdesk Software Fundamentals",
+        "id": "helpdesk-software-fundamentals"
       }
     ]
   },
@@ -971,10 +991,12 @@ const curriculaData = [
         "note": "RTI Area 1",
         "courses": [
           {
-            "name": "Linux Foundations"
+            "name": "Linux Foundations",
+            "id": "linux-foundations"
           },
           {
-            "name": "CompTIA Network+"
+            "name": "CompTIA Network+",
+            "id": "comptia-network-plus"
           }
         ]
       },
@@ -985,13 +1007,16 @@ const curriculaData = [
         "courses": [
           {
             "name": "CompTIA A+",
-            "hoursOverride": 96
+            "hoursOverride": 96,
+            "id": "comptia-a-plus"
           },
           {
-            "name": "ITIL Foundations"
+            "name": "ITIL Foundations",
+            "id": "itil-foundations"
           },
           {
-            "name": "ITIL Specialist 4"
+            "name": "ITIL Specialist 4",
+            "id": "itil-specialist-4"
           }
         ]
       },
@@ -1001,30 +1026,38 @@ const curriculaData = [
         "note": "RTI Area 3",
         "courses": [
           {
-            "name": "Python Basics (for Software Dev)"
+            "name": "Python Basics (for Software Dev)",
+            "id": "python-basics-for-software-dev"
           },
           {
-            "name": "Python for Infrastructure Automation"
+            "name": "Python for Infrastructure Automation",
+            "id": "python-for-infrastructure-automation"
           },
           {
             "name": "Java Language Fundamentals",
             "hoursOverride": 44,
-            "note": "Reduced from 56h for this deployment"
+            "note": "Reduced from 56h for this deployment",
+            "id": "java-language-fundamentals"
           },
           {
-            "name": "Web Development with JavaScript"
+            "name": "Web Development with JavaScript",
+            "id": "web-development-with-javascript"
           },
           {
-            "name": "SQL Fundamentals for Operations"
+            "name": "SQL Fundamentals for Operations",
+            "id": "sql-fundamentals-for-operations"
           },
           {
-            "name": "CI/CD Pipeline Concepts"
+            "name": "CI/CD Pipeline Concepts",
+            "id": "ci-cd-pipeline-concepts"
           },
           {
-            "name": "Infrastructure as Code Fundamentals"
+            "name": "Infrastructure as Code Fundamentals",
+            "id": "infrastructure-as-code-fundamentals"
           },
           {
-            "name": "AI Foundations"
+            "name": "AI Foundations",
+            "id": "ai-foundations"
           }
         ]
       },
@@ -1034,16 +1067,20 @@ const curriculaData = [
         "note": "RTI Area 4",
         "courses": [
           {
-            "name": "Compliance and Security Awareness"
+            "name": "Compliance and Security Awareness",
+            "id": "compliance-and-security-awareness"
           },
           {
-            "name": "Technical Documentation"
+            "name": "Technical Documentation",
+            "id": "technical-documentation"
           },
           {
-            "name": "Productivity Tools for Technical Reporting"
+            "name": "Productivity Tools for Technical Reporting",
+            "id": "productivity-tools-for-technical-reporting"
           },
           {
-            "name": "Professional Communication"
+            "name": "Professional Communication",
+            "id": "professional-communication"
           }
         ]
       }
@@ -1053,16 +1090,20 @@ const curriculaData = [
     "name": "Software Development Java",
     "courses": [
       {
-        "name": "Java Language Fundamentals"
+        "name": "Java Language Fundamentals",
+        "id": "java-language-fundamentals"
       },
       {
-        "name": "JavaScript"
+        "name": "JavaScript",
+        "id": "javascript"
       },
       {
-        "name": "Web Development with JavaScript"
+        "name": "Web Development with JavaScript",
+        "id": "web-development-with-javascript"
       },
       {
-        "name": "Data Fundamentals — SQL for Data"
+        "name": "Data Fundamentals — SQL for Data",
+        "id": "data-fundamentals-sql-for-data"
       }
     ]
   }
