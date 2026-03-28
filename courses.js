@@ -1,6 +1,7 @@
 // Auto-generated from courses.json — do not edit directly
 const courseData = [
   {
+    "id": "advanced-python",
     "name": "Advanced Python",
     "hours": null,
     "status": {
@@ -13,6 +14,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1-O-rT_oqlgdo1Qsz-7M0_p0MTblMTJ6v"
   },
   {
+    "id": "agile-project-management-with-scrum",
     "name": "Agile Project Management with Scrum",
     "hours": 40,
     "status": {
@@ -25,6 +27,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1roPHpPQD1LvTGz1xvWtbv-U-XFqr4VBo"
   },
   {
+    "id": "ai-foundations",
     "name": "AI Foundations",
     "hours": 20,
     "status": {
@@ -37,6 +40,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "aspnet",
     "name": "ASP.NET",
     "hours": null,
     "status": {
@@ -49,6 +53,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1SyzTnafr9h0VJCXjJyKCZe4FzuaWsdfQ"
   },
   {
+    "id": "business-analysis-fundamentals",
     "name": "Business Analysis Fundamentals",
     "hours": 120,
     "status": {
@@ -61,6 +66,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1qotz71155ENbdEa_Fb6CIxc3-DqpAKqt"
   },
   {
+    "id": "business-and-it-fundamentals",
     "name": "Business and IT Fundamentals",
     "hours": 40,
     "status": {
@@ -73,6 +79,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1HksazKP6W9tqSJQWtJPbuEsbmslS7lfS"
   },
   {
+    "id": "csharp-data-access",
     "name": "C# Data Access",
     "hours": null,
     "status": {
@@ -85,6 +92,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1bejAPyvTFN5lhaPD_3Eoaa0alAxgZ6Cj"
   },
   {
+    "id": "csharp-language-fundamentals",
     "name": "C# Language Fundamentals",
     "hours": null,
     "status": {
@@ -97,6 +105,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/187t9XrpPqtcHwhz2J6Jxt6xwqGjb5e0w"
   },
   {
+    "id": "csharp-oop",
     "name": "C# OOP",
     "hours": null,
     "status": {
@@ -109,6 +118,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1LGCFMCWfYHOIoCz8rp5vNxR5JpZ8QQTd"
   },
   {
+    "id": "c-plus-plus-coding-booster-intensive",
     "name": "C++ Coding Booster Intensive",
     "hours": 8,
     "status": {
@@ -121,6 +131,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1JAebFnmxFdqk6_PtvtMHKyf8bi21EOqn"
   },
   {
+    "id": "ci-cd-pipeline-concepts",
     "name": "CI/CD Pipeline Concepts",
     "hours": 10,
     "status": {
@@ -133,6 +144,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "cloud-fundamentals",
     "name": "Cloud Fundamentals",
     "hours": 16,
     "status": {
@@ -145,6 +157,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "compliance-and-security-awareness",
     "name": "Compliance and Security Awareness",
     "hours": 4,
     "status": {
@@ -157,6 +170,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "comptia-a-plus",
     "name": "CompTIA A+",
     "hours": 120,
     "status": {
@@ -169,6 +183,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o"
   },
   {
+    "id": "comptia-network-plus",
     "name": "CompTIA Network+",
     "hours": 96,
     "status": {
@@ -181,6 +196,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/15YQcw0_TywkjXJ1D0DhQP9CeIPeSMlz0"
   },
   {
+    "id": "data-fundamentals-data-literacy",
     "name": "Data Fundamentals — Data Literacy",
     "hours": 25,
     "status": {
@@ -193,6 +209,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"
   },
   {
+    "id": "data-fundamentals-data-visualizations-and-power-bi",
     "name": "Data Fundamentals — Data Visualizations and Power BI",
     "hours": 50,
     "status": {
@@ -205,6 +222,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1PwOtz40wQ7-xcscKQTBMRqnVUjpkaM2f"
   },
   {
+    "id": "data-fundamentals-excel-for-data-analysts",
     "name": "Data Fundamentals — Excel for Data Analysts",
     "hours": 50,
     "status": {
@@ -217,6 +235,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1RpKaf1sRrbX3F2s6as5fJn6MS1Aj8GB4"
   },
   {
+    "id": "data-fundamentals-sql-for-data",
     "name": "Data Fundamentals — SQL for Data",
     "hours": 50,
     "status": {
@@ -229,6 +248,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z"
   },
   {
+    "id": "databases-in-java",
     "name": "Databases in Java",
     "hours": 40,
     "status": {
@@ -241,6 +261,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1g22pGVb41S-Wzdp-04rB7r5iP7KVid0d"
   },
   {
+    "id": "helpdesk-software-fundamentals",
     "name": "Helpdesk Software Fundamentals",
     "hours": 16,
     "status": {
@@ -253,6 +274,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1vcee5L9CWraXObjJQwi2KwF-7NTGDdTJ"
   },
   {
+    "id": "http-services",
     "name": "HTTP Services",
     "hours": null,
     "status": {
@@ -265,6 +287,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1VzQcpugiLw18KakVlxRROUW4hOuWcKwG"
   },
   {
+    "id": "infrastructure-as-code-fundamentals",
     "name": "Infrastructure as Code Fundamentals",
     "hours": 22,
     "status": {
@@ -277,6 +300,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "instructor-onboarding",
     "name": "Instructor Onboarding",
     "hours": 48,
     "status": {
@@ -289,6 +313,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1KehRfpSrrS4gOyhoLgGiGx6SpxAqJbL3"
   },
   {
+    "id": "introduction-to-advanced-concepts-in-java",
     "name": "Introduction to Advanced Concepts in Java",
     "hours": 40,
     "status": {
@@ -301,6 +326,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1XRc60zapZP8beSVim2PUVsuCBNGYZzkF"
   },
   {
+    "id": "introduction-to-aws-cloud-platform",
     "name": "Introduction to AWS Cloud Platform",
     "hours": null,
     "status": {
@@ -313,6 +339,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM"
   },
   {
+    "id": "introduction-to-cloud-technology",
     "name": "Introduction to Cloud Technology",
     "hours": null,
     "status": {
@@ -325,6 +352,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1JuELDVAwsj5-uOzNh1KXJ5aBTpc5vj4Q"
   },
   {
+    "id": "introduction-to-github",
     "name": "Introduction to GitHub",
     "hours": null,
     "status": {
@@ -337,6 +365,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN"
   },
   {
+    "id": "introduction-to-html-and-css",
     "name": "Introduction to HTML & CSS",
     "hours": 40,
     "status": {
@@ -349,6 +378,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/16UVQpNFHouifMNadvQzr98pdin5jRgtB"
   },
   {
+    "id": "introduction-to-microsoft-teams",
     "name": "Introduction to Microsoft Teams",
     "hours": null,
     "status": {
@@ -361,6 +391,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW"
   },
   {
+    "id": "it-fundamentals",
     "name": "IT Fundamentals",
     "hours": 80,
     "status": {
@@ -373,6 +404,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1fUbJerrPikWKXdvq0NyizzieFLJtkxEe"
   },
   {
+    "id": "itil-foundations",
     "name": "ITIL Foundations",
     "hours": 20,
     "status": {
@@ -385,6 +417,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "itil-specialist-4",
     "name": "ITIL Specialist 4",
     "hours": 16,
     "status": {
@@ -397,6 +430,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "java-coding-booster-intensive",
     "name": "Java Coding Booster Intensive",
     "hours": 16,
     "status": {
@@ -409,6 +443,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1SH-jSBKboZwxiLQVFaFfcLbGR4gEsh84"
   },
   {
+    "id": "java-language-fundamentals",
     "name": "Java Language Fundamentals",
     "hours": 56,
     "status": {
@@ -421,6 +456,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK"
   },
   {
+    "id": "java-oop",
     "name": "Java OOP",
     "hours": 40,
     "status": {
@@ -433,6 +469,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1tv8SLDEgmhaODtDeM1HTQVqCcult6DhU"
   },
   {
+    "id": "javascript",
     "name": "JavaScript",
     "hours": 16,
     "status": {
@@ -445,6 +482,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/12iLgHoqrf4HuxzYCeMG1FY1Mry5yKj2W"
   },
   {
+    "id": "javascript-coding-booster-intensive",
     "name": "JavaScript Coding Booster Intensive",
     "hours": 8,
     "status": {
@@ -457,6 +495,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1LeMbVEU2XbZjzjjilc4W-fxEa66rvWJa"
   },
   {
+    "id": "javascript-react-for-csharp",
     "name": "JavaScript React for C#",
     "hours": 40,
     "status": {
@@ -469,6 +508,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1YRYWWeYYO6VODNUCLaNcVETeD3MOygkH"
   },
   {
+    "id": "layers-and-file-i-o-for-csharp",
     "name": "Layers and File I/O for C#",
     "hours": 40,
     "status": {
@@ -481,6 +521,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1h7usTWg71zrprq3td5ieED2k8eSj2RWi"
   },
   {
+    "id": "linq-and-dependency-injection",
     "name": "LINQ and Dependency Injection",
     "hours": 40,
     "status": {
@@ -493,6 +534,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1WLARrrkCaPGY5EeQXqqTBZd_2iPcDdcp"
   },
   {
+    "id": "linux-foundations",
     "name": "Linux Foundations",
     "hours": 80,
     "status": {
@@ -505,6 +547,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1ilPpEuWyes1hj1xuEwPixQbj8SUbEkR0"
   },
   {
+    "id": "macos-administration-fundamentals",
     "name": "macOS Administration Fundamentals",
     "hours": 24,
     "status": {
@@ -517,6 +560,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1_knrkmWCfrnkEshYoD308zkk_ZIdmpMx"
   },
   {
+    "id": "microsoft-365-endpoint-administrator",
     "name": "Microsoft 365 Endpoint Administrator",
     "hours": 40,
     "status": {
@@ -529,6 +573,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1uB-40aGxQOQYt5Jb-61LrFFcsBnxWwSU"
   },
   {
+    "id": "microsoft-365-fundamentals",
     "name": "Microsoft 365 Fundamentals",
     "hours": 16,
     "status": {
@@ -541,6 +586,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1m6xk7KPhOgBuLGOXYfPbf5PinBx5Ir3z"
   },
   {
+    "id": "networking-fundamentals",
     "name": "Networking Fundamentals",
     "hours": 220,
     "status": {
@@ -553,6 +599,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/19RvnmX6uP5lLf5KGk5nLl1r_ZAFA1rrZ"
   },
   {
+    "id": "non-relational-data",
     "name": "Non-Relational Data",
     "hours": 50,
     "status": {
@@ -565,6 +612,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1ikxlBfYTeB_ukUvuprJCz8RDMmK-wqYv"
   },
   {
+    "id": "pandas",
     "name": "Pandas",
     "hours": 50,
     "status": {
@@ -577,6 +625,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1rGEdXkwx1oq5ZgKL3EPXKtHRGOn-Da6y"
   },
   {
+    "id": "productivity-tools-for-technical-reporting",
     "name": "Productivity Tools for Technical Reporting",
     "hours": 4,
     "status": {
@@ -589,6 +638,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "professional-communication",
     "name": "Professional Communication",
     "hours": 4,
     "status": {
@@ -601,6 +651,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "python-basics-for-software-dev",
     "name": "Python Basics (for Software Dev)",
     "hours": 48,
     "status": {
@@ -613,6 +664,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL"
   },
   {
+    "id": "python-coding-booster-intensive",
     "name": "Python Coding Booster Intensive",
     "hours": 16,
     "status": {
@@ -625,6 +677,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1b50Og1_ySI4LMLWNzFpZDVizyhcFpNYI"
   },
   {
+    "id": "python-for-infrastructure-automation",
     "name": "Python for Infrastructure Automation",
     "hours": 32,
     "status": {
@@ -637,6 +690,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "react",
     "name": "React",
     "hours": 40,
     "status": {
@@ -649,6 +703,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1G3WGrajgwCOyaHmLpj31kT85xki_nWLA"
   },
   {
+    "id": "security-and-cybersecurity-fundamentals",
     "name": "Security and Cybersecurity Fundamentals",
     "hours": 220,
     "status": {
@@ -661,6 +716,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1joUPCKG-lZo1j5aYWzBAsvD_dwgGASy1"
   },
   {
+    "id": "software-developer-pre-work",
     "name": "Software Developer Pre-Work",
     "hours": 20,
     "status": {
@@ -673,6 +729,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1ie5-gncPzKujrPurgNnc3-Y23flnsRvj"
   },
   {
+    "id": "software-development-lifecycle",
     "name": "Software Development Lifecycle",
     "hours": 24,
     "status": {
@@ -685,6 +742,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1iVh0NXsgCoSTgYLWGdiPb1YdLWmCxvxb"
   },
   {
+    "id": "sql-coding-booster-intensive",
     "name": "SQL Coding Booster Intensive",
     "hours": 8,
     "status": {
@@ -697,6 +755,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1V82NKMLAb1kQCR7TjlYqPGmA0Sbe7OG_"
   },
   {
+    "id": "sql-for-csharp",
     "name": "SQL for C#",
     "hours": 50,
     "status": {
@@ -709,6 +768,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1cRbfmR099VxfhZ1iGHwZqTyRuMdBZq9w"
   },
   {
+    "id": "sql-fundamentals-for-operations",
     "name": "SQL Fundamentals for Operations",
     "hours": 20,
     "status": {
@@ -721,6 +781,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "student-onboarding",
     "name": "Student Onboarding",
     "hours": 8,
     "status": {
@@ -733,6 +794,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1-M5hN2HXwRJs-mg4WpiyQMHMxfY7gUeG"
   },
   {
+    "id": "technical-documentation",
     "name": "Technical Documentation",
     "hours": 4,
     "status": {
@@ -745,6 +807,7 @@ const courseData = [
     "driveFolder": null
   },
   {
+    "id": "troubleshooting-supporting-in-an-enterprise-environment",
     "name": "Troubleshooting/Supporting in an Enterprise Environment",
     "hours": 32,
     "status": {
@@ -757,6 +820,7 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1toy5qGCgyjMgT1k8ZkGxQvs-dRtK26J7"
   },
   {
+    "id": "web-development-with-javascript",
     "name": "Web Development with JavaScript",
     "hours": 40,
     "status": {
@@ -779,7 +843,8 @@ const curriculaData = [
         "hours": 120,
         "courses": [
           {
-            "name": "CompTIA A+"
+            "name": "CompTIA A+",
+            "id": "comptia-a-plus"
           }
         ]
       },
@@ -789,7 +854,8 @@ const curriculaData = [
         "courses": [
           {
             "name": "Helpdesk Software Fundamentals",
-            "hoursOverride": 13
+            "hoursOverride": 13,
+            "id": "helpdesk-software-fundamentals"
           }
         ]
       }
@@ -804,7 +870,8 @@ const curriculaData = [
         "hoursOverride": 80
       },
       {
-        "name": "Introduction to GitHub"
+        "name": "Introduction to GitHub",
+        "id": "introduction-to-github"
       },
       {
         "name": "Linux Fundamentals",
@@ -827,7 +894,8 @@ const curriculaData = [
         "hoursOverride": 80
       },
       {
-        "name": "Introduction to AWS Cloud Platform"
+        "name": "Introduction to AWS Cloud Platform",
+        "id": "introduction-to-aws-cloud-platform"
       }
     ]
   },
@@ -837,15 +905,18 @@ const curriculaData = [
     "courses": [
       {
         "name": "IT Fundamentals",
-        "hoursOverride": 80
+        "hoursOverride": 80,
+        "id": "it-fundamentals"
       },
       {
         "name": "Networking Fundamentals",
-        "hoursOverride": 220
+        "hoursOverride": 220,
+        "id": "networking-fundamentals"
       },
       {
         "name": "Security and Cybersecurity Fundamentals",
-        "hoursOverride": 220
+        "hoursOverride": 220,
+        "id": "security-and-cybersecurity-fundamentals"
       }
     ]
   },
@@ -853,19 +924,24 @@ const curriculaData = [
     "name": "IT Business Analyst",
     "courses": [
       {
-        "name": "Linux Foundations"
+        "name": "Linux Foundations",
+        "id": "linux-foundations"
       },
       {
-        "name": "Python Basics (for Software Dev)"
+        "name": "Python Basics (for Software Dev)",
+        "id": "python-basics-for-software-dev"
       },
       {
-        "name": "Advanced Python"
+        "name": "Advanced Python",
+        "id": "advanced-python"
       },
       {
-        "name": "Agile Project Management with Scrum"
+        "name": "Agile Project Management with Scrum",
+        "id": "agile-project-management-with-scrum"
       },
       {
-        "name": "Python for Infrastructure Automation"
+        "name": "Python for Infrastructure Automation",
+        "id": "python-for-infrastructure-automation"
       }
     ]
   },
@@ -873,28 +949,36 @@ const curriculaData = [
     "name": "IT Support Professional",
     "courses": [
       {
-        "name": "CompTIA A+"
+        "name": "CompTIA A+",
+        "id": "comptia-a-plus"
       },
       {
-        "name": "CompTIA Network+"
+        "name": "CompTIA Network+",
+        "id": "comptia-network-plus"
       },
       {
-        "name": "Microsoft 365 Fundamentals"
+        "name": "Microsoft 365 Fundamentals",
+        "id": "microsoft-365-fundamentals"
       },
       {
-        "name": "Microsoft 365 Endpoint Administrator"
+        "name": "Microsoft 365 Endpoint Administrator",
+        "id": "microsoft-365-endpoint-administrator"
       },
       {
-        "name": "macOS Administration Fundamentals"
+        "name": "macOS Administration Fundamentals",
+        "id": "macos-administration-fundamentals"
       },
       {
-        "name": "Cloud Fundamentals"
+        "name": "Cloud Fundamentals",
+        "id": "cloud-fundamentals"
       },
       {
-        "name": "Troubleshooting/Supporting in an Enterprise Environment"
+        "name": "Troubleshooting/Supporting in an Enterprise Environment",
+        "id": "troubleshooting-supporting-in-an-enterprise-environment"
       },
       {
-        "name": "Helpdesk Software Fundamentals"
+        "name": "Helpdesk Software Fundamentals",
+        "id": "helpdesk-software-fundamentals"
       }
     ]
   },
@@ -907,10 +991,12 @@ const curriculaData = [
         "note": "RTI Area 1",
         "courses": [
           {
-            "name": "Linux Foundations"
+            "name": "Linux Foundations",
+            "id": "linux-foundations"
           },
           {
-            "name": "CompTIA Network+"
+            "name": "CompTIA Network+",
+            "id": "comptia-network-plus"
           }
         ]
       },
@@ -921,13 +1007,16 @@ const curriculaData = [
         "courses": [
           {
             "name": "CompTIA A+",
-            "hoursOverride": 96
+            "hoursOverride": 96,
+            "id": "comptia-a-plus"
           },
           {
-            "name": "ITIL Foundations"
+            "name": "ITIL Foundations",
+            "id": "itil-foundations"
           },
           {
-            "name": "ITIL Specialist 4"
+            "name": "ITIL Specialist 4",
+            "id": "itil-specialist-4"
           }
         ]
       },
@@ -937,30 +1026,38 @@ const curriculaData = [
         "note": "RTI Area 3",
         "courses": [
           {
-            "name": "Python Basics (for Software Dev)"
+            "name": "Python Basics (for Software Dev)",
+            "id": "python-basics-for-software-dev"
           },
           {
-            "name": "Python for Infrastructure Automation"
+            "name": "Python for Infrastructure Automation",
+            "id": "python-for-infrastructure-automation"
           },
           {
             "name": "Java Language Fundamentals",
             "hoursOverride": 44,
-            "note": "Reduced from 56h for this deployment"
+            "note": "Reduced from 56h for this deployment",
+            "id": "java-language-fundamentals"
           },
           {
-            "name": "Web Development with JavaScript"
+            "name": "Web Development with JavaScript",
+            "id": "web-development-with-javascript"
           },
           {
-            "name": "SQL Fundamentals for Operations"
+            "name": "SQL Fundamentals for Operations",
+            "id": "sql-fundamentals-for-operations"
           },
           {
-            "name": "CI/CD Pipeline Concepts"
+            "name": "CI/CD Pipeline Concepts",
+            "id": "ci-cd-pipeline-concepts"
           },
           {
-            "name": "Infrastructure as Code Fundamentals"
+            "name": "Infrastructure as Code Fundamentals",
+            "id": "infrastructure-as-code-fundamentals"
           },
           {
-            "name": "AI Foundations"
+            "name": "AI Foundations",
+            "id": "ai-foundations"
           }
         ]
       },
@@ -970,16 +1067,20 @@ const curriculaData = [
         "note": "RTI Area 4",
         "courses": [
           {
-            "name": "Compliance and Security Awareness"
+            "name": "Compliance and Security Awareness",
+            "id": "compliance-and-security-awareness"
           },
           {
-            "name": "Technical Documentation"
+            "name": "Technical Documentation",
+            "id": "technical-documentation"
           },
           {
-            "name": "Productivity Tools for Technical Reporting"
+            "name": "Productivity Tools for Technical Reporting",
+            "id": "productivity-tools-for-technical-reporting"
           },
           {
-            "name": "Professional Communication"
+            "name": "Professional Communication",
+            "id": "professional-communication"
           }
         ]
       }
@@ -989,20 +1090,27 @@ const curriculaData = [
     "name": "Software Development Java",
     "courses": [
       {
-        "name": "Java Language Fundamentals"
+        "name": "Java Language Fundamentals",
+        "id": "java-language-fundamentals"
       },
       {
-        "name": "JavaScript"
+        "name": "JavaScript",
+        "id": "javascript"
       },
       {
-        "name": "Web Development with JavaScript"
+        "name": "Web Development with JavaScript",
+        "id": "web-development-with-javascript"
       },
       {
-        "name": "Data Fundamentals — SQL for Data"
+        "name": "Data Fundamentals — SQL for Data",
+        "id": "data-fundamentals-sql-for-data"
       }
     ]
   }
 ];
 
 const courseStatusMap = {};
-courseData.forEach(c => { courseStatusMap[c.name] = c; });
+courseData.forEach(c => {
+  courseStatusMap[c.name] = c;
+  if (c.id) courseStatusMap[c.id] = c;
+});
