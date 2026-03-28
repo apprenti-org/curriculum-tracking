@@ -19,7 +19,6 @@ var STATUS_CLASSES = {
 var syllabiMap = {
     'Advanced Python': 'advanced-python.html',
     'Agile Project Management with Scrum': 'agile-project-management.html',
-    'AI Foundations': 'ai-foundations.html',
     'ASP.NET': 'aspnet.html',
     'Business Analysis Fundamentals': 'business-analysis-fundamentals.html',
     'Business and IT Fundamentals': 'business-and-it-fundamentals.html',
