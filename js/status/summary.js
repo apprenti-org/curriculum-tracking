@@ -1,9 +1,14 @@
 /**
- * Status page — summary cards and progress bars
- * Depends on: STATUSES (constants.js), contentData (init.js — but contentData is
- *             declared before this file runs via script order)
+ * Status page summary and progress bars
+ * Depends on: STATUSES (from shared/constants.js)
+ *             contentData (from status/init.js — loaded before this runs via renderAll)
+ *
+ * Exposes: computeSummary(), renderSummary(), renderProgress()
  */
 
+/**
+ * Compute summary counts from contentData
+ */
 function computeSummary() {
     var total = contentData.length;
     return {
@@ -15,6 +20,9 @@ function computeSummary() {
     };
 }
 
+/**
+ * Render the summary cards bar
+ */
 function renderSummary() {
     var s = computeSummary();
     document.getElementById('summary-bar').innerHTML =
@@ -24,16 +32,22 @@ function renderSummary() {
         '<div class="summary-card"><div class="label">Overall Progress</div><div class="value">' + Math.round(((s.designComplete + s.devComplete) / (s.total * 2)) * 100) + '%</div><div class="sub">Design + Development combined</div></div>';
 }
 
+/**
+ * Render the design/development progress bar section
+ */
 function renderProgress() {
     var total = contentData.length;
+
     function countByStatus(field) {
         var c = {};
         STATUSES.forEach(function(s) { c[s] = 0; });
         contentData.forEach(function(x) { c[x[field]]++; });
         return c;
     }
+
     var dc = countByStatus('designStatus');
     var dv = countByStatus('devStatus');
+
     function barSegments(counts) {
         return STATUSES.map(function(s) {
             var pct = total > 0 ? (counts[s] / total) * 100 : 0;
@@ -41,6 +55,7 @@ function renderProgress() {
             return '<div class="progress-segment ' + cls + '" style="width:' + pct + '%" title="' + s + ': ' + counts[s] + '"></div>';
         }).join('');
     }
+
     document.getElementById('progress-section').innerHTML =
         '<div class="progress-row">' +
             '<div class="progress-block"><h3>Design Track</h3><div class="progress-bar-container">' + barSegments(dc) + '</div>' +

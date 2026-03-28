@@ -1,25 +1,20 @@
 /**
- * Dashboard initialization — must be loaded last
- * Depends on: buildDashboard (nav-builder.js), selectCourse (detail-panel.js)
+ * Dashboard initialization — wires up event listeners and kicks off rendering
+ * Depends on: buildDashboard() (from nav-builder.js)
+ *             selectCourse() (from detail-panel.js)
+ *
+ * This must be the LAST dashboard script loaded.
  */
 
 buildDashboard();
 
-// Event listeners for curriculum headers, group headers, and course items
+// Event delegation for nav interactions
 document.querySelectorAll('.curriculum-header').forEach(function(el) {
-    el.addEventListener('click', function() {
-        el.closest('.curriculum-group').classList.toggle('collapsed');
-    });
+    el.addEventListener('click', function() { el.closest('.curriculum-group').classList.toggle('collapsed'); });
 });
-
 document.querySelectorAll('.nav-group-header').forEach(function(el) {
-    el.addEventListener('click', function() {
-        el.classList.toggle('collapsed');
-    });
+    el.addEventListener('click', function() { el.classList.toggle('collapsed'); });
 });
-
 document.querySelectorAll('.nav-course-item').forEach(function(el) {
-    el.addEventListener('click', function() {
-        selectCourse(el);
-    });
+    el.addEventListener('click', function() { selectCourse(el); });
 });

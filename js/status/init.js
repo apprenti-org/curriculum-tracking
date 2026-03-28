@@ -1,7 +1,11 @@
 /**
- * Status page initialization — must be loaded last among status scripts
- * Depends on: courseData (courses.js), membershipMap (data-store.js),
- *             renderSummary, renderProgress (summary.js), renderTable (table.js)
+ * Status page initialization — builds data structures and kicks off rendering
+ * Depends on: courseData, curriculaData (from courses.js)
+ *             membershipMap (from shared/data-store.js)
+ *             renderSummary, renderProgress (from status/summary.js)
+ *             renderTable (from status/table.js)
+ *
+ * This must be the LAST status script loaded.
  */
 
 // Build content data array from courseData + membershipMap
@@ -18,23 +22,25 @@ var contentData = courseData.map(function(c) {
     };
 });
 
-// Build all unique curriculum names for filter chips
+// Build unique curriculum names for filter chips
 var allCurricula = [];
-var _seen = {};
-contentData.forEach(function(d) {
-    d.membership.forEach(function(m) {
-        if (!_seen[m.curriculum]) {
-            _seen[m.curriculum] = true;
-            allCurricula.push(m.curriculum);
-        }
+(function() {
+    var seen = {};
+    contentData.forEach(function(d) {
+        d.membership.forEach(function(m) {
+            if (!seen[m.curriculum]) {
+                seen[m.curriculum] = true;
+                allCurricula.push(m.curriculum);
+            }
+        });
     });
-});
+})();
 
-// Page state
+// Filter and dropdown state
 var activeFilter = 'all';
 var activeDropdown = null;
 
-// Close dropdown on outside click
+// Close dropdowns on outside click
 document.addEventListener('click', function() {
     if (activeDropdown) {
         activeDropdown.classList.remove('open');
@@ -42,6 +48,9 @@ document.addEventListener('click', function() {
     }
 });
 
+/**
+ * Re-render all status page sections
+ */
 function renderAll() {
     renderSummary();
     renderProgress();

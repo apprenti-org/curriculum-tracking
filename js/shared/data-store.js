@@ -1,41 +1,39 @@
 /**
- * Shared data store — lookup maps built from courseData and curriculaData
+ * Shared data store builders — used by both dashboard and status pages
  * Depends on: courseData, curriculaData (from courses.js)
+ *
+ * Builds lookup maps that other scripts consume:
+ *   courseLookup  — course name/id → course object
+ *   membershipMap — course id/name → array of { curriculum, group, hoursOverride }
  */
 
-// Build a lookup map: course name and id → course object
+// Course lookup: keyed by both name and id for flexible access
 var courseLookup = {};
 courseData.forEach(function(c) {
     courseLookup[c.name] = c;
     if (c.id) courseLookup[c.id] = c;
 });
 
-// Build curriculum membership map from curriculaData
-// Maps course id/name → array of { curriculum, group, hoursOverride }
+// Membership map: which curricula contain each course
 var membershipMap = {};
 curriculaData.forEach(function(cur) {
     var curName = cur.name;
+
+    function addRef(ref, groupName) {
+        var key = ref.id || ref.name;
+        if (!membershipMap[key]) membershipMap[key] = [];
+        membershipMap[key].push({
+            curriculum: curName,
+            group: groupName || undefined,
+            hoursOverride: ref.hoursOverride || undefined
+        });
+    }
+
     if (cur.groups) {
         cur.groups.forEach(function(g) {
-            g.courses.forEach(function(gc) {
-                var key = gc.id || gc.name;
-                if (!membershipMap[key]) membershipMap[key] = [];
-                membershipMap[key].push({
-                    curriculum: curName,
-                    group: g.name,
-                    hoursOverride: gc.hoursOverride || undefined
-                });
-            });
+            g.courses.forEach(function(gc) { addRef(gc, g.name); });
         });
     } else if (cur.courses) {
-        cur.courses.forEach(function(cc) {
-            var key = cc.id || cc.name;
-            if (!membershipMap[key]) membershipMap[key] = [];
-            membershipMap[key].push({
-                curriculum: curName,
-                group: undefined,
-                hoursOverride: cc.hoursOverride || undefined
-            });
-        });
+        cur.courses.forEach(function(cc) { addRef(cc, undefined); });
     }
 });

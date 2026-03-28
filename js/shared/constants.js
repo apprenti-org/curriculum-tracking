@@ -1,12 +1,10 @@
 /**
- * Shared constants — loaded first among shared files
- * No dependencies
+ * Shared constants — used by both dashboard and status pages
+ * Depends on: nothing (load first among shared files)
  */
 
-// Ordered status values used across dashboard and status pages
+// Status enum values and their CSS class mappings
 var STATUSES = ['Not Started', 'Scoping', 'In Progress', 'Needs Review', 'In Review', 'Complete'];
-
-// CSS class mapping for status values
 var STATUS_CLASSES = {
     'Not Started': 'not-started',
     'Scoping': 'scoping',
