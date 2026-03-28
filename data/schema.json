@@ -108,28 +108,55 @@
     },
 
     "courseRef": {
-      "type": "object",
-      "required": ["name"],
-      "description": "Reference to a course within a curriculum. Uses name for display, id for stable linking.",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Course display name"
-        },
-        "id": {
+      "description": "Reference to a course within a curriculum. Three formats: (1) plain ID string for simple refs, (2) object with 'id' + optional overrides, (3) legacy object with 'name' only (deprecated, for unresolved refs).",
+      "oneOf": [
+        {
           "type": "string",
           "pattern": "^[a-z0-9-]+$",
-          "description": "Stable course ID — matches course.id in courses array"
+          "description": "Simple ref — course ID string (most common)"
         },
-        "hoursOverride": {
-          "type": ["integer", "null"],
-          "description": "Per-deployment hour override for this curriculum"
+        {
+          "type": "object",
+          "required": ["id"],
+          "description": "Override ref — course ID with per-curriculum overrides",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$",
+              "description": "Stable course ID"
+            },
+            "hoursOverride": {
+              "type": ["integer", "null"],
+              "description": "Per-curriculum hour override"
+            },
+            "note": {
+              "type": ["string", "null"],
+              "description": "Per-curriculum note"
+            }
+          },
+          "additionalProperties": false
         },
-        "note": {
-          "type": ["string", "null"],
-          "description": "Per-deployment note"
+        {
+          "type": "object",
+          "required": ["name"],
+          "description": "Legacy ref — name-only, no matching course ID (deprecated). Will generate build warnings.",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Course display name (unresolved — no matching course in system)"
+            },
+            "hoursOverride": {
+              "type": ["integer", "null"],
+              "description": "Per-curriculum hour override"
+            },
+            "note": {
+              "type": ["string", "null"],
+              "description": "Per-curriculum note"
+            }
+          },
+          "additionalProperties": false
         }
-      }
+      ]
     }
   }
 }

@@ -854,8 +854,8 @@ const curriculaData = [
         "courses": [
           {
             "name": "Helpdesk Software Fundamentals",
-            "hoursOverride": 13,
-            "id": "helpdesk-software-fundamentals"
+            "id": "helpdesk-software-fundamentals",
+            "hoursOverride": 13
           }
         ]
       }
@@ -905,18 +905,18 @@ const curriculaData = [
     "courses": [
       {
         "name": "IT Fundamentals",
-        "hoursOverride": 80,
-        "id": "it-fundamentals"
+        "id": "it-fundamentals",
+        "hoursOverride": 80
       },
       {
         "name": "Networking Fundamentals",
-        "hoursOverride": 220,
-        "id": "networking-fundamentals"
+        "id": "networking-fundamentals",
+        "hoursOverride": 220
       },
       {
         "name": "Security and Cybersecurity Fundamentals",
-        "hoursOverride": 220,
-        "id": "security-and-cybersecurity-fundamentals"
+        "id": "security-and-cybersecurity-fundamentals",
+        "hoursOverride": 220
       }
     ]
   },
@@ -1007,8 +1007,8 @@ const curriculaData = [
         "courses": [
           {
             "name": "CompTIA A+",
-            "hoursOverride": 96,
-            "id": "comptia-a-plus"
+            "id": "comptia-a-plus",
+            "hoursOverride": 96
           },
           {
             "name": "ITIL Foundations",
@@ -1035,9 +1035,9 @@ const curriculaData = [
           },
           {
             "name": "Java Language Fundamentals",
+            "id": "java-language-fundamentals",
             "hoursOverride": 44,
-            "note": "Reduced from 56h for this deployment",
-            "id": "java-language-fundamentals"
+            "note": "Reduced from 56h for this deployment"
           },
           {
             "name": "Web Development with JavaScript",
