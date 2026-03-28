@@ -44,23 +44,19 @@ Modernizes the fragile manual build process:
 ---
 
 ### 03-CODE-ARCHITECTURE.md
-**Priority:** 🔴 High | **Effort:** 3-4 weeks
+**Priority:** 🔴 High | **Status:** Phase 1 (CSS/JS extraction) ✅ Complete
 
-Breaks up the monolithic 900+ line HTML file:
-- Single file contains everything (HTML, CSS, JS)
-- String-based component generation (hard to read, maintain)
-- Global variables (data corruption risk)
-- No code reuse (status.html duplicates code)
-- No lazy loading (all outlines loaded at startup)
+Original design called for full ES6 modularization. Actual implementation was scoped to work with `file://` protocol constraints:
 
-**Key recommendations:**
-- Modular ES6 architecture with separate files
-- Reusable component classes (CourseCard, OutlineView, etc.)
-- Central DataStore for state management
-- Lazy-load course outlines on demand
-- Separate concerns: data, components, UI, styling
+**Completed (Issue #3):**
+- Extracted CSS into 4 organized files (`css/`)
+- Extracted JS into 4 organized files (`js/`)
+- Both HTML files reduced to ~50-line thin shells
+- Shared code reused across pages (auth, theme)
 
-**Impact:** Makes code maintainable, testable, and scalable for hundreds of courses.
+**Remaining (Issues #10, #11):**
+- Further JS modularization into focused components
+- Curriculum reference restructuring to ID-only format
 
 ---
 
@@ -98,29 +94,24 @@ Comprehensive review of the entire system with:
 
 ---
 
-## Recommended Implementation Order
+## Implementation Status
 
-**Phase 1: Foundation (Weeks 1-3)**
-1. **01-DATA-MODEL** — Add IDs and validation
-   - Low risk (additive, non-breaking)
-   - Foundation for everything else
-   - Can migrate gradually
+**Phase 1: Foundation ✅ Complete**
+1. **Issue #1** — Build Process (PR #6 merged)
+2. **Issue #2** — Data Model & Stable IDs (PR #7 merged)
+3. **Issue #4** — Architecture Documentation (PR #5 merged)
 
-2. **02-BUILD-PROCESS** — Automate builds
-   - Enables easier testing of other changes
-   - Parallel with data model work
+**Phase 2: Code Quality — In Progress**
+4. **Issue #3** — CSS/JS Extraction ✅ (PR #8 merged)
+5. **Issue #5** — (see GitHub)
+6. **Issue #10** — JS Component Modularization (open)
+7. **Issue #11** — Curriculum Reference Restructuring (open)
 
-**Phase 2: Code Quality (Weeks 4-7)**
-3. **03-CODE-ARCHITECTURE** — Modularize frontend
-   - Now that build is automated
-   - Can test components independently
-   - Improve maintainability
-
-**Phase 3: Advanced Features (Weeks 8+)**
-4. User-facing course editor
-5. LMS integration (sync with Absorb)
-6. Versioning and change tracking
-7. Search and filtering
+**Phase 3: Advanced Features (Future)**
+8. User-facing course editor
+9. LMS integration (sync with Absorb)
+10. Versioning and change tracking
+11. Search and filtering
 
 ---
 
@@ -195,3 +186,5 @@ For questions not covered, add a new document or update this README.
 ---
 
 **Last updated:** March 28, 2026
+
+See [GITHUB_ISSUES.md](./GITHUB_ISSUES.md) for full issue descriptions and [IMPLEMENTATION_ROADMAP.md](./IMPLEMENTATION_ROADMAP.md) for the detailed roadmap.

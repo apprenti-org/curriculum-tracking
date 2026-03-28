@@ -56,3 +56,7 @@ The formal JSON Schema definition is at `data/schema.json`. It defines:
 ## Known data issues
 
 The Cloud Operations Specialist curriculum references 6 courses by names that don't match any course in the courses array ("Network Fundamentals", "Linux Fundamentals", etc.). These entries don't have IDs because there's no matching course to link to. This should be resolved by either adding those courses or correcting the names.
+
+---
+
+**Last updated:** March 28, 2026

@@ -1,480 +1,210 @@
 # Design Document: Code Architecture & Frontend Modularization
 
-**Status:** Monolithic HTML/JS
+**Status:** Phase 1 (CSS/JS extraction) ✅ Complete (Issue #3, PR #8) — further modularization in Issues #10, #11
 **Priority:** High (Maintainability)
 **Complexity:** High
-**Estimated Effort:** 3-4 weeks
+**Estimated Effort:** 3-4 weeks total (1 week for extraction, 2-3 weeks for modularization)
+**Actual Effort (Phase 1):** ~1 week
 
 ---
 
-## Current Problems
+## Problems Identified
 
-### 1. Single 900+ Line HTML File
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    /* 300+ lines of CSS embedded */
-  </style>
-</head>
-<body>
-  <!-- HTML structure -->
-
-  <script>
-    // 1000+ lines of JavaScript
-    // - Authentication
-    // - Theme management
-    // - Dashboard logic
-    // - Course selection
-    // - Detail panel rendering
-    // - Event handling
-  </script>
-</body>
-</html>
-```
-
-**Issues:**
-- Hard to find code
-- No separation of concerns
-- All data loading at startup
-- No component reuse (index.html vs status.html duplicate code)
-- Hard to test
-- Hard to refactor
-- CSS tightly coupled to markup
+### 1. Monolithic HTML Files
+- `index.html` was 877 lines — embedded CSS, JavaScript, and markup in a single file
+- `status.html` was 502 lines — similar monolithic structure
+- Hard to find code, no separation of concerns, hard to refactor
 
 ### 2. String-Based HTML Generation
 ```javascript
 html += `<div class="course-card">
-  <div class="course-header">
-    <h2>${courseName}</h2>
-    <div class="detail-meta">
-      ${course.hours ? `<span>...${course.hours}...</span>` : ''}
-      ...
-    </div>
-  </div>
-  ...
+  <div class="course-header"><h2>${courseName}</h2>...</div>
 </div>`;
 ```
+No syntax highlighting in context, easy to break with quotes/escaping.
 
-**Issues:**
-- Hard to read
-- No syntax highlighting
-- Easy to break with quotes/escaping
-- No way to test components in isolation
-- Duplicated across files
-
-### 3. Global Variable Pollution
-```javascript
-// Global variables
-const courseData = [...];
-const curriculaData = [...];
-const courseOutlines = {...};
-const courseStatusMap = {...};
-
-// Any code can modify these
-courseData.push({...});  // Silent data corruption
-```
+### 3. Duplicated Code Across Pages
+- Authentication logic duplicated in both pages
+- Theme toggle duplicated in both pages
+- No shared utilities
 
 ### 4. No Lazy Loading
-```javascript
-// All outlines loaded at startup, even if user never views them
-const courseOutlines = {
-  'Advanced Python': {...1000 lines...},
-  'Agile Project Management': {...1000 lines...},
-  // ... 50+ more courses
-};
-```
+All outlines loaded at startup even if user never views them.
 
 ---
 
-## Proposed Solution: Modular ES6 Architecture
+## Design Decision: Plain `<script>` Tags vs ES6 Modules
 
-### 1. Project Structure
+The original design proposed full ES6 module architecture with `import`/`export`, class-based components (DataStore, CourseCard, OutlineView), and optionally a module bundler (Webpack/Vite).
 
-```
-src/
-├── index.html                        # Main page
-├── status.html                       # Status page
-├── js/
-│  ├── main.js                       # Entry point
-│  ├── status-main.js                # Status page entry
-│  ├── app/
-│  │  ├── Dashboard.js               # Main dashboard component
-│  │  ├── StatusPage.js              # Status page component
-│  │  └── ThemeManager.js            # Theme handling
-│  ├── components/
-│  │  ├── CourseCard.js              # Reusable course card
-│  │  ├── CourseDetail.js            # Course detail view
-│  │  ├── CurriculumNav.js           # Left navigation
-│  │  ├── StatusBadge.js             # Status indicator
-│  │  └── OutlineView.js             # Course outline display
-│  ├── data/
-│  │  ├── DataStore.js               # Central data management
-│  │  ├── loader.js                  # Load courses.json
-│  │  └── outlinesLoader.js          # Lazy load outline JSONs
-│  ├── utils/
-│  │  ├── formatters.js              # Format hours, status, etc.
-│  │  ├── validators.js              # Data validation
-│  │  └── dom.js                     # DOM helpers
-│  └── auth/
-│     └── PasswordAuth.js            # Authentication
-├── css/
-│  ├── variables.css                 # CSS custom properties
-│  ├── base.css                      # Base styles, reset
-│  ├── layout.css                    # Grid, flex layouts
-│  ├── components.css                # Component styles
-│  ├── theme.css                     # Light/dark theme
-│  └── responsive.css                # Mobile styles
-├── templates/
-│  ├── courseCard.html               # Handlebars/template
-│  ├── outlineView.html
-│  └── ...
-└── assets/
-   └── (icons, fonts, images)
-```
+**This was not implemented.** The dashboard must work over `file://` protocol (opened directly from the filesystem, no web server). ES6 modules require CORS headers that browsers block for `file://` URLs. Instead, the implementation uses plain `<script>` tags with global variables — the same pattern as the original code, but organized into separate files.
 
-### 2. Entry Point: main.js
+This is the right trade-off for a `file://`-based dashboard. If the project later moves to a web server, ES6 modules could be adopted, but for now the extraction into separate files achieves the core maintainability goals without breaking the deployment model.
 
-```javascript
-// src/js/main.js
-import { Dashboard } from './app/Dashboard.js';
-import { DataStore } from './data/DataStore.js';
-import { loadCourses } from './data/loader.js';
-import { ThemeManager } from './app/ThemeManager.js';
-import { PasswordAuth } from './auth/PasswordAuth.js';
+---
 
-async function main() {
-  try {
-    // 1. Handle authentication
-    const auth = new PasswordAuth('46370cc0ad1ce253322c468038a362be0895cedb');
-    if (!await auth.authenticate()) {
-      return; // User not authenticated
-    }
+## What Was Implemented (Issue #3, PR #8)
 
-    // 2. Initialize theme
-    const theme = new ThemeManager();
-    theme.init();
+### Phase 1: CSS Extraction — 4 Files
 
-    // 3. Load data
-    const courses = await loadCourses('data/courses.json');
+| File | Purpose | Scope |
+|---|---|---|
+| `css/variables.css` | CSS custom properties for dark/light themes | Shared |
+| `css/base.css` | Reset, body, header, footer, auth gate, construction banner, membership tags, theme toggle | Shared |
+| `css/dashboard.css` | Two-column layout, nav panel, stats bar, curriculum groups, detail panel, outline display | Dashboard only |
+| `css/status.css` | Summary bar, progress bars, filter chips, data table, status pills/dropdowns | Status only |
 
-    // 4. Initialize data store
-    const dataStore = new DataStore();
-    dataStore.loadCourses(courses);
+**Key design choices:**
+- `variables.css` defines the color system; both page-specific CSS files can override variables (e.g., `status.css` overrides `--text-secondary` and `--text-muted` for dark mode)
+- `base.css` scopes shared styles that appear on both pages
+- Page-specific CSS uses body class selectors (`.dashboard-page`, `.status-page`) to avoid conflicts (e.g., `.status-page .status-dot` overrides `base.css`'s `.status-dot`)
 
-    // 5. Create and render dashboard
-    const dashboard = new Dashboard(dataStore);
-    await dashboard.render('#app');
+### Phase 2: JS Extraction — 4 Files
 
-  } catch (error) {
-    console.error('Failed to initialize dashboard:', error);
-    showErrorScreen(error);
-  }
-}
+| File | Purpose | Lines | Scope |
+|---|---|---|---|
+| `js/auth.js` | SHA-1 password gate IIFE with sessionStorage persistence | ~38 | Shared |
+| `js/theme.js` | `initTheme()`, `toggleTheme()`, `updateToggleIcon()` with localStorage | ~27 | Shared |
+| `js/dashboard.js` | syllabiMap, courseLookup, curriculumMap, buildDashboard(), selectCourse(), all rendering | ~335 | Dashboard only |
+| `js/status-main.js` | STATUSES, membershipMap, contentData, summary/progress/table rendering, filters, dropdowns | ~155 | Status only |
 
-// Handle DOMContentLoaded
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', main);
-} else {
-  main();
-}
-```
+**Key design choices:**
+- `auth.js` is an IIFE that runs immediately — blocks page until authenticated
+- `theme.js` exposes global `initTheme()` and `toggleTheme()` functions
+- Page JS files depend on data bundles (`courses.js`, `outlines/outlines.js`) being loaded first
+- All files use global scope — no modules, no bundler
 
-### 3. Data Store Component
+### HTML Shells Rewritten
 
-```javascript
-// src/js/data/DataStore.js
-export class DataStore {
-  constructor() {
-    this.courses = new Map();
-    this.curricula = new Map();
-    this.outlines = new Map();
-    this.listeners = new Set();
-  }
-
-  loadCourses(courseData) {
-    courseData.forEach(c => {
-      this.courses.set(c.id, c);
-    });
-    this.notifyListeners('courses-loaded');
-  }
-
-  loadCurricula(curriculaData) {
-    curriculaData.forEach(c => {
-      this.curricula.set(c.id, c);
-    });
-    this.notifyListeners('curricula-loaded');
-  }
-
-  getCourse(id) {
-    return this.courses.get(id);
-  }
-
-  getAllCourses() {
-    return Array.from(this.courses.values());
-  }
-
-  getCurriculum(id) {
-    return this.curricula.get(id);
-  }
-
-  async getOutline(courseId) {
-    // Lazy load outline
-    if (!this.outlines.has(courseId)) {
-      const outline = await this.loadOutline(courseId);
-      this.outlines.set(courseId, outline);
-      this.notifyListeners('outline-loaded', { courseId });
-    }
-    return this.outlines.get(courseId);
-  }
-
-  async loadOutline(courseId) {
-    const response = await fetch(`data/outlines/${courseId}.json`);
-    if (!response.ok) {
-      throw new Error(`Failed to load outline: ${courseId}`);
-    }
-    return response.json();
-  }
-
-  // Observer pattern for reactive updates
-  subscribe(callback) {
-    this.listeners.add(callback);
-    return () => this.listeners.delete(callback);
-  }
-
-  notifyListeners(event, data) {
-    this.listeners.forEach(callback => callback(event, data));
-  }
-}
-```
-
-### 4. Reusable Components
-
-```javascript
-// src/js/components/CourseCard.js
-export class CourseCard {
-  constructor(course, outline = null) {
-    this.course = course;
-    this.outline = outline;
-  }
-
-  render() {
-    const hasOutline = !!this.outline;
-    const statusIcon = this.getStatusIcon();
-
-    return `
-      <div class="course-card" data-course-id="${this.course.id}">
-        <div class="course-card__header">
-          <span class="course-card__status-icon ${statusIcon.class}">${statusIcon.icon}</span>
-          <h3 class="course-card__title">${this.course.name}</h3>
-        </div>
-        <div class="course-card__meta">
-          ${this.course.hours ? `<span class="meta-item"><i class="icon-clock"></i> ${this.course.hours}h</span>` : ''}
-          ${hasOutline ? `<span class="meta-item"><i class="icon-check"></i> Outline</span>` : ''}
-        </div>
-      </div>
-    `;
-  }
-
-  getStatusIcon() {
-    const design = this.course.status?.design;
-    if (design === 'Complete') {
-      return { icon: '✓', class: 'status-complete' };
-    } else if (design === 'In Progress') {
-      return { icon: '◐', class: 'status-in-progress' };
-    }
-    return { icon: '○', class: 'status-not-started' };
-  }
-
-  // Can be tested independently
-  static create(course, outline) {
-    return new CourseCard(course, outline);
-  }
-}
-```
-
-```javascript
-// src/js/components/OutlineView.js
-export class OutlineView {
-  constructor(outline) {
-    this.outline = outline;
-  }
-
-  render() {
-    if (!this.outline) {
-      return `<div class="outline-empty">No outline loaded</div>`;
-    }
-
-    return `
-      <div class="outline-view">
-        <div class="outline-header">
-          <h3>${this.outline.course}</h3>
-          <span class="outline-meta">${this.outline.totalModules} modules • ${this.outline.totalLessons} lessons</span>
-        </div>
-        <div class="modules">
-          ${this.outline.modules.map((m, i) => this.renderModule(m, i)).join('')}
-        </div>
-      </div>
-    `;
-  }
-
-  renderModule(module, index) {
-    return `
-      <div class="module" data-module-index="${index}">
-        <div class="module__header">
-          <i class="icon-chevron"></i>
-          <span class="module__title">Module ${index + 1}: ${module.name}</span>
-          <span class="module__meta">${module.hours}h</span>
-        </div>
-        <div class="module__lessons">
-          ${module.lessons.map(l => this.renderLesson(l)).join('')}
-        </div>
-      </div>
-    `;
-  }
-
-  renderLesson(lesson) {
-    return `
-      <div class="lesson">
-        <span class="lesson__title">${lesson.title}</span>
-        ${lesson.hours ? `<span class="lesson__hours">${lesson.hours}h</span>` : ''}
-      </div>
-    `;
-  }
-}
-```
-
-### 5. Minimal HTML
-
+**`index.html`** (877 → 57 lines):
 ```html
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Dashboard</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>Curriculum Dashboard</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-  <div id="auth-container"></div>
-  <div id="app"></div>
-
-  <script type="module" src="js/main.js"></script>
+<body class="dashboard-page">
+    <!-- Header, nav container, detail container -->
+    <script src="js/auth.js"></script>
+    <script src="outlines/outlines.js"></script>
+    <script src="courses.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>
 ```
 
-### 6. Separate CSS Files
+**`status.html`** (502 → 48 lines): same pattern with `css/status.css` and `js/status-main.js`.
 
-```css
-/* src/css/variables.css */
-:root[data-theme="dark"] {
-  --bg: #111117;
-  --surface: #1A1B23;
-  --text-primary: #F0F0EC;
-  /* ... */
-}
-
-/* src/css/base.css */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: system-ui; ... }
-
-/* src/css/components.css */
-.course-card { ... }
-.course-card__header { ... }
-.outline-view { ... }
-
-/* src/css/responsive.css */
-@media (max-width: 768px) { ... }
-```
-
-```javascript
-// src/css/main.css
-@import 'variables.css';
-@import 'base.css';
-@import 'layout.css';
-@import 'components.css';
-@import 'theme.css';
-@import 'responsive.css';
-```
+**Script load order matters:**
+1. `auth.js` — blocks until authenticated
+2. `outlines/outlines.js` — loads `courseOutlines` (dashboard only)
+3. `courses.js` — loads `courseData`, `curriculaData`, `courseStatusMap`
+4. `theme.js` — initializes theme
+5. Page JS — uses globals from steps 2-4
 
 ---
 
-## Testing
+## Project Structure (Current)
 
-With this modular structure, components can be tested independently:
-
-```javascript
-// test/CourseCard.test.js
-import { CourseCard } from '../src/js/components/CourseCard.js';
-
-describe('CourseCard', () => {
-  it('should render course name', () => {
-    const course = { id: 'test', name: 'Test Course', hours: 40, status: { design: 'Complete' } };
-    const card = new CourseCard(course);
-    const html = card.render();
-    expect(html).toContain('Test Course');
-  });
-
-  it('should show status icon', () => {
-    const course = { id: 'test', name: 'Test', hours: 40, status: { design: 'Complete' } };
-    const card = new CourseCard(course);
-    const icon = card.getStatusIcon();
-    expect(icon.class).toBe('status-complete');
-  });
-});
+```
+tracking/repo/
+├── index.html              # Thin shell (~57 lines)
+├── status.html             # Thin shell (~48 lines)
+├── css/
+│   ├── variables.css       # Shared theme variables (~68 lines)
+│   ├── base.css            # Shared base styles (~108 lines)
+│   ├── dashboard.css       # Dashboard-specific (~285 lines)
+│   └── status.css          # Status page-specific (~176 lines)
+├── js/
+│   ├── auth.js             # Shared auth gate (~38 lines)
+│   ├── theme.js            # Shared theme toggle (~27 lines)
+│   ├── dashboard.js        # Dashboard page logic (~335 lines)
+│   └── status-main.js      # Status page logic (~155 lines)
+├── courses.js              # Auto-generated data bundle
+├── outlines/
+│   └── outlines.js         # Auto-generated outline bundle
+└── ...
 ```
 
 ---
 
-## Migration Path
+## Remaining Work
 
-### Phase 1: Extract CSS
-1. Move `<style>` to `src/css/main.css`
-2. Update `<link rel="stylesheet">`
-3. Keep everything else the same
+### Issue #10: JS Component Modularization
 
-### Phase 2: Create Data Module
-1. Create DataStore.js
-2. Load courses into DataStore instead of globals
-3. Update dashboard code to use DataStore
-4. Add subscribe() for reactive updates
+`dashboard.js` (~335 lines) and `status-main.js` (~155 lines) are still monolithic. Issue #10 will break them into focused files (~100 lines each):
 
-### Phase 3: Create Components
-1. Extract CourseCard rendering to component
-2. Extract CurriculumNav rendering to component
-3. Gradually replace string concatenation
+```
+js/
+├── auth.js              # (exists) Shared auth gate
+├── theme.js             # (exists) Shared theme toggle
+├── shared/
+│   ├── data-store.js    # courseLookup, membershipMap, curriculumMap builders
+│   ├── formatters.js    # Status icons, membership HTML builders
+│   └── constants.js     # STATUSES, STATUS_CLASSES, syllabiMap
+├── dashboard/
+│   ├── nav-builder.js   # buildDashboard(), buildCurriculumSummary(), buildNavItemFromCourse()
+│   ├── detail-panel.js  # selectCourse(), outline rendering
+│   └── init.js          # Dashboard initialization
+└── status/
+    ├── summary.js       # computeSummary(), renderSummary(), renderProgress()
+    ├── table.js         # renderTable(), filter logic, dropdown logic
+    └── init.js          # Status page initialization
+```
 
-### Phase 4: Module System
-1. Convert to ES6 modules
-2. Add module bundler (Webpack/Vite)
-3. Split entry points (main.js, status-main.js)
+Still plain `<script>` tags. No ES6 modules.
+
+### Issue #11: Curriculum Reference Restructuring
+
+Simplify curriculum course refs from `{ name, id, hoursOverride }` objects to plain ID strings (or `{ id, hoursOverride }` when overrides are needed). This affects both `courses.json` data and the JS code that resolves references.
 
 ---
 
-## Benefits
+## Original ES6 Design (Not Implemented)
 
-✅ **Maintainable** — Code is organized, easy to find
-✅ **Testable** — Components can be tested independently
-✅ **Reusable** — Components work in multiple pages
-✅ **Scalable** — Easy to add new features
-✅ **Performant** — Lazy load outlines, tree-shake unused code
-✅ **Developer experience** — Syntax highlighting, IDE support, debugging
+For reference, the original design proposed:
+- ES6 modules with `import`/`export`
+- Class-based components (`Dashboard`, `CourseCard`, `OutlineView`, `DataStore`)
+- Observer pattern for reactive updates
+- Lazy-loading outlines via `fetch()`
+- Optional module bundler (Webpack/Vite)
+- Unit testing with component isolation
+
+This architecture would be appropriate if the dashboard moves to server-hosted deployment. The current `file://` constraint makes this infeasible without a build step that bundles everything into a single file.
+
+---
+
+## Benefits Achieved
+
+✅ **Separation of concerns** — CSS, JS, and HTML in separate files
+✅ **Shared code** — auth and theme logic written once, used by both pages
+✅ **Maintainable** — 57-line HTML vs 877-line monolith; styles easy to find
+✅ **IDE support** — syntax highlighting, auto-complete, linting work in separate files
+✅ **Scoped styles** — page-specific CSS doesn't leak across pages
+✅ **No breaking changes** — dashboard works identically before and after extraction
+✅ **file:// compatible** — no modules, no bundler, no server required
 
 ---
 
 ## Implementation Checklist
 
-- [ ] Create project structure
-- [ ] Extract CSS to separate files
-- [ ] Create DataStore module
-- [ ] Create loader functions
-- [ ] Implement CourseCard component
-- [ ] Implement OutlineView component
-- [ ] Implement CurriculumNav component
-- [ ] Create main.js entry point
-- [ ] Update HTML to use modules
-- [ ] Set up module bundler (optional but recommended)
-- [ ] Add unit tests
-- [ ] Update README with new structure
+- [x] Extract CSS into separate files (variables, base, dashboard, status)
+- [x] Extract JS into separate files (auth, theme, dashboard, status-main)
+- [x] Rewrite index.html as thin shell
+- [x] Rewrite status.html as thin shell
+- [x] Shared code reused across pages (auth.js, theme.js, variables.css, base.css)
+- [x] Dark/light theme works on both pages
+- [x] All functionality preserved (zero regressions)
+- [x] Works over `file://` protocol
+- [ ] JS further modularized into focused components (Issue #10)
+- [ ] Curriculum refs simplified to ID-only (Issue #11)
+
+---
+
+**Last updated:** March 28, 2026

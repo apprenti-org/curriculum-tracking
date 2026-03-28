@@ -1,190 +1,111 @@
 # Implementation Roadmap: Curriculum Tracking Architecture Improvements
 
 **Created:** March 28, 2026
+**Last Updated:** March 28, 2026
 **Total Design Documents:** 5 (2,063 lines)
 **Estimated Total Effort:** 6-9 weeks
 
 ---
 
+## Progress Summary
+
+| Phase | Issue | Status | Branch / PR |
+|-------|-------|--------|-------------|
+| 1 | #1 Build Process | ✅ Complete | PR #6 merged |
+| 2 | #2 Data Model & IDs | ✅ Complete | PR #7 merged |
+| 3 | #3 CSS/JS Extraction | ✅ Complete | PR #8 merged |
+| 1 | #4 Architecture Docs | ✅ Complete | PR #5 merged |
+| — | #5 (see GitHub) | 🔲 Open | — |
+| 3+ | #10 JS Modularization | 🔲 Open | Deferred from #3 |
+| 2+ | #11 Curriculum Refs | 🔲 Open | Deferred from #2 |
+
+---
+
 ## Overview
 
-This roadmap provides a concrete timeline and resource allocation for implementing the three major architecture improvements documented in this folder.
+This roadmap provides a concrete timeline and resource allocation for implementing the architecture improvements documented in this folder.
 
 ---
 
-## Phase 1: Foundation & Build Automation (Weeks 1-2)
+## Phase 1: Foundation & Build Automation ✅ COMPLETE
 
-### 02-BUILD-PROCESS.md — Create Automated Build System
+### Issue #1 — Automated Build System (PR #6, merged)
 
-**Why Start Here:**
-- Lowest effort, immediate payoff
-- Enables easier testing of other changes
-- Non-breaking, runs alongside manual process
-- Improves daily developer experience
+**Delivered:**
+- [x] `build.js` with configuration-driven orchestration
+- [x] `lib/generators.js` with shared generation functions
+- [x] `lib/validators.js` with schema and reference validation
+- [x] `package.json` with npm scripts (`build`, `validate`, `build:watch`, `build:verbose`)
+- [x] Updated README with build instructions
 
-**Deliverables:**
-- [ ] `build.js` with configuration-driven orchestration
-- [ ] `lib/generators.js` with shared generation functions
-- [ ] `lib/validators.js` with schema and reference validation
-- [ ] `package.json` with npm scripts
-- [ ] Updated README with build instructions
-- [ ] `.gitignore` for build/ directory
-
-**Resources:**
-- 1 developer, 10-14 days
-- Node.js knowledge required
-- Familiarity with courses.json structure
-
-**Testing:**
-```bash
-npm run build           # Should generate all artifacts
-npm run build:validate # Should catch data errors
-npm run build:watch    # Should rebuild on file changes
-```
-
-**Success Criteria:**
-- Single `npm run build` replaces 3 manual commands
-- All validation errors are caught and reported clearly
-- Watch mode enables real-time development
-- 0 breaking changes to existing workflows
-
-**Risk Factors:**
-- Low: Runs alongside existing process, non-breaking
-- Could be abandoned if build.js fails, manual steps still work
+**Results:**
+- Single `npm run build` replaces all manual steps
+- Validation catches data errors with clear reporting
+- `--watch` mode enables real-time development
+- Build output is byte-for-byte identical to manually generated files
 
 ---
 
-## Phase 2: Data Integrity (Weeks 3-5)
+## Phase 2: Data Integrity ✅ COMPLETE
 
-### 01-DATA-MODEL.md — Add Stable IDs & Schema Validation
+### Issue #2 — Stable IDs & Schema Validation (PR #7, merged)
 
-**Why After Build Process:**
-- Build system validates new schema immediately
-- Gradual migration possible (IDs added, names still work)
-- Enables Phase 3 refactoring
+**Delivered:**
+- [x] `data/schema.json` — formal JSON schema definition
+- [x] All 64 courses have stable kebab-case IDs in `courses.json`
+- [x] All 51 outline manifest entries have IDs
+- [x] Curricula reference courses by ID alongside name
+- [x] Dashboard uses ID-first lookups (`data-course-id` attributes)
+- [x] Status page uses ID-based membership mapping
+- [x] `DESIGN/MIGRATION-GUIDE.md` — ID rules, rename/add workflows
+- [x] `courseStatusMap` keys by both name and ID
 
-**Deliverables:**
-- [ ] JSON schema definition (in repo)
-- [ ] Update courses.json with stable IDs (all 64 courses)
-- [ ] Update curricula to reference by ID
-- [ ] Update outlines/manifest.json to reference by ID
-- [ ] Update JavaScript generation to use IDs
-- [ ] Update HTML dashboard to use IDs
-- [ ] Migration guide for future data changes
-- [ ] Documentation of ID naming convention
+**Deferred to Issue #11:**
+- Curriculum reference restructuring (drop `name` from refs, use ID-only or `{ id, hoursOverride }` format)
+- 6 Cloud Ops Specialist cross-reference name mismatches (warnings, not errors)
 
-**Resources:**
-- 1-2 developers, 10-15 days
-- One person updates data files
-- One person updates generation scripts and dashboard
-
-**Implementation Steps:**
-1. Define schema in `data/schema.json`
-2. Add validation to `lib/validators.js`
-3. Add IDs to courses.json (non-breaking, names still work)
-4. Gradually update references:
-   - Phase 2a: curricula → use IDs
-   - Phase 2b: manifest.json → use IDs
-   - Phase 2c: JavaScript generation → use IDs
-   - Phase 2d: Dashboard → use IDs
-
-**Testing:**
-- Validation catches missing IDs
-- Dashboard still works during migration
-- No broken references
-- Name-to-ID lookup works as fallback
-
-**Success Criteria:**
-- All 64 courses have stable IDs
-- All curricula reference by ID
-- Schema validates all data
-- No broken references
-
-**Risk Factors:**
-- Medium: References could become inconsistent during migration
-- Mitigation: Validation catches errors, phased approach
+**Results:**
+- IDs are permanent — names can change without breaking references
+- Schema validation integrated into build pipeline
+- Both name and ID lookups work (backward compatible)
 
 ---
 
-## Phase 3: Code Quality & Maintainability (Weeks 6-9)
+## Phase 3: Code Quality & Maintainability (In Progress)
 
-### 03-CODE-ARCHITECTURE.md — Modularize Frontend
+### Issue #3 — CSS/JS Extraction ✅ COMPLETE (PR #8, merged)
 
-**Why After Data Model:**
-- Stable IDs make component props cleaner
-- Build process validates data passed to components
-- Can create thorough tests
+**Delivered:**
+- [x] `css/variables.css`, `css/base.css`, `css/dashboard.css`, `css/status.css`
+- [x] `js/auth.js`, `js/theme.js`, `js/dashboard.js`, `js/status-main.js`
+- [x] `index.html` rewritten as thin shell (877 → 57 lines)
+- [x] `status.html` rewritten as thin shell (502 → 48 lines)
+- [x] All files work over `file://` protocol (plain `<script>` tags, no ES6 modules)
 
-**Deliverables:**
-- [ ] Folder structure (src/, js/, css/, components/)
-- [ ] Extract CSS to separate files (6 files)
-- [ ] Create DataStore module
-- [ ] Create loader.js for courses.json
-- [ ] Create component classes:
-  - [ ] CourseCard
-  - [ ] CurriculumNav
-  - [ ] CourseDetail
-  - [ ] OutlineView
-  - [ ] StatusBadge
-  - [ ] ThemeManager
-- [ ] Create main.js entry point
-- [ ] Create status-main.js for status page
-- [ ] Update HTML files (minimal, module-based)
-- [ ] Add unit tests for components
-- [ ] Optional: Add module bundler (Webpack/Vite)
+### Issue #10 — JS Component Modularization (Open)
 
-**Resources:**
-- 2 developers, 15-20 days
-- Frontend experience required
-- ES6 modules knowledge
-- Optional: CSS-in-JS or module bundler experience
+Break `dashboard.js` and `status-main.js` into smaller focused files (~100 lines each): shared data store, formatters, constants, nav builder, detail panel, table renderer, etc. Still plain `<script>` tags for `file://` compatibility.
 
-**Implementation Approach:**
-- **Week 6**: Extract CSS, create DataStore, update main.js
-- **Week 7**: Create 2-3 major components, test them
-- **Week 8**: Create remaining components, refactor HTML
-- **Week 9**: Polish, optimize, add bundler if desired
+See Issue #10 in [GITHUB_ISSUES.md](./GITHUB_ISSUES.md) for full spec.
 
-**Testing:**
-- Each component tested independently
-- Overall integration tests
-- Performance benchmarks (load time, memory)
-- Regression testing (dashboard still works)
+### Issue #11 — Curriculum Reference Restructuring (Open)
 
-**Success Criteria:**
-- index.html < 100 lines (was 900+)
-- All logic in reusable components
-- Components can be tested independently
-- Test coverage > 80%
-- No performance regression
+Simplify curriculum course refs in `courses.json` to ID-only strings (or `{ id, hoursOverride }` when overrides are needed). Drops redundant `name` field from refs. Resolves the 6 Cloud Ops cross-reference warnings from Issue #2.
 
-**Risk Factors:**
-- High: Large refactoring, many moving parts
-- Mitigation: Gradual component extraction, keep old code until new works
-- Could take longer if issues discovered
+See Issue #11 in [GITHUB_ISSUES.md](./GITHUB_ISSUES.md) for full spec.
 
 ---
 
-## Timeline Gantt Chart
+## Timeline
 
 ```
-Week 1  |████|     Build Process Foundation
-        |  ████|   Build Process Testing
-Week 2  |    ████| Build Process Polish
-        |       |
-Week 3  |       ████| Data Model: Schema
-        |         ████| Data Model: Add IDs to courses
-Week 4  |           ████| Data Model: Update curricula
-        |             ████| Data Model: Update generation
-Week 5  |               ████| Data Model: Update dashboard
-        |                 |
-Week 6  |                 ████| Code: Extract CSS
-        |                   ████| Code: Create DataStore
-Week 7  |                     ████| Code: Create components
-        |                       ████| Code: Component tests
-Week 8  |                         ████| Code: Refactor HTML
-        |                           ████| Code: Integration tests
-Week 9  |                             ████| Code: Optimization
+Issue #1  Build Process          ✅ Complete (PR #6)
+Issue #4  Architecture Docs      ✅ Complete (PR #5)
+Issue #2  Data Model & IDs       ✅ Complete (PR #7)
+Issue #3  CSS/JS Extraction      ✅ Complete (PR #8)
+Issue #5  (see GitHub)           🔲 Open
+Issue #10 JS Modularization      🔲 Open — depends on #3
+Issue #11 Curriculum Refs        🔲 Open — depends on #2
 ```
 
 ---
@@ -219,24 +140,26 @@ Developer 2 (Part-time, weeks 3-9)
 
 Track these throughout implementation:
 
-### Phase 1 (Build Process)
-- [ ] `npm run build` executes without errors
-- [ ] Validation catches all invalid data
-- [ ] Build time < 2 seconds
-- [ ] Watch mode works correctly
+### Phase 1 (Build Process) ✅
+- [x] `npm run build` executes without errors
+- [x] Validation catches invalid data (schema, references, file existence)
+- [x] Build time < 2 seconds
+- [x] Watch mode works correctly
 
-### Phase 2 (Data Model)
-- [ ] All 64 courses have stable IDs
-- [ ] Zero broken references detected
-- [ ] Schema validation passes 100% of data
-- [ ] Migration guide is clear and followable
+### Phase 2 (Data Model) ✅
+- [x] All 64 courses have stable IDs
+- [x] Zero broken references (6 Cloud Ops warnings deferred to #7)
+- [x] Schema validation passes 100% of data
+- [x] Migration guide written (`DESIGN/MIGRATION-GUIDE.md`)
 
-### Phase 3 (Code Architecture)
-- [ ] Main HTML file < 100 lines
-- [ ] 6+ reusable components created
-- [ ] Component test coverage > 80%
-- [ ] Page load time < 2 seconds
-- [ ] Dashboard functionality unchanged
+### Phase 3 (Code Architecture) — In Progress
+- [x] index.html < 100 lines (57 lines, was 877)
+- [x] status.html < 100 lines (48 lines, was 502)
+- [x] CSS extracted to 4 organized files
+- [x] JS extracted to 4 organized files
+- [x] Shared code reused (auth.js, theme.js)
+- [ ] JS further modularized into focused components (Issue #10)
+- [ ] Curriculum refs simplified to ID-only (Issue #11)
 
 ---
 
@@ -307,74 +230,41 @@ Track these throughout implementation:
 
 ---
 
-## Appendix: Detailed Task Breakdown
+## Appendix: Completed Work
 
-### Phase 1 Tasks (Weeks 1-2)
+### Issue #1 — Build Process (PR #6)
+- [x] `build.js` — orchestrator with `--validate`, `--watch`, `--verbose` flags
+- [x] `lib/generators.js` — `generateCourseBundle()`, `generateOutlineBundle()`
+- [x] `lib/validators.js` — schema, references, syllabus files, outline files
+- [x] `package.json` — `build`, `validate`, `build:watch`, `build:verbose` scripts
 
-**Week 1:**
-- [ ] Create build.js skeleton
-- [ ] Implement courses.js generator
-- [ ] Implement outlines.js generator
-- [ ] Create initial validators
-- [ ] Test with current courses.json
+### Issue #2 — Data Model (PR #7)
+- [x] `data/schema.json` — formal JSON schema
+- [x] 64 stable kebab-case IDs in `courses.json`
+- [x] 51 IDs in `outlines/manifest.json`
+- [x] Curricula refs include `id` alongside `name`
+- [x] Dashboard/status use ID-first lookups
+- [x] `DESIGN/MIGRATION-GUIDE.md` — ID rules and workflows
 
-**Week 2:**
-- [ ] Add syllabi HTML generator
-- [ ] Add comprehensive validators
-- [ ] Implement error reporting
-- [ ] Add --watch mode
-- [ ] Write documentation
-- [ ] Test entire pipeline
+### Issue #3 — CSS/JS Extraction (PR #8)
+- [x] 4 CSS files: `variables.css`, `base.css`, `dashboard.css`, `status.css`
+- [x] 4 JS files: `auth.js`, `theme.js`, `dashboard.js`, `status-main.js`
+- [x] `index.html` → 57 lines, `status.html` → 48 lines
 
-### Phase 2 Tasks (Weeks 3-5)
+## Remaining Work
 
-**Week 3:**
-- [ ] Define JSON schema
-- [ ] Add schema validator to build.js
-- [ ] Add IDs to all 64 courses in courses.json
-- [ ] Test schema validation
+### Issue #10 — JS Component Modularization
+- [ ] Extract shared data store, formatters, constants
+- [ ] Split `dashboard.js` into nav builder, detail panel, init
+- [ ] Split `status-main.js` into summary, table, init
+- [ ] Target: no single JS file > ~100 lines
 
-**Week 4:**
-- [ ] Update curricula array to use course IDs
-- [ ] Update outlines/manifest.json to use course IDs
-- [ ] Update generation scripts to use IDs
-- [ ] Test all references resolve correctly
-
-**Week 5:**
-- [ ] Update index.html dashboard to use IDs
-- [ ] Update status.html to use IDs
-- [ ] Remove name-based lookups
-- [ ] Write migration guide for future changes
-
-### Phase 3 Tasks (Weeks 6-9)
-
-**Week 6:**
-- [ ] Create src/ folder structure
-- [ ] Extract CSS to separate files
-- [ ] Create DataStore module
-- [ ] Create loader.js
-- [ ] Create ThemeManager component
-
-**Week 7:**
-- [ ] Create CourseCard component
-- [ ] Create CurriculumNav component
-- [ ] Create OutlineView component
-- [ ] Write unit tests
-- [ ] Document component API
-
-**Week 8:**
-- [ ] Create CourseDetail component
-- [ ] Create StatusBadge component
-- [ ] Refactor main.js
-- [ ] Integration testing
-- [ ] Performance benchmarking
-
-**Week 9:**
-- [ ] Optimize bundle size
-- [ ] Final testing and QA
-- [ ] Update documentation
-- [ ] Prepare for production deployment
+### Issue #11 — Curriculum Reference Restructuring
+- [ ] Simplify curriculum course refs to ID-only strings
+- [ ] Override format: `{ id, hoursOverride?, note? }`
+- [ ] Resolve 6 Cloud Ops cross-reference mismatches
+- [ ] Update schema, validators, dashboard, status page
 
 ---
 
-**Next Step:** Present this roadmap to stakeholders for approval, assign developers, and begin Phase 1.
+**Last updated:** March 28, 2026
