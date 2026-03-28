@@ -1,16 +1,17 @@
 # Design Document: Build Process & Code Generation
 
-**Status:** Fragile Manual Process
+**Status:** ✅ Implemented (Issue #1, PR #6 merged)
 **Priority:** High (Enables other improvements)
 **Complexity:** Medium
 **Estimated Effort:** 1-2 weeks
+**Actual Effort:** ~1 week
 
 ---
 
-## Current Problems
+## Problems Identified
 
 ### 1. Manual Build Steps
-Users must remember to run:
+Users had to remember to run multiple inline Node commands:
 ```bash
 # Step 1: Generate courses.js
 node -e "const fs = require('fs'); ..."
@@ -22,66 +23,57 @@ cd outlines && node -e "const fs = require('fs'); ..."
 node convert-syllabi.js
 ```
 
-**Issues:**
-- Easy to forget a step
-- Hard to know if builds are complete
-- No error reporting
-- No validation of output
-- Different for each team member
+**Issues:** easy to forget a step, no error reporting, no validation, different on each machine.
 
 ### 2. Duplicate Code
-- courses.js and outlines.js use similar generation logic
-- convert-syllabi.js duplicates CSS from index.html
+- courses.js and outlines.js generation used similar logic
+- convert-syllabi.js duplicated CSS from index.html
 - No shared utilities
 
 ### 3. No Error Handling
-```javascript
-// Current generation is silent
-JSON.stringify(data.courses, null, 2)
-fs.writeFileSync('courses.js', js);  // If this fails, user doesn't know
-```
+Generation was silent — if `fs.writeFileSync` failed, the user didn't know.
 
 ### 4. No Validation Pipeline
-- Generated files are not validated
-- Invalid JSON can be written silently
-- No check that referenced files exist
-- No check that IDs match across files
+Generated files were not validated. Invalid JSON could be written silently, no check that referenced files exist.
 
 ---
 
-## Proposed Solution: build.js with Configuration
+## What Was Implemented
 
-### 1. Configuration-Driven Build
+### build.js — Configuration-Driven Orchestrator
 
-**build.js**
+Single entry point with CLI flags:
+```bash
+node build.js              # Build everything once
+node build.js --watch      # Watch for changes and rebuild
+node build.js --validate   # Validate data without generating
+node build.js --verbose    # Show detailed output
+```
+
+Equivalent npm scripts:
+```bash
+npm run build              # node build.js
+npm run build:watch        # node build.js --watch
+npm run build:verbose      # node build.js --verbose
+npm run validate           # node build.js --validate
+```
+
+The build follows a three-stage pipeline:
+
+1. **Load** — reads `courses.json` into memory
+2. **Validate** — runs all validators; aborts with clear error messages if any fail
+3. **Generate** — writes `courses.js` and `outlines/outlines.js`
+
 ```javascript
-const fs = require('fs');
-const path = require('path');
-
+// BUILD_CONFIG drives the pipeline
 const BUILD_CONFIG = {
+  rootDir: __dirname,
   source: 'courses.json',
-  sourceDir: '.',
-  outputDir: './build',
+  outlineManifest: 'outlines/manifest.json',
 
   generators: [
-    {
-      name: 'courses-bundle',
-      input: 'courses.json',
-      output: 'courses.js',
-      generate: generateCourseBundle
-    },
-    {
-      name: 'outlines-bundle',
-      input: 'outlines/manifest.json',
-      output: 'outlines/outlines.js',
-      generate: generateOutlineBundle
-    },
-    {
-      name: 'syllabi-html',
-      input: '../courses',  // relative to repo
-      output: 'syllabi',
-      generate: generateSyllabi
-    }
+    { name: 'courses-bundle', input: 'courses.json', output: 'courses.js', generate: generateCourseBundle },
+    { name: 'outlines-bundle', input: 'outlines/manifest.json', output: 'outlines/outlines.js', generate: generateOutlineBundle }
   ],
 
   validators: [
@@ -91,249 +83,135 @@ const BUILD_CONFIG = {
     validateOutlineFiles
   ]
 };
-
-async function build(options = {}) {
-  console.log('🔨 Building curriculum dashboard...\n');
-
-  try {
-    // 1. Load data
-    console.log('📂 Loading data...');
-    const data = JSON.parse(
-      fs.readFileSync(path.join(BUILD_CONFIG.sourceDir, BUILD_CONFIG.source))
-    );
-
-    // 2. Validate
-    console.log('✓ Data loaded\n🔍 Validating...');
-    for (const validator of BUILD_CONFIG.validators) {
-      const errors = validator(data, BUILD_CONFIG);
-      if (errors.length > 0) {
-        console.error('❌ Validation failed:\n');
-        errors.forEach(err => console.error(`  • ${err}`));
-        process.exit(1);
-      }
-    }
-    console.log('✓ All validations passed\n');
-
-    // 3. Generate outputs
-    console.log('🏗️  Generating outputs...');
-    for (const gen of BUILD_CONFIG.generators) {
-      try {
-        console.log(`  • ${gen.name}...`);
-        gen.generate(data, BUILD_CONFIG);
-        console.log(`    ✓ ${gen.output}`);
-      } catch (err) {
-        console.error(`\n❌ Generator failed: ${gen.name}`);
-        console.error(`   ${err.message}`);
-        process.exit(1);
-      }
-    }
-
-    console.log('\n✅ Build complete!');
-    console.log(`   Generated ${BUILD_CONFIG.generators.length} artifacts`);
-
-  } catch (err) {
-    console.error('❌ Build failed:', err.message);
-    process.exit(1);
-  }
-}
-
-// Support --watch mode
-if (process.argv.includes('--watch')) {
-  const watch = require('watch');
-  watch.watchTree(BUILD_CONFIG.sourceDir, () => {
-    console.clear();
-    build();
-  });
-} else {
-  build();
-}
 ```
 
-### 2. Shared Generation Utilities
+### lib/generators.js — Shared Generation Functions
 
-**lib/generators.js**
+Two generators that produce JS bundles loaded by the dashboard via `<script>` tags:
+
+**`generateCourseBundle(data, config)`** — writes `courses.js`:
 ```javascript
-function generateCourseBundle(data, config) {
-  const fs = require('fs');
-  const path = require('path');
-
-  let js = '// Auto-generated from courses.json — do not edit directly\n';
-  js += 'const courseData = ' + JSON.stringify(data.courses, null, 2) + ';\n\n';
-  js += 'const curriculaData = ' + JSON.stringify(data.curricula, null, 2) + ';\n\n';
-  js += 'const courseStatusMap = {};\n';
-  js += 'courseData.forEach(c => { courseStatusMap[c.id] = c; });\n';
-
-  const output = path.join(config.outputDir, 'courses.js');
-  fs.writeFileSync(output, js);
-}
-
-function generateOutlineBundle(data, config) {
-  const fs = require('fs');
-  const path = require('path');
-
-  const manifest = JSON.parse(
-    fs.readFileSync(path.join(config.sourceDir, 'outlines/manifest.json'))
-  );
-
-  const outlines = {};
-  for (const entry of manifest) {
-    const filePath = path.join(config.sourceDir, 'outlines', entry.file);
-    outlines[entry.course] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  }
-
-  let js = '// Auto-generated from outlines — do not edit directly\n';
-  js += 'const courseOutlines = ' + JSON.stringify(outlines, null, 2) + ';\n';
-
-  const output = path.join(config.outputDir, 'outlines', 'outlines.js');
-  fs.writeFileSync(output, js);
-}
-
-// ... more generators
+// Auto-generated from courses.json — do not edit directly
+const courseData = [...];
+const curriculaData = [...];
+const courseStatusMap = {};
+courseData.forEach(c => {
+  courseStatusMap[c.name] = c;
+  if (c.id) courseStatusMap[c.id] = c;
+});
 ```
 
-### 3. Validation Utilities
-
-**lib/validators.js**
+**`generateOutlineBundle(data, config)`** — reads each outline JSON referenced in `manifest.json`, writes `outlines/outlines.js`:
 ```javascript
-function validateSchema(data, config) {
-  const errors = [];
-
-  if (!Array.isArray(data.courses)) {
-    errors.push('courses must be an array');
-  }
-
-  if (!Array.isArray(data.curricula)) {
-    errors.push('curricula must be an array');
-  }
-
-  // Validate each course
-  data.courses?.forEach((course, i) => {
-    if (!course.id) {
-      errors.push(`courses[${i}]: missing required field 'id'`);
-    }
-    if (!course.name) {
-      errors.push(`courses[${i}]: missing required field 'name'`);
-    }
-    if (typeof course.hours !== 'number' || course.hours < 0) {
-      errors.push(`courses[${i}] (${course.name}): hours must be positive number`);
-    }
-    if (!course.status?.design || !course.status?.development) {
-      errors.push(`courses[${i}] (${course.name}): missing status fields`);
-    }
-  });
-
-  return errors;
-}
-
-function validateReferences(data, config) {
-  const errors = [];
-  const courseIds = new Set(data.courses.map(c => c.id));
-
-  // Check curricula reference valid course IDs
-  data.curricula?.forEach((curr, i) => {
-    const courses = curr.courses || [];
-    courses.forEach((courseId, j) => {
-      if (!courseIds.has(courseId)) {
-        errors.push(`curricula[${i}] (${curr.name}): references unknown course '${courseId}'`);
-      }
-    });
-  });
-
-  return errors;
-}
-
-function validateSyllabusFiles(data, config) {
-  const fs = require('fs');
-  const path = require('path');
-
-  const errors = [];
-  const syllabusDir = path.join(config.sourceDir, 'syllabi');
-
-  data.courses?.forEach(course => {
-    if (course.references?.syllabus?.filename) {
-      const file = path.join(syllabusDir, course.references.syllabus.filename);
-      if (!fs.existsSync(file)) {
-        errors.push(`${course.name}: syllabus file not found: ${course.references.syllabus.filename}`);
-      }
-    }
-  });
-
-  return errors;
-}
-
-// ... more validators
+// Auto-generated from outlines — do not edit directly
+const courseOutlines = { "Advanced Python": {...}, ... };
 ```
 
-### 4. Package.json Scripts
+Both output in-place (same directory as source), not to a separate `build/` directory. This keeps the dashboard's `<script src="courses.js">` references working without path changes.
+
+### lib/validators.js — Validation Pipeline
+
+Four validators, each returning errors (or `{ errors, warnings }`):
+
+| Validator | Checks |
+|---|---|
+| `validateSchema` | Required fields (`id`, `name`, `status`), ID format (kebab-case), unique IDs, alphabetical sort, curriculum structure |
+| `validateReferences` | Curricula course refs match actual courses (warnings for mismatches) |
+| `validateSyllabusFiles` | `syllabi/` directory exists |
+| `validateOutlineFiles` | Every file in `manifest.json` exists, is valid JSON, has `modules` array, manifest sorted alphabetically |
+
+Errors abort the build. Warnings are printed but don't block.
+
+### Watch Mode
+
+Uses `fs.watch()` on `courses.json` and `outlines/manifest.json`. On change, triggers a full rebuild. Runs an initial build on startup.
+
+### package.json
 
 ```json
 {
+  "name": "curriculum-tracking",
+  "version": "1.0.0",
+  "description": "RTI Academy curriculum tracking dashboard",
+  "private": true,
   "scripts": {
     "build": "node build.js",
     "build:watch": "node build.js --watch",
-    "build:validate": "node build.js --validate-only",
-    "clean": "rm -rf build/",
-    "dev": "npm run clean && npm run build:watch"
+    "validate": "node build.js --validate",
+    "build:verbose": "node build.js --verbose"
   }
 }
-```
-
-**Usage:**
-```bash
-npm run build           # Build once
-npm run build:watch    # Rebuild on changes (development)
-npm run build:validate # Just validate, don't generate
 ```
 
 ---
 
-## File Organization
+## File Organization (Actual)
 
 ```
 tracking/repo/
 ├── build.js                    # Main build orchestrator
 ├── lib/
-│  ├── generators.js           # Generation functions
-│  ├── validators.js           # Validation functions
-│  └── utils.js                # Shared utilities
+│   ├── generators.js           # generateCourseBundle, generateOutlineBundle
+│   └── validators.js           # validateSchema, validateReferences, validateSyllabusFiles, validateOutlineFiles
+├── courses.json                # Source of truth (data)
+├── courses.js                  # Generated bundle (in-place, not in build/)
 ├── data/
-│  ├── courses.json            # Source of truth
-│  └── outlines/
-│     ├── manifest.json
-│     └── *.json
-├── build/                     # Build outputs (git-ignored)
-│  ├── courses.js
-│  ├── outlines/outlines.js
-│  ├── syllabi/
-│  └── validation-report.json
-├── src/
-│  ├── index.html
-│  └── ...
-└── package.json
+│   └── schema.json             # JSON schema definition
+├── outlines/
+│   ├── manifest.json           # Maps course names → JSON filenames
+│   ├── *.json                  # Individual outline files (~51)
+│   └── outlines.js             # Generated bundle (in-place)
+├── syllabi/
+│   └── *.html                  # HTML syllabi
+├── index.html                  # Dashboard UI
+├── status.html                 # Status page UI
+├── css/                        # Extracted stylesheets (Issue #3)
+├── js/                         # Extracted scripts (Issue #3)
+├── package.json
+└── DESIGN/                     # Architecture documentation
 ```
+
+**Note:** The original design proposed a `build/` output directory and a `src/` source directory, but the actual implementation generates in-place to avoid breaking the existing `<script>` tag references. This is simpler and works well for the current `file://` protocol workflow.
 
 ---
 
-## Benefits
+## Differences from Original Design
 
-✅ **Single command** — `npm run build` instead of remembering 3 steps
-✅ **Error reporting** — Clear messages when something fails
-✅ **Validation** — Catches bad data before generating files
-✅ **Watch mode** — Auto-rebuild during development
-✅ **Reusable** — Generator/validator functions can be tested independently
-✅ **Scalable** — Easy to add new generators
-✅ **Portable** — Works on any machine with Node.js
+| Proposed | Actual | Reason |
+|---|---|---|
+| `build/` output directory | In-place generation | Avoids breaking `<script src="courses.js">` paths |
+| `lib/utils.js` | Not created | No shared utilities needed beyond generators and validators |
+| `require('watch')` package | `fs.watch()` built-in | No external dependencies needed |
+| `data/courses.json` path | `courses.json` at repo root | Kept existing layout |
+| Syllabi generation in build | Not integrated | `convert-syllabi.js` remains separate |
+| CI/CD integration | Not done | Not needed for current workflow |
+
+---
+
+## Results
+
+- **Single command** — `npm run build` replaces 3+ manual steps
+- **Validation catches errors** — missing IDs, broken references, unsorted data, invalid outline JSON
+- **Build time** — under 500ms for 64 courses + 51 outlines
+- **Watch mode** — auto-rebuilds during development
+- **Deterministic** — same input always produces same output
+- **Zero external dependencies** — uses only Node.js built-ins
 
 ---
 
 ## Implementation Checklist
 
-- [ ] Create build.js with configuration
-- [ ] Extract shared generator functions
-- [ ] Create validation library
-- [ ] Update package.json with scripts
-- [ ] Test build process
-- [ ] Add error handling and reporting
-- [ ] Document build process in README
-- [ ] Add CI/CD integration (GitHub Actions)
-- [ ] Test with --watch mode
+- [x] Create build.js with configuration-driven pipeline
+- [x] Extract shared generator functions (`lib/generators.js`)
+- [x] Create validation library (`lib/validators.js`)
+- [x] Update package.json with npm scripts
+- [x] Test build process (deterministic output)
+- [x] Add error handling and reporting (errors + warnings)
+- [x] Document build process in README
+- [x] Test with --watch mode
+- [ ] Add CI/CD integration (GitHub Actions) — not currently needed
+- [ ] Integrate syllabi generation into build pipeline — `convert-syllabi.js` remains separate
+
+---
+
+**Last updated:** March 28, 2026

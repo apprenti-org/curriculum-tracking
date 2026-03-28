@@ -1,19 +1,20 @@
 # Design Document: Data Model
 
-**Status:** Current Issues Identified
+**Status:** ✅ Core implemented (Issue #2, PR #7 merged) — reference restructuring deferred to Issue #11
 **Priority:** High (Foundation for all other improvements)
 **Complexity:** Medium
 **Estimated Effort:** 2-3 weeks for full migration
+**Actual Effort:** ~1 week for core implementation
 
 ---
 
-## Current Problems
+## Problems Identified
 
 ### 1. No Schema Validation
 - No defined structure for course data
-- Invalid values are silently accepted
-- Status field accepts any string (should be enum)
-- Hours field can be null (ambiguous meaning)
+- Invalid values were silently accepted
+- Status field accepted any string (should be enum)
+- Hours field could be null (ambiguous meaning)
 
 ### 2. Inconsistent Reference Types
 ```json
@@ -35,27 +36,26 @@
 
 ### 4. Denormalized Course Membership
 ```json
-// Course references are only in curricula
+// Course references only in curricula — no reverse lookup
 "curricula": [
   {
     "name": "Software Development Java",
     "courses": ["Java Language Fundamentals", "JavaScript", ...]
   }
 ]
-
-// No way to find which curricula contain a course without iterating
 ```
 
 ---
 
-## Proposed Solution: Improved Data Model
+## What Was Implemented (Issue #2, PR #7)
 
-### 1. Add Stable Course IDs
+### 1. Stable Course IDs ✅
+
+All 64 courses now have a permanent kebab-case `id` field:
 ```json
 {
-  "id": "databases-in-java",           // Stable identifier (slug)
-  "name": "Databases in Java",         // Display name (can change)
-  "slug": "databases-in-java",         // Explicit slug reference
+  "id": "databases-in-java",
+  "name": "Databases in Java",
   "hours": 40,
   "status": {
     "design": "Complete",
@@ -64,274 +64,190 @@
 }
 ```
 
-**Why:** If "Databases in Java" is renamed to "Database Fundamentals with Java," all references (outlines, syllabi, curricula) still work via ID.
+**Key rules:**
+- IDs never change — names can be updated freely
+- Pattern: `^[a-z0-9-]+$` (lowercase, numbers, hyphens only)
+- Must be unique across all courses
+- Convention: lowercase the initial name, replace spaces with hyphens
+- Full rules documented in `DESIGN/MIGRATION-GUIDE.md`
 
-### 2. Standardize Reference Types
+### 2. JSON Schema ✅
+
+Formal schema at `data/schema.json` (JSON Schema draft-07) defines:
+
+- **Course required fields:** `id`, `name`, `status`
+- **Status enum:** `["Not Started", "Scoping", "In Progress", "Needs Review", "In Review", "Complete"]`
+- **ID pattern:** `^[a-z0-9-]+$`
+- **Hours:** integer or null (null = not yet determined)
+- **Curriculum structure:** either `groups` (with nested courseRefs) or flat `courses` array
+- **CourseRef:** `name` (required), `id` (recommended), `hoursOverride` (optional)
+
+### 3. ID-Based Lookups ✅
+
+Dashboard and status page use IDs as primary lookup keys with name fallback:
+
+```javascript
+// courses.js (generated) — dual-keyed status map
+courseStatusMap[c.name] = c;
+if (c.id) courseStatusMap[c.id] = c;
+
+// dashboard.js — ID-first lookup
+const courseLookup = {};
+courseData.forEach(c => {
+    courseLookup[c.name] = c;
+    if (c.id) courseLookup[c.id] = c;
+});
+
+// Nav items carry data-course-id attribute
+`<div class="nav-course-item" data-course-id="${course.id}" ...>`
+
+// status-main.js — membership map keyed by ID
+const key = gc.id || gc.name;
+if (!membershipMap[key]) membershipMap[key] = [];
+```
+
+### 4. Curricula Course References — Partially Done
+
+Curricula entries now include `id` alongside `name` in courseRef objects:
 ```json
 {
-  "id": "databases-in-java",
-  "name": "Databases in Java",
-
-  // Unified reference structure
-  "references": {
-    "syllabus": {
-      "type": "local-html",              // "local-html" | "google-doc" | "none"
-      "filename": "databases-in-java.html"
-    },
-    "outline": {
-      "type": "loaded",                  // "loaded" | "pending" | "none"
-      "filename": "databases-in-java.json"
-    },
-    "driveFolder": "https://drive.google.com/..."
-  }
+  "name": "Cloud Operations Specialist",
+  "groups": [
+    {
+      "name": "Foundation",
+      "courses": [
+        { "name": "Student Onboarding", "id": "student-onboarding" },
+        { "name": "Professional Communication", "id": "professional-communication" },
+        { "name": "Introduction to Cloud Technology", "id": "intro-to-cloud-technology", "hoursOverride": 20 }
+      ]
+    }
+  ]
 }
 ```
 
-### 3. Enums for Status Values
+### 5. Outline Manifest IDs ✅
+
+All 51 entries in `outlines/manifest.json` have `id` fields linking them to courses:
 ```json
-{
-  "status": {
-    "design": "Complete",        // enum: ["Not Started", "Scoping", "In Progress", "Needs Review", "In Review", "Complete"]
-    "development": "Not Started" // enum: ["Not Started", "Scoping", "In Progress", "Needs Review", "In Review", "Complete"]
-  }
-}
+{ "course": "Advanced Python", "file": "advanced-python.json", "id": "advanced-python" }
 ```
 
-### 4. Required vs Optional Fields
-```json
-{
-  "required": ["id", "name", "hours", "status"],
-  "optional": ["references", "note", "description"]
-}
-```
+### 6. Build-Integrated Validation ✅
+
+`lib/validators.js` checks on every `node build.js` run:
+- All courses have valid kebab-case IDs
+- No duplicate IDs
+- Required fields present (`id`, `name`, `status`)
+- Courses sorted alphabetically
+- Curricula have either `groups` or `courses`
+- Cross-references between curricula and courses (warnings for mismatches)
+- Outline files exist for all manifest entries
+- Outline JSON has valid structure
 
 ---
 
-## JSON Schema Definition
+## What Was NOT Implemented (Deferred)
 
+### Reference Restructuring → Issue #11
+
+The original design proposed restructuring `syllabus` and `outline` fields into a unified `references` object:
 ```json
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://rti.academy/schemas/curriculum.json",
-
-  "type": "object",
-  "required": ["version", "courses", "curricula"],
-
-  "properties": {
-    "version": {
-      "type": "string",
-      "pattern": "^\\d+\\.\\d+\\.\\d+$",
-      "description": "Semantic version of data format"
-    },
-
-    "courses": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/course"
-      }
-    },
-
-    "curricula": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/curriculum"
-      }
-    }
-  },
-
-  "definitions": {
-    "course": {
-      "type": "object",
-      "required": ["id", "name", "hours", "status"],
-      "additionalProperties": false,
-
-      "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "^[a-z0-9-]+$",
-          "description": "Stable course identifier (kebab-case)"
-        },
-
-        "name": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Display name"
-        },
-
-        "hours": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Total course hours"
-        },
-
-        "status": {
-          "type": "object",
-          "required": ["design", "development"],
-          "properties": {
-            "design": {
-              "enum": ["Not Started", "Scoping", "In Progress", "Needs Review", "In Review", "Complete"]
-            },
-            "development": {
-              "enum": ["Not Started", "Scoping", "In Progress", "Needs Review", "In Review", "Complete"]
-            }
-          }
-        },
-
-        "references": {
-          "type": "object",
-          "properties": {
-            "syllabus": {
-              "$ref": "#/definitions/reference"
-            },
-            "outline": {
-              "$ref": "#/definitions/reference"
-            },
-            "driveFolder": {
-              "type": "string",
-              "format": "uri"
-            }
-          }
-        },
-
-        "note": {
-          "type": "string"
-        },
-
-        "description": {
-          "type": "string"
-        }
-      }
-    },
-
-    "reference": {
-      "type": "object",
-      "required": ["type"],
-      "properties": {
-        "type": {
-          "enum": ["local-html", "google-doc", "none", "loaded", "pending"]
-        },
-        "filename": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string",
-          "format": "uri"
-        }
-      }
-    },
-
-    "curriculum": {
-      "type": "object",
-      "required": ["id", "name"],
-      "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "^[a-z0-9-]+$"
-        },
-        "name": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "groups": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/group"
-          }
-        },
-        "courses": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "description": "Course ID"
-          }
-        }
-      }
-    },
-
-    "group": {
-      "type": "object",
-      "required": ["name"],
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "courses": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "description": "Course ID"
-          }
-        }
-      }
-    }
-  }
-}
-```
-
----
-
-## Migration Path
-
-### Phase 1: Add IDs (Non-Breaking)
-```json
-// Add ID field while keeping name as secondary key
-{
-  "id": "databases-in-java",
-  "name": "Databases in Java",
-  // ... rest of course data
-}
-```
-- Dashboard continues to work
-- Outlines/manifest.json continue to reference by name
-- Can gradually migrate over time
-
-### Phase 2: Update References
-```json
-// Update curricula to reference by ID
-"curricula": [
-  {
-    "id": "software-development-java",
-    "name": "Software Development Java",
-    "courses": [
-      "java-language-fundamentals",    // Changed from name string to ID
-      "javascript",
-      "web-dev-javascript"
-    ]
-  }
-]
-```
-
-### Phase 3: Standardize References
-```json
-// Unify syllabus/outline formats
+// PROPOSED (not implemented):
 "references": {
-  "syllabus": { "type": "local-html", "filename": "..." },
-  "outline": { "type": "loaded", "filename": "..." }
+    "syllabus": { "type": "local-html", "filename": "databases-in-java.html" },
+    "outline": { "type": "loaded", "filename": "databases-in-java.json" },
+    "driveFolder": "https://drive.google.com/..."
 }
 ```
 
+**Actual format (kept as-is):**
+```json
+{
+  "syllabus": "Syllabus: Advanced Python",
+  "outline": true,
+  "note": "Has outline, syllabus linked",
+  "driveFolder": "https://drive.google.com/..."
+}
+```
+
+The `references` restructuring was not pursued because:
+1. The existing flat fields work and don't block other improvements
+2. The dashboard code handles the current format correctly
+3. Changing the format would require updating all 64 course entries plus generators and validators
+
+### Curriculum Refs to ID-Only → Issue #11
+
+Curricula still include both `name` and `id` in courseRef objects. Issue #11 will simplify to:
+```json
+// Plain ID string (common case):
+"student-onboarding"
+
+// Object with overrides (when needed):
+{ "id": "intro-to-cloud-technology", "hoursOverride": 20 }
+```
+
+### Cloud Ops Cross-Reference Mismatches
+
+6 courses referenced in Cloud Operations Specialist don't match any course in the courses array by name. These produce warnings (not errors) during validation. To be resolved in Issue #11.
+
 ---
 
-## Benefits
+## Current Data Model
 
-✅ **Schema validation** — Catches invalid data at load time
-✅ **Stable IDs** — Renaming courses won't break references
-✅ **Clear types** — No more "is it a string or boolean?"
-✅ **Scalability** — Works well with hundreds of courses
-✅ **Future-proof** — Easier to add new fields/metadata
+### Course Entry
+```json
+{
+  "id": "databases-in-java",
+  "name": "Databases in Java",
+  "hours": 40,
+  "status": {
+    "design": "Complete",
+    "development": "Not Started"
+  },
+  "syllabus": "Syllabus: Databases in Java",
+  "outline": true,
+  "note": "Has outline and syllabus",
+  "driveFolder": "https://drive.google.com/..."
+}
+```
+
+### Curriculum Entry
+```json
+{
+  "name": "Software Development Java",
+  "groups": [
+    {
+      "name": "Foundation",
+      "courses": [
+        { "name": "Student Onboarding", "id": "student-onboarding" },
+        { "name": "Introduction to Cloud Technology", "id": "intro-to-cloud-technology", "hoursOverride": 20 }
+      ]
+    }
+  ]
+}
+```
+
+### Outline Manifest Entry
+```json
+{ "course": "Databases in Java", "file": "databases-in-java.json", "id": "databases-in-java" }
+```
 
 ---
 
 ## Implementation Checklist
 
-- [ ] Define and publish JSON schema
-- [ ] Add schema validation to build.js
-- [ ] Add IDs to all courses in courses.json
-- [ ] Update curricula to reference by ID
-- [ ] Update outlines/manifest.json to use IDs
-- [ ] Update dashboard to reference by ID
-- [ ] Update generation scripts to use IDs
-- [ ] Update README documentation
-- [ ] Write migration guide for future data changes
+- [x] Define and publish JSON schema (`data/schema.json`)
+- [x] Add schema validation to build.js (`lib/validators.js`)
+- [x] Add IDs to all 64 courses in courses.json
+- [x] Add IDs to all 51 outline manifest entries
+- [x] Update curricula courseRefs to include `id` alongside `name`
+- [x] Update dashboard to use ID-first lookups (`data-course-id`, `courseLookup`)
+- [x] Update status page to use ID-first lookups (`membershipMap`)
+- [x] Update generation scripts to dual-key `courseStatusMap`
+- [x] Write migration guide (`DESIGN/MIGRATION-GUIDE.md`)
+- [ ] Simplify curriculum refs to ID-only strings (Issue #11)
+- [ ] Resolve Cloud Ops cross-reference mismatches (Issue #11)
+
+---
+
+**Last updated:** March 28, 2026

@@ -169,118 +169,75 @@ Enables: #3 (Code Architecture)
 
 ---
 
-## Issue #3: Modularize Frontend Code Architecture
+## Issue #3: Extract CSS and JS into Separate Files
 
-**Title:** Architecture: Modularize Frontend Code Architecture (ES6 Modules)
+**Title:** Architecture: Extract CSS and JS into Separate Files
 
-**Labels:** `architecture`, `enhancement`, `refactoring`, `high-priority`
+**Labels:** `architecture`, `enhancement`, `refactoring`
 
 **Milestone:** Phase 3: Code Quality & Maintainability
 
 **Assignee:** (TBD)
 
+**Status:** ✅ Completed (merged via PR #8)
+
 **Body:**
 
 ### Priority
-🔴 High - Long-term maintainability and scalability
+🔴 High - Foundation for further modularization
 
 ### Effort
-3-4 weeks (2 developers recommended)
+1 week (single developer)
 
 ### Description
-Break up the monolithic 900+ line HTML/JS file into a modular ES6 architecture with reusable components, proper separation of concerns, and lazy-loaded data.
+Extract all inline CSS and JavaScript from the monolithic HTML files into separate, organized files loaded via `<link>` and `<script>` tags. Both HTML files become thin shells (~50 lines each). All files remain plain `<script>` tags — no ES6 modules — to preserve `file://` protocol compatibility.
 
-### Current Problems
-- Single 900+ line index.html with everything (HTML, CSS, JS)
-- String-based component generation (hard to read, maintain)
-- Global variables (data corruption risk)
-- No code reuse between index.html and status.html
-- No lazy loading (all 50+ outlines loaded at startup)
-- No way to test components independently
-- CSS duplicated in multiple files
+### What Was Delivered
 
-### Solution
-Implement:
-1. **Modular Structure** - separate files for each component
-2. **Reusable Components** - classes for CourseCard, OutlineView, etc.
-3. **Central DataStore** - single source for application state
-4. **Lazy Loading** - load outlines on demand
-5. **Separation of Concerns** - data, components, UI, styling in separate files
-6. **CSS Modules** - organized, maintainable stylesheets
+**Phase 1 — CSS extraction (4 files):**
+- `css/variables.css` — shared color system / theme variables
+- `css/base.css` — shared reset, header, footer, auth gate, membership tags
+- `css/dashboard.css` — dashboard-specific: two-column layout, nav panel, curriculum groups, detail panel, outline display
+- `css/status.css` — status page-specific: summary bar, progress bars, filter chips, data table, status pills/dropdowns
 
-### Files
-See detailed specification: [`DESIGN/03-CODE-ARCHITECTURE.md`](./03-CODE-ARCHITECTURE.md)
+**Phase 2 — JS extraction (4 files):**
+- `js/auth.js` — shared SHA-1 password gate with session persistence
+- `js/theme.js` — shared light/dark toggle with localStorage sync
+- `js/dashboard.js` — syllabiMap, courseLookup, curriculumMap, all dashboard build/render/select functions
+- `js/status-main.js` — membershipMap, contentData, summary/progress/table rendering, dropdown/filter logic
 
-### New Project Structure
+**HTML shells rewritten:**
+- `index.html` — 877 lines → 57 lines
+- `status.html` — 502 lines → 48 lines
+
+### Project Structure After This Issue
 ```
-src/
-├── index.html
-├── status.html
+tracking/repo/
+├── index.html          # Thin shell (~57 lines)
+├── status.html         # Thin shell (~48 lines)
+├── css/
+│   ├── variables.css   # Shared theme variables
+│   ├── base.css        # Shared base styles
+│   ├── dashboard.css   # Dashboard-specific styles
+│   └── status.css      # Status page-specific styles
 ├── js/
-│  ├── main.js                    # Entry point
-│  ├── app/Dashboard.js
-│  ├── components/
-│  │  ├── CourseCard.js
-│  │  ├── OutlineView.js
-│  │  ├── CurriculumNav.js
-│  │  └── ...
-│  ├── data/DataStore.js
-│  └── utils/
-│     ├── formatters.js
-│     └── validators.js
-└── css/
-   ├── variables.css
-   ├── base.css
-   ├── components.css
-   └── ...
+│   ├── auth.js         # Shared auth gate
+│   ├── theme.js        # Shared theme toggle
+│   ├── dashboard.js    # Dashboard page logic
+│   └── status-main.js  # Status page logic
+├── courses.js          # Auto-generated data bundle
+├── outlines/
+│   └── outlines.js     # Auto-generated outline bundle
+└── ...
 ```
 
-### Deliverables
-- [ ] Create src/ folder structure
-- [ ] Extract CSS to separate files (6+ files)
-- [ ] Create DataStore module
-- [ ] Create component classes (CourseCard, OutlineView, CurriculumNav, etc.)
-- [ ] Create main.js entry point
-- [ ] Update HTML files (minimal, module-based)
-- [ ] Add unit tests for components (test coverage > 80%)
-- [ ] Optional: Add module bundler (Webpack/Vite)
-- [ ] Updated README with new architecture
-
-### Implementation Timeline
-**Week 6:** Extract CSS, create DataStore, update entry point
-**Week 7:** Create 2-3 major components and tests
-**Week 8:** Create remaining components, refactor HTML
-**Week 9:** Optimize, final testing, prepare deployment
-
-### Acceptance Criteria
-- [ ] index.html < 100 lines (was 900+)
-- [ ] All logic in reusable components
-- [ ] 6+ reusable component classes created
-- [ ] Each component testable independently
-- [ ] Test coverage > 80%
-- [ ] No performance regression
-- [ ] Dashboard functionality unchanged
-- [ ] Page load time < 2 seconds
-- [ ] Outlines lazy-loaded on demand
-
-### Testing
-```bash
-npm test                    # Run all component tests
-npm run build               # Build still works
-npm run build:watch        # Watch mode still works
-# Manual testing: verify dashboard works same as before
-```
-
-### Success Metrics
-- Code quality improved (maintainability, testability)
-- Components are reusable across pages
-- No performance regression
-- Developer can add new features without touching giant file
-- Codebase is scalable to hundreds of courses
+### Deferred to Future Issues
+- **JS component modularization** → Issue #10
+- **Curriculum reference restructuring** → Issue #11
 
 ### Related Issues
 Depends on: #1 (Build Process), #2 (Data Model)
-Enables: Future features (course editor, LMS integration)
+Enables: #10 (JS Modularization), #11 (Curriculum Refs)
 
 ---
 
@@ -319,19 +276,164 @@ All documents in: `tracking/DESIGN/` folder (2,443 lines total)
 
 ---
 
-## How to Create These Issues
+## Issue #5: (User-created — see GitHub)
 
-1. Go to https://github.com/apprenti-org/curriculum-tracking/issues/new
-2. Copy the content from the issue above
-3. Paste into the GitHub issue form
-4. Add labels, milestone, and assignee
-5. Click "Create issue"
+> Issue #5 was created manually on GitHub. Check https://github.com/apprenti-org/curriculum-tracking/issues/5 for details.
 
-**Recommended Order:**
-1. Create Issue #1 (Build Process)
-2. Create Issue #2 (Data Model)
-3. Create Issue #3 (Code Architecture)
-4. Create Issue #4 (Documentation)
+---
+
+## Issue #10: JS Component Modularization
+
+**Title:** Architecture: JS Component Modularization
+
+**Labels:** `architecture`, `enhancement`, `refactoring`
+
+**Milestone:** Phase 3: Code Quality & Maintainability
+
+**Assignee:** (TBD)
+
+**Body:**
+
+### Priority
+🟡 Medium - Improves maintainability, not blocking other work
+
+### Effort
+2-3 weeks (single developer)
+
+### Description
+Break the monolithic `dashboard.js` (~330 lines) and `status-main.js` (~155 lines) into smaller, focused script files. Each file handles one responsibility (nav builder, detail panel renderer, outline renderer, shared utilities). All files remain plain `<script>` tags for `file://` compatibility — no ES6 modules.
+
+This was deferred from Issue #3, which completed the CSS/JS extraction but kept each page's logic in a single JS file.
+
+### Current State (after Issue #3)
+- `js/dashboard.js` — contains syllabiMap, courseLookup, curriculumMap, courseStatusIcon(), buildDashboard(), buildCurriculumSummary(), buildNavItemFromCourse(), selectCourse(), and initialization
+- `js/status-main.js` — contains STATUSES, membershipMap, contentData, computeSummary(), renderSummary(), renderProgress(), renderTable(), toggleDropdown(), setStatus(), setFilter(), and initialization
+
+### Proposed Structure
+```
+js/
+├── auth.js              # (exists) Shared auth gate
+├── theme.js             # (exists) Shared theme toggle
+├── shared/
+│   ├── data-store.js    # courseLookup, membershipMap, curriculumMap builders
+│   ├── formatters.js    # Status icons, membership HTML builders
+│   └── constants.js     # STATUSES, STATUS_CLASSES, syllabiMap
+├── dashboard/
+│   ├── nav-builder.js   # buildDashboard(), buildCurriculumSummary(), buildNavItemFromCourse()
+│   ├── detail-panel.js  # selectCourse(), outline rendering
+│   └── init.js          # Dashboard initialization
+└── status/
+    ├── summary.js       # computeSummary(), renderSummary(), renderProgress()
+    ├── table.js         # renderTable(), filter logic, dropdown logic
+    └── init.js          # Status page initialization
+```
+
+### Acceptance Criteria
+- [ ] No single JS file exceeds ~100 lines
+- [ ] Shared utilities reused across both pages
+- [ ] All functionality preserved (zero regressions)
+- [ ] Works over `file://` protocol (no ES6 modules)
+- [ ] Script load order documented in HTML comments
+
+### Related Issues
+Depends on: #3 (CSS/JS Extraction)
+Deferred from: #3
+
+---
+
+## Issue #11: Curriculum Reference Restructuring
+
+**Title:** Data Model: Curriculum Reference Restructuring
+
+**Labels:** `architecture`, `data-model`, `enhancement`
+
+**Milestone:** Phase 2: Data Integrity
+
+**Assignee:** (TBD)
+
+**Body:**
+
+### Priority
+🟡 Medium - Reduces data duplication, completes ID migration
+
+### Effort
+1-2 weeks (single developer)
+
+### Description
+Curricula in `courses.json` currently embed course objects with `name`, `hoursOverride`, and `note` fields. Now that stable IDs exist (Issue #2), restructure these to reference courses by ID only, with overrides kept minimal. Update the dashboard and status page lookups to resolve course data from the ID.
+
+This was deferred from Issue #2, which added IDs but kept the existing reference format to avoid breaking changes.
+
+### Current Format (courses.json curricula)
+```json
+{
+  "name": "Cloud Operations Specialist",
+  "groups": [
+    {
+      "name": "Foundation",
+      "courses": [
+        { "name": "Student Onboarding", "id": "student-onboarding" },
+        { "name": "Professional Communication", "id": "professional-communication" },
+        { "name": "Introduction to Cloud Technology", "id": "intro-to-cloud-technology", "hoursOverride": 20 }
+      ]
+    }
+  ]
+}
+```
+
+### Proposed Format
+```json
+{
+  "name": "Cloud Operations Specialist",
+  "groups": [
+    {
+      "name": "Foundation",
+      "courses": [
+        "student-onboarding",
+        "professional-communication",
+        { "id": "intro-to-cloud-technology", "hoursOverride": 20 }
+      ]
+    }
+  ]
+}
+```
+
+Course refs become either a plain ID string (common case) or an object with `id` + overrides (when needed). The `name` field is dropped from refs since it can be resolved from the course's master entry.
+
+### Deliverables
+- [ ] Update curricula format in `courses.json`
+- [ ] Update `lib/validators.js` to validate new format
+- [ ] Update `lib/generators.js` to resolve refs
+- [ ] Update `js/dashboard.js` curriculum map builder
+- [ ] Update `js/status-main.js` membership map builder
+- [ ] Update `data/schema.json` with new ref format
+- [ ] Update `DESIGN/MIGRATION-GUIDE.md`
+- [ ] Run `node build.js` — zero errors
+
+### Acceptance Criteria
+- [ ] All curriculum course refs use IDs (no `name` field in refs)
+- [ ] Simple refs are plain strings, override refs are `{ id, hoursOverride?, note? }`
+- [ ] Dashboard and status page render identically
+- [ ] Build validation passes with zero errors
+- [ ] Cross-reference warnings for Cloud Ops resolved (6 mismatched names from Issue #2)
+
+### Related Issues
+Depends on: #2 (Data Model), #3 (CSS/JS Extraction)
+Deferred from: #2
+
+---
+
+## Issue Status Summary
+
+| Issue | Title | Status |
+|-------|-------|--------|
+| #1 | Build Process | ✅ Merged |
+| #2 | Data Model & Stable IDs | ✅ Merged |
+| #3 | CSS/JS Extraction | ✅ Merged |
+| #4 | Architecture Documentation | ✅ Merged |
+| #5 | (See GitHub) | Open |
+| #10 | JS Component Modularization | Open |
+| #11 | Curriculum Reference Restructuring | Open |
 
 ---
 
@@ -342,9 +444,9 @@ All detailed specifications are in the `tracking/DESIGN/` folder:
 - [01-DATA-MODEL.md](./01-DATA-MODEL.md) - Data model design
 - [02-BUILD-PROCESS.md](./02-BUILD-PROCESS.md) - Build system design
 - [03-CODE-ARCHITECTURE.md](./03-CODE-ARCHITECTURE.md) - Frontend modularization
-- [IMPLEMENTATION_ROADMAP.md](./IMPLEMENTATION_ROADMAP.md) - 9-week timeline
+- [IMPLEMENTATION_ROADMAP.md](./IMPLEMENTATION_ROADMAP.md) - Implementation timeline
 - [README.md](./README.md) - Navigation guide
 
 ---
 
-**Generated:** March 28, 2026
+**Last updated:** March 28, 2026
