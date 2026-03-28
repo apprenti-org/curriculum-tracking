@@ -1,0 +1,176 @@
+/* Status page-specific styles (status.html) */
+
+/* Status page variable overrides — the status page uses slightly different text shades */
+:root[data-theme="dark"] {
+    --text-secondary: #8B8D98; --text-muted: #52535E;
+    --status-progress-bg: rgba(33,158,188,0.12); --status-complete-bg: rgba(63,185,80,0.12);
+    --status-not-border: #2E2F3A; --status-not-dot: #52535E;
+    --status-scoping-bg: rgba(255,183,3,0.12); --status-scoping-text: #FFB703; --status-scoping-border: rgba(255,183,3,0.25); --status-scoping-dot: #FFB703;
+    --status-progress-border: rgba(33,158,188,0.25); --status-progress-dot: #219EBC;
+    --status-needs-review-bg: rgba(251,133,0,0.12); --status-needs-review-text: #FB8500; --status-needs-review-border: rgba(251,133,0,0.25); --status-needs-review-dot: #FB8500;
+    --status-review-bg: rgba(142,202,230,0.12); --status-review-text: #8ECAE6; --status-review-border: rgba(142,202,230,0.25); --status-review-dot: #8ECAE6;
+    --status-complete-border: rgba(63,185,80,0.25); --status-complete-dot: #3fb950;
+    --seg-complete: #3fb950; --seg-active: #219EBC; --seg-empty: #23242E; --seg-empty-border: #2E2F3A;
+    --type-curriculum-bg: rgba(33,158,188,0.15); --type-curriculum-text: #219EBC;
+    --type-course-bg: rgba(139,141,152,0.15); --type-course-text: #8B8D98;
+    --filter-bg: #23242E; --filter-border: #2E2F3A; --filter-text: #F0F0EC;
+    --filter-hover-border: #219EBC; --filter-hover-text: #219EBC;
+    --filter-active-bg: #219EBC; --filter-active-border: #219EBC; --filter-active-text: #fff;
+    --dropdown-bg: #22232D; --dropdown-border: #2E2F3A; --dropdown-shadow: rgba(0,0,0,0.4);
+    --dropdown-hover: #2E2F3A;
+}
+
+:root[data-theme="light"] {
+    --status-not-border: #D5D4D0; --status-not-dot: #9B9DA8;
+    --status-scoping-bg: rgba(255,183,3,0.1); --status-scoping-text: #FB8500; --status-scoping-border: rgba(251,133,0,0.25); --status-scoping-dot: #FB8500;
+    --status-progress-border: rgba(33,158,188,0.25); --status-progress-dot: #219EBC;
+    --status-needs-review-bg: rgba(251,133,0,0.1); --status-needs-review-text: #c26a00; --status-needs-review-border: rgba(251,133,0,0.25); --status-needs-review-dot: #c26a00;
+    --status-review-bg: rgba(2,48,71,0.08); --status-review-text: #023047; --status-review-border: rgba(2,48,71,0.2); --status-review-dot: #023047;
+    --status-complete-border: rgba(63,185,80,0.25); --status-complete-dot: #1a7f37;
+    --seg-complete: #1a7f37; --seg-active: #219EBC; --seg-empty: #EDECE8; --seg-empty-border: #D5D4D0;
+    --type-curriculum-bg: rgba(33,158,188,0.1); --type-curriculum-text: #219EBC;
+    --type-course-bg: rgba(107,109,120,0.1); --type-course-text: #6B6D78;
+    --filter-bg: #EDECE8; --filter-border: #D5D4D0; --filter-text: #111117;
+    --filter-hover-border: #219EBC; --filter-hover-text: #219EBC;
+    --filter-active-bg: #219EBC; --filter-active-border: #219EBC; --filter-active-text: #fff;
+    --dropdown-bg: #FFFFFF; --dropdown-border: #D5D4D0; --dropdown-shadow: rgba(0,0,0,0.12);
+    --dropdown-hover: #EDECE8;
+}
+
+/* Status page header overrides */
+.status-page header { padding: 24px 32px; }
+.status-page header h1 { font-size: 24px; }
+.status-page header p { font-size: 14px; margin-top: 4px; }
+
+/* Summary bar */
+.summary-bar {
+    display: flex; gap: 24px; padding: 20px 32px;
+    background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap;
+}
+
+.summary-card {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 16px 20px; min-width: 160px; flex: 1;
+}
+.summary-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin-bottom: 4px; }
+.summary-card .value { font-size: 28px; font-weight: 700; color: var(--text-primary); }
+.summary-card .sub { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+
+/* Progress section */
+.progress-section { padding: 24px 32px; }
+.progress-section h2 { font-size: 16px; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; }
+.progress-row { display: flex; gap: 24px; margin-bottom: 24px; }
+
+.progress-block {
+    flex: 1; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 20px;
+}
+.progress-block h3 { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+
+.progress-bar-container {
+    background: var(--seg-empty); border-radius: 6px; height: 24px;
+    overflow: hidden; display: flex; margin-bottom: 8px;
+}
+.progress-segment { height: 100%; transition: width 0.4s ease; }
+.seg-complete { background: var(--seg-complete); }
+.seg-in-progress { background: var(--seg-active); }
+.seg-not-started { background: var(--seg-empty); }
+
+.progress-legend { display: flex; gap: 16px; font-size: 12px; color: var(--text-secondary); }
+.legend-item { display: flex; align-items: center; gap: 6px; }
+.legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+
+/* Table section */
+.table-section { padding: 0 32px 32px; }
+.table-section h2 { font-size: 16px; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; }
+
+/* Filter chips */
+.filter-row { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.filter-chip {
+    background: var(--filter-bg); border: 1px solid var(--filter-border);
+    color: var(--filter-text); padding: 4px 14px; border-radius: 16px;
+    cursor: pointer; font-size: 12px; transition: all 0.15s;
+}
+.filter-chip:hover { border-color: var(--filter-hover-border); color: var(--filter-hover-text); }
+.filter-chip.active { background: var(--filter-active-bg); border-color: var(--filter-active-border); color: var(--filter-active-text); }
+
+/* Data table */
+table {
+    width: 100%; border-collapse: collapse;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; overflow: hidden;
+}
+
+thead th {
+    text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary);
+    background: var(--surface-raised); border-bottom: 1px solid var(--border);
+    cursor: pointer; user-select: none;
+}
+thead th:hover { color: var(--text-primary); }
+
+tbody tr { border-bottom: 1px solid var(--border-subtle); transition: background 0.1s; }
+tbody tr:hover { background: var(--surface-raised); }
+tbody tr:last-child { border-bottom: none; }
+tbody td { padding: 12px 16px; font-size: 14px; }
+
+.cell-name { font-weight: 500; color: var(--text-primary); max-width: 160px; }
+.cell-type { font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px; padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+.type-curriculum { background: var(--type-curriculum-bg); color: var(--type-curriculum-text); }
+.type-course { background: var(--type-course-bg); color: var(--type-course-text); }
+.cell-hours { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+
+/* Status pills */
+.status-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 12px; border-radius: 16px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: all 0.15s; user-select: none;
+}
+.status-pill:hover { filter: brightness(1.15); }
+
+.status-not-started { background: var(--status-not-bg); color: var(--status-not-text); border: 1px solid var(--status-not-border); }
+.status-scoping { background: var(--status-scoping-bg); color: var(--status-scoping-text); border: 1px solid var(--status-scoping-border); }
+.status-in-progress { background: var(--status-progress-bg); color: var(--status-progress-text); border: 1px solid var(--status-progress-border); }
+.status-needs-review { background: var(--status-needs-review-bg); color: var(--status-needs-review-text); border: 1px solid var(--status-needs-review-border); }
+.status-in-review { background: var(--status-review-bg); color: var(--status-review-text); border: 1px solid var(--status-review-border); }
+.status-complete { background: var(--status-complete-bg); color: var(--status-complete-text); border: 1px solid var(--status-complete-border); }
+
+.status-page .status-dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot-not-started { background: var(--status-not-dot); }
+.dot-scoping { background: var(--status-scoping-dot); }
+.dot-in-progress { background: var(--status-progress-dot); }
+.dot-needs-review { background: var(--status-needs-review-dot); }
+.dot-in-review { background: var(--status-review-dot); }
+.dot-complete { background: var(--status-complete-dot); }
+
+/* Status dropdown */
+.status-cell { position: relative; }
+.status-dropdown {
+    display: none; position: absolute; top: 100%; left: 0; z-index: 100;
+    background: var(--dropdown-bg); border: 1px solid var(--dropdown-border);
+    border-radius: 8px; padding: 4px; min-width: 160px;
+    box-shadow: 0 8px 24px var(--dropdown-shadow);
+}
+.status-dropdown.open { display: block; }
+.status-option {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 12px; border-radius: 4px; cursor: pointer;
+    font-size: 13px; color: var(--text-primary);
+}
+.status-option:hover { background: var(--dropdown-hover); }
+
+.note-cell { max-width: 200px; font-size: 12px; color: var(--text-secondary); }
+
+/* Status page membership overrides */
+.membership-cell { font-size: 12px; max-width: 220px; }
+.status-page .membership-tag {
+    padding: 2px 8px; border-radius: 3px; margin: 1px 2px;
+    border: 1px solid var(--border-subtle);
+    font-size: 11px; white-space: normal;
+}
+.membership-sep { font-size: 8px; opacity: 0.4; }
+
+/* Status page footer */
+.status-page footer {
+    padding: 24px 32px; font-size: 12px;
+}
