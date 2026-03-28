@@ -841,10 +841,7 @@
           "name": "Foundational IT & Operations",
           "hours": 120,
           "courses": [
-            {
-              "name": "CompTIA A+",
-              "id": "comptia-a-plus"
-            }
+            "comptia-a-plus"
           ]
         },
         {
@@ -852,9 +849,8 @@
           "hours": 42,
           "courses": [
             {
-              "name": "Helpdesk Software Fundamentals",
-              "hoursOverride": 13,
-              "id": "helpdesk-software-fundamentals"
+              "id": "helpdesk-software-fundamentals",
+              "hoursOverride": 13
             }
           ]
         }
@@ -868,10 +864,7 @@
           "name": "Network Fundamentals",
           "hoursOverride": 80
         },
-        {
-          "name": "Introduction to GitHub",
-          "id": "introduction-to-github"
-        },
+        "introduction-to-github",
         {
           "name": "Linux Fundamentals",
           "hoursOverride": 72
@@ -892,10 +885,7 @@
           "name": "Cloud Essentials",
           "hoursOverride": 80
         },
-        {
-          "name": "Introduction to AWS Cloud Platform",
-          "id": "introduction-to-aws-cloud-platform"
-        }
+        "introduction-to-aws-cloud-platform"
       ]
     },
     {
@@ -903,82 +893,40 @@
       "syllabus": "https://docs.google.com/document/d/14-ByDX4VgO6S3azaJ9IbUsvJYKr99_7TOzygszBJWSc",
       "courses": [
         {
-          "name": "IT Fundamentals",
-          "hoursOverride": 80,
-          "id": "it-fundamentals"
+          "id": "it-fundamentals",
+          "hoursOverride": 80
         },
         {
-          "name": "Networking Fundamentals",
-          "hoursOverride": 220,
-          "id": "networking-fundamentals"
+          "id": "networking-fundamentals",
+          "hoursOverride": 220
         },
         {
-          "name": "Security and Cybersecurity Fundamentals",
-          "hoursOverride": 220,
-          "id": "security-and-cybersecurity-fundamentals"
+          "id": "security-and-cybersecurity-fundamentals",
+          "hoursOverride": 220
         }
       ]
     },
     {
       "name": "IT Business Analyst",
       "courses": [
-        {
-          "name": "Linux Foundations",
-          "id": "linux-foundations"
-        },
-        {
-          "name": "Python Basics (for Software Dev)",
-          "id": "python-basics-for-software-dev"
-        },
-        {
-          "name": "Advanced Python",
-          "id": "advanced-python"
-        },
-        {
-          "name": "Agile Project Management with Scrum",
-          "id": "agile-project-management-with-scrum"
-        },
-        {
-          "name": "Python for Infrastructure Automation",
-          "id": "python-for-infrastructure-automation"
-        }
+        "linux-foundations",
+        "python-basics-for-software-dev",
+        "advanced-python",
+        "agile-project-management-with-scrum",
+        "python-for-infrastructure-automation"
       ]
     },
     {
       "name": "IT Support Professional",
       "courses": [
-        {
-          "name": "CompTIA A+",
-          "id": "comptia-a-plus"
-        },
-        {
-          "name": "CompTIA Network+",
-          "id": "comptia-network-plus"
-        },
-        {
-          "name": "Microsoft 365 Fundamentals",
-          "id": "microsoft-365-fundamentals"
-        },
-        {
-          "name": "Microsoft 365 Endpoint Administrator",
-          "id": "microsoft-365-endpoint-administrator"
-        },
-        {
-          "name": "macOS Administration Fundamentals",
-          "id": "macos-administration-fundamentals"
-        },
-        {
-          "name": "Cloud Fundamentals",
-          "id": "cloud-fundamentals"
-        },
-        {
-          "name": "Troubleshooting/Supporting in an Enterprise Environment",
-          "id": "troubleshooting-supporting-in-an-enterprise-environment"
-        },
-        {
-          "name": "Helpdesk Software Fundamentals",
-          "id": "helpdesk-software-fundamentals"
-        }
+        "comptia-a-plus",
+        "comptia-network-plus",
+        "microsoft-365-fundamentals",
+        "microsoft-365-endpoint-administrator",
+        "macos-administration-fundamentals",
+        "cloud-fundamentals",
+        "troubleshooting-supporting-in-an-enterprise-environment",
+        "helpdesk-software-fundamentals"
       ]
     },
     {
@@ -989,14 +937,8 @@
           "hours": 176,
           "note": "RTI Area 1",
           "courses": [
-            {
-              "name": "Linux Foundations",
-              "id": "linux-foundations"
-            },
-            {
-              "name": "CompTIA Network+",
-              "id": "comptia-network-plus"
-            }
+            "linux-foundations",
+            "comptia-network-plus"
           ]
         },
         {
@@ -1005,18 +947,11 @@
           "note": "RTI Area 2",
           "courses": [
             {
-              "name": "CompTIA A+",
-              "hoursOverride": 96,
-              "id": "comptia-a-plus"
+              "id": "comptia-a-plus",
+              "hoursOverride": 96
             },
-            {
-              "name": "ITIL Foundations",
-              "id": "itil-foundations"
-            },
-            {
-              "name": "ITIL Specialist 4",
-              "id": "itil-specialist-4"
-            }
+            "itil-foundations",
+            "itil-specialist-4"
           ]
         },
         {
@@ -1024,40 +959,18 @@
           "hours": 236,
           "note": "RTI Area 3",
           "courses": [
+            "python-basics-for-software-dev",
+            "python-for-infrastructure-automation",
             {
-              "name": "Python Basics (for Software Dev)",
-              "id": "python-basics-for-software-dev"
-            },
-            {
-              "name": "Python for Infrastructure Automation",
-              "id": "python-for-infrastructure-automation"
-            },
-            {
-              "name": "Java Language Fundamentals",
+              "id": "java-language-fundamentals",
               "hoursOverride": 44,
-              "note": "Reduced from 56h for this deployment",
-              "id": "java-language-fundamentals"
+              "note": "Reduced from 56h for this deployment"
             },
-            {
-              "name": "Web Development with JavaScript",
-              "id": "web-development-with-javascript"
-            },
-            {
-              "name": "SQL Fundamentals for Operations",
-              "id": "sql-fundamentals-for-operations"
-            },
-            {
-              "name": "CI/CD Pipeline Concepts",
-              "id": "ci-cd-pipeline-concepts"
-            },
-            {
-              "name": "Infrastructure as Code Fundamentals",
-              "id": "infrastructure-as-code-fundamentals"
-            },
-            {
-              "name": "AI Foundations",
-              "id": "ai-foundations"
-            }
+            "web-development-with-javascript",
+            "sql-fundamentals-for-operations",
+            "ci-cd-pipeline-concepts",
+            "infrastructure-as-code-fundamentals",
+            "ai-foundations"
           ]
         },
         {
@@ -1065,22 +978,10 @@
           "hours": 16,
           "note": "RTI Area 4",
           "courses": [
-            {
-              "name": "Compliance and Security Awareness",
-              "id": "compliance-and-security-awareness"
-            },
-            {
-              "name": "Technical Documentation",
-              "id": "technical-documentation"
-            },
-            {
-              "name": "Productivity Tools for Technical Reporting",
-              "id": "productivity-tools-for-technical-reporting"
-            },
-            {
-              "name": "Professional Communication",
-              "id": "professional-communication"
-            }
+            "compliance-and-security-awareness",
+            "technical-documentation",
+            "productivity-tools-for-technical-reporting",
+            "professional-communication"
           ]
         }
       ]
@@ -1088,22 +989,10 @@
     {
       "name": "Software Development Java",
       "courses": [
-        {
-          "name": "Java Language Fundamentals",
-          "id": "java-language-fundamentals"
-        },
-        {
-          "name": "JavaScript",
-          "id": "javascript"
-        },
-        {
-          "name": "Web Development with JavaScript",
-          "id": "web-development-with-javascript"
-        },
-        {
-          "name": "Data Fundamentals — SQL for Data",
-          "id": "data-fundamentals-sql-for-data"
-        }
+        "java-language-fundamentals",
+        "javascript",
+        "web-development-with-javascript",
+        "data-fundamentals-sql-for-data"
       ]
     }
   ]
