@@ -1,0 +1,159 @@
+{
+  "course": "SQL for C#",
+  "totalHours": 50,
+  "totalModules": 9,
+  "totalLessons": 20,
+  "modules": [
+    {
+      "module": 1,
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Pre-Assessment, Welcome, Scenario & Overview",
+          "type": "activity"
+        }
+      ],
+      "name": "Course Introduction"
+    },
+    {
+      "module": 2,
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "Intro to Data Analysis",
+          "type": "lesson"
+        },
+        {
+          "title": "Data Analysis Types",
+          "type": "lesson"
+        },
+        {
+          "title": "Data Modeling for Analysis",
+          "type": "lesson"
+        },
+        {
+          "title": "Data Modeling ERD",
+          "type": "demo"
+        },
+        {
+          "title": "Normalization and Denormalization",
+          "type": "lesson"
+        }
+      ],
+      "name": "Introduction to Data for Developers"
+    },
+    {
+      "module": 3,
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "Docker Overview & Commands",
+          "type": "lesson"
+        },
+        {
+          "title": "Docker Concepts & Installation",
+          "type": "lesson"
+        },
+        {
+          "title": "SQL Server Express and Azure Data Studio Setup",
+          "type": "activity"
+        }
+      ],
+      "name": "Docker and SQL Concepts and Installations"
+    },
+    {
+      "module": 4,
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "Basic SQL",
+          "type": "lesson"
+        },
+        {
+          "title": "Filtering SQL",
+          "type": "lesson"
+        },
+        {
+          "title": "Music Collection ERD",
+          "type": "activity"
+        }
+      ],
+      "name": "SQL Fundamentals"
+    },
+    {
+      "module": 5,
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "Aggregates",
+          "type": "lesson"
+        },
+        {
+          "title": "Date Handling",
+          "type": "lesson"
+        }
+      ],
+      "name": "Advanced SQL"
+    },
+    {
+      "module": 6,
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "Joins",
+          "type": "lesson"
+        },
+        {
+          "title": "Subqueries",
+          "type": "lesson"
+        },
+        {
+          "title": "Joins vs Subqueries",
+          "type": "demo"
+        }
+      ],
+      "name": "Joins and Subqueries"
+    },
+    {
+      "module": 7,
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "DDL (Data Definition Language)",
+          "type": "lesson"
+        },
+        {
+          "title": "DML (Data Manipulation Language)",
+          "type": "lesson"
+        },
+        {
+          "title": "Import and Export",
+          "type": "lesson"
+        }
+      ],
+      "name": "Database Creation and Maintenance"
+    },
+    {
+      "module": 8,
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "SQL for Business Applications",
+          "type": "lesson"
+        }
+      ],
+      "name": "SQL for Business"
+    },
+    {
+      "module": 9,
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Assessment Prep & Summative",
+          "type": "activity"
+        }
+      ],
+      "name": "Summative Assessment"
+    }
+  ]
+}

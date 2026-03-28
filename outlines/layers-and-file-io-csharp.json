@@ -1,0 +1,100 @@
+{
+  "course": "Layers and File I/O for C#",
+  "totalHours": 40,
+  "totalLessons": 15,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "Layers and File I/O",
+      "hours": 40,
+      "description": "Intermediate C# concepts including DateTime, collections, application layering, file I/O, serialization, structs, and unit testing with NUnit.",
+      "lessons": [
+        {
+          "title": "Getting Started",
+          "hours": 1,
+          "topics": ["Environment setup and prerequisites", "Module overview and learning objectives"]
+        },
+        {
+          "title": "DateTime",
+          "hours": 3,
+          "topics": ["Working with DateTime types in C#", "Formatting, parsing, and arithmetic with dates and times"]
+        },
+        {
+          "title": "DateTime Exercises",
+          "hours": 2,
+          "topics": ["Hands-on practice with DateTime operations"]
+        },
+        {
+          "title": "Collections",
+          "hours": 3,
+          "topics": ["Lists, Dictionaries, and other generic collections", "When to use each collection type"]
+        },
+        {
+          "title": "Collections Exercises",
+          "hours": 2,
+          "topics": ["Hands-on practice with collection operations"]
+        },
+        {
+          "title": "Layers and Libraries",
+          "hours": 3,
+          "topics": ["Application layering (UI, BLL, DAL)", "Creating and referencing class libraries", "Separation of concerns"]
+        },
+        {
+          "title": "Weather Almanac — Layered Architecture (Lab)",
+          "hours": 4,
+          "topics": ["Building a layered Weather Almanac application", "Implementing layers with class library projects"]
+        },
+        {
+          "title": "System.IO",
+          "hours": 3,
+          "topics": ["Reading and writing files with System.IO", "StreamReader, StreamWriter, File, and Directory classes"]
+        },
+        {
+          "title": "Weather Almanac — File I/O (Exercise)",
+          "hours": 3,
+          "topics": ["Adding file I/O capability to the Weather Almanac application"]
+        },
+        {
+          "title": "Serialization",
+          "hours": 3,
+          "topics": ["JSON and XML serialization/deserialization", "System.Text.Json and related libraries"]
+        },
+        {
+          "title": "Serialization Exercises",
+          "hours": 2,
+          "topics": ["Hands-on practice with serialization patterns"]
+        },
+        {
+          "title": "Structs",
+          "hours": 2,
+          "topics": ["Value types vs reference types", "When and how to use structs in C#"]
+        },
+        {
+          "title": "NUnit Testing",
+          "hours": 3,
+          "topics": ["Introduction to unit testing with NUnit", "Writing and running test cases", "Arrange-Act-Assert pattern"]
+        },
+        {
+          "title": "String Calculator (NUnit Exercise)",
+          "hours": 2,
+          "topics": ["Test-Driven Development exercise using NUnit"]
+        },
+        {
+          "title": "Module Assessment",
+          "hours": 4,
+          "topics": ["Summative assessment covering DateTime, collections, layers, file I/O, serialization, structs, and NUnit"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Module Assessment (M03)",
+    "hours": 4,
+    "items": [
+      "Summative assessment covering all module topics",
+      "Application of layered architecture patterns",
+      "File I/O and serialization implementation",
+      "Unit testing with NUnit"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "course": "Linux Foundations",
+  "totalHours": 80,
+  "totalLessons": 10,
+  "totalModules": 4,
+  "modules": [
+    {
+      "name": "Linux Foundations",
+      "hours": 16,
+      "description": "Establish baseline knowledge and introduce Linux through contrast with Windows.",
+      "lessons": [
+        {
+          "title": "Operating System Concepts & Introduction to Linux",
+          "hours": 8,
+          "topics": ["What is an OS?", "Linux vs Windows overview", "Command Line Interface (CLI) basics", "Linux distributions and system structure", "Installing Linux (VM, ISO, Live boot)"]
+        },
+        {
+          "title": "File Systems, Partitions, and Permissions",
+          "hours": 8,
+          "topics": ["Linux File System Hierarchy (FHS)", "Partitioning & storage concepts", "Mounting and managing file systems", "Linux permissions model (rwx, chown, chmod)", "Windows NTFS vs Linux ext4 permissions"]
+        }
+      ]
+    },
+    {
+      "name": "System Management",
+      "hours": 30,
+      "description": "Core administrative tasks across users, processes, software, and networking.",
+      "lessons": [
+        {
+          "title": "User and Group Management",
+          "hours": 7,
+          "topics": ["Creating/modifying users and groups in Linux", "Sudo, /etc/passwd, /etc/shadow", "Identity management concepts", "Windows user management comparison"]
+        },
+        {
+          "title": "Managing Processes and Services",
+          "hours": 7,
+          "topics": ["Process lifecycle, ps/top/kill", "Managing jobs and cron", "systemd: services, targets, journaling", "Windows Task Manager and services comparison"]
+        },
+        {
+          "title": "Networking Tools and Configuration",
+          "hours": 8,
+          "topics": ["IP configuration (ip, ifconfig, netplan)", "Hostname, DNS, routing", "SSH and remote access", "Compare with Windows network tools (ipconfig, netsh)"]
+        },
+        {
+          "title": "Software and Package Management",
+          "hours": 8,
+          "topics": ["Installing/removing packages (apt, yum, dnf, snap)", "Building software from source", "Windows packages/installers comparison", "Configuration file management"]
+        }
+      ]
+    },
+    {
+      "name": "Automation, Containers & Scripting",
+      "hours": 15,
+      "description": "Scripting, automation tools, and intro to containerized systems.",
+      "lessons": [
+        {
+          "title": "Bash Scripting and Shell Automation",
+          "hours": 7,
+          "topics": ["Bash shell review", "Writing and running scripts", "Automating tasks with cron", "Creating reusable scripts for admin tasks"]
+        },
+        {
+          "title": "Git, Containers, and Infrastructure as Code",
+          "hours": 8,
+          "topics": ["Version control with Git: clone, commit, push", "Basic Docker usage: pull, run, build", "Introduction to IaC (e.g., Ansible, Terraform overview)", "Cloud and orchestration (Kubernetes, virtualization) summary"]
+        }
+      ]
+    },
+    {
+      "name": "Security & Troubleshooting",
+      "hours": 15,
+      "description": "Protecting and fixing Linux systems using best practices.",
+      "lessons": [
+        {
+          "title": "Linux Security and Firewalls",
+          "hours": 8,
+          "topics": ["Security best practices", "Managing firewalls with ufw or firewalld", "SSH keys and secure remote access", "Compare Windows firewall and RDP access"]
+        },
+        {
+          "title": "Troubleshooting Linux Systems",
+          "hours": 7,
+          "topics": ["Diagnosing storage, memory, CPU, and service issues", "Logs: system logs, journalctl, dmesg", "File permission issues", "Network connectivity troubleshooting"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Final Assessment & Capstone Lab",
+    "hours": 4,
+    "items": ["Review and recap", "Final exam (theory + practical)", "Capstone lab challenge (integrated scenario)", "Certificate of completion (if applicable)"]
+  }
+}

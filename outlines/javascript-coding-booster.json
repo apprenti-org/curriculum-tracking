@@ -1,0 +1,46 @@
+{
+  "course": "JavaScript Coding Booster Intensive",
+  "totalHours": 8,
+  "totalLessons": 4,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "JavaScript Coding Booster Intensive",
+      "hours": 8,
+      "description": "One-day front-end production simulation in a Scrum environment. AI-assisted JavaScript development for input validation and front-end design within Microsoft Dynamics 365 ecosystems.",
+      "lessons": [
+        {
+          "title": "Module 1: Scrum Setup & AI-Assisted Design",
+          "hours": 2.5,
+          "topics": ["Scrum team formation (4–8 members)", "GitHub repository and Runbook setup", "Scenario briefing: existing codebase review (Dynamics 365 simulation)", "AI-generated flowcharts and pseudocode (ChatGPT)", "Prompting strategy for logic clarification"]
+        },
+        {
+          "title": "Module 2: AI-Assisted Development — Prompting & Generation",
+          "hours": 1,
+          "topics": ["Translating design artifacts into AI-assisted code (GitHub Copilot)", "Input validation script generation", "Balancing AI dependency with practical skills", "Validating AI output against syntax and logic requirements"]
+        },
+        {
+          "title": "Module 3: Scrum Implementation & TDD",
+          "hours": 1.5,
+          "topics": ["Feature-based front-end development", "Test-Driven Development (TDD) for input validation", "Team coordination using Runbooks", "Extending or repairing existing codebases"]
+        },
+        {
+          "title": "Module 4: Validation & Deployment",
+          "hours": 1.5,
+          "topics": ["Code review: ensuring changes don't break other systems", "Daily cloud deployment via GitHub (branch merge)", "Retrospective: Microsoft APIs/CRM customization challenges", "Balancing AI dependency review"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Production Simulation Deliverables",
+    "hours": null,
+    "items": [
+      "AI-generated design document with flowcharts and pseudocode",
+      "Implemented input validation feature in simulated Dynamics 365 codebase",
+      "TDD test suite for validation scripts",
+      "Successful cloud deployment via GitHub with passing tests",
+      "Team retrospective on AI-assisted development"
+    ]
+  }
+}

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Networking Fundamentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Networking Fundamentals</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> CyberSecurity Analyst</span>
+                <span><i class="fa-regular fa-clock"></i> 220 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>This Networking Fundamentals course provides a comprehensive introduction to core networking concepts and practical skills necessary for entry-level IT and networking roles. The 220-hour curriculum covers essential topics such as networking concepts, network implementation, network operations, network security, and troubleshooting.</p>
+            <p>Students will gain experience with routing and switching technologies, network monitoring, security protocols, and practical troubleshooting techniques. This course prepares students for real-world networking challenges and serves as a foundation for advanced certifications such as CompTIA Network+ and beyond.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Networking Fundamentals</h2>
+            <div class="assessment-box">
+                <p>The Networking Fundamentals Summative Assessment evaluates students' ability to apply core networking concepts through a practical exam (50%) and a written knowledge exam (50%). The practical component requires students to configure network devices, implement routing and switching protocols, troubleshoot connectivity issues, and apply security measures. The knowledge exam includes multiple-choice and scenario-based questions covering networking concepts, implementation, operations, security, and troubleshooting principles.</p>
+                <p>Students are assessed using a competency-based rubric that measures proficiency in key networking skills. A minimum passing score of 80% is required to demonstrate readiness for entry-level networking roles. This assessment ensures that learners can both perform technical networking tasks and apply theoretical concepts, preparing them for real-world networking environments and certification exams such as CompTIA Network+.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Explain concepts related to the Open Systems Interconnection (OSI) reference model</li>
+                <li>Compare and contrast networking appliances, applications, and functions</li>
+                <li>Summarize cloud concepts and connectivity options</li>
+                <li>Explain common networking ports, protocols, services, and traffic types</li>
+                <li>Compare and contrast transmission media and transceivers</li>
+                <li>Compare and contrast network topologies, architectures, and types</li>
+                <li>Given a scenario, use appropriate IPv4 network addressing</li>
+                <li>Summarize evolving use cases for modern network environments</li>
+                <li>Explain characteristics of routing technologies</li>
+                <li>Given a scenario, configure switching technologies and features</li>
+                <li>Given a scenario, select and configure wireless devices and technologies</li>
+                <li>Explain important factors of physical installations</li>
+                <li>Explain the purpose of organizational processes and procedures</li>
+                <li>Given a scenario, use network monitoring technologies</li>
+                <li>Explain disaster recovery (DR) concepts</li>
+                <li>Given a scenario, implement IPv4 and IPv6 network services</li>
+                <li>Compare and contrast network access and management methods</li>
+                <li>Explain the importance of basic network security concepts</li>
+                <li>Summarize various types of attacks and their impact to the network</li>
+                <li>Given a scenario, apply network security features, defense techniques, and solutions</li>
+                <li>Explain the troubleshooting methodology</li>
+                <li>Given a scenario, troubleshoot common cabling and physical interface issues</li>
+                <li>Given a scenario, troubleshoot common issues with network services</li>
+                <li>Given a scenario, troubleshoot common performance issues</li>
+                <li>Given a scenario, use the appropriate tool or protocol to solve networking issues</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Networking Concepts</span>
+                    <span class="module-hours">48 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: OSI Model &amp; Network Communication</div>
+                    <ul class="topic-list">
+                        <li>Explanation of the Open Systems Interconnection (OSI) Model</li>
+                        <li>Functions of each layer (Physical, Data Link, Network, etc.)</li>
+                        <li>Encapsulation &amp; data flow between layers</li>
+                        <li>TCP/IP Model vs. OSI Model</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Using Wireshark to Capture Network Packets and Identify OSI Layers</li>
+                            <li>Compare TCP vs. UDP using Wireshark</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 2: Networking Appliances &amp; Applications</div>
+                    <ul class="topic-list">
+                        <li>Routers, switches, firewalls, load balancers, proxies</li>
+                        <li>Network functions: NAT, VPN, IDS/IPS, QoS</li>
+                        <li>Layer 2 vs. Layer 3 devices</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Using Traceroute to Observe How Routers Forward Packets</li>
+                            <li>Show a MAC Address Table in Cisco CLI</li>
+                            <li>How to Configure Load Balancing in Nginx</li>
+                            <li>How to Set Up a Proxy in a Web Browser</li>
+                            <li>Checking Private vs. Public IP Addresses</li>
+                            <li>Connecting to a Free VPN &amp; Comparing Internet Speed</li>
+                            <li>Analyzing a Real-World Security Breach</li>
+                            <li>Configuring NAT on a Router</li>
+                            <li>Block ICMP (ping) using a firewall rule</li>
+                            <li>Design a Small Network Topology</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 3: Cloud Concepts &amp; Connectivity</div>
+                    <ul class="topic-list">
+                        <li>Public, private, hybrid, and community cloud models</li>
+                        <li>Virtual networking &amp; SDN (Software-Defined Networking)</li>
+                        <li>Cloud service models (IaaS, PaaS, SaaS)</li>
+                        <li>Cloud security considerations</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Deploying a Virtual Machine Using AWS Free Tier or Microsoft Azure</li>
+                            <li>Designing a Cloud Architecture for a Business Scenario</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 4: Network Ports, Protocols, &amp; Services</div>
+                    <ul class="topic-list">
+                        <li>Common TCP/UDP ports &amp; protocols (HTTP, FTP, DNS, DHCP, etc.)</li>
+                        <li>Network traffic types &amp; QoS prioritization</li>
+                        <li>Well-known &amp; ephemeral ports</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Identifying Ports &amp; Protocols</li>
+                            <li>Mapping Network Services to Ports &amp; Configuring Firewall Rules</li>
+                            <li>Diagnosing Blocked Ports Using Telnet &amp; Nmap</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 5: Transmission Media &amp; Network Topologies</div>
+                    <ul class="topic-list">
+                        <li>Twisted pair, coaxial, fiber optic cabling</li>
+                        <li>Media converters &amp; transceivers</li>
+                        <li>Star, bus, mesh, hybrid network architectures</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Network Design Challenge</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 6: IPv4 Addressing &amp; Modern Network Use Cases</div>
+                    <ul class="topic-list">
+                        <li>IPv4 addressing, subnetting, and CIDR notation</li>
+                        <li>Private vs. public IP addresses</li>
+                        <li>Emerging networking technologies (IoT, 5G, edge computing)</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Subnetting and IP Allocation</li>
+                            <li>Identifying and Assigning IP Addresses</li>
+                            <li>Troubleshooting Scenario</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 7: Modern Cloud &amp; Virtual Networking</div>
+                    <ul class="topic-list">
+                        <li>Virtual Networking Components (Virtual NICs, Cloud DNS)</li>
+                        <li>Hybrid Connectivity &amp; Gateways (Hybrid networking, Internet Gateway, NAT Gateway, Direct Connect)</li>
+                        <li>Cloud Security Controls (Firewalls, Security Groups, Network ACLs)</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Building Cloud Network Foundations</li>
+                            <li>Building a Multi-NIC VM and Custom DNS Zones</li>
+                            <li>Simulate Hybrid Connectivity Using AWS Site-to-Site VPN</li>
+                            <li>Broken Cloud-to-On-Prem Connectivity</li>
+                            <li>Design a Hybrid Network Topology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Network Implementation</span>
+                    <span class="module-hours">40 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Routing Technologies &amp; Protocols</div>
+                    <ul class="topic-list">
+                        <li>Static vs. dynamic routing</li>
+                        <li>Routing protocols: OSPF, EIGRP, BGP, RIP</li>
+                        <li>Route summarization &amp; administrative distance</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Configuring a Basic Static Route in Cisco Packet Tracer</li>
+                            <li>Summarizing Routes</li>
+                            <li>Diagnosing a Misconfigured OSPF Network</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 2: Switching Technologies &amp; Features</div>
+                    <ul class="topic-list">
+                        <li>VLANs, trunking, port mirroring</li>
+                        <li>STP (Spanning Tree Protocol) and redundancy</li>
+                        <li>MAC address tables &amp; ARP</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>VLAN Configuration</li>
+                            <li>Configuring VLAN Trunking in Cisco Packet Tracer</li>
+                            <li>Configuring STP in Cisco Packet Tracer</li>
+                            <li>Diagnosing a VLAN Misconfiguration or MAC Address Conflict</li>
+                            <li>Configuring VLANs, Trunking, and STP</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 3: Wireless Networking</div>
+                    <ul class="topic-list">
+                        <li>Wi-Fi standards (802.11a/b/g/n/ac/ax)</li>
+                        <li>Configuring SSIDs, encryption (WPA2, WPA3)</li>
+                        <li>Wireless channels, interference, and antenna types</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Configuring SSIDs &amp; Encryption</li>
+                            <li>Configuring a Wi-Fi Router</li>
+                            <li>Wireless Site Survey</li>
+                            <li>Diagnosing Wi-Fi Signal Issue</li>
+                            <li>Designing a Business Wi-Fi Network</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 4: Physical Network Installation</div>
+                    <ul class="topic-list">
+                        <li>Cable management &amp; labeling</li>
+                        <li>Rack mounting, grounding, and environmental factors</li>
+                        <li>Structured cabling standards (TIA/EIA-568)</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Cable Labeling Exercise</li>
+                            <li>Using Cable Testers for Troubleshooting</li>
+                            <li>Designing an Optimal Server Room Layout</li>
+                            <li>Diagnosing a Miswired Patch Panel or Improper Cable Termination</li>
+                            <li>Designing a Structured Cabling System</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 5: IPv4 &amp; IPv6 Network Services</div>
+                    <ul class="topic-list">
+                        <li>DHCP, DNS, NAT, NTP, SNMP</li>
+                        <li>IPv6 addressing, auto-configuration, and tunneling</li>
+                        <li>Dual-stack vs. IPv6-only networking</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Configuring DHCP &amp; DNS</li>
+                            <li>Capturing DHCP &amp; DNS Packets with Wireshark</li>
+                            <li>Assigning IPv6 Addresses &amp; Testing Connectivity</li>
+                            <li>Diagnosing an IPv6 Connectivity Issue in a Dual-Stack Environment</li>
+                            <li>Configuring a Dual-Stack Network</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Network Operations</span>
+                    <span class="module-hours">40 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Organizational Processes &amp; Procedures</div>
+                    <ul class="topic-list">
+                        <li>Change management &amp; network documentation</li>
+                        <li>Business continuity &amp; SLAs (Service-Level Agreements)</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Creating a Sample Network Topology</li>
+                            <li>Creating a Disaster Recovery Policy</li>
+                            <li>Failed SLA Case Simulation</li>
+                            <li>Drafting a Basic SLA for an IT Service Provider</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 2: Network Monitoring Tools &amp; Technologies</div>
+                    <ul class="topic-list">
+                        <li>SNMP, syslog, NetFlow, packet analyzers</li>
+                        <li>Network baseline &amp; performance monitoring</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Using Wireshark to Capture and Analyze Network Packets</li>
+                            <li>Network Performance Analysis</li>
+                            <li>Diagnosing a Network Performance Issue with NetFlow and Packet Analysis</li>
+                            <li>Configuring a Network Monitoring Setup &amp; Analyzing Logs</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 3: Disaster Recovery (DR) Concepts</div>
+                    <ul class="topic-list">
+                        <li>Backups, failover strategies, high availability (HA)</li>
+                        <li>Business impact analysis &amp; incident response</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Backup Configuration</li>
+                            <li>Backup and Restore Scenario</li>
+                            <li>Conducting a Basic Business Impact Analysis (BIA)</li>
+                            <li>Disaster Recovery Simulation</li>
+                            <li>Designing a Disaster Recovery Plan</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 4: Network Access &amp; Management</div>
+                    <ul class="topic-list">
+                        <li>AAA (Authentication, Authorization, Accounting)</li>
+                        <li>RADIUS, TACACS+, LDAP</li>
+                        <li>Remote access methods (VPN, SSH, Telnet, RDP)</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Configuring AAA in a Network</li>
+                            <li>Analyzing RADIUS Authentication Traffic with Wireshark</li>
+                            <li>Configuring Secure Remote Access</li>
+                            <li>Diagnosing an Authentication Failure in an Enterprise VPN Setup</li>
+                            <li>Setting Up a Secure Remote Access Solution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Network Security</span>
+                    <span class="module-hours">40 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Network Security Principles</div>
+                    <ul class="topic-list">
+                        <li>CIA Triad (Confidentiality, Integrity, Availability)</li>
+                        <li>Security policies &amp; risk assessments</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Implementing Security Controls</li>
+                            <li>Verifying Data Integrity with Hashing Tools</li>
+                            <li>Writing a Security Policy</li>
+                            <li>Conducting a Risk Assessment: Identifying Vulnerabilities and Classifying Threats</li>
+                            <li>Simulating a Phishing Attack and Response</li>
+                            <li>Security Policy &amp; Mini Risk Assessment</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 2: Types of Network Attacks</div>
+                    <ul class="topic-list">
+                        <li>DoS/DDoS, phishing, MITM, zero-day exploits</li>
+                        <li>Social engineering &amp; insider threats</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Simulating a Phishing Attack</li>
+                            <li>Using Wireshark to Detect a Man-in-the-Middle (MITM) Attack</li>
+                            <li>Simulating a Ransomware Attack Response</li>
+                            <li>Detecting Suspicious Network Traffic</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 3: Network Defense Techniques</div>
+                    <ul class="topic-list">
+                        <li>Firewalls, IDS/IPS, anti-malware solutions</li>
+                        <li>Secure network design principles</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Firewall Configuration</li>
+                            <li>Using Snort to Detect Suspicious Traffic</li>
+                            <li>Simulating a Malware Attack</li>
+                            <li>Configuring Firewall Rules &amp; Testing Intrusion Detection</li>
+                            <li>Secure Network Design &amp; Firewall/IDS Configuration</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 4: Securing Network Traffic &amp; Devices</div>
+                    <ul class="topic-list">
+                        <li>Encryption (TLS, VPN, IPSec)</li>
+                        <li>Device hardening (patching, disabling unused services)</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Configuring Secure Network Traffic</li>
+                            <li>Analyzing Encrypted vs Unencrypted Traffic with Wireshark</li>
+                            <li>Simulating an Unauthorized Login Attempt &amp; Securing the Device</li>
+                            <li>Configuring a VPN &amp; Securing a Router</li>
+                            <li>Hardening a Network Device</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Network Troubleshooting</span>
+                    <span class="module-hours">40 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Troubleshooting Methodology</div>
+                    <ul class="topic-list">
+                        <li>Identify, diagnose, test, resolve, verify</li>
+                        <li>Documentation &amp; escalation</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Network Troubleshooting Tools &amp; Commands</li>
+                            <li>Simulating &amp; Diagnosing a Network Connectivity Issue</li>
+                            <li>Writing a Troubleshooting Report</li>
+                            <li>Simulating a Network Outage</li>
+                            <li>Diagnosing and Resolving a Simulated Network Issue</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 2: Common Cabling &amp; Physical Issues</div>
+                    <ul class="topic-list">
+                        <li>Diagnosing cable breaks, interference, signal loss</li>
+                        <li>Using cable testers &amp; TDR tools</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Using Cable Testing Tools</li>
+                            <li>Identifying Cable Issues with Testers &amp; Fault Locators</li>
+                            <li>Measuring Signal Loss with a Network Cable Certifier</li>
+                            <li>Diagnosing &amp; Resolving a Cabling Issue</li>
+                            <li>Troubleshooting a Faulty Cable</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 3: Troubleshooting Network Services</div>
+                    <ul class="topic-list">
+                        <li>DNS, DHCP, VPN connectivity issues</li>
+                        <li>Diagnosing IP conflicts &amp; misconfigurations</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Diagnosing DNS Issues</li>
+                            <li>Troubleshooting DHCP Problems</li>
+                            <li>Simulating and Resolving IP Conflicts</li>
+                            <li>Identifying IP Conflicts &amp; Subnet Issues</li>
+                            <li>VPN &amp; IP Address Resolution</li>
+                            <li>Using Packet Capture for Service Debugging</li>
+                            <li>Simulating and Resolving a Network Service Outage</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 4: Performance Issues &amp; Tools</div>
+                    <ul class="topic-list">
+                        <li>Packet loss, high latency, bandwidth bottlenecks</li>
+                        <li>Using ping, traceroute, Wireshark for analysis</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Using Wireshark to Capture &amp; Analyze Network Traffic</li>
+                            <li>Network Performance Testing</li>
+                            <li>Diagnosing a Network Slowdown</li>
+                            <li>Simulate, Diagnose, and Fix a Network Performance Issue</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 5: Advanced Troubleshooting with Tools &amp; Protocols</div>
+                    <ul class="topic-list">
+                        <li>Nmap, Netstat, Nslookup, Log analysis</li>
+                        <li>Troubleshooting remote connectivity (SSH, VPNs)</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Using Network Scanning Tools</li>
+                            <li>Diagnosing DNS Resolution Problems with Nslookup &amp; Dig</li>
+                            <li>Diagnosing SSH &amp; VPN Issues</li>
+                            <li>Using Packet Captures for Remote Issues: Analyzing SSH &amp; VPN Traffic with Wireshark</li>
+                            <li>Remote Connectivity Debugging</li>
+                            <li>Firewall Blocking an SSH Connection</li>
+                            <li>Troubleshooting a Simulated Network Outage</li>
+                            <li>Full-length practice exams (simulation-based)</li>
+                            <li>Labs with real-world scenarios</li>
+                            <li>Final review session with Q&amp;A</li>
+                            <li>Exam-taking strategies &amp; test-day preparation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Configuring routers and switches</li>
+                <li>Subnetting &amp; IP addressing exercises</li>
+                <li>Setting up VLANs &amp; wireless networks</li>
+                <li>Monitoring &amp; analyzing network traffic</li>
+                <li>Troubleshooting simulated network issues</li>
+            </ul>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Software Requirements</h2>
+            <ul class="software-list">
+                <li>Cisco Packet Tracer</li>
+                <li>Wireshark (packet analyzer)</li>
+                <li>Nmap (network mapper)</li>
+                <li>Nslookup, Dig, Traceroute (command-line tools)</li>
+                <li>Cisco IOS (router/switch operating system)</li>
+                <li>AWS Free Tier or Microsoft Azure (cloud platform)</li>
+                <li>Linux/Windows command-line interface</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+{
+  "course": "React",
+  "totalHours": 40,
+  "totalModules": 9,
+  "totalLessons": 26,
+  "modules": [
+    {
+      "module": 1,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "React First Principles",
+          "type": "lesson"
+        },
+        {
+          "title": "Create React App",
+          "type": "lesson"
+        },
+        {
+          "title": "React with Vite",
+          "type": "lesson"
+        },
+        {
+          "title": "Exploring React with Vite",
+          "type": "demo"
+        },
+        {
+          "title": "Customizing Vite for React",
+          "type": "demo"
+        }
+      ],
+      "name": "Setup & Introduction"
+    },
+    {
+      "module": 2,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Component Composition",
+          "type": "lesson"
+        },
+        {
+          "title": "Basic Component with Props",
+          "type": "demo"
+        },
+        {
+          "title": "Product Catalog",
+          "type": "demo"
+        }
+      ],
+      "name": "Understanding Components & Props"
+    },
+    {
+      "module": 3,
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "useEffect",
+          "type": "lesson"
+        },
+        {
+          "title": "useReducer",
+          "type": "lesson"
+        },
+        {
+          "title": "Vanilla Todo App with useState",
+          "type": "demo"
+        },
+        {
+          "title": "Vanilla Todo App with useReducer",
+          "type": "demo"
+        },
+        {
+          "title": "Lifting State Up with a Single Input Form",
+          "type": "demo"
+        },
+        {
+          "title": "React Context",
+          "type": "lesson"
+        }
+      ],
+      "name": "State & State Management"
+    },
+    {
+      "module": 4,
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "Forms in React",
+          "type": "lesson"
+        },
+        {
+          "title": "Temperature Converter",
+          "type": "demo"
+        }
+      ],
+      "name": "Handling Forms in React"
+    },
+    {
+      "module": 5,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Single Page Applications (SPAs)",
+          "type": "lesson"
+        },
+        {
+          "title": "React Router",
+          "type": "lesson"
+        },
+        {
+          "title": "React Router Protected Routes",
+          "type": "demo"
+        }
+      ],
+      "name": "Routing & Single Page Applications"
+    },
+    {
+      "module": 6,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Material-UI (MUI)",
+          "type": "lesson"
+        },
+        {
+          "title": "MUI Templates",
+          "type": "demo"
+        }
+      ],
+      "name": "UI Frameworks — Material-UI"
+    },
+    {
+      "module": 7,
+      "hours": 9,
+      "lessons": [
+        {
+          "title": "Todo App I — Basic Structure",
+          "type": "demo"
+        },
+        {
+          "title": "Todo App II — Adding Features",
+          "type": "demo"
+        },
+        {
+          "title": "Todo App III — Component Refactoring",
+          "type": "demo"
+        },
+        {
+          "title": "Todo App IV — Advanced Patterns",
+          "type": "demo"
+        },
+        {
+          "title": "Tic-Tac-Toe",
+          "type": "demo"
+        }
+      ],
+      "name": "Building Applications — Project Demos"
+    },
+    {
+      "module": 8,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Testing React",
+          "type": "lesson"
+        },
+        {
+          "title": "Snapshot Testing",
+          "type": "lesson"
+        },
+        {
+          "title": "Foundational Component Snapshot Testing",
+          "type": "demo"
+        },
+        {
+          "title": "Vitest for React",
+          "type": "demo"
+        }
+      ],
+      "name": "Testing in React"
+    },
+    {
+      "module": 9,
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Summative Assessment",
+          "type": "activity"
+        },
+        {
+          "title": "Storage Lockers Project Rubric",
+          "type": "activity"
+        }
+      ],
+      "name": "Assessments & Rubrics"
+    }
+  ]
+}

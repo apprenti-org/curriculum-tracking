@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Instructor Onboarding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Instructor Onboarding</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Training Operations</span>
+                <span><i class="fa-regular fa-clock"></i> 48 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Instructor Onboarding is a comprehensive two-week program designed to develop effective teaching skills for anyone assisting learners. The course explores instructional design principles, backward design methodology, the flipped classroom model, Kolb's experiential learning theory, and the art of teaching. Students will learn to prepare lessons, cultivate supportive learning environments, motivate learners, develop growth mindset and self-efficacy, and provide meaningful feedback. This course equips instructors with evidence-based strategies to advance learner skills while building professional competency and teaching excellence.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Lesson Facilitation and Feedback Delivery</h2>
+            <div class="assessment-box">
+                <p>Instructors will complete a summative assessment measuring their ability to prepare, facilitate, and provide feedback on a complete lesson or module. The assessment evaluates understanding of instructional design principles, ability to create supportive learning conditions, application of motivation techniques, and quality of feedback provided to learners. Instructors must demonstrate integration of course concepts through effective lesson delivery.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Understand the fundamentals of instructional design and backward design methodology</li>
+                <li>Apply the flipped classroom model effectively</li>
+                <li>Understand and apply Kolb's Experiential Learning Theory</li>
+                <li>Develop empathy and motivation strategies for diverse learners</li>
+                <li>Create supportive learning environments and cultivate learner relationships</li>
+                <li>Facilitate social development among learners</li>
+                <li>Employ evidence-based motivation techniques</li>
+                <li>Support growth mindset and self-efficacy development in learners</li>
+                <li>Guide learners in developing professional and interpersonal skills</li>
+                <li>Provide meaningful, actionable, and timely feedback</li>
+                <li>Recognize and address potential teaching pitfalls</li>
+                <li>Design effective lessons with clear learning outcomes</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Preparing for Class (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Foundations of Instructional Design</div>
+                    <ul class="topic-list">
+                        <li>The goal and purpose of instructional design</li>
+                        <li>Subject matter expert blindspot</li>
+                        <li>Designing instruction with intentional outcomes</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Backward Design</div>
+                    <ul class="topic-list">
+                        <li>The backward design process</li>
+                        <li>Identifying learning outcomes first</li>
+                        <li>Designing assessments aligned with outcomes</li>
+                        <li>The design team and collaborative process</li>
+                        <li>Applying backward design in course delivery</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: Flipped Classroom</div>
+                    <ul class="topic-list">
+                        <li>Flipped classroom model and structure</li>
+                        <li>Bootcamp-style intensive learning challenges</li>
+                        <li>Making the most of class time</li>
+                        <li>Pros and cons of flipped model</li>
+                        <li>When to use flipped vs traditional approaches</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 4: Experiential Learning</div>
+                    <ul class="topic-list">
+                        <li>Kolb's Experiential Learning Model (ELM)</li>
+                        <li>The learning cycle: concrete experience, reflective observation, abstract conceptualization, active experimentation</li>
+                        <li>Kolb Learning Style Inventory 4.0</li>
+                        <li>The role of reflection in learning</li>
+                        <li>Aligning instruction with learning styles</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 5: The Art of Teaching</div>
+                    <ul class="topic-list">
+                        <li>Empathy and understanding learner perspective</li>
+                        <li>Motivation types: passionate, required, and passing-interest learners</li>
+                        <li>Improvisation and responsive teaching</li>
+                        <li>Building authentic connections with learners</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: Preparing for the Learning Experience</div>
+                    <ul class="topic-list">
+                        <li>The science and importance of breaks</li>
+                        <li>Learning how to learn and metacognition</li>
+                        <li>Procrastination as a superpower</li>
+                        <li>The Pomodoro Technique and time management</li>
+                        <li>Creating rhythm in learning experiences</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Assignment: Review a course module (Java Fundamentals or equivalent)</li>
+                            <li>Audio/transcript: Getting Started and Week 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Facilitating the Class (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 7: Breaking Down the Lesson</div>
+                    <ul class="topic-list">
+                        <li>Definition of a lesson</li>
+                        <li>Lesson structure: Introduction, Showing, Doing, Reflecting</li>
+                        <li>Each component's purpose and duration</li>
+                        <li>Transitions between lesson phases</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: Cultivating the Conditions for Learning</div>
+                    <ul class="topic-list">
+                        <li>Creating a supportive learning environment</li>
+                        <li>Psychological safety and trust</li>
+                        <li>Cultivating meaningful relationships with learners</li>
+                        <li>Socializing learners with each other</li>
+                        <li>Building learning community</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: Motivating Learners</div>
+                    <ul class="topic-list">
+                        <li>Motivation techniques and strategies</li>
+                        <li>Extrinsic vs intrinsic motivation</li>
+                        <li>Developing a growth mindset in learners</li>
+                        <li>Building self-efficacy and confidence</li>
+                        <li>Overcoming learning anxiety</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 10: Developing Professional Skills</div>
+                    <ul class="topic-list">
+                        <li>Assisting learners in professional development</li>
+                        <li>Workplace communication and collaboration</li>
+                        <li>Mindfulness for potential teaching pitfalls</li>
+                        <li>Common mistakes and how to prevent them</li>
+                        <li>Recognizing signs of struggle</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Mindmap the Lesson structure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Providing Meaningful and Actionable Feedback (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 11: Feedback Fundamentals</div>
+                    <ul class="topic-list">
+                        <li>What makes feedback meaningful</li>
+                        <li>Actionable feedback characteristics</li>
+                        <li>Timing and delivery of feedback</li>
+                        <li>Feedback strategies and techniques</li>
+                        <li>Creating feedback loops for continuous improvement</li>
+                        <li>Balancing praise and constructive criticism</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Lesson Planning: Develop a complete lesson using backward design</li>
+                <li>Facilitation Practice: Teach a lesson segment to peers</li>
+                <li>Observation and Feedback: Analyze instructor videos and provide feedback</li>
+                <li>Learning Environment Design: Create activities that cultivate supportive conditions</li>
+                <li>Motivation Strategy Application: Design lessons incorporating motivation techniques</li>
+                <li>Feedback Delivery: Practice delivering meaningful feedback to learners</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

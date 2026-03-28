@@ -1,0 +1,125 @@
+{
+  "course": "macOS Administration Fundamentals",
+  "totalHours": 24,
+  "totalLessons": 9,
+  "totalModules": 9,
+  "modules": [
+    {
+      "name": "Installing and Configuring macOS",
+      "hours": 3,
+      "description": "macOS architecture, installation methods, Recovery System, and initial setup.",
+      "lessons": [
+        {
+          "title": "Installing and Configuring macOS",
+          "hours": 3,
+          "topics": ["Introduction to macOS architecture and deployment", "Installing and upgrading macOS", "Using the macOS Recovery System", "Performing initial system setup and configuration"]
+        }
+      ]
+    },
+    {
+      "name": "Managing macOS User Accounts",
+      "hours": 3,
+      "description": "Local and network user accounts, home folders, security, privacy, and keychain access.",
+      "lessons": [
+        {
+          "title": "Managing macOS User Accounts",
+          "hours": 3,
+          "topics": ["Creating and managing local and network user accounts", "Understanding user home folders and directory structure", "Managing user security and privacy settings", "Configuring user permissions and keychain access"]
+        }
+      ]
+    },
+    {
+      "name": "Managing macOS File Systems and Storage",
+      "hours": 3,
+      "description": "APFS, partitions, volumes, FileVault encryption, and file permissions.",
+      "lessons": [
+        {
+          "title": "Managing macOS File Systems and Storage",
+          "hours": 3,
+          "topics": ["Apple File System (APFS) and supported file systems", "Creating, managing, and resizing partitions and volumes", "Using FileVault and encryption tools", "Managing file ownership and permission schemes"]
+        }
+      ]
+    },
+    {
+      "name": "macOS Data Management",
+      "hours": 3,
+      "description": "System resources, Spotlight, metadata, Time Machine backups, and archiving.",
+      "lessons": [
+        {
+          "title": "macOS Data Management",
+          "hours": 3,
+          "topics": ["System resource locations and folder structure", "Spotlight, metadata indexing, and smart folders", "Setting up and managing Time Machine backups", "Archiving strategies and data retention"]
+        }
+      ]
+    },
+    {
+      "name": "Managing macOS Apps and Processes",
+      "hours": 4,
+      "description": "App installation and security, Gatekeeper, process monitoring, Activity Monitor, and diagnostics.",
+      "lessons": [
+        {
+          "title": "Managing macOS Apps and Processes",
+          "hours": 4,
+          "topics": ["Installing and managing apps (App Store and third-party)", "Gatekeeper, Notarization, and app sandboxing", "Monitoring and controlling background processes", "Using Activity Monitor and Console for diagnostics", "Troubleshooting common app and system issues"]
+        }
+      ]
+    },
+    {
+      "name": "Configuring macOS Networking",
+      "hours": 5,
+      "description": "Network configuration, Wi-Fi, Ethernet, VPN, DNS, troubleshooting, and local network services.",
+      "lessons": [
+        {
+          "title": "Configuring macOS Networking",
+          "hours": 5,
+          "topics": ["Networking concepts relevant to macOS", "Network preferences and configuration interfaces", "Initial and advanced network configuration (Wi-Fi, Ethernet, VPN)", "Network troubleshooting using built-in tools", "Configuring local network services (AirDrop, screen sharing)"]
+        }
+      ]
+    },
+    {
+      "name": "macOS System Management",
+      "hours": 3,
+      "description": "Peripherals, printers, startup modes, system initialization, and Terminal basics.",
+      "lessons": [
+        {
+          "title": "macOS System Management",
+          "hours": 3,
+          "topics": ["Adding and configuring peripherals (Bluetooth, external storage)", "Printer setup and management", "macOS system initialization process", "Startup modes (Safe Boot, Verbose Mode, Recovery)", "macOS command-line environment (Terminal basics)"]
+        }
+      ]
+    },
+    {
+      "name": "Capstone Lab & Review",
+      "hours": 1,
+      "description": "Scenario-based activity combining all course skills.",
+      "lessons": [
+        {
+          "title": "Capstone Lab",
+          "hours": 1,
+          "topics": ["Scenario-based activity combining user setup, network config, app management, and data backup", "Troubleshooting common issues across multiple lessons"]
+        }
+      ]
+    },
+    {
+      "name": "Final Assessment",
+      "hours": 1,
+      "description": "Quiz, capstone challenge, and course completion.",
+      "lessons": [
+        {
+          "title": "Final Assessment",
+          "hours": 1,
+          "topics": ["Recap and key takeaways", "Final quiz (10 questions)", "Capstone challenge: scenario-based onboarding task", "Feedback and completion"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "macOS Administration Final Assessment",
+    "hours": 1,
+    "items": [
+      "10-question quiz (multiple choice, true/false, multiple-select)",
+      "Capstone challenge: configure a new MacBook (encryption, VPN, apps, backup)",
+      "Scoring rubric: completeness, accuracy, troubleshooting logic, security awareness (20 points)"
+    ]
+  }
+}

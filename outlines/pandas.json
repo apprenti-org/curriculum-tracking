@@ -1,0 +1,118 @@
+{
+  "course": "Pandas",
+  "totalHours": 50,
+  "totalLessons": 14,
+  "totalModules": 6,
+  "modules": [
+    {
+      "name": "Introduction",
+      "hours": 2,
+      "description": "Course introduction, pre-assessment, and scenario overview.",
+      "lessons": [
+        {
+          "title": "Course Introduction",
+          "hours": 2,
+          "topics": ["Introduction to the data science lifecycle", "Course overview and scenario: Stock Market Panda-monium", "Pre-assessment"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Pandas",
+      "hours": 12,
+      "description": "Pandas fundamentals including DataFrames, Series, data exploration, and basic operations.",
+      "lessons": [
+        {
+          "title": "Intro to Pandas",
+          "hours": 4,
+          "topics": ["Installing and importing pandas", "DataFrames and Series", "Reading data into DataFrames", "Exploring rows, columns, data types, non-null observations", "Head/tail, negative indexing, counting values"]
+        },
+        {
+          "title": "Exercise: Intro to Pandas — Movie Plots",
+          "hours": 4,
+          "topics": ["Hands-on practice with Wikipedia Movie Plots dataset", "DataFrame exploration and querying"]
+        },
+        {
+          "title": "Exercise: Intro to Pandas — Zoo",
+          "hours": 4,
+          "topics": ["Hands-on practice with UCI ML Zoo Animal Classification dataset", "DataFrame exploration and analysis"]
+        }
+      ]
+    },
+    {
+      "name": "ETL and Pandas",
+      "hours": 12,
+      "description": "Extract, Transform, Load workflows using Pandas for data cleaning, transformation, and merging.",
+      "lessons": [
+        {
+          "title": "ETL and Pandas",
+          "hours": 4,
+          "topics": ["Extract, Transform, Load workflow", "Data cleaning and transformation", "Handling missing data", "Merging and joining DataFrames"]
+        },
+        {
+          "title": "Exercise: ETL with Pandas — Goodreads",
+          "hours": 4,
+          "topics": ["Hands-on ETL practice with Goodreads dataset"]
+        },
+        {
+          "title": "Exercise: ETL with Pandas — Additional",
+          "hours": 4,
+          "topics": ["Additional ETL exercises and practice"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Data Visualizations with Pandas",
+      "hours": 10,
+      "description": "Creating and customizing data visualizations using Pandas with matplotlib and other libraries.",
+      "lessons": [
+        {
+          "title": "Introduction to Data Visualizations",
+          "hours": 4,
+          "topics": ["Common visualization libraries (matplotlib, seaborn)", "Creating basic plots with Pandas", "Choosing appropriate chart types", "Customizing visualizations"]
+        },
+        {
+          "title": "Exercise: Data Visualizations with Pandas",
+          "hours": 6,
+          "topics": ["Hands-on visualization exercises", "Making informed visualization decisions"]
+        }
+      ]
+    },
+    {
+      "name": "Summarizing with Pandas",
+      "hours": 10,
+      "description": "Data aggregation, grouping, descriptive statistics, and pivot tables with Pandas.",
+      "lessons": [
+        {
+          "title": "Summarizing with Pandas",
+          "hours": 4,
+          "topics": ["Aggregation and grouping", "Descriptive statistics", "Pivot tables", "Census data analysis"]
+        },
+        {
+          "title": "Exercise: Summarizing with Pandas",
+          "hours": 6,
+          "topics": ["Hands-on summarization and aggregation exercises"]
+        }
+      ]
+    },
+    {
+      "name": "Summative Assessment",
+      "hours": 4,
+      "description": "Assessment preparation and summative assessment for Pandas.",
+      "lessons": [
+        {
+          "title": "Assessment Preparation and Summative",
+          "hours": 4,
+          "topics": ["Assessment preparation", "Summative assessment: Pandas"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Pandas Summative Assessment",
+    "hours": 4,
+    "items": [
+      "Assessment preparation activities",
+      "Summative assessment covering Pandas fundamentals, ETL, visualizations, and summarization"
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "course": "IT Fundamentals",
+  "totalHours": 80,
+  "totalLessons": 22,
+  "totalModules": 7,
+  "modules": [
+    {
+      "name": "Introduction to IT & Computer Hardware",
+      "hours": 7,
+      "description": "IT career paths, computing devices, hardware components, system architecture, BIOS/UEFI, and basic hardware troubleshooting.",
+      "lessons": [
+        {
+          "title": "Overview of IT and Industry Relevance",
+          "hours": 1.5,
+          "topics": ["Introduction to Information Technology", "IT career paths and industry demand", "Basics of computer systems and digital devices"]
+        },
+        {
+          "title": "Identifying Computer Components",
+          "hours": 1.5,
+          "topics": ["Internal components (CPU, RAM, storage, motherboard, PSU, cooling)", "External components (input, output, peripheral devices)", "Hardware compatibility and performance considerations"]
+        },
+        {
+          "title": "Understanding System Architecture",
+          "hours": 2,
+          "topics": ["Computer system architecture and data flow", "BIOS/UEFI and boot process", "Factors affecting system performance"]
+        },
+        {
+          "title": "Basic Hardware Troubleshooting",
+          "hours": 2,
+          "topics": ["Common hardware failures and symptoms", "Troubleshooting tools and techniques (POST, beep codes, Event Viewer)", "Best practices for hardware handling and replacement (ESD precautions)"]
+        }
+      ]
+    },
+    {
+      "name": "Operating Systems & Software Applications",
+      "hours": 10,
+      "description": "Operating system concepts, Windows installation and configuration, software management, and system maintenance and optimization.",
+      "lessons": [
+        {
+          "title": "Introduction to Operating Systems",
+          "hours": 2,
+          "topics": ["What is an operating system", "Types of operating systems (Windows, macOS, Linux, mobile)", "Open-source vs. proprietary OS"]
+        },
+        {
+          "title": "Installing & Configuring Windows OS",
+          "hours": 3,
+          "topics": ["Preparing for OS installation (system requirements, boot media)", "Installing the Windows OS (partitioning, formatting)", "Post-installation configuration (user accounts, drivers, updates)"]
+        },
+        {
+          "title": "Working with Software Applications",
+          "hours": 3,
+          "topics": ["Types of software (system vs. application, productivity suites)", "Software installation and management", "File management and cloud storage integration"]
+        },
+        {
+          "title": "System Maintenance & Optimization",
+          "hours": 2,
+          "topics": ["OS updates and patch management", "Performance optimization (Task Manager, disk cleanup, startup apps)", "Basic security best practices (permissions, firewalls, antivirus)"]
+        }
+      ]
+    },
+    {
+      "name": "Networking Fundamentals",
+      "hours": 8,
+      "description": "Network concepts, topologies, protocols, IP addressing, subnetting, network configuration, security, and troubleshooting.",
+      "lessons": [
+        {
+          "title": "Introduction to Networking Concepts",
+          "hours": 2,
+          "topics": ["What is a network (LAN vs. WAN)", "Types of network topologies (bus, star, mesh, ring, hybrid)", "Networking standards and protocols (TCP/IP, Ethernet, Wi-Fi, DNS, DHCP)"]
+        },
+        {
+          "title": "IP Addressing & Network Configuration",
+          "hours": 3,
+          "topics": ["Understanding IP addresses (IPv4 vs. IPv6, public vs. private)", "Subnetting and network segmentation (subnet masks, CIDR)", "Configuring wired and wireless network connections"]
+        },
+        {
+          "title": "Basic Network Security & Troubleshooting",
+          "hours": 3,
+          "topics": ["Common network security threats", "Basic network troubleshooting (ping, tracert, ipconfig)", "Maintaining a secure and stable network"]
+        }
+      ]
+    },
+    {
+      "name": "Security & Cybersecurity Basics",
+      "hours": 8,
+      "description": "Cybersecurity fundamentals, the CIA triad, security measures, encryption, and incident response.",
+      "lessons": [
+        {
+          "title": "Introduction to Cybersecurity",
+          "hours": 2,
+          "topics": ["What is cybersecurity", "Common cybersecurity threats (malware, phishing, social engineering)", "The CIA Triad: Confidentiality, Integrity, Availability"]
+        },
+        {
+          "title": "Implementing Basic Security Measures",
+          "hours": 3,
+          "topics": ["User account security (passwords, MFA)", "Configuring firewalls and antivirus software", "Safe browsing and email security"]
+        },
+        {
+          "title": "Cybersecurity Best Practices & Incident Response",
+          "hours": 3,
+          "topics": ["Recognizing and responding to security breaches", "Introduction to encryption and secure data storage", "Maintaining a secure IT environment"]
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting & IT Support",
+      "hours": 8,
+      "description": "IT troubleshooting methodologies, diagnosing hardware/software/network issues, documentation, and escalation.",
+      "lessons": [
+        {
+          "title": "Introduction to IT Troubleshooting",
+          "hours": 2,
+          "topics": ["What is troubleshooting and the role of IT support", "Troubleshooting methodologies (5-step: Identify, Diagnose, Test, Resolve, Verify)", "IT support roles and responsibilities (help desk vs. field technician)"]
+        },
+        {
+          "title": "Diagnosing & Resolving Hardware and Software Issues",
+          "hours": 3,
+          "topics": ["Common hardware issues and fixes", "Software-related issues (crashes, driver conflicts, compatibility)", "Using diagnostic tools (Event Viewer, Device Manager, third-party)"]
+        },
+        {
+          "title": "Network & Security Troubleshooting",
+          "hours": 3,
+          "topics": ["Common network issues and fixes", "Diagnosing security issues", "Best practices for IT support and documentation"]
+        }
+      ]
+    },
+    {
+      "name": "Data Storage & Cloud Computing",
+      "hours": 8,
+      "description": "Data storage types, file systems, cloud storage, file management, backup strategies, and disaster recovery.",
+      "lessons": [
+        {
+          "title": "Introduction to Data Storage",
+          "hours": 2,
+          "topics": ["Types of data storage (local vs. cloud, primary vs. secondary)", "Storage devices and file systems (HDD, SSD, NVMe, FAT32, NTFS, exFAT)", "Data management and organization"]
+        },
+        {
+          "title": "Cloud Storage & File Management",
+          "hours": 3,
+          "topics": ["Cloud storage providers (Google Drive, OneDrive, Dropbox, AWS)", "Syncing and sharing files securely", "Cloud storage security considerations"]
+        },
+        {
+          "title": "Data Backup & Recovery",
+          "hours": 3,
+          "topics": ["Backup strategies (full, incremental, differential)", "Backup and recovery methods (OS tools, cloud-based solutions)", "Disaster recovery planning"]
+        }
+      ]
+    },
+    {
+      "name": "IT Ethics & Professionalism",
+      "hours": 5,
+      "description": "IT ethics, data privacy laws, intellectual property, software licensing, workplace professionalism, and communication.",
+      "lessons": [
+        {
+          "title": "IT Ethics & Legal Considerations",
+          "hours": 2,
+          "topics": ["Understanding IT ethics", "Data privacy and security laws (GDPR, HIPAA, CCPA)", "Intellectual property and software licensing"]
+        },
+        {
+          "title": "Professionalism & Workplace Communication",
+          "hours": 3,
+          "topics": ["IT workplace expectations and professional conduct", "Effective communication in IT support and teams", "Handling sensitive information and security responsibilities"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "IT Fundamentals Summative Assessment",
+    "hours": null,
+    "items": [
+      "Hands-on practical exam (50%) — set up Windows workstation, configure networking, implement basic security, troubleshoot system issues",
+      "Written knowledge exam (50%) — multiple-choice and scenario-based questions covering hardware, software, networking, cybersecurity, and troubleshooting",
+      "Minimum passing score: 80%",
+      "IT Troubleshooting Simulation & Tool Exploration",
+      "Network & Security Troubleshooting Challenge"
+    ]
+  }
+}

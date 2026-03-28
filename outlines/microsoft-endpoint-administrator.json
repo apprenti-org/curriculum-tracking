@@ -1,0 +1,151 @@
+{
+  "course": "Microsoft 365 Endpoint Administrator",
+  "totalHours": 40,
+  "totalLessons": 10,
+  "totalModules": 11,
+  "modules": [
+    {
+      "name": "Introduction to Enterprise Desktop Environment",
+      "hours": 4,
+      "description": "Overview of enterprise desktop environments, Windows editions comparison, lifecycle management, and the role of centralized IT management.",
+      "lessons": [
+        {
+          "title": "Introduction to Enterprise Desktop Environment",
+          "hours": 4,
+          "topics": ["Enterprise desktop components and purpose", "Windows editions: Home, Pro, Enterprise, Education", "Windows evolution and lifecycle management", "Centralized management vs. standalone desktops", "Security, identity, and compliance in enterprise environments"]
+        }
+      ]
+    },
+    {
+      "name": "Identity Management with Microsoft Entra ID",
+      "hours": 4,
+      "description": "Cloud-native identity management using Microsoft Entra ID, including user and group management, role-based access control, MFA, and Conditional Access.",
+      "lessons": [
+        {
+          "title": "Identity Management with Microsoft Entra ID",
+          "hours": 4,
+          "topics": ["Entra ID vs. on-premises Active Directory", "Users, groups, and role-based access control (RBAC)", "Dynamic groups and administrative units", "Multi-Factor Authentication (MFA)", "Conditional Access policies", "OAuth2, SAML, and modern authentication protocols"]
+        }
+      ]
+    },
+    {
+      "name": "Device Enrollment and Authentication",
+      "hours": 4,
+      "description": "Device onboarding using Microsoft Intune and Configuration Manager, enrollment methods, authentication flows, and compliance checks.",
+      "lessons": [
+        {
+          "title": "Device Enrollment and Authentication",
+          "hours": 4,
+          "topics": ["Device lifecycle: enrollment, configuration, compliance, retirement", "Microsoft Intune vs. Configuration Manager", "Automatic enrollment via Entra ID", "MDM vs. MAM enrollment scopes", "BYOD and corporate device enrollment strategies", "Authentication flows and Conditional Access integration"]
+        }
+      ]
+    },
+    {
+      "name": "Configuration and User Profile Management",
+      "hours": 4,
+      "description": "Creating and deploying device and user configuration profiles in Intune, managing user experience settings, and profile troubleshooting.",
+      "lessons": [
+        {
+          "title": "Configuration and User Profile Management",
+          "hours": 4,
+          "topics": ["Configuration profiles in Microsoft Intune", "Device vs. user profiles", "BitLocker encryption policies", "User experience settings and profile redirection", "OneDrive Known Folder Move", "Profile assignment, monitoring, and troubleshooting"]
+        }
+      ]
+    },
+    {
+      "name": "Application Deployment and Management",
+      "hours": 4,
+      "description": "Deploying Win32 apps, Microsoft 365, and LOB applications through Intune, plus Mobile Application Management (MAM) for BYOD.",
+      "lessons": [
+        {
+          "title": "Application Deployment and Management",
+          "hours": 4,
+          "topics": ["App types: Win32, MSI, Store, web, LOB", "Win32 Content Prep Tool for packaging", "App assignment: required vs. available", "Microsoft 365 Apps deployment", "Mobile Application Management (MAM) without enrollment", "App lifecycle: deploy, update, monitor, retire"]
+        }
+      ]
+    },
+    {
+      "name": "Device Compliance and Protection",
+      "hours": 4,
+      "description": "Building and enforcing compliance policies, Conditional Access integration, encryption, and endpoint protection strategies.",
+      "lessons": [
+        {
+          "title": "Device Compliance and Protection",
+          "hours": 4,
+          "topics": ["Compliance policies: OS version, encryption, password, threat level", "Conditional Access with compliance signals", "Non-compliance actions and grace periods", "BitLocker and disk encryption enforcement", "Endpoint protection baselines", "Compliance monitoring and reporting"]
+        }
+      ]
+    },
+    {
+      "name": "Defender Security Integration",
+      "hours": 4,
+      "description": "Integrating Microsoft Defender for Endpoint, Defender Antivirus, and Defender for Cloud Apps with Intune for unified threat management.",
+      "lessons": [
+        {
+          "title": "Defender Security Integration",
+          "hours": 4,
+          "topics": ["Microsoft Defender for Endpoint overview", "Device onboarding to Defender via Intune", "Attack Surface Reduction (ASR) rules", "Defender Antivirus configuration and real-time protection", "Defender for Cloud Apps and shadow IT discovery", "Microsoft 365 Defender portal: incidents and automated investigation"]
+        }
+      ]
+    },
+    {
+      "name": "Deployment Strategies and Tools",
+      "hours": 4,
+      "description": "Enterprise device deployment using MDT, Configuration Manager, Windows Autopilot, and dynamic provisioning for large-scale rollouts.",
+      "lessons": [
+        {
+          "title": "Deployment Strategies and Tools",
+          "hours": 4,
+          "topics": ["Deployment lifecycle: planning, imaging, configuration, post-deployment", "Microsoft Deployment Toolkit (MDT) and task sequences", "Configuration Manager OS deployment", "Windows Autopilot for zero-touch provisioning", "Dynamic provisioning and PPKG files", "Endpoint Analytics readiness assessment"]
+        }
+      ]
+    },
+    {
+      "name": "Transition to Modern Endpoint Management",
+      "hours": 4,
+      "description": "Migrating from traditional on-premises management to cloud-native strategies using co-management, Intune, and Endpoint Analytics.",
+      "lessons": [
+        {
+          "title": "Transition to Modern Endpoint Management",
+          "hours": 4,
+          "topics": ["Drivers for modernization: remote work, cost, scalability", "Traditional vs. modern management comparison", "Co-management: ConfigMgr + Intune hybrid approach", "Workload migration strategy and phasing", "Endpoint Analytics for monitoring transition", "Change management and stakeholder communication"]
+        }
+      ]
+    },
+    {
+      "name": "Cloud-Based Desktop Management",
+      "hours": 4,
+      "description": "Windows 365 Cloud PCs and Azure Virtual Desktop (AVD) for delivering secure, managed desktops from the cloud.",
+      "lessons": [
+        {
+          "title": "Cloud-Based Desktop Management",
+          "hours": 4,
+          "topics": ["Windows 365 vs. Azure Virtual Desktop (AVD)", "Cloud PC provisioning and licensing", "FSLogix profile containers for AVD", "Multi-session vs. personal desktop pools", "Intune management of Cloud PCs", "Conditional Access and security for cloud desktops"]
+        }
+      ]
+    },
+    {
+      "name": "Capstone Lab & Review",
+      "hours": null,
+      "description": "Comprehensive capstone lab integrating all course concepts into a real-world endpoint management scenario.",
+      "lessons": []
+    }
+  ],
+  "assessment": {
+    "title": "Microsoft 365 Endpoint Administrator Assessment",
+    "hours": null,
+    "items": [
+      "Quiz: Introduction to Enterprise Desktop Environment",
+      "Quiz: Identity Management with Microsoft Entra ID",
+      "Quiz: Device Enrollment and Authentication",
+      "Quiz: Configuration and User Profile Management",
+      "Quiz: Application Deployment and Management",
+      "Quiz: Device Compliance and Protection",
+      "Quiz: Defender Security Integration",
+      "Quiz: Deployment Strategies and Tools",
+      "Quiz: Transition to Modern Endpoint Management",
+      "Quiz: Cloud-Based Desktop Management",
+      "Capstone Lab"
+    ]
+  }
+}

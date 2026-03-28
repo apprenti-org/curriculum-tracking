@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Advanced Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Advanced Python</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> IT Business Analyst</span>
+                
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>This Advanced Python course builds on foundational Python knowledge — variables, loops, conditionals, and functions — to introduce object-oriented programming concepts and practical web-based applications. Students explore the principle that "everything is an object" through lambda expressions, classes, magic methods, decorators, generators, and data classes. The course culminates with applying Python to real-world tasks including web scraping and working with APIs.</p>
+            <p>Students will gain hands-on experience designing and building Python classes, extending functionality with decorators and magic methods, and consuming data from web services. This course prepares students for roles that require intermediate-to-advanced Python skills and serves as a bridge between basic Python programming and professional software development.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Holiday Tracker (TBD Hours)</h2>
+            <div class="assessment-box">
+                <p>The Advanced Python Summative Assessment requires students to design and build a text-based Holiday Tracker application. Students must create Holiday and HolidayList classes using object-oriented programming concepts, load holidays from a JSON file and via web scraping (timeanddate.com), and provide a user interface for managing holidays (add, remove, save, view by week). The assessment integrates all course concepts: classes, magic methods, data classes, web scraping, and API interaction.</p>
+                <p>Students are assessed using a competency-based rubric that measures proficiency in OOP design, code structure, and practical application of advanced Python concepts. A minimum passing score of 80% is required to demonstrate readiness for real-world Python development tasks.</p>
+                <p>- Design a text-based Holiday Tracker application</p>
+                <p>- Load holidays from JSON file and web scraping (timeanddate.com)</p>
+                <p>- Create Holiday and HolidayList classes using OOP concepts</p>
+                <p>- Apply magic methods, data classes, and API integration</p>
+                <p>- User interface for managing holidays (add, remove, save, view by week)</p>
+                <p>- Starter files: holiday_startercode.py, holidays.json</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Identify the purpose of lambda expressions in Python.</li>
+                <li>Use `filter()`, `map()`, and `reduce()` to manipulate data.</li>
+                <li>Identify the four pillars of object-oriented programming.</li>
+                <li>Create classes with properties, methods, getters, and setters.</li>
+                <li>Apply inheritance, composition, and interfaces in Python.</li>
+                <li>Define and use magic methods (dunder methods) for object lifecycle and comparisons.</li>
+                <li>Create and apply custom decorators to extend functions and classes.</li>
+                <li>Differentiate between iterators and generators and create both.</li>
+                <li>Describe the purpose of a data class and create data classes in Python.</li>
+                <li>Identify ethical and legal concerns of web scraping.</li>
+                <li>Consume REST APIs using the `requests` library.</li>
+                <li>Apply all course concepts to build a comprehensive Python application.</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Introduction (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Course Introduction</div>
+                    <ul class="topic-list">
+                        <li>Course overview and expectations</li>
+                        <li>Review of Python fundamentals (variables, loops, conditionals, functions)</li>
+                        <li>Introduction to object-oriented programming concepts</li>
+                        <li>The "everything is an object" principle</li>
+                        <li>Scenario: modeling real-world objects (cars) as classes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Lambdas and Functional Programming (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Lambdas</div>
+                    <ul class="topic-list">
+                        <li>Lambda expressions and anonymous functions</li>
+                        <li>Purpose and syntax of lambda in Python</li>
+                        <li>`filter()` — filtering iterables with lambdas</li>
+                        <li>`map()` — applying functions to iterables</li>
+                        <li>`reduce()` — aggregating values to a single result</li>
+                        <li>Map-reduce pattern overview</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Demo: Map Reduce</li>
+                            <li>Exercise: Lambdas (Detroit Police data — filter, map, reduce with CSV data)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Introduction to Object-Oriented Programming (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Intro to Object-Oriented Programming</div>
+                    <ul class="topic-list">
+                        <li>What is object-oriented programming?</li>
+                        <li>Objects, properties, and behaviors</li>
+                        <li>The four pillars of OOP: encapsulation, abstraction, inheritance, polymorphism</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Web Scraping</div>
+                    <ul class="topic-list">
+                        <li>What is web scraping?</li>
+                        <li>Ethical and legal considerations</li>
+                        <li>Tools for web scraping (requests, BeautifulSoup)</li>
+                        <li>Scraping data from websites</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Working with APIs</div>
+                    <ul class="topic-list">
+                        <li>What are APIs and REST APIs?</li>
+                        <li>Using the `requests` library</li>
+                        <li>Consuming API data in Python</li>
+                        <li>Working with JSON responses</li>
+                        <li>API keys and authentication basics</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Web Scraping with BeautifulSoup</li>
+                            <li>Exercise: Working with APIs (Star Wars API + OMDB API)</li>
+                            <li>Exercise: Working with APIs OAuth (stretch)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Classes (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Classes Part 1</div>
+                    <ul class="topic-list">
+                        <li>What are classes? Blueprints for objects</li>
+                        <li>Properties (attributes) and behaviors (methods)</li>
+                        <li>Docstrings, getters, setters, accessors, mutators</li>
+                        <li>Decorators in classes (`@property`)</li>
+                        <li>Creating a basic class in Python</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Classes Part 2</div>
+                    <ul class="topic-list">
+                        <li>Inheritance — building on existing classes</li>
+                        <li>Inheritance vs composition</li>
+                        <li>How Python handles interfaces</li>
+                        <li>Abstract classes</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Classes Part 1-1 Modeling (Animal, Book, Vehicle)</li>
+                            <li>Exercise: Classes Part 1-2 Coding (Animal, Book, Vehicle)</li>
+                            <li>Exercise: Classes Part 2-1 Modeling (inheritance hierarchies)</li>
+                            <li>Exercise: Classes Part 2-2 Coding (Fish, Snake, Person, Textbook, Car, Bicycle, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Magic Methods (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Magic Methods</div>
+                    <ul class="topic-list">
+                        <li>What are magic methods (dunder methods)?</li>
+                        <li>Object lifecycle methods (`__init__`, `__del__`, `__repr__`, `__str__`)</li>
+                        <li>Comparison magic methods (`__eq__`, `__lt__`, `__gt__`)</li>
+                        <li>Other magic methods and their purposes</li>
+                        <li>`self` and `other` keywords</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Magic Methods (Astronaut CSV — create Astronaut model with magic methods)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">Decorators (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Decorators</div>
+                    <ul class="topic-list">
+                        <li>What is a decorator? Syntactic sugar in Python</li>
+                        <li>How decorators work (functions as parameters, inner functions)</li>
+                        <li>Common uses of decorators</li>
+                        <li>Creating custom decorators</li>
+                        <li>Applying decorators to extend functionality</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Decorators (extend Astronaut class — logging details to JSON via decorator)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">7</span>
+                    <span class="module-title">Generators and Iterators (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Generators and Iterators</div>
+                    <ul class="topic-list">
+                        <li>What is an iterator? (`__iter__`, `__next__`)</li>
+                        <li>Difference between iterators and generators</li>
+                        <li>Creating iterators and generators (`yield`)</li>
+                        <li>The `itertools` module</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Generators and Iterators (Mission Groups of Astronauts — iterable collections)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">8</span>
+                    <span class="module-title">Data Classes (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Dataclasses</div>
+                    <ul class="topic-list">
+                        <li>What is a data class?</li>
+                        <li>Variable annotations</li>
+                        <li>Creating basic data classes</li>
+                        <li>Importing data and storing it in data classes</li>
+                        <li>Data classes vs regular classes</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Dataclasses (Wide World Importers — Orders, Invoices, Customers)</li>
+                            <li>Exercise: Data Classes and APIs Part 1 (find public APIs, create data classes)</li>
+                            <li>Exercise: Data Classes and APIs Part 2 (consume APIs, create data class instances)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">9</span>
+                    <span class="module-title">Python and the Web (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Internet Services</div>
+                    <ul class="topic-list">
+                        <li>Internet services foundations</li>
+                        <li>How the web works for Python developers</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: HTTP JSON Services</div>
+                    <ul class="topic-list">
+                        <li>HTTP protocol overview</li>
+                        <li>JSON data format</li>
+                        <li>Web services foundations</li>
+                        <li>Consuming HTTP JSON services in Python</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Install REST Client</li>
+                            <li>Exercise: Geo Web Scraping (scrape country data, use data classes with map/reduce/filter)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Software Requirements</h2>
+            <ul class="software-list">
+                <li>Python 3.x</li>
+                <li>pip (Python package manager)</li>
+                <li>IDE or text editor (e.g., VS Code, PyCharm)</li>
+                <li>Python packages: requests, beautifulsoup4</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

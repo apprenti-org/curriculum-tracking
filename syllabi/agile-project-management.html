@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Agile Project Management with Scrum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Agile Project Management with Scrum</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> IT Business Analyst</span>
+                <span><i class="fa-regular fa-clock"></i> 40 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>This course provides a comprehensive introduction to Agile project management using the Scrum framework. Students progress from foundational Agile principles through advanced Scrum topics, covering the Agile Manifesto, Scrum roles, ceremonies, and artifacts, as well as real-world implementation strategies, metrics, tooling, and scaling approaches. The course culminates in a capstone sprint simulation and certification preparation.</p>
+            <p>Students will gain hands-on experience facilitating Scrum events, managing backlogs, coaching teams, and applying Scrum in both standard and complex environments. This course prepares students for Scrum certification exams (PSM I, CSM, PMI-ACP) and equips them with the skills to lead Agile teams in professional settings.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Capstone Sprint Simulation</h2>
+            <div class="assessment-box">
+                <p>The capstone assessment requires students to form Scrum teams and execute a condensed sprint simulation. Students are assigned Scrum roles (Product Owner, Scrum Master, Developers) and given a fictional product brief. Teams must conduct Sprint Planning, execute a simulated Sprint with tasks and blockers, and complete a Sprint Review and Retrospective.</p>
+                <p>Students are assessed using a competency-based rubric measuring proficiency in Scrum role execution, ceremony facilitation, artifact management, and team collaboration. A comprehensive final quiz (15–20 questions) aligned to certification formats is also included.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Explain the Agile Manifesto, its four values, and twelve principles.</li>
+                <li>Describe the history and evolution of Scrum within the Agile ecosystem.</li>
+                <li>Compare Agile methodologies with traditional project management approaches.</li>
+                <li>Identify the three Scrum pillars and five Scrum values.</li>
+                <li>Map the Scrum process flow from Sprint Planning through Retrospective.</li>
+                <li>Define the roles and responsibilities of the Product Owner, Scrum Master, and Development Team.</li>
+                <li>Facilitate and participate effectively in all Scrum ceremonies.</li>
+                <li>Create and manage Scrum artifacts: Product Backlog, Sprint Backlog, and Increment.</li>
+                <li>Apply the Definition of Done to ensure quality and transparency.</li>
+                <li>Prepare an organization for Scrum adoption and coach new Scrum teams.</li>
+                <li>Use Scrum metrics (velocity, burn-down, burn-up) for inspection and adaptation.</li>
+                <li>Adapt Scrum practices for complex, regulated, or scaled environments.</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Introduction to Agile and Scrum</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Agile Manifesto &amp; Principles</div>
+                    <ul class="topic-list">
+                        <li>Overview of the Agile Manifesto</li>
+                        <li>The 4 values and 12 principles</li>
+                        <li>Why Agile was created and what it replaced</li>
+                        <li>Applying Agile values to real projects</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: History and Evolution of Scrum</div>
+                    <ul class="topic-list">
+                        <li>Origins of Scrum (Takeuchi &amp; Nonaka, Sutherland, Schwaber)</li>
+                        <li>Timeline of Scrum development</li>
+                        <li>Key publications and industry adoption</li>
+                        <li>Scrum's role in the Agile ecosystem</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Comparing Agile to Traditional Project Management</div>
+                    <ul class="topic-list">
+                        <li>Waterfall vs Agile: life cycle, documentation, change management</li>
+                        <li>Project Triangle: Scope, Cost, Time</li>
+                        <li>Case Study: Waterfall vs Scrum project outcomes</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Agile Mindset &amp; Team Culture</div>
+                    <ul class="topic-list">
+                        <li>The "Agile mindset" and what it means in practice</li>
+                        <li>Collaboration, trust, and self-organization</li>
+                        <li>Psychological safety in Scrum teams</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Interactive activity: "Agile Value Sorting"</li>
+                            <li>Group Discussion: Which model fits which type of project?</li>
+                            <li>Role-play scenarios: building or breaking Agile culture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Scrum Framework Overview</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Scrum Pillars and Values</div>
+                    <ul class="topic-list">
+                        <li>The 3 Pillars: Transparency, Inspection, Adaptation</li>
+                        <li>The 5 Values: Commitment, Courage, Focus, Openness, Respect</li>
+                        <li>Why values matter more than processes</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Scrum Process Flow</div>
+                    <ul class="topic-list">
+                        <li>The Scrum lifecycle from Sprint Planning to Retrospective</li>
+                        <li>Iterative vs Incremental development</li>
+                        <li>Delivering value in every Sprint</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Key Differences: Scrum vs Other Agile Frameworks</div>
+                    <ul class="topic-list">
+                        <li>Comparison: Kanban, XP, SAFe, Lean Software Development</li>
+                        <li>Pros and cons of each model</li>
+                        <li>Choosing the right framework for context</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Building Agile Teams</div>
+                    <ul class="topic-list">
+                        <li>Scrum Team characteristics: cross-functional, self-organizing, collaborative</li>
+                        <li>Ideal team size and composition</li>
+                        <li>Tuckman's Team Development Model in Scrum context</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Group activity: "Pillar vs Value Match"</li>
+                            <li>Simulation: "A Day in the Life of a Scrum Team"</li>
+                            <li>Team exercise: "Design Your Agile Dream Team"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Scrum Roles and Responsibilities</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Product Owner — Vision, Backlog, Stakeholders</div>
+                    <ul class="topic-list">
+                        <li>Product vision, backlog ownership, prioritization by business value</li>
+                        <li>Writing user stories, stakeholder engagement, backlog refinement</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Scrum Master — Servant Leadership and Facilitation</div>
+                    <ul class="topic-list">
+                        <li>Scrum Master as coach, facilitator, impediment remover, process guardian</li>
+                        <li>Misconceptions about the Scrum Master role</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Development Team — Cross-functional Collaboration</div>
+                    <ul class="topic-list">
+                        <li>Self-organizing, cross-functional teams (3–9 members)</li>
+                        <li>Shared accountability and collective ownership</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Role Interactions and Accountability</div>
+                    <ul class="topic-list">
+                        <li>How the three roles collaborate across Scrum events</li>
+                        <li>Common anti-patterns and role conflicts</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>"Write a Product Vision Statement"</li>
+                            <li>Role-play: "Scrum Master in Action"</li>
+                            <li>Exercise: "Build a Dream Team"</li>
+                            <li>Case study analysis: identifying and resolving role conflict</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Scrum Ceremonies</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Sprint Planning</div>
+                    <ul class="topic-list">
+                        <li>Purpose, inputs, outputs, and format</li>
+                        <li>Defining the Sprint Goal and Sprint Backlog</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Daily Scrum</div>
+                    <ul class="topic-list">
+                        <li>15-minute stand-up synchronization</li>
+                        <li>Anti-patterns and tips for remote teams</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Sprint Review</div>
+                    <ul class="topic-list">
+                        <li>Inspecting the increment with stakeholders</li>
+                        <li>Emphasis on working product over presentations</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Sprint Retrospective</div>
+                    <ul class="topic-list">
+                        <li>Inspecting team process and planning improvements</li>
+                        <li>Techniques: Start/Stop/Continue, 4Ls, Sailboat, Mad/Sad/Glad</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Simulate a Sprint Planning meeting</li>
+                            <li>Roleplay: mock Daily Scrums</li>
+                            <li>Design a Sprint Review agenda</li>
+                            <li>Conduct a team Retrospective simulation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Scrum Artifacts</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Product Backlog</div>
+                    <ul class="topic-list">
+                        <li>Definition, purpose, and INVEST criteria</li>
+                        <li>Backlog items: epics, user stories, bugs, spikes</li>
+                        <li>Backlog Refinement techniques</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Sprint Backlog</div>
+                    <ul class="topic-list">
+                        <li>Created during Sprint Planning, owned by the Development Team</li>
+                        <li>Task breakdown, estimation, and burn-down charts</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Increment and Definition of Done</div>
+                    <ul class="topic-list">
+                        <li>The Increment as a potentially shippable product</li>
+                        <li>Definition of Done vs Acceptance Criteria</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Artifact Transparency and Refinement</div>
+                    <ul class="topic-list">
+                        <li>Maintaining clear, visible, and accessible artifacts</li>
+                        <li>Tools overview: Jira, Trello, Azure DevOps, ClickUp</li>
+                        <li>Artifact anti-patterns and peer review</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Refine a messy product backlog</li>
+                            <li>Group activity: Create a Sprint Backlog</li>
+                            <li>Write a Definition of Done</li>
+                            <li>Hands-on: Explore artifact tracking tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">Implementing Scrum in a Team</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Preparing an Organization for Scrum</div>
+                    <ul class="topic-list">
+                        <li>Organizational mindset shift and readiness assessment</li>
+                        <li>Management's role in supporting self-organizing teams</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Forming and Coaching Scrum Teams</div>
+                    <ul class="topic-list">
+                        <li>Team formation, onboarding, and coaching strategies</li>
+                        <li>Stages of team maturity (Tuckman model)</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Managing Stakeholders and Business Expectations</div>
+                    <ul class="topic-list">
+                        <li>Stakeholder mapping, communication strategy, and transparent reporting</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Scaling Scrum with Multiple Teams</div>
+                    <ul class="topic-list">
+                        <li>Scaling frameworks: Nexus, Scrum@Scale, SAFe, LeSS</li>
+                        <li>Cross-team coordination and dependency management</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Scrum Readiness Assessment</li>
+                            <li>Workshop: Design a team launch plan</li>
+                            <li>Write a stakeholder communication plan</li>
+                            <li>Create a multi-team coordination plan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">7</span>
+                    <span class="module-title">Advanced Scrum Topics</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Metrics in Scrum — Velocity, Burn-down, Burn-up</div>
+                    <ul class="topic-list">
+                        <li>Understanding and interpreting Scrum metrics</li>
+                        <li>Cumulative Flow Diagrams</li>
+                        <li>Misuse of metrics: vanity vs value</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Managing Technical Debt and Continuous Improvement</div>
+                    <ul class="topic-list">
+                        <li>Technical debt causes, consequences, and management strategies</li>
+                        <li>Continuous improvement through Kaizen and retrospectives</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Agile Tools (Jira, Trello, Azure Boards, etc.)</div>
+                    <ul class="topic-list">
+                        <li>Tool comparison, Scrum board setup, automations and reports</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Adapting Scrum in Complex or Regulated Environments</div>
+                    <ul class="topic-list">
+                        <li>Strategies for regulated industries</li>
+                        <li>Hybrid models and risk management in Scrum</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Interpret sample Sprint data</li>
+                            <li>Workshop: Create a technical debt reduction plan</li>
+                            <li>Hands-on lab: Create a Scrum board</li>
+                            <li>Scenario activity: Plan a Sprint for a regulated project</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">8</span>
+                    <span class="module-title">Capstone Project and Certification Prep</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Review of Core Concepts and Group Retrospective</div>
+                    <ul class="topic-list">
+                        <li>Facilitated recap of all course topics</li>
+                        <li>"Scrum Jeopardy" competitive review</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Final Capstone Sprint Simulation</div>
+                    <ul class="topic-list">
+                        <li>Full sprint simulation with assigned Scrum roles</li>
+                        <li>Sprint Planning, execution, Review, and Retrospective</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Troubleshooting Common Scrum Issues</div>
+                    <ul class="topic-list">
+                        <li>Diagnosing Scrum-but, role confusion, poor backlog management</li>
+                        <li>"Scrum Clinic" coaching exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Final Quiz, Peer Review, and Certification Readiness</div>
+                    <ul class="topic-list">
+                        <li>Comprehensive final quiz (15–20 questions)</li>
+                        <li>Certification overview: PSM, CSM, PMI-ACP</li>
+                        <li>Exam tips, prep strategies, and free resources</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Software Requirements</h2>
+            <ul class="software-list">
+                <li>No specific software required</li>
+                <li>Recommended: Access to an Agile project management tool (Jira, Trello, Azure DevOps, or ClickUp) for hands-on exercises</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

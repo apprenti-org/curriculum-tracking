@@ -1,0 +1,66 @@
+{
+  "course": "Introduction to Cloud Technology",
+  "totalHours": null,
+  "totalLessons": 23,
+  "totalModules": 4,
+  "modules": [
+    {
+      "name": "Cloud Strategy",
+      "hours": null,
+      "description": "Cloud fundamentals, history, business benefits, budgeting, cost estimation, and migration planning. Includes demos on AWS, Azure, and GCP portals.",
+      "lessons": [
+        { "title": "What is Cloud?", "hours": null, "topics": ["Cloud computing definition", "Private vs public cloud", "Cloud characteristics"] },
+        { "title": "History of Cloud Computing", "hours": null, "topics": ["Evolution of cloud technology", "Key milestones", "Current landscape"] },
+        { "title": "Cloud for Business", "hours": null, "topics": ["Business benefits of cloud", "Strategic advantages", "Cloud adoption trends"] },
+        { "title": "Cloud Budget", "hours": null, "topics": ["Cloud budgeting", "Cost estimation", "Pay-as-you-go models"] },
+        { "title": "Cloud Migrations", "hours": null, "topics": ["Migration planning", "Migration strategies", "Executing a cloud migration"] }
+      ]
+    },
+    {
+      "name": "Cloud Technology",
+      "hours": null,
+      "description": "Core cloud infrastructure: servers, storage, networking, security, containers, databases, and high availability patterns.",
+      "lessons": [
+        { "title": "Cloud Servers", "hours": null, "topics": ["Cloud vs physical servers", "Virtual machines", "Server configuration"] },
+        { "title": "Cloud Storage", "hours": null, "topics": ["Cloud storage vendors and services", "Object and block storage", "Storage tiers"] },
+        { "title": "Cloud Networking", "hours": null, "topics": ["Cloud networking fundamentals", "Virtual networks", "DNS and CDN"] },
+        { "title": "Cloud Security", "hours": null, "topics": ["Cloud security options", "Encryption", "Identity and access management basics"] },
+        { "title": "Introduction to Containers (Docker)", "hours": null, "topics": ["Container concepts", "Docker fundamentals", "Containers vs VMs"] },
+        { "title": "Hosting Cloud Containers", "hours": null, "topics": ["Container hosting options", "Container registries", "Orchestration basics"] },
+        { "title": "Cloud Databases", "hours": null, "topics": ["Managed database services", "SQL and NoSQL in the cloud", "Database scaling"] },
+        { "title": "High Availability & Redundancy", "hours": null, "topics": ["High availability patterns", "Redundancy strategies", "Disaster recovery"] }
+      ]
+    },
+    {
+      "name": "Cloud Hosting Models",
+      "hours": null,
+      "description": "Cloud service models (IaaS, SaaS, PaaS, FaaS, CaaS), serverless computing, and the shared responsibility model.",
+      "lessons": [
+        { "title": "Introduction to Serverless Computing", "hours": null, "topics": ["Serverless concepts", "Benefits and trade-offs", "Use cases"] },
+        { "title": "IaaS (Infrastructure as a Service)", "hours": null, "topics": ["IaaS definition", "IaaS providers", "Use cases"] },
+        { "title": "SaaS (Software as a Service)", "hours": null, "topics": ["SaaS definition", "SaaS examples", "SaaS vs traditional software"] },
+        { "title": "PaaS (Platform as a Service)", "hours": null, "topics": ["PaaS definition", "PaaS providers", "Development workflows"] },
+        { "title": "FaaS (Function as a Service)", "hours": null, "topics": ["FaaS definition", "Event-driven functions", "FaaS providers"] },
+        { "title": "CaaS (Container as a Service)", "hours": null, "topics": ["CaaS definition", "Container orchestration", "CaaS providers"] },
+        { "title": "Shared Responsibility Model", "hours": null, "topics": ["Shared responsibility concept", "Provider vs customer responsibilities", "Model variations by service type"] }
+      ]
+    },
+    {
+      "name": "Cloud Careers",
+      "hours": null,
+      "description": "Cloud career paths, staying current on cloud developments, and cloud certifications.",
+      "lessons": [
+        { "title": "Careers in Cloud", "hours": null, "topics": ["Cloud career paths", "Roles and responsibilities", "Job market outlook"] },
+        { "title": "Staying Current on Cloud", "hours": null, "topics": ["Cloud news and resources", "Community engagement", "Continuous learning"] },
+        { "title": "Cloud Certifications", "hours": null, "topics": ["AWS certifications", "Azure certifications", "GCP certifications", "Vendor-neutral certifications"] }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Summative Assessment: Introduction to Cloud Technology",
+    "hours": null,
+    "items": [
+      "Summative assessment covering cloud strategy, technology, hosting models, and careers"
+    ]
+  }
+}

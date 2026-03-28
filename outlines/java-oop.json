@@ -1,0 +1,113 @@
+{
+  "course": "Java OOP",
+  "totalHours": 40,
+  "totalLessons": 13,
+  "totalModules": 4,
+  "modules": [
+    {
+      "name": "Fundamentals of Object-Oriented Programming",
+      "hours": 8,
+      "description": "Differentiating procedural and object-oriented programming, creating classes and objects in Java with fields, methods, constructors, access modifiers, and getters/setters. Introduction to Maven for project management.",
+      "lessons": [
+        {
+          "title": "Procedural vs. Object-Oriented Programming",
+          "hours": 2,
+          "topics": ["Procedural programming characteristics", "Object-oriented programming principles", "Comparing procedural and OOP approaches", "When to use each paradigm"]
+        },
+        {
+          "title": "Classes and Objects",
+          "hours": 4,
+          "topics": ["Creating classes in Java", "Importing classes", "Fields and methods", "Class constructors and overloading", "Access modifiers: public, private, protected", "Getters and setters", "Instantiating objects"]
+        },
+        {
+          "title": "Maven",
+          "hours": 2,
+          "topics": ["Software project complexity challenges", "Maven project structure and POM", "Dependency management", "Build lifecycle and plugins"]
+        }
+      ]
+    },
+    {
+      "name": "Object-Oriented Design",
+      "hours": 12,
+      "description": "The four pillars of OOP (encapsulation, abstraction, inheritance, polymorphism), interpreting requirements documents, interfaces, composition, inheritance, and identifying and refactoring code smells.",
+      "lessons": [
+        {
+          "title": "The Pillars of Object-Oriented Programming",
+          "hours": 2,
+          "topics": ["Encapsulation: bundling data and methods", "Abstraction: hiding complexity", "Inheritance: reusing code through class hierarchies", "Polymorphism: interchangeable object behavior"]
+        },
+        {
+          "title": "Interpreting Requirements",
+          "hours": 2,
+          "topics": ["Software requirements documents", "Design decisions vs. requirements", "Interpreting specifications for implementation", "Translating requirements to class designs"]
+        },
+        {
+          "title": "Interfaces",
+          "hours": 4,
+          "topics": ["Abstract vs. concrete elements", "Declaring and implementing interfaces", "Implementing multiple interfaces", "Using interfaces for polymorphism", "Composition with interfaces"]
+        },
+        {
+          "title": "Code Smells and Refactoring",
+          "hours": 4,
+          "topics": ["Large class smell identification and refactoring", "Large method smell and method extraction", "Duplicated code smell and DRY principle", "Long parameter list smell", "Class design best practices"]
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "hours": 8,
+      "description": "Automated testing fundamentals, JUnit framework, stateless and stateful unit testing with arrange/act/assert, and testing code that uses collections.",
+      "lessons": [
+        {
+          "title": "Introduction to Testing",
+          "hours": 1,
+          "topics": ["Automated testing overview", "Unit testing vs. integration testing", "When to implement tests", "Testing tradeoffs and best practices"]
+        },
+        {
+          "title": "JUnit and Stateless Testing",
+          "hours": 3,
+          "topics": ["JUnit framework setup", "Arrange/Act/Assert pattern", "Stateless testing concepts", "Writing and running unit tests", "Test assertions and expected values"]
+        },
+        {
+          "title": "Stateful Testing",
+          "hours": 2,
+          "topics": ["Stateful vs. stateless testing", "Testing state-dependent classes", "Arrange step for stateful tests", "Managing test state and setup"]
+        },
+        {
+          "title": "How to Test Collections",
+          "hours": 2,
+          "topics": ["Testing code that uses collections", "What not to test in collections", "Testing exception handling", "Bug identification through unit tests"]
+        }
+      ]
+    },
+    {
+      "name": "Collections",
+      "hours": 12,
+      "description": "Java Generics for type-safe reusable classes, ArrayList for ordered collections, HashMap for key-value data structures, and applying collections to real-world problems.",
+      "lessons": [
+        {
+          "title": "Generics",
+          "hours": 2,
+          "topics": ["Generic types and classes in Java", "Type parameters and type safety", "Generic containers and collections", "Generics in standard libraries"]
+        },
+        {
+          "title": "Lists",
+          "hours": 4,
+          "topics": ["List interface and ArrayList implementation", "ArrayList vs. arrays", "Adding, removing, and accessing elements", "Iterating over lists", "Sorting and searching collections"]
+        },
+        {
+          "title": "Hash-Based Collections",
+          "hours": 4,
+          "topics": ["Hash functions and hash codes", "HashMap declaration and usage", "Put, get, containsKey, and remove operations", "Iterating over maps with entrySet", "Choosing between List and Map"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Java OOP Summative Assessment",
+    "hours": null,
+    "items": [
+      "Summative Assessment: Shopping Cart"
+    ]
+  }
+}

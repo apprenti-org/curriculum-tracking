@@ -1,0 +1,71 @@
+{
+  "course": "Helpdesk Software Fundamentals",
+  "totalHours": 16,
+  "totalLessons": 14,
+  "totalModules": 7,
+  "modules": [
+    {
+      "name": "Introduction to Helpdesk Software",
+      "hours": 2,
+      "description": "Overview of helpdesk platforms, ITSM concepts, and the role of helpdesk in IT operations.",
+      "lessons": [
+        { "title": "Helpdesk Software Overview and ITSM Fundamentals", "hours": 1, "topics": ["What is helpdesk software?", "IT service management (ITSM) fundamentals", "Helpdesk purpose and value in IT operations", "The role of helpdesk in the support lifecycle", "Common helpdesk platforms (Zendesk, Freshdesk, ServiceNow)"] },
+        { "title": "Helpdesk Features and Platform Comparison", "hours": 1, "topics": ["Core helpdesk features and capabilities", "Platform comparison and selection criteria", "Cloud-based vs on-premise solutions", "Helpdesk integrations overview (email, chat, CRM, monitoring)", "Licensing and cost considerations"] }
+      ]
+    },
+    {
+      "name": "Setting Up the Helpdesk System",
+      "hours": 2.5,
+      "description": "Configuring a helpdesk platform including user roles, branding, and integrations.",
+      "lessons": [
+        { "title": "System Configuration and User Roles", "hours": 1.5, "topics": ["Initial helpdesk system setup and configuration", "User roles and permissions management", "Agent, admin, and end-user account types", "Helpdesk branding and organizational identity", "Support portal configuration"] },
+        { "title": "Integrations and Communication Channels", "hours": 1, "topics": ["Email integration and routing", "Chat integration and live support channels", "CRM integration for customer context", "Multi-channel support setup", "Testing and validating integrations"] }
+      ]
+    },
+    {
+      "name": "Ticket Management and Workflow",
+      "hours": 3,
+      "description": "Managing the full ticket lifecycle from creation through resolution.",
+      "lessons": [
+        { "title": "Ticket Lifecycle Management", "hours": 1.5, "topics": ["Ticket creation and intake methods", "Ticket updates, status tracking, and communication", "Ticket escalation paths and procedures", "Ticket closure and resolution documentation", "Ticket assignment and queue management"] },
+        { "title": "Categorization, Prioritization, and SLAs", "hours": 1.5, "topics": ["Ticket categorization and tagging strategies", "Prioritization frameworks (urgency vs impact)", "SLA management and configuration", "Response time and resolution time targets", "Monitoring SLA compliance and breaches"] }
+      ]
+    },
+    {
+      "name": "Knowledge Management",
+      "hours": 2,
+      "description": "Building and maintaining a knowledge base for self-service and resolution efficiency.",
+      "lessons": [
+        { "title": "Knowledge Base Creation and Management", "hours": 1, "topics": ["Knowledge base management principles", "Knowledge article creation and formatting", "Article templates and style guidelines", "Organizing articles by category and audience", "Version control and article review cycles"] },
+        { "title": "Self-Service Enablement and Knowledge Linking", "hours": 1, "topics": ["Linking knowledge articles to tickets", "Self-service enablement and portal design", "FAQ and common issue documentation", "Measuring knowledge base effectiveness", "Knowledge-centered service (KCS) fundamentals"] }
+      ]
+    },
+    {
+      "name": "Automation and Customization",
+      "hours": 2.5,
+      "description": "Automating repetitive tasks and customizing workflows to match organizational processes.",
+      "lessons": [
+        { "title": "Helpdesk Automation Fundamentals", "hours": 1.5, "topics": ["Helpdesk automation concepts and benefits", "Auto-assignment rules and routing logic", "Automated responses and acknowledgments", "Triggers, conditions, and actions", "Workflow automation patterns"] },
+        { "title": "Form and Workflow Customization", "hours": 1, "topics": ["Form customization and field configuration", "Custom ticket fields and data capture", "Workflow customization for organizational processes", "Approval workflows and multi-step processes", "Testing and iterating on custom workflows"] }
+      ]
+    },
+    {
+      "name": "Reporting and Analytics",
+      "hours": 2,
+      "description": "Using helpdesk data to track performance and drive improvement.",
+      "lessons": [
+        { "title": "Helpdesk Metrics and Dashboards", "hours": 1, "topics": ["Helpdesk reporting fundamentals", "Response time and resolution time metrics", "Customer satisfaction metrics (CSAT, NPS)", "Agent performance metrics", "Building and customizing dashboards"] },
+        { "title": "Analytics and Data-Driven Decisions", "hours": 1, "topics": ["Helpdesk analytics and trend identification", "Performance reporting and stakeholder communication", "Identifying bottlenecks and inefficiencies", "Benchmarking against industry standards", "Using data to inform staffing and resource decisions"] }
+      ]
+    },
+    {
+      "name": "Best Practices and Troubleshooting",
+      "hours": 2,
+      "description": "Operational best practices, common issues, and continuous improvement.",
+      "lessons": [
+        { "title": "Best Practices and Operational Optimization", "hours": 1, "topics": ["Helpdesk best practices and operational standards", "Common helpdesk issues and resolution patterns", "System troubleshooting and diagnostic techniques", "Escalation procedures and documentation", "User training and onboarding strategies"] },
+        { "title": "Continuous Improvement and Optimization", "hours": 1, "topics": ["Continuous improvement methodologies for helpdesk", "Process review and optimization cycles", "Feedback loops and user satisfaction surveys", "Adapting to organizational growth and change", "Career paths in IT service management"] }
+      ]
+    }
+  ]
+}

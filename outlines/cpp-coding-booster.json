@@ -1,0 +1,46 @@
+{
+  "course": "C++ Coding Booster Intensive",
+  "totalHours": 8,
+  "totalLessons": 4,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "C++ Coding Booster Intensive",
+      "hours": 8,
+      "description": "Full-day intensive workshop building practical fluency in C++ for enterprise and performance-critical environments. Focuses on data representation, memory management, and real-world Transaction Processing Systems (TPS). Problem-based learning using ServiceNow-style support tickets.",
+      "lessons": [
+        {
+          "title": "Core Concept Overview",
+          "hours": 1.5,
+          "topics": ["Variables, data types, and memory allocation", "Data conversion techniques (type casting, formatting, binary)", "Pointers and memory addressing", "OOP: classes, objects, inheritance, encapsulation", "Key terms: pointer, type casting, heap vs stack, TPS"]
+        },
+        {
+          "title": "Hands-On Application",
+          "hours": 1.5,
+          "topics": ["Build a Transaction class with private attributes and public methods", "Use pointers to manipulate stored data", "Type casting to simulate data conversion", "Simplified TPS parser (amount, account number, assembler-style format)", "AI-assisted development with ChatGPT and GitHub Copilot", "Pair programming and peer review"]
+        },
+        {
+          "title": "Advanced Concepts & Comparisons",
+          "hours": 1.5,
+          "topics": ["Memory segmentation: code, data, stack, heap", "Manual memory management (new/delete)", "Assembler compatibility and low-level instruction mapping", "Data formatting for inter-system communication (padding, alignment)", "C++ vs Python and C++ OOP vs Java/C# OOP", "Lab: debug broken C++ code from a simulated support ticket", "TDD with assert or GoogleTest"]
+        },
+        {
+          "title": "Troubleshooting & Best Practices",
+          "hours": 1.5,
+          "topics": ["Dangling pointers and memory leaks", "Type mismatches and undefined behavior", "Best practices: nullptr, smart pointers (unique_ptr, shared_ptr)", "Live troubleshooting: data corruption during casting in TPS processor", "AI-assisted debugging and code comparison"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Wrap-Up & Final Challenge",
+    "hours": 1,
+    "items": [
+      "Final quiz (15–20 questions) on pointers, memory, OOP, and practical workflows",
+      "Final support ticket challenge: investigate and fix TPS data formatting logic error",
+      "AI-prompted debugging support",
+      "Document solution and submit pull request to team GitHub repo",
+      "Optional Certificate of Completion for >80% score"
+    ]
+  }
+}

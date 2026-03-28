@@ -1,0 +1,72 @@
+{
+  "course": "SQL Coding Booster Intensive",
+  "totalHours": 8,
+  "totalModules": 4,
+  "totalLessons": 8,
+  "modules": [
+    {
+      "module": 1,
+      "hours": 1.5,
+      "lessons": [
+        {
+          "title": "Scrum Team Setup",
+          "type": "activity"
+        },
+        {
+          "title": "Scenario Briefing: Data Translation & Migration",
+          "type": "lesson"
+        },
+        {
+          "title": "AI-Assisted Design: Flowcharts & Pseudocode",
+          "type": "activity"
+        }
+      ],
+      "name": "Scrum Setup & Data Requirements"
+    },
+    {
+      "module": 2,
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Prompting Strategy for SQL Generation",
+          "type": "lesson"
+        },
+        {
+          "title": "Query Validation & Efficiency Review",
+          "type": "activity"
+        }
+      ],
+      "name": "AI-Assisted Query & Script Generation"
+    },
+    {
+      "module": 3,
+      "hours": 1.5,
+      "lessons": [
+        {
+          "title": "ETL Execution & Test-Driven Development",
+          "type": "lesson"
+        },
+        {
+          "title": "Ecosystem Navigation with Runbooks",
+          "type": "activity"
+        }
+      ],
+      "name": "ETL Implementation & Reporting Practice"
+    },
+    {
+      "module": 4,
+      "hours": 1.5,
+      "lessons": [
+        {
+          "title": "CRM Alignment & System Integrity Review",
+          "type": "lesson"
+        },
+        {
+          "title": "GitHub Deployment & Retrospective",
+          "type": "activity"
+        }
+      ],
+      "name": "Integration, CRM Customization & Deployment"
+    }
+  ]
+}

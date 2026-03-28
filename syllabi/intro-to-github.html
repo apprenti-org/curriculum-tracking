@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Introduction to GitHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Introduction to GitHub</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Software Development (Java, C#, JavaScript tracks)</span>
+                <span><i class="fa-regular fa-clock"></i> 8 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Introduction to GitHub teaches learners the foundational tools and practices of version control and collaborative development using Git and GitHub. Students will master command-line Git operations from repository initialization to branch management, understand GitHub features for individual and team workflows, resolve merge conflicts, and manage large files. This course is essential for all software developers, providing skills for code collaboration, team development, and professional software practices.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: GitHub Repository Management Project</h2>
+            <div class="assessment-box">
+                <p>Students will demonstrate proficiency in Git and GitHub by creating and managing a repository with the following requirements: initialization and commits, branch creation and management, pull requests and code review, merge conflict resolution, and team collaboration workflows. The assessment evaluates ability to use both command-line Git and GitHub's web interface effectively.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Identify key terms and concepts related to Git and GitHub</li>
+                <li>Explain the importance of version control for individual and team development</li>
+                <li>Demonstrate basic Git commands in the command line</li>
+                <li>Install and configure Git and GitHub on a machine</li>
+                <li>Initialize repositories and make commits</li>
+                <li>Push code to remote repositories</li>
+                <li>Explore and assess GitHub repositories and their structure</li>
+                <li>Create, manage, and delete branches effectively</li>
+                <li>Resolve merge conflicts using both GitHub and command-line tools</li>
+                <li>Clone, pull, and push changes to remote repositories</li>
+                <li>Use GitHub's Large File Storage (LFS) for managing large files</li>
+                <li>Collaborate with teammates using pull requests and code review</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Git Fundamentals and Installation (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Git Background</div>
+                    <ul class="topic-list">
+                        <li>Git terminology and concepts</li>
+                        <li>The importance of version control</li>
+                        <li>Git workflow overview</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Quiz: Git Background</li>
+                            <li>Resource: Git and the Command Line</li>
+                            <li>Install: GitHub installation and setup</li>
+                            <li>Git configuration and user setup</li>
+                            <li>Creating a repository</li>
+                            <li>Connecting to local environment</li>
+                            <li>First commits and pushes to remote</li>
+                            <li>Exploring repository structure</li>
+                            <li>Understanding README files and documentation best practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">GitHub for Individuals (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 2: GitHub for Individuals</div>
+                    <ul class="topic-list">
+                        <li>Working with Git individually</li>
+                        <li>Local and remote workflow</li>
+                        <li>Adding, committing, and pushing changes</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Quiz: GitHub for Individuals</li>
+                            <li>Multiple adds and commits in a local repository</li>
+                            <li>Working directory, staging area, and commit history</li>
+                            <li>Pushing, pulling, and cloning remote repositories</li>
+                            <li>Keeping local and remote in sync</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">GitHub for Groups (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 3: GitHub for Groups</div>
+                    <ul class="topic-list">
+                        <li>Branching strategies for team development</li>
+                        <li>Pull requests and code review</li>
+                        <li>Team collaboration workflows</li>
+                        <li>Issues and project management</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Quiz: GitHub for Groups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Resolving Merge Conflicts (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 4: Resolving Merge Conflicts</div>
+                    <ul class="topic-list">
+                        <li>Understanding merge conflicts</li>
+                        <li>Conflict markers and resolution process</li>
+                        <li>Resolving conflicts on GitHub web interface</li>
+                        <li>Resolving conflicts on command line</li>
+                        <li>Using diff tools for comparison</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Quiz: Resolving Merge Conflicts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Advanced Git Features (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>Using LFS for managing large files</li>
+                        <li>Configuring LFS in repositories</li>
+                        <li>Git functions specific to Python projects</li>
+                        <li>.gitignore for Python environments</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Command-Line Git Practice: Initialize repos, create commits, manage branches</li>
+                <li>Repository Creation and Management: Create projects and manage remote repositories</li>
+                <li>Branch Creation and Switching: Work with multiple branches in parallel</li>
+                <li>Pull Request Workflow: Create PRs, request reviews, merge code</li>
+                <li>Merge Conflict Resolution: Practice resolving conflicts in various scenarios</li>
+                <li>Collaboration Exercise: Work with team members on shared repositories</li>
+                <li>Large File Management: Use LFS for binary and large files</li>
+                <li>Documentation: Write effective README and contributing guides</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

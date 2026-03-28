@@ -1,0 +1,82 @@
+{
+  "course": "Python Coding Booster Intensive",
+  "totalHours": 16,
+  "totalLessons": 10,
+  "totalModules": 2,
+  "modules": [
+    {
+      "name": "Day 1 — Design, AI Workflows, & TDD Foundations",
+      "hours": 8,
+      "description": "Greenfield development: requirements, AI-assisted design, TDD, implementation sprint, and controlled deployment.",
+      "lessons": [
+        {
+          "title": "Course Introduction: Framing & Engineering Expectations",
+          "hours": 0.5,
+          "topics": ["Visa-style development workflow", "3 core scenarios: Greenfield, Existing Codebase Repair, Hybrid", "AI is mandatory — but disciplined"]
+        },
+        {
+          "title": "Module 1: Requirements & Architecture (Greenfield Scenario)",
+          "hours": 1.5,
+          "topics": ["Scrum team formation", "Feature requirement briefing", "AI-assisted flowchart, pseudocode, architecture", "Validate AI output against security and system constraints"]
+        },
+        {
+          "title": "Module 2: AI-Assisted Design to Test Planning",
+          "hours": 1.5,
+          "topics": ["AI-generated scaffolding and refactoring", "Write test plan BEFORE finalizing logic", "Unit tests, edge case tests, failure case tests (pytest/unittest)", "Validating AI hallucinations"]
+        },
+        {
+          "title": "Module 3: Implementation Sprint",
+          "hours": 1.5,
+          "topics": ["Implement feature using TDD", "Commit frequently, run tests continuously", "Code review checkpoints, prompt quality review"]
+        },
+        {
+          "title": "Module 4: Controlled Deployment Simulation",
+          "hours": 1.5,
+          "topics": ["Pull request submission, peer code review", "Validate tests pass, no regressions, no security issues", "Merge and simulated cloud deployment", "Day 1 Retro"]
+        }
+      ]
+    },
+    {
+      "name": "Day 2 — Existing Systems, Debugging & Safe Modification",
+      "hours": 8,
+      "description": "Legacy code repair: reading architecture, bug fixing, CI/CD awareness, final deployment, and engineering review.",
+      "lessons": [
+        {
+          "title": "Day 2 Intro: Reset & Scenario Shift",
+          "hours": 0.5,
+          "topics": ["Production issue scenario", "Existing Python service is unstable", "Must add feature without breaking downstream systems"]
+        },
+        {
+          "title": "Module 5: Reading Architecture & Legacy Code",
+          "hours": 1.5,
+          "topics": ["Interpret architecture diagrams, review logs, examine change history", "Map data flow", "AI to explain code sections — cross-check against actual behavior"]
+        },
+        {
+          "title": "Module 6: Bug Fix & Feature Extension",
+          "hours": 1.5,
+          "topics": ["Root cause identification, write failing test first", "Minimal fix, add new feature safely", "Regression protection, defensive programming, exception handling"]
+        },
+        {
+          "title": "Module 7: DevOps & CI/CD Awareness",
+          "hours": 1.25,
+          "topics": ["GitHub Actions pipeline review", "Python changes impact on automation, security scans, deployment", "Simulate and diagnose pipeline failure", "Security-aware scripting"]
+        },
+        {
+          "title": "Module 8: Final Deployment & System Integrity Test + Review",
+          "hours": 1.75,
+          "topics": ["Full test suite, coverage review, no downstream breakage", "Final merge + deployment", "Team presentations: architecture, AI strategy, validation, regression prevention", "Skills rubric evaluation"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Final Engineering Review & Assessment",
+    "hours": 0.75,
+    "items": [
+      "Team presentation: architecture decision and AI prompting strategy",
+      "Where AI failed and how teams validated safety",
+      "Regression prevention demonstration",
+      "Instructor rubric: code quality, prompt quality, communication, safety awareness, TDD discipline"
+    ]
+  }
+}

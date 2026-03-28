@@ -1,0 +1,86 @@
+{
+  "course": "C# Language Fundamentals",
+  "totalHours": null,
+  "totalLessons": 12,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "C# Language Fundamentals",
+      "hours": null,
+      "description": "Introduction to the C# programming language and .NET platform. Covers environment setup, language syntax, data types, variables, console I/O, strings, control flow, methods, arrays, and a capstone project building a task manager application.",
+      "lessons": [
+        {
+          "title": "Introduction to C#",
+          "hours": null,
+          "topics": ["Overview of the C# language and .NET platform", "History and evolution of C#", "C# ecosystem and tooling", ".NET runtime and compilation process"]
+        },
+        {
+          "title": "Hello World",
+          "hours": null,
+          "topics": ["Setting up the development environment", "Creating a .NET Console application", "Writing and running your first C# program", "Using the dotnet CLI"]
+        },
+        {
+          "title": "C# Application Overview",
+          "hours": null,
+          "topics": ["Directory and project file setup (.csproj)", "Program.cs structure", "Namespaces", "Classes and methods overview", "Top-level statements vs traditional Main method"]
+        },
+        {
+          "title": "Types",
+          "hours": null,
+          "topics": ["Value types vs reference types", "Numeric types (int, double, decimal)", "Boolean and character types", "Type conversion and casting", "The var keyword and type inference"]
+        },
+        {
+          "title": "Variables",
+          "hours": null,
+          "topics": ["Declaring and initializing variables", "Variable naming conventions", "Constants", "Scope and lifetime", "Default values"]
+        },
+        {
+          "title": "Console I/O",
+          "hours": null,
+          "topics": ["Console.WriteLine and Console.Write", "String interpolation and composite formatting", "Console.ReadLine for user input", "Parsing user input to numeric types", "Formatting output"]
+        },
+        {
+          "title": "Strings",
+          "hours": null,
+          "topics": ["String creation and initialization", "String properties and methods", "String comparison", "Composite formatting and string interpolation", "Escape sequences and verbatim strings", "StringBuilder for performance"]
+        },
+        {
+          "title": "Conditional Statements",
+          "hours": null,
+          "topics": ["if / else if / else statements", "Comparison and logical operators", "switch statements", "Ternary operator", "Nested conditionals"]
+        },
+        {
+          "title": "Loops",
+          "hours": null,
+          "topics": ["for loops", "while and do-while loops", "foreach loops", "break and continue", "Nested loops"]
+        },
+        {
+          "title": "Methods",
+          "hours": null,
+          "topics": ["Defining and calling methods", "Parameters and arguments", "Return types and void methods", "Method overloading", "Optional and named parameters", "Expression-bodied methods"]
+        },
+        {
+          "title": "Arrays",
+          "hours": null,
+          "topics": ["Declaring and initializing arrays", "Accessing elements by index", "Iterating over arrays", "Multi-dimensional arrays", "Array methods (Sort, Reverse, IndexOf)"]
+        },
+        {
+          "title": "Task Manager Project",
+          "hours": null,
+          "topics": ["Capstone project combining all module concepts", "Building a console-based task manager application", "Applying types, variables, strings, control flow, methods, and arrays", "Code organization and structure"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Capsule Hotel Assessment",
+    "hours": null,
+    "items": [
+      "Build a capsule hotel management console application",
+      "Demonstrate proficiency in C# language fundamentals",
+      "Apply variables, types, strings, conditionals, loops, methods, and arrays",
+      "Implement user interaction through console I/O",
+      "Organize code using methods and proper structure"
+    ]
+  }
+}

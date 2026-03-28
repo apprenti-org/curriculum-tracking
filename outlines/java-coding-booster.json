@@ -1,0 +1,72 @@
+{
+  "course": "Java Coding Booster Intensive",
+  "totalHours": 16,
+  "totalLessons": 8,
+  "totalModules": 2,
+  "modules": [
+    {
+      "name": "Day 1: Modern Java Workflows & Test-Driven Development",
+      "hours": 8,
+      "description": "Greenfield development and TDD workflows using AI-assisted coding in a simulated Scrum environment. Build a Spring Boot microservice with >80% test coverage.",
+      "lessons": [
+        {
+          "title": "Module 1: The Visa Scrum Simulation",
+          "hours": 1.5,
+          "topics": ["Scrum team formation (4–8 members)", "Greenfield scenario: Net-New Product Development", "AI Lab: ChatGPT-generated flowcharts and pseudocode", "Validating AI logic against business rules"]
+        },
+        {
+          "title": "Module 2: AI-Driven Boilerplate & Dependency Injection",
+          "hours": 1.75,
+          "topics": ["Spring Boot basics", "Dependency Injection (DI) and REST Controllers", "GitHub Copilot skeleton code generation", "Spot the Hallucination: reviewing AI-generated DI for security flaws"]
+        },
+        {
+          "title": "Module 3: Test-Driven Development (TDD) Fundamentals",
+          "hours": 1.5,
+          "topics": ["JUnit 5 and Mockito", "Unit vs. Integration testing", "Red–Green–Refactor loop", "AI-generated edge-case test inputs"]
+        },
+        {
+          "title": "Module 4: The CI/CD Pipeline Simulation",
+          "hours": 1.25,
+          "topics": ["Daily cloud deployments via GitHub", "Automated JUnit test pipeline", "Code coverage targets (>80%)", "DevOps fundamentals and CI/CD concepts"]
+        }
+      ]
+    },
+    {
+      "name": "Day 2: Legacy Systems, Debugging, and Hybrid Development",
+      "hours": 8,
+      "description": "Hybrid development with legacy systems — reading complex code, debugging integration failures, refactoring safely, and surviving simulated production load.",
+      "lessons": [
+        {
+          "title": "Module 5: Reading Complex Code",
+          "hours": 1.5,
+          "topics": ["Hybrid Development scenario: inherit a Legacy Payment Processor (Monolith)", "AI tools to explain classes and map dependencies", "Architecture diagrams and change log review", "Safely interacting with existing codebases"]
+        },
+        {
+          "title": "Module 6: The Booby Trap Simulation",
+          "hours": 1.75,
+          "topics": ["Hidden dependency discovery (hard-coded rate limiter)", "Integrating Day 1 microservice into Legacy System", "Instructor-triggered failure scenario", "AI-assisted debugging: stack trace analysis and integration fix"]
+        },
+        {
+          "title": "Module 7: Refactoring with AI",
+          "hours": 1.5,
+          "topics": ["Improving code quality without altering behavior", "GitHub Copilot refactoring (nested loops to Java Streams)", "Regression test preservation constraint", "When AI suggests dangerous refactors"]
+        },
+        {
+          "title": "Module 8: The Production Release & Retro",
+          "hours": 1.25,
+          "topics": ["Final Pull Request submission", "Chaos Script load testing", "Retrospective: Balancing AI Dependency", "Ethical considerations and data safety"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Production Simulation Deliverables",
+    "hours": null,
+    "items": [
+      "Day 1: Passing build of a new Spring Boot microservice with >80% code coverage",
+      "Day 2: Successful integration of microservice into legacy system without breaking regression tests",
+      "Final Pull Request passing load/chaos testing",
+      "Scrum team retrospective on AI-assisted development"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "course": "Data Fundamentals — Excel for Data Analysts",
+  "totalHours": 50,
+  "totalLessons": 14,
+  "totalModules": 9,
+  "modules": [
+    {
+      "name": "Getting Started with Excel Data Analysis",
+      "hours": null,
+      "description": "Organize data in Excel, set up sample databases, and understand the extract-transform-load (ETL) process.",
+      "lessons": [
+        { "title": "Organization in Excel", "hours": null, "topics": ["Data organization best practices", "Structuring data for analysis"] },
+        { "title": "Extract, Transform, and Load", "hours": null, "topics": ["ETL process overview", "ETL in the context of Excel"] }
+      ]
+    },
+    {
+      "name": "Importing Data",
+      "hours": null,
+      "description": "Import data into Excel from external sources including APIs and the web.",
+      "lessons": [
+        { "title": "Importing Data", "hours": null, "topics": ["Importing data from APIs", "Importing data from the web", "Data source connections"] }
+      ]
+    },
+    {
+      "name": "Introduction to Power Query",
+      "hours": null,
+      "description": "Use Power Query in Excel for data transformation, custom columns, and conditional columns.",
+      "lessons": [
+        { "title": "Intro to Power Query", "hours": null, "topics": ["Power Query basics", "Custom and conditional columns", "Data transformation with Power Query"] }
+      ]
+    },
+    {
+      "name": "Cleaning and Transforming Data",
+      "hours": null,
+      "description": "Clean and transform data using various Excel methods and techniques.",
+      "lessons": [
+        { "title": "Cleaning Data", "hours": null, "topics": ["Data cleaning techniques", "Handling missing and inconsistent data"] },
+        { "title": "Transforming Data", "hours": null, "topics": ["Data transformation methods", "Reshaping data for analysis"] }
+      ]
+    },
+    {
+      "name": "Pivot Tables",
+      "hours": null,
+      "description": "Create and use pivot tables to summarize and analyze data in Excel.",
+      "lessons": [
+        { "title": "Creating Pivot Tables", "hours": null, "topics": ["Pivot table creation", "Summarizing data with pivot tables", "Pivot table configurations"] }
+      ]
+    },
+    {
+      "name": "Creating Charts",
+      "hours": null,
+      "description": "Create charts in Excel and handle data relationships in visualizations.",
+      "lessons": [
+        { "title": "Creating Charts", "hours": null, "topics": ["Chart types and selection", "Chart formatting and customization", "Relationship handling in charts"] }
+      ]
+    },
+    {
+      "name": "Geographic Data & Data Exploration",
+      "hours": null,
+      "description": "Work with geographic data in Excel and explore datasets from sources like Kaggle.",
+      "lessons": [
+        { "title": "Working with Geographic Data", "hours": null, "topics": ["Geographic data in Excel", "Map visualizations", "Dataset exploration techniques"] }
+      ]
+    },
+    {
+      "name": "Data Analysis ToolPak and Correlation",
+      "hours": null,
+      "description": "Use the Data Analysis ToolPak for descriptive statistics, covariance, and correlation analysis.",
+      "lessons": [
+        { "title": "Intro to Data Analysis Toolpak", "hours": null, "topics": ["Installing and using the ToolPak", "ToolPak capabilities"] },
+        { "title": "Descriptive Statistics", "hours": null, "topics": ["Mean, median, mode", "Standard deviation and variance", "Statistical summaries"] },
+        { "title": "Covariance and Correlation", "hours": null, "topics": ["Covariance analysis", "Correlation coefficients", "Interpreting relationships"] }
+      ]
+    },
+    {
+      "name": "Rank, Percentile, Probability Distributions, and Histograms",
+      "hours": null,
+      "description": "Calculate rank, percentile, and probability distributions, and create histograms in Excel.",
+      "lessons": [
+        { "title": "Rank and Percentile", "hours": null, "topics": ["Ranking data", "Percentile calculations", "Interpreting rank and percentile"] },
+        { "title": "Probability Distributions and Histograms", "hours": null, "topics": ["Probability distribution types", "Creating histograms", "Interpreting distribution shapes"] }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Summative Assessment: Restaurant Ratings",
+    "hours": null,
+    "items": [
+      "Interactive assessment preparation",
+      "Summative assessment with rubric",
+      "Restaurant ratings scenario-based project"
+    ]
+  }
+}

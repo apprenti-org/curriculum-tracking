@@ -1,0 +1,65 @@
+{
+  "course": "Software Development Lifecycle",
+  "totalHours": 24,
+  "totalModules": 3,
+  "totalLessons": 9,
+  "modules": [
+    {
+      "module": 1,
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Software Development Lifecycle Overview",
+          "type": "lesson"
+        }
+      ],
+      "name": "Introduction to SDLC"
+    },
+    {
+      "module": 2,
+      "hours": 16,
+      "lessons": [
+        {
+          "title": "SDLC — Planning",
+          "type": "lesson"
+        },
+        {
+          "title": "SDLC — Design",
+          "type": "lesson"
+        },
+        {
+          "title": "SDLC — Development (Implementation)",
+          "type": "lesson"
+        },
+        {
+          "title": "SDLC — Testing",
+          "type": "lesson"
+        },
+        {
+          "title": "SDLC — Deployment",
+          "type": "lesson"
+        },
+        {
+          "title": "SDLC — Maintenance and Support",
+          "type": "lesson"
+        }
+      ],
+      "name": "SDLC Phases in Practice"
+    },
+    {
+      "module": 3,
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "Popular SDLC Models",
+          "type": "lesson"
+        },
+        {
+          "title": "How to Scrum",
+          "type": "lesson"
+        }
+      ],
+      "name": "Methodologies & Frameworks"
+    }
+  ]
+}

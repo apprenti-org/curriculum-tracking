@@ -1,0 +1,135 @@
+{
+  "course": "Troubleshooting/Supporting in an Enterprise Environment",
+  "totalHours": 32,
+  "totalLessons": 12,
+  "totalModules": 7,
+  "modules": [
+    {
+      "name": "Troubleshooting Methodology",
+      "hours": 4,
+      "description": "Structured troubleshooting processes for enterprise IT environments, including problem identification, theory testing, and documentation.",
+      "lessons": [
+        {
+          "title": "Implementing a Troubleshooting Process",
+          "hours": 4,
+          "topics": ["Structured troubleshooting methodology", "Identifying and documenting problems", "Establishing theories of probable cause", "Testing theories and planning actions", "Implementing solutions and verifying results", "Root cause analysis and documentation"]
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting System Startup and Recovery",
+      "hours": 6,
+      "description": "Diagnosing boot failures, using Safe Mode and recovery tools, performing system resets, and restoring from backups.",
+      "lessons": [
+        {
+          "title": "Diagnosing Startup Issues",
+          "hours": 3,
+          "topics": ["Common causes of boot failures and boot loops", "BCD errors and bootloader corruption", "Safe Mode access and usage", "System Restore and recovery environments", "Windows Recovery Environment (WinRE)", "Startup Repair and command-line recovery"]
+        },
+        {
+          "title": "Performing System Recovery",
+          "hours": 3,
+          "topics": ["Recovery partitions and OEM tools", "System reset with file retention vs. factory reset", "Backup and recovery strategies", "System image recovery from USB", "Cloud-based recovery options", "Recovery planning for enterprise environments"]
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting Group Policy",
+      "hours": 4,
+      "description": "Diagnosing Group Policy Object failures, using gpresult and RSOP, and resolving inheritance and filtering issues.",
+      "lessons": [
+        {
+          "title": "Group Policy Issues",
+          "hours": 4,
+          "topics": ["GPO application failures and common causes", "Security filtering and WMI filters", "Inheritance blocking and OU placement", "Replication delays between domain controllers", "Using gpresult /h for policy reports", "RSOP.msc and Event Viewer for GPO diagnosis"]
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting Hardware and Performance",
+      "hours": 6,
+      "description": "Diagnosing hardware device and driver issues, performance bottlenecks, and using monitoring tools like Task Manager and Resource Monitor.",
+      "lessons": [
+        {
+          "title": "Troubleshooting Hardware Devices and Drivers",
+          "hours": 3,
+          "topics": ["Device Manager error codes (Code 10, 28, 43)", "Driver conflicts and compatibility issues", "Updating, rolling back, and reinstalling drivers", "Driver signing and verification", "Using sfc /scannow for system file integrity", "Hardware vs. software fault isolation"]
+        },
+        {
+          "title": "Troubleshooting Performance Issues",
+          "hours": 3,
+          "topics": ["CPU, RAM, disk, and process bottlenecks", "Task Manager for real-time monitoring", "Resource Monitor for detailed analysis", "Performance Monitor for trending", "Memory leaks and rogue processes", "Startup optimization and drive upgrades"]
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting Network and Remote Connectivity",
+      "hours": 6,
+      "description": "Diagnosing network connectivity issues using ipconfig, ping, tracert, netstat, and troubleshooting VPN and RDP failures.",
+      "lessons": [
+        {
+          "title": "Network Connectivity Troubleshooting",
+          "hours": 3,
+          "topics": ["DHCP failures and APIPA addresses (169.254.x.x)", "DNS resolution issues", "ipconfig, ping, tracert, netstat usage", "Subnet mask and gateway misconfiguration", "Firewall and port blocking diagnosis", "Wired vs. wireless connectivity issues"]
+        },
+        {
+          "title": "Remote Connectivity Troubleshooting",
+          "hours": 3,
+          "topics": ["VPN tunnel establishment failures", "RDP connection issues and port 3389", "Authentication failures and expired credentials", "NAT traversal and firewall rules", "Split tunneling and DNS resolution over VPN", "Remote support tools and techniques"]
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting Logon, Access, and Security Issues",
+      "hours": 6,
+      "description": "Resolving account lockouts, permissions failures, malware detection, firewall conflicts, and BitLocker issues.",
+      "lessons": [
+        {
+          "title": "Troubleshooting Logon and Resource Access",
+          "hours": 3,
+          "topics": ["Account lockouts and Event ID 4740", "Cached credentials and stale passwords", "NTFS vs. Share permissions", "Group membership and security groups", "Mapped drive failures and GPO drive mapping", "whoami, net use, and gpresult for diagnosis"]
+        },
+        {
+          "title": "Troubleshooting Security Issues",
+          "hours": 3,
+          "topics": ["Malware detection and process injection", "Antivirus conflicts and false positives", "Firewall misconfiguration and port blocking", "BitLocker recovery and encryption issues", "Event Viewer security logs", "Quarantine management and whitelisting"]
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting Operating Systems and Applications",
+      "hours": 4,
+      "description": "Diagnosing OS-level failures, service dependencies, update issues, application crashes, compatibility settings, and reinstallation.",
+      "lessons": [
+        {
+          "title": "Troubleshooting OS Issues",
+          "hours": 2,
+          "topics": ["Service failures and dependency errors", "SFC and DISM for system file repair", "Windows Update failures and rollback", "Boot configuration with bcdedit", "System restore points and recovery", "OS corruption diagnosis and escalation"]
+        },
+        {
+          "title": "Troubleshooting Application Issues",
+          "hours": 2,
+          "topics": ["Application crashes and faulting modules", "Missing DLLs and runtime dependencies", "Compatibility mode for legacy applications", "Event Viewer application logs", "User profile-specific app failures", "App reinstallation and update management"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Troubleshooting/Supporting in an Enterprise Environment Assessment",
+    "hours": null,
+    "items": [
+      "Quiz: Implementing a Troubleshooting Process",
+      "Quiz: Diagnosing Startup Issues",
+      "Quiz: Performing System Recovery",
+      "Quiz: Group Policy Issues",
+      "Quiz: Troubleshooting Hardware Devices and Drivers",
+      "Quiz: Troubleshooting Performance Issues",
+      "Quiz: Network Connectivity Troubleshooting",
+      "Quiz: Remote Connectivity Troubleshooting",
+      "Quiz: Troubleshooting Logon and Resource Access",
+      "Quiz: Troubleshooting Security Issues",
+      "Quiz: Troubleshooting OS Issues",
+      "Quiz: Troubleshooting Application Issues"
+    ]
+  }
+}

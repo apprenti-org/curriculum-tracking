@@ -1,0 +1,64 @@
+{
+  "course": "JavaScript",
+  "totalHours": 16,
+  "totalLessons": 7,
+  "totalModules": 7,
+  "modules": [
+    {
+      "name": "Introduction & Environment Setup",
+      "hours": 2,
+      "description": "Setting up the JavaScript sandbox environment and understanding where JavaScript fits in web development.",
+      "lessons": [
+        { "title": "Course Introduction & JavaScript Sandbox Setup", "hours": 2, "topics": ["Course overview and expectations", "What is JavaScript and why it matters for web development", "Setting up a JavaScript sandbox environment", "Running JavaScript in the browser console and VS Code"] }
+      ]
+    },
+    {
+      "name": "Strings and Numbers",
+      "hours": 2,
+      "description": "Performing basic operations on JavaScript's core data types.",
+      "lessons": [
+        { "title": "Strings and Numbers", "hours": 2, "topics": ["String declaration and common string methods", "Number types and arithmetic operations", "Type coercion and conversion", "Template literals and string concatenation"] }
+      ]
+    },
+    {
+      "name": "Conditions and Loops",
+      "hours": 3,
+      "description": "Controlling program flow with conditional statements and iteration.",
+      "lessons": [
+        { "title": "Conditions and Loops", "hours": 3, "topics": ["Conditional statements (if, else if, else)", "Switch statements", "Comparison and logical operators", "for, while, and do-while loops", "Loop control: break and continue"] }
+      ]
+    },
+    {
+      "name": "Arrays",
+      "hours": 3,
+      "description": "Working with arrays and applying them in a hands-on project.",
+      "lessons": [
+        { "title": "Arrays & Dice Simulator", "hours": 3, "topics": ["Array declaration and initialization", "Accessing and modifying array elements", "Common array methods (push, pop, shift, splice, slice)", "Code-Along: Building a Dice Simulator"] }
+      ]
+    },
+    {
+      "name": "Functions",
+      "hours": 2,
+      "description": "Creating reusable code blocks with JavaScript functions.",
+      "lessons": [
+        { "title": "Functions & Refactoring", "hours": 2, "topics": ["Defining and calling functions", "Parameters, arguments, and return values", "Function expressions and arrow functions", "Code-Along: Refactoring the Dice Simulator with functions"] }
+      ]
+    },
+    {
+      "name": "DOM Manipulation",
+      "hours": 2,
+      "description": "Using JavaScript to dynamically interact with HTML elements.",
+      "lessons": [
+        { "title": "Manipulating the DOM", "hours": 2, "topics": ["Selecting HTML elements (getElementById, querySelector)", "Modifying element content, attributes, and styles", "Adding and removing DOM nodes", "Event listeners and user interaction basics"] }
+      ]
+    },
+    {
+      "name": "JSON, Objects & Practice",
+      "hours": 2,
+      "description": "Working with JavaScript objects and JSON data format, with hands-on exercises.",
+      "lessons": [
+        { "title": "JSON and Objects", "hours": 2, "topics": ["JavaScript object literals (key-value pairs)", "Accessing and modifying object properties", "JSON.parse() and JSON.stringify()", "Exercise: Coin Flip", "Exercise: Higher Lower"] }
+      ]
+    }
+  ]
+}

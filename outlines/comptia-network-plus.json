@@ -1,0 +1,70 @@
+{
+  "course": "CompTIA Network+",
+  "totalHours": 96,
+  "totalLessons": 22,
+  "totalModules": 5,
+  "modules": [
+    {
+      "name": "Networking Concepts",
+      "hours": 20,
+      "description": "Core networking theory — OSI model, protocols, cloud, addressing, and physical media.",
+      "lessons": [
+        { "title": "OSI Model & Network Communication", "hours": 4, "topics": ["Open Systems Interconnection (OSI) model", "Functions of each layer", "Encapsulation and data flow", "TCP/IP model vs OSI model"] },
+        { "title": "Networking Appliances & Applications", "hours": 4, "topics": ["Routers, switches, firewalls, load balancers, proxies", "NAT, VPN, IDS/IPS, QoS", "Layer 2 vs Layer 3 devices"] },
+        { "title": "Cloud Concepts & Connectivity", "hours": 3, "topics": ["Public, private, hybrid, community cloud models", "Virtual networking and SDN", "IaaS, PaaS, SaaS", "Cloud security considerations"] },
+        { "title": "Network Ports, Protocols, & Services", "hours": 3, "topics": ["Common TCP/UDP ports and protocols", "Network traffic types and QoS prioritization", "Well-known and ephemeral ports"] },
+        { "title": "Transmission Media & Network Topologies", "hours": 3, "topics": ["Twisted pair, coaxial, fiber optic cabling", "Media converters and transceivers", "Star, bus, mesh, hybrid architectures"] },
+        { "title": "IPv4 Addressing & Modern Network Use Cases", "hours": 3, "topics": ["IPv4 addressing, subnetting, CIDR", "Private vs public IP addresses", "IoT, 5G, edge computing"] }
+      ]
+    },
+    {
+      "name": "Network Implementation",
+      "hours": 20,
+      "description": "Hands-on routing, switching, wireless, and IP services configuration.",
+      "lessons": [
+        { "title": "Routing Technologies & Protocols", "hours": 5, "topics": ["Static vs dynamic routing", "OSPF, EIGRP, BGP, RIP", "Route summarization and administrative distance"] },
+        { "title": "Switching Technologies & Features", "hours": 5, "topics": ["VLANs, trunking, port mirroring", "STP and redundancy", "MAC address tables and ARP"] },
+        { "title": "Wireless Networking", "hours": 5, "topics": ["Wi-Fi standards (802.11a/b/g/n/ac/ax)", "SSID configuration, WPA2, WPA3", "Wireless channels, interference, antenna types"] },
+        { "title": "IPv4 & IPv6 Network Services", "hours": 5, "topics": ["DHCP, DNS, NAT, NTP, SNMP", "IPv6 addressing, auto-configuration, tunneling", "Dual-stack vs IPv6-only networking"] }
+      ]
+    },
+    {
+      "name": "Network Operations",
+      "hours": 20,
+      "description": "Enterprise processes, monitoring, disaster recovery, and access management.",
+      "lessons": [
+        { "title": "Organizational Processes & Procedures", "hours": 5, "topics": ["Change management and network documentation", "Business continuity and SLAs"] },
+        { "title": "Network Monitoring Tools & Technologies", "hours": 5, "topics": ["SNMP, syslog, NetFlow, packet analyzers", "Network baseline and performance monitoring"] },
+        { "title": "Disaster Recovery (DR) Concepts", "hours": 5, "topics": ["Backups, failover, high availability", "Business impact analysis and incident response"] },
+        { "title": "Network Access & Management", "hours": 5, "topics": ["AAA (Authentication, Authorization, Accounting)", "RADIUS, TACACS+, LDAP", "Remote access: VPN, SSH, Telnet, RDP"] }
+      ]
+    },
+    {
+      "name": "Network Security",
+      "hours": 20,
+      "description": "Threats, defenses, and securing network traffic and devices.",
+      "lessons": [
+        { "title": "Network Security Principles", "hours": 5, "topics": ["CIA Triad", "Security policies and risk assessments"] },
+        { "title": "Types of Network Attacks", "hours": 5, "topics": ["DoS/DDoS, phishing, MITM, zero-day exploits", "Social engineering and insider threats"] },
+        { "title": "Network Defense Techniques", "hours": 5, "topics": ["Firewalls, IDS/IPS, anti-malware", "Secure network design principles"] },
+        { "title": "Securing Network Traffic & Devices", "hours": 5, "topics": ["Encryption (TLS, VPN, IPSec)", "Device hardening, patching"] }
+      ]
+    },
+    {
+      "name": "Network Troubleshooting",
+      "hours": 12,
+      "description": "Systematic diagnosis and resolution of network issues.",
+      "lessons": [
+        { "title": "Troubleshooting Methodology", "hours": 3, "topics": ["Identify, diagnose, test, resolve, verify", "Documentation and escalation"] },
+        { "title": "Common Cabling & Physical Issues", "hours": 3, "topics": ["Cable breaks, interference, signal loss", "Cable testers and TDR tools"] },
+        { "title": "Troubleshooting Network Services", "hours": 3, "topics": ["DNS, DHCP, VPN connectivity issues", "IP conflicts and misconfigurations"] },
+        { "title": "Performance Issues & Tools", "hours": 3, "topics": ["Packet loss, latency, bandwidth bottlenecks", "ping, traceroute, Wireshark"] }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Assessment & Exam Preparation",
+    "hours": 4,
+    "items": ["Full-length practice exams (simulation-based)", "Labs with real-world scenarios", "Final review session with Q&A", "Exam-taking strategies and test-day preparation"]
+  }
+}

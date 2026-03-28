@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: HTTP Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: HTTP Services</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Software Development Fundamentals</span>
+                
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>HTTP Services introduces learners to the foundational principles of internet communication and web services. Students will understand the difference between the internet and the web, learn how HTTP requests and responses work, explore JSON as a data interchange format, and master RESTful API design principles. This course provides essential knowledge for building web applications, consuming APIs, and understanding modern service-oriented architecture. The content applies across all development tracks and serves as a prerequisite for web development courses.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: HTTP Protocol and REST API Analysis</h2>
+            <div class="assessment-box">
+                <p>Students will demonstrate understanding of HTTP fundamentals through exercises analyzing HTTP requests and responses, mapping CRUD operations to HTTP methods, and interpreting API documentation. The assessment requires ability to sketch valid HTTP requests and responses with JSON payloads, understand protocol layers and network stacks, and explain REST design principles. Learners must apply this knowledge to real-world API scenarios.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Differentiate between the internet and the web</li>
+                <li>Describe the TCP/IP protocol stack and how protocols layer</li>
+                <li>Diagram a minimum web application architecture</li>
+                <li>Explain the purpose and benefits of web services</li>
+                <li>Describe HTTP request and response structure</li>
+                <li>Map CRUD operations to HTTP methods (GET, POST, PUT, DELETE)</li>
+                <li>Categorize HTTP status codes and explain their meaning</li>
+                <li>Explain the purpose of HTTP headers</li>
+                <li>Understand JSON serialization and object notation</li>
+                <li>Apply RESTful design principles to API design</li>
+                <li>Consume and test APIs using developer tools</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Internet and Web Services (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Internet and Web Services</div>
+                    <ul class="topic-list">
+                        <li>Internet vs. the Web distinction</li>
+                        <li>TCP/IP and HTTP protocol stack</li>
+                        <li>Protocol layering and stacking concepts</li>
+                        <li>Web application architecture (browser → HTTP server → database)</li>
+                        <li>Three-node architecture and scalability limitations</li>
+                        <li>The evolution toward web services</li>
+                        <li>Web services and APIs</li>
+                        <li>Data-focused services without UI</li>
+                        <li>HTTP-based communication</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: HTTP, JSON, and Web Services</div>
+                    <ul class="topic-list">
+                        <li>HTTP request/response protocol structure</li>
+                        <li>HTTP methods: GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH</li>
+                        <li>CRUD operations mapped to HTTP methods</li>
+                        <li>HTTP headers and their purposes</li>
+                        <li>HTTP status codes: 100s (Informational), 200s (Success), 300s (Redirection), 400s (Client Error), 500s (Server Error)</li>
+                        <li>Request body and response body structures</li>
+                        <li>JSON as JavaScript Object Notation</li>
+                        <li>JSON as a serialization format</li>
+                        <li>Content-Type and Accept headers</li>
+                        <li>REST (Representational State Transfer) principles</li>
+                        <li>Uniform interface constraint</li>
+                        <li>RESTful URL patterns and conventions</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Browser developer tools network tab exploration</li>
+                            <li>HTTP request/response analysis exercises</li>
+                            <li>API walkthrough and sequence analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Network Tab Analysis: Inspect HTTP requests in browser developer tools</li>
+                <li>Request/Response Examination: Analyze actual HTTP request and response patterns</li>
+                <li>HTTP Method Mapping: Practice mapping database operations to HTTP methods</li>
+                <li>API Exploration: Use browser tools and Postman to explore real APIs</li>
+                <li>JSON Interpretation: Parse and understand JSON payloads</li>
+                <li>REST Principles Application: Design URLs and methods following RESTful conventions</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

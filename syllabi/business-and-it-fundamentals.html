@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Business and IT Fundamentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Business and IT Fundamentals</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> IT Business Analyst</span>
+                <span><i class="fa-regular fa-clock"></i> 40 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>This course provides a foundational understanding of business systems, strategy, and analysis, guiding students through key concepts such as business ownership types, market systems, strategic planning, and operational workflows. Learners will explore tools like SWOT, PEST, BPMN, and SDLC frameworks to evaluate opportunities, solve business challenges, and model processes. Emphasizing real-world application through case studies, workshops, and a capstone project, the course equips students with the practical skills needed to analyze, optimize, and support business operations using both strategic and technological approaches.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Comprehensive Business Analysis Project</h2>
+            <div class="assessment-box">
+                <p>The summative assessment evaluates students' ability to apply core business and IT concepts through a comprehensive business analysis project. Students analyze a hypothetical company scenario, integrating knowledge of business forms, strategy, opportunity evaluation, process modeling, IT infrastructure, and SDLC. The assessment includes case studies, written responses, and practical tasks. A competency-based rubric measures proficiency across seven areas: business concepts, strategies, opportunity evaluation, process analysis, IT infrastructure, process modeling, and SDLC. A minimum passing score of 80% is required.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Identify and compare key business forms and market systems.</li>
+                <li>Apply strategic frameworks to develop business strategies and SMART goals.</li>
+                <li>Evaluate business opportunities using analytical tools and decision matrices.</li>
+                <li>Troubleshoot business challenges using structured problem-solving techniques.</li>
+                <li>Map workflows and processes, identifying key inputs and outputs.</li>
+                <li>Create business process models using BPMN and UML.</li>
+                <li>Explain the components of IT infrastructure and their role in supporting business.</li>
+                <li>Compare SDLC methodologies and outline development processes.</li>
+                <li>Synthesize course concepts into a comprehensive business analysis project.</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Introduction to Business Forms and Market Systems</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Characteristics of Business Forms</div>
+                    <ul class="topic-list">
+                        <li>Features of sole proprietorships, partnerships, corporations, and LLCs</li>
+                        <li>Liability, taxation, and scalability considerations</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Overview of Market Systems</div>
+                    <ul class="topic-list">
+                        <li>Free market economies and mixed economies</li>
+                        <li>How market systems affect business decisions</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Case Study – Comparing Business Forms in Market Systems</div>
+                    <ul class="topic-list">
+                        <li>Compare and contrast two business forms operating in different market systems</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Case study comparing business forms across market systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Business Strategies and Goals</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Types of Business Strategies</div>
+                    <ul class="topic-list">
+                        <li>Differentiation, cost leadership, and focus strategies</li>
+                        <li>Real-world strategy examples</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Setting and Evaluating SMART Goals</div>
+                    <ul class="topic-list">
+                        <li>Specific, Measurable, Achievable, Relevant, and Time-bound goals</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Workshop – Developing Business Strategies and SMART Goals</div>
+                    <ul class="topic-list">
+                        <li>Develop a business strategy and SMART goals for a startup concept</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Workshop developing business strategies and SMART goals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Business Opportunity Evaluation</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Identifying Opportunities</div>
+                    <ul class="topic-list">
+                        <li>SWOT and PEST analysis tools</li>
+                        <li>Scanning the environment for opportunities</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Evaluating Alternatives</div>
+                    <ul class="topic-list">
+                        <li>Decision matrices for assessing options</li>
+                        <li>Cost-benefit and feasibility analysis</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Presenting an Evaluated Business Opportunity</div>
+                    <ul class="topic-list">
+                        <li>Present an evaluated business opportunity to peers</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Group presentation of evaluated business opportunity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Business Scenario Analysis and Troubleshooting</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Common Business Challenges</div>
+                    <ul class="topic-list">
+                        <li>Typical business problems and their solutions</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Tools for Analysis</div>
+                    <ul class="topic-list">
+                        <li>Root cause analysis and flowcharts</li>
+                        <li>Structured problem-solving techniques</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Case Analysis – Troubleshooting Business Scenarios</div>
+                    <ul class="topic-list">
+                        <li>Solve a business problem using troubleshooting techniques and present findings</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Case analysis solving a business problem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Operational Unit Inputs and Outputs</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Tracing Workflows and Processes</div>
+                    <ul class="topic-list">
+                        <li>Mapping workflows and operational processes</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Input/Output Relationships</div>
+                    <ul class="topic-list">
+                        <li>How inputs and outputs interact in production, sales, and service units</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Simulation – Creating and Analyzing a Workflow Map</div>
+                    <ul class="topic-list">
+                        <li>Create a workflow map for a production unit and analyze its inputs and outputs</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Simulation creating and analyzing a workflow map</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">Business Process Modeling</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Overview of Modeling Languages</div>
+                    <ul class="topic-list">
+                        <li>BPMN (Business Process Model and Notation)</li>
+                        <li>UML (Unified Modeling Language)</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Hands-On Practice</div>
+                    <ul class="topic-list">
+                        <li>Create basic diagrams using modeling tools</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Design a BPMN Diagram for a Business Workflow</div>
+                    <ul class="topic-list">
+                        <li>Design a BPMN diagram for a selected business workflow</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Design a BPMN diagram for a selected business workflow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">7</span>
+                    <span class="module-title">IT Infrastructure Basics</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Components of IT Infrastructure</div>
+                    <ul class="topic-list">
+                        <li>Hardware, software, and networks</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Role of IT in Business</div>
+                    <ul class="topic-list">
+                        <li>How IT supports business processes and decision-making</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Discussion – Evaluating IT Infrastructure Needs</div>
+                    <ul class="topic-list">
+                        <li>Evaluate the IT infrastructure needs for a sample business</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Discussion evaluating IT infrastructure needs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">8</span>
+                    <span class="module-title">Software Development Lifecycle (SDLC)</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Phases of SDLC</div>
+                    <ul class="topic-list">
+                        <li>Planning, analysis, design, implementation, and maintenance phases</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Agile vs. Waterfall Methodologies</div>
+                    <ul class="topic-list">
+                        <li>Compare and contrast methodologies</li>
+                        <li>Develop an outline of an SDLC process for a simple software project</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Develop an SDLC process outline for a software project</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">9</span>
+                    <span class="module-title">Capstone Project – Comprehensive Business Analysis</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Capstone Project</div>
+                    <ul class="topic-list">
+                        <li>Integrate all course concepts into a realistic business scenario</li>
+                        <li>Develop stakeholder needs analysis, business opportunity evaluation, process models, IT alignment, and solution recommendations</li>
+                        <li>Present findings and propose innovative solutions to peers and instructor</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Case studies comparing business forms and market systems</li>
+                <li>SWOT and PEST analysis workshops</li>
+                <li>Root cause analysis and troubleshooting exercises</li>
+                <li>Workflow mapping simulations</li>
+                <li>BPMN diagram creation using modeling tools</li>
+                <li>IT infrastructure needs evaluation</li>
+                <li>SDLC process development project</li>
+                <li>Comprehensive capstone business analysis and presentation</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

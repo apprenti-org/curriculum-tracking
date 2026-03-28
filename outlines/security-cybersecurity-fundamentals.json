@@ -1,0 +1,72 @@
+{
+  "courseName": "Security and Cybersecurity Fundamentals",
+  "totalHours": 220,
+  "totalModules": 7,
+  "totalLessons": 22,
+  "modules": [
+    {
+      "name": "General Security Concepts",
+      "hours": 36,
+      "lessons": [
+        { "title": "Security Controls & Fundamental Concepts" },
+        { "title": "Change Management & Security Impact" },
+        { "title": "Cryptographic Solutions & Implementation" }
+      ]
+    },
+    {
+      "name": "Threats, Vulnerabilities, and Mitigations",
+      "hours": 40,
+      "lessons": [
+        { "title": "Threat Actors & Attack Surfaces" },
+        { "title": "Vulnerability Analysis & Mitigation" },
+        { "title": "Vulnerability Scanning & Assessment Tools" },
+        { "title": "Prioritizing Vulnerabilities & Response Techniques" }
+      ]
+    },
+    {
+      "name": "Security Architecture",
+      "hours": 32,
+      "lessons": [
+        { "title": "Security Models & Architectural Implications" },
+        { "title": "Enterprise Security & Data Protection" },
+        { "title": "Resilience & Recovery in Security Architecture" }
+      ]
+    },
+    {
+      "name": "Security Operations",
+      "hours": 48,
+      "lessons": [
+        { "title": "Securing Computing Resources" },
+        { "title": "Vulnerability Management & Monitoring" },
+        { "title": "Identity & Access Management" },
+        { "title": "Incident Response & Security Investigations" },
+        { "title": "Threat Intelligence & Threat Hunting" }
+      ]
+    },
+    {
+      "name": "Security Program Management and Oversight",
+      "hours": 32,
+      "lessons": [
+        { "title": "Security Governance & Risk Management" },
+        { "title": "Third-Party Risk & Compliance" },
+        { "title": "Audits, Assessments, & Security Awareness" }
+      ]
+    },
+    {
+      "name": "Incident Response and Management",
+      "hours": 16,
+      "lessons": [
+        { "title": "Attack Methodology & Frameworks" },
+        { "title": "Incident Response Lifecycle & Best Practices" }
+      ]
+    },
+    {
+      "name": "Reporting and Communication",
+      "hours": 16,
+      "lessons": [
+        { "title": "Vulnerability & Incident Reporting" },
+        { "title": "Effective Security Communication Practices" }
+      ]
+    }
+  ]
+}

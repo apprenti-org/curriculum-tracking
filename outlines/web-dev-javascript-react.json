@@ -1,0 +1,86 @@
+{
+  "course": "Web Development with JavaScript and React",
+  "totalHours": 40,
+  "totalLessons": 17,
+  "totalModules": 8,
+  "modules": [
+    {
+      "name": "JavaScript Fundamentals",
+      "hours": 4,
+      "description": "JavaScript syntax, variables, data types, and introductory data structures.",
+      "lessons": [
+        { "title": "Getting Started with JavaScript", "hours": 1.3, "topics": ["Introduction to JavaScript", "REPL using browser console or online editors", "Syntax rules and writing your first script", "Console logging and basic output"] },
+        { "title": "Variables and Data Types", "hours": 1.3, "topics": ["var, let, and const — declaration and scoping differences", "Primitive data types: string, number, boolean, null, undefined", "Dynamic typing in JavaScript"] },
+        { "title": "Data Structures — Arrays and Objects Intro", "hours": 1.3, "topics": ["Arrays: creating, accessing, modifying elements", "Objects: key-value pairs, dot/bracket notation", "Basic nesting of arrays/objects"] }
+      ]
+    },
+    {
+      "name": "Control Flow in JavaScript",
+      "hours": 4,
+      "description": "Conditional logic and loops for controlling program flow.",
+      "lessons": [
+        { "title": "Making Decisions with Conditionals", "hours": 2, "topics": ["if, else if, else statements", "Comparison operators (==, ===, !=, <, >)", "Logical operators (&&, ||, !)", "Nested and compound conditions"] },
+        { "title": "Repeating Actions with Loops", "hours": 2, "topics": ["for loop structure", "while and do...while loops", "Loop control (break, continue)", "Looping through arrays"] }
+      ]
+    },
+    {
+      "name": "Functions and Scope",
+      "hours": 5,
+      "description": "Writing reusable functions and understanding variable scope.",
+      "lessons": [
+        { "title": "Writing and Using Functions", "hours": 2.5, "topics": ["Function declarations vs expressions", "Arrow functions", "Parameters, arguments, and return values", "Return values and side effects"] },
+        { "title": "Function Scope, Hoisting, and Best Practices", "hours": 2.5, "topics": ["Local vs global scope", "Function scope and block scope", "var, let, const scoping differences", "Hoisting behavior", "Naming and organization best practices"] }
+      ]
+    },
+    {
+      "name": "Objects and Object-Oriented Programming",
+      "hours": 5,
+      "description": "Object literals, constructors, prototypes, and the this keyword.",
+      "lessons": [
+        { "title": "JavaScript Objects and Their Properties", "hours": 2.5, "topics": ["Object literals and key-value pairs", "Accessing and modifying properties", "Dot notation vs bracket notation", "Nesting objects and arrays"] },
+        { "title": "Introduction to Object-Oriented Programming", "hours": 2.5, "topics": ["Constructors and new keyword", "Adding methods to objects", "this keyword and context", "Basic prototypes and shared methods"] }
+      ]
+    },
+    {
+      "name": "Event Handling in JavaScript",
+      "hours": 4,
+      "description": "Browser events, event listeners, propagation, and delegation.",
+      "lessons": [
+        { "title": "Understanding and Using Events", "hours": 2, "topics": ["What is an event?", "Common browser events (click, submit, change, mouseover)", "addEventListener() and anonymous functions", "Basic event flow: target and handler"] },
+        { "title": "Event Types, Flow, and Delegation", "hours": 2, "topics": ["Event propagation: bubbling vs capturing", "event.target and context", "Preventing default behavior", "Event delegation for dynamic content"] }
+      ]
+    },
+    {
+      "name": "The JavaScript DOM vs HTML DOM",
+      "hours": 5,
+      "description": "DOM tree structure, traversal, and dynamic modification.",
+      "lessons": [
+        { "title": "Understanding the DOM and Traversing It", "hours": 2.5, "topics": ["What is the DOM? (HTML DOM vs JavaScript DOM API)", "DOM tree structure (nodes, elements, attributes, text)", "Accessing elements: getElementById, querySelector", "Traversing nodes: parent, children, siblings"] },
+        { "title": "Modifying the DOM Dynamically", "hours": 2.5, "topics": ["Changing element content and styles", "Creating and appending elements", "Working with attributes and classes", "Best practices for DOM manipulation"] }
+      ]
+    },
+    {
+      "name": "Testing and Debugging JavaScript",
+      "hours": 5,
+      "description": "Error diagnosis, browser dev tools, and introductory testing practices.",
+      "lessons": [
+        { "title": "Debugging JavaScript in the Browser", "hours": 2.5, "topics": ["Common JavaScript error types: syntax, reference, type", "Using console.log() and typeof for tracing", "Browser Developer Tools (Chrome DevTools)", "Breakpoints, watch expressions, and call stack"] },
+        { "title": "Introduction to Testing JavaScript", "hours": 2.5, "topics": ["Manual testing vs automated testing", "Writing simple test functions", "Using console.assert()", "Introduction to Jest", "Writing basic test cases"] }
+      ]
+    },
+    {
+      "name": "JavaScript with React & APIs",
+      "hours": 8,
+      "description": "React component architecture, props/state, API integration, and a capstone SPA project.",
+      "lessons": [
+        { "title": "React Fundamentals and JavaScript Integration", "hours": 3.5, "topics": ["Introduction to React and component-based architecture", "JSX syntax", "Functional components", "Props and state basics", "Rendering lists, handling user input"] },
+        { "title": "Fetching Data and Managing State", "hours": 3.5, "topics": ["useEffect() for lifecycle behavior", "Fetching data using fetch()", "Asynchronous behavior and loading states", "Conditional rendering", "State management and error handling"] }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Capstone: Mini Single-Page Application",
+    "hours": 1,
+    "items": ["Build a Weather Dashboard or Product Browser using React + API", "Functional components with API fetch logic", "Conditional rendering based on loading/error states", "Group showcase and peer feedback"]
+  }
+}

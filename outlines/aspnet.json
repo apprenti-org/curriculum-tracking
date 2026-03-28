@@ -1,0 +1,51 @@
+{
+  "course": "ASP.NET",
+  "totalHours": null,
+  "totalLessons": 5,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "ASP.NET Core Fundamentals",
+      "hours": null,
+      "description": "Introduction to web development with ASP.NET Core, covering HTTP fundamentals, the MVC pattern, Web API development, validation, and authentication with JWT tokens.",
+      "lessons": [
+        {
+          "title": "Introduction to HTTP",
+          "hours": null,
+          "topics": ["HTTP protocol fundamentals", "Request/response model", "HTTP methods (GET, POST, PUT, DELETE)", "Status codes and headers", "URL structure and routing concepts", "Client-server architecture", "Introduction to web application frameworks"]
+        },
+        {
+          "title": "ASP.NET MVC",
+          "hours": null,
+          "topics": ["Introduction to ASP.NET Core MVC", "Model-View-Controller pattern", "Creating an ASP.NET Core project", "Controllers and action methods", "Razor views and view rendering", "Models and model binding", "Routing in ASP.NET Core", "Working with forms and HTTP POST", "SimpleSchoolMVC example walkthrough"]
+        },
+        {
+          "title": "ASP.NET Web API",
+          "hours": null,
+          "topics": ["Introduction to RESTful Web APIs", "Creating API controllers", "Attribute routing", "Returning JSON data", "HTTP method mapping to CRUD operations", "Testing APIs with Swagger/Postman", "SimpleSchoolAPI example walkthrough", "HelloAspNetCore starter project"]
+        },
+        {
+          "title": "ASP.NET Validation",
+          "hours": null,
+          "topics": ["Model validation with data annotations", "Required, Range, StringLength, RegularExpression attributes", "Custom validation attributes", "Server-side and client-side validation", "Returning validation errors from API endpoints", "Error handling and exception middleware", "SimpleSchoolValidation example walkthrough"]
+        },
+        {
+          "title": "JWT Tokens for Web API",
+          "hours": null,
+          "topics": ["Authentication vs authorization", "Introduction to JSON Web Tokens (JWT)", "JWT structure: header, payload, signature", "Implementing JWT authentication in ASP.NET Core", "Configuring authentication middleware", "Protecting API endpoints with [Authorize]", "Token generation and validation", "Role-based authorization", "SimpleSchoolJWT and SimpleSchool.ClientJWT examples"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Module 8 Assessment",
+    "hours": null,
+    "items": [
+      "Build a complete ASP.NET Core application",
+      "Implement both MVC views and Web API endpoints",
+      "Apply model validation",
+      "Secure API endpoints with JWT authentication",
+      "Demonstrate full-stack C# web development proficiency"
+    ]
+  }
+}

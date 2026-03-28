@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Student Onboarding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Student Onboarding</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Training Operations</span>
+                <span><i class="fa-regular fa-clock"></i> 8 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Student Onboarding is a required self-paced course designed to prepare all incoming apprentices for success in their respective programs. The course establishes learning philosophy including problem-based learning, experiential learning, growth mindset, and self-efficacy. Students explore effective learning strategies, understand the student-instructor relationship, set up required tools and accounts, acknowledge policies, and build readiness for intensive technical training. This course ensures learners begin their programs with clear expectations and necessary foundation.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Onboarding Verification and Readiness Check</h2>
+            <div class="assessment-box">
+                <p>Students will complete quizzes assessing understanding of learning philosophy and success strategies, verify completion of tool setup and account creation, and demonstrate readiness for their specific program. The assessment ensures learners have foundational knowledge of expectations and are prepared to engage effectively in subsequent courses.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Understand the RTI Academy program structure and intensity</li>
+                <li>Apply growth mindset principles to learning</li>
+                <li>Build self-efficacy and confidence as learners</li>
+                <li>Understand and apply the Two-Week Rule (comfort with uncertainty)</li>
+                <li>Distinguish between brain memory and muscle memory</li>
+                <li>Approach course material effectively</li>
+                <li>Explain problems and understand concepts deeply</li>
+                <li>Propose solutions and incorporate feedback</li>
+                <li>Ask for help effectively and appropriately</li>
+                <li>Apply systems-level thinking to problems</li>
+                <li>Set up required tools and accounts</li>
+                <li>Understand student handbook and policies</li>
+                <li>Understand the AI and Technology Use Policy</li>
+                <li>Prepare for success in their specific program</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Course Introduction &amp; Program Overview</span>
+                    <span class="module-hours">1 hours</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>Welcome and course description</li>
+                        <li>Program structure overview (modules, courses, intensity)</li>
+                        <li>Learning expectations and intensity preparation</li>
+                        <li>Support systems available</li>
+                        <li>Instructor mentorship model</li>
+                        <li>Understand the scope and intensity of the program</li>
+                        <li>Know what to expect from instructors and support systems</li>
+                        <li>Feel welcomed to the learning community</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">How to Be Successful — Learning Philosophy (1.5 Hours)</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>Problem-Based Learning (learning through problem-solving)</li>
+                        <li>Experiential Learning (learning through doing)</li>
+                        <li>Growth Mindset (abilities developed through effort)</li>
+                        <li>Self-Efficacy (confidence in ability to succeed)</li>
+                        <li>The Two-Week Rule (normal to feel uncomfortable early on)</li>
+                        <li>Brain Memory vs Muscle Memory (theory vs practice)</li>
+                        <li>Understand learning science principles</li>
+                        <li>Adopt a growth mindset</li>
+                        <li>Believe in ability to learn and improve</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">How to Learn — Skills &amp; Strategies (1.5 Hours)</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>How to approach and work with course material</li>
+                        <li>Reading, thinking, and comprehension strategies</li>
+                        <li>How to explain and understand problems</li>
+                        <li>Critical thinking and problem analysis</li>
+                        <li>How to propose solutions and refine them</li>
+                        <li>How to incorporate feedback effectively</li>
+                        <li>How and when to ask for help</li>
+                        <li>Asking specific, clear questions</li>
+                        <li>Systems-level thinking</li>
+                        <li>The Engineer's Notebook (documentation and reflection)</li>
+                        <li>Know effective learning strategies</li>
+                        <li>Understand when and how to seek help</li>
+                        <li>Be able to ask clarifying questions</li>
+                        <li>Document learning and reasoning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Instructor-Student Relationship &amp; Feedback Model</span>
+                    <span class="module-hours">1 hours</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>The instructor role: mentor and guide, not content deliverer</li>
+                        <li>The learning cycle: Read → Think → Sketch → Seek Feedback → Experiment</li>
+                        <li>Focus on thought process and understanding over right answers</li>
+                        <li>Treating solutions as experiments and learning opportunities</li>
+                        <li>Responding to feedback constructively</li>
+                        <li>Understand instructor role and expectations</li>
+                        <li>Know how to interact with instructors effectively</li>
+                        <li>Value feedback as learning opportunity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Tools &amp; Account Setup (1.5 Hours)</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>LMS (Absorb) access and navigation</li>
+                        <li>Creating and verifying account</li>
+                        <li>Exploring course materials and resources</li>
+                        <li>GitHub account setup and basics</li>
+                        <li>Creating repositories and understanding version control</li>
+                        <li>Google Drive basics and file organization</li>
+                        <li>Course-specific tool installation awareness</li>
+                        <li>Setup checklist verification</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Create GitHub account and first repository</li>
+                            <li>Set up Google Drive for course materials</li>
+                            <li>Access LMS and explore interface</li>
+                            <li>Have all required accounts set up</li>
+                            <li>Know where to find course materials</li>
+                            <li>Be comfortable with basic tool usage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">Student Responsibility &amp; Readiness</span>
+                    <span class="module-hours">1 hours</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>Student Handbook and policies overview</li>
+                        <li>Attendance and participation expectations</li>
+                        <li>Academic integrity and honesty</li>
+                        <li>Respectful community standards</li>
+                        <li>AI &amp; Technology Use Policy</li>
+                        <li>Appropriate uses of AI</li>
+                        <li>Disclosure requirements</li>
+                        <li>Safety and validation practices</li>
+                        <li>Course-specific policies and requirements</li>
+                        <li>What comes next after onboarding</li>
+                        <li>Starting your specific program</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Quiz: Student Onboarding (verifying policy understanding)</li>
+                            <li>Setup task checklist verification</li>
+                            <li>Readiness confirmation</li>
+                            <li>Understand policies and responsibilities</li>
+                            <li>Know what to expect in your specific program</li>
+                            <li>Be prepared to start technical courses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">7</span>
+                    <span class="module-title">Making Learning Stick (0.5 Hours)</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>Repetition and revisiting concepts</li>
+                        <li>Spaced repetition for memory</li>
+                        <li>Multiple quiz attempts as learning tools</li>
+                        <li>Explanation and reflection practices</li>
+                        <li>Continuous improvement mindset</li>
+                        <li>Understand best practices for retention</li>
+                        <li>Know how to reinforce learning over time</li>
+                        <li>Quiz: Student Onboarding (policies and handbook acknowledgment)</li>
+                        <li>Quiz: How to Be Successful (growth mindset and self-efficacy)</li>
+                        <li>Tool Setup Verification (GitHub, Google Drive, LMS access)</li>
+                        <li>Setup Checklist Completion</li>
+                        <li>Program-Specific Readiness Check</li>
+                        <li>Student Handbook</li>
+                        <li>LMS Navigation Guide</li>
+                        <li>GitHub Basics Tutorial</li>
+                        <li>Google Drive Basics</li>
+                        <li>Course-Specific Setup Instructions</li>
+                        <li>Instructor Contact Information</li>
+                        <li>Support Services Directory</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>

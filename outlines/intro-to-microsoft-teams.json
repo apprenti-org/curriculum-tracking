@@ -1,0 +1,33 @@
+{
+  "course": "Introduction to Microsoft Teams",
+  "totalHours": null,
+  "totalLessons": 2,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "Introduction to Microsoft Teams",
+      "hours": null,
+      "description": "Introduction to Microsoft Teams as a collaboration platform, covering core features, real-world use cases, and hands-on experience creating and managing Teams and Channels.",
+      "lessons": [
+        {
+          "title": "What is Microsoft Teams?",
+          "hours": null,
+          "topics": ["Challenges of group work and collaboration", "Microsoft Teams overview — chat, video meetings, channels, file sharing", "Integration with Microsoft 365 tools (Outlook, Word, Excel, OneDrive)", "Real-world business use case", "Demo: creating a Team, starting a chat, uploading documents, scheduling meetings"]
+        },
+        {
+          "title": "Creating and Managing Teams & Channels",
+          "hours": null,
+          "topics": ["Creating a Team (private vs. public, naming, adding members)", "Organizing Channels (standard vs. private, naming conventions, pinning)", "Managing permissions and settings (owner vs. member roles, guest permissions, channel moderation)", "Case study: improving a poorly managed project team"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Teams & Channels Project",
+    "hours": null,
+    "items": [
+      "Quiz on channel types, roles, and collaboration benefits",
+      "Project submission: screenshots of organized Team with channels and correct permissions configuration"
+    ]
+  }
+}

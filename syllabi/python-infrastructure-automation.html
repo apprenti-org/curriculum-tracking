@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Python for Infrastructure Automation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Python for Infrastructure Automation</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network</span>
+                <span><i class="fa-regular fa-clock"></i> 32 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Python for Infrastructure Automation teaches IT operations professionals how to use Python to automate routine operational tasks, manage cloud infrastructure, and improve system reliability. This course builds on Python fundamentals and applies them to real-world infrastructure challenges including configuration management, monitoring, backup automation, and deployment processes. Learners will develop practical skills in working with APIs, cloud provider SDKs, and automation frameworks essential for modern operations teams.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Infrastructure Automation Project</h2>
+            <div class="assessment-box">
+                <p>Learners will design and implement a comprehensive automation solution for a realistic operational challenge. The project may involve automating provisioning, implementing monitoring and alerting, creating deployment automation, or developing cloud infrastructure management tools. The assessment evaluates Python proficiency, understanding of operations workflows, API integration skills, error handling, and code quality.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Apply Python fundamentals to systems administration tasks</li>
+                <li>Develop scripts for file operations, text processing, and log analysis</li>
+                <li>Implement network programming solutions for operational needs</li>
+                <li>Automate configuration management and system provisioning</li>
+                <li>Create monitoring, alerting, and health check automation</li>
+                <li>Implement backup and disaster recovery automation</li>
+                <li>Use cloud provider SDKs to manage infrastructure programmatically</li>
+                <li>Develop infrastructure automation using Pulumi and other IaC frameworks</li>
+                <li>Integrate Python automation into CI/CD pipelines</li>
+                <li>Implement secure, resilient, and performant automation solutions</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Python for Systems Administration</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Python Fundamentals Review</div>
+                    <ul class="topic-list">
+                        <li>Core concepts and debugging</li>
+                        <li>Functions and modules</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: File and System Operations</div>
+                    <ul class="topic-list">
+                        <li>File I/O and path management</li>
+                        <li>Subprocess and system commands</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Regular Expressions and Text Processing</div>
+                    <ul class="topic-list">
+                        <li>Pattern matching</li>
+                        <li>Log file analysis</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Network Programming</div>
+                    <ul class="topic-list">
+                        <li>Socket programming</li>
+                        <li>API interactions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Infrastructure Automation Scripts</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Configuration Management</div>
+                    <ul class="topic-list">
+                        <li>Configuration file parsing</li>
+                        <li>Bulk configuration automation</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Monitoring and Alerting</div>
+                    <ul class="topic-list">
+                        <li>System metrics collection</li>
+                        <li>Alert automation</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Backup and Disaster Recovery</div>
+                    <ul class="topic-list">
+                        <li>Backup automation</li>
+                        <li>Recovery testing</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Deployment Automation</div>
+                    <ul class="topic-list">
+                        <li>Provisioning automation</li>
+                        <li>Zero-downtime deployments</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Cloud APIs and Platforms</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Cloud SDKs</div>
+                    <ul class="topic-list">
+                        <li>AWS, Azure, Google Cloud</li>
+                        <li>Programmatic infrastructure management</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Infrastructure as Code with Python</div>
+                    <ul class="topic-list">
+                        <li>Pulumi framework</li>
+                        <li>Cloud resource management</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Monitoring and Logging</div>
+                    <ul class="topic-list">
+                        <li>Monitoring tool integration</li>
+                        <li>Log analysis and aggregation</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: CI/CD Integration</div>
+                    <ul class="topic-list">
+                        <li>Testing automation scripts</li>
+                        <li>Pipeline integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Advanced Automation</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Error Handling and Resilience</div>
+                    <ul class="topic-list">
+                        <li>Robust error strategies</li>
+                        <li>Retry logic</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Concurrency and Performance</div>
+                    <ul class="topic-list">
+                        <li>Threading and multiprocessing</li>
+                        <li>Asynchronous programming</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Security and Secrets</div>
+                    <ul class="topic-list">
+                        <li>Credential management</li>
+                        <li>Encryption practices</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Production Patterns</div>
+                    <ul class="topic-list">
+                        <li>Logging and observability</li>
+                        <li>Performance monitoring</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>System administration automation scripts</li>
+                <li>Log parsing and analysis projects</li>
+                <li>Cloud infrastructure provisioning with Python</li>
+                <li>Monitoring and alerting system implementation</li>
+                <li>Backup automation script development</li>
+                <li>Capstone: Complete infrastructure automation project with error handling, testing, and CI/CD integration</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

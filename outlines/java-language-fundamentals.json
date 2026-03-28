@@ -1,0 +1,108 @@
+{
+  "course": "Java Language Fundamentals",
+  "totalHours": 56,
+  "totalLessons": 18,
+  "totalModules": 11,
+  "modules": [
+    {
+      "name": "Programming Foundations",
+      "hours": 6,
+      "description": "What programming is, how code works, and setting up the Java development environment.",
+      "lessons": [
+        { "title": "Programming and Code", "hours": 3, "topics": ["What is programming?", "How code works: compilation and execution", "Where Java fits in the programming world"] },
+        { "title": "Java JRE and JDK", "hours": 3, "topics": ["JRE vs JDK", "Installing IntelliJ IDEA", "Creating and running a first project"] }
+      ]
+    },
+    {
+      "name": "Core Java Syntax and Data Structures",
+      "hours": 6,
+      "description": "Foundational syntax, data types, variables, and operators.",
+      "lessons": [
+        { "title": "Common Syntax Elements", "hours": 2, "topics": ["Java program structure (class, main method)", "Statements, blocks, semicolons", "Comments and naming conventions"] },
+        { "title": "Data Types and Variables", "hours": 2, "topics": ["Primitive data types", "Variable declaration and initialization", "Type casting and constants"] },
+        { "title": "Operators", "hours": 2, "topics": ["Arithmetic, assignment, comparison operators", "Logical operators", "Operator precedence"] }
+      ]
+    },
+    {
+      "name": "Shopping Cart Application — Part 1",
+      "hours": 4,
+      "description": "First hands-on project introducing enums and practical application building.",
+      "lessons": [
+        { "title": "Shopping Cart Start & Enums", "hours": 4, "topics": ["Setting up the Shopping Cart project", "Enums: definition and use cases", "Applying enums to the Shopping Cart"] }
+      ]
+    },
+    {
+      "name": "Working with Objects and Strings",
+      "hours": 6,
+      "description": "Object references, the String class, and string manipulation.",
+      "lessons": [
+        { "title": "Objects and References", "hours": 3, "topics": ["Objects vs primitives", "Reference variables and memory", "Null references and object equality"] },
+        { "title": "Strings", "hours": 3, "topics": ["String immutability and methods", "String comparison (equals vs ==)", "StringBuilder and concatenation"] }
+      ]
+    },
+    {
+      "name": "Input/Output — Console IO",
+      "hours": 4,
+      "description": "Reading user input and displaying output via the console.",
+      "lessons": [
+        { "title": "Console IO", "hours": 4, "topics": ["System.out.println and formatting", "Scanner class for user input", "Parsing input types and validation"] }
+      ]
+    },
+    {
+      "name": "Control Flow with Decisions and Loops",
+      "hours": 8,
+      "description": "Conditional logic, iteration, and combining flow control structures.",
+      "lessons": [
+        { "title": "Decisions", "hours": 3, "topics": ["if/else if/else statements", "switch statements", "Ternary operator and nested conditionals"] },
+        { "title": "Loops", "hours": 3, "topics": ["for, while, do-while loops", "break and continue", "Nested loops"] },
+        { "title": "Lab: Text Adventure Through Loops", "hours": 2, "topics": ["Interactive text-based adventure game", "Combining decisions and loops"] }
+      ]
+    },
+    {
+      "name": "Arrays and Data Collections",
+      "hours": 4,
+      "description": "Creating, accessing, and manipulating arrays.",
+      "lessons": [
+        { "title": "Arrays", "hours": 4, "topics": ["Array declaration and initialization", "Accessing elements, iteration", "Common array operations (search, sort)"] }
+      ]
+    },
+    {
+      "name": "Methods and Modular Programming",
+      "hours": 4,
+      "description": "Writing reusable code through methods.",
+      "lessons": [
+        { "title": "Methods", "hours": 4, "topics": ["Defining and calling methods", "Parameters and return types", "Method overloading and scope"] }
+      ]
+    },
+    {
+      "name": "Testing and Debugging",
+      "hours": 6,
+      "description": "Manual testing techniques and debugging tools.",
+      "lessons": [
+        { "title": "Manual Unit Testing", "hours": 3, "topics": ["What is unit testing?", "Writing manual test cases", "Test planning and strategies"] },
+        { "title": "Debugging", "hours": 3, "topics": ["Common Java errors and stack traces", "IntelliJ debugger (breakpoints, stepping)", "Systematic debugging approach"] }
+      ]
+    },
+    {
+      "name": "Exception Handling and Error Management",
+      "hours": 4,
+      "description": "Understanding and handling exceptions in Java.",
+      "lessons": [
+        { "title": "Exceptions", "hours": 4, "topics": ["Try-catch blocks", "Common exception types", "Throwing exceptions"] }
+      ]
+    },
+    {
+      "name": "Capstone Lab — Complete Text Adventure",
+      "hours": 4,
+      "description": "Integrating all course concepts into a comprehensive application.",
+      "lessons": [
+        { "title": "Text Adventure Complete", "hours": 4, "topics": ["Integrating arrays, methods, exceptions, flow control", "Complete application design", "Code review and refactoring"] }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Capstone Assessment: Storage Lockers",
+    "hours": 4,
+    "items": ["Comprehensive summative assessment", "Combines all 11 modules", "Demonstrates single source file Java programming"]
+  }
+}

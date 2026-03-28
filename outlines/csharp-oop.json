@@ -1,0 +1,61 @@
+{
+  "course": "C# OOP",
+  "totalHours": null,
+  "totalLessons": 7,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "Object-Oriented Programming",
+      "hours": null,
+      "description": "Core object-oriented programming concepts in C#. Covers classes and objects, fields, methods, properties, constructors, inheritance, interfaces, NuGet package management, and enums.",
+      "lessons": [
+        {
+          "title": "Classes and Objects",
+          "hours": null,
+          "topics": ["Introduction to object-oriented programming concepts", "Defining classes in C#", "Creating objects from classes", "Class vs object distinction", "Reference types and object references"]
+        },
+        {
+          "title": "Class Fields, Methods, and Properties",
+          "hours": null,
+          "topics": ["Fields and access modifiers", "Defining and calling methods", "Properties and auto-properties", "Getters and setters", "The this keyword", "Static vs instance members", "Encapsulation principles"]
+        },
+        {
+          "title": "Constructors",
+          "hours": null,
+          "topics": ["Default constructors", "Parameterized constructors", "Constructor overloading", "Constructor chaining", "Object initialization syntax", "Readonly fields"]
+        },
+        {
+          "title": "Inheritance",
+          "hours": null,
+          "topics": ["Base classes and derived classes", "Method overriding (virtual/override)", "The base keyword", "Abstract classes and methods", "Sealed classes", "Polymorphism through inheritance"]
+        },
+        {
+          "title": "Interfaces",
+          "hours": null,
+          "topics": ["Defining and implementing interfaces", "Interface vs abstract class", "Multiple interface implementation", "Polymorphism through interfaces", "Common .NET interfaces (IComparable, IEnumerable)"]
+        },
+        {
+          "title": "NuGet",
+          "hours": null,
+          "topics": ["Introduction to NuGet package manager", "Finding and installing packages", "Managing package references in .csproj", "Package versions and dependency management"]
+        },
+        {
+          "title": "Enums",
+          "hours": null,
+          "topics": ["Defining enums", "Enum values and underlying types", "Parsing and converting enums", "Flags attribute for bitwise enums", "Using enums in switch statements"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Module 2 Summative Assessment",
+    "hours": null,
+    "items": [
+      "Design and implement classes with fields, methods, properties, and constructors",
+      "Apply inheritance and interface patterns",
+      "Use enums and NuGet packages appropriately",
+      "Demonstrate polymorphism through inheritance and interfaces",
+      "Build a complete OOP application integrating all module concepts"
+    ]
+  }
+}

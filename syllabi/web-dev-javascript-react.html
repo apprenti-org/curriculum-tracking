@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Web Development with JavaScript and React</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Web Development with JavaScript and React</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Front-End / Full-Stack Development</span>
+                <span><i class="fa-regular fa-clock"></i> 40 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Web Development with JavaScript and React teaches modern front-end development from JavaScript fundamentals through building complete single-page applications. Students will master JavaScript syntax, control flow, functions and scope, object-oriented concepts, DOM manipulation, event handling, asynchronous JavaScript, and React component architecture. The course emphasizes practical application through progressive projects culminating in a capstone single-page application. This comprehensive course prepares learners for front-end and full-stack development roles.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Single-Page Application Capstone</h2>
+            <div class="assessment-box">
+                <p>Students will build a complete single-page application (Weather Dashboard or Product Browser) integrating JavaScript fundamentals, DOM manipulation, React components, API integration, and state management. The capstone requires functional components with hooks, data fetching and async handling, conditional rendering, and clean CSS styling. Learners must also participate in peer code review and presentation.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Write JavaScript code using proper syntax and conventions</li>
+                <li>Use variables effectively with let, const, and var</li>
+                <li>Work with primitive and complex data types</li>
+                <li>Use conditional statements to control program flow</li>
+                <li>Implement loops for iteration</li>
+                <li>Define and call functions with parameters and return values</li>
+                <li>Understand scope and closure</li>
+                <li>Work with arrays and objects</li>
+                <li>Use arrow functions and functional programming approaches</li>
+                <li>Handle events in the DOM</li>
+                <li>Manipulate the DOM dynamically</li>
+                <li>Understand asynchronous JavaScript and promises</li>
+                <li>Fetch data from APIs</li>
+                <li>Build React components using hooks</li>
+                <li>Manage state with useState and useEffect</li>
+                <li>Debug JavaScript using browser tools</li>
+                <li>Write basic tests for JavaScript code</li>
+                <li>Build complete single-page applications</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">JavaScript Fundamentals</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Getting Started with JavaScript</div>
+                    <ul class="topic-list">
+                        <li>Introduction to JavaScript</li>
+                        <li>REPL and browser console</li>
+                        <li>Basic syntax and writing scripts</li>
+                        <li>Console logging</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Variables and Data Types</div>
+                    <ul class="topic-list">
+                        <li>var, let, const (declaration and scoping)</li>
+                        <li>Primitive types: string, number, boolean, null, undefined</li>
+                        <li>Type coercion and conversion</li>
+                        <li>Dynamic typing</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: Data Structures — Arrays and Objects Intro</div>
+                    <ul class="topic-list">
+                        <li>Arrays: creation, access, modification</li>
+                        <li>Objects: key-value pairs, notation</li>
+                        <li>Nesting and data structure design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Control Flow in JavaScript</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 4: Making Decisions with Conditionals</div>
+                    <ul class="topic-list">
+                        <li>if, else if, else statements</li>
+                        <li>Comparison operators</li>
+                        <li>Logical operators (&amp;&amp;, ||, !)</li>
+                        <li>Nested conditions</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 5: Repeating Actions with Loops</div>
+                    <ul class="topic-list">
+                        <li>for, while, do-while loops</li>
+                        <li>foreach for iterating collections</li>
+                        <li>Loop control (break, continue)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Functions and Scope</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 6: Writing and Using Functions</div>
+                    <ul class="topic-list">
+                        <li>Function declarations vs expressions</li>
+                        <li>Arrow functions</li>
+                        <li>Parameters and arguments</li>
+                        <li>Return values</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 7: Function Scope, Hoisting, and Best Practices</div>
+                    <ul class="topic-list">
+                        <li>Local vs global scope</li>
+                        <li>Function scope and block scope</li>
+                        <li>Hoisting behavior</li>
+                        <li>Naming and organization best practices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Objects and Object-Oriented Programming</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 8: JavaScript Objects and Their Properties</div>
+                    <ul class="topic-list">
+                        <li>Object literals</li>
+                        <li>Accessing/modifying properties</li>
+                        <li>Dot vs bracket notation</li>
+                        <li>Adding/deleting properties</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: Introduction to Object-Oriented Programming</div>
+                    <ul class="topic-list">
+                        <li>Constructors and new keyword</li>
+                        <li>Methods on objects</li>
+                        <li>this keyword and context</li>
+                        <li>Prototypes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Event Handling in JavaScript</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 10: Understanding and Using Events</div>
+                    <ul class="topic-list">
+                        <li>What is an event?</li>
+                        <li>Common events (click, submit, change, mouseover)</li>
+                        <li>addEventListener() and handlers</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 11: Event Types, Flow, and Delegation</div>
+                    <ul class="topic-list">
+                        <li>Event propagation: bubbling vs capturing</li>
+                        <li>event.target</li>
+                        <li>preventDefault()</li>
+                        <li>Event delegation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">The JavaScript DOM vs HTML DOM</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 12: Understanding the DOM and Traversing It</div>
+                    <ul class="topic-list">
+                        <li>DOM structure and tree</li>
+                        <li>Selecting elements (getElementById, querySelector)</li>
+                        <li>Traversing nodes (parent, children, siblings)</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 13: Modifying the DOM Dynamically</div>
+                    <ul class="topic-list">
+                        <li>Changing content and styles</li>
+                        <li>Creating and appending elements</li>
+                        <li>Working with attributes and classes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">7</span>
+                    <span class="module-title">Testing and Debugging JavaScript</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 14: Debugging JavaScript in the Browser</div>
+                    <ul class="topic-list">
+                        <li>Error types (syntax, reference, type)</li>
+                        <li>console.log() and typeof</li>
+                        <li>Browser DevTools</li>
+                        <li>Breakpoints and watch expressions</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 15: Introduction to Testing JavaScript</div>
+                    <ul class="topic-list">
+                        <li>Manual vs automated testing</li>
+                        <li>Simple test functions</li>
+                        <li>Testing frameworks (Jest overview)</li>
+                        <li>Assertions and test cases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">8</span>
+                    <span class="module-title">JavaScript with React &amp; APIs</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 16: React Fundamentals and JavaScript Integration</div>
+                    <ul class="topic-list">
+                        <li>React and component architecture</li>
+                        <li>JSX syntax</li>
+                        <li>Functional components</li>
+                        <li>Props and state basics</li>
+                        <li>JavaScript in JSX</li>
+                        <li>Lists and user input</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 17: Fetching Data and Managing State</div>
+                    <ul class="topic-list">
+                        <li>useEffect() for lifecycle</li>
+                        <li>fetch() API</li>
+                        <li>Asynchronous behavior</li>
+                        <li>Conditional rendering</li>
+                        <li>State management for APIs</li>
+                        <li>Build a mini single-page application</li>
+                        <li>Weather Dashboard or Product Browser</li>
+                        <li>Group showcase and peer feedback</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Variable and Type Practice</li>
+                <li>Conditional and Loop Problems</li>
+                <li>Function Definition and Calling</li>
+                <li>Object and Array Manipulation</li>
+                <li>Event Listener Implementation</li>
+                <li>DOM Element Selection and Modification</li>
+                <li>Async Operations and API Calls</li>
+                <li>React Component Building</li>
+                <li>Todo Application</li>
+                <li>Weather Dashboard Capstone</li>
+                <li>Code Review and Debugging Practice</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

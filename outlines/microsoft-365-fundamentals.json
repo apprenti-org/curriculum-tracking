@@ -1,0 +1,96 @@
+{
+  "course": "Microsoft 365 Fundamentals",
+  "totalHours": 16,
+  "totalLessons": 8,
+  "totalModules": 4,
+  "modules": [
+    {
+      "name": "Cloud Concepts",
+      "hours": 4,
+      "description": "Introduction to cloud computing concepts, deployment models, service types, and how Microsoft 365 leverages the cloud for productivity and collaboration.",
+      "lessons": [
+        {
+          "title": "Introduction to Cloud Concepts",
+          "hours": 2,
+          "topics": ["Define cloud computing and its characteristics", "Deployment models: Public, Private, Hybrid", "Service models: IaaS, PaaS, SaaS", "Cloud economics and pay-as-you-go pricing", "Real-world cloud migration scenarios"]
+        },
+        {
+          "title": "Benefits of Cloud Computing in Microsoft 365",
+          "hours": 2,
+          "topics": ["Scalability, flexibility, and cost-efficiency", "Automatic updates and real-time collaboration", "Security and access control through Azure AD", "Microsoft 365 as a SaaS platform", "Mapping cloud benefits to Microsoft 365 features"]
+        }
+      ]
+    },
+    {
+      "name": "Productivity and Teamwork Capabilities",
+      "hours": 4,
+      "description": "Explore Microsoft 365 productivity tools, collaboration and communication features, and business solutions including Power Platform and Microsoft Viva.",
+      "lessons": [
+        {
+          "title": "Overview of Microsoft 365 Productivity Tools",
+          "hours": 1,
+          "topics": ["Outlook for email, calendars, and tasks", "Word, Excel, PowerPoint core functions", "OneDrive for cloud file storage", "Microsoft Teams for collaboration", "Real-time co-authoring and version control"]
+        },
+        {
+          "title": "Collaboration and Communication in Microsoft 365",
+          "hours": 2,
+          "topics": ["Microsoft Teams channels, chat, and meetings", "SharePoint Online for document management", "OneDrive for Business sharing and co-authoring", "Integration between Teams, SharePoint, and OneDrive", "Collaboration best practices"]
+        },
+        {
+          "title": "Business Solutions with Microsoft 365",
+          "hours": 1,
+          "topics": ["Power Automate for workflow automation", "Power Apps for low-code app development", "Microsoft Viva for employee experience", "Viva Insights, Viva Learning, Viva Engage", "Practical business use cases"]
+        }
+      ]
+    },
+    {
+      "name": "Security and Compliance",
+      "hours": 4,
+      "description": "Microsoft 365 security capabilities including Zero Trust, identity protection, and threat management, along with compliance tools for data governance and regulatory requirements.",
+      "lessons": [
+        {
+          "title": "Microsoft 365 Security Capabilities",
+          "hours": 2,
+          "topics": ["Zero Trust security model", "Identity and access management with Azure AD", "Multi-Factor Authentication (MFA)", "Conditional Access policies", "Microsoft Defender for Microsoft 365", "Threat protection and incident response"]
+        },
+        {
+          "title": "Compliance and Privacy in Microsoft 365",
+          "hours": 2,
+          "topics": ["GDPR and regulatory compliance", "Microsoft Purview for data governance", "Compliance Manager and compliance scores", "Data Loss Prevention (DLP)", "Subject Rights Requests (SRR)", "Audit logs and retention policies"]
+        }
+      ]
+    },
+    {
+      "name": "Licensing and Support",
+      "hours": 4,
+      "description": "Microsoft 365 licensing plans, plan selection for different organizations, and support services including the Service Health Dashboard and escalation processes.",
+      "lessons": [
+        {
+          "title": "Microsoft 365 Licensing Options",
+          "hours": 2,
+          "topics": ["Business plans: Basic, Standard, Premium", "Enterprise plans: E1, E3, E5", "Education and nonprofit licensing", "Feature comparison across plans", "Maximum user limits and plan constraints", "Selecting the right plan for organizational needs"]
+        },
+        {
+          "title": "Microsoft 365 Support Services",
+          "hours": 2,
+          "topics": ["Service Health Dashboard for real-time monitoring", "Microsoft support tiers: Standard, Professional, Unified", "Submitting support requests", "Escalation processes and Premier Support", "Microsoft Learn self-service resources", "Incident response and communication best practices"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Microsoft 365 Fundamentals Assessment",
+    "hours": null,
+    "items": [
+      "Quiz: Introduction to Cloud Computing",
+      "Quiz: Microsoft 365 and Cloud Productivity",
+      "Quiz: Microsoft 365 Productivity Tools",
+      "Quiz: Collaboration and Communication in Microsoft 365",
+      "Quiz: Microsoft Viva and Power Platform",
+      "Quiz: Microsoft 365 Security and Zero Trust",
+      "Quiz: Microsoft 365 Compliance and Data Governance",
+      "Quiz: Microsoft 365 Licensing and Plan Selection",
+      "Quiz: Microsoft 365 Support and Service Management"
+    ]
+  }
+}

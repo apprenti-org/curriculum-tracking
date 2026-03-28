@@ -1,0 +1,92 @@
+{
+  "course": "Instructor Onboarding",
+  "totalHours": 48,
+  "totalLessons": 11,
+  "totalModules": 3,
+  "modules": [
+    {
+      "name": "Preparing for Class",
+      "hours": null,
+      "description": "Foundations of instructional design, backward design, flipped classroom, experiential learning, the art of teaching, and preparation for the learning experience.",
+      "lessons": [
+        {
+          "title": "Foundations of Instructional Design",
+          "hours": null,
+          "topics": ["The goal of instructional design", "Subject matter expert blindspot", "Designing with intent towards specific outcomes"]
+        },
+        {
+          "title": "Backward Design",
+          "hours": null,
+          "topics": ["The design team", "Applying backward design in delivery", "Backward design resources"]
+        },
+        {
+          "title": "Flipped Classroom",
+          "hours": null,
+          "topics": ["Bootcamp challenges", "Making the most of the flipped classroom model", "Pros and cons of flipped classroom"]
+        },
+        {
+          "title": "Experiential Learning",
+          "hours": null,
+          "topics": ["Kolb's Experiential Learning Model (ELM)", "Experiential Learning Theory", "Kolb Learning Style Inventory 4.0", "Reflection"]
+        },
+        {
+          "title": "The Art of Teaching",
+          "hours": null,
+          "topics": ["Empathy", "Motivation (passionate, required, passing-interest learners)", "Improvisation"]
+        },
+        {
+          "title": "Preparing for the Learning Experience",
+          "hours": null,
+          "topics": ["Taking breaks (science and research)", "Learning how to learn", "Procrastination as a superpower", "The Pomodoro Technique", "Mindfulness and meditation for learning"]
+        }
+      ]
+    },
+    {
+      "name": "Facilitating the Class",
+      "hours": null,
+      "description": "Breaking down lessons, cultivating learning conditions, building relationships, motivating learners, and developing professional skills.",
+      "lessons": [
+        {
+          "title": "Breaking Down the Lesson",
+          "hours": null,
+          "topics": ["Definition of a lesson", "Parts of a lesson: Introduction, Showing, Doing, Reflecting"]
+        },
+        {
+          "title": "Cultivating the Conditions for Learning",
+          "hours": null,
+          "topics": ["Creating a supportive learning environment", "Cultivating a relationship with the learner", "Socializing learners with each other"]
+        },
+        {
+          "title": "Motivating Learners",
+          "hours": null,
+          "topics": ["Techniques to motivate learners", "Developing a growth mindset", "Developing self-efficacy"]
+        },
+        {
+          "title": "Developing Professional Skills",
+          "hours": null,
+          "topics": ["Assisting learners in professional development", "Mindfulness for potential teaching pitfalls", "Strategies to counter teaching pitfalls"]
+        }
+      ]
+    },
+    {
+      "name": "Providing Meaningful and Actionable Feedback",
+      "hours": null,
+      "description": "Strategies and techniques for providing meaningful, actionable feedback to learners.",
+      "lessons": [
+        {
+          "title": "Feedback Fundamentals",
+          "hours": null,
+          "topics": ["Meaningful feedback", "Actionable feedback", "Feedback strategies and techniques"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Summative Assessment",
+    "hours": null,
+    "items": [
+      "Module summative assessments with instructor feedback",
+      "Application within live class for continued learning and transfer"
+    ]
+  }
+}

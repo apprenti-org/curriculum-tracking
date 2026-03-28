@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: LINQ and Dependency Injection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: LINQ and Dependency Injection</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> C# / .NET Fundamentals</span>
+                <span><i class="fa-regular fa-clock"></i> 40 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>LINQ and Dependency Injection teaches advanced C# programming concepts essential for enterprise application development. Students will master exception handling, extension methods, LINQ using both method and query syntax, and dependency injection with Ninject. The course emphasizes functional programming approaches, error handling patterns, and architectural patterns for building loosely-coupled, testable applications. Students apply these concepts through progressive exercises building on the Weather Almanac application from prior modules.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Advanced C# Application with DI</h2>
+            <div class="assessment-box">
+                <p>Students will enhance the Weather Almanac application with comprehensive exception handling, LINQ-based reporting, and dependency injection architecture. The assessment requires proper exception handling patterns, both LINQ method and query syntax usage, proper DI configuration, and well-structured applications demonstrating architectural awareness. Learners must demonstrate understanding of inversion of control principles.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Implement exception handling using try/catch/finally blocks</li>
+                <li>Create and use custom exceptions</li>
+                <li>Apply error handling best practices</li>
+                <li>Create and use extension methods</li>
+                <li>Query data using LINQ method syntax</li>
+                <li>Query data using LINQ query syntax</li>
+                <li>Translate between method and query syntax</li>
+                <li>Perform complex operations: filtering, selecting, ordering, grouping, aggregating</li>
+                <li>Use lambda expressions effectively in LINQ</li>
+                <li>Understand Inversion of Control (IoC) principles</li>
+                <li>Configure and use Ninject dependency injection</li>
+                <li>Implement constructor injection patterns</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">LINQ and Dependency Injection</span>
+                    <span class="module-hours">40 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Getting Started</div>
+                    <ul class="topic-list">
+                        <li>Environment setup and prerequisites</li>
+                        <li>Module overview and learning objectives</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Exception Handling</div>
+                    <ul class="topic-list">
+                        <li>Try/catch/finally block structure</li>
+                        <li>Exception types and hierarchy</li>
+                        <li>Custom exception creation</li>
+                        <li>Best practices for error handling in C#</li>
+                        <li>Using statements and resource cleanup</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: Weather Almanac — Exceptions (Exercise)</div>
+                    <ul class="topic-list">
+                        <li>Adding exception handling to the Weather Almanac application</li>
+                        <li>Proper error handling in data access and business logic</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Weather Almanac Exception Handling</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 4: Extension Methods</div>
+                    <ul class="topic-list">
+                        <li>Creating extension methods</li>
+                        <li>Extending existing types</li>
+                        <li>When and why to use extension methods</li>
+                        <li>Best practices and limitations</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 5: LINQ Method Syntax</div>
+                    <ul class="topic-list">
+                        <li>Introduction to LINQ (Language Integrated Query)</li>
+                        <li>Method syntax overview</li>
+                        <li>Where, Select, OrderBy, OrderByDescending</li>
+                        <li>GroupBy and Aggregate operations</li>
+                        <li>Lambda expressions in LINQ</li>
+                        <li>Common LINQ methods and patterns</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: LINQ Methods Exercises</div>
+                    <ul class="topic-list">
+                        <li>Hands-on practice with LINQ method syntax</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: LINQ Method Syntax operations</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 7: LINQ Query Syntax</div>
+                    <ul class="topic-list">
+                        <li>Query expression syntax</li>
+                        <li>From, Where, Select, OrderBy clauses</li>
+                        <li>Join operations in query syntax</li>
+                        <li>GroupBy and aggregation in query syntax</li>
+                        <li>Translating between method and query syntax</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: LINQ Syntax Exercises</div>
+                    <ul class="topic-list">
+                        <li>Hands-on practice with LINQ query syntax</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: LINQ Query Syntax operations</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 9: Weather Almanac — Reporting (Exercise)</div>
+                    <ul class="topic-list">
+                        <li>Adding LINQ-powered reporting to the Weather Almanac application</li>
+                        <li>Creating reports using data projections and aggregations</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Weather Almanac Reporting with LINQ</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 10: Weather Almanac — Exceptions (Lab)</div>
+                    <ul class="topic-list">
+                        <li>Extended lab: comprehensive exception handling in Weather Almanac</li>
+                        <li>Integrating error handling throughout the application</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Lab: Weather Almanac comprehensive exception handling</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 11: Dependency Injection with Ninject</div>
+                    <ul class="topic-list">
+                        <li>Inversion of Control (IoC) principles</li>
+                        <li>Dependency Injection concepts and benefits</li>
+                        <li>Ninject configuration and kernel setup</li>
+                        <li>Binding interfaces to implementations</li>
+                        <li>Constructor injection patterns</li>
+                        <li>Resolving dependencies</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 12: Module Assessment</div>
+                    <ul class="topic-list">
+                        <li>Summative assessment covering exception handling, LINQ, and dependency injection</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Exception Handling: Implement error handling patterns</li>
+                <li>Extension Method Creation: Extend existing types</li>
+                <li>LINQ Method Operations: Filter, project, order, and aggregate data</li>
+                <li>LINQ Query Syntax: Write query expressions</li>
+                <li>Weather Almanac Reporting: Create reports with LINQ</li>
+                <li>Dependency Injection Setup: Configure IoC with Ninject</li>
+                <li>Complex LINQ Queries: Join and group data</li>
+                <li>Testing with DI: Write tests for loosely-coupled components</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

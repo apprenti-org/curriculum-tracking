@@ -1,0 +1,210 @@
+{
+  "course": "Databases in Java",
+  "totalHours": 40,
+  "totalLessons": 23,
+  "totalModules": 10,
+  "modules": [
+    {
+      "name": "Virtualization, Containers, and Docker",
+      "hours": 4,
+      "description": "Introduction to virtualization concepts, container technology, Docker fundamentals, and core Docker CLI commands for containerized development environments.",
+      "lessons": [
+        {
+          "title": "Introduction to Containers",
+          "hours": 1,
+          "topics": ["Virtualization concepts and history", "What containers are and how they work", "Container vs. virtual machine comparison", "Container use cases in development"]
+        },
+        {
+          "title": "Introduction to Docker",
+          "hours": 1,
+          "topics": ["What Docker is and its purpose", "Running containers locally and in the cloud", "Docker architecture and components", "Docker Desktop installation"]
+        },
+        {
+          "title": "Docker Commands Core",
+          "hours": 2,
+          "topics": ["Docker artifacts: images, containers, registries, tags", "Core image commands: pull, build, rmi", "Core container commands: ps, start, stop, rm", "Running and executing commands in containers"]
+        }
+      ]
+    },
+    {
+      "name": "Databases",
+      "hours": 2,
+      "description": "Overview of database types, relational vs. non-relational databases, RDBMS components, and common database terminology.",
+      "lessons": [
+        {
+          "title": "Database Types",
+          "hours": 1,
+          "topics": ["Relational database management systems (RDBMS)", "Tables, rows, columns, and primary keys", "Non-relational database types", "Key-value, document, columnar, and graph databases"]
+        },
+        {
+          "title": "Database Terminology",
+          "hours": 1,
+          "topics": ["Common database terms and definitions", "Transactions and atomicity", "Constraints and referential integrity", "Joins, indexes, and schemas"]
+        }
+      ]
+    },
+    {
+      "name": "Relational Modeling",
+      "hours": 4,
+      "description": "Relational database terminology, data types, data relationships, normalization through third normal form, and entity relationship diagram (ERD) creation.",
+      "lessons": [
+        {
+          "title": "Data Relationships",
+          "hours": 1,
+          "topics": ["One-to-one relationships", "One-to-many relationships", "Many-to-many relationships", "Foreign keys and referential integrity"]
+        },
+        {
+          "title": "Relational Terminology",
+          "hours": 0.5,
+          "topics": ["Data integrity concepts", "Fields, records, and tables", "Primary and foreign keys", "Filters, views, and indexes"]
+        },
+        {
+          "title": "Data Types",
+          "hours": 0.5,
+          "topics": ["Character types: char and varchar", "Numeric types: int, decimal, float", "Date and time types", "Boolean and binary types"]
+        },
+        {
+          "title": "Normalization",
+          "hours": 2,
+          "topics": ["First normal form (1NF)", "Second normal form (2NF)", "Third normal form (3NF)", "Denormalization and when to use it", "Creating entity relationship diagrams (ERDs)"]
+        }
+      ]
+    },
+    {
+      "name": "Database Instance Installs",
+      "hours": 4,
+      "description": "Installing and configuring MySQL, MySQL Workbench, SQL Server Express, and Azure Data Studio for hands-on database development.",
+      "lessons": [
+        {
+          "title": "MySQL and MySQL Workbench Setup",
+          "hours": 2,
+          "topics": ["MySQL installation and configuration", "MySQL Workbench installation", "Connecting to MySQL with Workbench", "Running queries in MySQL Workbench"]
+        },
+        {
+          "title": "SQL Server Express and Azure Data Studio Setup",
+          "hours": 2,
+          "topics": ["SQL Server Express installation", "Azure Data Studio installation", "Connecting to SQL Express", "Running queries in Azure Data Studio"]
+        }
+      ]
+    },
+    {
+      "name": "Database Creation and Maintenance",
+      "hours": 4,
+      "description": "Data Definition Language (DDL) for creating databases, tables, and relationships using database scripts in both MySQL and SQL Express dialects.",
+      "lessons": [
+        {
+          "title": "Database Scripts",
+          "hours": 4,
+          "topics": ["Data Definition Language (DDL) overview", "CREATE DATABASE and CREATE TABLE statements", "Defining columns, data types, and constraints", "Primary key and foreign key creation", "ALTER and DROP statements", "MySQL vs. SQL Express DDL dialect differences"]
+        }
+      ]
+    },
+    {
+      "name": "SQL Fundamentals",
+      "hours": 4,
+      "description": "Writing SELECT statements, working with math and string operations, filtering results with WHERE clauses, and ordering output with ORDER BY.",
+      "lessons": [
+        {
+          "title": "Selects",
+          "hours": 2,
+          "topics": ["SELECT statement components", "Working with literal values and expressions", "Math and string operations in SQL", "CONCAT and string functions", "Selecting from tables and aliasing columns"]
+        },
+        {
+          "title": "Filtering SQL",
+          "hours": 2,
+          "topics": ["WHERE clause for filtering results", "Comparison operators and logical operators", "NULL handling with IS NULL / IS NOT NULL", "LIKE and wildcard pattern matching", "IN, BETWEEN, and OR operators", "ORDER BY clause for sorting results"]
+        }
+      ]
+    },
+    {
+      "name": "Intermediate SQL",
+      "hours": 6,
+      "description": "SQL JOINs for combining tables, case sensitivity and data formatting, subqueries, and aggregate functions with GROUP BY and HAVING.",
+      "lessons": [
+        {
+          "title": "Joins",
+          "hours": 2,
+          "topics": ["INNER JOIN syntax and usage", "LEFT and RIGHT OUTER JOINs", "CROSS JOIN and self-joins", "Table aliases in multi-table queries", "JOIN conditions and ON clause"]
+        },
+        {
+          "title": "Case, Casting, and Formatting",
+          "hours": 1,
+          "topics": ["Case sensitivity in SQL", "Explicit casting with CAST() and CONVERT()", "Implicit type conversion", "String formatting: trimming, concatenation, case conversion", "Date and numeric formatting"]
+        },
+        {
+          "title": "Subqueries",
+          "hours": 1,
+          "topics": ["Subqueries in WHERE clauses", "Subqueries in SELECT clauses", "Subqueries in HAVING clauses", "EXISTS and NOT EXISTS", "Correlated subqueries"]
+        },
+        {
+          "title": "Aggregation in SQL",
+          "hours": 2,
+          "topics": ["Aggregate functions: SUM, AVG, MIN, MAX, COUNT", "GROUP BY clause for grouping results", "HAVING clause for filtering aggregates", "String aggregation", "SQL variables and ORDER BY with aggregates"]
+        }
+      ]
+    },
+    {
+      "name": "Advanced SQL",
+      "hours": 6,
+      "description": "Data Manipulation Language (DML) for inserting, updating, and deleting records, including foreign key interactions and safe data modification practices.",
+      "lessons": [
+        {
+          "title": "Inserting SQL",
+          "hours": 2,
+          "topics": ["INSERT INTO single record syntax", "Auto-generated primary keys", "Foreign key interactions during insert", "Bulk inserts for multiple records", "INSERT from SELECT queries"]
+        },
+        {
+          "title": "Updating SQL",
+          "hours": 2,
+          "topics": ["UPDATE single record with WHERE clause", "Updating multiple records simultaneously", "Updating multiple columns", "Safe key field updates", "Using SELECT to preview updates"]
+        },
+        {
+          "title": "Deleting SQL",
+          "hours": 2,
+          "topics": ["DELETE single record by primary key", "Deleting multiple records with filtered WHERE", "Foreign key constraints and DELETE", "Safe deletion practices with SELECT preview", "Cascading deletes and dependency handling"]
+        }
+      ]
+    },
+    {
+      "name": "Stored Procedures and Transactions",
+      "hours": 2,
+      "description": "Writing and calling stored procedures with parameters, using SQL transactions for safe data modification with commit and rollback.",
+      "lessons": [
+        {
+          "title": "Stored Procedures",
+          "hours": 1,
+          "topics": ["Writing and calling stored procedures", "Single and multiple parameter procedures", "Modifying and removing stored procedures", "Stored procedures in test databases"]
+        },
+        {
+          "title": "SQL Transactions",
+          "hours": 1,
+          "topics": ["Transaction concepts and ACID properties", "BEGIN TRANSACTION, COMMIT, and ROLLBACK", "Manual vs. automatic transactions", "Error handling within transactions"]
+        }
+      ]
+    },
+    {
+      "name": "JDBC",
+      "hours": 4,
+      "description": "Java Database Connectivity (JDBC) for connecting Java applications to databases, and Spring JdbcTemplate for simplified database access.",
+      "lessons": [
+        {
+          "title": "JDBC",
+          "hours": 2,
+          "topics": ["JDBC architecture and driver types", "Connection, Statement, and ResultSet objects", "PreparedStatement for parameterized queries", "CRUD operations with JDBC", "Exception handling and resource management"]
+        },
+        {
+          "title": "JdbcTemplate",
+          "hours": 2,
+          "topics": ["Spring JdbcTemplate overview", "Eliminating boilerplate JDBC code", "RowMapper for result set mapping", "CRUD operations with JdbcTemplate", "Query methods and update methods"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Databases in Java Summative Assessment",
+    "hours": null,
+    "items": [
+      "Summative Assessment: Java Databases"
+    ]
+  }
+}

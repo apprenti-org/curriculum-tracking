@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Pandas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Pandas</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Data Analyst (DANL)</span>
+                <span><i class="fa-regular fa-clock"></i> 50 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Pandas teaches the essential Python library for data manipulation and analysis. Students will master the data science lifecycle, use Pandas for data exploration and ETL operations, aggregate and group data, and make informed visualization choices. The course uses real-world datasets including stock market data to teach practical skills in data cleaning, transformation, and analysis. This course enables data professionals to leverage Python and Pandas for efficient data workflows.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Data Analysis Project with Pandas</h2>
+            <div class="assessment-box">
+                <p>Students will complete a comprehensive data analysis project applying the entire Pandas workflow. The assessment requires data loading and exploration, cleaning and transformation, aggregation and grouping operations, and visualization selection and implementation. Learners must demonstrate understanding of the data science lifecycle and ability to communicate insights through Pandas-based analysis.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Summarize the data science lifecycle</li>
+                <li>Install and import Pandas effectively</li>
+                <li>Create and manipulate DataFrames and Series</li>
+                <li>Read data into DataFrames from various sources</li>
+                <li>Explore data using size, shape, and data type operations</li>
+                <li>Clean and transform data with Pandas</li>
+                <li>Handle missing data appropriately</li>
+                <li>Merge and join DataFrames</li>
+                <li>Aggregate and group data using groupby operations</li>
+                <li>Create visualizations with Pandas</li>
+                <li>Make informed choices about visualization types</li>
+                <li>Analyze real-world datasets using Pandas</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Introduction (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>Course Introduction: Pandas overview and context</li>
+                        <li>Pre-assessment</li>
+                        <li>Scenario: Stock Market Panda-monium</li>
+                        <li>Learning objectives and course navigation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Introduction to Pandas (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Intro to Pandas</div>
+                    <ul class="topic-list">
+                        <li>Installing and importing pandas</li>
+                        <li>DataFrames and Series concepts</li>
+                        <li>Reading data into DataFrames (CSV, Excel, databases)</li>
+                        <li>Exploring rows and columns</li>
+                        <li>Identifying size, column names, data types, non-null observations</li>
+                        <li>Limiting columns, head/tail, negative indexing</li>
+                        <li>Counting values, getting top x amounts</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Intro to Pandas Movie Plots</li>
+                            <li>Exercise: Intro to Pandas Zoo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">ETL and Pandas (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: ETL and Pandas</div>
+                    <ul class="topic-list">
+                        <li>Extract, Transform, Load workflow</li>
+                        <li>Data cleaning and transformation with Pandas</li>
+                        <li>Handling missing data</li>
+                        <li>Standardizing data formats</li>
+                        <li>Merging and joining DataFrames</li>
+                        <li>String operations on data</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: ETL with Pandas (Goodreads dataset)</li>
+                            <li>Multiple exercises with real datasets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Introduction to Data Visualizations with Pandas (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Introduction to Data Visualizations</div>
+                    <ul class="topic-list">
+                        <li>Common visualization libraries (matplotlib, seaborn)</li>
+                        <li>Creating basic plots with Pandas</li>
+                        <li>Choosing appropriate chart types for data</li>
+                        <li>Customizing visualizations</li>
+                        <li>Exporting plots</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Data Visualizations with Pandas</li>
+                            <li>Hands-on visualization practice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Summarizing with Pandas (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Summarizing with Pandas</div>
+                    <ul class="topic-list">
+                        <li>Aggregation and grouping with groupby</li>
+                        <li>Descriptive statistics</li>
+                        <li>Pivot tables for data summarization</li>
+                        <li>Census data analysis</li>
+                        <li>Identifying patterns and trends</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Summarizing with Pandas</li>
+                            <li>Analysis of real-world datasets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">Summative Assessment (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <ul class="topic-list">
+                        <li>Assessment Preparation: Review key concepts</li>
+                        <li>Summative Assessment: Comprehensive Pandas project</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>DataFrame Exploration: Load and explore datasets</li>
+                <li>Data Cleaning: Handle missing values and inconsistencies</li>
+                <li>Data Transformation: Reshape and transform data</li>
+                <li>Merging Data: Combine datasets from multiple sources</li>
+                <li>Grouping Operations: Aggregate and analyze groups</li>
+                <li>Stock Market Analysis: Analyze real stock market data</li>
+                <li>Visualization: Create charts and interpret patterns</li>
+                <li>Complete ETL Workflow: End-to-end data analysis project</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

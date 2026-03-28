@@ -1,0 +1,85 @@
+{
+  "course": "LINQ and Dependency Injection",
+  "totalHours": 40,
+  "totalLessons": 12,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "LINQ and Dependency Injection",
+      "hours": 40,
+      "description": "Advanced C# concepts including exception handling, extension methods, LINQ method and query syntax, and dependency injection with Ninject.",
+      "lessons": [
+        {
+          "title": "Getting Started",
+          "hours": 1,
+          "topics": ["Environment setup and prerequisites", "Module overview and learning objectives"]
+        },
+        {
+          "title": "Exception Handling",
+          "hours": 4,
+          "topics": ["Try/catch/finally blocks", "Custom exceptions", "Best practices for error handling in C#"]
+        },
+        {
+          "title": "Weather Almanac — Exceptions (Exercise)",
+          "hours": 3,
+          "topics": ["Adding exception handling to the Weather Almanac application"]
+        },
+        {
+          "title": "Extension Methods",
+          "hours": 3,
+          "topics": ["Creating and using extension methods", "When and why to use extension methods"]
+        },
+        {
+          "title": "LINQ Method Syntax",
+          "hours": 4,
+          "topics": ["Introduction to LINQ", "Method syntax: Where, Select, OrderBy, GroupBy, Aggregate", "Lambda expressions with LINQ"]
+        },
+        {
+          "title": "LINQ Methods Exercises",
+          "hours": 3,
+          "topics": ["Hands-on practice with LINQ method syntax"]
+        },
+        {
+          "title": "LINQ Query Syntax",
+          "hours": 4,
+          "topics": ["Query expression syntax", "Translating between method and query syntax", "Joins and grouping with query syntax"]
+        },
+        {
+          "title": "LINQ Syntax Exercises",
+          "hours": 3,
+          "topics": ["Hands-on practice with LINQ query syntax"]
+        },
+        {
+          "title": "Weather Almanac — Reporting (Exercise)",
+          "hours": 3,
+          "topics": ["Adding LINQ-powered reporting to the Weather Almanac application"]
+        },
+        {
+          "title": "Weather Almanac — Exceptions (Lab)",
+          "hours": 4,
+          "topics": ["Extended lab: comprehensive exception handling in Weather Almanac"]
+        },
+        {
+          "title": "Dependency Injection with Ninject",
+          "hours": 4,
+          "topics": ["Inversion of Control (IoC) principles", "Configuring and using Ninject", "Constructor injection patterns"]
+        },
+        {
+          "title": "Module Assessment",
+          "hours": 4,
+          "topics": ["Summative assessment covering exception handling, LINQ, and dependency injection"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Module Assessment (M04)",
+    "hours": 4,
+    "items": [
+      "Summative assessment covering all module topics",
+      "Exception handling implementation",
+      "LINQ queries (method and query syntax)",
+      "Dependency injection configuration"
+    ]
+  }
+}

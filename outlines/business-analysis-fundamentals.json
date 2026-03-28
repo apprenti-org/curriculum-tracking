@@ -1,0 +1,81 @@
+{
+  "courseName": "Business Analysis Fundamentals",
+  "totalHours": 120,
+  "totalModules": 6,
+  "totalLessons": 37,
+  "modules": [
+    {
+      "name": "Introduction to Business Analysis and Key Terms",
+      "hours": 20,
+      "lessons": [
+        { "title": "What is Business Analysis?" },
+        { "title": "Roles and Responsibilities of a Business Analyst" },
+        { "title": "Key Concepts – Needs, Stakeholders, Requirements, Solutions" },
+        { "title": "Overview of the BABOK® Framework" },
+        { "title": "Business Analysis Terminology Essentials" },
+        { "title": "Types of Business Analysis – Strategic, Tactical, Operational" }
+      ]
+    },
+    {
+      "name": "Business Analysis Planning, Monitoring, and Governance",
+      "hours": 20,
+      "lessons": [
+        { "title": "Purpose of Planning in Business Analysis" },
+        { "title": "Identifying Stakeholders and Their Roles" },
+        { "title": "Planning the Business Analysis Approach (Predictive vs. Adaptive)" },
+        { "title": "Planning Stakeholder Engagement and Scope Definition" },
+        { "title": "Roles, Responsibilities, and Access Planning" },
+        { "title": "Business Analysis Governance" },
+        { "title": "Monitoring and Reporting BA Performance" }
+      ]
+    },
+    {
+      "name": "Elicitation and Collaboration",
+      "hours": 20,
+      "lessons": [
+        { "title": "Preparing for Elicitation Activities" },
+        { "title": "Elicitation Techniques Overview" },
+        { "title": "Conducting Elicitation Sessions" },
+        { "title": "Confirming and Communicating Results" },
+        { "title": "Stakeholder Collaboration and Scope Clarification" },
+        { "title": "Managing Elicitation Challenges" },
+        { "title": "Tools for Elicitation and Ideation" }
+      ]
+    },
+    {
+      "name": "Requirements Life Cycle Management",
+      "hours": 20,
+      "lessons": [
+        { "title": "Introduction to the Requirements Life Cycle" },
+        { "title": "Tracing and Maintaining Requirements" },
+        { "title": "Prioritizing and Approving Requirements" },
+        { "title": "Managing Requirements Changes" },
+        { "title": "Impact Analysis and Risk Identification" },
+        { "title": "Advising on Requirements-Related Risks" }
+      ]
+    },
+    {
+      "name": "Requirements Analysis, Design Definition, and Research",
+      "hours": 20,
+      "lessons": [
+        { "title": "Specifying and Modeling Requirements" },
+        { "title": "Verifying and Validating Requirements" },
+        { "title": "Defining and Analyzing Solution Options" },
+        { "title": "Evaluating Potential Value and Making Recommendations" },
+        { "title": "Introduction to Conceptual and Logical Design" },
+        { "title": "Researching Industry Trends and Best Practices" }
+      ]
+    },
+    {
+      "name": "Capstone Project – Full Business Analysis Cycle",
+      "hours": 20,
+      "lessons": [
+        { "title": "Stakeholder Engagement & Elicitation" },
+        { "title": "Requirements Analysis & Modeling" },
+        { "title": "Solution Evaluation and Recommendation" },
+        { "title": "Research Integration" },
+        { "title": "Final Presentation" }
+      ]
+    }
+  ]
+}

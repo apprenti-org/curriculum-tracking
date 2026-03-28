@@ -1,0 +1,57 @@
+{
+  "course": "C# Data Access",
+  "totalHours": null,
+  "totalLessons": 6,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "C# Data Access",
+      "hours": null,
+      "description": "Connecting C# applications to relational databases using ADO.NET and Entity Framework Core. Covers database project setup, raw data access with ADO.NET, application configuration, ORM fundamentals with EF Core, database migrations, and stored procedure integration.",
+      "lessons": [
+        {
+          "title": "SimpleSchool Database Project",
+          "hours": null,
+          "topics": ["Introduction to the SimpleSchool sample database", "Project setup and database schema overview", "Creating the C# solution structure", "Connecting a C# project to a SQL Server database", "Overview of data access patterns in .NET"]
+        },
+        {
+          "title": "ADO.NET",
+          "hours": null,
+          "topics": ["Introduction to ADO.NET architecture", "SqlConnection and connection strings", "SqlCommand for executing queries", "SqlDataReader for reading result sets", "Parameterized queries and SQL injection prevention", "CRUD operations with ADO.NET", "Using statements and resource management", "SimpleSchool ADO.NET example walkthrough"]
+        },
+        {
+          "title": "Configuration",
+          "hours": null,
+          "topics": ["Application configuration in .NET", "appsettings.json and configuration providers", "Managing connection strings securely", "Environment-specific configuration", "IConfiguration interface and dependency injection", "ConfigurationExamples project walkthrough"]
+        },
+        {
+          "title": "Entity Framework Core",
+          "hours": null,
+          "topics": ["Introduction to Object-Relational Mapping (ORM)", "Entity Framework Core overview and architecture", "DbContext and DbSet fundamentals", "Defining entity models and conventions", "Fluent API vs data annotations", "Querying with LINQ and EF Core", "CRUD operations with EF Core", "Change tracking and SaveChanges", "EFCoreExamples project walkthrough"]
+        },
+        {
+          "title": "Entity Framework Migrations",
+          "hours": null,
+          "topics": ["Introduction to database migrations", "Code-first vs database-first approaches", "Creating and applying migrations", "Migration history and rollback", "Seeding data with migrations", "Managing schema changes in team environments", "EFMigrationsExamples project walkthrough"]
+        },
+        {
+          "title": "Stored Procedures",
+          "hours": null,
+          "topics": ["Writing and calling stored procedures", "Single-parameter stored procedures", "Multiple-parameter stored procedures", "Modifying and removing stored procedures", "Stored procedures in test databases", "Calling stored procedures from C# with ADO.NET", "Calling stored procedures from EF Core", "StoredProcedures example project walkthrough"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Module 7 Assessment",
+    "hours": null,
+    "items": [
+      "Build a complete data access layer for a C# application",
+      "Implement both ADO.NET and Entity Framework Core approaches",
+      "Configure database connections and application settings",
+      "Apply Entity Framework migrations",
+      "Integrate stored procedures into the application",
+      "Demonstrate proficiency in C# database connectivity patterns"
+    ]
+  }
+}

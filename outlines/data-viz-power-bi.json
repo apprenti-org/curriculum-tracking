@@ -1,0 +1,82 @@
+{
+  "course": "Data Fundamentals — Data Visualizations and Power BI",
+  "totalHours": 50,
+  "totalLessons": 12,
+  "totalModules": 7,
+  "modules": [
+    {
+      "name": "Introduction to Data Visualizations",
+      "hours": null,
+      "description": "Create effective data visualizations, apply design principles, analyze stakeholders, interpret infographics, and explore dashboards.",
+      "lessons": [
+        { "title": "Intro to Data Visualizations", "hours": null, "topics": ["Purpose and importance of data visualization", "Choosing the right visual for your data"] },
+        { "title": "Stakeholder Analysis", "hours": null, "topics": ["Identifying your audience", "Tailoring visualizations to stakeholder needs"] },
+        { "title": "Design Principles", "hours": null, "topics": ["Basic design principles for data presentations", "Color, layout, and clarity"] },
+        { "title": "Presenting Data", "hours": null, "topics": ["Storytelling with data", "Presentation best practices"] },
+        { "title": "Reading Infographics", "hours": null, "topics": ["Interpreting infographics", "Evaluating infographic effectiveness"] },
+        { "title": "Using Dashboards", "hours": null, "topics": ["Dashboard components and layout", "Interactive vs static dashboards"] }
+      ]
+    },
+    {
+      "name": "Introduction to Power BI",
+      "hours": null,
+      "description": "Get started with Power BI, create reports, and use Quick Insights to explore data.",
+      "lessons": [
+        { "title": "Intro to Power BI", "hours": null, "topics": ["Power BI interface and components", "Desktop vs Service vs Mobile"] },
+        { "title": "Creating a Report", "hours": null, "topics": ["Building reports in Power BI", "Adding visualizations and formatting"] },
+        { "title": "Power BI Quick Insights", "hours": null, "topics": ["Using Quick Insights to discover patterns", "Interpreting AI-generated insights"] }
+      ]
+    },
+    {
+      "name": "Slicers, Groups, and Bins",
+      "hours": null,
+      "description": "Sort and filter data with slicers, organize data using groups and bins.",
+      "lessons": [
+        { "title": "Using Slicers", "hours": null, "topics": ["Adding slicers to reports", "Filtering data interactively", "Slicer configuration options"] }
+      ]
+    },
+    {
+      "name": "Visualizations and Dashboards",
+      "hours": null,
+      "description": "Customize visualizations and build interactive dashboards in Power BI.",
+      "lessons": [
+        { "title": "Customizing Visualizations", "hours": null, "topics": ["Formatting options", "Custom visuals", "Conditional formatting"] },
+        { "title": "Building Dashboards", "hours": null, "topics": ["Pinning visuals to dashboards", "Dashboard layout and design", "Sharing and collaboration"] }
+      ]
+    },
+    {
+      "name": "Excel and Power BI",
+      "hours": null,
+      "description": "Extract, transform, and load data from Excel into Power BI.",
+      "lessons": [
+        { "title": "ETL Excel and Power BI", "hours": null, "topics": ["Connecting Excel data sources", "Power Query for data transformation", "Loading and refreshing data"] }
+      ]
+    },
+    {
+      "name": "Working with Census Data in Power BI",
+      "hours": null,
+      "description": "Work with large real-world datasets using U.S. Census data in Power BI.",
+      "lessons": [
+        { "title": "Census Data in Power BI", "hours": null, "topics": ["Importing large datasets", "Working with Census data", "Custom tool tips"] }
+      ]
+    },
+    {
+      "name": "Excel Workbooks and Power BI",
+      "hours": null,
+      "description": "Publish Excel workbooks to Power BI for sharing and collaboration.",
+      "lessons": [
+        { "title": "Publishing Excel Workbooks to Power BI", "hours": null, "topics": ["Publishing workflows", "Excel workbook integration", "Sharing published content"] }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Summative Assessment: Data Analysis with Power BI",
+    "hours": null,
+    "items": [
+      "Multi-part summative assessment with rubric",
+      "Learner key parts one and three",
+      "Instructor key parts two and four",
+      "Interactive assessment preparation"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "course": "HTTP Services",
+  "totalHours": null,
+  "totalLessons": 2,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "Internet and Web Services",
+      "hours": null,
+      "description": "Covers internet fundamentals, HTTP protocol, JSON serialization, and RESTful web services.",
+      "lessons": [
+        {
+          "title": "Internet and Web Services",
+          "hours": null,
+          "topics": [
+            "Internet vs. the Web",
+            "TCP/IP and HTTP protocol stack",
+            "Protocol layering",
+            "Web application architecture (browser, HTTP server, database)",
+            "Limitations of monolithic three-node architecture",
+            "Web services: data-focused, no UI, HTTP-based",
+            "Web API concepts"
+          ]
+        },
+        {
+          "title": "HTTP, JSON, and Web Services",
+          "hours": null,
+          "topics": [
+            "HTTP request/response protocol",
+            "HTTP methods (GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH, CONNECT, TRACE)",
+            "CRUD mapping to HTTP methods",
+            "HTTP headers and their purposes",
+            "HTTP status codes (100s–500s)",
+            "Request and response body structure",
+            "JSON as object notation and serialization format",
+            "Content-Type and Accept headers",
+            "REST (Representational State Transfer)",
+            "Uniform interface constraint",
+            "RESTful URL patterns"
+          ]
+        }
+      ]
+    }
+  ]
+}

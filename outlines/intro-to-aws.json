@@ -1,0 +1,138 @@
+{
+  "course": "Introduction to AWS Cloud Platform",
+  "totalHours": null,
+  "totalLessons": 16,
+  "totalModules": 10,
+  "modules": [
+    {
+      "name": "Introduction to Amazon Web Services (AWS)",
+      "hours": null,
+      "description": "Overview of AWS, cloud computing fundamentals, service models, and the shared responsibility model.",
+      "lessons": [
+        {
+          "title": "Overview of How to Access Amazon Web Services",
+          "hours": null,
+          "topics": ["AWS account setup", "Navigating AWS services", "AWS Management Console"]
+        },
+        {
+          "title": "The Service and Shared Responsibility Models",
+          "hours": null,
+          "topics": ["Cloud computing definition and characteristics", "Service models (IaaS, PaaS, FaaS, CaaS, SaaS)", "Shared responsibility model", "Cloud adoption patterns"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Elastic Compute Cloud (EC2) Service",
+      "hours": null,
+      "description": "AWS compute services, EC2 instance types, and the AWS Console.",
+      "lessons": [
+        {
+          "title": "Introduction to the AWS Console",
+          "hours": null,
+          "topics": ["AWS Console navigation", "Service discovery", "Region and availability zone selection"]
+        },
+        {
+          "title": "EC2 Fundamentals",
+          "hours": null,
+          "topics": ["EC2 instance types", "Launching and managing instances", "Key pairs and security groups"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Virtual Private Cloud (VPC) Networking",
+      "hours": null,
+      "description": "VPC architecture, subnets, route tables, and network security.",
+      "lessons": [
+        {
+          "title": "VPC Components and Architecture",
+          "hours": null,
+          "topics": ["VPC fundamentals", "Subnets (public and private)", "Route tables", "Internet and NAT gateways"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Auto Scaling and Load Balancing",
+      "hours": null,
+      "description": "Scaling strategies and load balancing for high availability.",
+      "lessons": [
+        {
+          "title": "Auto Scaling and Load Balancing",
+          "hours": null,
+          "topics": ["Auto scaling groups and policies", "Elastic Load Balancing", "High availability patterns"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Simple Storage Service (S3)",
+      "hours": null,
+      "description": "S3 object storage, buckets, lifecycle management, and access control.",
+      "lessons": [
+        {
+          "title": "S3 Fundamentals",
+          "hours": null,
+          "topics": ["Objects and buckets", "Object lifecycle", "S3 access control", "AWS pricing calculator for S3"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Identity and Access Management (IAM)",
+      "hours": null,
+      "description": "IAM users, groups, roles, and permission policies.",
+      "lessons": [
+        {
+          "title": "IAM Fundamentals",
+          "hours": null,
+          "topics": ["IAM users, groups, and roles", "Permission policies", "Least privilege principle", "Multi-factor authentication"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Cloud Notifications (SNS) and Message Queues (SQS)",
+      "hours": null,
+      "description": "AWS messaging services for event-driven and decoupled architectures.",
+      "lessons": [
+        {
+          "title": "SNS and SQS Fundamentals",
+          "hours": null,
+          "topics": ["Simple Notification Service (SNS)", "Simple Queue Service (SQS)", "Pub/sub and message queue patterns", "Decoupled architectures"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Serverless Functions (Lambda)",
+      "hours": null,
+      "description": "AWS Lambda for serverless computing and event-driven functions.",
+      "lessons": [
+        {
+          "title": "Lambda Fundamentals",
+          "hours": null,
+          "topics": ["Serverless computing concepts", "Lambda functions", "Event triggers and integrations", "Lambda pricing model"]
+        }
+      ]
+    },
+    {
+      "name": "AWS Pricing and Cost Management",
+      "hours": null,
+      "description": "Understanding AWS pricing models, cost optimization, and budgeting tools.",
+      "lessons": [
+        {
+          "title": "Pricing and Cost Management",
+          "hours": null,
+          "topics": ["AWS pricing models (on-demand, reserved, spot)", "AWS Cost Explorer", "Budgets and alerts", "Cost optimization strategies"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Management and Governance",
+      "hours": null,
+      "description": "AWS management, monitoring, and governance services.",
+      "lessons": [
+        {
+          "title": "Management and Governance Services",
+          "hours": null,
+          "topics": ["AWS CloudWatch", "AWS CloudTrail", "AWS Config", "Compliance and governance"]
+        }
+      ]
+    }
+  ]
+}

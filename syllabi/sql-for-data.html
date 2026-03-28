@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Data Fundamentals — SQL for Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Data Fundamentals — SQL for Data</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Data Analyst (DANL)</span>
+                <span><i class="fa-regular fa-clock"></i> 50 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>SQL for Data teaches database querying and data analysis using SQL. Students will master data analysis fundamentals, Docker containerization, SQL querying from basic SELECT statements to advanced joins and subqueries, data definition and manipulation, and business applications of SQL. The course uses practical datasets and tools (Docker, SQL Server, Azure Data Studio) to prepare data professionals for real-world analytics work. This course is foundational for all advanced data analysis paths.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Data Analysis and SQL Reporting Project</h2>
+            <div class="assessment-box">
+                <p>Students will complete a comprehensive assessment analyzing real-world datasets using SQL. The assessment requires writing complex queries with joins and subqueries, performing aggregations and grouping, creating data definitions, and translating business questions into SQL. Learners must demonstrate proficiency with database design, query optimization, and business-focused reporting.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Understand data analysis fundamentals and data-driven decision making</li>
+                <li>Model data and normalize databases</li>
+                <li>Set up and navigate SQL Server and development environments</li>
+                <li>Write SELECT queries with filtering and ordering</li>
+                <li>Perform aggregations and grouping operations</li>
+                <li>Work with date functions and calculations</li>
+                <li>Join multiple tables to combine data</li>
+                <li>Write subqueries for nested queries</li>
+                <li>Create and modify database objects (DDL)</li>
+                <li>Manipulate data (DML)</li>
+                <li>Apply SQL to business scenarios and reporting</li>
+                <li>Optimize queries and understand performance</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Introduction to Data Analysis</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Intro to Data Analysis</div>
+                    <ul class="topic-list">
+                        <li>What is data analysis and its role in organizations</li>
+                        <li>Data analyst career overview</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Data Analysis Types</div>
+                    <ul class="topic-list">
+                        <li>Descriptive analysis</li>
+                        <li>Diagnostic analysis</li>
+                        <li>Predictive analysis</li>
+                        <li>Prescriptive analysis</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: Data Modeling for Analysis</div>
+                    <ul class="topic-list">
+                        <li>Entity Relationship Diagrams (ERDs)</li>
+                        <li>Data dictionaries</li>
+                        <li>Designing analytical databases</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Code-Along: Data Modeling ERD</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 4: Normalization and Denormalization</div>
+                    <ul class="topic-list">
+                        <li>Normal forms (1NF, 2NF, 3NF)</li>
+                        <li>Denormalization for analytics</li>
+                        <li>Trade-offs between normalization and query performance</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Normalization and Denormalization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Docker and SQL Concepts</span>
+                    <span class="module-hours">6 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 5: Docker Fundamentals</div>
+                    <ul class="topic-list">
+                        <li>Containerization concepts</li>
+                        <li>Containers vs virtual machines</li>
+                        <li>Docker for data environments</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: Docker Commands and Concepts</div>
+                    <ul class="topic-list">
+                        <li>Common Docker commands</li>
+                        <li>Building and running containers</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Install: Docker Desktop</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 7: SQL Server Setup</div>
+                    <ul class="topic-list">
+                        <li>Installing SQL Server Express and Azure Data Studio</li>
+                        <li>Setting up sample databases</li>
+                        <li>Connecting and navigating Azure Data Studio</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">SQL Fundamentals</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 8: Basic SQL</div>
+                    <ul class="topic-list">
+                        <li>SELECT, FROM, ORDER BY</li>
+                        <li>Sorting results ascending and descending</li>
+                        <li>Limiting and offsetting results</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Basic SQL</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 9: Filtering SQL</div>
+                    <ul class="topic-list">
+                        <li>WHERE clause and conditions</li>
+                        <li>Comparison operators (&lt;, &gt;, =, !=, &lt;=, &gt;=)</li>
+                        <li>Logical operators (AND, OR, NOT)</li>
+                        <li>LIKE, IN, BETWEEN operators</li>
+                        <li>NULL handling</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Code-Along: Filtering SQL</li>
+                            <li>Exercise: Music Collection ERD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Advanced SQL</span>
+                    <span class="module-hours">6 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 10: Aggregates</div>
+                    <ul class="topic-list">
+                        <li>COUNT, SUM, AVG, MIN, MAX</li>
+                        <li>GROUP BY and HAVING clauses</li>
+                        <li>Aggregate expressions</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Code-Along: Aggregates</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 11: Date Handling</div>
+                    <ul class="topic-list">
+                        <li>Date data types and formats</li>
+                        <li>Date functions and arithmetic</li>
+                        <li>Filtering and grouping by date</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Date Handling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Joins and Subqueries</span>
+                    <span class="module-hours">10 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 12: Joins</div>
+                    <ul class="topic-list">
+                        <li>INNER JOIN: only matching records</li>
+                        <li>LEFT JOIN: all left records plus matches</li>
+                        <li>RIGHT JOIN: all right records plus matches</li>
+                        <li>FULL OUTER JOIN: all records from both tables</li>
+                        <li>Multi-table joins</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Code-Along: Joins</li>
+                            <li>Exercise: Music Collection Joins</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 13: Subqueries</div>
+                    <ul class="topic-list">
+                        <li>Subqueries in WHERE clause (scalar and IN)</li>
+                        <li>Subqueries in FROM clause (derived tables)</li>
+                        <li>Subqueries in SELECT clause</li>
+                        <li>Correlated subqueries</li>
+                        <li>Joins vs Subqueries</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Code-Along: Joins vs Subqueries</li>
+                            <li>Exercise: Adventure Works</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">Database Creation and Maintenance</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 14: DDL — Data Definition Language</div>
+                    <ul class="topic-list">
+                        <li>CREATE TABLE: defining structure</li>
+                        <li>Primary keys and foreign keys</li>
+                        <li>Constraints and indexes</li>
+                        <li>ALTER TABLE modifications</li>
+                        <li>DROP TABLE</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Code-Along: DDL</li>
+                            <li>Lab: DDL</li>
+                        </ul>
+                    </div>
+                    <div class="lesson-heading">Lesson: 15: DML — Data Manipulation Language</div>
+                    <ul class="topic-list">
+                        <li>INSERT: adding records</li>
+                        <li>UPDATE: modifying existing data</li>
+                        <li>DELETE: removing records</li>
+                        <li>Transaction management</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Code-Along: DML</li>
+                            <li>Code-Along: Import Export</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">7</span>
+                    <span class="module-title">SQL for Business</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 16: SQL for Business</div>
+                    <ul class="topic-list">
+                        <li>Business-oriented queries</li>
+                        <li>Translating business questions to SQL</li>
+                        <li>Creating reports and dashboards</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: SQL for Business</li>
+                            <li>Interactive: Assessment Prep for SQL</li>
+                            <li>Summative Assessment: Souvenirs Data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>SQL Query Writing: Master SELECT, WHERE, ORDER BY</li>
+                <li>Aggregation and Grouping: Summarize data by categories</li>
+                <li>Join Operations: Combine data from multiple tables</li>
+                <li>Subquery Usage: Write nested queries</li>
+                <li>Database Design: Create normalized database schemas</li>
+                <li>DDL Operations: Create and modify tables</li>
+                <li>DML Operations: Insert, update, and delete data</li>
+                <li>Music Collection Analysis: Multi-table queries</li>
+                <li>Adventure Works: Large real-world dataset</li>
+                <li>Business Reporting: Create business-focused queries</li>
+                <li>Souvenirs Data Assessment: Complete analysis project</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

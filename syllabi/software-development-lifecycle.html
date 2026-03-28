@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Software Development Lifecycle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Software Development Lifecycle</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Software Development Fundamentals</span>
+                <span><i class="fa-regular fa-clock"></i> 24 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Software Development Lifecycle introduces learners to the phases and methodologies of professional software development. Students will explore SDLC phases including planning, requirements, design, development, testing, deployment, and maintenance using a Personal Budgeting App as the project thread. The course covers popular SDLC models (Waterfall, Agile, Spiral, V-Model) and introduces Scrum methodology. This course prepares developers to work within structured software processes and understand the relationship between business needs and technical implementation.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: SDLC Application Project</h2>
+            <div class="assessment-box">
+                <p>Students will apply SDLC phases to develop a Personal Budgeting App or similar project. The assessment evaluates understanding of each phase, proper documentation, appropriate methodology selection, and ability to execute each SDLC stage. Learners must demonstrate understanding of how phases interconnect and how different methodologies approach software development differently.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Understand the seven SDLC phases and their purposes</li>
+                <li>Apply planning and requirements gathering for software projects</li>
+                <li>Create system designs including architecture and database models</li>
+                <li>Implement features according to specifications</li>
+                <li>Plan and execute testing strategies</li>
+                <li>Manage staging and production deployments</li>
+                <li>Understand maintenance and support requirements</li>
+                <li>Compare Waterfall, Agile, Spiral, V-Model, and Iterative approaches</li>
+                <li>Apply Scrum methodology effectively</li>
+                <li>Work within structured software development processes</li>
+                <li>Understand project management in software development</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Introduction to SDLC</span>
+                    <span class="module-hours">2 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Software Development Lifecycle Overview</div>
+                    <ul class="topic-list">
+                        <li>Phases of SDLC: Planning, Requirements, Design, Development, Testing, Deployment, Maintenance</li>
+                        <li>Structured approach to software development</li>
+                        <li>Alignment with business goals</li>
+                        <li>Iterative and sequential models</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">SDLC Phases in Practice</span>
+                    <span class="module-hours">16 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 2: SDLC — Planning (2.5 hours)</div>
+                    <ul class="topic-list">
+                        <li>Define project scope, objectives, and feasibility</li>
+                        <li>Identify resources, risks, and budget constraints</li>
+                        <li>Create a project roadmap</li>
+                        <li>Stakeholder analysis and communication</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: SDLC — Requirements (2.5 hours)</div>
+                    <ul class="topic-list">
+                        <li>Gather functional and non-functional requirements</li>
+                        <li>Requirements documentation</li>
+                        <li>User stories and acceptance criteria</li>
+                        <li>Prioritization and change management</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 4: SDLC — Design (3 hours)</div>
+                    <ul class="topic-list">
+                        <li>UI/UX design and wireframes</li>
+                        <li>System architecture (frontend, backend, database)</li>
+                        <li>Database design and data modeling</li>
+                        <li>Technical specifications</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 5: SDLC — Development (3 hours)</div>
+                    <ul class="topic-list">
+                        <li>Writing code according to design specifications</li>
+                        <li>Coding standards and best practices</li>
+                        <li>Version control and continuous integration</li>
+                        <li>Code reviews and collaboration</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: SDLC — Testing (3 hours)</div>
+                    <ul class="topic-list">
+                        <li>Unit testing, integration testing, system testing</li>
+                        <li>User Acceptance Testing (UAT)</li>
+                        <li>Test-driven development concepts</li>
+                        <li>Bug tracking and resolution</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 7: SDLC — Deployment (2.5 hours)</div>
+                    <ul class="topic-list">
+                        <li>Staging vs production environments</li>
+                        <li>Manual vs automated deployment</li>
+                        <li>Release notes and documentation</li>
+                        <li>Post-deployment monitoring</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: SDLC — Maintenance and Support (2 hours)</div>
+                    <ul class="topic-list">
+                        <li>Corrective, adaptive, perfective, and preventive maintenance</li>
+                        <li>Managing updates and bug fixes</li>
+                        <li>Performance improvements and user feedback</li>
+                        <li>End-of-life planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Methodologies &amp; Frameworks</span>
+                    <span class="module-hours">6 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 9: Popular SDLC Models (3 hours)</div>
+                    <ul class="topic-list">
+                        <li>Waterfall: sequential, predictable, phase-gated</li>
+                        <li>Agile: iterative, flexible, customer-focused</li>
+                        <li>Spiral: risk-driven, combines iteration with planning</li>
+                        <li>V-Model: testing at each phase</li>
+                        <li>Iterative: incremental releases</li>
+                        <li>Comparing approaches and trade-offs</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 10: How to Scrum (3 hours)</div>
+                    <ul class="topic-list">
+                        <li>Scrum fundamentals and Agile values</li>
+                        <li>Scrum roles: Product Owner, Scrum Master, Development Team</li>
+                        <li>Scrum events: Sprint Planning, Daily Standup, Sprint Review, Sprint Retrospective</li>
+                        <li>Scrum artifacts: Product Backlog, Sprint Backlog, Increment</li>
+                        <li>Implementing Scrum in real-world projects</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Project Planning: Define scope, objectives, and requirements for Personal Budgeting App</li>
+                <li>Requirements Documentation: Write user stories and acceptance criteria</li>
+                <li>System Design: Create architecture diagrams and database designs</li>
+                <li>Development: Implement features in iterations</li>
+                <li>Testing Strategy: Plan and execute tests at different levels</li>
+                <li>Deployment Planning: Plan staging and production release</li>
+                <li>Agile Sprint: Execute a two-week sprint using Scrum</li>
+                <li>Methodology Comparison: Choose appropriate methodology for scenarios</li>
+                <li>Project Retrospective: Reflect on lessons learned</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

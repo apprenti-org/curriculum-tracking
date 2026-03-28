@@ -1,0 +1,89 @@
+{
+  "course": "Advanced Python",
+  "totalHours": null,
+  "totalLessons": 14,
+  "totalModules": 9,
+  "modules": [
+    {
+      "name": "Introduction",
+      "hours": null,
+      "description": "Course introduction — what Advanced Python covers and an overview of OOP concepts.",
+      "lessons": [
+        { "title": "Course Introduction", "hours": null, "topics": ["Course overview and expectations", "Review of Python fundamentals", "Introduction to OOP concepts", "The \"everything is an object\" principle", "Scenario: modeling real-world objects as classes"] }
+      ]
+    },
+    {
+      "name": "Lambdas and Functional Programming",
+      "hours": null,
+      "description": "Anonymous functions, functional programming patterns, and data manipulation with lambdas.",
+      "lessons": [
+        { "title": "Lambdas", "hours": null, "topics": ["Lambda expressions and anonymous functions", "filter() — filtering iterables", "map() — applying functions to iterables", "reduce() — aggregating values", "Map-reduce pattern overview"] }
+      ]
+    },
+    {
+      "name": "Introduction to Object-Oriented Programming",
+      "hours": null,
+      "description": "OOP fundamentals, web scraping, and working with APIs.",
+      "lessons": [
+        { "title": "Intro to Object-Oriented Programming", "hours": null, "topics": ["What is OOP?", "Objects, properties, and behaviors", "Four pillars: encapsulation, abstraction, inheritance, polymorphism"] },
+        { "title": "Web Scraping", "hours": null, "topics": ["What is web scraping?", "Ethical and legal considerations", "Tools: requests, BeautifulSoup", "Scraping data from websites"] },
+        { "title": "Working with APIs", "hours": null, "topics": ["REST APIs and the requests library", "Consuming API data in Python", "Working with JSON responses", "API keys and authentication basics"] }
+      ]
+    },
+    {
+      "name": "Classes",
+      "hours": null,
+      "description": "Building classes in Python — creation through inheritance, composition, and interfaces.",
+      "lessons": [
+        { "title": "Classes Part 1", "hours": null, "topics": ["What are classes? Blueprints for objects", "Properties and behaviors", "Getters, setters, @property decorator", "Creating a basic class"] },
+        { "title": "Classes Part 2", "hours": null, "topics": ["Inheritance — building on existing classes", "Inheritance vs composition", "How Python handles interfaces", "Abstract classes"] }
+      ]
+    },
+    {
+      "name": "Magic Methods",
+      "hours": null,
+      "description": "Python dunder methods — object lifecycle, comparisons, and custom operator behavior.",
+      "lessons": [
+        { "title": "Magic Methods", "hours": null, "topics": ["What are magic methods (dunder methods)?", "__init__, __del__, __repr__, __str__", "Comparison methods: __eq__, __lt__, __gt__", "self and other keywords"] }
+      ]
+    },
+    {
+      "name": "Decorators",
+      "hours": null,
+      "description": "Extending functions and classes without modifying existing code.",
+      "lessons": [
+        { "title": "Decorators", "hours": null, "topics": ["What is a decorator? Syntactic sugar", "How decorators work", "Common uses of decorators", "Creating custom decorators"] }
+      ]
+    },
+    {
+      "name": "Generators and Iterators",
+      "hours": null,
+      "description": "Understanding iteration — iterators, generators, and itertools.",
+      "lessons": [
+        { "title": "Generators and Iterators", "hours": null, "topics": ["Iterators: __iter__, __next__", "Difference between iterators and generators", "Creating generators with yield", "The itertools module"] }
+      ]
+    },
+    {
+      "name": "Data Classes",
+      "hours": null,
+      "description": "Simplifying class creation for data-focused objects using dataclasses.",
+      "lessons": [
+        { "title": "Dataclasses", "hours": null, "topics": ["What is a data class?", "Variable annotations", "Creating basic data classes", "Data classes vs regular classes"] }
+      ]
+    },
+    {
+      "name": "Python and the Web",
+      "hours": null,
+      "description": "Applying Python to web-based tasks — HTTP services, JSON, and web scraping.",
+      "lessons": [
+        { "title": "Internet Services", "hours": null, "topics": ["Internet services foundations", "How the web works for Python developers"] },
+        { "title": "HTTP JSON Services", "hours": null, "topics": ["HTTP protocol overview", "JSON data format", "Web services foundations", "Consuming HTTP JSON services in Python"] }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Summative Assessment: Holiday Tracker",
+    "hours": null,
+    "items": ["Design a text-based Holiday Tracker application", "Create Holiday and HolidayList classes using OOP", "Load holidays from JSON and web scraping", "Apply magic methods, data classes, and API integration", "User interface for managing holidays"]
+  }
+}

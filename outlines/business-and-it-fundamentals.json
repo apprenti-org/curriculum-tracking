@@ -1,0 +1,87 @@
+{
+  "courseName": "Business and IT Fundamentals",
+  "totalHours": 40,
+  "totalModules": 9,
+  "totalLessons": 25,
+  "modules": [
+    {
+      "name": "Introduction to Business Forms and Market Systems",
+      "hours": 4,
+      "lessons": [
+        { "title": "Characteristics of Business Forms" },
+        { "title": "Overview of Market Systems" },
+        { "title": "Case Study – Comparing Business Forms in Market Systems" }
+      ]
+    },
+    {
+      "name": "Business Strategies and Goals",
+      "hours": 4,
+      "lessons": [
+        { "title": "Types of Business Strategies" },
+        { "title": "Setting and Evaluating SMART Goals" },
+        { "title": "Workshop – Developing Business Strategies and SMART Goals" }
+      ]
+    },
+    {
+      "name": "Business Opportunity Evaluation",
+      "hours": 4,
+      "lessons": [
+        { "title": "Identifying Opportunities" },
+        { "title": "Evaluating Alternatives" },
+        { "title": "Presenting an Evaluated Business Opportunity" }
+      ]
+    },
+    {
+      "name": "Business Scenario Analysis and Troubleshooting",
+      "hours": 4,
+      "lessons": [
+        { "title": "Common Business Challenges" },
+        { "title": "Tools for Analysis" },
+        { "title": "Case Analysis – Troubleshooting Business Scenarios" }
+      ]
+    },
+    {
+      "name": "Operational Unit Inputs and Outputs",
+      "hours": 4,
+      "lessons": [
+        { "title": "Tracing Workflows and Processes" },
+        { "title": "Input/Output Relationships" },
+        { "title": "Simulation – Creating and Analyzing a Workflow Map" }
+      ]
+    },
+    {
+      "name": "Business Process Modeling",
+      "hours": 4,
+      "lessons": [
+        { "title": "Overview of Modeling Languages" },
+        { "title": "Hands-On Practice" },
+        { "title": "Design a BPMN Diagram for a Business Workflow" }
+      ]
+    },
+    {
+      "name": "IT Infrastructure Basics",
+      "hours": 4,
+      "lessons": [
+        { "title": "Components of IT Infrastructure" },
+        { "title": "Role of IT in Business" },
+        { "title": "Discussion – Evaluating IT Infrastructure Needs" }
+      ]
+    },
+    {
+      "name": "Software Development Lifecycle (SDLC)",
+      "hours": 4,
+      "lessons": [
+        { "title": "Phases of SDLC" },
+        { "title": "Agile vs. Waterfall Methodologies" }
+      ]
+    },
+    {
+      "name": "Capstone Project – Comprehensive Business Analysis",
+      "hours": 8,
+      "lessons": [
+        { "title": "Integrating Course Concepts" },
+        { "title": "Comprehensive Business Analysis and Presentation" }
+      ]
+    }
+  ]
+}

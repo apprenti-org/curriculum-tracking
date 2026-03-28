@@ -1,0 +1,134 @@
+{
+  "course": "Introduction to HTML & CSS",
+  "totalHours": 40,
+  "totalLessons": 16,
+  "totalModules": 3,
+  "modules": [
+    {
+      "name": "Web Basics",
+      "hours": null,
+      "description": "Foundational concepts of the web including client-server architecture, file systems, and introductory HTML and CSS concepts.",
+      "lessons": [
+        {
+          "title": "Clients, Servers, and the Web",
+          "hours": null,
+          "topics": ["Client-server model", "How the web works", "HTTP basics", "Web browsers and servers"]
+        },
+        {
+          "title": "Files, Directories, and Paths",
+          "hours": null,
+          "topics": ["File systems", "Directory structures", "Absolute and relative paths", "File naming conventions"]
+        },
+        {
+          "title": "Introduction to HTML",
+          "hours": null,
+          "topics": ["HTML document structure", "HTML5 elements", "Tags and attributes", "Basic page creation"]
+        },
+        {
+          "title": "Introduction to CSS",
+          "hours": null,
+          "topics": ["CSS syntax", "Selectors", "Properties and values", "Linking stylesheets"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to HTML",
+      "hours": null,
+      "description": "Deep dive into HTML elements including block, inline, head, and media elements, as well as tables and forms.",
+      "lessons": [
+        {
+          "title": "Block Elements",
+          "hours": null,
+          "topics": ["Headings", "Paragraphs", "Divs", "Lists", "Semantic block elements"]
+        },
+        {
+          "title": "Inline Elements",
+          "hours": null,
+          "topics": ["Spans", "Links", "Strong and emphasis", "Inline semantic elements"]
+        },
+        {
+          "title": "Head Elements",
+          "hours": null,
+          "topics": ["Meta tags", "Title", "Link elements", "Script references", "SEO basics"]
+        },
+        {
+          "title": "Media Elements",
+          "hours": null,
+          "topics": ["Images", "Audio", "Video", "Figure and figcaption"]
+        },
+        {
+          "title": "HTML Tables",
+          "hours": null,
+          "topics": ["Table structure", "Table headers", "Rows and cells", "Spanning columns and rows", "Table accessibility"]
+        },
+        {
+          "title": "HTML Forms",
+          "hours": null,
+          "topics": ["Form elements", "Input types", "Labels", "Buttons", "Form attributes and actions"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to CSS",
+      "hours": null,
+      "description": "Comprehensive CSS coverage from processing and values through the box model, element styling, and responsive design.",
+      "lessons": [
+        {
+          "title": "CSS Processing",
+          "hours": null,
+          "topics": ["How browsers process CSS", "Cascade and specificity", "Inheritance", "CSS reset and normalize"]
+        },
+        {
+          "title": "CSS Values",
+          "hours": null,
+          "topics": ["Units of measurement", "Colors", "Keywords", "Functions", "Custom properties"]
+        },
+        {
+          "title": "CSS Box Model",
+          "hours": null,
+          "topics": ["Content, padding, border, margin", "Box-sizing", "Display property", "Width and height"]
+        },
+        {
+          "title": "Styling Common Elements",
+          "hours": null,
+          "topics": ["Typography", "Links", "Lists", "Backgrounds", "Borders"]
+        },
+        {
+          "title": "CSS Tables and Forms",
+          "hours": null,
+          "topics": ["Styling tables", "Styling form elements", "Custom form controls", "Layout techniques for forms"]
+        },
+        {
+          "title": "Responsive Web Design",
+          "hours": null,
+          "topics": ["Media queries", "Flexible layouts", "Viewport meta tag", "Mobile-first design", "Responsive images"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Static Web Site",
+    "hours": null,
+    "items": [
+      "Design and build a fully functional, responsive static web page",
+      "Publish project to GitHub repository",
+      "Instructions for Setting Up GitHub for Your Learning Project",
+      "Code-Along: Building a Basic HTML Page",
+      "Code-Along: Demonstrating Basic CSS Styling",
+      "Code-Along: Block Elements",
+      "Exercise: Block Elements",
+      "Code-Along: Inline Elements",
+      "Code-Along: Head Elements",
+      "Code-Along: Media Elements",
+      "Exercise: Recipe Page HTML Only",
+      "Exercise: Resume Page HTML Only",
+      "Code-Along: HTML Tables",
+      "Code-Along: Creating a Simple HTML Form",
+      "Code-Along: Add CSS to Recipe Page",
+      "Code-Along: CSS Box Model",
+      "Code-Along: Styling Common Elements",
+      "Code-Along: Styling a Form using CSS",
+      "Code-Along: Responsive Web Design"
+    ]
+  }
+}

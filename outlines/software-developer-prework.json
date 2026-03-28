@@ -1,0 +1,83 @@
+{
+  "course": "Software Developer Pre-Work",
+  "totalHours": 20,
+  "totalModules": 5,
+  "totalLessons": 10,
+  "modules": [
+    {
+      "module": 1,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "What is a Computer?",
+          "type": "lesson"
+        },
+        {
+          "title": "Understanding Operating Systems",
+          "type": "lesson"
+        }
+      ],
+      "name": "Basic Computer & OS Navigation"
+    },
+    {
+      "module": 2,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Navigating File Systems",
+          "type": "lesson"
+        },
+        {
+          "title": "Using the Internet Safely",
+          "type": "lesson"
+        }
+      ],
+      "name": "File Systems & Internet Use"
+    },
+    {
+      "module": 3,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "What is a Network?",
+          "type": "lesson"
+        },
+        {
+          "title": "Network Devices & Issues",
+          "type": "lesson"
+        }
+      ],
+      "name": "Networking Fundamentals"
+    },
+    {
+      "module": 4,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Installing Software Safely",
+          "type": "lesson"
+        },
+        {
+          "title": "Managing Software & Antivirus",
+          "type": "lesson"
+        }
+      ],
+      "name": "Installing & Managing Software"
+    },
+    {
+      "module": 5,
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Troubleshooting Scenarios",
+          "type": "lesson"
+        },
+        {
+          "title": "Final Challenge & Quiz",
+          "type": "activity"
+        }
+      ],
+      "name": "Practice, Troubleshooting & Final Check"
+    }
+  ]
+}

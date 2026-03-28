@@ -1,0 +1,96 @@
+{
+  "course": "Agile Project Management with Scrum",
+  "totalHours": 40,
+  "totalLessons": 32,
+  "totalModules": 8,
+  "modules": [
+    {
+      "name": "Introduction to Agile and Scrum",
+      "hours": 5,
+      "description": "Foundations of Agile philosophy, the Agile Manifesto, history of Scrum, comparison with traditional project management, and the Agile mindset.",
+      "lessons": [
+        { "title": "Agile Manifesto & Principles", "hours": 1.5, "topics": ["Overview of the Agile Manifesto", "The 4 values and 12 principles", "Why Agile was created and what it replaced", "Discussion: Applying Agile values to real projects", "Interactive activity: Agile Value Sorting"] },
+        { "title": "History and Evolution of Scrum", "hours": 1.5, "topics": ["Origins of Scrum (Takeuchi & Nonaka, Jeff Sutherland, Ken Schwaber)", "Timeline of Scrum development (from 1990s to present)", "Key publications and industry adoption", "Scrum's role in the Agile ecosystem", "Visual timeline creation (group task)"] },
+        { "title": "Comparing Agile to Traditional Project Management", "hours": 1.5, "topics": ["Waterfall vs Agile: life cycle, documentation, change management", "Project Triangle: Scope, Cost, Time in Agile vs Waterfall", "Case Study: Compare outcomes of a Waterfall vs Scrum project", "Group Discussion: Which model fits which type of project?"] },
+        { "title": "Agile Mindset & Team Culture", "hours": 1.5, "topics": ["What is the Agile mindset?", "Collaboration, trust, and self-organization", "Psychological safety in Scrum teams", "Team exercise: Role-play scenarios that build or break Agile culture", "Debrief discussion: Reflecting on your team's mindset"] }
+      ]
+    },
+    {
+      "name": "Scrum Framework Overview",
+      "hours": 5,
+      "description": "The foundational structure of Scrum — pillars, values, process flow, comparison with other Agile frameworks, and building effective Agile teams.",
+      "lessons": [
+        { "title": "Scrum Pillars and Values", "hours": 1.5, "topics": ["The 3 Pillars of Scrum: Transparency, Inspection, Adaptation", "The 5 Scrum Values: Commitment, Courage, Focus, Openness, Respect", "Group activity: Pillar vs Value Match", "Discussion: Why values matter more than processes"] },
+        { "title": "Scrum Process Flow", "hours": 1.5, "topics": ["The Scrum lifecycle: Sprint Planning to Retrospective", "Iterative vs Incremental development", "Delivering value in every Sprint", "Interactive diagram: Build the Scrum process map", "Simulation: A Day in the Life of a Scrum Team"] },
+        { "title": "Key Differences: Scrum vs Other Agile Frameworks", "hours": 1.5, "topics": ["Compare Scrum to: Kanban, XP, SAFe, Lean Software Development", "Side-by-side comparison table activity", "Pros and cons of each model", "Case study: Which framework fits which context?"] },
+        { "title": "Building Agile Teams", "hours": 1.5, "topics": ["Scrum Team characteristics: cross-functional, self-organizing, collaborative", "Ideal team size and composition", "Tuckman's Team Development Model in Scrum context", "Team exercise: Design Your Agile Dream Team", "Peer review: Present and critique each team's setup"] }
+      ]
+    },
+    {
+      "name": "Scrum Roles and Responsibilities",
+      "hours": 5,
+      "description": "The three core Scrum roles — Product Owner, Scrum Master, and Development Team — their responsibilities, interactions, and accountability.",
+      "lessons": [
+        { "title": "Product Owner — Vision, Backlog, Stakeholders", "hours": 1.5, "topics": ["Role of the Product Owner: product vision, backlog ownership, prioritization", "Acts as bridge between stakeholders and team", "Writing user stories, stakeholder engagement, backlog refinement", "Activity: Write a Product Vision Statement", "Scenario discussion: What happens when the PO is unavailable?"] },
+        { "title": "Scrum Master — Servant Leadership and Facilitation", "hours": 1.5, "topics": ["Scrum Master as: Coach, Facilitator, Impediment remover, Process guardian", "Misconceptions: Not a manager, not a project lead", "Facilitate ceremonies, shield team, foster Agile mindset", "Group activity: Scrum Master in Action role-play", "Discussion: What does servant leadership look like?"] },
+        { "title": "Development Team — Cross-functional Collaboration", "hours": 1.5, "topics": ["Self-organizing, cross-functional teams (3–9 members)", "Shared accountability and collective ownership", "Estimation, planning, delivering increments", "Exercise: Build a Dream Team", "Discussion: Transitioning from silos to cross-functional collaboration"] },
+        { "title": "Role Interactions and Accountability", "hours": 1.5, "topics": ["How three roles collaborate across Scrum events", "Common anti-patterns: PO as project manager, SM taking on tasks, devs ignoring backlog", "Activity: Analyze case studies to identify role conflict", "Group discussion: What makes accountability clear or confusing?"] }
+      ]
+    },
+    {
+      "name": "Scrum Ceremonies",
+      "hours": 5,
+      "description": "The five formal Scrum events — Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective — their purpose, structure, and best practices.",
+      "lessons": [
+        { "title": "Sprint Planning", "hours": 1.5, "topics": ["Purpose: Define Sprint Goal and deliverables", "Inputs: Product Backlog, team capacity, past performance", "Outputs: Sprint Goal, Sprint Backlog", "Format: Part 1 (What?) and Part 2 (How?)", "Activity: Simulate a Sprint Planning meeting", "Discussion: What makes a Sprint Goal effective?"] },
+        { "title": "Daily Scrum", "hours": 1.5, "topics": ["Purpose: Synchronize team activity toward Sprint Goal", "Format: 15-minute stand-up, same time/place daily", "Common format: What did I do? What will I do? Blockers?", "Anti-patterns: Status reporting, problem-solving during meeting", "Roleplay: Mock Daily Scrums with good and bad facilitation", "Tips for distributed/remote teams"] },
+        { "title": "Sprint Review", "hours": 1.5, "topics": ["Purpose: Inspect increment and adapt Product Backlog", "Who attends: Scrum Team + Stakeholders", "Structure: Demo, discuss, capture feedback", "Emphasis on working product, not slide decks", "Case Study: Sprint Review done right vs wrong", "Group Activity: Design a Sprint Review agenda"] },
+        { "title": "Sprint Retrospective", "hours": 1.5, "topics": ["Purpose: Inspect team process and plan improvements", "Who attends: Scrum Team only", "Structure: What went well? What didn't? What to improve?", "Techniques: Start/Stop/Continue, 4Ls, Sailboat, Mad/Sad/Glad", "Simulation: Conduct a team Retrospective", "Discussion: What prevents honest retrospectives?"] }
+      ]
+    },
+    {
+      "name": "Scrum Artifacts",
+      "hours": 5,
+      "description": "The three Scrum artifacts — Product Backlog, Sprint Backlog, and Increment — along with the Definition of Done and artifact transparency.",
+      "lessons": [
+        { "title": "Product Backlog", "hours": 1.5, "topics": ["Definition and purpose", "Owned and prioritized by the Product Owner", "Characteristics: emergent, ordered, prioritized by value", "Backlog items: epics, user stories, bugs, spikes", "Backlog Refinement: frequency, participants, techniques", "Activity: Refine a messy product backlog", "Best practices: INVEST criteria"] },
+        { "title": "Sprint Backlog", "hours": 1.5, "topics": ["Definition and ownership by Development Team", "Created during Sprint Planning", "Selected Product Backlog Items + plan for delivery", "Living document updated daily", "Task breakdown and estimation (story points, hours)", "Burn-down charts", "Group activity: Create a Sprint Backlog"] },
+        { "title": "Increment and Definition of Done", "hours": 1.5, "topics": ["The Increment: potentially shippable working software", "What makes an Increment done?", "Definition of Done (DoD): shared team agreement", "DoD vs Acceptance Criteria", "Examples of good and bad DoDs", "Activity: Write a DoD for a web application", "Discussion: How does a weak DoD affect quality?"] },
+        { "title": "Artifact Transparency and Refinement", "hours": 1.5, "topics": ["Importance of clear, visible, accessible artifacts", "Tools: Jira, Trello, Azure DevOps, ClickUp", "Risks of hidden or outdated artifacts", "Anti-patterns: stale backlogs, hidden work, inconsistent DoD", "Hands-on: Explore artifact tracking and visualization", "Peer Review: Share artifact setup and get feedback"] }
+      ]
+    },
+    {
+      "name": "Implementing Scrum in a Team",
+      "hours": 5,
+      "description": "Real-world Scrum adoption — organizational readiness, coaching teams, stakeholder management, and scaling Scrum across multiple teams.",
+      "lessons": [
+        { "title": "Preparing an Organization for Scrum", "hours": 1.5, "topics": ["Organizational mindset shift: from control to collaboration", "Identifying enablers and blockers in company culture", "Management's role in supporting self-organizing teams", "Agile Champions, Communities of Practice, and internal advocacy", "Activity: Scrum Readiness Assessment", "Discussion: Handling resistance to Agile practices"] },
+        { "title": "Forming and Coaching Scrum Teams", "hours": 1.5, "topics": ["Team formation: size, skill diversity, autonomy", "Importance of onboarding and goal alignment", "Coaching strategies for Scrum Masters", "Stages of team maturity (Tuckman model revisited)", "Workshop: Design a team launch plan", "Discussion: Balance between self-organization and guidance"] },
+        { "title": "Managing Stakeholders and Business Expectations", "hours": 1.5, "topics": ["Stakeholder mapping and communication strategy", "Balancing business priorities with team capacity", "Sprint Reviews as engagement tools", "Transparent reporting (velocity, burndown)", "Activity: Write a stakeholder communication plan", "Case Study: Agile stakeholder management successes and failures"] },
+        { "title": "Scaling Scrum with Multiple Teams", "hours": 1.5, "topics": ["When and why to scale Scrum", "Scaling frameworks: Nexus, Scrum@Scale, SAFe, LeSS", "Cross-team coordination and dependency management", "Shared Product Backlogs and integration strategies", "Activity: Create a coordination plan for 3 teams", "Discussion: Is scaling your first move or last resort?"] }
+      ]
+    },
+    {
+      "name": "Advanced Scrum Topics",
+      "hours": 5,
+      "description": "Metrics, technical debt management, Agile tooling, and adapting Scrum for complex or regulated environments.",
+      "lessons": [
+        { "title": "Metrics in Scrum — Velocity, Burn-down, Burn-up", "hours": 1.5, "topics": ["Velocity: what it is and what it isn't", "Burn-down vs Burn-up charts", "Cumulative Flow Diagrams (CFDs)", "Using metrics to inspect and adapt", "Misuse of metrics: vanity vs value", "Activity: Interpret sample Sprint data"] },
+        { "title": "Managing Technical Debt and Continuous Improvement", "hours": 1.5, "topics": ["What is technical debt? Causes and consequences", "Incorporating refactoring into Sprints", "Definition of Done and technical quality", "Continuous improvement through retrospectives and Kaizen", "Case Study: Ignored vs addressed technical debt", "Workshop: Create a technical debt reduction plan"] },
+        { "title": "Agile Tools (Jira, Trello, Azure Boards, etc.)", "hours": 1.5, "topics": ["Overview: Jira, Trello, Azure DevOps, ClickUp", "Tool comparison: strengths and use cases", "Setting up Scrum Boards: columns, workflows, labels", "Automations and reports", "Hands-on lab: Create a simple Scrum board", "Peer walkthrough: Showcase and critique tool setups"] },
+        { "title": "Adapting Scrum in Complex or Regulated Environments", "hours": 1.5, "topics": ["Challenges: compliance, documentation, integration with non-Agile teams", "Strategies for regulated industries (finance, healthcare, defense)", "Hybrid models: Water-Scrum-Fall", "Risk management and documentation in Scrum", "Scenario activity: Plan a Sprint for a regulated project", "Discussion: How far can you stretch Scrum?"] }
+      ]
+    },
+    {
+      "name": "Capstone Project and Certification Prep",
+      "hours": 5,
+      "description": "Course synthesis — review of core concepts, capstone sprint simulation, troubleshooting common Scrum issues, and certification readiness.",
+      "lessons": [
+        { "title": "Review of Core Concepts and Group Retrospective", "hours": 1.5, "topics": ["Facilitated recap: roles, ceremonies, artifacts, metrics, tools", "Group activity: Scrum Jeopardy or Quiz Bowl", "Team retrospective: What did we learn? What would we improve?", "Discussion: Which Scrum value was most relevant?"] },
+        { "title": "Final Capstone Sprint Simulation", "hours": 1.5, "topics": ["Simulation setup: form Scrum Teams with assigned roles", "Given a fictional product brief", "Sprint Execution: Planning, condensed Sprint, Review, Retrospective", "Real-time feedback from instructors or observers"] },
+        { "title": "Troubleshooting Common Scrum Issues", "hours": 1.5, "topics": ["Common problems: Scrum-but, role confusion, poor backlog management, stakeholder disengagement", "Problem-solving workshop: analyze scenarios, identify root causes", "Activity: Scrum Clinic — diagnose fictional team dysfunctions"] },
+        { "title": "Final Quiz, Peer Review, and Certification Readiness", "hours": 1.5, "topics": ["Final Quiz (15–20 questions): scenario-based, aligned to certification formats", "Peer review: Evaluate Capstone Sprint performance", "Certification overview: PSM, CSM, PMI-ACP", "Exam tips, prep strategies, and free resources"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "course": "Introduction to GitHub",
+  "totalHours": null,
+  "totalLessons": 4,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "Introduction to GitHub",
+      "hours": null,
+      "description": "Foundational tools of version control and collaborative development with Git and GitHub. Covers Git background, individual and group workflows, merge conflict resolution, and practical code-alongs.",
+      "lessons": [
+        {
+          "title": "Git Background",
+          "hours": null,
+          "topics": ["Git terms and concepts", "Version control fundamentals", "Git and the command line", "File systems and paths", "Git installation and GitHub account setup"]
+        },
+        {
+          "title": "GitHub for Individuals",
+          "hours": null,
+          "topics": ["Local and remote workflow", "Initializing repositories", "Commits and pushes", "Repository structure and README best practices"]
+        },
+        {
+          "title": "GitHub for Groups",
+          "hours": null,
+          "topics": ["Branching strategies", "Pull requests", "GitHub Issues", "Team collaboration workflows", "Project planning"]
+        },
+        {
+          "title": "Resolving Merge Conflicts",
+          "hours": null,
+          "topics": ["Understanding merge conflicts", "Resolving conflicts on GitHub", "Resolving conflicts on the command line", "Using diff tools"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Quizzes and Code-Alongs",
+    "hours": null,
+    "items": [
+      "Quiz: Git Background",
+      "Quiz: GitHub for Individuals",
+      "Quiz: GitHub for Groups",
+      "Quiz: Resolving Merge Conflicts",
+      "Code-Along: Introduction to GitHub (0.5h)",
+      "Exercise: Exploring GitHub (1h)",
+      "Code-Along: Local Repositories (1h)",
+      "Code-Along: Remote Repositories (0.75h)",
+      "Code-Along: GitHub Large File Storage (0.25h)",
+      "Code-Along: Using Git with Python (0.5h)"
+    ]
+  }
+}

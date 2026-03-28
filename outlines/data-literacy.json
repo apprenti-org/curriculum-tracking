@@ -1,0 +1,90 @@
+{
+  "course": "Data Fundamentals — Data Literacy",
+  "totalHours": 25,
+  "totalLessons": 19,
+  "totalModules": 7,
+  "modules": [
+    {
+      "name": "Introduction to Data",
+      "hours": null,
+      "description": "Define terms associated with the field of data. Discuss foundational data concepts. Explain how databases arrange information. Identify different data types.",
+      "lessons": [
+        { "title": "Intro to Data Literacy", "hours": null, "topics": ["Data, metadata, and information", "Data vs Big Data", "Data-driven decision making"] },
+        { "title": "Intro to Data-Driven Decision Making", "hours": null, "topics": ["Using data to inform decisions", "Business context for data"] },
+        { "title": "Database Types", "hours": null, "topics": ["Relational databases", "NoSQL databases", "Database terminology"] },
+        { "title": "Data Types", "hours": null, "topics": ["Structured vs unstructured data", "Quantitative vs qualitative", "Common data formats"] }
+      ]
+    },
+    {
+      "name": "Bias in Data",
+      "hours": null,
+      "description": "Explain bias. Discuss cognitive and statistical bias as they relate to data analysis. Describe where and when bias can occur and the associated risks.",
+      "lessons": [
+        { "title": "Introduction to Bias", "hours": null, "topics": ["What is bias", "Where bias occurs in data work", "Risks of bias"] },
+        { "title": "Cognitive Bias", "hours": null, "topics": ["Confirmation bias", "Anchoring bias", "Availability bias", "Impact on data analysis"] },
+        { "title": "Statistical Bias", "hours": null, "topics": ["Selection bias", "Sampling bias", "Measurement bias", "Impact on data analysis"] }
+      ]
+    },
+    {
+      "name": "Gathering Data",
+      "hours": null,
+      "description": "Identify file source types used in data storage. Explain databases in the context of data storage. Discuss online datasets and web scraping.",
+      "lessons": [
+        { "title": "File Sources", "hours": null, "topics": ["CSV, JSON, XML, Excel", "File formats and use cases"] },
+        { "title": "Databases", "hours": null, "topics": ["Databases as data storage", "Querying basics", "Database management systems"] },
+        { "title": "Online Datasets", "hours": null, "topics": ["Public datasets", "Data repositories", "Government and open data sources"] },
+        { "title": "Web Scraping", "hours": null, "topics": ["Web scraping concepts", "Ethical considerations", "Basic techniques"] }
+      ]
+    },
+    {
+      "name": "Questioning Data",
+      "hours": null,
+      "description": "Critically think about data. Differentiate between correlation and causation.",
+      "lessons": [
+        { "title": "Questioning Data", "hours": null, "topics": ["Critical thinking about data", "Validating data sources", "Asking the right questions"] },
+        { "title": "Correlation and Causation", "hours": null, "topics": ["Correlation vs causation", "Spurious correlations", "Drawing valid conclusions"] }
+      ]
+    },
+    {
+      "name": "Relational Data",
+      "hours": null,
+      "description": "Read tabular data. Define data modeling. Explain data relationships and normalization. Read entity-relationship diagrams.",
+      "lessons": [
+        { "title": "Tabular Data Vocabulary", "hours": null, "topics": ["Rows, columns, fields, records", "Reading tabular data"] },
+        { "title": "Data Modeling", "hours": null, "topics": ["Data modeling process", "Entity-relationship diagrams", "Conceptual vs logical vs physical models"] },
+        { "title": "Data Relationships", "hours": null, "topics": ["One-to-one", "One-to-many", "Many-to-many", "Self-referencing relationships"] },
+        { "title": "Data Normalization", "hours": null, "topics": ["Purpose of normalization", "First, second, and third normal forms", "Denormalization trade-offs"] }
+      ]
+    },
+    {
+      "name": "Data Visualizations",
+      "hours": null,
+      "description": "Identify visualization types. Explain pie chart limitations. Identify trends. Explain outliers and their impact.",
+      "lessons": [
+        { "title": "Visualization Types", "hours": null, "topics": ["Bar charts, line charts, scatter plots", "Choosing the right visualization", "Best practices"] },
+        { "title": "The Problem of Pie", "hours": null, "topics": ["Pie chart limitations", "When pie charts mislead", "Better alternatives"] },
+        { "title": "Identifying Trends", "hours": null, "topics": ["Trend lines", "Seasonal patterns", "Interpreting time series data"] },
+        { "title": "Understanding Outliers", "hours": null, "topics": ["What are outliers", "Impact on analysis", "When to include or exclude"] }
+      ]
+    },
+    {
+      "name": "Statistics",
+      "hours": null,
+      "description": "Apply statistical thinking. Identify abnormalities and trends using descriptive statistics. Explain probability and data uncertainty.",
+      "lessons": [
+        { "title": "Statistical Thinking", "hours": null, "topics": ["Statistical mindset", "Population vs sample", "Variability and uncertainty"] },
+        { "title": "Descriptive Statistics", "hours": null, "topics": ["Mean, median, mode", "Range, variance, standard deviation", "Distribution shapes"] },
+        { "title": "Introduction to Probability", "hours": null, "topics": ["Basic probability concepts", "Likelihood and uncertainty", "Using probability in data analysis"] }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Summative Assessment: Cooking by the Book",
+    "hours": null,
+    "items": [
+      "Capstone project applying all course concepts",
+      "Summative quiz (70 questions, 120 minutes)",
+      "Questions weighted by topic: Intro to Data (10), Bias (5), Gathering (10), Questioning (5), Relational (15), Visualizations (10), Statistics (15)"
+    ]
+  }
+}

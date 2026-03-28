@@ -1,0 +1,110 @@
+{
+  "course": "Introduction to Advanced Concepts in Java",
+  "totalHours": 40,
+  "totalLessons": 16,
+  "totalModules": 2,
+  "modules": [
+    {
+      "name": "File I/O and Design Patterns",
+      "hours": 20,
+      "description": "File reading and writing in Java, three-layer application architecture, repository and domain patterns, MVC pattern, service testing with test doubles, and dependency injection.",
+      "lessons": [
+        {
+          "title": "File I/O",
+          "hours": 2,
+          "topics": ["Reading from and writing to files in Java", "File class and file creation", "BufferedReader and BufferedWriter", "Appending vs. overwriting files", "Exception handling with file operations"]
+        },
+        {
+          "title": "Application Layers",
+          "hours": 2,
+          "topics": ["Three-layer architecture overview", "Separating concerns: data, domain, UI", "Packages and layer organization", "Benefits of layered design for maintainability"]
+        },
+        {
+          "title": "The Repository Pattern",
+          "hours": 2,
+          "topics": ["Repository pattern purpose and structure", "Abstracting data access with interfaces", "CRUD operations in a repository", "File-backed repository implementation"]
+        },
+        {
+          "title": "Testing the Repository",
+          "hours": 2,
+          "topics": ["Known good state for testing", "JUnit test setup for file-based repositories", "Arrange, Act, Assert pattern", "Testing CRUD operations"]
+        },
+        {
+          "title": "The Domain Layer",
+          "hours": 2,
+          "topics": ["Domain layer role and responsibilities", "Business rules and validation", "Service classes and business logic", "Separating domain logic from data access"]
+        },
+        {
+          "title": "Testing the Service",
+          "hours": 2,
+          "topics": ["Test doubles and stubs", "Isolating service tests from dependencies", "Testing business rules", "MemoryRepository as a test double"]
+        },
+        {
+          "title": "The MVC Pattern",
+          "hours": 2,
+          "topics": ["Model-View-Controller components", "Controller coordination between view and model", "View responsibility for user interaction", "Separation of UI from business logic"]
+        },
+        {
+          "title": "Dependency Injection",
+          "hours": 2,
+          "topics": ["Constructor injection vs. setter injection", "Loose coupling through abstractions", "Benefits of dependency injection", "Manual DI in Java applications"]
+        }
+      ]
+    },
+    {
+      "name": "Functional Idioms",
+      "hours": 20,
+      "description": "BigDecimal for precise financial calculations, temporal types for dates and times, Spring Framework and dependency injection with XML and annotation configuration, lambda expressions, and the Streams API.",
+      "lessons": [
+        {
+          "title": "BigDecimal",
+          "hours": 2,
+          "topics": ["Floating-point precision issues", "BigDecimal class for precise arithmetic", "BigDecimal operations: add, subtract, multiply, divide", "Rounding modes and scale", "Comparing BigDecimal values"]
+        },
+        {
+          "title": "Temporal Types in SQL",
+          "hours": 2,
+          "topics": ["SQL date and time data types", "FORMAT() function with dates", "Extracting date parts: YEAR, MONTH, DAY", "Date calculation functions: DATEDIFF, DATEADD", "Date formatting across database systems"]
+        },
+        {
+          "title": "Temporal Types in Java",
+          "hours": 2,
+          "topics": ["LocalDate, LocalTime, LocalDateTime", "OffsetDateTime and timezone handling", "DateTimeFormatter and formatting patterns", "Culture-based date formats with Locale", "Date calculations with ChronoUnit"]
+        },
+        {
+          "title": "Spring",
+          "hours": 2,
+          "topics": ["Spring Framework overview and ecosystem", "Spring projects: Framework, Data, Security, Boot", "Spring dependency injection concepts", "Inversion of Control (IoC) container", "Bean lifecycle and scopes"]
+        },
+        {
+          "title": "Spring DI with XML Configuration",
+          "hours": 2,
+          "topics": ["Spring XML configuration file structure", "Defining beans with <bean> elements", "Constructor and property injection in XML", "ClassPathXmlApplicationContext", "Wiring a three-layer architecture with XML"]
+        },
+        {
+          "title": "Three Layer Architecture DI with Annotations",
+          "hours": 2,
+          "topics": ["@Component, @Service, @Repository annotations", "@Autowired for automatic injection", "@ComponentScan configuration", "AnnotationConfigApplicationContext", "XML vs. annotation configuration comparison"]
+        },
+        {
+          "title": "Lambdas",
+          "hours": 3,
+          "topics": ["Functional programming concepts in Java", "Lambda expression syntax", "Functional interfaces and Predicate<T>", "Method references: Type::methodName", "Passing methods as arguments"]
+        },
+        {
+          "title": "Streams",
+          "hours": 3,
+          "topics": ["Streams API overview", "Stream creation and pipeline operations", "Intermediate operations: filter, map, sorted", "Terminal operations: collect, forEach, reduce", "Streams vs. iteration for data processing"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Summative Assessments",
+    "hours": null,
+    "items": [
+      "Summative Assessment: Sustainable Foraging",
+      "Summative Assessment: Airport Terminal Management System"
+    ]
+  }
+}

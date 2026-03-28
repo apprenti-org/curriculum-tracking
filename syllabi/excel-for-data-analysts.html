@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Data Fundamentals — Excel for Data Analysts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Data Fundamentals — Excel for Data Analysts</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Data Analyst (DANL)</span>
+                <span><i class="fa-regular fa-clock"></i> 50 hours</span>
+                <span class="badge">DRAFT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Excel for Data Analysts teaches practical data analysis and manipulation skills using Microsoft Excel. Students will master data organization, Power Query for ETL workflows, pivot tables, charting, geographic analysis, statistical analysis, and correlation calculations. The course focuses on transforming raw data into actionable insights through cleaning, aggregation, and visualization. This course enables data professionals to leverage Excel's powerful features for business analysis and reporting across various industries.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Restaurant Ratings Analysis Project</h2>
+            <div class="assessment-box">
+                <p>Students will complete a comprehensive data analysis project analyzing restaurant ratings data. The assessment requires proper data organization, Power Query cleaning and transformation, pivot table creation, multi-chart visualization, statistical analysis, and correlation calculations. Learners must demonstrate proficiency in ETL workflows, ability to interpret analytical results, and skills in presenting findings through Excel charts and summaries.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Organize data in Excel following best practices</li>
+                <li>Use Power Query for Extract-Transform-Load operations</li>
+                <li>Differentiate between data cleaning and transformation</li>
+                <li>Create and customize pivot tables for data summarization</li>
+                <li>Build charts and visualizations in Excel</li>
+                <li>Work with geographic data and maps</li>
+                <li>Apply the Data Analysis ToolPak for statistical analysis</li>
+                <li>Calculate correlation, rank, and percentile</li>
+                <li>Create probability distributions and histograms</li>
+                <li>Develop complete data analysis workflows in Excel</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Getting Started with Excel Data Analysis (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Organization in Excel</div>
+                    <ul class="topic-list">
+                        <li>Table structure and best practices</li>
+                        <li>Data validation and formatting</li>
+                        <li>Creating organized datasets for analysis</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Extract, Transform, and Load</div>
+                    <ul class="topic-list">
+                        <li>ETL workflow overview</li>
+                        <li>Data extraction, transformation, and loading processes</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Organization in Excel</li>
+                            <li>Exercise: Setting Up the Sample Database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Importing Data (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Importing Data</div>
+                    <ul class="topic-list">
+                        <li>Loading data from various sources</li>
+                        <li>Connecting to APIs and web services</li>
+                        <li>Handling different file formats</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Demo: Importing Data</li>
+                            <li>Exercise: Importing Data from API</li>
+                            <li>Exercise: Importing Data from Web</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Introduction to Power Query (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Intro to Power Query</div>
+                    <ul class="topic-list">
+                        <li>Power Query interface and capabilities</li>
+                        <li>Query Editor and transformation steps</li>
+                        <li>Custom and conditional columns</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Intro to Power Query</li>
+                            <li>Code Along: Power Query: Custom and Conditional Columns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Cleaning and Transforming Data (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Cleaning Data</div>
+                    <ul class="topic-list">
+                        <li>Removing duplicates and handling missing values</li>
+                        <li>Standardizing data formats</li>
+                        <li>Data quality assessment</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Transforming Data</div>
+                    <ul class="topic-list">
+                        <li>Column operations and aggregations</li>
+                        <li>Merging and splitting columns</li>
+                        <li>Pivoting and unpivoting data</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Cleaning Data</li>
+                            <li>Exercise: Transforming Data</li>
+                            <li>Code Along: Cleaning and Transforming Data</li>
+                            <li>Exercise: Transforming Data Goodreads</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Pivot Tables (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Creating Pivot Tables</div>
+                    <ul class="topic-list">
+                        <li>Pivot table fundamentals</li>
+                        <li>Arranging rows, columns, values, and filters</li>
+                        <li>Summarizing and aggregating data</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Creating Pivot Tables</li>
+                            <li>Exercise: Creating Pivot Tables WideWorldImporters</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">Creating Charts (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Creating Charts</div>
+                    <ul class="topic-list">
+                        <li>Chart types and selection</li>
+                        <li>Formatting and customizing charts</li>
+                        <li>Creating effective data visualizations</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Creating Charts</li>
+                            <li>Exercise: Creating Charts Cars93</li>
+                            <li>Code Along: Relationship Handling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">7</span>
+                    <span class="module-title">Geographic Data &amp; Data Exploration (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Working with Geographic Data</div>
+                    <ul class="topic-list">
+                        <li>Geographic visualization and mapping</li>
+                        <li>Geocoding and location-based analysis</li>
+                        <li>Regional and demographic analysis</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Kaggle Dataset Exploration</li>
+                            <li>Code Along: Geographic Data</li>
+                            <li>Exercise: Working with Geographic Data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">8</span>
+                    <span class="module-title">Data Analysis ToolPak and Correlation (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Intro to Data Analysis Toolpak</div>
+                    <ul class="topic-list">
+                        <li>Statistical analysis tools</li>
+                        <li>Enabling and using ToolPak features</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Descriptive Statistics</div>
+                    <ul class="topic-list">
+                        <li>Calculating mean, median, mode, standard deviation</li>
+                        <li>Understanding data distributions</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Covariance and Correlation</div>
+                    <ul class="topic-list">
+                        <li>Measuring relationships between variables</li>
+                        <li>Interpreting correlation coefficients</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Descriptive Statistics</li>
+                            <li>Demo: Correlation</li>
+                            <li>Exercise: Correlation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">9</span>
+                    <span class="module-title">Rank, Percentile, Probability Distributions, and Histograms (TBD Hours)</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: Rank and Percentile</div>
+                    <ul class="topic-list">
+                        <li>Ranking data and finding percentiles</li>
+                        <li>Comparing values within distributions</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: Probability Distributions and Histograms</div>
+                    <ul class="topic-list">
+                        <li>Creating histograms in Excel</li>
+                        <li>Understanding probability distributions</li>
+                        <li>Using NORM.DIST and related functions</li>
+                    </ul>
+                    <div class="activities">
+                        <div class="activities-label">Activities</div>
+                        <ul>
+                            <li>Exercise: Rank and Percentile</li>
+                            <li>Code Along: Histograms</li>
+                            <li>Exercise: Probability Distributions and Histograms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Data Organization: Structure datasets for optimal analysis</li>
+                <li>Power Query Workflows: Extract, transform, and load complex data</li>
+                <li>Pivot Table Analysis: Summarize and explore multidimensional data</li>
+                <li>Chart Creation: Visualize relationships and trends</li>
+                <li>Geographic Analysis: Analyze location-based data patterns</li>
+                <li>Statistical Analysis: Calculate descriptive statistics and relationships</li>
+                <li>Restaurant Ratings Project: Complete end-to-end data analysis</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

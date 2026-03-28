@@ -1,0 +1,70 @@
+{
+  "course": "Student Onboarding",
+  "totalHours": 8,
+  "totalModules": 7,
+  "totalLessons": 14,
+  "modules": [
+    {
+      "module": 1,
+      "name": "Course Introduction & Program Overview",
+      "hours": 1,
+      "lessons": [
+        { "title": "Welcome & Course Description", "type": "lesson" },
+        { "title": "Program Structure Overview", "type": "lesson" }
+      ]
+    },
+    {
+      "module": 2,
+      "name": "How to Be Successful — Learning Philosophy",
+      "hours": 1.5,
+      "lessons": [
+        { "title": "Learning Frameworks: PBL, Experiential, Growth Mindset, Self-Efficacy", "type": "lesson" },
+        { "title": "The Two-Week Rule & Brain vs. Muscle Memory", "type": "lesson" }
+      ]
+    },
+    {
+      "module": 3,
+      "name": "How to Learn — Skills & Strategies",
+      "hours": 1.5,
+      "lessons": [
+        { "title": "Working with Course Material", "type": "lesson" },
+        { "title": "How and When to Ask for Help", "type": "lesson" },
+        { "title": "The Engineer's Notebook", "type": "lesson" }
+      ]
+    },
+    {
+      "module": 4,
+      "name": "Instructor-Student Relationship & Feedback Model",
+      "hours": 1,
+      "lessons": [
+        { "title": "Instructor as Mentor and Guide", "type": "lesson" },
+        { "title": "The Feedback Loop: Read, Think, Sketch, Experiment", "type": "lesson" }
+      ]
+    },
+    {
+      "module": 5,
+      "name": "Tools & Account Setup",
+      "hours": 1.5,
+      "lessons": [
+        { "title": "LMS Access & Navigation", "type": "activity" },
+        { "title": "GitHub & Google Drive Setup", "type": "activity" }
+      ]
+    },
+    {
+      "module": 6,
+      "name": "Student Responsibility & Readiness",
+      "hours": 1,
+      "lessons": [
+        { "title": "Student Handbook & Policies Acknowledgement", "type": "activity" },
+        { "title": "Quiz: Student Onboarding", "type": "activity" },
+        { "title": "Quiz: How to Be Successful", "type": "activity" }
+      ]
+    },
+    {
+      "module": 7,
+      "name": "Making Learning Stick",
+      "hours": 0.5,
+      "lessons": []
+    }
+  ]
+}

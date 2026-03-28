@@ -1,0 +1,165 @@
+{
+  "course": "Non-Relational Data",
+  "totalHours": 50,
+  "totalLessons": 21,
+  "totalModules": 7,
+  "modules": [
+    {
+      "name": "Course Introduction",
+      "hours": 2,
+      "description": "Pre-assessment, welcome video, scenario, and course introduction.",
+      "lessons": [
+        {
+          "title": "Course Introduction",
+          "hours": 2,
+          "topics": ["Pre-Assessment for Non-Relational Data", "Video Welcome", "Scenario: Non-Relational Data", "Course Introduction"]
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Non-Relational Data",
+      "hours": 5,
+      "description": "Environment setup including Python, Jupyter Notebooks, VS Code, and Docker for non-relational databases.",
+      "lessons": [
+        {
+          "title": "Intro to Python",
+          "hours": 2,
+          "topics": ["Connection strings resource", "Introduction to Python for data work"]
+        },
+        {
+          "title": "Environment Setup",
+          "hours": 3,
+          "topics": ["Install Python and package managers", "Install Jupyter Notebooks and VS Code", "Installing the Nonrelational Docker Image"]
+        }
+      ]
+    },
+    {
+      "name": "NoSQL and Key-Value Stores",
+      "hours": 10,
+      "description": "Introduction to NoSQL concepts, key-value store fundamentals, and hands-on work with Azure Data Explorer and Python.",
+      "lessons": [
+        {
+          "title": "Intro to NoSQL",
+          "hours": 2,
+          "topics": ["NoSQL database types and use cases", "When to use NoSQL vs relational databases"]
+        },
+        {
+          "title": "Key-Value Stores",
+          "hours": 2,
+          "topics": ["Key-value store concepts", "Common key-value database platforms"]
+        },
+        {
+          "title": "Key-Value Stores in Azure — Azure Data Explorer",
+          "hours": 2,
+          "topics": ["Azure Data Explorer for key-value operations", "Airports dataset exercises"]
+        },
+        {
+          "title": "Key-Value Stores in Azure — Python",
+          "hours": 2,
+          "topics": ["Querying key-value stores with Python", "Azure Table and MongoDB API demo"]
+        },
+        {
+          "title": "ERD and Join Query Exercise",
+          "hours": 2,
+          "topics": ["Rank ERD and join query exercises"]
+        }
+      ]
+    },
+    {
+      "name": "Document Databases",
+      "hours": 12,
+      "description": "Document database fundamentals with hands-on Azure Data Explorer and Python exercises using Airports and Cars93 datasets.",
+      "lessons": [
+        {
+          "title": "Document Databases",
+          "hours": 2,
+          "topics": ["Document database concepts", "JSON and BSON document formats"]
+        },
+        {
+          "title": "Document Databases in Azure — Azure Data Explorer",
+          "hours": 3,
+          "topics": ["Querying document databases with Azure Data Explorer", "Airports and Cars93 dataset exercises"]
+        },
+        {
+          "title": "Document Databases in Azure — Python",
+          "hours": 3,
+          "topics": ["Querying document databases with Python", "Airports and Cars93 Python exercises"]
+        },
+        {
+          "title": "Research: Key-Value Stores and Document Databases",
+          "hours": 4,
+          "topics": ["Comparative research exercise", "When to use key-value vs document databases"]
+        }
+      ]
+    },
+    {
+      "name": "Column Stores",
+      "hours": 8,
+      "description": "Columnar database fundamentals with Azure Python exercises using Airports and Cars datasets.",
+      "lessons": [
+        {
+          "title": "Column Stores",
+          "hours": 3,
+          "topics": ["Columnar database concepts", "When to use column stores"]
+        },
+        {
+          "title": "Column Stores in Azure — Python",
+          "hours": 5,
+          "topics": ["Querying column stores with Python", "Airports and Cars dataset exercises"]
+        }
+      ]
+    },
+    {
+      "name": "Graph Databases",
+      "hours": 10,
+      "description": "Graph database fundamentals with Azure Data Explorer and Python exercises using Airports and Astronauts datasets.",
+      "lessons": [
+        {
+          "title": "Graph Databases",
+          "hours": 2,
+          "topics": ["Graph database concepts", "Nodes, edges, and relationships"]
+        },
+        {
+          "title": "Graph Databases in Azure — Azure Data Explorer",
+          "hours": 2,
+          "topics": ["Querying graph databases with Azure Data Explorer", "Airports CSV Graph Database demo"]
+        },
+        {
+          "title": "Research: Column Stores and Graph Databases",
+          "hours": 2,
+          "topics": ["Comparative research exercise"]
+        },
+        {
+          "title": "Graph Databases in Azure — Exercises",
+          "hours": 2,
+          "topics": ["Airports graph database exercises", "Astronauts graph database exercises"]
+        },
+        {
+          "title": "Graph Databases in Azure — Python",
+          "hours": 2,
+          "topics": ["Airports Python exercises", "Astronauts Python exercises"]
+        }
+      ]
+    },
+    {
+      "name": "Summative",
+      "hours": 3,
+      "description": "Assessment preparation and summative assessment for non-relational data.",
+      "lessons": [
+        {
+          "title": "Assessment Preparation and Summative",
+          "hours": 3,
+          "topics": ["Interactive assessment preparation", "Summative assessment: Non-Relational Data"]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Non-Relational Data Summative Assessment",
+    "hours": 3,
+    "items": [
+      "Interactive assessment preparation",
+      "Summative assessment covering NoSQL, key-value stores, document databases, column stores, and graph databases"
+    ]
+  }
+}

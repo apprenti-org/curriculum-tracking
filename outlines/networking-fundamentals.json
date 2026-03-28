@@ -1,0 +1,125 @@
+{
+  "courseName": "Networking Fundamentals",
+  "totalHours": 220,
+  "totalModules": 6,
+  "totalLessons": 25,
+  "modules": [
+    {
+      "name": "Networking Concepts",
+      "hours": 48,
+      "lessons": [
+        {
+          "title": "OSI Model & Network Communication"
+        },
+        {
+          "title": "Networking Appliances & Applications"
+        },
+        {
+          "title": "Cloud Concepts & Connectivity"
+        },
+        {
+          "title": "Network Ports, Protocols, & Services"
+        },
+        {
+          "title": "Transmission Media & Network Topologies"
+        },
+        {
+          "title": "IPv4 Addressing & Modern Network Use Cases"
+        },
+        {
+          "title": "Modern Cloud & Virtual Networking"
+        }
+      ]
+    },
+    {
+      "name": "Network Implementation",
+      "hours": 40,
+      "lessons": [
+        {
+          "title": "Routing Technologies & Protocols"
+        },
+        {
+          "title": "Switching Technologies & Features"
+        },
+        {
+          "title": "Wireless Networking"
+        },
+        {
+          "title": "Physical Network Installation"
+        },
+        {
+          "title": "IPv4 & IPv6 Network Services"
+        }
+      ]
+    },
+    {
+      "name": "Network Operations",
+      "hours": 40,
+      "lessons": [
+        {
+          "title": "Organizational Processes & Procedures"
+        },
+        {
+          "title": "Network Monitoring Tools & Technologies"
+        },
+        {
+          "title": "Disaster Recovery (DR) Concepts"
+        },
+        {
+          "title": "Network Access & Management"
+        }
+      ]
+    },
+    {
+      "name": "Network Security",
+      "hours": 40,
+      "lessons": [
+        {
+          "title": "Network Security Principles"
+        },
+        {
+          "title": "Types of Network Attacks"
+        },
+        {
+          "title": "Network Defense Techniques"
+        },
+        {
+          "title": "Securing Network Traffic & Devices"
+        }
+      ]
+    },
+    {
+      "name": "Network Troubleshooting",
+      "hours": 40,
+      "lessons": [
+        {
+          "title": "Troubleshooting Methodology"
+        },
+        {
+          "title": "Common Cabling & Physical Issues"
+        },
+        {
+          "title": "Troubleshooting Network Services"
+        },
+        {
+          "title": "Performance Issues & Tools"
+        },
+        {
+          "title": "Advanced Troubleshooting with Tools & Protocols"
+        }
+      ]
+    },
+    {
+      "name": "Assessment & Exam Preparation",
+      "hours": 12,
+      "lessons": [
+        {
+          "title": "Practice Exams & Simulation Labs"
+        },
+        {
+          "title": "Final Review & Exam Strategies"
+        }
+      ]
+    }
+  ]
+}
