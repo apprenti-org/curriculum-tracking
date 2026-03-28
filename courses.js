@@ -1,4 +1,6 @@
 // Auto-generated from courses.json — do not edit directly
+var dashboardVersion = "0.1.0";
+
 const courseData = [
   {
     "id": "advanced-python",

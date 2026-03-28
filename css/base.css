@@ -20,8 +20,19 @@ header {
     align-items: center;
 }
 
-header h1 { font-size: 20px; font-weight: 600; color: var(--text-primary); }
+header h1 { font-size: 20px; font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0; }
 header p { color: var(--text-secondary); font-size: 13px; margin-top: 2px; }
+
+/* Version badge — shown next to page title */
+.version-badge {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.3px;
+    color: var(--text-muted); background: var(--surface-raised);
+    border: 1px solid var(--border); border-radius: 4px;
+    padding: 2px 8px; margin-left: 10px;
+    vertical-align: middle; white-space: nowrap;
+    cursor: default; user-select: none;
+}
+.version-badge:empty { display: none; }
 
 .header-actions { display: flex; align-items: center; gap: 12px; }
 
