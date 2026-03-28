@@ -41,8 +41,16 @@
         <p>Curriculum Management System — Phase 1 &middot; Status is editable in this view (changes are session-only)</p>
     </footer>
 
+    <!-- Data bundle (auto-generated — do not edit) -->
     <script src="courses.js"></script>
+    <!-- Shared: theme, constants, data store, formatters -->
     <script src="js/theme.js"></script>
-    <script src="js/status-main.js"></script>
+    <script src="js/shared/constants.js"></script>
+    <script src="js/shared/data-store.js"></script>
+    <script src="js/shared/formatters.js"></script>
+    <!-- Status: summary → table → init (order matters) -->
+    <script src="js/status/summary.js"></script>
+    <script src="js/status/table.js"></script>
+    <script src="js/status/init.js"></script>
 </body>
 </html>

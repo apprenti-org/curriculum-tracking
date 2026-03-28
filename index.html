@@ -49,9 +49,18 @@
         </div>
     </div>
 
+    <!-- Data bundles (auto-generated — do not edit) -->
     <script src="outlines/outlines.js"></script>
     <script src="courses.js"></script>
+    <!-- Shared: theme, constants, data store, formatters -->
     <script src="js/theme.js"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/shared/constants.js"></script>
+    <script src="js/shared/data-store.js"></script>
+    <script src="js/shared/formatters.js"></script>
+    <!-- Dashboard: nav builder → outline renderer → detail panel → init (order matters) -->
+    <script src="js/dashboard/nav-builder.js"></script>
+    <script src="js/dashboard/outline-renderer.js"></script>
+    <script src="js/dashboard/detail-panel.js"></script>
+    <script src="js/dashboard/init.js"></script>
 </body>
 </html>
