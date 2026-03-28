@@ -70,44 +70,34 @@ Each course entry in `courses.json` includes name, hours, design/development sta
 
 58 HTML syllabi are generated from markdown source files in each course folder and stored in `syllabi/`. The `syllabiMap` object in `index.html` maps course names to HTML filenames. The batch converter script `convert-syllabi.js` reads all `syllabus-*.md` files from course folders and generates styled HTML pages matching the dashboard dark theme.
 
+### Build system
+
+The build system validates data and regenerates `courses.js` and `outlines/outlines.js` from the JSON source files. No dependencies required — pure Node.js.
+
+```bash
+cd tracking/repo
+node build.js            # Build everything
+node build.js --validate # Validate only, no file generation
+node build.js --watch    # Watch for changes and rebuild
+node build.js --verbose  # Show detailed output
+```
+
+Or with npm scripts:
+
+```bash
+npm run build
+npm run validate
+npm run build:watch
+npm run build:verbose
+```
+
 ### Regenerating syllabi
+
+Syllabi are generated separately from the main build:
 
 ```bash
 cd tracking/repo
 node convert-syllabi.js
-```
-
-### Regenerating courses.js
-
-```bash
-cd tracking/repo
-node -e "
-const fs = require('fs');
-const data = JSON.parse(fs.readFileSync('courses.json', 'utf8'));
-let js = '// Auto-generated from courses.json — do not edit directly\n';
-js += 'const courseData = ' + JSON.stringify(data.courses, null, 2) + ';\n\n';
-js += 'const curriculaData = ' + JSON.stringify(data.curricula, null, 2) + ';\n\n';
-js += 'const courseStatusMap = {};\n';
-js += 'courseData.forEach(c => { courseStatusMap[c.name] = c; });\n';
-fs.writeFileSync('courses.js', js);
-"
-```
-
-### Regenerating outlines/outlines.js
-
-```bash
-cd tracking/repo/outlines
-node -e "
-const fs = require('fs');
-const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
-let js = '// Auto-generated from outline JSON files — do not edit directly\n';
-js += 'const courseOutlines = {};\n\n';
-manifest.forEach(entry => {
-  const data = JSON.parse(fs.readFileSync(entry.file, 'utf8'));
-  js += 'courseOutlines[' + JSON.stringify(entry.course) + '] = ' + JSON.stringify(data, null, 2) + ';\n\n';
-});
-fs.writeFileSync('outlines.js', js);
-"
 ```
 
 ## Adding a new course (workflow)
@@ -134,6 +124,10 @@ Design and development status fields use these values: "Not Started", "Scoping",
 | `status.html` | Design & dev status — flat course table with membership tags, clickable status pills, progress bars |
 | `courses.json` | Single source of truth for all course and curriculum data |
 | `courses.js` | Auto-generated JS bundle exporting `courseData`, `curriculaData`, `courseStatusMap` |
+| `build.js` | Build system — validates data and regenerates JS bundles from JSON sources |
+| `lib/generators.js` | Shared generation functions for courses.js and outlines.js |
+| `lib/validators.js` | Data validation — schema checks, cross-references, file existence |
+| `package.json` | npm scripts for build, validate, watch |
 | `convert-syllabi.js` | Batch converter — reads syllabus markdown files and generates styled HTML pages |
 | `outlines/manifest.json` | Maps outline filenames to course names |
 | `outlines/*.json` | Individual course outline data files (45 files) |

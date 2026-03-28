@@ -1,0 +1,12 @@
+{
+  "name": "curriculum-tracking",
+  "version": "1.0.0",
+  "description": "RTI Academy curriculum tracking dashboard",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "build:watch": "node build.js --watch",
+    "validate": "node build.js --validate",
+    "build:verbose": "node build.js --verbose"
+  }
+}
