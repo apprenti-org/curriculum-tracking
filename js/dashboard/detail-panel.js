@@ -3,7 +3,7 @@
  * Depends on: courseOutlines (from outlines/outlines.js)
  *             courseLookup, curriculumMap (from nav-builder.js)
  *             courseStatusMap (from courses.js)
- *             syllabiMap (from shared/constants.js)
+ *             syllabiMap, gapAnalysisMap, GAP_ANALYSIS_DRIVE_FOLDER (from shared/constants.js)
  *             renderOutline, renderNoOutline (from outline-renderer.js)
  *
  * Exposes: selectCourse()
@@ -102,6 +102,10 @@ function renderRefLinks(course, courseName, outlineData) {
     if (outline) {
         var iconColor = hasOutlineData ? 'color:#4caf50;' : 'opacity:0.5;';
         html += '<span><i class="fa-solid fa-list-ul" style="' + iconColor + '"></i> Outline</span>';
+    }
+
+    if (gapAnalysisMap[courseName]) {
+        html += '<a href="' + GAP_ANALYSIS_DRIVE_FOLDER + '" target="_blank" class="ref-link gap-link"><i class="fa-solid fa-magnifying-glass-chart" style="color:#ff9800;"></i> Gap Analysis</a>';
     }
 
     if (course.driveFolder) {

@@ -1,6 +1,6 @@
 /**
  * Status page data table — filter chips, course rows, status dropdowns
- * Depends on: STATUSES, STATUS_CLASSES (from shared/constants.js)
+ * Depends on: STATUSES, STATUS_CLASSES, gapAnalysisMap, GAP_ANALYSIS_DRIVE_FOLDER (from shared/constants.js)
  *             contentData, allCurricula, activeFilter, activeDropdown (from status/init.js)
  *             buildMembershipHTML (from shared/formatters.js)
  *
@@ -22,8 +22,11 @@ function renderTable() {
 
     var rows = filtered.map(function(item) {
         var realIdx = contentData.indexOf(item);
+        var gapLink = gapAnalysisMap[item.name]
+            ? ' <a href="' + GAP_ANALYSIS_DRIVE_FOLDER + '" target="_blank" class="gap-icon-link" title="Gap Analysis Report"><i class="fa-solid fa-magnifying-glass-chart"></i></a>'
+            : '';
         return '<tr>' +
-            '<td><span class="cell-name">' + item.name + '</span></td>' +
+            '<td><span class="cell-name">' + item.name + '</span>' + gapLink + '</td>' +
             '<td class="membership-cell">' + buildMembershipHTML(item.membership) + '</td>' +
             '<td class="cell-hours">' + (item.hours || '\u2014') + '</td>' +
             '<td class="status-cell">' +
