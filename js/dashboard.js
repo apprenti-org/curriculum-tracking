@@ -67,9 +67,12 @@ const syllabiMap = {
     'Web Development with JavaScript and React': 'web-dev-javascript-react.html'
 };
 
-// Build a lookup map: course name → course object
+// Build a lookup map: course name and id → course object
 const courseLookup = {};
-courseData.forEach(c => { courseLookup[c.name] = c; });
+courseData.forEach(c => {
+    courseLookup[c.name] = c;
+    if (c.id) courseLookup[c.id] = c;
+});
 
 // Build curriculum membership map from curriculaData
 let curriculumMap = {};
@@ -104,9 +107,10 @@ function buildDashboard() {
             cur.groups.forEach(g => {
                 items.push({ _group: g.name, _hours: g.hours || null });
                 g.courses.forEach(gc => {
-                    const base = courseLookup[gc.name] || {};
+                    const base = courseLookup[gc.id] || courseLookup[gc.name] || {};
                     items.push({
                         _name: gc.name,
+                        _id: gc.id || base.id || '',
                         _hours: gc.hoursOverride || base.hours || null,
                         _syllabus: base.syllabus || null,
                         _outline: base.outline || null,
@@ -116,9 +120,10 @@ function buildDashboard() {
             });
         } else if (cur.courses) {
             cur.courses.forEach(cc => {
-                const base = courseLookup[cc.name] || {};
+                const base = courseLookup[cc.id] || courseLookup[cc.name] || {};
                 items.push({
                     _name: cc.name,
+                    _id: cc.id || base.id || '',
                     _hours: cc.hoursOverride || base.hours || null,
                     _syllabus: base.syllabus || null,
                     _outline: base.outline || null,
@@ -185,9 +190,10 @@ function buildCurriculumSummary(name, items, syllabus) {
                 inGroup = true;
             } else {
                 const cName = c._name;
+                const cId = c._id || '';
                 const hours = c._hours;
                 const si = courseStatusIcon(cName);
-                html += `<div class="nav-course-item" data-course-name="${cName}">
+                html += `<div class="nav-course-item" data-course-name="${cName}" data-course-id="${cId}">
                     <i class="fa-solid ${si.icon} status-dot ${si.cls}" style="font-size:10px;" title="${si.label}"></i>
                     <span class="nav-course-name">${cName}</span>
                     ${hours ? `<span class="nav-course-hours"><i class="fa-regular fa-clock" style="font-size:9px;opacity:0.6;margin-right:2px;"></i>${hours}h</span>` : ''}
@@ -202,9 +208,10 @@ function buildCurriculumSummary(name, items, syllabus) {
 
 function buildNavItemFromCourse(course) {
     const name = course.name;
+    const id = course.id || '';
     const hours = course.hours;
     const si = courseStatusIcon(name);
-    return `<div class="nav-course-item" data-course-name="${name}">
+    return `<div class="nav-course-item" data-course-name="${name}" data-course-id="${id}">
         <i class="fa-solid ${si.icon} status-dot ${si.cls}" style="font-size:10px;" title="${si.label}"></i>
         <span class="nav-course-name">${name}</span>
         ${hours ? `<span class="nav-course-hours"><i class="fa-regular fa-clock" style="font-size:9px;opacity:0.6;margin-right:2px;"></i>${hours}h</span>` : ''}
@@ -216,7 +223,8 @@ function selectCourse(el) {
     el.classList.add('active');
 
     const courseName = el.dataset.courseName;
-    const course = courseLookup[courseName] || {};
+    const courseId = el.dataset.courseId;
+    const course = (courseId && courseLookup[courseId]) || courseLookup[courseName] || {};
     const detail = document.getElementById('detail-panel');
 
     let html = '';

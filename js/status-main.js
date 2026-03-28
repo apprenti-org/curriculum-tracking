@@ -13,26 +13,29 @@ curriculaData.forEach(cur => {
     if (cur.groups) {
         cur.groups.forEach(g => {
             g.courses.forEach(gc => {
-                if (!membershipMap[gc.name]) membershipMap[gc.name] = [];
-                membershipMap[gc.name].push({ curriculum: curName, group: g.name, hoursOverride: gc.hoursOverride || undefined });
+                const key = gc.id || gc.name;
+                if (!membershipMap[key]) membershipMap[key] = [];
+                membershipMap[key].push({ curriculum: curName, group: g.name, hoursOverride: gc.hoursOverride || undefined });
             });
         });
     } else if (cur.courses) {
         cur.courses.forEach(cc => {
-            if (!membershipMap[cc.name]) membershipMap[cc.name] = [];
-            membershipMap[cc.name].push({ curriculum: curName, group: undefined, hoursOverride: cc.hoursOverride || undefined });
+            const key = cc.id || cc.name;
+            if (!membershipMap[key]) membershipMap[key] = [];
+            membershipMap[key].push({ curriculum: curName, group: undefined, hoursOverride: cc.hoursOverride || undefined });
         });
     }
 });
 
 const contentData = courseData.map(c => ({
+    id: c.id || '',
     name: c.name,
     type: 'Course',
     hours: c.hours,
     designStatus: c.status.design,
     devStatus: c.status.development,
     note: c.note || '',
-    membership: membershipMap[c.name] || []
+    membership: membershipMap[c.id] || membershipMap[c.name] || []
 }));
 
 let activeFilter = 'all';
