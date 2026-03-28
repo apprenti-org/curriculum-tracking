@@ -19,9 +19,13 @@ const path = require('path');
 const { generateCourseBundle, generateOutlineBundle } = require('./lib/generators');
 const { validateSchema, validateReferences, validateSyllabusFiles, validateOutlineFiles } = require('./lib/validators');
 
+// Read version from package.json
+const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'), 'utf8'));
+
 // Configuration — all paths relative to repo root
 const BUILD_CONFIG = {
   rootDir: __dirname,
+  version: pkg.version,
   source: 'courses.json',
   outlineManifest: 'outlines/manifest.json',
 
