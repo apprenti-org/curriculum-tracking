@@ -1,8 +1,8 @@
 {
   "course": "Advanced Python",
   "totalHours": null,
-  "totalLessons": 14,
-  "totalModules": 9,
+  "totalLessons": 13,
+  "totalModules": 8,
   "modules": [
     {
       "name": "Introduction",
@@ -13,18 +13,11 @@
       ]
     },
     {
-      "name": "Lambdas and Functional Programming",
+      "name": "Introduction to Advanced Python and Object-Oriented Programming",
       "hours": null,
-      "description": "Anonymous functions, functional programming patterns, and data manipulation with lambdas.",
+      "description": "Anonymous functions, functional programming patterns, OOP fundamentals, web scraping, and working with APIs.",
       "lessons": [
-        { "title": "Lambdas", "hours": null, "topics": ["Lambda expressions and anonymous functions", "filter() — filtering iterables", "map() — applying functions to iterables", "reduce() — aggregating values", "Map-reduce pattern overview"] }
-      ]
-    },
-    {
-      "name": "Introduction to Object-Oriented Programming",
-      "hours": null,
-      "description": "OOP fundamentals, web scraping, and working with APIs.",
-      "lessons": [
+        { "title": "Lambdas", "hours": null, "topics": ["Lambda expressions and anonymous functions", "filter() — filtering iterables", "map() — applying functions to iterables", "reduce() — aggregating values", "Map-reduce pattern overview"] },
         { "title": "Intro to Object-Oriented Programming", "hours": null, "topics": ["What is OOP?", "Objects, properties, and behaviors", "Four pillars: encapsulation, abstraction, inheritance, polymorphism"] },
         { "title": "Web Scraping", "hours": null, "topics": ["What is web scraping?", "Ethical and legal considerations", "Tools: requests, BeautifulSoup", "Scraping data from websites"] },
         { "title": "Working with APIs", "hours": null, "topics": ["REST APIs and the requests library", "Consuming API data in Python", "Working with JSON responses", "API keys and authentication basics"] }

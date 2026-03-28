@@ -3,8 +3,8 @@ const courseOutlines = {
   "Advanced Python": {
     "course": "Advanced Python",
     "totalHours": null,
-    "totalLessons": 14,
-    "totalModules": 9,
+    "totalLessons": 13,
+    "totalModules": 8,
     "modules": [
       {
         "name": "Introduction",
@@ -25,9 +25,9 @@ const courseOutlines = {
         ]
       },
       {
-        "name": "Lambdas and Functional Programming",
+        "name": "Introduction to Advanced Python and Object-Oriented Programming",
         "hours": null,
-        "description": "Anonymous functions, functional programming patterns, and data manipulation with lambdas.",
+        "description": "Anonymous functions, functional programming patterns, OOP fundamentals, web scraping, and working with APIs.",
         "lessons": [
           {
             "title": "Lambdas",
@@ -39,14 +39,7 @@ const courseOutlines = {
               "reduce() — aggregating values",
               "Map-reduce pattern overview"
             ]
-          }
-        ]
-      },
-      {
-        "name": "Introduction to Object-Oriented Programming",
-        "hours": null,
-        "description": "OOP fundamentals, web scraping, and working with APIs.",
-        "lessons": [
+          },
           {
             "title": "Intro to Object-Oriented Programming",
             "hours": null,
