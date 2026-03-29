@@ -1,5 +1,5 @@
 // Auto-generated from courses.json — do not edit directly
-var dashboardVersion = "0.2.0";
+var dashboardVersion = "0.3.0";
 
 const courseData = [
   {
