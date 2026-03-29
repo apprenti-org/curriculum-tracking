@@ -32,9 +32,9 @@ function renderAssetCell(val) {
  */
 function renderDocsIcons(item) {
     var html = '';
-    html += '<span class="doc-icon ' + (item.hasOutline ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasOutline ? 'Outline exists' : 'No outline') + '"><i class="fa-solid fa-list-check"></i></span>';
-    html += '<span class="doc-icon ' + (item.hasSyllabus ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasSyllabus ? 'Syllabus exists' : 'No syllabus') + '"><i class="fa-solid fa-file-lines"></i></span>';
-    html += '<span class="doc-icon ' + (item.hasSource ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasSource ? 'Source content found' : 'No source content') + '"><i class="fa-solid fa-folder-open"></i></span>';
+    html += '<span class="doc-icon ' + (item.hasOutline ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasOutline ? 'Outline exists' : 'No outline') + '"><i class="fa-solid fa-list-check"></i><span class="doc-label">Outline</span></span>';
+    html += '<span class="doc-icon ' + (item.hasSyllabus ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasSyllabus ? 'Syllabus exists' : 'No syllabus') + '"><i class="fa-solid fa-file-lines"></i><span class="doc-label">Syllabus</span></span>';
+    html += '<span class="doc-icon ' + (item.hasSource ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasSource ? 'Source content found' : 'No source content') + '"><i class="fa-solid fa-folder-open"></i><span class="doc-label">Source</span></span>';
     return html;
 }
 
@@ -103,11 +103,11 @@ function renderTable() {
             '<th>Design Status</th>' +
             '<th>Dev Status</th>' +
             '<th>Content Coverage</th>' +
-            '<th><i class="fa-solid fa-file-alt" title="Lesson Docs"></i></th>' +
-            '<th><i class="fa-solid fa-tv" title="Slides"></i></th>' +
-            '<th><i class="fa-solid fa-circle-question" title="Quizzes"></i></th>' +
-            '<th><i class="fa-solid fa-flask" title="Activities"></i></th>' +
-            '<th><i class="fa-solid fa-box" title="Total Assets"></i> Total</th>' +
+            '<th><i class="fa-solid fa-file-alt"></i> Lessons</th>' +
+            '<th><i class="fa-solid fa-tv"></i> Slides</th>' +
+            '<th><i class="fa-solid fa-circle-question"></i> Quizzes</th>' +
+            '<th><i class="fa-solid fa-flask"></i> Activities</th>' +
+            '<th><i class="fa-solid fa-box"></i> Total</th>' +
         '</tr></thead><tbody>' + rows + '</tbody></table>';
 }
 
