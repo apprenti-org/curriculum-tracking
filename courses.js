@@ -1,5 +1,5 @@
 // Auto-generated from courses.json — do not edit directly
-var dashboardVersion = "0.3.0";
+var dashboardVersion = "0.4.0";
 
 const courseData = [
   {
@@ -986,6 +986,15 @@ const curriculaData = [
   },
   {
     "name": "Operations Support Specialist — Network",
+    "slug": "operations-support-specialist",
+    "standard": {
+      "appendix": "A-28",
+      "title": "Operations Support Specialist - Network",
+      "onetSocCode": "15-1241.00",
+      "rapidsCode": "3099CB",
+      "sourceUrl": "https://drive.google.com/file/d/1isKeFCUGEJw1lwbsFOGY59WXBYI1dLp0/view",
+      "markdownReference": "_STANDARDS/A-28 Operations Support Specialist - Network.md"
+    },
     "groups": [
       {
         "name": "Core Systems & Networking Fundamentals",

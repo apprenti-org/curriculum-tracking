@@ -564,8 +564,8 @@ var courseOverviewData = [
     "hours": 50,
     "outline": {
       "exists": true,
-      "modules": 5,
-      "lessons": 14
+      "modules": 8,
+      "lessons": 17
     },
     "syllabus": true,
     "source": {
@@ -1030,7 +1030,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 10
+      "lessons": 7
     },
     "syllabus": true,
     "source": {
@@ -1154,7 +1154,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 7
+      "lessons": 10
     },
     "syllabus": true,
     "source": {
@@ -1586,9 +1586,9 @@ var courseOverviewData = [
     "name": "Python Coding Booster Intensive",
     "hours": 16,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 2,
+      "lessons": 5
     },
     "syllabus": true,
     "source": {
@@ -1596,7 +1596,7 @@ var courseOverviewData = [
       "folder": "Course: Python Booster",
       "modules": 8
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1772,9 +1772,9 @@ var courseOverviewData = [
     "name": "SQL Coding Booster Intensive",
     "hours": 8,
     "outline": {
-      "exists": true,
-      "modules": 2,
-      "lessons": 5
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
     },
     "syllabus": true,
     "source": {
@@ -1782,7 +1782,7 @@ var courseOverviewData = [
       "folder": "Course: SQL Booster",
       "modules": 4
     },
-    "coverage": 0,
+    "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1835,8 +1835,8 @@ var courseOverviewData = [
     "hours": 20,
     "outline": {
       "exists": true,
-      "modules": 8,
-      "lessons": 17
+      "modules": 5,
+      "lessons": 14
     },
     "syllabus": true,
     "source": {
