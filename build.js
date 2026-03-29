@@ -16,7 +16,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { generateCourseBundle, generateOutlineBundle } = require('./lib/generators');
+const { generateCourseBundle, generateOutlineBundle, generateOverviewBundle } = require('./lib/generators');
 const { validateSchema, validateReferences, validateSyllabusFiles, validateOutlineFiles } = require('./lib/validators');
 
 // Read version from package.json
@@ -41,6 +41,12 @@ const BUILD_CONFIG = {
       input: 'outlines/manifest.json',
       output: 'outlines/outlines.js',
       generate: generateOutlineBundle
+    },
+    {
+      name: 'overview-bundle',
+      input: 'course-overview.json',
+      output: 'course-overview.js',
+      generate: generateOverviewBundle
     }
   ],
 

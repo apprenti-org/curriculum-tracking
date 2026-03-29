@@ -8,8 +8,9 @@
  * This must be the LAST status script loaded.
  */
 
-// Build content data array from courseData + membershipMap
+// Build content data array from courseData + membershipMap + courseOverviewMap
 var contentData = courseData.map(function(c) {
+    var ov = (typeof courseOverviewMap !== 'undefined') ? (courseOverviewMap[c.id] || courseOverviewMap[c.name] || null) : null;
     return {
         id: c.id || '',
         name: c.name,
@@ -18,7 +19,17 @@ var contentData = courseData.map(function(c) {
         designStatus: c.status.design,
         devStatus: c.status.development,
         note: c.note || '',
-        membership: membershipMap[c.id] || membershipMap[c.name] || []
+        membership: membershipMap[c.id] || membershipMap[c.name] || [],
+        // Overview data (from course-overview.json)
+        coverage: ov ? ov.coverage : null,
+        hasOutline: ov ? ov.outline.exists : false,
+        hasSyllabus: ov ? ov.syllabus : false,
+        hasSource: ov ? ov.source.exists : false,
+        outlineModules: ov ? ov.outline.modules : 0,
+        outlineLessons: ov ? ov.outline.lessons : 0,
+        lessonsWithContent: ov ? ov.lessonsWithContent : 0,
+        totalAssets: ov ? ov.totalAssets : 0,
+        assets: ov ? ov.assets : null
     };
 });
 

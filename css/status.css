@@ -168,6 +168,44 @@ tbody td { padding: 12px 16px; font-size: 14px; }
 }
 .gap-icon-link:hover { opacity: 1; }
 
+/* Coverage bar */
+.cov-cell { display: flex; align-items: center; gap: 8px; min-width: 100px; }
+.cov-bar-track { flex: 1; height: 8px; border-radius: 4px; background: var(--seg-empty); overflow: hidden; min-width: 50px; }
+.cov-bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s ease; }
+.cov-bar-fill.cov-high { background: var(--seg-complete); }
+.cov-bar-fill.cov-mid { background: #FFB703; }
+.cov-bar-fill.cov-low { background: #FB8500; }
+.cov-bar-fill.cov-zero { background: transparent; }
+.cov-pct { font-size: 12px; font-weight: 600; min-width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+.cov-pct.cov-high { color: var(--seg-complete); }
+.cov-pct.cov-mid { color: #FFB703; }
+.cov-pct.cov-low { color: #FB8500; }
+.cov-pct.cov-zero { color: var(--text-muted); }
+.cov-na { color: var(--text-muted); }
+.cov-td { min-width: 120px; }
+
+/* Asset count cells */
+.asset-td { text-align: center; font-variant-numeric: tabular-nums; min-width: 40px; }
+.asset-count { font-size: 13px; font-weight: 500; color: var(--text-primary); }
+.asset-zero { color: var(--text-muted); }
+.total-td .asset-count { font-weight: 700; }
+
+/* Docs readiness icons */
+.docs-cell { white-space: nowrap; min-width: 70px; }
+.doc-icon { font-size: 12px; margin-right: 4px; }
+.doc-icon.doc-yes { color: var(--seg-complete); }
+.doc-icon.doc-no { color: var(--text-muted); opacity: 0.4; }
+
+/* Coverage progress bar colors */
+:root[data-theme="dark"] {
+    --seg-cov-mid: #FFB703;
+    --seg-cov-low: #FB8500;
+}
+:root[data-theme="light"] {
+    --seg-cov-mid: #e6a502;
+    --seg-cov-low: #d97600;
+}
+
 /* Status page membership overrides */
 .membership-cell { font-size: 12px; max-width: 220px; }
 .status-page .membership-tag {
