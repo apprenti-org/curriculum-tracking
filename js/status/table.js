@@ -8,15 +8,12 @@
  */
 
 /**
- * Render a coverage bar (mini progress bar with percentage)
+ * Render a coverage percentage
  */
-function renderCoverageBar(pct) {
+function renderCoverage(pct) {
     if (pct === null || pct === undefined) return '<span class="cov-na">—</span>';
     var cls = pct >= 75 ? 'cov-high' : pct >= 25 ? 'cov-mid' : pct > 0 ? 'cov-low' : 'cov-zero';
-    return '<div class="cov-cell">' +
-        '<div class="cov-bar-track"><div class="cov-bar-fill ' + cls + '" style="width:' + pct + '%"></div></div>' +
-        '<span class="cov-pct ' + cls + '">' + pct + '%</span>' +
-    '</div>';
+    return '<span class="cov-pct ' + cls + '">' + pct + '%</span>';
 }
 
 /**
@@ -74,7 +71,7 @@ function renderTable() {
                 '<span class="status-pill status-' + STATUS_CLASSES[item.devStatus] + '" onclick="toggleDropdown(event, ' + realIdx + ', \'dev\')"><span class="status-dot dot-' + STATUS_CLASSES[item.devStatus] + '"></span>' + item.devStatus + '</span>' +
                 '<div class="status-dropdown" id="dd-dev-' + realIdx + '">' + STATUSES.map(function(s) { return '<div class="status-option" onclick="setStatus(' + realIdx + ', \'devStatus\', \'' + s + '\')"><span class="status-dot dot-' + STATUS_CLASSES[s] + '"></span> ' + s + '</div>'; }).join('') + '</div>' +
             '</td>' +
-            '<td class="cov-td">' + renderCoverageBar(item.coverage) + '</td>' +
+            '<td class="cov-td">' + renderCoverage(item.coverage) + '</td>' +
             '<td class="asset-td">' + renderAssetCell(assets.lessons) + '</td>' +
             '<td class="asset-td">' + renderAssetCell(assets.slides) + '</td>' +
             '<td class="asset-td">' + renderAssetCell(assets.quizzes) + '</td>' +
