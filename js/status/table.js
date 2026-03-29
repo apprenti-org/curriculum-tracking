@@ -106,7 +106,7 @@ function renderTable() {
             '<th>Course</th>' +
             '<th>Curricula / Groups</th>' +
             '<th>Hours</th>' +
-            '<th class="docs-header">Docs<div class="docs-legend"><span><i class="fa-solid fa-list-check"></i> Outline</span><span><i class="fa-solid fa-file-lines"></i> Syllabus</span><span><i class="fa-solid fa-folder-open"></i> Source</span></div></th>' +
+            '<th>Docs</th>' +
             '<th>Design Status</th>' +
             '<th>Dev Status</th>' +
             '<th>Content Coverage</th>' +
