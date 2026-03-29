@@ -29,7 +29,11 @@ var contentData = courseData.map(function(c) {
         outlineLessons: ov ? ov.outline.lessons : 0,
         lessonsWithContent: ov ? ov.lessonsWithContent : 0,
         totalAssets: ov ? ov.totalAssets : 0,
-        assets: ov ? ov.assets : null
+        assets: ov ? ov.assets : null,
+        // Link data for doc icons
+        driveFolder: c.driveFolder || '',
+        syllabusUrl: (typeof syllabiMap !== 'undefined' && syllabiMap[c.name]) ? 'syllabi/' + syllabiMap[c.name] : '',
+        outlineUrl: c.outline ? 'index.html#' + encodeURIComponent(c.name) : ''
     };
 });
 

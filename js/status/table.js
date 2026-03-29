@@ -25,14 +25,24 @@ function renderAssetCell(val) {
 }
 
 /**
+ * Render a single doc icon — linked if the doc exists, dim if not
+ */
+function renderDocLink(exists, url, icon, titleYes, titleNo) {
+    if (exists && url) {
+        return '<a href="' + url + '" target="_blank" class="doc-icon doc-yes" title="' + titleYes + '"><i class="fa-solid ' + icon + '"></i></a>';
+    }
+    var cls = exists ? 'doc-yes' : 'doc-no';
+    var title = exists ? titleYes : titleNo;
+    return '<span class="doc-icon ' + cls + '" title="' + title + '"><i class="fa-solid ' + icon + '"></i></span>';
+}
+
+/**
  * Render document readiness icons (outline, syllabus, source)
  */
 function renderDocsIcons(item) {
-    var html = '';
-    html += '<span class="doc-icon ' + (item.hasOutline ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasOutline ? 'Outline exists' : 'No outline') + '"><i class="fa-solid fa-list-check"></i><span class="doc-label">Outline</span></span>';
-    html += '<span class="doc-icon ' + (item.hasSyllabus ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasSyllabus ? 'Syllabus exists' : 'No syllabus') + '"><i class="fa-solid fa-file-lines"></i><span class="doc-label">Syllabus</span></span>';
-    html += '<span class="doc-icon ' + (item.hasSource ? 'doc-yes' : 'doc-no') + '" title="' + (item.hasSource ? 'Source content found' : 'No source content') + '"><i class="fa-solid fa-folder-open"></i><span class="doc-label">Source</span></span>';
-    return html;
+    return renderDocLink(item.hasOutline, item.outlineUrl, 'fa-list-check', 'View outline', 'No outline') +
+           renderDocLink(item.hasSyllabus, item.syllabusUrl, 'fa-file-lines', 'View syllabus', 'No syllabus') +
+           renderDocLink(item.hasSource, item.driveFolder, 'fa-folder-open', 'Open source folder', 'No source content');
 }
 
 /**
@@ -96,7 +106,7 @@ function renderTable() {
             '<th>Course</th>' +
             '<th>Curricula / Groups</th>' +
             '<th>Hours</th>' +
-            '<th>Docs</th>' +
+            '<th class="docs-header">Docs<div class="docs-legend"><span><i class="fa-solid fa-list-check"></i> Outline</span><span><i class="fa-solid fa-file-lines"></i> Syllabus</span><span><i class="fa-solid fa-folder-open"></i> Source</span></div></th>' +
             '<th>Design Status</th>' +
             '<th>Dev Status</th>' +
             '<th>Content Coverage</th>' +

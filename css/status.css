@@ -184,11 +184,18 @@ tbody td { padding: 12px 16px; font-size: 14px; }
 .total-td .asset-count { font-weight: 700; }
 
 /* Docs readiness icons */
-.docs-cell { white-space: nowrap; min-width: 150px; }
-.doc-icon { font-size: 11px; margin-right: 8px; display: inline-flex; align-items: center; gap: 3px; }
+.docs-cell { white-space: nowrap; }
+.doc-icon { font-size: 13px; margin-right: 6px; text-decoration: none; }
+a.doc-icon { cursor: pointer; transition: opacity 0.15s; }
+a.doc-icon:hover { opacity: 0.8; }
 .doc-icon.doc-yes { color: var(--seg-complete); }
-.doc-icon.doc-no { color: var(--text-muted); opacity: 0.4; }
-.doc-label { font-size: 10px; font-weight: 500; }
+.doc-icon.doc-no { color: var(--text-muted); opacity: 0.3; }
+
+/* Docs column header legend */
+.docs-header { min-width: 90px; }
+.docs-legend { display: flex; gap: 8px; margin-top: 4px; font-size: 9px; font-weight: 400; text-transform: none; letter-spacing: 0; color: var(--text-muted); }
+.docs-legend span { display: flex; align-items: center; gap: 3px; }
+.docs-legend i { font-size: 9px; }
 
 /* Asset column header icons */
 thead th i.fa-solid { margin-right: 4px; font-size: 11px; opacity: 0.7; }
