@@ -82,6 +82,7 @@ var GAP_ANALYSIS_DRIVE_FOLDER = 'https://drive.google.com/drive/folders/1gLgJXYY
 var gapAnalysisMap = {
     'Advanced Python': 'advanced-python-gap-analysis.xlsx',
     'Agile Project Management with Scrum': 'agile-project-management-gap-analysis.xlsx',
+    'AI Foundations': 'ai-foundations-gap-analysis.xlsx',
     'ASP.NET': 'aspnet-gap-analysis.xlsx',
     'Business Analysis Fundamentals': 'business-analysis-fundamentals-gap-analysis.xlsx',
     'Business and IT Fundamentals': 'business-and-it-fundamentals-gap-analysis.xlsx',

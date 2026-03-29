@@ -8,6 +8,44 @@
  */
 
 /**
+ * Render a coverage percentage
+ */
+function renderCoverage(pct) {
+    if (pct === null || pct === undefined) return '<span class="cov-na">—</span>';
+    var cls = pct >= 75 ? 'cov-high' : pct >= 25 ? 'cov-mid' : pct > 0 ? 'cov-low' : 'cov-zero';
+    return '<span class="cov-pct ' + cls + '">' + pct + '%</span>';
+}
+
+/**
+ * Render an asset count cell with icon
+ */
+function renderAssetCell(val) {
+    if (!val) return '<span class="asset-zero">—</span>';
+    return '<span class="asset-count">' + val + '</span>';
+}
+
+/**
+ * Render a single doc icon — linked if the doc exists, dim if not
+ */
+function renderDocLink(exists, url, icon, titleYes, titleNo) {
+    if (exists && url) {
+        return '<a href="' + url + '" target="_blank" class="doc-icon doc-yes" title="' + titleYes + '"><i class="fa-solid ' + icon + '"></i></a>';
+    }
+    var cls = exists ? 'doc-yes' : 'doc-no';
+    var title = exists ? titleYes : titleNo;
+    return '<span class="doc-icon ' + cls + '" title="' + title + '"><i class="fa-solid ' + icon + '"></i></span>';
+}
+
+/**
+ * Render document readiness icons (outline, syllabus, source)
+ */
+function renderDocsIcons(item) {
+    return renderDocLink(item.hasOutline, item.outlineUrl, 'fa-list-check', 'View outline', 'No outline') +
+           renderDocLink(item.hasSyllabus, item.syllabusUrl, 'fa-file-lines', 'View syllabus', 'No syllabus') +
+           renderDocLink(item.hasSource, item.driveFolder, 'fa-folder-open', 'Open source folder', 'No source content');
+}
+
+/**
  * Render the filtered course table
  */
 function renderTable() {
@@ -16,6 +54,10 @@ function renderTable() {
         filtered = contentData.filter(function(d) { return d.designStatus !== 'Not Started' || d.devStatus !== 'Not Started'; });
     } else if (activeFilter === 'not-started') {
         filtered = contentData.filter(function(d) { return d.designStatus === 'Not Started' && d.devStatus === 'Not Started'; });
+    } else if (activeFilter === 'has-content') {
+        filtered = contentData.filter(function(d) { return d.coverage !== null && d.coverage > 0; });
+    } else if (activeFilter === 'no-outline') {
+        filtered = contentData.filter(function(d) { return !d.hasOutline; });
     } else if (activeFilter !== 'all') {
         filtered = contentData.filter(function(d) { return d.membership.some(function(m) { return m.curriculum === activeFilter; }); });
     }
@@ -25,10 +67,12 @@ function renderTable() {
         var gapLink = gapAnalysisMap[item.name]
             ? ' <a href="' + GAP_ANALYSIS_DRIVE_FOLDER + '" target="_blank" class="gap-icon-link" title="Gap Analysis Report"><i class="fa-solid fa-magnifying-glass-chart"></i></a>'
             : '';
+        var assets = item.assets || {};
         return '<tr>' +
             '<td><span class="cell-name">' + item.name + '</span>' + gapLink + '</td>' +
             '<td class="membership-cell">' + buildMembershipHTML(item.membership) + '</td>' +
             '<td class="cell-hours">' + (item.hours || '\u2014') + '</td>' +
+            '<td class="docs-cell">' + renderDocsIcons(item) + '</td>' +
             '<td class="status-cell">' +
                 '<span class="status-pill status-' + STATUS_CLASSES[item.designStatus] + '" onclick="toggleDropdown(event, ' + realIdx + ', \'design\')"><span class="status-dot dot-' + STATUS_CLASSES[item.designStatus] + '"></span>' + item.designStatus + '</span>' +
                 '<div class="status-dropdown" id="dd-design-' + realIdx + '">' + STATUSES.map(function(s) { return '<div class="status-option" onclick="setStatus(' + realIdx + ', \'designStatus\', \'' + s + '\')"><span class="status-dot dot-' + STATUS_CLASSES[s] + '"></span> ' + s + '</div>'; }).join('') + '</div>' +
@@ -37,7 +81,12 @@ function renderTable() {
                 '<span class="status-pill status-' + STATUS_CLASSES[item.devStatus] + '" onclick="toggleDropdown(event, ' + realIdx + ', \'dev\')"><span class="status-dot dot-' + STATUS_CLASSES[item.devStatus] + '"></span>' + item.devStatus + '</span>' +
                 '<div class="status-dropdown" id="dd-dev-' + realIdx + '">' + STATUSES.map(function(s) { return '<div class="status-option" onclick="setStatus(' + realIdx + ', \'devStatus\', \'' + s + '\')"><span class="status-dot dot-' + STATUS_CLASSES[s] + '"></span> ' + s + '</div>'; }).join('') + '</div>' +
             '</td>' +
-            '<td class="note-cell">' + (item.note || '') + '</td>' +
+            '<td class="cov-td">' + renderCoverage(item.coverage) + '</td>' +
+            '<td class="asset-td">' + renderAssetCell(assets.lessons) + '</td>' +
+            '<td class="asset-td">' + renderAssetCell(assets.slides) + '</td>' +
+            '<td class="asset-td">' + renderAssetCell(assets.quizzes) + '</td>' +
+            '<td class="asset-td">' + renderAssetCell(assets.activities) + '</td>' +
+            '<td class="asset-td total-td">' + renderAssetCell(item.totalAssets) + '</td>' +
         '</tr>';
     }).join('');
 
@@ -50,8 +99,23 @@ function renderTable() {
             }).join('') +
             '<span class="filter-chip ' + (activeFilter === 'active' ? 'active' : '') + '" onclick="setFilter(\'active\')">Active</span>' +
             '<span class="filter-chip ' + (activeFilter === 'not-started' ? 'active' : '') + '" onclick="setFilter(\'not-started\')">Not Started</span>' +
+            '<span class="filter-chip ' + (activeFilter === 'has-content' ? 'active' : '') + '" onclick="setFilter(\'has-content\')">Has Content</span>' +
+            '<span class="filter-chip ' + (activeFilter === 'no-outline' ? 'active' : '') + '" onclick="setFilter(\'no-outline\')">No Outline</span>' +
         '</div>' +
-        '<table><thead><tr><th>Course</th><th>Curricula / Groups</th><th>Hours</th><th>Design Status</th><th>Dev Status</th><th>Notes</th></tr></thead><tbody>' + rows + '</tbody></table>';
+        '<table><thead><tr>' +
+            '<th>Course</th>' +
+            '<th>Curricula / Groups</th>' +
+            '<th>Hours</th>' +
+            '<th>Docs</th>' +
+            '<th>Design Status</th>' +
+            '<th>Dev Status</th>' +
+            '<th>Content Coverage</th>' +
+            '<th><i class="fa-solid fa-file-alt"></i> Lessons</th>' +
+            '<th><i class="fa-solid fa-tv"></i> Slides</th>' +
+            '<th><i class="fa-solid fa-circle-question"></i> Quizzes</th>' +
+            '<th><i class="fa-solid fa-flask"></i> Activities</th>' +
+            '<th><i class="fa-solid fa-box"></i> Total</th>' +
+        '</tr></thead><tbody>' + rows + '</tbody></table>';
 }
 
 /**

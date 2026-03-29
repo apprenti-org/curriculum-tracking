@@ -9,6 +9,28 @@ Format follows [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
 
 ---
 
+## [0.2.0] — 2026-03-29
+
+### Added
+- **Course overview data pipeline** — `course-overview.json` compiles gap analysis coverage %, source asset counts, outline/syllabus stats, and document readiness for all 64 courses
+- `course-overview.js` bundle auto-generated via `build.js` from the JSON source
+- `generate-course-overview.py` script scans outlines and source folders to produce the overview
+- Status page: **6 new table columns** — Docs (linked icons), Content Coverage (%), Lessons, Slides, Quizzes, Activities, Total Assets
+- Status page: **2 new summary cards** — Avg Content Coverage, Source Assets
+- Status page: **Content Coverage progress bar** in the progress section
+- Status page: **2 new filter chips** — "Has Content" and "No Outline"
+- Docs column icons link to resources: outline → dashboard, syllabus → HTML syllabus, source → Google Drive
+- Gap analysis links on dashboard and status page pointing to Google Drive folder
+- AI Foundations added to gap analysis map
+- Version badge now links to changelog
+
+### Infrastructure
+- `lib/generators.js` — added `generateOverviewBundle` for course-overview.js
+- `build.js` — overview bundle added to three-stage pipeline
+- `course-overview.json` added to tracking repo as a data source
+
+---
+
 ## [0.1.0] — 2026-03-28
 
 Initial versioned release. Captures the cumulative work from Issues #1–#5.
@@ -39,4 +61,4 @@ Initial versioned release. Captures the cumulative work from Issues #1–#5.
 
 ## [Unreleased]
 
-_Changes that have been merged to main but not yet tagged as a release._
+_Changes merged to main but not yet tagged._
