@@ -78,6 +78,42 @@
           "type": "string",
           "minLength": 1
         },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Kebab-case identifier. Matches curricula/[slug]/ folder."
+        },
+        "standard": {
+          "type": "object",
+          "description": "Governing DOL standard (Appendix) for this curriculum",
+          "properties": {
+            "appendix": {
+              "type": "string",
+              "description": "Appendix number (e.g. A-28)"
+            },
+            "title": {
+              "type": "string",
+              "description": "Official occupation title from the standard"
+            },
+            "onetSocCode": {
+              "type": "string",
+              "description": "O*NET-SOC occupation code"
+            },
+            "rapidsCode": {
+              "type": "string",
+              "description": "RAPIDS apprenticeship code"
+            },
+            "sourceUrl": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL to the authoritative source PDF"
+            },
+            "markdownReference": {
+              "type": "string",
+              "description": "Path to extracted markdown in _STANDARDS/"
+            }
+          }
+        },
         "syllabus": {
           "type": ["string", "null"],
           "description": "Curriculum-level syllabus URL"

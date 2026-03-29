@@ -1,0 +1,415 @@
+/* ============================================
+   Curriculum Pipeline Page Styles
+   ============================================ */
+
+.pipeline-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- Curriculum Selector --- */
+.curriculum-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.curriculum-selector label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.curriculum-selector select {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px 14px;
+    font-size: 15px;
+    background: var(--surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.curriculum-selector select:focus {
+    outline: none;
+    border-color: var(--blue-green);
+}
+
+/* --- Standard Block --- */
+.standard-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+}
+
+.standard-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.standard-header .appendix-badge {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.standard-header h2 {
+    font-size: 18px;
+    color: var(--text-primary);
+    margin: 0;
+    font-weight: 600;
+}
+
+.standard-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+.standard-meta .meta-item {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.standard-meta .meta-item strong {
+    color: var(--text-primary);
+}
+
+.standard-links {
+    display: flex;
+    gap: 12px;
+}
+
+.standard-links a {
+    font-size: 13px;
+    color: var(--link);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.standard-links a:hover {
+    color: var(--link-hover);
+}
+
+.standard-file-ref {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: default;
+}
+
+/* --- Pipeline Summary --- */
+.pipeline-summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+}
+
+.pipeline-summary h3 {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 14px 0;
+    font-weight: 600;
+}
+
+.pipeline-bar {
+    display: flex;
+    height: 28px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 14px;
+    background: var(--status-not-bg);
+}
+
+.pipeline-bar .bar-segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    transition: width 0.3s ease;
+    min-width: 0;
+}
+
+.bar-segment.stage-not-started { background: var(--status-not-bg); color: var(--text-muted); }
+.bar-segment.stage-source { background: #6e6e80; }
+.bar-segment.stage-design { background: var(--blue-green); }
+.bar-segment.stage-development { background: var(--amber); color: #111; }
+.bar-segment.stage-review { background: var(--tiger); }
+.bar-segment.stage-deployed { background: #3fb950; }
+
+.pipeline-counts {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.pipeline-counts .count-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    border-right: 1px solid var(--border);
+}
+
+.pipeline-counts .count-item:last-child {
+    border-right: none;
+}
+
+.pipeline-counts .count-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.count-dot.stage-not-started { background: var(--status-not-bg); border: 1px solid var(--border); }
+.count-dot.stage-source { background: #6e6e80; }
+.count-dot.stage-design { background: var(--blue-green); }
+.count-dot.stage-development { background: var(--amber); }
+.count-dot.stage-review { background: var(--tiger); }
+.count-dot.stage-deployed { background: #3fb950; }
+
+.pipeline-counts .count-num {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* --- Group Cards --- */
+.pipeline-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.group-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+}
+
+.group-header:hover {
+    background: var(--surface-raised);
+}
+
+.group-header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.group-header .group-number {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.group-header h3 {
+    margin: 0;
+    font-size: 15px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.group-header .group-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.group-header .group-meta .rti-note {
+    color: var(--note-text);
+    font-size: 12px;
+}
+
+.group-header .chevron {
+    color: var(--text-muted);
+    transition: transform 0.2s;
+    font-size: 12px;
+}
+
+.group-card.expanded .chevron {
+    transform: rotate(90deg);
+}
+
+.group-body {
+    display: none;
+    padding: 0 20px 16px;
+}
+
+.group-card.expanded .group-body {
+    display: block;
+}
+
+/* --- Course Cards inside Groups --- */
+.course-card {
+    background: var(--surface-raised);
+    border: 1px solid var(--border-subtle);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-top: 10px;
+}
+
+.course-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.course-card-header h4 {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.course-card-header .hours-badge {
+    font-size: 12px;
+    color: var(--text-muted);
+    background: var(--bg);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.stage-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.stage-badge.stage-not-started { background: var(--status-not-bg); color: var(--text-muted); }
+.stage-badge.stage-source { background: rgba(110, 110, 128, 0.2); color: #a0a0b0; }
+.stage-badge.stage-design { background: var(--status-progress-bg); color: var(--status-progress-text); }
+.stage-badge.stage-development { background: rgba(255, 183, 3, 0.15); color: var(--amber); }
+.stage-badge.stage-review { background: rgba(251, 133, 0, 0.15); color: var(--tiger); }
+.stage-badge.stage-deployed { background: var(--status-complete-bg); color: var(--status-complete-text); }
+
+.course-status-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.status-chip {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: var(--text-muted);
+    background: var(--bg);
+}
+
+/* --- Document Links --- */
+.doc-section {
+    margin-top: 8px;
+}
+
+.doc-section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.doc-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.doc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--link);
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--bg);
+    border: 1px solid var(--border-subtle);
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.doc-link:hover {
+    color: var(--link-hover);
+    border-color: var(--link);
+}
+
+.doc-link.doc-missing {
+    color: var(--text-muted);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.doc-link i {
+    font-size: 11px;
+}
+
+/* --- Empty state --- */
+.pipeline-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+}
+
+.pipeline-empty i {
+    font-size: 48px;
+    margin-bottom: 12px;
+    display: block;
+    color: var(--border);
+}

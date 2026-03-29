@@ -9,6 +9,25 @@ Format follows [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
 
 ---
 
+## [0.4.0] — 2026-03-29
+
+### Added
+- **Curriculum Development Pipeline page** (`curriculum.html`) — new third page tracking curricula from DOL standard through LMS deployment
+- **Pipeline stage computation** — stages (Not Started → Source → Design → Development → Review → Deployed) derived from existing course status fields and artifact presence, zero migration cost
+- **DOL standard integration** — curriculum entries in `courses.json` now support `slug` and `standard` fields linking to governing DOL appendix documents
+- **Source/working document display** — each course card shows source documents (Drive folder) and working documents (outline, syllabus, gap analysis) with links
+- **Stacked progress bar** — visual pipeline summary showing aggregate stage distribution across a curriculum's courses
+- **Expandable group cards** — courses grouped by RTI area with hours, RTI minimums, and per-course pipeline detail
+- **Operations Support Specialist — Network** (Appendix A-28) as first curriculum with full pipeline data
+
+### Infrastructure
+- `data/schema.json` — added `slug` and `standard` definitions to curriculum schema
+- `lib/validators.js` — validates curriculum slugs (kebab-case, unique) and standard markdown references
+- Navigation links added to `index.html` and `status.html` for Pipeline page
+- Design document: `DESIGN/04-CURRICULUM-PIPELINE.md`
+
+---
+
 ## [0.3.0] — 2026-03-29
 
 ### Added
