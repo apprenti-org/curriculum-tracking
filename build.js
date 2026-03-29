@@ -16,6 +16,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 const { generateCourseBundle, generateOutlineBundle, generateOverviewBundle } = require('./lib/generators');
 const { validateSchema, validateReferences, validateSyllabusFiles, validateOutlineFiles } = require('./lib/validators');
 
@@ -116,6 +117,47 @@ async function build(options = {}) {
       console.log(`    ${gen.output}`);
     }
 
+    // 4. Run Python generators (course overview + knowledge base)
+    //    These scan the workspace filesystem and produce derived data.
+    //    They require Python 3 and access to the workspace folder structure.
+    //    Skipped gracefully if Python is unavailable or workspace isn't detected.
+    const scriptsDir = path.join(BUILD_CONFIG.rootDir, 'scripts');
+    const workspaceBase = path.resolve(BUILD_CONFIG.rootDir, '..', '..', '..');
+
+    if (fs.existsSync(path.join(workspaceBase, '_COURSES Phase 1 - WORKNG'))) {
+      console.log('  Running Python generators...');
+
+      const pythonScripts = [
+        { name: 'course-overview', script: 'generate-course-overview.py', output: 'course-overview.json' },
+        { name: 'knowledge-base', script: 'generate-knowledge-base.py', output: 'knowledge base markdown' }
+      ];
+
+      for (const ps of pythonScripts) {
+        const scriptPath = path.join(scriptsDir, ps.script);
+        if (!fs.existsSync(scriptPath)) {
+          console.log(`    ${ps.script} not found — skipping`);
+          continue;
+        }
+        try {
+          execSync(`python3 "${scriptPath}" --base "${workspaceBase}"`, {
+            stdio: verbose ? 'inherit' : 'pipe',
+            timeout: 120000
+          });
+          console.log(`    ${ps.output}`);
+        } catch (pyErr) {
+          console.warn(`    Warning: ${ps.script} failed — ${pyErr.message.split('\n')[0]}`);
+        }
+      }
+
+      // Re-generate overview bundle now that course-overview.json is fresh
+      if (fs.existsSync(path.join(BUILD_CONFIG.rootDir, 'course-overview.json'))) {
+        generateOverviewBundle(data, BUILD_CONFIG);
+        console.log('    course-overview.js (refreshed)');
+      }
+    } else {
+      console.log('  Workspace not detected — skipping Python generators');
+    }
+
     const elapsed = Date.now() - startTime;
     console.log(`\nBuild complete in ${elapsed}ms.\n`);
 
@@ -134,7 +176,8 @@ function startWatchMode(options) {
 
   const watchFiles = [
     BUILD_CONFIG.source,
-    BUILD_CONFIG.outlineManifest
+    BUILD_CONFIG.outlineManifest,
+    'course-overview.json'
   ];
 
   watchFiles.forEach(file => {

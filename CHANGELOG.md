@@ -9,6 +9,22 @@ Format follows [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
 
 ---
 
+## [0.3.0] — 2026-03-29
+
+### Added
+- **Knowledge base generator** — `scripts/generate-knowledge-base.py` produces a comprehensive markdown document for NotebookLM with full course catalog, curriculum architecture, topic detail, and content readiness data
+- **Course overview generator** — `scripts/generate-course-overview.py` moved into repo with portable path handling (`--base` flag or auto-detection)
+- Both Python generators integrated into `build.js` as post-build steps — running `node build.js` now regenerates all data including the knowledge base
+- Workspace auto-detection: Python steps skip gracefully when workspace structure or Python isn't available
+
+### Infrastructure
+- `scripts/` directory added for Python data generators
+- `build.js` — added `child_process.execSync` calls for Python pipeline steps with 120s timeout
+- `build.js` — overview bundle refreshed after Python generators run to pick up latest data
+- Watch mode now monitors `course-overview.json` for changes
+
+---
+
 ## [0.2.0] — 2026-03-29
 
 ### Added
