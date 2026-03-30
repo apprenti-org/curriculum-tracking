@@ -9,6 +9,19 @@ Format follows [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
 
 ---
 
+## [0.4.1] — 2026-03-30
+
+### Added
+- **LMS object display** — course outline detail now shows a two-column layout per lesson: topics on the left, LMS objects on the right with color-coded type icons (SCORM, Assessment, Slideshow, Demo, Activity, Lab, Code-Along, Troubleshooting, Reference)
+
+### Changed
+- **Linux Foundations** — updated to 4 modules / 10 lessons (summative assessment no longer counted as a module), added full LMS object inventory to outline JSON, corrected course-overview.json generation
+
+### Fixed
+- Course outline markdown heading for summative assessment changed from `##` to bold text to prevent `generate-course-overview.py` capstone handler from counting it as a module
+
+---
+
 ## [0.4.0] — 2026-03-29
 
 ### Added

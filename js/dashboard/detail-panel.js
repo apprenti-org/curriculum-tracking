@@ -56,6 +56,7 @@ function selectCourse(el) {
     detail.querySelectorAll('.module-header').forEach(function(el) {
         el.addEventListener('click', function() { el.closest('.outline-module').classList.toggle('expanded'); });
     });
+
 }
 
 /** Render curriculum/group membership tags */

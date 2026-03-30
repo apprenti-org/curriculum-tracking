@@ -32,9 +32,45 @@ function renderOutline(outlineData) {
                 '<i class="fa-solid fa-file-lines" style="color:var(--text-muted);font-size:10px;"></i>' +
                 '<span style="color:var(--text-muted);font-size:12px;">Lesson ' + num + '.</span> ' + (l.title || l.name) +
                 '<span class="lesson-hours">' + (l.hours || '') + (l.hours ? 'h' : '') + '</span></div>';
-            if (l.topics && l.topics.length) {
-                html += '<div class="lesson-topics">';
-                l.topics.forEach(function(t) { html += '<div class="lesson-topic">' + t + '</div>'; });
+
+            var hasTopics = l.topics && l.topics.length;
+            var hasObjects = l.objects && l.objects.length;
+
+            if (hasTopics || hasObjects) {
+                html += '<div class="lesson-columns">';
+
+                // Left column: Topics
+                html += '<div class="lesson-col-topics">';
+                if (hasTopics) {
+                    html += '<div class="lesson-col-header">Topics</div>';
+                    l.topics.forEach(function(t) { html += '<div class="lesson-topic">' + t + '</div>'; });
+                }
+                html += '</div>';
+
+                // Right column: LMS Objects
+                if (hasObjects) {
+                    html += '<div class="lesson-col-objects">';
+                    html += '<div class="lesson-col-header">LMS Objects <span style="opacity:0.6;">(' + l.objects.length + ')</span></div>';
+                    l.objects.forEach(function(obj) {
+                        var icon = 'fa-file';
+                        var color = 'var(--text-muted)';
+                        if (obj.indexOf('SCORM') === 0) { icon = 'fa-puzzle-piece'; color = '#6c5ce7'; }
+                        else if (obj.indexOf('Assessment:') === 0) { icon = 'fa-clipboard-check'; color = '#e17055'; }
+                        else if (obj.indexOf('Object: Slideshow') === 0) { icon = 'fa-images'; color = '#0984e3'; }
+                        else if (obj.indexOf('Object: Demo') === 0) { icon = 'fa-chalkboard-user'; color = '#00b894'; }
+                        else if (obj.indexOf('Object: Activity') === 0) { icon = 'fa-pen-ruler'; color = '#fdcb6e'; }
+                        else if (obj.indexOf('Object: Lab') === 0) { icon = 'fa-flask'; color = '#e84393'; }
+                        else if (obj.indexOf('Object: Reference') === 0) { icon = 'fa-book-bookmark'; color = '#636e72'; }
+                        else if (obj.indexOf('Object: Code-Along') === 0) { icon = 'fa-code'; color = '#00cec9'; }
+                        else if (obj.indexOf('Object: Troubleshooting') === 0) { icon = 'fa-wrench'; color = '#d63031'; }
+                        else if (obj.indexOf('Object: Lesson') === 0) { icon = 'fa-file-lines'; color = '#2d3436'; }
+                        html += '<div class="object-item">' +
+                            '<i class="fa-solid ' + icon + '" style="width:14px;text-align:center;margin-right:6px;font-size:10px;color:' + color + ';"></i>' +
+                            obj + '</div>';
+                    });
+                    html += '</div>';
+                }
+
                 html += '</div>';
             }
             html += '</div>';

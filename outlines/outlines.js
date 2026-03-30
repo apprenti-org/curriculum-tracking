@@ -6064,6 +6064,18 @@ const courseOutlines = {
               "Command Line Interface (CLI) basics",
               "Linux distributions and system structure",
               "Installing Linux (VM, ISO, Live boot)"
+            ],
+            "objects": [
+              "Object: Lesson: Operating System Concepts & Introduction to Linux",
+              "SCORM 1.2: Operating System Concepts and Introduction to Linux",
+              "Object: Slideshow: Lesson Operating System Concepts and Introduction to Linux",
+              "Object: Reference Sheet: Operating System Concepts and Introduction to Linux",
+              "Object: Demo: Setting Up a Linux Virtual Machine",
+              "Object: Demo: Real-World Linux VM Use Cases",
+              "Assessment: Quiz: Operating System Concepts & Introduction to Linux",
+              "Object: Activity: Set Up and Explore Your First Linux Virtual Machine",
+              "Object: Lab: Exploring and Navigating the Linux File System",
+              "Object: Lab: Live Troubleshooting Scenario – \"Broken Boot\""
             ]
           },
           {
@@ -6075,6 +6087,19 @@ const courseOutlines = {
               "Mounting and managing file systems",
               "Linux permissions model (rwx, chown, chmod)",
               "Windows NTFS vs Linux ext4 permissions"
+            ],
+            "objects": [
+              "Object: Lesson: File Systems, Partitions, and Permissions",
+              "SCORM 1.2: File Systems Partitions and Permissions",
+              "Object: Slideshow: Lesson File Systems, Partitions, and Permissions",
+              "Object: Reference Sheet: File Systems, Partitions, and Permissions",
+              "Object: Demo: Disk and File System Management in Linux",
+              "Object: Code-Along: Setting Up Departmental Shared Storage with Automatic Mounting",
+              "Object: Demo: File Systems Advanced Concepts & Comparisons",
+              "Assessment: Quiz: File Systems, Partitions, and Permissions",
+              "Object: Activity: Create, Mount, and Test a New Partition",
+              "Object: Lab: Advanced Permissions and Shared Access with ACLs",
+              "Object: Lab: Live Troubleshooting Scenario"
             ]
           }
         ]
@@ -6092,6 +6117,15 @@ const courseOutlines = {
               "Sudo, /etc/passwd, /etc/shadow",
               "Identity management concepts",
               "Windows user management comparison"
+            ],
+            "objects": [
+              "Object: Lesson: User and Group Management",
+              "SCORM 1.2: User and Group Management",
+              "Object: Slideshow: Lesson User and Group Management",
+              "Object: Demo: User, Group & Sudo Management in Linux",
+              "Assessment: Quiz: User and Group Management",
+              "Object: Activity: User Groups, Shared Directory & Sudo Access",
+              "Object: Lab: Account Policies, Locking, and Auditing in Linux"
             ]
           },
           {
@@ -6102,6 +6136,16 @@ const courseOutlines = {
               "Managing jobs and cron",
               "systemd: services, targets, journaling",
               "Windows Task Manager and services comparison"
+            ],
+            "objects": [
+              "Object: Lesson: Managing Processes and Services",
+              "SCORM 1.2: Managing Processes and Services",
+              "Object: Slideshow: Lesson Managing Processes and Services",
+              "Object: Demo: Working With Processes and Services in Linux",
+              "Assessment: Quiz: Managing Processes and Services",
+              "Object: Activity: Managing Processes and Services in Linux",
+              "Object: Lab: Advanced Linux Service and Process Management",
+              "Object: Troubleshooting Scenario: Service Fails to Start on Boot"
             ]
           },
           {
@@ -6112,6 +6156,16 @@ const courseOutlines = {
               "Hostname, DNS, routing",
               "SSH and remote access",
               "Compare with Windows network tools (ipconfig, netsh)"
+            ],
+            "objects": [
+              "Object: Lesson: Networking Tools and Configuration",
+              "SCORM 1.2: Networking Tools and Configuration",
+              "Object: Slideshow: Lesson Networking Tools and Configuration",
+              "Object: Demo: Linux Networking — Configuration & Troubleshooting Workflow",
+              "Assessment: Quiz: Networking Tools and Configuration",
+              "Object: Activity: Static IP Configuration and Network Testing",
+              "Object: Lab: Analyzing Ports, Services, and Routing on Linux",
+              "Object: Troubleshooting Scenario: Connectivity Failure Due to Misconfiguration"
             ]
           },
           {
@@ -6122,6 +6176,17 @@ const courseOutlines = {
               "Building software from source",
               "Windows packages/installers comparison",
               "Configuration file management"
+            ],
+            "objects": [
+              "Object: Lesson: Software and Package Management",
+              "SCORM 1.2: Software and Package Management",
+              "Object: Slideshow: Lesson Software and Package Management",
+              "Object: Reference Sheet: Software and Package Management",
+              "Object: Demo: Linux Package Management with CLI Tools",
+              "Assessment: Quiz: Software and Package Management",
+              "Object: Activity: Install, Configure, and Maintain a Linux Package",
+              "Object: Lab: Build from Source and Integrate with systemd",
+              "Object: Troubleshooting Scenario: Package Installation Failure"
             ]
           }
         ]
@@ -6139,6 +6204,16 @@ const courseOutlines = {
               "Writing and running scripts",
               "Automating tasks with cron",
               "Creating reusable scripts for admin tasks"
+            ],
+            "objects": [
+              "Object: Lesson: Bash Scripting and Shell Automation",
+              "SCORM 1.2: Bash Scripting and Shell Automation",
+              "Object: Slideshow: Lesson Bash Scripting and Shell Automation",
+              "Object: Demo: Introduction to Shell Scripting",
+              "Assessment: Quiz: Bash Scripting and Shell Automation",
+              "Object: Activity: Monitoring & Automation with Shell Scripts",
+              "Object: Lab: Automating User Management with Bash",
+              "Object: Troubleshooting Scenario: Fix the Broken Script"
             ]
           },
           {
@@ -6149,6 +6224,16 @@ const courseOutlines = {
               "Basic Docker usage: pull, run, build",
               "Introduction to IaC (e.g., Ansible, Terraform overview)",
               "Cloud and orchestration (Kubernetes, virtualization) summary"
+            ],
+            "objects": [
+              "Object: Lesson: Git, Containers, and Infrastructure as Code (IaC)",
+              "SCORM 1.2: Git, Containers, and Infrastructure as Code",
+              "Object: Slideshow: Lesson Git, Containers, and Infrastructure as Code",
+              "Object: Demo: Git and Docker Basics",
+              "Assessment: Quiz: Git, Containers, and Infrastructure as Code (IaC)",
+              "Object: Activity: Git and Docker in Practice",
+              "Object: Lab: Building, Running & Provisioning a Containerized App",
+              "Object: Troubleshooting Scenario: Resolving Git Conflicts & Broken Dockerfiles"
             ]
           }
         ]
@@ -6166,6 +6251,16 @@ const courseOutlines = {
               "Managing firewalls with ufw or firewalld",
               "SSH keys and secure remote access",
               "Compare Windows firewall and RDP access"
+            ],
+            "objects": [
+              "Object: Lesson: Linux Security and Firewalls",
+              "SCORM 1.2: Linux Security and Firewalls",
+              "Object: Slideshow: Lesson Linux Security and Firewalls",
+              "Object: Demo: Securing User Access and Firewall Configuration on a Linux Server",
+              "Assessment: Quiz: Linux Security and Firewalls",
+              "Object: Activity: Configuring UFW on a Linux VM",
+              "Object: Lab: Advanced Host Security Configuration",
+              "Object: Troubleshooting Scenario: Restore SSH Access"
             ]
           },
           {
@@ -6176,19 +6271,27 @@ const courseOutlines = {
               "Logs: system logs, journalctl, dmesg",
               "File permission issues",
               "Network connectivity troubleshooting"
+            ],
+            "objects": [
+              "Object: Lesson: Troubleshooting Linux Systems",
+              "SCORM 1.2: Troubleshooting Linux Systems",
+              "Object: Slideshow: Lesson Troubleshooting Linux Systems",
+              "Object: Demo: Linux System Troubleshooting",
+              "Assessment: Quiz: Troubleshooting Linux Systems",
+              "Object: Activity: Simulate and Resolve Common Linux System Issues",
+              "Object: Lab: Multi-Layered System Troubleshooting",
+              "Object: Troubleshooting Scenario: Diagnose & Repair Under Pressure"
             ]
           }
         ]
       }
     ],
     "assessment": {
-      "title": "Final Assessment & Capstone Lab",
+      "title": "Summative Assessment",
       "hours": 4,
       "items": [
-        "Review and recap",
-        "Final exam (theory + practical)",
-        "Capstone lab challenge (integrated scenario)",
-        "Certificate of completion (if applicable)"
+        "Comprehensive assessment (aggregated from lesson quizzes)",
+        "Capstone lab challenge (integrated scenario)"
       ]
     }
   },

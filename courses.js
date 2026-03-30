@@ -1,5 +1,5 @@
 // Auto-generated from courses.json — do not edit directly
-var dashboardVersion = "0.4.0";
+var dashboardVersion = "0.4.1";
 
 const courseData = [
   {
@@ -541,11 +541,11 @@ const courseData = [
     "hours": 80,
     "status": {
       "design": "Complete",
-      "development": "Not Started"
+      "development": "In Progress"
     },
-    "syllabus": null,
+    "syllabus": "linux-foundations",
     "outline": "Course Outline: Linux Foundations",
-    "note": null,
+    "note": "Full source content across 4 modules (10 lessons) + summative assessment. All lessons have content docs, slides, quizzes, activities, and demos. 10/10 interactive SCORM reviews built. Instructor guides embedded in 34/42 activity/lab/demo docs.",
     "driveFolder": "https://drive.google.com/drive/folders/1ilPpEuWyes1hj1xuEwPixQbj8SUbEkR0"
   },
   {
