@@ -15,8 +15,8 @@ function renderOutline(outlineData) {
     html += '<div class="outline-section-header"><h3><i class="fa-solid fa-sitemap" style="margin-right:6px;opacity:0.7;"></i>Course Outline</h3>';
     html += '<span class="outline-meta">' + outlineData.totalModules + ' modules &middot; ' + outlineData.totalLessons + ' lessons &middot; ' + outlineData.totalHours + ' hours</span></div>';
 
-    var num = 1;
     outlineData.modules.forEach(function(mod, i) {
+        var num = 1;
         html += '<div class="outline-module"><div class="module-header" data-module="' + i + '">' +
             '<i class="fa-solid fa-chevron-right module-chevron"></i>' +
             '<span class="module-name"><i class="fa-solid fa-cube" style="opacity:0.5;margin-right:4px;font-size:11px;"></i>Module ' + (i + 1) + ': ' + (mod.name || mod.title) + '</span>' +
