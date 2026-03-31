@@ -1539,7 +1539,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Installing and Configuring Windows",
+            "title": "Installing & Configuring Windows OS",
             "hours": 3,
             "topics": [
               "Windows editions and requirements",
@@ -1559,7 +1559,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "System Maintenance and Optimization",
+            "title": "System Maintenance & Optimization",
             "hours": 3,
             "topics": [
               "Disk cleanup and defragmentation",
@@ -1569,7 +1569,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Client-Side Virtualization Fundamentals",
+            "title": "Introduction to Client-Side Virtualization",
             "hours": 3,
             "topics": [
               "What is virtualization?",
@@ -1599,7 +1599,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Application Installation Best Practices",
+            "title": "Application Installation and Configuration Best Practices",
             "hours": 3,
             "topics": [
               "MSI vs EXE installers",
@@ -1609,7 +1609,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Introduction to Scripting and Automation",
+            "title": "Introduction to Scripting for IT Fundamentals",
             "hours": 4,
             "topics": [
               "What is scripting and why it matters",
@@ -1636,7 +1636,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "IP Addressing and Network Configuration",
+            "title": "IP Addressing & Network Configuration",
             "hours": 4,
             "topics": [
               "IPv4 addressing and subnet masks",
@@ -1646,7 +1646,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Basic Network Security and Troubleshooting",
+            "title": "Basic Network Security & Troubleshooting",
             "hours": 3,
             "topics": [
               "Firewalls and port filtering",
@@ -1693,7 +1693,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Cybersecurity Best Practices and Incident Response",
+            "title": "Cybersecurity Best Practices & Incident Response",
             "hours": 3,
             "topics": [
               "Password policies and credential management",
@@ -1703,7 +1703,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Wireless Security Protocols and Authentication",
+            "title": "Wireless Security Protocols and Authentication Methods",
             "hours": 3,
             "topics": [
               "WEP/WPA/WPA2/WPA3 comparison",
@@ -1723,7 +1723,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Secure Data Disposal and Destruction",
+            "title": "Secure Data Disposal and Destruction Methods",
             "hours": 3,
             "topics": [
               "Wiping, degaussing, shredding",
@@ -1743,7 +1743,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Secure Browser Configuration",
+            "title": "Secure Browser Configurations",
             "hours": 3,
             "topics": [
               "Browser security settings and privacy",
@@ -1760,7 +1760,7 @@ const courseOutlines = {
         "description": "Systematic troubleshooting methodology applied to hardware, software, network, and display issues.",
         "lessons": [
           {
-            "title": "IT Troubleshooting Methodologies",
+            "title": "Introduction to IT Troubleshooting",
             "hours": 3,
             "topics": [
               "CompTIA 7-step troubleshooting model",
@@ -1770,7 +1770,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Diagnosing Hardware and Software Issues",
+            "title": "Diagnosing & Resolving Hardware and Software Issues",
             "hours": 4,
             "topics": [
               "Blue screen errors and stop codes",
@@ -1780,7 +1780,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Network and Security Troubleshooting",
+            "title": "Network & Security Troubleshooting",
             "hours": 4,
             "topics": [
               "Connectivity loss and intermittent issues",
@@ -1790,7 +1790,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Display, Video, and Projector Issues",
+            "title": "Troubleshooting Display, Video, and Projector Issues",
             "hours": 4,
             "topics": [
               "Resolution and refresh rate problems",
@@ -1800,7 +1800,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "RAID Arrays and Storage Drives",
+            "title": "Troubleshooting RAID Arrays and Storage Drives",
             "hours": 3,
             "topics": [
               "RAID levels (0, 1, 5, 10)",
@@ -1827,7 +1827,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Cloud Storage and File Management",
+            "title": "Cloud Storage & File Management",
             "hours": 4,
             "topics": [
               "IaaS, PaaS, SaaS cloud models",
@@ -1837,7 +1837,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Data Backup and Recovery",
+            "title": "Data Backup & Recovery",
             "hours": 3,
             "topics": [
               "Full, incremental, differential backups",
@@ -1854,7 +1854,7 @@ const courseOutlines = {
         "description": "Professional conduct, communication, change management, and environmental responsibility in IT.",
         "lessons": [
           {
-            "title": "IT Ethics and Legal Considerations",
+            "title": "IT Ethics & Legal Considerations",
             "hours": 3,
             "topics": [
               "Software licensing and intellectual property",
@@ -1864,7 +1864,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Professionalism and Workplace Communication",
+            "title": "Professionalism & Workplace Communication",
             "hours": 3,
             "topics": [
               "Customer service skills for IT support",
@@ -1874,7 +1874,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Change Management in IT",
+            "title": "Introduction to Change Management in IT",
             "hours": 2,
             "topics": [
               "Change management process",
@@ -1884,7 +1884,7 @@ const courseOutlines = {
             ]
           },
           {
-            "title": "Environmental Responsibility and Green IT",
+            "title": "Environmental Responsibilities in IT",
             "hours": 2,
             "topics": [
               "E-waste disposal and recycling",

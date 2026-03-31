@@ -9,6 +9,19 @@ Format follows [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
 
 ---
 
+## [0.4.2] — 2026-03-30
+
+### Fixed
+- **CompTIA A+ outline titles** — aligned 12 shared lesson titles and 10 A+-only lesson titles to match `_COURSES` source content exactly
+- **CompTIA A+ course metadata** — corrected syllabus reference (was pointing to curriculum-level doc), updated development status to "In Progress", added descriptive note
+- **IT Fundamentals course metadata** — updated design status to "Complete", development to "In Progress"
+
+### Changed
+- `courses.json` — CompTIA A+ and IT Fundamentals entries updated with accurate status, syllabus refs, and notes
+- `outlines/comptia-a-plus.json` — 22 lesson title corrections to match source content naming
+
+---
+
 ## [0.4.1] — 2026-03-30
 
 ### Added
