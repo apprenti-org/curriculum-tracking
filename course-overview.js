@@ -533,8 +533,8 @@ var courseOverviewData = [
     "hours": 50,
     "outline": {
       "exists": true,
-      "modules": 8,
-      "lessons": 17
+      "modules": 7,
+      "lessons": 14
     },
     "syllabus": true,
     "source": {
@@ -542,8 +542,8 @@ var courseOverviewData = [
       "folder": "Course: Excel for Data Analysts",
       "modules": 10
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 14,
+    "lessonsWithContent": 2,
     "assets": {
       "lessons": 15,
       "slides": 16,
@@ -564,8 +564,8 @@ var courseOverviewData = [
     "hours": 50,
     "outline": {
       "exists": true,
-      "modules": 5,
-      "lessons": 14
+      "modules": 8,
+      "lessons": 17
     },
     "syllabus": true,
     "source": {
@@ -1586,9 +1586,9 @@ var courseOverviewData = [
     "name": "Python Coding Booster Intensive",
     "hours": 16,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 1,
+      "lessons": 10
     },
     "syllabus": true,
     "source": {
@@ -1596,7 +1596,7 @@ var courseOverviewData = [
       "folder": "Course: Python Booster",
       "modules": 8
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1772,9 +1772,9 @@ var courseOverviewData = [
     "name": "SQL Coding Booster Intensive",
     "hours": 8,
     "outline": {
-      "exists": true,
-      "modules": 1,
-      "lessons": 10
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
     },
     "syllabus": true,
     "source": {
@@ -1782,7 +1782,7 @@ var courseOverviewData = [
       "folder": "Course: SQL Booster",
       "modules": 4
     },
-    "coverage": 0,
+    "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1834,17 +1834,17 @@ var courseOverviewData = [
     "name": "SQL Fundamentals for Operations",
     "hours": 20,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 5,
+      "lessons": 14
     },
-    "syllabus": false,
+    "syllabus": true,
     "source": {
       "exists": true,
       "folder": "Course: SQL for Data",
       "modules": 8
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 17,
