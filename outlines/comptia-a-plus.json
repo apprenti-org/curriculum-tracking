@@ -22,14 +22,14 @@
       "description": "Installing, configuring, and maintaining operating systems and software — with emphasis on Windows, virtualization, and command-line tools.",
       "lessons": [
         { "title": "Introduction to Operating Systems", "hours": 3, "topics": ["What is an operating system?", "Windows, macOS, Linux, Chrome OS overview", "OS architecture: kernel, shell, GUI", "File systems and directory structures"] },
-        { "title": "Installing & Configuring Windows OS", "hours": 3, "topics": ["Windows editions and requirements", "Clean install vs upgrade paths", "Partitioning and formatting", "Post-installation configuration"] },
+        { "title": "Installing and Configuring Windows", "hours": 3, "topics": ["Windows editions and requirements", "Clean install vs upgrade paths", "Partitioning and formatting", "Post-installation configuration"] },
         { "title": "Working with Software Applications", "hours": 3, "topics": ["Productivity suites and business software", "Software licensing models", "Browser configuration", "Email client setup"] },
-        { "title": "System Maintenance & Optimization", "hours": 3, "topics": ["Disk cleanup and defragmentation", "Managing startup programs", "Windows Update and patch management", "Performance monitoring tools"] },
-        { "title": "Introduction to Client-Side Virtualization", "hours": 3, "topics": ["What is virtualization?", "Type 1 vs Type 2 hypervisors", "Creating and managing VMs", "Resource allocation and snapshots"] },
+        { "title": "System Maintenance and Optimization", "hours": 3, "topics": ["Disk cleanup and defragmentation", "Managing startup programs", "Windows Update and patch management", "Performance monitoring tools"] },
+        { "title": "Client-Side Virtualization Fundamentals", "hours": 3, "topics": ["What is virtualization?", "Type 1 vs Type 2 hypervisors", "Creating and managing VMs", "Resource allocation and snapshots"] },
         { "title": "Essential Windows Command Line Tools", "hours": 3, "topics": ["Command Prompt basics", "ipconfig, ping, tracert, netstat", "System File Checker and DISM", "Task management from CLI"] },
         { "title": "Using Windows Control Panel and Settings", "hours": 3, "topics": ["System and device management", "User account and security settings", "Network and sharing configuration", "Programs and features management"] },
-        { "title": "Application Installation and Configuration Best Practices", "hours": 3, "topics": ["MSI vs EXE installers", "Silent and network-based installations", "Compatibility troubleshooting", "Uninstallation and cleanup"] },
-        { "title": "Introduction to Scripting for IT Fundamentals", "hours": 4, "topics": ["What is scripting and why it matters", "PowerShell basics", "Batch scripting fundamentals", "Automating repetitive IT tasks"] }
+        { "title": "Application Installation Best Practices", "hours": 3, "topics": ["MSI vs EXE installers", "Silent and network-based installations", "Compatibility troubleshooting", "Uninstallation and cleanup"] },
+        { "title": "Introduction to Scripting and Automation", "hours": 4, "topics": ["What is scripting and why it matters", "PowerShell basics", "Batch scripting fundamentals", "Automating repetitive IT tasks"] }
       ]
     },
     {
@@ -38,8 +38,8 @@
       "description": "Core networking concepts, IP configuration, security basics, and remote access.",
       "lessons": [
         { "title": "Introduction to Networking Concepts", "hours": 4, "topics": ["LAN, WAN, MAN, PAN network types", "Network topologies and models", "OSI and TCP/IP reference models", "Common networking hardware"] },
-        { "title": "IP Addressing & Network Configuration", "hours": 4, "topics": ["IPv4 addressing and subnet masks", "DHCP and static IP configuration", "DNS fundamentals and name resolution", "Default gateways and routing basics"] },
-        { "title": "Basic Network Security & Troubleshooting", "hours": 3, "topics": ["Firewalls and port filtering", "Wireless security (WPA2, WPA3)", "Common connectivity issues", "ping, tracert, nslookup"] },
+        { "title": "IP Addressing and Network Configuration", "hours": 4, "topics": ["IPv4 addressing and subnet masks", "DHCP and static IP configuration", "DNS fundamentals and name resolution", "Default gateways and routing basics"] },
+        { "title": "Basic Network Security and Troubleshooting", "hours": 3, "topics": ["Firewalls and port filtering", "Wireless security (WPA2, WPA3)", "Common connectivity issues", "ping, tracert, nslookup"] },
         { "title": "Remote Access Tools and Best Practices", "hours": 3, "topics": ["RDP, VPN, SSH overview", "Remote desktop configuration", "Remote support tools", "Security considerations for remote access"] }
       ]
     },
@@ -50,12 +50,12 @@
       "lessons": [
         { "title": "Introduction to Cybersecurity", "hours": 3, "topics": ["CIA Triad", "Malware, ransomware, phishing", "Attack vectors and threat actors", "Security awareness fundamentals"] },
         { "title": "Implementing Basic Security Measures", "hours": 3, "topics": ["Antivirus and endpoint protection", "User account control and least privilege", "Multi-factor authentication", "Windows Defender configuration"] },
-        { "title": "Cybersecurity Best Practices & Incident Response", "hours": 3, "topics": ["Password policies and credential management", "Incident response: identify, contain, eradicate, recover", "Documentation and reporting", "Security frameworks overview"] },
-        { "title": "Wireless Security Protocols and Authentication Methods", "hours": 3, "topics": ["WEP/WPA/WPA2/WPA3 comparison", "EAP and RADIUS authentication", "Enterprise vs personal wireless security", "Rogue access points and evil twin attacks"] },
+        { "title": "Cybersecurity Best Practices and Incident Response", "hours": 3, "topics": ["Password policies and credential management", "Incident response: identify, contain, eradicate, recover", "Documentation and reporting", "Security frameworks overview"] },
+        { "title": "Wireless Security Protocols and Authentication", "hours": 3, "topics": ["WEP/WPA/WPA2/WPA3 comparison", "EAP and RADIUS authentication", "Enterprise vs personal wireless security", "Rogue access points and evil twin attacks"] },
         { "title": "Social Engineering Attacks and Prevention", "hours": 3, "topics": ["Phishing, vishing, smishing, pretexting", "Tailgating and shoulder surfing", "User training and awareness", "Recognizing and reporting attacks"] },
-        { "title": "Secure Data Disposal and Destruction Methods", "hours": 3, "topics": ["Wiping, degaussing, shredding", "Secure deletion tools and standards", "Chain of custody", "Compliance requirements"] },
+        { "title": "Secure Data Disposal and Destruction", "hours": 3, "topics": ["Wiping, degaussing, shredding", "Secure deletion tools and standards", "Chain of custody", "Compliance requirements"] },
         { "title": "Securing Mobile and Embedded Devices", "hours": 3, "topics": ["MDM concepts", "BYOD policies and containerization", "IoT security", "Firmware updates and patching"] },
-        { "title": "Secure Browser Configurations", "hours": 3, "topics": ["Browser security settings and privacy", "Certificate management and HTTPS", "Pop-up blockers and ad filtering", "Extension security"] }
+        { "title": "Secure Browser Configuration", "hours": 3, "topics": ["Browser security settings and privacy", "Certificate management and HTTPS", "Pop-up blockers and ad filtering", "Extension security"] }
       ]
     },
     {
@@ -63,11 +63,11 @@
       "hours": 18,
       "description": "Systematic troubleshooting methodology applied to hardware, software, network, and display issues.",
       "lessons": [
-        { "title": "Introduction to IT Troubleshooting", "hours": 3, "topics": ["CompTIA 7-step troubleshooting model", "Questioning techniques", "Information gathering", "Escalation procedures"] },
-        { "title": "Diagnosing & Resolving Hardware and Software Issues", "hours": 4, "topics": ["Blue screen errors and stop codes", "Boot failure diagnosis", "Application crashes and compatibility", "Driver conflicts and updates"] },
-        { "title": "Network & Security Troubleshooting", "hours": 4, "topics": ["Connectivity loss and intermittent issues", "DNS and DHCP troubleshooting", "VPN and remote access failures", "Malware removal procedures"] },
-        { "title": "Troubleshooting Display, Video, and Projector Issues", "hours": 4, "topics": ["Resolution and refresh rate problems", "Multi-monitor configuration", "Video card troubleshooting", "Projector setup and failures"] },
-        { "title": "Troubleshooting RAID Arrays and Storage Drives", "hours": 3, "topics": ["RAID levels (0, 1, 5, 10)", "RAID failure and recovery", "SMART drive health monitoring", "Storage performance troubleshooting"] }
+        { "title": "IT Troubleshooting Methodologies", "hours": 3, "topics": ["CompTIA 7-step troubleshooting model", "Questioning techniques", "Information gathering", "Escalation procedures"] },
+        { "title": "Diagnosing Hardware and Software Issues", "hours": 4, "topics": ["Blue screen errors and stop codes", "Boot failure diagnosis", "Application crashes and compatibility", "Driver conflicts and updates"] },
+        { "title": "Network and Security Troubleshooting", "hours": 4, "topics": ["Connectivity loss and intermittent issues", "DNS and DHCP troubleshooting", "VPN and remote access failures", "Malware removal procedures"] },
+        { "title": "Display, Video, and Projector Issues", "hours": 4, "topics": ["Resolution and refresh rate problems", "Multi-monitor configuration", "Video card troubleshooting", "Projector setup and failures"] },
+        { "title": "RAID Arrays and Storage Drives", "hours": 3, "topics": ["RAID levels (0, 1, 5, 10)", "RAID failure and recovery", "SMART drive health monitoring", "Storage performance troubleshooting"] }
       ]
     },
     {
@@ -76,8 +76,8 @@
       "description": "Cloud services, storage management, backup strategies, and data recovery fundamentals.",
       "lessons": [
         { "title": "Introduction to Data Storage", "hours": 3, "topics": ["Storage types: DAS, NAS, SAN", "File systems: NTFS, FAT32, ext4, APFS", "Storage capacity planning", "Partitioning and volume management"] },
-        { "title": "Cloud Storage & File Management", "hours": 4, "topics": ["IaaS, PaaS, SaaS cloud models", "Cloud storage providers", "File synchronization and sharing", "Hybrid cloud integration"] },
-        { "title": "Data Backup & Recovery", "hours": 3, "topics": ["Full, incremental, differential backups", "Backup scheduling and rotation", "Disaster recovery planning", "Data restoration and testing"] }
+        { "title": "Cloud Storage and File Management", "hours": 4, "topics": ["IaaS, PaaS, SaaS cloud models", "Cloud storage providers", "File synchronization and sharing", "Hybrid cloud integration"] },
+        { "title": "Data Backup and Recovery", "hours": 3, "topics": ["Full, incremental, differential backups", "Backup scheduling and rotation", "Disaster recovery planning", "Data restoration and testing"] }
       ]
     },
     {
@@ -85,10 +85,10 @@
       "hours": 10,
       "description": "Professional conduct, communication, change management, and environmental responsibility in IT.",
       "lessons": [
-        { "title": "IT Ethics & Legal Considerations", "hours": 3, "topics": ["Software licensing and intellectual property", "Privacy regulations and data handling", "Acceptable use policies", "Legal implications of IT decisions"] },
-        { "title": "Professionalism & Workplace Communication", "hours": 3, "topics": ["Customer service skills for IT support", "Written and verbal communication", "Active listening and empathy", "Managing difficult interactions"] },
-        { "title": "Introduction to Change Management in IT", "hours": 2, "topics": ["Change management process", "Risk assessment for system changes", "Rollback planning", "Communicating changes"] },
-        { "title": "Environmental Responsibilities in IT", "hours": 2, "topics": ["E-waste disposal and recycling", "Energy-efficient computing", "Power management", "Environmental impact of IT"] }
+        { "title": "IT Ethics and Legal Considerations", "hours": 3, "topics": ["Software licensing and intellectual property", "Privacy regulations and data handling", "Acceptable use policies", "Legal implications of IT decisions"] },
+        { "title": "Professionalism and Workplace Communication", "hours": 3, "topics": ["Customer service skills for IT support", "Written and verbal communication", "Active listening and empathy", "Managing difficult interactions"] },
+        { "title": "Change Management in IT", "hours": 2, "topics": ["Change management process", "Risk assessment for system changes", "Rollback planning", "Communicating changes"] },
+        { "title": "Environmental Responsibility and Green IT", "hours": 2, "topics": ["E-waste disposal and recycling", "Energy-efficient computing", "Power management", "Environmental impact of IT"] }
       ]
     }
   ],

@@ -1,5 +1,5 @@
 // Auto-generated from courses.json — do not edit directly
-var dashboardVersion = "0.4.2";
+var dashboardVersion = "0.4.1";
 
 const courseData = [
   {
@@ -177,11 +177,11 @@ const courseData = [
     "hours": 120,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Not Started"
     },
-    "syllabus": "Syllabus: CompTIA A+",
+    "syllabus": "Syllabus: Curriculum IT Support Professional",
     "outline": "Course Outline: CompTIA A+",
-    "note": "Existing content — 7 modules, 38 lessons, 120 hours. Builds on IT Fundamentals (22 shared lessons) plus 16 A+-only lessons. SCORM interactives built for all 38 lessons. Source content in _COURSES with module folders.",
+    "note": null,
     "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o"
   },
   {
@@ -397,8 +397,8 @@ const courseData = [
     "name": "IT Fundamentals",
     "hours": 80,
     "status": {
-      "design": "Complete",
-      "development": "In Progress"
+      "design": "Needs Review",
+      "development": "Not Started"
     },
     "syllabus": "Syllabus: IT Fundamentals",
     "outline": "Course Outline: IT Fundamentals",
