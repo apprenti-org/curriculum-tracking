@@ -1,5 +1,5 @@
 // Auto-generated from courses.json — do not edit directly
-var dashboardVersion = "0.4.1";
+var dashboardVersion = "0.4.2";
 
 const courseData = [
   {
@@ -177,11 +177,11 @@ const courseData = [
     "hours": 120,
     "status": {
       "design": "Complete",
-      "development": "Not Started"
+      "development": "In Progress"
     },
     "syllabus": "Syllabus: Curriculum IT Support Professional",
     "outline": "Course Outline: CompTIA A+",
-    "note": null,
+    "note": "v0.4.2 — 38/38 SCORM interactives complete. All modules 1-7 deployed. Content synced from review HTMLs, titles normalized.",
     "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o"
   },
   {
@@ -398,11 +398,11 @@ const courseData = [
     "hours": 80,
     "status": {
       "design": "Needs Review",
-      "development": "Not Started"
+      "development": "In Progress"
     },
     "syllabus": "Syllabus: IT Fundamentals",
     "outline": "Course Outline: IT Fundamentals",
-    "note": "Existing content — full syllabus (DRAFT), course intro, instructor guide with 10-day pacing, design document, lab/activity review. 7 modules, 22 lessons, 80 hours. Summative: practical exam + written exam.",
+    "note": "22/22 SCORM interactives complete (synced from CompTIA A+). All modules 1-7 deployed.",
     "driveFolder": "https://drive.google.com/drive/folders/1fUbJerrPikWKXdvq0NyizzieFLJtkxEe"
   },
   {

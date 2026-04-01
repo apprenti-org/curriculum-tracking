@@ -9,6 +9,14 @@ Format follows [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
 
 ---
 
+## [0.4.2] — 2026-04-01
+
+### Changed
+- **CompTIA A+ outline** — updated all 38 lesson titles to match deployed SCORM interactive titles, normalized `&` → `and` in module names and object references
+- **CompTIA A+ courses.json** — updated note to reflect content sync from review HTMLs
+
+---
+
 ## [0.4.1] — 2026-03-30
 
 ### Added

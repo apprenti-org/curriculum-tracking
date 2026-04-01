@@ -1467,18 +1467,25 @@ const courseOutlines = {
     "totalModules": 7,
     "modules": [
       {
-        "name": "Introduction to IT & Computer Hardware",
+        "name": "Introduction to IT and Computer Hardware",
         "hours": 16,
         "description": "Foundational IT concepts and hands-on identification of computer hardware components, system architecture, and mobile devices.",
         "lessons": [
           {
-            "title": "Overview of IT and Industry Relevance",
+            "title": "Introduction to IT and Industry Relevance",
             "hours": 3,
             "topics": [
               "What is Information Technology?",
               "IT career paths and industry landscape",
               "Role of IT support professionals",
               "Certifications overview"
+            ],
+            "objects": [
+              "SCORM 1.2: Introduction to IT and Industry Relevance",
+              "Object: Slideshow: Introduction to IT and Industry Relevance",
+              "Assessment: Quiz: Introduction to IT and Industry Relevance",
+              "Object: Activity: Introduction to IT and Industry Relevance",
+              "Object: Demo: Introduction to IT and Industry Relevance"
             ]
           },
           {
@@ -1489,6 +1496,13 @@ const courseOutlines = {
               "Storage devices: HDD, SSD, NVMe",
               "Expansion cards and connectors",
               "ESD safety practices"
+            ],
+            "objects": [
+              "SCORM 1.2: Identifying Computer Components",
+              "Object: Slideshow: Identifying Computer Components",
+              "Assessment: Quiz: Identifying Computer Components",
+              "Object: Activity: Identifying Computer Components",
+              "Object: Demo: Identifying Computer Components"
             ]
           },
           {
@@ -1499,6 +1513,13 @@ const courseOutlines = {
               "BIOS/UEFI configuration and boot process",
               "Bus architecture and chipsets",
               "Firmware vs software"
+            ],
+            "objects": [
+              "SCORM 1.2: Understanding System Architecture",
+              "Object: Slideshow: Understanding System Architecture",
+              "Assessment: Quiz: Understanding System Architecture",
+              "Object: Activity: Understanding System Architecture",
+              "Object: Demo: Understanding System Architecture"
             ]
           },
           {
@@ -1509,6 +1530,13 @@ const courseOutlines = {
               "Diagnostic tools and POST codes",
               "Common hardware failure symptoms",
               "Replacing and upgrading components"
+            ],
+            "objects": [
+              "SCORM 1.2: Basic Hardware Troubleshooting",
+              "Object: Slideshow: Basic Hardware Troubleshooting",
+              "Assessment: Quiz: Basic Hardware Troubleshooting",
+              "Object: Activity: Basic Hardware Troubleshooting",
+              "Object: Demo: Basic Hardware Troubleshooting"
             ]
           },
           {
@@ -1519,12 +1547,20 @@ const courseOutlines = {
               "Mobile device connectors and accessories",
               "Battery technology and power management",
               "Mobile device repair considerations"
+            ],
+            "objects": [
+              "Object: Lesson: Mobile Device Hardware and Accessories",
+              "SCORM 1.2: Mobile Device Hardware and Accessories",
+              "Object: Slideshow: Mobile Device Hardware and Accessories",
+              "Assessment: Quiz: Mobile Device Hardware and Accessories",
+              "Object: Activity: Mobile Device Hardware and Accessories",
+              "Object: Demo: Mobile Device Hardware and Accessories"
             ]
           }
         ]
       },
       {
-        "name": "Operating Systems & Software Applications",
+        "name": "Operating Systems and Software Applications",
         "hours": 28,
         "description": "Installing, configuring, and maintaining operating systems and software — with emphasis on Windows, virtualization, and command-line tools.",
         "lessons": [
@@ -1536,16 +1572,46 @@ const courseOutlines = {
               "Windows, macOS, Linux, Chrome OS overview",
               "OS architecture: kernel, shell, GUI",
               "File systems and directory structures"
+            ],
+            "objects": [
+              "Object: Lesson: Introduction to Operating Systems",
+              "SCORM 1.2: Introduction to Operating Systems",
+              "Object: Slideshow: Introduction to Operating Systems",
+              "Assessment: Quiz: Introduction to Operating Systems",
+              "Object: Activity: Introduction to Operating Systems (1)",
+              "Object: Activity: Introduction to Operating Systems (2)",
+              "Object: Activity: Introduction to Operating Systems (3)",
+              "Object: Activity: Introduction to Operating Systems (4)",
+              "Object: Demo: Introduction to Operating Systems (1)",
+              "Object: Demo: Introduction to Operating Systems (2)",
+              "Object: Demo: Introduction to Operating Systems (3)",
+              "Object: Demo: Introduction to Operating Systems (4)",
+              "Object: Demo: Introduction to Operating Systems (5)"
             ]
           },
           {
-            "title": "Installing and Configuring Windows",
+            "title": "Installing and Configuring Windows OS",
             "hours": 3,
             "topics": [
               "Windows editions and requirements",
               "Clean install vs upgrade paths",
               "Partitioning and formatting",
               "Post-installation configuration"
+            ],
+            "objects": [
+              "Object: Lesson: Installing and Configuring Windows OS",
+              "SCORM 1.2: Installing and Configuring Windows OS",
+              "Object: Slideshow: Installing and Configuring Windows OS",
+              "Assessment: Quiz: Installing and Configuring Windows OS",
+              "Object: Activity: Installing and Configuring Windows OS (1)",
+              "Object: Activity: Installing and Configuring Windows OS (2)",
+              "Object: Activity: Installing and Configuring Windows OS (3)",
+              "Object: Activity: Installing and Configuring Windows OS (4)",
+              "Object: Demo: Installing and Configuring Windows OS (1)",
+              "Object: Demo: Installing and Configuring Windows OS (2)",
+              "Object: Demo: Installing and Configuring Windows OS (3)",
+              "Object: Demo: Installing and Configuring Windows OS (4)",
+              "Object: Demo: Installing and Configuring Windows OS (5)"
             ]
           },
           {
@@ -1556,6 +1622,21 @@ const courseOutlines = {
               "Software licensing models",
               "Browser configuration",
               "Email client setup"
+            ],
+            "objects": [
+              "Object: Lesson: Working with Software Applications",
+              "SCORM 1.2: Working with Software Applications",
+              "Object: Slideshow: Working with Software Applications",
+              "Assessment: Quiz: Working with Software Applications",
+              "Object: Activity: Working with Software Applications (1)",
+              "Object: Activity: Working with Software Applications (2)",
+              "Object: Activity: Working with Software Applications (3)",
+              "Object: Activity: Working with Software Applications (4)",
+              "Object: Demo: Working with Software Applications (1)",
+              "Object: Demo: Working with Software Applications (2)",
+              "Object: Demo: Working with Software Applications (3)",
+              "Object: Demo: Working with Software Applications (4)",
+              "Object: Demo: Working with Software Applications (5)"
             ]
           },
           {
@@ -1566,16 +1647,46 @@ const courseOutlines = {
               "Managing startup programs",
               "Windows Update and patch management",
               "Performance monitoring tools"
+            ],
+            "objects": [
+              "Object: Lesson: System Maintenance and Optimization",
+              "SCORM 1.2: System Maintenance and Optimization",
+              "Object: Slideshow: System Maintenance and Optimization",
+              "Assessment: Quiz: System Maintenance and Optimization",
+              "Object: Activity: System Maintenance and Optimization (1)",
+              "Object: Activity: System Maintenance and Optimization (2)",
+              "Object: Activity: System Maintenance and Optimization (3)",
+              "Object: Activity: System Maintenance and Optimization (4)",
+              "Object: Demo: System Maintenance and Optimization (1)",
+              "Object: Demo: System Maintenance and Optimization (2)",
+              "Object: Demo: System Maintenance and Optimization (3)",
+              "Object: Demo: System Maintenance and Optimization (4)",
+              "Object: Demo: System Maintenance and Optimization (5)"
             ]
           },
           {
-            "title": "Client-Side Virtualization Fundamentals",
+            "title": "Introduction to Client-Side Virtualization",
             "hours": 3,
             "topics": [
               "What is virtualization?",
               "Type 1 vs Type 2 hypervisors",
               "Creating and managing VMs",
               "Resource allocation and snapshots"
+            ],
+            "objects": [
+              "Object: Lesson: Introduction to Client-Side Virtualization",
+              "SCORM 1.2: Introduction to Client-Side Virtualization",
+              "Object: Slideshow: Introduction to Client-Side Virtualization",
+              "Assessment: Quiz: Introduction to Client-Side Virtualization",
+              "Object: Activity: Introduction to Client-Side Virtualization (1)",
+              "Object: Activity: Introduction to Client-Side Virtualization (2)",
+              "Object: Activity: Introduction to Client-Side Virtualization (3)",
+              "Object: Activity: Introduction to Client-Side Virtualization (4)",
+              "Object: Demo: Introduction to Client-Side Virtualization (1)",
+              "Object: Demo: Introduction to Client-Side Virtualization (2)",
+              "Object: Demo: Introduction to Client-Side Virtualization (3)",
+              "Object: Demo: Introduction to Client-Side Virtualization (4)",
+              "Object: Demo: Introduction to Client-Side Virtualization (5)"
             ]
           },
           {
@@ -1586,6 +1697,21 @@ const courseOutlines = {
               "ipconfig, ping, tracert, netstat",
               "System File Checker and DISM",
               "Task management from CLI"
+            ],
+            "objects": [
+              "Object: Lesson: Essential Windows Command Line Tools",
+              "SCORM 1.2: Essential Windows Command Line Tools",
+              "Object: Slideshow: Essential Windows Command Line Tools",
+              "Assessment: Quiz: Essential Windows Command Line Tools",
+              "Object: Activity: Essential Windows Command Line Tools (1)",
+              "Object: Activity: Essential Windows Command Line Tools (2)",
+              "Object: Activity: Essential Windows Command Line Tools (3)",
+              "Object: Activity: Essential Windows Command Line Tools (4)",
+              "Object: Demo: Essential Windows Command Line Tools (1)",
+              "Object: Demo: Essential Windows Command Line Tools (2)",
+              "Object: Demo: Essential Windows Command Line Tools (3)",
+              "Object: Demo: Essential Windows Command Line Tools (4)",
+              "Object: Demo: Essential Windows Command Line Tools (5)"
             ]
           },
           {
@@ -1596,26 +1722,71 @@ const courseOutlines = {
               "User account and security settings",
               "Network and sharing configuration",
               "Programs and features management"
+            ],
+            "objects": [
+              "Object: Lesson: Using Windows Control Panel and Settings",
+              "SCORM 1.2: Using Windows Control Panel and Settings",
+              "Object: Slideshow: Using Windows Control Panel and Settings",
+              "Assessment: Quiz: Using Windows Control Panel and Settings",
+              "Object: Activity: Using Windows Control Panel and Settings (1)",
+              "Object: Activity: Using Windows Control Panel and Settings (2)",
+              "Object: Activity: Using Windows Control Panel and Settings (3)",
+              "Object: Activity: Using Windows Control Panel and Settings (4)",
+              "Object: Demo: Using Windows Control Panel and Settings (1)",
+              "Object: Demo: Using Windows Control Panel and Settings (2)",
+              "Object: Demo: Using Windows Control Panel and Settings (3)",
+              "Object: Demo: Using Windows Control Panel and Settings (4)",
+              "Object: Demo: Using Windows Control Panel and Settings (5)"
             ]
           },
           {
-            "title": "Application Installation Best Practices",
+            "title": "Application Installation and Configuration Best Practices",
             "hours": 3,
             "topics": [
               "MSI vs EXE installers",
               "Silent and network-based installations",
               "Compatibility troubleshooting",
               "Uninstallation and cleanup"
+            ],
+            "objects": [
+              "Object: Lesson: Application Installation and Configuration Best Practices",
+              "SCORM 1.2: Application Installation and Configuration Best Practices",
+              "Object: Slideshow: Application Installation and Configuration Best Practices",
+              "Assessment: Quiz: Application Installation and Configuration Best Practices",
+              "Object: Activity: Application Installation and Configuration Best Practices (1)",
+              "Object: Activity: Application Installation and Configuration Best Practices (2)",
+              "Object: Activity: Application Installation and Configuration Best Practices (3)",
+              "Object: Activity: Application Installation and Configuration Best Practices (4)",
+              "Object: Demo: Application Installation and Configuration Best Practices (1)",
+              "Object: Demo: Application Installation and Configuration Best Practices (2)",
+              "Object: Demo: Application Installation and Configuration Best Practices (3)",
+              "Object: Demo: Application Installation and Configuration Best Practices (4)",
+              "Object: Demo: Application Installation and Configuration Best Practices (5)"
             ]
           },
           {
-            "title": "Introduction to Scripting and Automation",
+            "title": "Introduction to Scripting for IT Fundamentals",
             "hours": 4,
             "topics": [
               "What is scripting and why it matters",
               "PowerShell basics",
               "Batch scripting fundamentals",
               "Automating repetitive IT tasks"
+            ],
+            "objects": [
+              "Object: Lesson: Introduction to Scripting for IT Fundamentals",
+              "SCORM 1.2: Introduction to Scripting for IT Fundamentals",
+              "Object: Slideshow: Introduction to Scripting for IT Fundamentals",
+              "Assessment: Quiz: Introduction to Scripting for IT Fundamentals",
+              "Object: Activity: Introduction to Scripting for IT Fundamentals (1)",
+              "Object: Activity: Introduction to Scripting for IT Fundamentals (2)",
+              "Object: Activity: Introduction to Scripting for IT Fundamentals (3)",
+              "Object: Activity: Introduction to Scripting for IT Fundamentals (4)",
+              "Object: Demo: Introduction to Scripting for IT Fundamentals (1)",
+              "Object: Demo: Introduction to Scripting for IT Fundamentals (2)",
+              "Object: Demo: Introduction to Scripting for IT Fundamentals (3)",
+              "Object: Demo: Introduction to Scripting for IT Fundamentals (4)",
+              "Object: Demo: Introduction to Scripting for IT Fundamentals (5)"
             ]
           }
         ]
@@ -1633,6 +1804,13 @@ const courseOutlines = {
               "Network topologies and models",
               "OSI and TCP/IP reference models",
               "Common networking hardware"
+            ],
+            "objects": [
+              "SCORM 1.2: Introduction to Networking Concepts",
+              "Object: Slideshow: Introduction to Networking Concepts",
+              "Assessment: Quiz: Introduction to Networking Concepts",
+              "Object: Activity: Introduction to Networking Concepts",
+              "Object: Demo: Introduction to Networking Concepts"
             ]
           },
           {
@@ -1643,6 +1821,13 @@ const courseOutlines = {
               "DHCP and static IP configuration",
               "DNS fundamentals and name resolution",
               "Default gateways and routing basics"
+            ],
+            "objects": [
+              "SCORM 1.2: IP Addressing and Network Configuration",
+              "Object: Slideshow: IP Addressing and Network Configuration",
+              "Assessment: Quiz: IP Addressing and Network Configuration",
+              "Object: Activity: IP Addressing and Network Configuration",
+              "Object: Demo: IP Addressing and Network Configuration"
             ]
           },
           {
@@ -1653,6 +1838,13 @@ const courseOutlines = {
               "Wireless security (WPA2, WPA3)",
               "Common connectivity issues",
               "ping, tracert, nslookup"
+            ],
+            "objects": [
+              "SCORM 1.2: Basic Network Security and Troubleshooting",
+              "Object: Slideshow: Basic Network Security and Troubleshooting",
+              "Assessment: Quiz: Basic Network Security and Troubleshooting",
+              "Object: Activity: Basic Network Security and Troubleshooting",
+              "Object: Demo: Basic Network Security and Troubleshooting"
             ]
           },
           {
@@ -1663,12 +1855,20 @@ const courseOutlines = {
               "Remote desktop configuration",
               "Remote support tools",
               "Security considerations for remote access"
+            ],
+            "objects": [
+              "Object: Lesson: Remote Access Tools and Best Practices",
+              "SCORM 1.2: Remote Access Tools and Best Practices",
+              "Object: Slideshow: Remote Access Tools and Best Practices",
+              "Assessment: Quiz: Remote Access Tools and Best Practices",
+              "Object: Activity: Remote Access Tools and Best Practices",
+              "Object: Demo: Remote Access Tools and Best Practices"
             ]
           }
         ]
       },
       {
-        "name": "Security & Cybersecurity Basics",
+        "name": "Security and Cybersecurity Basics",
         "hours": 24,
         "description": "Threat identification, security measures, incident response, and securing devices.",
         "lessons": [
@@ -1680,6 +1880,23 @@ const courseOutlines = {
               "Malware, ransomware, phishing",
               "Attack vectors and threat actors",
               "Security awareness fundamentals"
+            ],
+            "objects": [
+              "SCORM 1.2: Introduction to Cybersecurity",
+              "Object: Slideshow: Introduction to Cybersecurity",
+              "Assessment: Quiz: Introduction to Cybersecurity",
+              "Object: Activity: Introduction to Cybersecurity (1)",
+              "Object: Activity: Introduction to Cybersecurity (2)",
+              "Object: Activity: Introduction to Cybersecurity (3)",
+              "Object: Activity: Introduction to Cybersecurity (4)",
+              "Object: Activity: Introduction to Cybersecurity (5)",
+              "Object: Activity: Introduction to Cybersecurity (6)",
+              "Object: Activity: Introduction to Cybersecurity (7)",
+              "Object: Demo: Introduction to Cybersecurity (1)",
+              "Object: Demo: Introduction to Cybersecurity (2)",
+              "Object: Demo: Introduction to Cybersecurity (3)",
+              "Object: Demo: Introduction to Cybersecurity (4)",
+              "Object: Activity: Case Study: Introduction to Cybersecurity"
             ]
           },
           {
@@ -1690,6 +1907,23 @@ const courseOutlines = {
               "User account control and least privilege",
               "Multi-factor authentication",
               "Windows Defender configuration"
+            ],
+            "objects": [
+              "SCORM 1.2: Implementing Basic Security Measures",
+              "Object: Slideshow: Implementing Basic Security Measures",
+              "Assessment: Quiz: Implementing Basic Security Measures",
+              "Object: Activity: Implementing Basic Security Measures (1)",
+              "Object: Activity: Implementing Basic Security Measures (2)",
+              "Object: Activity: Implementing Basic Security Measures (3)",
+              "Object: Activity: Implementing Basic Security Measures (4)",
+              "Object: Activity: Implementing Basic Security Measures (5)",
+              "Object: Activity: Implementing Basic Security Measures (6)",
+              "Object: Activity: Implementing Basic Security Measures (7)",
+              "Object: Demo: Implementing Basic Security Measures (1)",
+              "Object: Demo: Implementing Basic Security Measures (2)",
+              "Object: Demo: Implementing Basic Security Measures (3)",
+              "Object: Demo: Implementing Basic Security Measures (4)",
+              "Object: Activity: Case Study: Implementing Basic Security Measures"
             ]
           },
           {
@@ -1700,16 +1934,51 @@ const courseOutlines = {
               "Incident response: identify, contain, eradicate, recover",
               "Documentation and reporting",
               "Security frameworks overview"
+            ],
+            "objects": [
+              "SCORM 1.2: Cybersecurity Best Practices and Incident Response",
+              "Object: Slideshow: Cybersecurity Best Practices and Incident Response",
+              "Assessment: Quiz: Cybersecurity Best Practices and Incident Response",
+              "Object: Activity: Cybersecurity Best Practices and Incident Response (1)",
+              "Object: Activity: Cybersecurity Best Practices and Incident Response (2)",
+              "Object: Activity: Cybersecurity Best Practices and Incident Response (3)",
+              "Object: Activity: Cybersecurity Best Practices and Incident Response (4)",
+              "Object: Activity: Cybersecurity Best Practices and Incident Response (5)",
+              "Object: Activity: Cybersecurity Best Practices and Incident Response (6)",
+              "Object: Activity: Cybersecurity Best Practices and Incident Response (7)",
+              "Object: Demo: Cybersecurity Best Practices and Incident Response (1)",
+              "Object: Demo: Cybersecurity Best Practices and Incident Response (2)",
+              "Object: Demo: Cybersecurity Best Practices and Incident Response (3)",
+              "Object: Demo: Cybersecurity Best Practices and Incident Response (4)",
+              "Object: Activity: Case Study: Cybersecurity Best Practices and Incident Response"
             ]
           },
           {
-            "title": "Wireless Security Protocols and Authentication",
+            "title": "Wireless Security Protocols and Authentication Methods",
             "hours": 3,
             "topics": [
               "WEP/WPA/WPA2/WPA3 comparison",
               "EAP and RADIUS authentication",
               "Enterprise vs personal wireless security",
               "Rogue access points and evil twin attacks"
+            ],
+            "objects": [
+              "Object: Lesson: Wireless Security Protocols and Authentication Methods",
+              "SCORM 1.2: Wireless Security Protocols and Authentication Methods",
+              "Object: Slideshow: Wireless Security Protocols and Authentication Methods",
+              "Assessment: Quiz: Wireless Security Protocols and Authentication Methods",
+              "Object: Activity: Wireless Security Protocols and Authentication Methods (1)",
+              "Object: Activity: Wireless Security Protocols and Authentication Methods (2)",
+              "Object: Activity: Wireless Security Protocols and Authentication Methods (3)",
+              "Object: Activity: Wireless Security Protocols and Authentication Methods (4)",
+              "Object: Activity: Wireless Security Protocols and Authentication Methods (5)",
+              "Object: Activity: Wireless Security Protocols and Authentication Methods (6)",
+              "Object: Activity: Wireless Security Protocols and Authentication Methods (7)",
+              "Object: Demo: Wireless Security Protocols and Authentication Methods (1)",
+              "Object: Demo: Wireless Security Protocols and Authentication Methods (2)",
+              "Object: Demo: Wireless Security Protocols and Authentication Methods (3)",
+              "Object: Demo: Wireless Security Protocols and Authentication Methods (4)",
+              "Object: Activity: Case Study: Wireless Security Protocols and Authentication Methods"
             ]
           },
           {
@@ -1720,16 +1989,52 @@ const courseOutlines = {
               "Tailgating and shoulder surfing",
               "User training and awareness",
               "Recognizing and reporting attacks"
+            ],
+            "objects": [
+              "Object: Lesson: Social Engineering Attacks and Prevention",
+              "SCORM 1.2: Social Engineering Attacks and Prevention",
+              "Object: Slideshow: Social Engineering Attacks and Prevention",
+              "Assessment: Quiz: Social Engineering Attacks and Prevention",
+              "Object: Activity: Social Engineering Attacks and Prevention (1)",
+              "Object: Activity: Social Engineering Attacks and Prevention (2)",
+              "Object: Activity: Social Engineering Attacks and Prevention (3)",
+              "Object: Activity: Social Engineering Attacks and Prevention (4)",
+              "Object: Activity: Social Engineering Attacks and Prevention (5)",
+              "Object: Activity: Social Engineering Attacks and Prevention (6)",
+              "Object: Activity: Social Engineering Attacks and Prevention (7)",
+              "Object: Demo: Social Engineering Attacks and Prevention (1)",
+              "Object: Demo: Social Engineering Attacks and Prevention (2)",
+              "Object: Demo: Social Engineering Attacks and Prevention (3)",
+              "Object: Demo: Social Engineering Attacks and Prevention (4)",
+              "Object: Activity: Case Study: Social Engineering Attacks and Prevention"
             ]
           },
           {
-            "title": "Secure Data Disposal and Destruction",
+            "title": "Secure Data Disposal and Destruction Methods",
             "hours": 3,
             "topics": [
               "Wiping, degaussing, shredding",
               "Secure deletion tools and standards",
               "Chain of custody",
               "Compliance requirements"
+            ],
+            "objects": [
+              "Object: Lesson: Secure Data Disposal and Destruction Methods",
+              "SCORM 1.2: Secure Data Disposal and Destruction Methods",
+              "Object: Slideshow: Secure Data Disposal and Destruction Methods",
+              "Assessment: Quiz: Secure Data Disposal and Destruction Methods",
+              "Object: Activity: Secure Data Disposal and Destruction Methods (1)",
+              "Object: Activity: Secure Data Disposal and Destruction Methods (2)",
+              "Object: Activity: Secure Data Disposal and Destruction Methods (3)",
+              "Object: Activity: Secure Data Disposal and Destruction Methods (4)",
+              "Object: Activity: Secure Data Disposal and Destruction Methods (5)",
+              "Object: Activity: Secure Data Disposal and Destruction Methods (6)",
+              "Object: Activity: Secure Data Disposal and Destruction Methods (7)",
+              "Object: Demo: Secure Data Disposal and Destruction Methods (1)",
+              "Object: Demo: Secure Data Disposal and Destruction Methods (2)",
+              "Object: Demo: Secure Data Disposal and Destruction Methods (3)",
+              "Object: Demo: Secure Data Disposal and Destruction Methods (4)",
+              "Object: Activity: Case Study: Secure Data Disposal and Destruction Methods"
             ]
           },
           {
@@ -1740,43 +2045,93 @@ const courseOutlines = {
               "BYOD policies and containerization",
               "IoT security",
               "Firmware updates and patching"
+            ],
+            "objects": [
+              "Object: Lesson: Securing Mobile and Embedded Devices",
+              "SCORM 1.2: Securing Mobile and Embedded Devices",
+              "Object: Slideshow: Securing Mobile and Embedded Devices",
+              "Assessment: Quiz: Securing Mobile and Embedded Devices",
+              "Object: Activity: Securing Mobile and Embedded Devices (1)",
+              "Object: Activity: Securing Mobile and Embedded Devices (2)",
+              "Object: Activity: Securing Mobile and Embedded Devices (3)",
+              "Object: Activity: Securing Mobile and Embedded Devices (4)",
+              "Object: Activity: Securing Mobile and Embedded Devices (5)",
+              "Object: Activity: Securing Mobile and Embedded Devices (6)",
+              "Object: Activity: Securing Mobile and Embedded Devices (7)",
+              "Object: Demo: Securing Mobile and Embedded Devices (1)",
+              "Object: Demo: Securing Mobile and Embedded Devices (2)",
+              "Object: Demo: Securing Mobile and Embedded Devices (3)",
+              "Object: Demo: Securing Mobile and Embedded Devices (4)",
+              "Object: Activity: Case Study: Securing Mobile and Embedded Devices"
             ]
           },
           {
-            "title": "Secure Browser Configuration",
+            "title": "Secure Browser Configurations",
             "hours": 3,
             "topics": [
               "Browser security settings and privacy",
               "Certificate management and HTTPS",
               "Pop-up blockers and ad filtering",
               "Extension security"
+            ],
+            "objects": [
+              "Object: Lesson: Secure Browser Configurations",
+              "SCORM 1.2: Secure Browser Configurations",
+              "Object: Slideshow: Secure Browser Configurations",
+              "Assessment: Quiz: Secure Browser Configurations",
+              "Object: Activity: Secure Browser Configurations (1)",
+              "Object: Activity: Secure Browser Configurations (2)",
+              "Object: Activity: Secure Browser Configurations (3)",
+              "Object: Activity: Secure Browser Configurations (4)",
+              "Object: Activity: Secure Browser Configurations (5)",
+              "Object: Activity: Secure Browser Configurations (6)",
+              "Object: Activity: Secure Browser Configurations (7)",
+              "Object: Demo: Secure Browser Configurations (1)",
+              "Object: Demo: Secure Browser Configurations (2)",
+              "Object: Demo: Secure Browser Configurations (3)",
+              "Object: Demo: Secure Browser Configurations (4)",
+              "Object: Activity: Case Study: Secure Browser Configurations"
             ]
           }
         ]
       },
       {
-        "name": "Troubleshooting & IT Support",
+        "name": "Troubleshooting and IT Support",
         "hours": 18,
         "description": "Systematic troubleshooting methodology applied to hardware, software, network, and display issues.",
         "lessons": [
           {
-            "title": "IT Troubleshooting Methodologies",
+            "title": "Introduction to IT Troubleshooting",
             "hours": 3,
             "topics": [
               "CompTIA 7-step troubleshooting model",
               "Questioning techniques",
               "Information gathering",
               "Escalation procedures"
+            ],
+            "objects": [
+              "SCORM 1.2: Introduction to IT Troubleshooting",
+              "Object: Slideshow: Introduction to IT Troubleshooting",
+              "Assessment: Quiz: Introduction to IT Troubleshooting",
+              "Object: Activity: Introduction to IT Troubleshooting (1)",
+              "Object: Activity: Introduction to IT Troubleshooting (2)"
             ]
           },
           {
-            "title": "Diagnosing Hardware and Software Issues",
+            "title": "Diagnosing and Resolving Hardware and Software Issues",
             "hours": 4,
             "topics": [
               "Blue screen errors and stop codes",
               "Boot failure diagnosis",
               "Application crashes and compatibility",
               "Driver conflicts and updates"
+            ],
+            "objects": [
+              "SCORM 1.2: Diagnosing and Resolving Hardware and Software Issues",
+              "Object: Slideshow: Diagnosing and Resolving Hardware and Software Issues",
+              "Assessment: Quiz: Diagnosing and Resolving Hardware and Software Issues",
+              "Object: Activity: Diagnosing and Resolving Hardware and Software Issues (1)",
+              "Object: Activity: Diagnosing and Resolving Hardware and Software Issues (2)"
             ]
           },
           {
@@ -1787,32 +2142,55 @@ const courseOutlines = {
               "DNS and DHCP troubleshooting",
               "VPN and remote access failures",
               "Malware removal procedures"
+            ],
+            "objects": [
+              "SCORM 1.2: Network and Security Troubleshooting",
+              "Object: Slideshow: Network and Security Troubleshooting",
+              "Assessment: Quiz: Network and Security Troubleshooting",
+              "Object: Activity: Network and Security Troubleshooting (1)",
+              "Object: Activity: Network and Security Troubleshooting (2)"
             ]
           },
           {
-            "title": "Display, Video, and Projector Issues",
+            "title": "Troubleshooting Display, Video, and Projector Issues",
             "hours": 4,
             "topics": [
               "Resolution and refresh rate problems",
               "Multi-monitor configuration",
               "Video card troubleshooting",
               "Projector setup and failures"
+            ],
+            "objects": [
+              "Object: Lesson: Troubleshooting Display, Video, and Projector Issues",
+              "SCORM 1.2: Troubleshooting Display, Video, and Projector Issues",
+              "Object: Slideshow: Troubleshooting Display, Video, and Projector Issues",
+              "Assessment: Quiz: Troubleshooting Display, Video, and Projector Issues",
+              "Object: Activity: Troubleshooting Display, Video, and Projector Issues (1)",
+              "Object: Activity: Troubleshooting Display, Video, and Projector Issues (2)"
             ]
           },
           {
-            "title": "RAID Arrays and Storage Drives",
+            "title": "Troubleshooting RAID Arrays and Storage Drives",
             "hours": 3,
             "topics": [
               "RAID levels (0, 1, 5, 10)",
               "RAID failure and recovery",
               "SMART drive health monitoring",
               "Storage performance troubleshooting"
+            ],
+            "objects": [
+              "Object: Lesson: Troubleshooting RAID Arrays and Storage Drives",
+              "SCORM 1.2: Troubleshooting RAID Arrays and Storage Drives",
+              "Object: Slideshow: Troubleshooting RAID Arrays and Storage Drives",
+              "Assessment: Quiz: Troubleshooting RAID Arrays and Storage Drives",
+              "Object: Activity: Troubleshooting RAID Arrays and Storage Drives (1)",
+              "Object: Activity: Troubleshooting RAID Arrays and Storage Drives (2)"
             ]
           }
         ]
       },
       {
-        "name": "Data Storage & Cloud Computing",
+        "name": "Data Storage and Cloud Computing",
         "hours": 10,
         "description": "Cloud services, storage management, backup strategies, and data recovery fundamentals.",
         "lessons": [
@@ -1824,6 +2202,9 @@ const courseOutlines = {
               "File systems: NTFS, FAT32, ext4, APFS",
               "Storage capacity planning",
               "Partitioning and volume management"
+            ],
+            "objects": [
+              "SCORM 1.2: Introduction to Data Storage"
             ]
           },
           {
@@ -1834,6 +2215,9 @@ const courseOutlines = {
               "Cloud storage providers",
               "File synchronization and sharing",
               "Hybrid cloud integration"
+            ],
+            "objects": [
+              "SCORM 1.2: Cloud Storage and File Management"
             ]
           },
           {
@@ -1844,12 +2228,15 @@ const courseOutlines = {
               "Backup scheduling and rotation",
               "Disaster recovery planning",
               "Data restoration and testing"
+            ],
+            "objects": [
+              "SCORM 1.2: Data Backup and Recovery"
             ]
           }
         ]
       },
       {
-        "name": "IT Ethics & Professionalism",
+        "name": "IT Ethics and Professionalism",
         "hours": 10,
         "description": "Professional conduct, communication, change management, and environmental responsibility in IT.",
         "lessons": [
@@ -1861,6 +2248,14 @@ const courseOutlines = {
               "Privacy regulations and data handling",
               "Acceptable use policies",
               "Legal implications of IT decisions"
+            ],
+            "objects": [
+              "SCORM 1.2: IT Ethics and Legal Considerations",
+              "Object: Slideshow: IT Ethics and Legal Considerations",
+              "Assessment: Quiz: IT Ethics and Legal Considerations",
+              "Object: Activity: IT Ethics and Legal Considerations",
+              "Object: Activity: Case Study: IT Ethics and Legal Considerations (1)",
+              "Object: Activity: Case Study: IT Ethics and Legal Considerations (2)"
             ]
           },
           {
@@ -1871,26 +2266,52 @@ const courseOutlines = {
               "Written and verbal communication",
               "Active listening and empathy",
               "Managing difficult interactions"
+            ],
+            "objects": [
+              "SCORM 1.2: Professionalism and Workplace Communication",
+              "Object: Slideshow: Professionalism and Workplace Communication",
+              "Assessment: Quiz: Professionalism and Workplace Communication",
+              "Object: Activity: Professionalism and Workplace Communication",
+              "Object: Activity: Case Study: Professionalism and Workplace Communication (1)",
+              "Object: Activity: Case Study: Professionalism and Workplace Communication (2)"
             ]
           },
           {
-            "title": "Change Management in IT",
+            "title": "Introduction to Change Management in IT",
             "hours": 2,
             "topics": [
               "Change management process",
               "Risk assessment for system changes",
               "Rollback planning",
               "Communicating changes"
+            ],
+            "objects": [
+              "Object: Lesson: Introduction to Change Management in IT",
+              "SCORM 1.2: Introduction to Change Management in IT",
+              "Object: Slideshow: Introduction to Change Management in IT",
+              "Assessment: Quiz: Introduction to Change Management in IT",
+              "Object: Activity: Introduction to Change Management in IT",
+              "Object: Activity: Case Study: Introduction to Change Management in IT (1)",
+              "Object: Activity: Case Study: Introduction to Change Management in IT (2)"
             ]
           },
           {
-            "title": "Environmental Responsibility and Green IT",
+            "title": "Environmental Responsibilities in IT",
             "hours": 2,
             "topics": [
               "E-waste disposal and recycling",
               "Energy-efficient computing",
               "Power management",
               "Environmental impact of IT"
+            ],
+            "objects": [
+              "Object: Lesson: Environmental Responsibilities in IT",
+              "SCORM 1.2: Environmental Responsibilities in IT",
+              "Object: Slideshow: Environmental Responsibilities in IT",
+              "Assessment: Quiz: Environmental Responsibilities in IT",
+              "Object: Activity: Environmental Responsibilities in IT",
+              "Object: Activity: Case Study: Environmental Responsibilities in IT (1)",
+              "Object: Activity: Case Study: Environmental Responsibilities in IT (2)"
             ]
           }
         ]
@@ -1904,6 +2325,10 @@ const courseOutlines = {
         "Hands-on practical lab",
         "CompTIA A+ exam preparation review",
         "Study strategies and certification next steps"
+      ],
+      "objects": [
+        "Assessment: CompTIA A+ Final Exam",
+        "SCORM 1.2: Final Assessment Review"
       ]
     }
   },
