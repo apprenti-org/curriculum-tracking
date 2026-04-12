@@ -124,7 +124,7 @@ async function build(options = {}) {
     const scriptsDir = path.join(BUILD_CONFIG.rootDir, 'scripts');
     const workspaceBase = path.resolve(BUILD_CONFIG.rootDir, '..', '..', '..');
 
-    if (fs.existsSync(path.join(workspaceBase, '_COURSES Phase 1 - WORKNG'))) {
+    if (fs.existsSync(path.join(workspaceBase, '_COURSES Phase 1 - WORKING'))) {
       console.log('  Running Python generators...');
 
       const pythonScripts = [

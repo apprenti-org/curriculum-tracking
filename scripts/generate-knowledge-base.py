@@ -17,7 +17,7 @@ from datetime import datetime
 
 def resolve_paths(base_path):
     """Resolve all workspace paths from a base directory."""
-    working = os.path.join(base_path, '_COURSES Phase 1 - WORKNG')
+    working = os.path.join(base_path, '_COURSES Phase 1 - WORKING')
     repo = os.path.join(working, 'tracking', 'repo')
     return {
         'base': base_path,
@@ -33,10 +33,10 @@ def auto_detect_base():
     """Auto-detect workspace base from script location."""
     script_dir = os.path.dirname(os.path.abspath(__file__))
     candidate = os.path.normpath(os.path.join(script_dir, '..', '..', '..', '..'))
-    if os.path.isdir(os.path.join(candidate, '_COURSES Phase 1 - WORKNG')):
+    if os.path.isdir(os.path.join(candidate, '_COURSES Phase 1 - WORKING')):
         return candidate
     candidate = os.path.normpath(os.path.join(script_dir, '..', '..', '..'))
-    if os.path.isdir(os.path.join(candidate, '_COURSES Phase 1 - WORKNG')):
+    if os.path.isdir(os.path.join(candidate, '_COURSES Phase 1 - WORKING')):
         return candidate
     return None
 

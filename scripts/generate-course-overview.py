@@ -19,11 +19,11 @@ def resolve_paths(base_path):
     """Resolve all workspace paths from a base directory."""
     return {
         'base': base_path,
-        'courses_working': os.path.join(base_path, '_COURSES Phase 1 - WORKNG'),
+        'courses_working': os.path.join(base_path, '_COURSES Phase 1 - WORKING'),
         'courses_source': os.path.join(base_path, '_COURSES'),
-        'courses_json': os.path.join(base_path, '_COURSES Phase 1 - WORKNG', 'tracking', 'repo', 'courses.json'),
-        'courses_dir': os.path.join(base_path, '_COURSES Phase 1 - WORKNG', 'courses'),
-        'output': os.path.join(base_path, '_COURSES Phase 1 - WORKNG', 'tracking', 'repo', 'course-overview.json'),
+        'courses_json': os.path.join(base_path, '_COURSES Phase 1 - WORKING', 'tracking', 'repo', 'courses.json'),
+        'courses_dir': os.path.join(base_path, '_COURSES Phase 1 - WORKING', 'courses'),
+        'output': os.path.join(base_path, '_COURSES Phase 1 - WORKING', 'tracking', 'repo', 'course-overview.json'),
     }
 
 
@@ -31,10 +31,10 @@ def auto_detect_base():
     """Auto-detect workspace base from script location."""
     script_dir = os.path.dirname(os.path.abspath(__file__))
     candidate = os.path.normpath(os.path.join(script_dir, '..', '..', '..', '..'))
-    if os.path.isdir(os.path.join(candidate, '_COURSES Phase 1 - WORKNG')):
+    if os.path.isdir(os.path.join(candidate, '_COURSES Phase 1 - WORKING')):
         return candidate
     candidate = os.path.normpath(os.path.join(script_dir, '..', '..', '..'))
-    if os.path.isdir(os.path.join(candidate, '_COURSES Phase 1 - WORKNG')):
+    if os.path.isdir(os.path.join(candidate, '_COURSES Phase 1 - WORKING')):
         return candidate
     return None
 

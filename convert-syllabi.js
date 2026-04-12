@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const coursesDir = '/sessions/busy-relaxed-dirac/mnt/Curriculum for Training Operations/_COURSES Phase 1 - WORKNG/courses';
-const syllabiDir = '/sessions/busy-relaxed-dirac/mnt/Curriculum for Training Operations/_COURSES Phase 1 - WORKNG/tracking/repo/syllabi';
+const coursesDir = '/sessions/busy-relaxed-dirac/mnt/Curriculum for Training Operations/_COURSES Phase 1 - WORKING/courses';
+const syllabiDir = '/sessions/busy-relaxed-dirac/mnt/Curriculum for Training Operations/_COURSES Phase 1 - WORKING/tracking/repo/syllabi';
 
 // CSS from the existing template
 const CSS = `

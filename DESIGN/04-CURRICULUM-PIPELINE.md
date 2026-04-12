@@ -70,7 +70,7 @@ This is additive — existing validators and UI won't break. Defer until at leas
 
 ## Document Relationships
 
-Each course has source documents (read-only, in `_COURSES/` or Google Drive) and working documents (in `_COURSES Phase 1 - WORKNG/`). The pipeline view should display these per course.
+Each course has source documents (read-only, in `_COURSES/` or Google Drive) and working documents (in `_COURSES Phase 1 - WORKING/`). The pipeline view should display these per course.
 
 ### Source Documents (read-only)
 
