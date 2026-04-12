@@ -1,0 +1,126 @@
+{
+  "name": "ITIL Foundations",
+  "hours": 20,
+  "moduleCount": 7,
+  "lessonCount": 19,
+  "modules": [
+    {
+      "name": "Introduction to IT Service Management",
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "What is IT Service Management (ITSM)?",
+          "hours": 1
+        },
+        {
+          "title": "Overview of the ITIL Framework",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "name": "The ITIL Service Value System",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "The Service Value System (SVS)",
+          "hours": 1.5
+        },
+        {
+          "title": "Governance and the SVS in Action",
+          "hours": 1.5
+        }
+      ]
+    },
+    {
+      "name": "The 7 Guiding Principles",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "Guiding Principles 1–4",
+          "hours": 1.5
+        },
+        {
+          "title": "Guiding Principles 5–7 and Application",
+          "hours": 1.5
+        }
+      ]
+    },
+    {
+      "name": "The Service Value Chain",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "The 6 Value Chain Activities",
+          "hours": 1.5
+        },
+        {
+          "title": "Value Streams and Workflow",
+          "hours": 1.5
+        }
+      ]
+    },
+    {
+      "name": "ITIL Practices",
+      "hours": 5,
+      "lessons": [
+        {
+          "title": "Incident Management",
+          "hours": 1
+        },
+        {
+          "title": "Problem Management",
+          "hours": 1
+        },
+        {
+          "title": "Change Enablement and Release Management",
+          "hours": 1
+        },
+        {
+          "title": "Service Level Management",
+          "hours": 1
+        },
+        {
+          "title": "Service Desk, Service Request Management, and Supporting Practices",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "name": "Continual Improvement",
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "The Continual Improvement Model",
+          "hours": 1
+        },
+        {
+          "title": "Applying Continual Improvement",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "name": "ITIL in the Real World and Exam Preparation",
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "ITIL in Practice",
+          "hours": 0.5
+        },
+        {
+          "title": "Comprehensive Review",
+          "hours": 0.5
+        },
+        {
+          "title": "Practice Exam",
+          "hours": 0.5
+        },
+        {
+          "title": "Case Study and Final Review",
+          "hours": 0.5
+        }
+      ]
+    }
+  ]
+}
