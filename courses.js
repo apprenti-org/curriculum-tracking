@@ -411,11 +411,11 @@ const courseData = [
     "hours": 20,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "itil-foundations",
     "outline": true,
-    "note": "20 hours, 7 modules, 19 lessons. ITIL 4 Foundation certification prep. Needs SCORM packaging.",
+    "note": "20 hours, 7 modules, 19 lessons. ITIL 4 Foundation certification prep.",
     "driveFolder": "https://drive.google.com/drive/folders/1aljEOFGVRecJDz1QsGRCNTjBs-i81esw",
     "deployRepo": "https://github.com/apprenti-org/itil-foundations-content",
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
