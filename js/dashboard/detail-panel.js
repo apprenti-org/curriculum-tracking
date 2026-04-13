@@ -102,7 +102,12 @@ function renderRefLinks(course, courseName, outlineData) {
 
     if (outline) {
         var iconColor = hasOutlineData ? 'color:#4caf50;' : 'opacity:0.5;';
-        html += '<span><i class="fa-solid fa-list-ul" style="' + iconColor + '"></i> Outline</span>';
+        if (course.sourceRepo) {
+            var outlineUrl = course.sourceRepo + '/blob/main/course-design/' + (course.id || '') + '/course-outline-' + (course.id || '') + '.md';
+            html += '<a href="' + outlineUrl + '" target="_blank" class="ref-link"><i class="fa-solid fa-list-ul" style="' + iconColor + '"></i> Outline</a>';
+        } else {
+            html += '<span><i class="fa-solid fa-list-ul" style="' + iconColor + '"></i> Outline</span>';
+        }
     }
 
     if (gapAnalysisMap[courseName]) {
@@ -111,6 +116,14 @@ function renderRefLinks(course, courseName, outlineData) {
 
     if (course.driveFolder) {
         html += '<a href="' + course.driveFolder + '" target="_blank" class="ref-link drive-link"><i class="fa-brands fa-google-drive" style="color:#4caf50;"></i> Google Drive</a>';
+    }
+
+    if (course.deployRepo) {
+        html += '<a href="' + course.deployRepo + '" target="_blank" class="ref-link"><i class="fa-brands fa-github" style="color:#6e5494;"></i> Deploy</a>';
+    }
+
+    if (course.sourceRepo) {
+        html += '<a href="' + course.sourceRepo + '" target="_blank" class="ref-link"><i class="fa-brands fa-github" style="color:#6e5494;"></i> Source</a>';
     }
     html += '</div>';
     return html;
