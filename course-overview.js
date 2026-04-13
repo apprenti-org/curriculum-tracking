@@ -284,9 +284,9 @@ var courseOverviewData = [
     "name": "C++ Coding Booster Intensive",
     "hours": 8,
     "outline": {
-      "exists": true,
-      "modules": 2,
-      "lessons": 5
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
     },
     "syllabus": true,
     "source": {
@@ -294,7 +294,7 @@ var courseOverviewData = [
       "folder": "Course: C++ Coding Booster",
       "modules": 9
     },
-    "coverage": 0,
+    "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 13,
@@ -418,10 +418,10 @@ var courseOverviewData = [
       "folder": "COURSE: CompTIA A+",
       "modules": 7
     },
-    "coverage": 13,
-    "lessonsWithContent": 5,
+    "coverage": 15,
+    "lessonsWithContent": 6,
     "assets": {
-      "lessons": 15,
+      "lessons": 16,
       "slides": 16,
       "quizzes": 16,
       "activities": 18,
@@ -432,7 +432,7 @@ var courseOverviewData = [
       "modRecaps": 0,
       "interactives": 0
     },
-    "totalAssets": 85
+    "totalAssets": 86
   },
   {
     "id": "comptia-network-plus",
@@ -567,13 +567,13 @@ var courseOverviewData = [
       "modules": 8,
       "lessons": 17
     },
-    "syllabus": false,
+    "syllabus": true,
     "source": {
       "exists": true,
       "folder": "Course: SQL for Data",
       "modules": 8
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 17,
@@ -967,8 +967,8 @@ var courseOverviewData = [
     "hours": 20,
     "outline": {
       "exists": true,
-      "modules": 6,
-      "lessons": 16
+      "modules": 8,
+      "lessons": 20
     },
     "syllabus": true,
     "source": {
@@ -1028,9 +1028,9 @@ var courseOverviewData = [
     "name": "Java Coding Booster Intensive",
     "hours": 16,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 1,
+      "lessons": 13
     },
     "syllabus": true,
     "source": {
@@ -1038,7 +1038,7 @@ var courseOverviewData = [
       "folder": "Course: Java Booster",
       "modules": 8
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1154,7 +1154,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 13
+      "lessons": 7
     },
     "syllabus": true,
     "source": {
@@ -1587,8 +1587,8 @@ var courseOverviewData = [
     "hours": 16,
     "outline": {
       "exists": true,
-      "modules": 1,
-      "lessons": 7
+      "modules": 2,
+      "lessons": 5
     },
     "syllabus": true,
     "source": {

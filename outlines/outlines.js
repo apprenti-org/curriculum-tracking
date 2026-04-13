@@ -5455,6 +5455,389 @@ const courseOutlines = {
       ]
     }
   },
+  "ITIL Foundations": {
+    "course": "ITIL Foundations",
+    "totalHours": 20,
+    "totalLessons": 19,
+    "totalModules": 7,
+    "modules": [
+      {
+        "name": "Introduction to IT Service Management",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "What is IT Service Management (ITSM)?",
+            "hours": 1,
+            "topics": [
+              "What is IT Service Management and why it matters",
+              "Products vs services vs value",
+              "Co-creation of value",
+              "The service relationship model: service provider, service consumer, and service relationships",
+              "Customers, users, sponsors, and other stakeholders",
+              "The four dimensions of service management: organizations and people, information and technology, partners and suppliers, value streams and processes",
+              "Identify services students use daily (Netflix, Google Drive, LMS)",
+              "Map \"what is the service vs. what is the product?\""
+            ],
+            "objects": [
+              "Object: Lesson: What is IT Service Management (ITSM)?",
+              "SCORM: Interactive — What is IT Service Management (ITSM)?",
+              "Assessment: Quiz — What is IT Service Management (ITSM)?",
+              "Object: Activity — Exercise: Identify Services in Your Daily Life",
+              "Object: Activity — Exercise: Map the Service Relationship"
+            ]
+          },
+          {
+            "title": "Overview of the ITIL Framework",
+            "hours": 1,
+            "topics": [
+              "History and evolution of ITIL to ITIL 4",
+              "ITIL 4 structure and certification pathway",
+              "Key terminology: outcome, output, cost, risk",
+              "Utility (\"fit for purpose\") vs warranty (\"fit for use\") — exam-critical distinction",
+              "Service offerings: goods, access to resources, service actions",
+              "How external factors (PESTLE) affect the four dimensions"
+            ],
+            "objects": [
+              "Object: Lesson: Overview of the ITIL Framework",
+              "SCORM: Interactive — Overview of the ITIL Framework",
+              "Assessment: Quiz — Overview of the ITIL Framework",
+              "Object: Activity — Exercise: Utility vs Warranty Challenge"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The ITIL Service Value System",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "The Service Value System (SVS)",
+            "hours": 1.5,
+            "topics": [
+              "What is the Service Value System?",
+              "Inputs (opportunity and demand) → Outputs → Value",
+              "Components of the SVS: guiding principles, governance, service value chain, practices, continual improvement",
+              "How the components interact"
+            ],
+            "objects": [
+              "Object: Lesson: The Service Value System (SVS)",
+              "SCORM: Interactive — The Service Value System (SVS)",
+              "Assessment: Quiz — The Service Value System (SVS)",
+              "Object: Activity — Exercise: Label and Connect the SVS Diagram"
+            ]
+          },
+          {
+            "title": "Governance and the SVS in Action",
+            "hours": 1.5,
+            "topics": [
+              "Organizational governance within the SVS",
+              "How governance directs and controls the organization",
+              "Applying the SVS to real-world service delivery",
+              "Diagram a real-world service using SVS (e.g., food delivery app)"
+            ],
+            "objects": [
+              "Object: Lesson: Governance and the SVS in Action",
+              "SCORM: Interactive — Governance and the SVS in Action",
+              "Assessment: Quiz — Governance and the SVS in Action",
+              "Object: Activity — Exercise: Diagram a Real-World Service Using the SVS"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The 7 Guiding Principles",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "Guiding Principles 1–4",
+            "hours": 1.5,
+            "topics": [
+              "Focus on value",
+              "Start where you are",
+              "Progress iteratively with feedback",
+              "Collaborate and promote visibility"
+            ],
+            "objects": [
+              "Object: Lesson: Guiding Principles 1–4",
+              "SCORM: Interactive — Guiding Principles 1–4",
+              "Assessment: Quiz — Guiding Principles 1–4",
+              "Object: Activity — Exercise: Principle Application Scenarios"
+            ]
+          },
+          {
+            "title": "Guiding Principles 5–7 and Application",
+            "hours": 1.5,
+            "topics": [
+              "Think and work holistically",
+              "Keep it simple and practical",
+              "Optimize and automate",
+              "How principles interact and support each other",
+              "Case study: broken IT system → apply guiding principles",
+              "Group discussion: which principles are violated?"
+            ],
+            "objects": [
+              "Object: Lesson: Guiding Principles 5–7 and Application",
+              "SCORM: Interactive — Guiding Principles 5–7 and Application",
+              "Assessment: Quiz — Guiding Principles 5–7 and Application",
+              "Object: Activity — Exercise: Case Study — Broken IT System",
+              "Object: Activity — Exercise: Principle Identification — Quick Scenarios"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Service Value Chain",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "The 6 Value Chain Activities",
+            "hours": 1.5,
+            "topics": [
+              "Plan",
+              "Improve",
+              "Engage",
+              "Design and transition",
+              "Obtain/build",
+              "Deliver and support",
+              "Inputs and outputs of each activity"
+            ],
+            "objects": [
+              "Object: Lesson: The 6 Value Chain Activities",
+              "SCORM: Interactive — The 6 Value Chain Activities",
+              "Assessment: Quiz — The 6 Value Chain Activities",
+              "Object: Activity — Exercise: Match Inputs and Outputs"
+            ]
+          },
+          {
+            "title": "Value Streams and Workflow",
+            "hours": 1.5,
+            "topics": [
+              "How activities interconnect to create value streams",
+              "Inputs and outputs between value chain activities",
+              "Example value streams: incident resolution, service request fulfillment, new service deployment",
+              "Mapping workflows through the value chain",
+              "Identifying bottlenecks and optimization opportunities",
+              "Map a help desk ticket through the value chain — trace inputs/outputs between activities",
+              "Map a service request through the value chain",
+              "Identify bottlenecks and propose improvements"
+            ],
+            "objects": [
+              "Object: Lesson: Value Streams and Workflow",
+              "SCORM: Interactive — Value Streams and Workflow",
+              "Assessment: Quiz — Value Streams and Workflow",
+              "Object: Activity — Exercise: Identify Bottlenecks and Propose Improvements",
+              "Object: Activity — Exercise: Map a Help Desk Ticket Through the Value Chain",
+              "Object: Activity — Exercise: Map a Service Request Through the Value Chain"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ITIL Practices",
+        "hours": 5,
+        "lessons": [
+          {
+            "title": "Incident Management",
+            "hours": 1,
+            "topics": [
+              "Key terms: incident, major incident, incident model",
+              "Incident lifecycle and prioritization (impact and urgency)",
+              "Severity-based escalation processes (functional and hierarchical)",
+              "Incident bridges and major incident procedures",
+              "Runbooks and incident response documentation"
+            ],
+            "objects": [
+              "Object: Lesson: Incident Management",
+              "SCORM: Interactive — Incident Management",
+              "Assessment: Quiz — Incident Management",
+              "Object: Activity — Exercise: Incident Prioritization"
+            ]
+          },
+          {
+            "title": "Problem Management",
+            "hours": 1,
+            "topics": [
+              "Key terms: problem vs incident vs known error — exam-critical distinctions",
+              "Problem identification and logging",
+              "Root cause analysis (RCA) techniques",
+              "Known errors and workarounds",
+              "Relationship between incident and problem management"
+            ],
+            "objects": [
+              "Object: Lesson: Problem Management",
+              "SCORM: Interactive — Problem Management",
+              "Assessment: Quiz — Problem Management",
+              "Object: Activity — Exercise: Incident vs. Problem vs. Known Error Classification"
+            ]
+          },
+          {
+            "title": "Change Enablement and Release Management",
+            "hours": 1,
+            "topics": [
+              "Key terms: change model, change authority, change schedule",
+              "Types of changes: standard, normal, emergency",
+              "Impact assessments and mitigation planning for production changes",
+              "Change authority, change advisory board (CAB), and emergency CAB",
+              "Release governance and deployment planning"
+            ],
+            "objects": [
+              "Object: Lesson: Change Enablement and Release Management",
+              "SCORM: Interactive — Change Enablement and Release Management",
+              "Assessment: Quiz — Change Enablement and Release Management",
+              "Object: Activity — Exercise: Change Classification"
+            ]
+          },
+          {
+            "title": "Service Level Management",
+            "hours": 1,
+            "topics": [
+              "Key terms: SLA, SLO, OLA, service review",
+              "Service level agreements (SLAs) — structure and content",
+              "Service level objectives (SLOs) and operational level agreements (OLAs)",
+              "Measuring and reporting service performance against uptime targets",
+              "Service reviews and customer feedback"
+            ],
+            "objects": [
+              "Object: Lesson: Service Level Management",
+              "SCORM: Interactive — Service Level Management",
+              "Assessment: Quiz — Service Level Management",
+              "Object: Activity — Exercise: Design an SLA"
+            ]
+          },
+          {
+            "title": "Service Desk, Service Request Management, and Supporting Practices",
+            "hours": 1,
+            "topics": [
+              "Service request fulfillment and approval workflows",
+              "Simulate a help desk scenario: incident vs problem vs change",
+              "Build a simple workflow for handling service requests"
+            ],
+            "objects": [
+              "Object: Lesson: Service Desk, Service Request Management, and Supporting Practices",
+              "SCORM: Interactive — Service Desk, Service Request Management, and Supporting Practices",
+              "Assessment: Quiz — Service Desk, Service Request Management, and Supporting Practices",
+              "Object: Activity — Exercise: Build a Service Request Workflow",
+              "Object: Activity — Exercise: Simulate a Help Desk Scenario"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Continual Improvement",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "The Continual Improvement Model",
+            "hours": 1,
+            "topics": [
+              "The six steps of the continual improvement model (exam expects recognition in order):",
+              "How each step connects to the next",
+              "Memorization drill: order the steps from a shuffled list",
+              "Quick-fire recall checkpoint"
+            ],
+            "objects": [
+              "Object: Lesson: The Continual Improvement Model",
+              "SCORM: Interactive — The Continual Improvement Model",
+              "Assessment: Quiz — The Continual Improvement Model",
+              "Object: Activity — Exercise: Memorization Drill — Order the Steps",
+              "Object: Activity — Exercise: Quick-Fire Recall Checkpoint"
+            ]
+          },
+          {
+            "title": "Applying Continual Improvement",
+            "hours": 1,
+            "topics": [
+              "Improving operational processes and workflows",
+              "Using measurement, metrics, and KPIs to drive improvement",
+              "Continual improvement register",
+              "Relationship between continual improvement and the guiding principles",
+              "Students evaluate a broken process and propose improvements using the model steps in order"
+            ],
+            "objects": [
+              "Object: Lesson: Applying Continual Improvement",
+              "SCORM: Interactive — Applying Continual Improvement",
+              "Assessment: Quiz — Applying Continual Improvement",
+              "Object: Activity — Exercise: Evaluate and Improve a Broken Process"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ITIL in the Real World and Exam Preparation",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "ITIL in Practice",
+            "hours": 0.5,
+            "topics": [
+              "ITIL in help desk and support roles",
+              "ITIL in DevOps and Agile environments — how they work together",
+              "Tools: ServiceNow, Jira Service Management",
+              "Mapping ITIL concepts to real job postings"
+            ],
+            "objects": [
+              "Object: Lesson: ITIL in Practice",
+              "SCORM: Interactive — ITIL in Practice",
+              "Assessment: Quiz — ITIL in Practice",
+              "Object: Activity — Exercise: Map ITIL to Real Job Postings"
+            ]
+          },
+          {
+            "title": "Comprehensive Review",
+            "hours": 0.5,
+            "topics": [
+              "Key concepts and terminology review",
+              "Practices summary and relationships between practices",
+              "Common exam pitfalls and traps"
+            ],
+            "objects": [
+              "Object: Lesson: Comprehensive Review",
+              "SCORM: Interactive — Comprehensive Review",
+              "Assessment: Quiz — Comprehensive Review"
+            ]
+          },
+          {
+            "title": "Practice Exam",
+            "hours": 0.5,
+            "topics": [
+              "Exam format: 40 questions, 60 minutes, 65% pass mark",
+              "Timed practice exam simulation",
+              "Question analysis and answer strategies"
+            ],
+            "objects": [
+              "Object: Lesson: Practice Exam",
+              "SCORM: Interactive — Practice Exam",
+              "Assessment: Quiz — Practice Exam",
+              "Object: Activity — Exercise: Timed Practice Exam"
+            ]
+          },
+          {
+            "title": "Case Study and Final Review",
+            "hours": 0.5,
+            "topics": [
+              "Real-world case study applying ITIL practices to a service management scenario",
+              "Exam day preparation and tips",
+              "ITIL certification pathway: next steps to ITIL Specialist",
+              "Role-play: service desk vs developer vs manager",
+              "Map ITIL concepts to real job postings",
+              "Scenario-based quizzes (open-note)",
+              "Terminology matching using real examples",
+              "Group discussions",
+              "Multiple choice aligned to ITIL 4 Foundation exam (40 questions, 60 minutes)",
+              "Analyze a real or fictional IT service:"
+            ],
+            "objects": [
+              "Object: Lesson: Case Study and Final Review",
+              "SCORM: Interactive — Case Study and Final Review",
+              "Assessment: Quiz — Case Study and Final Review",
+              "Object: Activity — Exercise: Role-Play — Service Desk vs Developer vs Manager",
+              "Object: Activity — Exercise: TechServe Case Study Analysis"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Java Coding Booster Intensive": {
     "course": "Java Coding Booster Intensive",
     "totalHours": 16,

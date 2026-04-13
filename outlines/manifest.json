@@ -56,22 +56,22 @@
   },
   {
     "file": "data-literacy.json",
-    "course": "Data Fundamentals — Data Literacy",
+    "course": "Data Fundamentals \u2014 Data Literacy",
     "id": "data-fundamentals-data-literacy"
   },
   {
     "file": "data-viz-power-bi.json",
-    "course": "Data Fundamentals — Data Visualizations and Power BI",
+    "course": "Data Fundamentals \u2014 Data Visualizations and Power BI",
     "id": "data-fundamentals-data-visualizations-and-power-bi"
   },
   {
     "file": "excel-for-data-analysts.json",
-    "course": "Data Fundamentals — Excel for Data Analysts",
+    "course": "Data Fundamentals \u2014 Excel for Data Analysts",
     "id": "data-fundamentals-excel-for-data-analysts"
   },
   {
     "file": "data-fundamentals-sql.json",
-    "course": "Data Fundamentals — SQL for Data",
+    "course": "Data Fundamentals \u2014 SQL for Data",
     "id": "data-fundamentals-sql-for-data"
   },
   {
@@ -128,6 +128,11 @@
     "file": "it-fundamentals.json",
     "course": "IT Fundamentals",
     "id": "it-fundamentals"
+  },
+  {
+    "file": "itil-foundations.json",
+    "course": "ITIL Foundations",
+    "id": "itil-foundations"
   },
   {
     "file": "java-coding-booster.json",
