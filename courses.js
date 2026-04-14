@@ -629,17 +629,18 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1rGEdXkwx1oq5ZgKL3EPXKtHRGOn-Da6y"
   },
   {
-    "id": "productivity-tools-for-technical-reporting",
+    "id": "productivity-tools-reporting",
     "name": "Productivity Tools for Technical Reporting",
     "hours": 4,
     "status": {
-      "design": "Not Started",
-      "development": "Not Started"
+      "design": "Complete",
+      "development": "In Progress"
     },
-    "syllabus": null,
-    "outline": null,
-    "note": "Net New",
-    "driveFolder": null
+    "syllabus": "productivity-tools-reporting",
+    "outline": true,
+    "note": "OSS Area 4 (S&PS). 4h, 2 modules, 4 lessons + integrated capstone. Excel and PowerPoint for technical reporting. Design complete (apprenti-org/design-documentation#46, #48, #54). Content scaffolded (#57); Phase 3 horizontal production next.",
+    "driveFolder": null,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
   },
   {
     "id": "professional-communication",
@@ -1089,7 +1090,7 @@ const curriculaData = [
           },
           {
             "name": "Productivity Tools for Technical Reporting",
-            "id": "productivity-tools-for-technical-reporting"
+            "id": "productivity-tools-reporting"
           },
           {
             "name": "Professional Communication",

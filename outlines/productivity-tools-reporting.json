@@ -1,0 +1,92 @@
+{
+  "course": "Productivity Tools for Technical Reporting",
+  "totalHours": 4,
+  "totalModules": 2,
+  "totalLessons": 4,
+  "modules": [
+    {
+      "name": "Excel for Technical Analysis and Reporting",
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Data Management and Analysis in Excel",
+          "hours": 1,
+          "topics": [
+            "Spreadsheet design and organization for technical data (naming conventions, worksheet structure, data ranges)",
+            "Data entry, validation, and cleanup (removing duplicates, handling missing values, data types)",
+            "Formulas and functions for technical metrics (SUM, AVERAGE, COUNTIF, SUMIF, IF, VLOOKUP/XLOOKUP)",
+            "Tables and structured references for maintainable spreadsheets",
+            "Sorting, filtering, and conditional formatting to surface anomalies",
+            "Common operational data sources: log exports, ticketing reports, monitoring CSVs",
+            "Clean a provided log-export CSV and produce a sortable incident table",
+            "Build a small KPI calculator (MTTR, uptime %, ticket volume by severity) from sample operations data"
+          ],
+          "objects": [
+            "Object: Lesson: Data Management and Analysis in Excel",
+            "Assessment: Quiz: Data Management and Analysis in Excel"
+          ]
+        },
+        {
+          "title": "Data Visualization and Operational Dashboards",
+          "hours": 1,
+          "topics": [
+            "Chart types and when to use them (column, bar, line, pie, scatter) — data visualization",
+            "Pivot tables and pivot charts for summarizing technical data",
+            "Building an operational dashboard: KPI tiles, trend lines, status indicators",
+            "Conditional formatting for visual health checks (heat maps, data bars, icon sets)",
+            "Exporting charts and dashboards for inclusion in presentations and documentation",
+            "Avoiding misleading visualizations (truncated axes, 3D distortion, chart-type mismatch)",
+            "Convert a flat KPI table into a pivot-driven dashboard with at least three visual elements",
+            "Critique a set of sample charts and justify one fix per chart"
+          ],
+          "objects": [
+            "Object: Lesson: Data Visualization and Operational Dashboards",
+            "Assessment: Quiz: Data Visualization and Operational Dashboards"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PowerPoint for Technical Presentations",
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Presentation Design Principles",
+          "hours": 1,
+          "topics": [
+            "Structuring a technical presentation: problem → evidence → options → recommendation",
+            "Slide design best practices: consistent layout, hierarchy, readable typography, contrast",
+            "Using PowerPoint layouts, master slides, and themes for consistency",
+            "Creating technical diagrams: network topology, architecture blocks, flow diagrams, sequence steps",
+            "SmartArt and shape-based diagrams for process flows, runbook visualizations, and escalation paths",
+            "Embedding and formatting Excel charts/tables inside slides without losing fidelity",
+            "Rebuild a dense text-heavy slide into a structured, visual slide following design principles",
+            "Create a network/system diagram for a provided operational scenario using shapes or SmartArt"
+          ],
+          "objects": [
+            "Object: Lesson: Presentation Design Principles",
+            "Assessment: Quiz: Presentation Design Principles"
+          ]
+        },
+        {
+          "title": "Presenting Data and Recommendations",
+          "hours": 1,
+          "topics": [
+            "Telling a data story: framing findings around the audience's decision",
+            "Choosing the right chart for the message (comparison, trend, distribution, composition)",
+            "Annotating charts to direct attention (callouts, highlights, plain-language takeaways)",
+            "Preparing for different audiences: executive summary vs technical deep-dive",
+            "Handling Q&A: backing up claims with data, admitting limits, capturing follow-ups",
+            "Presenter tools: notes, rehearse-with-timing, and basic accessibility (alt text, contrast, reading order)",
+            "Deliver a 5-minute technical briefing (incident review or capacity report) using a provided dataset",
+            "Peer feedback on clarity, structure, and visual effectiveness"
+          ],
+          "objects": [
+            "Object: Lesson: Presenting Data and Recommendations",
+            "Assessment: Quiz: Presenting Data and Recommendations"
+          ]
+        }
+      ]
+    }
+  ]
+}
