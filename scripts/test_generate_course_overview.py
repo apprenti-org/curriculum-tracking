@@ -25,7 +25,6 @@ class TestPhase1Scanner(unittest.TestCase):
         self.assertEqual(result['quizzes'], 0)
         self.assertEqual(result['activities'], 0)
         self.assertEqual(result['instructor_guides'], 0)
-        self.assertEqual(result['interactives'], 0)
         self.assertEqual(result['slides'], 0)
 
     def test_count_phase1_assets_itil_lesson(self):
@@ -45,12 +44,11 @@ class TestPhase1Scanner(unittest.TestCase):
         self.assertEqual(result['instructor_guides'], 1)
         self.assertEqual(result['quizzes'], 1)  # answer-key not double-counted
         self.assertEqual(result['activities'], 2)  # 2 exercises, instructor copies skipped
-        self.assertEqual(result['interactives'], 1)
+        self.assertEqual(result['slides'], 1)  # SCORM counted as slides
 
     def test_count_phase1_assets_unused_categories_zero(self):
         files = ['lesson-01-foo.pdf', 'scorm-foo-L01.zip']
         result = gen_overview.count_phase1_assets(files)
-        self.assertEqual(result['slides'], 0)
         self.assertEqual(result['demos'], 0)
         self.assertEqual(result['case_studies'], 0)
         self.assertEqual(result['mod_intro'], 0)
@@ -119,9 +117,8 @@ class TestPhase1Scanner(unittest.TestCase):
             self.assertEqual(result['total_instructor_guides'], 1)
             self.assertEqual(result['total_quizzes'], 1)
             self.assertEqual(result['total_activities'], 1)
-            self.assertEqual(result['total_interactives'], 2)
+            self.assertEqual(result['total_slides'], 2)  # SCORM zips count as slides
             # Categories Phase 1 does not produce
-            self.assertEqual(result['total_slides'], 0)
             self.assertEqual(result['total_demos'], 0)
             self.assertEqual(result['total_mod_intro'], 0)
             self.assertEqual(result['total_mod_recap'], 0)

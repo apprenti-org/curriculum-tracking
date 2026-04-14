@@ -94,7 +94,7 @@ Module number is parsed from the `module-NN-*` folder name. Files are aggregated
 
 | Order | File pattern | Category |
 |---|---|---|
-| 1 | `scorm-*.zip` | interactives |
+| 1 | `scorm-*.zip` | slides (SCORM packages are pedagogically equivalent to slide decks) |
 | 2 | `*-quiz-answer-key.pdf` | _skipped_ (paired with the quiz PDF) |
 | 3 | `*-quiz.pdf` | quizzes |
 | 4 | `*-instructor-guide-exercise-*.pdf` | _skipped_ (instructor copy of activity) |
@@ -102,7 +102,9 @@ Module number is parsed from the `module-NN-*` folder name. Files are aggregated
 | 6 | `*-instructor-guide.pdf` | instructorGuides |
 | 7 | `lesson-NN-*.pdf` (any other lesson-prefixed PDF) | lessons |
 
-Categories not produced in Phase 1 stay at 0: `slides`, `demos`, `caseStudies`, `modIntros`, `modRecaps`.
+Categories not produced in Phase 1 stay at 0: `demos`, `caseStudies`, `modIntros`, `modRecaps`.
+
+The `interactives` category was dropped — SCORMs are counted as slides.
 
 Dedup rules:
 - Quiz + answer-key count as 1 quiz (the answer key is paired material, not a second quiz).

@@ -26,8 +26,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 30
   },
@@ -57,8 +56,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 5,
       "modIntros": 4,
-      "modRecaps": 8,
-      "interactives": 0
+      "modRecaps": 8
     },
     "totalAssets": 67
   },
@@ -88,8 +86,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -119,8 +116,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 20
   },
@@ -150,8 +146,7 @@ var courseOverviewData = [
       "caseStudies": 7,
       "instructorGuides": 6,
       "modIntros": 1,
-      "modRecaps": 4,
-      "interactives": 0
+      "modRecaps": 4
     },
     "totalAssets": 176
   },
@@ -181,8 +176,7 @@ var courseOverviewData = [
       "caseStudies": 2,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 9,
-      "interactives": 0
+      "modRecaps": 9
     },
     "totalAssets": 84
   },
@@ -212,8 +206,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 24
   },
@@ -243,8 +236,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 2,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 49
   },
@@ -274,8 +266,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 26
   },
@@ -284,9 +275,9 @@ var courseOverviewData = [
     "name": "C++ Coding Booster Intensive",
     "hours": 8,
     "outline": {
-      "exists": true,
-      "modules": 2,
-      "lessons": 5
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
     },
     "syllabus": true,
     "source": {
@@ -294,7 +285,7 @@ var courseOverviewData = [
       "folder": "Course: C++ Coding Booster",
       "modules": 9
     },
-    "coverage": 0,
+    "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 13,
@@ -305,8 +296,7 @@ var courseOverviewData = [
       "caseStudies": 2,
       "instructorGuides": 0,
       "modIntros": 7,
-      "modRecaps": 7,
-      "interactives": 0
+      "modRecaps": 7
     },
     "totalAssets": 59
   },
@@ -336,8 +326,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -367,8 +356,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -398,8 +386,7 @@ var courseOverviewData = [
       "caseStudies": 4,
       "instructorGuides": 2,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 223
   },
@@ -429,8 +416,7 @@ var courseOverviewData = [
       "caseStudies": 3,
       "instructorGuides": 6,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 86
   },
@@ -460,8 +446,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -491,8 +476,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 1,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 98
   },
@@ -522,8 +506,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 4,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 106
   },
@@ -546,15 +529,14 @@ var courseOverviewData = [
     "lessonsWithContent": 2,
     "assets": {
       "lessons": 30,
-      "slides": 16,
+      "slides": 25,
       "quizzes": 0,
       "activities": 80,
       "demos": 4,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 3,
-      "modRecaps": 0,
-      "interactives": 9
+      "modRecaps": 0
     },
     "totalAssets": 142
   },
@@ -584,8 +566,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 6,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 142
   },
@@ -608,15 +589,14 @@ var courseOverviewData = [
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 41,
-      "slides": 0,
+      "slides": 2,
       "quizzes": 0,
       "activities": 49,
       "demos": 0,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 2
+      "modRecaps": 0
     },
     "totalAssets": 92
   },
@@ -646,8 +626,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -677,8 +656,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -708,8 +686,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -739,8 +716,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -770,8 +746,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 44
   },
@@ -794,15 +769,14 @@ var courseOverviewData = [
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 74,
-      "slides": 0,
+      "slides": 10,
       "quizzes": 0,
       "activities": 45,
       "demos": 4,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 10
+      "modRecaps": 0
     },
     "totalAssets": 133
   },
@@ -825,15 +799,14 @@ var courseOverviewData = [
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 43,
-      "slides": 0,
+      "slides": 2,
       "quizzes": 0,
       "activities": 2,
       "demos": 12,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 2
+      "modRecaps": 0
     },
     "totalAssets": 59
   },
@@ -863,8 +836,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 10
   },
@@ -894,8 +866,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 45
   },
@@ -925,8 +896,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -949,15 +919,14 @@ var courseOverviewData = [
     "lessonsWithContent": 23,
     "assets": {
       "lessons": 21,
-      "slides": 22,
+      "slides": 23,
       "quizzes": 0,
       "activities": 24,
       "demos": 0,
       "caseStudies": 6,
       "instructorGuides": 7,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 1
+      "modRecaps": 0
     },
     "totalAssets": 81
   },
@@ -980,15 +949,14 @@ var courseOverviewData = [
     "lessonsWithContent": 19,
     "assets": {
       "lessons": 19,
-      "slides": 0,
+      "slides": 19,
       "quizzes": 19,
       "activities": 25,
       "demos": 0,
       "caseStudies": 0,
       "instructorGuides": 19,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 19
+      "modRecaps": 0
     },
     "totalAssets": 101
   },
@@ -1018,8 +986,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1049,8 +1016,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 15
   },
@@ -1080,8 +1046,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 62
   },
@@ -1111,8 +1076,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 132
   },
@@ -1142,8 +1106,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1173,8 +1136,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 1,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 9
   },
@@ -1204,8 +1166,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 50
   },
@@ -1235,8 +1196,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 34
   },
@@ -1266,8 +1226,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 26
   },
@@ -1297,8 +1256,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 5,
-      "modRecaps": 3,
-      "interactives": 0
+      "modRecaps": 3
     },
     "totalAssets": 74
   },
@@ -1328,8 +1286,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1359,8 +1316,7 @@ var courseOverviewData = [
       "caseStudies": 1,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 41
   },
@@ -1390,8 +1346,7 @@ var courseOverviewData = [
       "caseStudies": 1,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 37
   },
@@ -1421,8 +1376,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1445,15 +1399,14 @@ var courseOverviewData = [
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 13,
-      "slides": 0,
+      "slides": 1,
       "quizzes": 0,
       "activities": 28,
       "demos": 1,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 1
+      "modRecaps": 0
     },
     "totalAssets": 43
   },
@@ -1476,15 +1429,14 @@ var courseOverviewData = [
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 11,
-      "slides": 0,
+      "slides": 1,
       "quizzes": 0,
       "activities": 18,
       "demos": 0,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 1
+      "modRecaps": 0
     },
     "totalAssets": 30
   },
@@ -1514,8 +1466,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1545,8 +1496,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1569,15 +1519,14 @@ var courseOverviewData = [
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 11,
-      "slides": 0,
+      "slides": 4,
       "quizzes": 1,
       "activities": 60,
       "demos": 1,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 4
+      "modRecaps": 0
     },
     "totalAssets": 77
   },
@@ -1586,9 +1535,9 @@ var courseOverviewData = [
     "name": "Python Coding Booster Intensive",
     "hours": 16,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 1,
+      "lessons": 7
     },
     "syllabus": true,
     "source": {
@@ -1596,7 +1545,7 @@ var courseOverviewData = [
       "folder": "Course: Python Booster",
       "modules": 8
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1607,8 +1556,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 32
   },
@@ -1638,8 +1586,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1669,8 +1616,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1700,8 +1646,7 @@ var courseOverviewData = [
       "caseStudies": 4,
       "instructorGuides": 2,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 223
   },
@@ -1731,8 +1676,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1762,8 +1706,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1773,8 +1716,8 @@ var courseOverviewData = [
     "hours": 8,
     "outline": {
       "exists": true,
-      "modules": 1,
-      "lessons": 7
+      "modules": 2,
+      "lessons": 5
     },
     "syllabus": true,
     "source": {
@@ -1793,8 +1736,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 8
   },
@@ -1824,8 +1766,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 49
   },
@@ -1855,8 +1796,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 6,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 142
   },
@@ -1886,8 +1826,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1917,8 +1856,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1948,8 +1886,7 @@ var courseOverviewData = [
       "caseStudies": 11,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 70
   },
@@ -1979,8 +1916,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 15
   }

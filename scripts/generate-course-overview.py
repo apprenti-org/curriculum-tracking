@@ -124,7 +124,7 @@ def find_source_folder(course_name, courses_source):
 def count_assets(files):
     counts = {'lessons': 0, 'slides': 0, 'quizzes': 0, 'activities': 0,
               'demos': 0, 'case_studies': 0, 'instructor_guides': 0,
-              'interactives': 0, 'mod_intro': 0, 'mod_recap': 0}
+              'mod_intro': 0, 'mod_recap': 0}
     for f in files:
         fl = f.lower()
         if is_quiz(f):
@@ -140,7 +140,7 @@ def count_assets(files):
         elif ('recap' in fl or 'review' in fl or 'summary' in fl) and 'module' in fl:
             counts['mod_recap'] += 1
         elif 'scorm' in fl or 'interactive' in fl or f.endswith('.zip'):
-            counts['interactives'] += 1
+            counts['slides'] += 1
         elif ('exercise' in fl or 'activity' in fl or 'lab' in fl or 'practice' in fl or 'hands' in fl or 'code-along' in fl or 'codealong' in fl) and (is_doc(f) or f.endswith('.pdf')):
             counts['activities'] += 1
         elif re.match(r'\d{2}e-', fl) and is_doc(f):
@@ -177,11 +177,11 @@ def count_phase1_assets(files):
     """
     counts = {'lessons': 0, 'slides': 0, 'quizzes': 0, 'activities': 0,
               'demos': 0, 'case_studies': 0, 'instructor_guides': 0,
-              'interactives': 0, 'mod_intro': 0, 'mod_recap': 0}
+              'mod_intro': 0, 'mod_recap': 0}
     for f in files:
         fl = f.lower()
         if fl.startswith('scorm-') and fl.endswith('.zip'):
-            counts['interactives'] += 1
+            counts['slides'] += 1
         elif fl.endswith('-quiz-answer-key.pdf'):
             continue  # paired with the quiz pdf
         elif fl.endswith('-quiz.pdf'):
@@ -231,7 +231,7 @@ def scan_phase1_deploy_folder(deploy_path):
         'root_files': [],
         'total_lessons': 0, 'total_slides': 0, 'total_quizzes': 0,
         'total_activities': 0, 'total_demos': 0, 'total_case_studies': 0,
-        'total_instructor_guides': 0, 'total_interactives': 0,
+        'total_instructor_guides': 0,
         'total_mod_intro': 0, 'total_mod_recap': 0,
     }
 
@@ -313,7 +313,7 @@ def scan_source_folder(source_path):
         'root_files': [],
         'total_lessons': 0, 'total_slides': 0, 'total_quizzes': 0,
         'total_activities': 0, 'total_demos': 0, 'total_case_studies': 0,
-        'total_instructor_guides': 0, 'total_interactives': 0,
+        'total_instructor_guides': 0,
         'total_mod_intro': 0, 'total_mod_recap': 0,
     }
 
@@ -901,7 +901,6 @@ def main():
             'instructorGuides': source_data['total_instructor_guides'],
             'modIntros': source_data['total_mod_intro'],
             'modRecaps': source_data['total_mod_recap'],
-            'interactives': source_data['total_interactives'],
         }
         total_assets = sum(assets.values())
         source_modules = len([k for k in source_data['module_folders'] if k < 100])
