@@ -871,8 +871,7 @@ def main():
         total_modules = len(modules)
         total_lessons = sum(len(m['lessons']) for m in modules)
 
-        source_info = find_source_folder(name, paths['courses_source'])
-        source_data = scan_source_folder(source_info[0] if source_info else None)
+        source_info, source_data = resolve_course_source(course, paths)
         has_source = source_info is not None and bool(source_data['module_folders'])
 
         if has_outline and modules:
