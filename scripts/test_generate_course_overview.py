@@ -140,6 +140,57 @@ class TestPhase1Scanner(unittest.TestCase):
         self.assertEqual(result['module_folders'], {})
         self.assertEqual(result['total_lessons'], 0)
 
+    def test_resolve_course_source_prefers_phase1(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            courses_dir = os.path.join(tmp, 'courses')
+            courses_source = os.path.join(tmp, 'legacy')
+            os.makedirs(courses_source)
+            # Phase 1 deploy folder with a module
+            m1 = os.path.join(courses_dir, 'itil-foundations', 'deploy', 'content',
+                              'module-01-intro', 'lesson-01-x')
+            os.makedirs(m1)
+            open(os.path.join(m1, 'lesson-01-x.pdf'), 'w').close()
+
+            paths = {'courses_dir': courses_dir, 'courses_source': courses_source}
+            course = {'id': 'itil-foundations', 'name': 'ITIL Foundations'}
+
+            source_info, source_data = gen_overview.resolve_course_source(course, paths)
+            self.assertIsNotNone(source_info)
+            self.assertEqual(source_info[1], 'itil-foundations/deploy/content')
+            self.assertEqual(source_data['total_lessons'], 1)
+
+    def test_resolve_course_source_legacy_fallback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            courses_dir = os.path.join(tmp, 'courses')
+            courses_source = os.path.join(tmp, 'legacy')
+            os.makedirs(courses_dir)
+            # No Phase 1 content; legacy folder has a matching name.
+            # Use a multi-word name so find_source_folder's overlap filter passes
+            # (it requires overlap >= 2 unless max_score == 1.0).
+            legacy_folder = os.path.join(courses_source, 'Course: Python Fundamentals')
+            os.makedirs(legacy_folder)
+
+            paths = {'courses_dir': courses_dir, 'courses_source': courses_source}
+            course = {'id': 'python-fundamentals', 'name': 'Python Fundamentals'}
+
+            source_info, source_data = gen_overview.resolve_course_source(course, paths)
+            # Legacy scan returns the folder even if empty (no module_folders)
+            self.assertIsNotNone(source_info)
+            self.assertEqual(source_info[1], 'Course: Python Fundamentals')
+
+    def test_resolve_course_source_none(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            courses_dir = os.path.join(tmp, 'courses')
+            courses_source = os.path.join(tmp, 'legacy')
+            os.makedirs(courses_dir)
+            os.makedirs(courses_source)
+            paths = {'courses_dir': courses_dir, 'courses_source': courses_source}
+            course = {'id': 'ghost-course', 'name': 'Ghost Course'}
+
+            source_info, source_data = gen_overview.resolve_course_source(course, paths)
+            self.assertIsNone(source_info)
+            self.assertEqual(source_data['module_folders'], {})
+
 
 if __name__ == "__main__":
     unittest.main()

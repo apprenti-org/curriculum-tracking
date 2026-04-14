@@ -281,6 +281,32 @@ def scan_phase1_deploy_folder(deploy_path):
     return result
 
 
+def resolve_course_source(course, paths):
+    """Return (source_info, source_data) for a course.
+
+    Prefers Phase 1 deploy content; falls back to the legacy _COURSES/ scan.
+
+    source_info is (absolute_path, display_folder_name) or None.
+    source_data matches the shape returned by scan_source_folder()/
+    scan_phase1_deploy_folder().
+    """
+    course_id = course.get('id', '')
+    name = course.get('name', course_id)
+
+    # Try Phase 1 first
+    phase1_path = find_phase1_deploy_folder(course_id, paths)
+    if phase1_path:
+        display = f"{course_id}/deploy/content"
+        source_data = scan_phase1_deploy_folder(phase1_path)
+        if source_data['module_folders']:
+            return (phase1_path, display), source_data
+
+    # Fall back to legacy _COURSES/ scan
+    legacy_info = find_source_folder(name, paths['courses_source'])
+    legacy_data = scan_source_folder(legacy_info[0] if legacy_info else None)
+    return legacy_info, legacy_data
+
+
 def scan_source_folder(source_path):
     result = {
         'module_folders': {},
