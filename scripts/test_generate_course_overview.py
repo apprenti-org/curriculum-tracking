@@ -80,6 +80,66 @@ class TestPhase1Scanner(unittest.TestCase):
             result = gen_overview.find_phase1_deploy_folder('foo', paths)
             self.assertIsNone(result)
 
+    def _make_phase1_fixture(self, tmp):
+        """Create a minimal Phase 1 deploy tree: 2 modules, 1 lesson each."""
+        deploy = os.path.join(tmp, 'deploy', 'content')
+        # Module 1, Lesson 1 — full set of artifacts
+        m1l1 = os.path.join(deploy, 'module-01-intro', 'lesson-01-what-is-itsm')
+        os.makedirs(m1l1)
+        for f in [
+            'lesson-01-what-is-itsm.pdf',
+            'lesson-01-instructor-guide.pdf',
+            'lesson-01-quiz.pdf',
+            'lesson-01-quiz-answer-key.pdf',
+            'lesson-01-exercise-sample.pdf',
+            'lesson-01-instructor-guide-exercise-sample.pdf',
+            'scorm-itil-foundations-L01.zip',
+        ]:
+            open(os.path.join(m1l1, f), 'w').close()
+        # Module 2, Lesson 2 — lesson PDF + SCORM only
+        m2l2 = os.path.join(deploy, 'module-02-svs', 'lesson-02-value-system')
+        os.makedirs(m2l2)
+        for f in ['lesson-02-value-system.pdf', 'scorm-itil-foundations-L02.zip']:
+            open(os.path.join(m2l2, f), 'w').close()
+        return deploy
+
+    def test_scan_phase1_deploy_folder_shape(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            deploy = self._make_phase1_fixture(tmp)
+            result = gen_overview.scan_phase1_deploy_folder(deploy)
+            self.assertIn(1, result['module_folders'])
+            self.assertIn(2, result['module_folders'])
+            self.assertEqual(len(result['module_folders']), 2)
+
+    def test_scan_phase1_deploy_folder_totals(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            deploy = self._make_phase1_fixture(tmp)
+            result = gen_overview.scan_phase1_deploy_folder(deploy)
+            self.assertEqual(result['total_lessons'], 2)
+            self.assertEqual(result['total_instructor_guides'], 1)
+            self.assertEqual(result['total_quizzes'], 1)
+            self.assertEqual(result['total_activities'], 1)
+            self.assertEqual(result['total_interactives'], 2)
+            # Categories Phase 1 does not produce
+            self.assertEqual(result['total_slides'], 0)
+            self.assertEqual(result['total_demos'], 0)
+            self.assertEqual(result['total_mod_intro'], 0)
+            self.assertEqual(result['total_mod_recap'], 0)
+            self.assertEqual(result['total_case_studies'], 0)
+
+    def test_scan_phase1_deploy_folder_files_flattened_per_module(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            deploy = self._make_phase1_fixture(tmp)
+            result = gen_overview.scan_phase1_deploy_folder(deploy)
+            m1_files = result['module_folders'][1]['files']
+            self.assertIn('lesson-01-what-is-itsm.pdf', m1_files)
+            self.assertIn('scorm-itil-foundations-L01.zip', m1_files)
+
+    def test_scan_phase1_deploy_folder_empty_path(self):
+        result = gen_overview.scan_phase1_deploy_folder(None)
+        self.assertEqual(result['module_folders'], {})
+        self.assertEqual(result['total_lessons'], 0)
+
 
 if __name__ == "__main__":
     unittest.main()

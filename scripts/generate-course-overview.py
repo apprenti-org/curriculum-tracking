@@ -219,6 +219,68 @@ def find_phase1_deploy_folder(course_id, paths):
     return deploy_path if has_module else None
 
 
+def scan_phase1_deploy_folder(deploy_path):
+    """Scan a Phase 1 deploy/content folder and return a source_data dict.
+
+    Shape matches scan_source_folder() output so the main loop can consume
+    it uniformly. For each `module-NN-*/lesson-NN-*/` folder, all files are
+    flattened into the module's `files` list (compute_coverage expects this).
+    """
+    result = {
+        'module_folders': {},
+        'root_files': [],
+        'total_lessons': 0, 'total_slides': 0, 'total_quizzes': 0,
+        'total_activities': 0, 'total_demos': 0, 'total_case_studies': 0,
+        'total_instructor_guides': 0, 'total_interactives': 0,
+        'total_mod_intro': 0, 'total_mod_recap': 0,
+    }
+
+    if not deploy_path or not os.path.isdir(deploy_path):
+        return result
+
+    try:
+        entries = sorted(os.listdir(deploy_path))
+    except OSError:
+        return result
+
+    for entry in entries:
+        entry_path = os.path.join(deploy_path, entry)
+        if not os.path.isdir(entry_path):
+            continue
+        m = re.match(r'module-(\d+)', entry, re.IGNORECASE)
+        if not m:
+            continue
+        mod_num = int(m.group(1))
+
+        # Flatten files from each lesson-NN-*/ subfolder
+        all_files = []
+        try:
+            lesson_entries = os.listdir(entry_path)
+        except OSError:
+            lesson_entries = []
+        for lesson_entry in lesson_entries:
+            lesson_path = os.path.join(entry_path, lesson_entry)
+            if os.path.isdir(lesson_path) and re.match(r'lesson-\d+', lesson_entry, re.IGNORECASE):
+                try:
+                    all_files.extend(os.listdir(lesson_path))
+                except OSError:
+                    pass
+
+        result['module_folders'][mod_num] = {
+            'path': entry_path,
+            'name': entry,
+            'files': all_files,
+        }
+
+    # Compute totals per module using the Phase 1 classifier
+    for mod_num, mod_data in result['module_folders'].items():
+        counts = count_phase1_assets(mod_data['files'])
+        for key in counts:
+            result[f'total_{key}'] += counts[key]
+
+    return result
+
+
 def scan_source_folder(source_path):
     result = {
         'module_folders': {},
