@@ -39,7 +39,7 @@ def auto_detect_base():
     return None
 
 def is_doc(f):
-    return f.endswith('.gdoc') or f.endswith('.docx') or f.endswith('.doc') or f.endswith('.md')
+    return f.endswith('.gdoc') or f.endswith('.docx') or f.endswith('.doc') or f.endswith('.md') or f.endswith('.pdf')
 
 def is_slides(f):
     return f.endswith('.pptx') or f.endswith('.gslides')
@@ -709,6 +709,17 @@ def check_lesson_exists(mod_files, lesson_number, position_in_module=None):
         fl = f.lower()
         if re.match(r'Lesson\s+' + str(lesson_number) + r'\b', f, re.IGNORECASE) and is_doc(f):
             return True
+    # Phase 1 naming: lesson-NN-<name>.pdf (excluding instructor guides,
+    # quizzes, and exercises which are counted separately)
+    for num in set(filter(None, [lesson_number, position_in_module])):
+        phase1_prefix = f"lesson-{num:02d}-"
+        for f in mod_files:
+            fl = f.lower()
+            if (fl.startswith(phase1_prefix) and is_doc(f)
+                and 'instructor-guide' not in fl
+                and 'quiz' not in fl
+                and 'exercise' not in fl):
+                return True
     for num in set(filter(None, [lesson_number, position_in_module])):
         target_flat = f"{num:02d}-"
         for f in mod_files:
