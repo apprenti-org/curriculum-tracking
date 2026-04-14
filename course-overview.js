@@ -284,9 +284,9 @@ var courseOverviewData = [
     "name": "C++ Coding Booster Intensive",
     "hours": 8,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 2,
+      "lessons": 5
     },
     "syllabus": true,
     "source": {
@@ -294,7 +294,7 @@ var courseOverviewData = [
       "folder": "Course: C++ Coding Booster",
       "modules": 9
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 13,
@@ -483,7 +483,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 26,
+      "lessons": 51,
       "slides": 0,
       "quizzes": 1,
       "activities": 45,
@@ -494,7 +494,7 @@ var courseOverviewData = [
       "modRecaps": 0,
       "interactives": 0
     },
-    "totalAssets": 73
+    "totalAssets": 98
   },
   {
     "id": "data-fundamentals-data-visualizations-and-power-bi",
@@ -514,7 +514,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 14,
+      "lessons": 28,
       "slides": 14,
       "quizzes": 0,
       "activities": 59,
@@ -525,7 +525,7 @@ var courseOverviewData = [
       "modRecaps": 0,
       "interactives": 0
     },
-    "totalAssets": 92
+    "totalAssets": 106
   },
   {
     "id": "data-fundamentals-excel-for-data-analysts",
@@ -545,18 +545,18 @@ var courseOverviewData = [
     "coverage": 14,
     "lessonsWithContent": 2,
     "assets": {
-      "lessons": 15,
+      "lessons": 30,
       "slides": 16,
       "quizzes": 0,
       "activities": 80,
-      "demos": 2,
+      "demos": 4,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 3,
       "modRecaps": 0,
       "interactives": 9
     },
-    "totalAssets": 125
+    "totalAssets": 142
   },
   {
     "id": "data-fundamentals-sql-for-data",
@@ -576,18 +576,18 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 17,
+      "lessons": 33,
       "slides": 12,
       "quizzes": 0,
       "activities": 83,
-      "demos": 5,
+      "demos": 8,
       "caseStudies": 0,
       "instructorGuides": 6,
       "modIntros": 0,
       "modRecaps": 0,
       "interactives": 0
     },
-    "totalAssets": 123
+    "totalAssets": 142
   },
   {
     "id": "databases-in-java",
@@ -607,7 +607,7 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 24,
+      "lessons": 41,
       "slides": 0,
       "quizzes": 0,
       "activities": 49,
@@ -618,7 +618,7 @@ var courseOverviewData = [
       "modRecaps": 0,
       "interactives": 2
     },
-    "totalAssets": 75
+    "totalAssets": 92
   },
   {
     "id": "helpdesk-software-fundamentals",
@@ -762,7 +762,7 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 16,
+      "lessons": 24,
       "slides": 0,
       "quizzes": 0,
       "activities": 20,
@@ -773,7 +773,7 @@ var courseOverviewData = [
       "modRecaps": 0,
       "interactives": 0
     },
-    "totalAssets": 36
+    "totalAssets": 44
   },
   {
     "id": "introduction-to-aws-cloud-platform",
@@ -793,18 +793,18 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 39,
+      "lessons": 74,
       "slides": 0,
       "quizzes": 0,
       "activities": 45,
-      "demos": 2,
+      "demos": 4,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
       "modRecaps": 0,
       "interactives": 10
     },
-    "totalAssets": 96
+    "totalAssets": 133
   },
   {
     "id": "introduction-to-cloud-technology",
@@ -824,18 +824,18 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 21,
+      "lessons": 43,
       "slides": 0,
       "quizzes": 0,
-      "activities": 4,
-      "demos": 6,
+      "activities": 2,
+      "demos": 12,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
       "modRecaps": 0,
       "interactives": 2
     },
-    "totalAssets": 33
+    "totalAssets": 59
   },
   {
     "id": "introduction-to-github",
@@ -972,25 +972,25 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "itil-foundations/deploy/content",
+      "modules": 7
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 95,
+    "lessonsWithContent": 19,
     "assets": {
-      "lessons": 0,
+      "lessons": 19,
       "slides": 0,
-      "quizzes": 0,
-      "activities": 0,
+      "quizzes": 19,
+      "activities": 25,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 19,
       "modIntros": 0,
       "modRecaps": 0,
-      "interactives": 0
+      "interactives": 19
     },
-    "totalAssets": 0
+    "totalAssets": 101
   },
   {
     "id": "itil-specialist-4",
@@ -1030,7 +1030,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 13
+      "lessons": 10
     },
     "syllabus": true,
     "source": {
@@ -1103,18 +1103,18 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 24,
+      "lessons": 48,
       "slides": 0,
       "quizzes": 0,
       "activities": 67,
-      "demos": 9,
+      "demos": 17,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
       "modRecaps": 0,
       "interactives": 0
     },
-    "totalAssets": 100
+    "totalAssets": 132
   },
   {
     "id": "javascript",
@@ -1154,7 +1154,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 7
+      "lessons": 13
     },
     "syllabus": true,
     "source": {
@@ -1444,7 +1444,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 12,
+      "lessons": 13,
       "slides": 0,
       "quizzes": 0,
       "activities": 28,
@@ -1455,7 +1455,7 @@ var courseOverviewData = [
       "modRecaps": 0,
       "interactives": 1
     },
-    "totalAssets": 42
+    "totalAssets": 43
   },
   {
     "id": "pandas",
@@ -1475,7 +1475,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 6,
+      "lessons": 11,
       "slides": 0,
       "quizzes": 0,
       "activities": 18,
@@ -1486,7 +1486,7 @@ var courseOverviewData = [
       "modRecaps": 0,
       "interactives": 1
     },
-    "totalAssets": 25
+    "totalAssets": 30
   },
   {
     "id": "productivity-tools-for-technical-reporting",
@@ -1568,7 +1568,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 9,
+      "lessons": 11,
       "slides": 0,
       "quizzes": 1,
       "activities": 60,
@@ -1579,16 +1579,16 @@ var courseOverviewData = [
       "modRecaps": 0,
       "interactives": 4
     },
-    "totalAssets": 75
+    "totalAssets": 77
   },
   {
     "id": "python-coding-booster-intensive",
     "name": "Python Coding Booster Intensive",
     "hours": 16,
     "outline": {
-      "exists": true,
-      "modules": 2,
-      "lessons": 5
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
     },
     "syllabus": true,
     "source": {
@@ -1596,7 +1596,7 @@ var courseOverviewData = [
       "folder": "Course: Python Booster",
       "modules": 8
     },
-    "coverage": 0,
+    "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1774,7 +1774,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 10
+      "lessons": 7
     },
     "syllabus": true,
     "source": {
@@ -1847,18 +1847,18 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 17,
+      "lessons": 33,
       "slides": 12,
       "quizzes": 0,
       "activities": 83,
-      "demos": 5,
+      "demos": 8,
       "caseStudies": 0,
       "instructorGuides": 6,
       "modIntros": 0,
       "modRecaps": 0,
       "interactives": 0
     },
-    "totalAssets": 123
+    "totalAssets": 142
   },
   {
     "id": "student-onboarding",
