@@ -86,7 +86,6 @@ function renderTable() {
             '<td class="asset-td">' + renderAssetCell(assets.slides) + '</td>' +
             '<td class="asset-td">' + renderAssetCell(assets.quizzes) + '</td>' +
             '<td class="asset-td">' + renderAssetCell(assets.activities) + '</td>' +
-            '<td class="asset-td total-td">' + renderAssetCell(item.totalAssets) + '</td>' +
         '</tr>';
     }).join('');
 
@@ -114,7 +113,6 @@ function renderTable() {
             '<th><i class="fa-solid fa-tv"></i> Slides / SCORM</th>' +
             '<th><i class="fa-solid fa-circle-question"></i> Quizzes</th>' +
             '<th><i class="fa-solid fa-flask"></i> Activities</th>' +
-            '<th><i class="fa-solid fa-box"></i> Total</th>' +
         '</tr></thead><tbody>' + rows + '</tbody></table>';
 }
 
