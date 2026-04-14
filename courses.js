@@ -634,11 +634,11 @@ const courseData = [
     "hours": 4,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "productivity-tools-reporting",
     "outline": true,
-    "note": "OSS Area 4 (S&PS). 4h, 2 modules, 4 lessons + integrated capstone. Excel and PowerPoint for technical reporting. Design complete (apprenti-org/design-documentation#46, #48, #54). Content scaffolded (#57); Phase 3 horizontal production next.",
+    "note": "OSS Area 4 (S&PS). 4h, 2 modules, 4 lessons + integrated capstone. Excel and PowerPoint for technical reporting. Design + content complete (design-documentation PRs #46, #48, #54, #58, #59). Ready for SCORM packaging.",
     "driveFolder": null,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
   },
