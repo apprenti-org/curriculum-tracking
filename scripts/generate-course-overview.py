@@ -557,7 +557,11 @@ def parse_outline(outline_path):
                 m = re.match(r'(.+?)\s*(?:\(([^)]+)\))?\s*$', header_text)
                 if m:
                     name = m.group(1).strip()
+                    paren = (m.group(2) or '').strip().lower()
                     hours = parse_hours(m.group(2)) if m.group(2) else 0
+                    # Preserve integration markers so capstone handling can skip them
+                    if paren in {'integrated', 'embedded', 'baked in', 'woven in'}:
+                        name = f"{name} ({paren})"
                     mod_num = len(modules) + 1
                     current_module = {'number': mod_num, 'name': name, 'hours': hours, 'lessons': []}
                     modules.append(current_module)
@@ -649,6 +653,9 @@ def parse_outline(outline_path):
 
     # Capstone handling
     capstone_keywords = {'capstone', 'summative', 'assessment', 'final assessment', 'final exam'}
+    # Markers that indicate the capstone content is baked into existing
+    # lessons, not a separate deliverable — skip synthesis in that case.
+    integrated_markers = ('(integrated', '(embedded', '(baked', '(woven')
     final_modules = []
     for m in modules:
         if m.get('lessons'):
@@ -656,7 +663,8 @@ def parse_outline(outline_path):
         else:
             name_lower = m['name'].lower()
             is_capstone = any(kw in name_lower for kw in capstone_keywords)
-            if is_capstone:
+            is_integrated = any(marker in name_lower for marker in integrated_markers)
+            if is_capstone and not is_integrated:
                 max_global = max((l['global_number'] for mod in final_modules for l in mod['lessons']), default=0)
                 m['lessons'] = [{'number': 1, 'global_number': max_global + 1,
                                  'title': m['name'], 'hours': m['hours']}]
