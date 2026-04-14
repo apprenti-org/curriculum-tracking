@@ -159,6 +159,44 @@ def count_assets(files):
             counts['lessons'] += 1
     return counts
 
+def count_phase1_assets(files):
+    """Classify Phase 1 deploy-content files into the legacy asset schema.
+
+    Phase 1 produces lesson/instructor-guide/quiz/exercise PDFs and SCORM zips.
+    Categories not produced in Phase 1 (slides, demos, case_studies, mod_intro,
+    mod_recap) stay at 0.
+
+    Pattern priority (first match wins):
+      1. scorm-*.zip                             -> interactives
+      2. *-quiz-answer-key.pdf                   -> skipped (paired with quiz)
+      3. *-quiz.pdf                              -> quizzes
+      4. *-instructor-guide-exercise-*.pdf       -> skipped (instructor copy)
+      5. *-exercise-*.pdf                        -> activities
+      6. *-instructor-guide.pdf                  -> instructor_guides
+      7. lesson-NN-*.pdf (any other)             -> lessons
+    """
+    counts = {'lessons': 0, 'slides': 0, 'quizzes': 0, 'activities': 0,
+              'demos': 0, 'case_studies': 0, 'instructor_guides': 0,
+              'interactives': 0, 'mod_intro': 0, 'mod_recap': 0}
+    for f in files:
+        fl = f.lower()
+        if fl.startswith('scorm-') and fl.endswith('.zip'):
+            counts['interactives'] += 1
+        elif fl.endswith('-quiz-answer-key.pdf'):
+            continue  # paired with the quiz pdf
+        elif fl.endswith('-quiz.pdf'):
+            counts['quizzes'] += 1
+        elif '-instructor-guide-exercise-' in fl and fl.endswith('.pdf'):
+            continue  # instructor copy of an activity
+        elif '-exercise-' in fl and fl.endswith('.pdf'):
+            counts['activities'] += 1
+        elif fl.endswith('-instructor-guide.pdf'):
+            counts['instructor_guides'] += 1
+        elif re.match(r'lesson-\d+', fl) and fl.endswith('.pdf'):
+            counts['lessons'] += 1
+    return counts
+
+
 def scan_source_folder(source_path):
     result = {
         'module_folders': {},
