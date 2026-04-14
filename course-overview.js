@@ -26,8 +26,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 30
   },
@@ -57,8 +56,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 5,
       "modIntros": 4,
-      "modRecaps": 8,
-      "interactives": 0
+      "modRecaps": 8
     },
     "totalAssets": 67
   },
@@ -88,8 +86,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -119,8 +116,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 20
   },
@@ -150,8 +146,7 @@ var courseOverviewData = [
       "caseStudies": 7,
       "instructorGuides": 6,
       "modIntros": 1,
-      "modRecaps": 4,
-      "interactives": 0
+      "modRecaps": 4
     },
     "totalAssets": 176
   },
@@ -181,8 +176,7 @@ var courseOverviewData = [
       "caseStudies": 2,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 9,
-      "interactives": 0
+      "modRecaps": 9
     },
     "totalAssets": 84
   },
@@ -212,8 +206,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 24
   },
@@ -243,8 +236,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 2,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 49
   },
@@ -274,8 +266,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 26
   },
@@ -284,9 +275,9 @@ var courseOverviewData = [
     "name": "C++ Coding Booster Intensive",
     "hours": 8,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 1,
+      "lessons": 7
     },
     "syllabus": true,
     "source": {
@@ -294,7 +285,7 @@ var courseOverviewData = [
       "folder": "Course: C++ Coding Booster",
       "modules": 9
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 13,
@@ -305,8 +296,7 @@ var courseOverviewData = [
       "caseStudies": 2,
       "instructorGuides": 0,
       "modIntros": 7,
-      "modRecaps": 7,
-      "interactives": 0
+      "modRecaps": 7
     },
     "totalAssets": 59
   },
@@ -336,8 +326,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -367,8 +356,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -398,8 +386,7 @@ var courseOverviewData = [
       "caseStudies": 4,
       "instructorGuides": 2,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 223
   },
@@ -429,8 +416,7 @@ var courseOverviewData = [
       "caseStudies": 3,
       "instructorGuides": 6,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 86
   },
@@ -460,8 +446,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -483,7 +468,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 26,
+      "lessons": 51,
       "slides": 0,
       "quizzes": 1,
       "activities": 45,
@@ -491,10 +476,9 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 1,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
-    "totalAssets": 73
+    "totalAssets": 98
   },
   {
     "id": "data-fundamentals-data-visualizations-and-power-bi",
@@ -514,7 +498,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 14,
+      "lessons": 28,
       "slides": 14,
       "quizzes": 0,
       "activities": 59,
@@ -522,45 +506,13 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 4,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
-    "totalAssets": 92
+    "totalAssets": 106
   },
   {
     "id": "data-fundamentals-excel-for-data-analysts",
     "name": "Data Fundamentals — Excel for Data Analysts",
-    "hours": 50,
-    "outline": {
-      "exists": true,
-      "modules": 7,
-      "lessons": 14
-    },
-    "syllabus": true,
-    "source": {
-      "exists": true,
-      "folder": "Course: Excel for Data Analysts",
-      "modules": 10
-    },
-    "coverage": 14,
-    "lessonsWithContent": 2,
-    "assets": {
-      "lessons": 15,
-      "slides": 16,
-      "quizzes": 0,
-      "activities": 80,
-      "demos": 2,
-      "caseStudies": 0,
-      "instructorGuides": 0,
-      "modIntros": 3,
-      "modRecaps": 0,
-      "interactives": 9
-    },
-    "totalAssets": 125
-  },
-  {
-    "id": "data-fundamentals-sql-for-data",
-    "name": "Data Fundamentals — SQL for Data",
     "hours": 50,
     "outline": {
       "exists": true,
@@ -570,24 +522,53 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: SQL for Data",
-      "modules": 8
+      "folder": "Course: Excel for Data Analysts",
+      "modules": 10
     },
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 17,
+      "lessons": 30,
+      "slides": 25,
+      "quizzes": 0,
+      "activities": 80,
+      "demos": 4,
+      "caseStudies": 0,
+      "instructorGuides": 0,
+      "modIntros": 3,
+      "modRecaps": 0
+    },
+    "totalAssets": 142
+  },
+  {
+    "id": "data-fundamentals-sql-for-data",
+    "name": "Data Fundamentals — SQL for Data",
+    "hours": 50,
+    "outline": {
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
+    },
+    "syllabus": false,
+    "source": {
+      "exists": true,
+      "folder": "Course: SQL for Data",
+      "modules": 8
+    },
+    "coverage": null,
+    "lessonsWithContent": 0,
+    "assets": {
+      "lessons": 33,
       "slides": 12,
       "quizzes": 0,
       "activities": 83,
-      "demos": 5,
+      "demos": 8,
       "caseStudies": 0,
       "instructorGuides": 6,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
-    "totalAssets": 123
+    "totalAssets": 142
   },
   {
     "id": "databases-in-java",
@@ -607,18 +588,17 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 24,
-      "slides": 0,
+      "lessons": 41,
+      "slides": 2,
       "quizzes": 0,
       "activities": 49,
       "demos": 0,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 2
+      "modRecaps": 0
     },
-    "totalAssets": 75
+    "totalAssets": 92
   },
   {
     "id": "helpdesk-software-fundamentals",
@@ -646,8 +626,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -677,8 +656,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -708,8 +686,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -739,8 +716,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -762,7 +738,7 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 16,
+      "lessons": 24,
       "slides": 0,
       "quizzes": 0,
       "activities": 20,
@@ -770,10 +746,9 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
-    "totalAssets": 36
+    "totalAssets": 44
   },
   {
     "id": "introduction-to-aws-cloud-platform",
@@ -793,18 +768,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 39,
-      "slides": 0,
+      "lessons": 74,
+      "slides": 10,
       "quizzes": 0,
       "activities": 45,
-      "demos": 2,
+      "demos": 4,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 10
+      "modRecaps": 0
     },
-    "totalAssets": 96
+    "totalAssets": 133
   },
   {
     "id": "introduction-to-cloud-technology",
@@ -824,18 +798,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 21,
-      "slides": 0,
+      "lessons": 43,
+      "slides": 2,
       "quizzes": 0,
-      "activities": 4,
-      "demos": 6,
+      "activities": 2,
+      "demos": 12,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 2
+      "modRecaps": 0
     },
-    "totalAssets": 33
+    "totalAssets": 59
   },
   {
     "id": "introduction-to-github",
@@ -863,8 +836,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 10
   },
@@ -894,8 +866,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 45
   },
@@ -925,8 +896,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -949,15 +919,14 @@ var courseOverviewData = [
     "lessonsWithContent": 23,
     "assets": {
       "lessons": 21,
-      "slides": 22,
+      "slides": 23,
       "quizzes": 0,
       "activities": 24,
       "demos": 0,
       "caseStudies": 6,
       "instructorGuides": 7,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 1
+      "modRecaps": 0
     },
     "totalAssets": 81
   },
@@ -967,30 +936,29 @@ var courseOverviewData = [
     "hours": 20,
     "outline": {
       "exists": true,
-      "modules": 8,
-      "lessons": 20
+      "modules": 7,
+      "lessons": 19
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "itil-foundations/deploy/content",
+      "modules": 7
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 100,
+    "lessonsWithContent": 19,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
-      "activities": 0,
+      "lessons": 19,
+      "slides": 19,
+      "quizzes": 19,
+      "activities": 25,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 19,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 101
   },
   {
     "id": "itil-specialist-4",
@@ -1018,8 +986,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1030,7 +997,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 13
+      "lessons": 10
     },
     "syllabus": true,
     "source": {
@@ -1049,8 +1016,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 15
   },
@@ -1080,8 +1046,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 62
   },
@@ -1103,18 +1068,17 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 24,
+      "lessons": 48,
       "slides": 0,
       "quizzes": 0,
       "activities": 67,
-      "demos": 9,
+      "demos": 17,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
-    "totalAssets": 100
+    "totalAssets": 132
   },
   {
     "id": "javascript",
@@ -1142,8 +1106,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1153,8 +1116,8 @@ var courseOverviewData = [
     "hours": 8,
     "outline": {
       "exists": true,
-      "modules": 1,
-      "lessons": 7
+      "modules": 2,
+      "lessons": 5
     },
     "syllabus": true,
     "source": {
@@ -1173,8 +1136,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 1,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 9
   },
@@ -1204,8 +1166,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 50
   },
@@ -1235,8 +1196,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 34
   },
@@ -1266,8 +1226,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 26
   },
@@ -1297,8 +1256,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 5,
-      "modRecaps": 3,
-      "interactives": 0
+      "modRecaps": 3
     },
     "totalAssets": 74
   },
@@ -1328,8 +1286,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1359,8 +1316,7 @@ var courseOverviewData = [
       "caseStudies": 1,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 41
   },
@@ -1390,8 +1346,7 @@ var courseOverviewData = [
       "caseStudies": 1,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 37
   },
@@ -1421,8 +1376,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1444,18 +1398,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 12,
-      "slides": 0,
+      "lessons": 13,
+      "slides": 1,
       "quizzes": 0,
       "activities": 28,
       "demos": 1,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 1
+      "modRecaps": 0
     },
-    "totalAssets": 42
+    "totalAssets": 43
   },
   {
     "id": "pandas",
@@ -1475,18 +1428,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 6,
-      "slides": 0,
+      "lessons": 11,
+      "slides": 1,
       "quizzes": 0,
       "activities": 18,
       "demos": 0,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 1
+      "modRecaps": 0
     },
-    "totalAssets": 25
+    "totalAssets": 30
   },
   {
     "id": "productivity-tools-for-technical-reporting",
@@ -1514,8 +1466,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1545,8 +1496,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1568,18 +1518,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 9,
-      "slides": 0,
+      "lessons": 11,
+      "slides": 4,
       "quizzes": 1,
       "activities": 60,
       "demos": 1,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 4
+      "modRecaps": 0
     },
-    "totalAssets": 75
+    "totalAssets": 77
   },
   {
     "id": "python-coding-booster-intensive",
@@ -1587,8 +1536,8 @@ var courseOverviewData = [
     "hours": 16,
     "outline": {
       "exists": true,
-      "modules": 2,
-      "lessons": 5
+      "modules": 1,
+      "lessons": 13
     },
     "syllabus": true,
     "source": {
@@ -1607,8 +1556,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 32
   },
@@ -1638,8 +1586,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1669,8 +1616,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1700,8 +1646,7 @@ var courseOverviewData = [
       "caseStudies": 4,
       "instructorGuides": 2,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 223
   },
@@ -1731,8 +1676,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1762,8 +1706,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1772,9 +1715,9 @@ var courseOverviewData = [
     "name": "SQL Coding Booster Intensive",
     "hours": 8,
     "outline": {
-      "exists": true,
-      "modules": 1,
-      "lessons": 10
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
     },
     "syllabus": true,
     "source": {
@@ -1782,7 +1725,7 @@ var courseOverviewData = [
       "folder": "Course: SQL Booster",
       "modules": 4
     },
-    "coverage": 0,
+    "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1793,8 +1736,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 8
   },
@@ -1824,8 +1766,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 49
   },
@@ -1847,18 +1788,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 17,
+      "lessons": 33,
       "slides": 12,
       "quizzes": 0,
       "activities": 83,
-      "demos": 5,
+      "demos": 8,
       "caseStudies": 0,
       "instructorGuides": 6,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
-    "totalAssets": 123
+    "totalAssets": 142
   },
   {
     "id": "student-onboarding",
@@ -1886,8 +1826,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1917,8 +1856,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 0
   },
@@ -1948,8 +1886,7 @@ var courseOverviewData = [
       "caseStudies": 11,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 70
   },
@@ -1979,8 +1916,7 @@ var courseOverviewData = [
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
-      "modRecaps": 0,
-      "interactives": 0
+      "modRecaps": 0
     },
     "totalAssets": 15
   }

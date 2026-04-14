@@ -153,7 +153,7 @@ def format_asset_summary(ov):
 
     parts = []
     if a.get('lessons'): parts.append(f"{a['lessons']} lesson docs")
-    if a.get('slides'): parts.append(f"{a['slides']} slide decks")
+    if a.get('slides'): parts.append(f"{a['slides']} slides/SCORM")
     if a.get('quizzes'): parts.append(f"{a['quizzes']} quizzes")
     if a.get('activities'): parts.append(f"{a['activities']} activities/labs")
     if a.get('demos'): parts.append(f"{a['demos']} demos")
@@ -161,8 +161,6 @@ def format_asset_summary(ov):
     if a.get('instructorGuides'): parts.append(f"{a['instructorGuides']} instructor guides")
     if a.get('modIntros'): parts.append(f"{a['modIntros']} module intros")
     if a.get('modRecaps'): parts.append(f"{a['modRecaps']} module recaps")
-    if a.get('interactives'): parts.append(f"{a['interactives']} interactives/SCORM")
-
     return f"{total} total assets: {', '.join(parts)}."
 
 
@@ -392,7 +390,7 @@ def generate(paths):
     w("")
     asset_types = {
         'lessons': 'Lesson content docs',
-        'slides': 'Slide decks',
+        'slides': 'Slides / SCORM',
         'quizzes': 'Quizzes',
         'activities': 'Activities / Labs',
         'demos': 'Demos',
@@ -400,7 +398,6 @@ def generate(paths):
         'instructorGuides': 'Instructor guides',
         'modIntros': 'Module intros',
         'modRecaps': 'Module recaps',
-        'interactives': 'Interactives / SCORM'
     }
     for key, label in asset_types.items():
         total = sum(c.get('assets', {}).get(key, 0) for c in all_ov)

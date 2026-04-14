@@ -39,7 +39,7 @@ def auto_detect_base():
     return None
 
 def is_doc(f):
-    return f.endswith('.gdoc') or f.endswith('.docx') or f.endswith('.doc') or f.endswith('.md')
+    return f.endswith('.gdoc') or f.endswith('.docx') or f.endswith('.doc') or f.endswith('.md') or f.endswith('.pdf')
 
 def is_slides(f):
     return f.endswith('.pptx') or f.endswith('.gslides')
@@ -124,7 +124,7 @@ def find_source_folder(course_name, courses_source):
 def count_assets(files):
     counts = {'lessons': 0, 'slides': 0, 'quizzes': 0, 'activities': 0,
               'demos': 0, 'case_studies': 0, 'instructor_guides': 0,
-              'interactives': 0, 'mod_intro': 0, 'mod_recap': 0}
+              'mod_intro': 0, 'mod_recap': 0}
     for f in files:
         fl = f.lower()
         if is_quiz(f):
@@ -140,7 +140,7 @@ def count_assets(files):
         elif ('recap' in fl or 'review' in fl or 'summary' in fl) and 'module' in fl:
             counts['mod_recap'] += 1
         elif 'scorm' in fl or 'interactive' in fl or f.endswith('.zip'):
-            counts['interactives'] += 1
+            counts['slides'] += 1
         elif ('exercise' in fl or 'activity' in fl or 'lab' in fl or 'practice' in fl or 'hands' in fl or 'code-along' in fl or 'codealong' in fl) and (is_doc(f) or f.endswith('.pdf')):
             counts['activities'] += 1
         elif re.match(r'\d{2}e-', fl) and is_doc(f):
@@ -159,13 +159,161 @@ def count_assets(files):
             counts['lessons'] += 1
     return counts
 
+def count_phase1_assets(files):
+    """Classify Phase 1 deploy-content files into the legacy asset schema.
+
+    Phase 1 produces lesson/instructor-guide/quiz/exercise PDFs and SCORM zips.
+    Categories not produced in Phase 1 (slides, demos, case_studies, mod_intro,
+    mod_recap) stay at 0.
+
+    Pattern priority (first match wins):
+      1. scorm-*.zip                             -> interactives
+      2. *-quiz-answer-key.pdf                   -> skipped (paired with quiz)
+      3. *-quiz.pdf                              -> quizzes
+      4. *-instructor-guide-exercise-*.pdf       -> skipped (instructor copy)
+      5. *-exercise-*.pdf                        -> activities
+      6. *-instructor-guide.pdf                  -> instructor_guides
+      7. lesson-NN-*.pdf (any other)             -> lessons
+    """
+    counts = {'lessons': 0, 'slides': 0, 'quizzes': 0, 'activities': 0,
+              'demos': 0, 'case_studies': 0, 'instructor_guides': 0,
+              'mod_intro': 0, 'mod_recap': 0}
+    for f in files:
+        fl = f.lower()
+        if fl.startswith('scorm-') and fl.endswith('.zip'):
+            counts['slides'] += 1
+        elif fl.endswith('-quiz-answer-key.pdf'):
+            continue  # paired with the quiz pdf
+        elif fl.endswith('-quiz.pdf'):
+            counts['quizzes'] += 1
+        elif '-instructor-guide-exercise-' in fl and fl.endswith('.pdf'):
+            continue  # instructor copy of an activity
+        elif '-exercise-' in fl and fl.endswith('.pdf'):
+            counts['activities'] += 1
+        elif fl.endswith('-instructor-guide.pdf'):
+            counts['instructor_guides'] += 1
+        elif re.match(r'lesson-\d+', fl) and fl.endswith('.pdf'):
+            counts['lessons'] += 1
+    return counts
+
+
+def find_phase1_deploy_folder(course_id, paths):
+    """Return the Phase 1 deploy/content folder for a course, or None.
+
+    The folder counts as present only if it exists AND contains at least one
+    `module-*` subdirectory (otherwise there's nothing to scan).
+    """
+    if not course_id:
+        return None
+    deploy_path = os.path.join(paths['courses_dir'], course_id, 'deploy', 'content')
+    if not os.path.isdir(deploy_path):
+        return None
+    try:
+        entries = os.listdir(deploy_path)
+    except OSError:
+        return None
+    has_module = any(
+        e.lower().startswith('module-') and os.path.isdir(os.path.join(deploy_path, e))
+        for e in entries
+    )
+    return deploy_path if has_module else None
+
+
+def scan_phase1_deploy_folder(deploy_path):
+    """Scan a Phase 1 deploy/content folder and return a source_data dict.
+
+    Shape matches scan_source_folder() output so the main loop can consume
+    it uniformly. For each `module-NN-*/lesson-NN-*/` folder, all files are
+    flattened into the module's `files` list (compute_coverage expects this).
+    """
+    result = {
+        'module_folders': {},
+        'root_files': [],
+        'total_lessons': 0, 'total_slides': 0, 'total_quizzes': 0,
+        'total_activities': 0, 'total_demos': 0, 'total_case_studies': 0,
+        'total_instructor_guides': 0,
+        'total_mod_intro': 0, 'total_mod_recap': 0,
+    }
+
+    if not deploy_path or not os.path.isdir(deploy_path):
+        return result
+
+    try:
+        entries = sorted(os.listdir(deploy_path))
+    except OSError:
+        return result
+
+    for entry in entries:
+        entry_path = os.path.join(deploy_path, entry)
+        if not os.path.isdir(entry_path):
+            continue
+        m = re.match(r'module-(\d+)', entry, re.IGNORECASE)
+        if not m:
+            continue
+        mod_num = int(m.group(1))
+
+        # Flatten files from each lesson-NN-*/ subfolder
+        all_files = []
+        try:
+            lesson_entries = os.listdir(entry_path)
+        except OSError:
+            lesson_entries = []
+        for lesson_entry in lesson_entries:
+            lesson_path = os.path.join(entry_path, lesson_entry)
+            if os.path.isdir(lesson_path) and re.match(r'lesson-\d+', lesson_entry, re.IGNORECASE):
+                try:
+                    all_files.extend(os.listdir(lesson_path))
+                except OSError:
+                    pass
+
+        result['module_folders'][mod_num] = {
+            'path': entry_path,
+            'name': entry,
+            'files': all_files,
+        }
+
+    # Compute totals per module using the Phase 1 classifier
+    for mod_num, mod_data in result['module_folders'].items():
+        counts = count_phase1_assets(mod_data['files'])
+        for key in counts:
+            result[f'total_{key}'] += counts[key]
+
+    return result
+
+
+def resolve_course_source(course, paths):
+    """Return (source_info, source_data) for a course.
+
+    Prefers Phase 1 deploy content; falls back to the legacy _COURSES/ scan.
+
+    source_info is (absolute_path, display_folder_name) or None.
+    source_data matches the shape returned by scan_source_folder()/
+    scan_phase1_deploy_folder().
+    """
+    course_id = course.get('id', '')
+    name = course.get('name', course_id)
+
+    # Try Phase 1 first
+    phase1_path = find_phase1_deploy_folder(course_id, paths)
+    if phase1_path:
+        display = f"{course_id}/deploy/content"
+        source_data = scan_phase1_deploy_folder(phase1_path)
+        if source_data['module_folders']:
+            return (phase1_path, display), source_data
+
+    # Fall back to legacy _COURSES/ scan
+    legacy_info = find_source_folder(name, paths['courses_source'])
+    legacy_data = scan_source_folder(legacy_info[0] if legacy_info else None)
+    return legacy_info, legacy_data
+
+
 def scan_source_folder(source_path):
     result = {
         'module_folders': {},
         'root_files': [],
         'total_lessons': 0, 'total_slides': 0, 'total_quizzes': 0,
         'total_activities': 0, 'total_demos': 0, 'total_case_studies': 0,
-        'total_instructor_guides': 0, 'total_interactives': 0,
+        'total_instructor_guides': 0,
         'total_mod_intro': 0, 'total_mod_recap': 0,
     }
 
@@ -409,7 +557,11 @@ def parse_outline(outline_path):
                 m = re.match(r'(.+?)\s*(?:\(([^)]+)\))?\s*$', header_text)
                 if m:
                     name = m.group(1).strip()
+                    paren = (m.group(2) or '').strip().lower()
                     hours = parse_hours(m.group(2)) if m.group(2) else 0
+                    # Preserve integration markers so capstone handling can skip them
+                    if paren in {'integrated', 'embedded', 'baked in', 'woven in'}:
+                        name = f"{name} ({paren})"
                     mod_num = len(modules) + 1
                     current_module = {'number': mod_num, 'name': name, 'hours': hours, 'lessons': []}
                     modules.append(current_module)
@@ -501,6 +653,9 @@ def parse_outline(outline_path):
 
     # Capstone handling
     capstone_keywords = {'capstone', 'summative', 'assessment', 'final assessment', 'final exam'}
+    # Markers that indicate the capstone content is baked into existing
+    # lessons, not a separate deliverable — skip synthesis in that case.
+    integrated_markers = ('(integrated', '(embedded', '(baked', '(woven')
     final_modules = []
     for m in modules:
         if m.get('lessons'):
@@ -508,7 +663,8 @@ def parse_outline(outline_path):
         else:
             name_lower = m['name'].lower()
             is_capstone = any(kw in name_lower for kw in capstone_keywords)
-            if is_capstone:
+            is_integrated = any(marker in name_lower for marker in integrated_markers)
+            if is_capstone and not is_integrated:
                 max_global = max((l['global_number'] for mod in final_modules for l in mod['lessons']), default=0)
                 m['lessons'] = [{'number': 1, 'global_number': max_global + 1,
                                  'title': m['name'], 'hours': m['hours']}]
@@ -561,6 +717,17 @@ def check_lesson_exists(mod_files, lesson_number, position_in_module=None):
         fl = f.lower()
         if re.match(r'Lesson\s+' + str(lesson_number) + r'\b', f, re.IGNORECASE) and is_doc(f):
             return True
+    # Phase 1 naming: lesson-NN-<name>.pdf (excluding instructor guides,
+    # quizzes, and exercises which are counted separately)
+    for num in set(filter(None, [lesson_number, position_in_module])):
+        phase1_prefix = f"lesson-{num:02d}-"
+        for f in mod_files:
+            fl = f.lower()
+            if (fl.startswith(phase1_prefix) and is_doc(f)
+                and 'instructor-guide' not in fl
+                and 'quiz' not in fl
+                and 'exercise' not in fl):
+                return True
     for num in set(filter(None, [lesson_number, position_in_module])):
         target_flat = f"{num:02d}-"
         for f in mod_files:
@@ -723,8 +890,7 @@ def main():
         total_modules = len(modules)
         total_lessons = sum(len(m['lessons']) for m in modules)
 
-        source_info = find_source_folder(name, paths['courses_source'])
-        source_data = scan_source_folder(source_info[0] if source_info else None)
+        source_info, source_data = resolve_course_source(course, paths)
         has_source = source_info is not None and bool(source_data['module_folders'])
 
         if has_outline and modules:
@@ -743,7 +909,6 @@ def main():
             'instructorGuides': source_data['total_instructor_guides'],
             'modIntros': source_data['total_mod_intro'],
             'modRecaps': source_data['total_mod_recap'],
-            'interactives': source_data['total_interactives'],
         }
         total_assets = sum(assets.values())
         source_modules = len([k for k in source_data['module_folders'] if k < 100])
