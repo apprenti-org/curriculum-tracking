@@ -995,9 +995,9 @@ var courseOverviewData = [
     "name": "Java Coding Booster Intensive",
     "hours": 16,
     "outline": {
-      "exists": true,
-      "modules": 1,
-      "lessons": 7
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
     },
     "syllabus": true,
     "source": {
@@ -1005,7 +1005,7 @@ var courseOverviewData = [
       "folder": "Course: Java Booster",
       "modules": 8
     },
-    "coverage": 0,
+    "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
@@ -1715,9 +1715,9 @@ var courseOverviewData = [
     "name": "SQL Coding Booster Intensive",
     "hours": 8,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 1,
+      "lessons": 7
     },
     "syllabus": true,
     "source": {
@@ -1725,7 +1725,7 @@ var courseOverviewData = [
       "folder": "Course: SQL Booster",
       "modules": 4
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,

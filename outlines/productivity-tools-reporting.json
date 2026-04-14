@@ -23,14 +23,17 @@
           ],
           "objects": [
             "Object: Lesson: Data Management and Analysis in Excel",
-            "Assessment: Quiz: Data Management and Analysis in Excel"
+            "SCORM: Interactive \u2014 Data Management and Analysis in Excel",
+            "Assessment: Quiz: Data Management and Analysis in Excel",
+            "Object: Activity \u2014 Lab: Build The Orbitco Kpi Summary",
+            "Object: Activity \u2014 Lab: Clean The Orbitco Incident Export"
           ]
         },
         {
           "title": "Data Visualization and Operational Dashboards",
           "hours": 1,
           "topics": [
-            "Chart types and when to use them (column, bar, line, pie, scatter) — data visualization",
+            "Chart types and when to use them (column, bar, line, pie, scatter) \u2014 data visualization",
             "Pivot tables and pivot charts for summarizing technical data",
             "Building an operational dashboard: KPI tiles, trend lines, status indicators",
             "Conditional formatting for visual health checks (heat maps, data bars, icon sets)",
@@ -41,7 +44,10 @@
           ],
           "objects": [
             "Object: Lesson: Data Visualization and Operational Dashboards",
-            "Assessment: Quiz: Data Visualization and Operational Dashboards"
+            "SCORM: Interactive \u2014 Data Visualization and Operational Dashboards",
+            "Assessment: Quiz: Data Visualization and Operational Dashboards",
+            "Object: Activity \u2014 Exercise: Chart Critique",
+            "Object: Activity \u2014 Lab: Build The Orbitco Operational Dashboard"
           ]
         }
       ]
@@ -54,7 +60,7 @@
           "title": "Presentation Design Principles",
           "hours": 1,
           "topics": [
-            "Structuring a technical presentation: problem → evidence → options → recommendation",
+            "Structuring a technical presentation: problem \u2192 evidence \u2192 options \u2192 recommendation",
             "Slide design best practices: consistent layout, hierarchy, readable typography, contrast",
             "Using PowerPoint layouts, master slides, and themes for consistency",
             "Creating technical diagrams: network topology, architecture blocks, flow diagrams, sequence steps",
@@ -65,7 +71,10 @@
           ],
           "objects": [
             "Object: Lesson: Presentation Design Principles",
-            "Assessment: Quiz: Presentation Design Principles"
+            "SCORM: Interactive \u2014 Presentation Design Principles",
+            "Assessment: Quiz: Presentation Design Principles",
+            "Object: Activity \u2014 Lab: Build An Orbitco System Diagram",
+            "Object: Activity \u2014 Lab: Slide Rebuild"
           ]
         },
         {
@@ -83,7 +92,10 @@
           ],
           "objects": [
             "Object: Lesson: Presenting Data and Recommendations",
-            "Assessment: Quiz: Presenting Data and Recommendations"
+            "SCORM: Interactive \u2014 Presenting Data and Recommendations",
+            "Assessment: Quiz: Presenting Data and Recommendations",
+            "Object: Activity \u2014 Exercise: Peer Feedback Round",
+            "Object: Activity \u2014 Exercise: The Orbitco 5 Minute Capstone Briefing"
           ]
         }
       ]

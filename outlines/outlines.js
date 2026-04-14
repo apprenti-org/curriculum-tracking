@@ -8185,7 +8185,10 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Data Management and Analysis in Excel",
-              "Assessment: Quiz: Data Management and Analysis in Excel"
+              "SCORM: Interactive — Data Management and Analysis in Excel",
+              "Assessment: Quiz: Data Management and Analysis in Excel",
+              "Object: Activity — Lab: Build The Orbitco Kpi Summary",
+              "Object: Activity — Lab: Clean The Orbitco Incident Export"
             ]
           },
           {
@@ -8203,7 +8206,10 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Data Visualization and Operational Dashboards",
-              "Assessment: Quiz: Data Visualization and Operational Dashboards"
+              "SCORM: Interactive — Data Visualization and Operational Dashboards",
+              "Assessment: Quiz: Data Visualization and Operational Dashboards",
+              "Object: Activity — Exercise: Chart Critique",
+              "Object: Activity — Lab: Build The Orbitco Operational Dashboard"
             ]
           }
         ]
@@ -8227,7 +8233,10 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Presentation Design Principles",
-              "Assessment: Quiz: Presentation Design Principles"
+              "SCORM: Interactive — Presentation Design Principles",
+              "Assessment: Quiz: Presentation Design Principles",
+              "Object: Activity — Lab: Build An Orbitco System Diagram",
+              "Object: Activity — Lab: Slide Rebuild"
             ]
           },
           {
@@ -8245,7 +8254,10 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Presenting Data and Recommendations",
-              "Assessment: Quiz: Presenting Data and Recommendations"
+              "SCORM: Interactive — Presenting Data and Recommendations",
+              "Assessment: Quiz: Presenting Data and Recommendations",
+              "Object: Activity — Exercise: Peer Feedback Round",
+              "Object: Activity — Exercise: The Orbitco 5 Minute Capstone Briefing"
             ]
           }
         ]
