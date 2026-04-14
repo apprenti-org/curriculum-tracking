@@ -197,6 +197,28 @@ def count_phase1_assets(files):
     return counts
 
 
+def find_phase1_deploy_folder(course_id, paths):
+    """Return the Phase 1 deploy/content folder for a course, or None.
+
+    The folder counts as present only if it exists AND contains at least one
+    `module-*` subdirectory (otherwise there's nothing to scan).
+    """
+    if not course_id:
+        return None
+    deploy_path = os.path.join(paths['courses_dir'], course_id, 'deploy', 'content')
+    if not os.path.isdir(deploy_path):
+        return None
+    try:
+        entries = os.listdir(deploy_path)
+    except OSError:
+        return None
+    has_module = any(
+        e.lower().startswith('module-') and os.path.isdir(os.path.join(deploy_path, e))
+        for e in entries
+    )
+    return deploy_path if has_module else None
+
+
 def scan_source_folder(source_path):
     result = {
         'module_folders': {},

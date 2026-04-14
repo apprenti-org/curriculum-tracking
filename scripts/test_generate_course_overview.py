@@ -56,6 +56,30 @@ class TestPhase1Scanner(unittest.TestCase):
         self.assertEqual(result['mod_intro'], 0)
         self.assertEqual(result['mod_recap'], 0)
 
+    def test_find_phase1_deploy_folder_found(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            courses_dir = os.path.join(tmp, 'courses')
+            content_dir = os.path.join(courses_dir, 'itil-foundations', 'deploy', 'content')
+            os.makedirs(os.path.join(content_dir, 'module-01-intro'))
+            paths = {'courses_dir': courses_dir}
+            result = gen_overview.find_phase1_deploy_folder('itil-foundations', paths)
+            self.assertEqual(result, content_dir)
+
+    def test_find_phase1_deploy_folder_missing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            paths = {'courses_dir': os.path.join(tmp, 'courses')}
+            result = gen_overview.find_phase1_deploy_folder('nonexistent', paths)
+            self.assertIsNone(result)
+
+    def test_find_phase1_deploy_folder_no_modules(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            courses_dir = os.path.join(tmp, 'courses')
+            content_dir = os.path.join(courses_dir, 'foo', 'deploy', 'content')
+            os.makedirs(content_dir)  # empty — no module-* folder
+            paths = {'courses_dir': courses_dir}
+            result = gen_overview.find_phase1_deploy_folder('foo', paths)
+            self.assertIsNone(result)
+
 
 if __name__ == "__main__":
     unittest.main()
