@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T21:20:52",
+  "generated": "2026-04-14T13:01:25",
   "courseCount": 64,
   "courses": [
     {
@@ -279,7 +279,7 @@
       "outline": {
         "exists": true,
         "modules": 1,
-        "lessons": 7
+        "lessons": 10
       },
       "syllabus": true,
       "source": {
@@ -518,8 +518,8 @@
       "hours": 50,
       "outline": {
         "exists": true,
-        "modules": 8,
-        "lessons": 17
+        "modules": 7,
+        "lessons": 14
       },
       "syllabus": true,
       "source": {
@@ -527,8 +527,8 @@
         "folder": "Course: Excel for Data Analysts",
         "modules": 10
       },
-      "coverage": 0,
-      "lessonsWithContent": 0,
+      "coverage": 14,
+      "lessonsWithContent": 2,
       "assets": {
         "lessons": 30,
         "slides": 25,
@@ -547,17 +547,17 @@
       "name": "Data Fundamentals \u2014 SQL for Data",
       "hours": 50,
       "outline": {
-        "exists": false,
-        "modules": 0,
-        "lessons": 0
+        "exists": true,
+        "modules": 5,
+        "lessons": 14
       },
-      "syllabus": false,
+      "syllabus": true,
       "source": {
         "exists": true,
         "folder": "Course: SQL for Data",
         "modules": 8
       },
-      "coverage": null,
+      "coverage": 0,
       "lessonsWithContent": 0,
       "assets": {
         "lessons": 33,
@@ -999,7 +999,7 @@
       "outline": {
         "exists": true,
         "modules": 1,
-        "lessons": 10
+        "lessons": 7
       },
       "syllabus": true,
       "source": {
@@ -1443,13 +1443,13 @@
       "totalAssets": 30
     },
     {
-      "id": "productivity-tools-for-technical-reporting",
+      "id": "productivity-tools-reporting",
       "name": "Productivity Tools for Technical Reporting",
       "hours": 4,
       "outline": {
         "exists": true,
-        "modules": 3,
-        "lessons": 5
+        "modules": 2,
+        "lessons": 4
       },
       "syllabus": true,
       "source": {
@@ -1778,8 +1778,8 @@
       "hours": 20,
       "outline": {
         "exists": true,
-        "modules": 5,
-        "lessons": 14
+        "modules": 8,
+        "lessons": 17
       },
       "syllabus": true,
       "source": {

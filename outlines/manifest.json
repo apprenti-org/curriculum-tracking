@@ -205,6 +205,11 @@
     "id": "pandas"
   },
   {
+    "file": "productivity-tools-reporting.json",
+    "course": "Productivity Tools for Technical Reporting",
+    "id": "productivity-tools-reporting"
+  },
+  {
     "file": "python-basics.json",
     "course": "Python Basics (for Software Dev)",
     "id": "python-basics-for-software-dev"
