@@ -203,11 +203,11 @@ const courseData = [
     "hours": 25,
     "status": {
       "design": "Needs Review",
-      "development": "Not Started"
+      "development": "In Progress"
     },
     "syllabus": "data-literacy",
     "outline": "Course Outline: Data Fundamentals — Data Literacy",
-    "note": "Existing content — full course outline, source docs, instructor guides, and summative quiz in Google Drive",
+    "note": "7 modules, 24 lessons. Source content scaffolded into WORKING folder (lesson content.md, instructor guides, activities, module quizzes, capstone). Deploy content build in progress.",
     "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"
   },
   {
