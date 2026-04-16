@@ -205,7 +205,7 @@ const courseData = [
       "design": "Needs Review",
       "development": "Not Started"
     },
-    "syllabus": null,
+    "syllabus": "data-literacy",
     "outline": "Course Outline: Data Fundamentals — Data Literacy",
     "note": "Existing content — full course outline, source docs, instructor guides, and summative quiz in Google Drive",
     "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"

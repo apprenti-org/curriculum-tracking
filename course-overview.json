@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T18:35:50",
+  "generated": "2026-04-16T15:43:45",
   "courseCount": 64,
   "courses": [
     {
@@ -278,8 +278,8 @@
       "hours": 8,
       "outline": {
         "exists": true,
-        "modules": 1,
-        "lessons": 10
+        "modules": 2,
+        "lessons": 5
       },
       "syllabus": true,
       "source": {
@@ -548,8 +548,8 @@
       "hours": 50,
       "outline": {
         "exists": true,
-        "modules": 5,
-        "lessons": 14
+        "modules": 8,
+        "lessons": 17
       },
       "syllabus": true,
       "source": {
@@ -997,9 +997,9 @@
       "name": "Java Coding Booster Intensive",
       "hours": 16,
       "outline": {
-        "exists": false,
-        "modules": 0,
-        "lessons": 0
+        "exists": true,
+        "modules": 1,
+        "lessons": 10
       },
       "syllabus": true,
       "source": {
@@ -1007,7 +1007,7 @@
         "folder": "Course: Java Booster",
         "modules": 8
       },
-      "coverage": null,
+      "coverage": 0,
       "lessonsWithContent": 0,
       "assets": {
         "lessons": 0,
@@ -1117,9 +1117,9 @@
       "name": "JavaScript Coding Booster Intensive",
       "hours": 8,
       "outline": {
-        "exists": true,
-        "modules": 2,
-        "lessons": 5
+        "exists": false,
+        "modules": 0,
+        "lessons": 0
       },
       "syllabus": true,
       "source": {
@@ -1127,7 +1127,7 @@
         "folder": "Course: JavaScript Booster",
         "modules": 4
       },
-      "coverage": 0,
+      "coverage": null,
       "lessonsWithContent": 0,
       "assets": {
         "lessons": 0,
@@ -1453,24 +1453,24 @@
       },
       "syllabus": true,
       "source": {
-        "exists": false,
-        "folder": null,
-        "modules": 0
+        "exists": true,
+        "folder": "productivity-tools-reporting/deploy/content",
+        "modules": 2
       },
-      "coverage": 0,
-      "lessonsWithContent": 0,
+      "coverage": 100,
+      "lessonsWithContent": 4,
       "assets": {
-        "lessons": 0,
-        "slides": 0,
-        "quizzes": 0,
-        "activities": 0,
+        "lessons": 14,
+        "slides": 4,
+        "quizzes": 4,
+        "activities": 3,
         "demos": 0,
         "caseStudies": 0,
-        "instructorGuides": 0,
+        "instructorGuides": 4,
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 29
     },
     {
       "id": "professional-communication",
@@ -1778,8 +1778,8 @@
       "hours": 20,
       "outline": {
         "exists": true,
-        "modules": 8,
-        "lessons": 17
+        "modules": 5,
+        "lessons": 14
       },
       "syllabus": true,
       "source": {
