@@ -2577,7 +2577,7 @@ const courseOutlines = {
   "Data Fundamentals — Data Literacy": {
     "course": "Data Fundamentals — Data Literacy",
     "totalHours": 25,
-    "totalLessons": 19,
+    "totalLessons": 24,
     "totalModules": 7,
     "modules": [
       {
