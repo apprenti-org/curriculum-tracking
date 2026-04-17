@@ -202,7 +202,7 @@ const courseData = [
     "name": "Data Fundamentals — Data Literacy",
     "hours": 25,
     "status": {
-      "design": "Needs Review",
+      "design": "Complete",
       "development": "In Progress"
     },
     "syllabus": "data-literacy",
