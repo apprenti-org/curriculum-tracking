@@ -20,7 +20,7 @@ function renderOutline(outlineData) {
         html += '<div class="outline-module"><div class="module-header" data-module="' + i + '">' +
             '<i class="fa-solid fa-chevron-right module-chevron"></i>' +
             '<span class="module-name"><i class="fa-solid fa-cube" style="opacity:0.5;margin-right:4px;font-size:11px;"></i>Module ' + (i + 1) + ': ' + (mod.name || mod.title) + '</span>' +
-            '<span class="module-hours">' + mod.hours + 'h &middot; ' + mod.lessons.length + ' lessons</span></div>';
+            '<span class="module-hours">' + (mod.hours != null ? mod.hours + 'h &middot; ' : '') + mod.lessons.length + ' lessons</span></div>';
         html += '<div class="module-lessons">';
 
         if (mod.description) {
@@ -82,7 +82,7 @@ function renderOutline(outlineData) {
     if (outlineData.assessment) {
         html += '<div class="outline-assessment"><div class="assessment-title">' +
             '<i class="fa-solid fa-clipboard-check" style="margin-right:6px;"></i>' +
-            outlineData.assessment.title + ' (' + outlineData.assessment.hours + 'h)</div><div class="assessment-items">';
+            outlineData.assessment.title + (outlineData.assessment.hours != null ? ' (' + outlineData.assessment.hours + 'h)' : '') + '</div><div class="assessment-items">';
         outlineData.assessment.items.forEach(function(item) { html += '<div class="assessment-item">' + item + '</div>'; });
         html += '</div></div>';
     }
