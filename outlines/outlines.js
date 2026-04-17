@@ -2592,6 +2592,15 @@ const courseOutlines = {
               "Data, metadata, and information",
               "Data vs Big Data",
               "Data-driven decision making"
+            ],
+            "objects": [
+              "Object: Lesson: Intro to Data Literacy",
+              "Object: Slideshow: Module — Introduction to Data",
+              "Object: Reference: Welcome to Introduction to Data (video)",
+              "Object: Reference: Scenario — Introduction to Data (video)",
+              "Object: Activity: Exercise — Intro to Data Literacy, Data vs. Big Data",
+              "Object: Reference: Learner Key — Intro to Data Literacy, Data vs. Big Data",
+              "Object: Reference: Self-Efficacy Survey — Introduction to Data"
             ]
           },
           {
@@ -2600,6 +2609,12 @@ const courseOutlines = {
             "topics": [
               "Using data to inform decisions",
               "Business context for data"
+            ],
+            "objects": [
+              "Object: Lesson: Intro to Data-Driven Decision Making",
+              "Object: Slideshow: Module — Introduction to Data",
+              "Object: Reference: Welcome to Introduction to Data (video)",
+              "Object: Reference: Scenario — Introduction to Data (video)"
             ]
           },
           {
@@ -2609,6 +2624,12 @@ const courseOutlines = {
               "Relational databases",
               "NoSQL databases",
               "Database terminology"
+            ],
+            "objects": [
+              "Object: Lesson: Database Types",
+              "Object: Slideshow: Module — Introduction to Data",
+              "Object: Reference: Welcome to Introduction to Data (video)",
+              "Object: Reference: Scenario — Introduction to Data (video)"
             ]
           },
           {
@@ -2618,6 +2639,13 @@ const courseOutlines = {
               "Structured vs unstructured data",
               "Quantitative vs qualitative",
               "Common data formats"
+            ],
+            "objects": [
+              "Object: Lesson: Data Types",
+              "Object: Slideshow: Module — Introduction to Data",
+              "Object: Reference: Welcome to Introduction to Data (video)",
+              "Object: Reference: Scenario — Introduction to Data (video)",
+              "Assessment: Quiz: Introduction to Data"
             ]
           }
         ]
@@ -2634,6 +2662,12 @@ const courseOutlines = {
               "What is bias",
               "Where bias occurs in data work",
               "Risks of bias"
+            ],
+            "objects": [
+              "Object: Lesson: Introduction to Bias",
+              "Object: Slideshow: Module — Bias in Data",
+              "Object: Reference: Welcome to Bias in Data (video)",
+              "Object: Reference: Scenario — Bias in Data (video)"
             ]
           },
           {
@@ -2644,16 +2678,32 @@ const courseOutlines = {
               "Anchoring bias",
               "Availability bias",
               "Impact on data analysis"
+            ],
+            "objects": [
+              "Object: Lesson: Cognitive Bias",
+              "Object: Slideshow: Module — Bias in Data",
+              "Object: Reference: Welcome to Bias in Data (video)",
+              "Object: Reference: Scenario — Bias in Data (video)"
             ]
           },
           {
-            "title": "Statistical Bias",
+            "title": "Statistical Biases",
             "hours": null,
             "topics": [
               "Selection bias",
               "Sampling bias",
               "Measurement bias",
               "Impact on data analysis"
+            ],
+            "objects": [
+              "Object: Lesson: Statistical Biases",
+              "Object: Slideshow: Module — Bias in Data",
+              "Object: Reference: Welcome to Bias in Data (video)",
+              "Object: Reference: Scenario — Bias in Data (video)",
+              "Object: Activity: Exercise — Bias Scenarios",
+              "Object: Reference: Learner Key — Bias Scenarios",
+              "Object: Reference: Scenarios — Statistical Biases",
+              "Assessment: Quiz: Bias in Data"
             ]
           }
         ]
@@ -2669,6 +2719,12 @@ const courseOutlines = {
             "topics": [
               "CSV, JSON, XML, Excel",
               "File formats and use cases"
+            ],
+            "objects": [
+              "Object: Lesson: File Sources",
+              "Object: Slideshow: Module — Gathering Data",
+              "Object: Reference: Welcome to Gathering Data (video)",
+              "Object: Reference: Scenario — Gathering Data (video)"
             ]
           },
           {
@@ -2678,6 +2734,14 @@ const courseOutlines = {
               "Databases as data storage",
               "Querying basics",
               "Database management systems"
+            ],
+            "objects": [
+              "Object: Lesson: Databases",
+              "Object: Slideshow: Module — Gathering Data",
+              "Object: Reference: Welcome to Gathering Data (video)",
+              "Object: Reference: Scenario — Gathering Data (video)",
+              "Object: Activity: Exercise — Databases",
+              "Object: Reference: Learner Key — Databases"
             ]
           },
           {
@@ -2687,6 +2751,12 @@ const courseOutlines = {
               "Public datasets",
               "Data repositories",
               "Government and open data sources"
+            ],
+            "objects": [
+              "Object: Lesson: Online Datasets",
+              "Object: Slideshow: Module — Gathering Data",
+              "Object: Reference: Welcome to Gathering Data (video)",
+              "Object: Reference: Scenario — Gathering Data (video)"
             ]
           },
           {
@@ -2696,6 +2766,13 @@ const courseOutlines = {
               "Web scraping concepts",
               "Ethical considerations",
               "Basic techniques"
+            ],
+            "objects": [
+              "Object: Lesson: Web Scraping",
+              "Object: Slideshow: Module — Gathering Data",
+              "Object: Reference: Welcome to Gathering Data (video)",
+              "Object: Reference: Scenario — Gathering Data (video)",
+              "Assessment: Quiz: Gathering Data"
             ]
           }
         ]
@@ -2712,6 +2789,14 @@ const courseOutlines = {
               "Critical thinking about data",
               "Validating data sources",
               "Asking the right questions"
+            ],
+            "objects": [
+              "Object: Lesson: Questioning Data",
+              "Object: Slideshow: Module — Questioning Data",
+              "Object: Reference: Welcome to Questioning Data (video)",
+              "Object: Reference: Scenario — Questioning Data (video)",
+              "Object: Activity: Exercise — Questioning Data",
+              "Object: Reference: Learner Key — Questioning Data"
             ]
           },
           {
@@ -2721,6 +2806,15 @@ const courseOutlines = {
               "Correlation vs causation",
               "Spurious correlations",
               "Drawing valid conclusions"
+            ],
+            "objects": [
+              "Object: Lesson: Correlation and Causation",
+              "Object: Slideshow: Module — Questioning Data",
+              "Object: Reference: Welcome to Questioning Data (video)",
+              "Object: Reference: Scenario — Questioning Data (video)",
+              "Object: Activity: Exercise — Correlation and Causation",
+              "Object: Reference: Learner Key — Correlation and Causation",
+              "Assessment: Quiz: Questioning Data"
             ]
           }
         ]
@@ -2736,6 +2830,12 @@ const courseOutlines = {
             "topics": [
               "Rows, columns, fields, records",
               "Reading tabular data"
+            ],
+            "objects": [
+              "Object: Lesson: Tabular Data Vocabulary",
+              "Object: Slideshow: Module — Relational Data",
+              "Object: Reference: Welcome to Relational Data (video)",
+              "Object: Reference: Scenario — Relational Data (video)"
             ]
           },
           {
@@ -2745,6 +2845,14 @@ const courseOutlines = {
               "Data modeling process",
               "Entity-relationship diagrams",
               "Conceptual vs logical vs physical models"
+            ],
+            "objects": [
+              "Object: Lesson: Data Modeling",
+              "Object: Slideshow: Module — Relational Data",
+              "Object: Reference: Welcome to Relational Data (video)",
+              "Object: Reference: Scenario — Relational Data (video)",
+              "Object: Activity: Exercise — Data Modeling",
+              "Object: Reference: Learner Key — Data Modeling"
             ]
           },
           {
@@ -2755,6 +2863,14 @@ const courseOutlines = {
               "One-to-many",
               "Many-to-many",
               "Self-referencing relationships"
+            ],
+            "objects": [
+              "Object: Lesson: Data Relationships",
+              "Object: Slideshow: Module — Relational Data",
+              "Object: Reference: Welcome to Relational Data (video)",
+              "Object: Reference: Scenario — Relational Data (video)",
+              "Object: Activity: Exercise — Data Relationships",
+              "Object: Reference: Learner Key — Data Relationships"
             ]
           },
           {
@@ -2764,6 +2880,15 @@ const courseOutlines = {
               "Purpose of normalization",
               "First, second, and third normal forms",
               "Denormalization trade-offs"
+            ],
+            "objects": [
+              "Object: Lesson: Data Normalization",
+              "Object: Slideshow: Module — Relational Data",
+              "Object: Reference: Welcome to Relational Data (video)",
+              "Object: Reference: Scenario — Relational Data (video)",
+              "Object: Activity: Exercise — Data Normalization",
+              "Object: Reference: Learner Key — Data Normalization",
+              "Assessment: Quiz: Relational Data"
             ]
           }
         ]
@@ -2780,6 +2905,14 @@ const courseOutlines = {
               "Bar charts, line charts, scatter plots",
               "Choosing the right visualization",
               "Best practices"
+            ],
+            "objects": [
+              "Object: Lesson: Visualization Types",
+              "Object: Slideshow: Module — Data Visualizations",
+              "Object: Reference: Welcome to Data Visualizations (video)",
+              "Object: Reference: Scenario — Data Visualizations (video)",
+              "Object: Activity: Exercise — Visualization Types",
+              "Object: Reference: Learner Key — Visualization Types"
             ]
           },
           {
@@ -2789,6 +2922,12 @@ const courseOutlines = {
               "Pie chart limitations",
               "When pie charts mislead",
               "Better alternatives"
+            ],
+            "objects": [
+              "Object: Lesson: The Problem of Pie",
+              "Object: Slideshow: Module — Data Visualizations",
+              "Object: Reference: Welcome to Data Visualizations (video)",
+              "Object: Reference: Scenario — Data Visualizations (video)"
             ]
           },
           {
@@ -2798,6 +2937,14 @@ const courseOutlines = {
               "Trend lines",
               "Seasonal patterns",
               "Interpreting time series data"
+            ],
+            "objects": [
+              "Object: Lesson: Identifying Trends",
+              "Object: Slideshow: Module — Data Visualizations",
+              "Object: Reference: Welcome to Data Visualizations (video)",
+              "Object: Reference: Scenario — Data Visualizations (video)",
+              "Object: Activity: Exercise — Identifying Trends",
+              "Object: Reference: Learner Key — Identifying Trends"
             ]
           },
           {
@@ -2807,6 +2954,13 @@ const courseOutlines = {
               "What are outliers",
               "Impact on analysis",
               "When to include or exclude"
+            ],
+            "objects": [
+              "Object: Lesson: Understanding Outliers",
+              "Object: Slideshow: Module — Data Visualizations",
+              "Object: Reference: Welcome to Data Visualizations (video)",
+              "Object: Reference: Scenario — Data Visualizations (video)",
+              "Assessment: Quiz: Data Visualizations"
             ]
           }
         ]
@@ -2823,6 +2977,12 @@ const courseOutlines = {
               "Statistical mindset",
               "Population vs sample",
               "Variability and uncertainty"
+            ],
+            "objects": [
+              "Object: Lesson: Statistical Thinking",
+              "Object: Slideshow: Module — Statistics",
+              "Object: Reference: Welcome to Statistics (video)",
+              "Object: Reference: Scenario — Statistics (video)"
             ]
           },
           {
@@ -2832,6 +2992,14 @@ const courseOutlines = {
               "Mean, median, mode",
               "Range, variance, standard deviation",
               "Distribution shapes"
+            ],
+            "objects": [
+              "Object: Lesson: Descriptive Statistics",
+              "Object: Slideshow: Module — Statistics",
+              "Object: Reference: Welcome to Statistics (video)",
+              "Object: Reference: Scenario — Statistics (video)",
+              "Object: Activity: Exercise — Descriptive Statistics",
+              "Object: Reference: Learner Key — Descriptive Statistics"
             ]
           },
           {
@@ -2841,6 +3009,13 @@ const courseOutlines = {
               "Basic probability concepts",
               "Likelihood and uncertainty",
               "Using probability in data analysis"
+            ],
+            "objects": [
+              "Object: Lesson: Introduction to Probability",
+              "Object: Slideshow: Module — Statistics",
+              "Object: Reference: Welcome to Statistics (video)",
+              "Object: Reference: Scenario — Statistics (video)",
+              "Assessment: Quiz: Statistics"
             ]
           }
         ]
