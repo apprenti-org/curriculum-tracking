@@ -277,7 +277,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 7
+      "lessons": 10
     },
     "syllabus": true,
     "source": {
@@ -996,8 +996,8 @@ var courseOverviewData = [
     "hours": 16,
     "outline": {
       "exists": true,
-      "modules": 1,
-      "lessons": 13
+      "modules": 2,
+      "lessons": 5
     },
     "syllabus": true,
     "source": {
@@ -1116,8 +1116,8 @@ var courseOverviewData = [
     "hours": 8,
     "outline": {
       "exists": true,
-      "modules": 2,
-      "lessons": 5
+      "modules": 1,
+      "lessons": 7
     },
     "syllabus": true,
     "source": {
@@ -1537,7 +1537,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 10
+      "lessons": 13
     },
     "syllabus": true,
     "source": {
