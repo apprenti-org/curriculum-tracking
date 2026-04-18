@@ -21,6 +21,22 @@ function courseStatusIcon(courseName) {
 }
 
 /**
+ * Renders a small "status unverified" badge for courses that have not
+ * been manually audited (statusConfirmed === false or missing). Returns
+ * an empty string when status is confirmed, so callers can append
+ * unconditionally without adding extra spacing.
+ *
+ * See #35.
+ */
+function unverifiedStatusBadge(courseOrName) {
+    var c = typeof courseOrName === 'string'
+        ? (typeof courseLookup !== 'undefined' ? courseLookup[courseOrName] : null)
+        : courseOrName;
+    if (c && c.statusConfirmed === true) return '';
+    return ' <i class="fa-solid fa-triangle-exclamation status-unverified" title="Status not yet audited"></i>';
+}
+
+/**
  * Renders membership tags HTML for a list of memberships
  * @param {Array<{curriculum: string, group?: string, hoursOverride?: number}>} membership
  * @returns {string} HTML string

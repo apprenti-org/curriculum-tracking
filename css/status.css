@@ -217,3 +217,14 @@ thead th i.fa-solid { margin-right: 4px; font-size: 11px; opacity: 0.7; }
 .status-page footer {
     padding: 24px 32px; font-size: 12px;
 }
+
+/* "Status unverified" badge — rendered next to statuses whose
+   statusConfirmed flag is false (default for everything except ITIL).
+   See curriculum-tracking#35. */
+.status-unverified {
+    color: var(--status-needs-review-text);
+    font-size: 11px;
+    opacity: 0.75;
+    margin-left: 4px;
+    cursor: help;
+}

@@ -145,5 +145,6 @@ function renderStatusTracks(courseName) {
     return '<div class="status-tracks">' +
         '<div class="track"><span class="track-label"><i class="fa-solid fa-compass-drafting" style="margin-right:3px;"></i>Design:</span><span class="track-status ' + statusClass(designStatus) + '">' + designStatus + '</span></div>' +
         '<div class="track"><span class="track-label"><i class="fa-solid fa-code" style="margin-right:3px;"></i>Dev:</span><span class="track-status ' + statusClass(devStatus) + '">' + devStatus + '</span></div>' +
+        unverifiedStatusBadge(courseName) +
         '</div>';
 }
