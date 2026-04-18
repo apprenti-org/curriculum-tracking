@@ -467,6 +467,59 @@ def parse_hours(text):
             pass
     return 0
 
+def match_folder_json_ids(folders, json_ids):
+    """Pair course-folder names with courses.json ids.
+
+    Deterministic: result depends only on input values, never on set-iteration
+    order or PYTHONHASHSEED. Addresses curriculum-tracking#53, where the prior
+    set-iteration + first-match approach produced different mappings across
+    runs for name families like the Coding Booster courses.
+
+    Scoring (higher = better):
+      1000  exact match (folder_id == json_id)
+       500  de-hyphenated substring match in either direction
+       100 * word_overlap_count  (only counted when overlap >= 2)
+         0  otherwise (treated as no match)
+
+    Assignment is greedy by descending score, with alphabetical tiebreakers;
+    each folder and each json_id is claimed at most once.
+
+    Returns (folder_to_json, json_to_folder) dicts.
+    """
+    json_set = set(json_ids)
+    candidates = []
+
+    for fid in folders:
+        f_words = set(fid.split('-'))
+        f_norm = fid.replace('-', '')
+        for jid in json_ids:
+            if fid == jid:
+                score = 1000
+            else:
+                j_norm = jid.replace('-', '')
+                if f_norm in j_norm or j_norm in f_norm:
+                    score = 500
+                else:
+                    j_words = set(jid.split('-'))
+                    overlap = len(f_words & j_words)
+                    score = 100 * overlap if overlap >= 2 else 0
+            if score > 0:
+                candidates.append((score, fid, jid))
+
+    # Highest score first; then alphabetical for deterministic tiebreaking.
+    candidates.sort(key=lambda c: (-c[0], c[1], c[2]))
+
+    folder_to_json = {}
+    json_to_folder = {}
+    for _score, fid, jid in candidates:
+        if fid in folder_to_json or jid in json_to_folder:
+            continue
+        folder_to_json[fid] = jid
+        json_to_folder[jid] = fid
+
+    return folder_to_json, json_to_folder
+
+
 def parse_outline(outline_path):
     """Simplified outline parser — returns module/lesson counts."""
     try:
@@ -842,35 +895,9 @@ def main():
             if os.path.isdir(p) and d not in ('.template', '.scorm-template'):
                 folders.add(d)
 
-    folder_to_json = {}
-    json_to_folder = {}
-
-    for fid in folders:
-        if fid in json_courses:
-            folder_to_json[fid] = fid
-            json_to_folder[fid] = fid
-
-    unmatched_folders = folders - set(folder_to_json.keys())
-    unmatched_json = set(json_courses.keys()) - set(json_to_folder.keys())
-
-    for fid in unmatched_folders:
-        f_norm = fid.replace('-', '')
-        best = None
-        for jid in unmatched_json:
-            j_norm = jid.replace('-', '')
-            if f_norm in j_norm or j_norm in f_norm:
-                best = jid
-                break
-            f_words = set(fid.split('-'))
-            j_words = set(jid.split('-'))
-            overlap = len(f_words & j_words)
-            if overlap >= max(2, min(len(f_words), len(j_words)) - 1):
-                best = jid
-                break
-        if best:
-            folder_to_json[fid] = best
-            json_to_folder[best] = fid
-            unmatched_json.discard(best)
+    folder_to_json, json_to_folder = match_folder_json_ids(
+        list(folders), list(json_courses.keys())
+    )
 
     overview = []
 

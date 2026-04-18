@@ -276,8 +276,8 @@ var courseOverviewData = [
     "hours": 8,
     "outline": {
       "exists": true,
-      "modules": 1,
-      "lessons": 7
+      "modules": 2,
+      "lessons": 5
     },
     "syllabus": true,
     "source": {
@@ -546,8 +546,8 @@ var courseOverviewData = [
     "hours": 50,
     "outline": {
       "exists": true,
-      "modules": 5,
-      "lessons": 14
+      "modules": 8,
+      "lessons": 17
     },
     "syllabus": true,
     "source": {
@@ -997,7 +997,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 13
+      "lessons": 10
     },
     "syllabus": true,
     "source": {
@@ -1116,8 +1116,8 @@ var courseOverviewData = [
     "hours": 8,
     "outline": {
       "exists": true,
-      "modules": 2,
-      "lessons": 5
+      "modules": 1,
+      "lessons": 7
     },
     "syllabus": true,
     "source": {
@@ -1537,7 +1537,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 1,
-      "lessons": 10
+      "lessons": 13
     },
     "syllabus": true,
     "source": {
@@ -1776,8 +1776,8 @@ var courseOverviewData = [
     "hours": 20,
     "outline": {
       "exists": true,
-      "modules": 8,
-      "lessons": 17
+      "modules": 5,
+      "lessons": 14
     },
     "syllabus": true,
     "source": {
@@ -1895,17 +1895,17 @@ var courseOverviewData = [
     "name": "Web Development with JavaScript",
     "hours": 40,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 9,
+      "lessons": 18
     },
-    "syllabus": false,
+    "syllabus": true,
     "source": {
       "exists": true,
       "folder": "Course: Web Development with JavaScript",
       "modules": 1
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 3,
