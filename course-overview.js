@@ -28,7 +28,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 30
+    "totalAssets": 30,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "agile-project-management-with-scrum",
@@ -58,7 +63,12 @@ var courseOverviewData = [
       "modIntros": 4,
       "modRecaps": 8
     },
-    "totalAssets": 67
+    "totalAssets": 67,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "ai-foundations",
@@ -88,7 +98,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "aspnet",
@@ -118,7 +133,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 20
+    "totalAssets": 20,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "business-analysis-fundamentals",
@@ -148,7 +168,12 @@ var courseOverviewData = [
       "modIntros": 1,
       "modRecaps": 4
     },
-    "totalAssets": 176
+    "totalAssets": 176,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "business-and-it-fundamentals",
@@ -178,7 +203,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 9
     },
-    "totalAssets": 84
+    "totalAssets": 84,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "csharp-data-access",
@@ -208,7 +238,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 24
+    "totalAssets": 24,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "csharp-language-fundamentals",
@@ -238,7 +273,12 @@ var courseOverviewData = [
       "modIntros": 2,
       "modRecaps": 0
     },
-    "totalAssets": 49
+    "totalAssets": 49,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "csharp-oop",
@@ -268,7 +308,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 26
+    "totalAssets": 26,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "c-plus-plus-coding-booster-intensive",
@@ -298,7 +343,12 @@ var courseOverviewData = [
       "modIntros": 7,
       "modRecaps": 7
     },
-    "totalAssets": 59
+    "totalAssets": 59,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "ci-cd-pipeline-concepts",
@@ -328,7 +378,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "cloud-fundamentals",
@@ -358,7 +413,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "compliance-and-security-awareness",
@@ -388,7 +448,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 223
+    "totalAssets": 223,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "comptia-a-plus",
@@ -418,7 +483,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 86
+    "totalAssets": 86,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "comptia-network-plus",
@@ -448,7 +518,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "data-fundamentals-data-literacy",
@@ -478,7 +553,12 @@ var courseOverviewData = [
       "modIntros": 1,
       "modRecaps": 0
     },
-    "totalAssets": 98
+    "totalAssets": 98,
+    "deployment": {
+      "state": "Complete",
+      "expected": 1,
+      "actual": 1
+    }
   },
   {
     "id": "data-fundamentals-data-visualizations-and-power-bi",
@@ -508,7 +588,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 106
+    "totalAssets": 106,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "data-fundamentals-excel-for-data-analysts",
@@ -538,7 +623,12 @@ var courseOverviewData = [
       "modIntros": 3,
       "modRecaps": 0
     },
-    "totalAssets": 142
+    "totalAssets": 142,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "data-fundamentals-sql-for-data",
@@ -568,7 +658,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 142
+    "totalAssets": 142,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "databases-in-java",
@@ -598,7 +693,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 92
+    "totalAssets": 92,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "helpdesk-software-fundamentals",
@@ -628,7 +728,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "http-services",
@@ -658,7 +763,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "infrastructure-as-code-fundamentals",
@@ -688,7 +798,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "instructor-onboarding",
@@ -718,7 +833,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "introduction-to-advanced-concepts-in-java",
@@ -748,7 +868,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 44
+    "totalAssets": 44,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "introduction-to-aws-cloud-platform",
@@ -778,7 +903,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 133
+    "totalAssets": 133,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "introduction-to-cloud-technology",
@@ -808,7 +938,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 59
+    "totalAssets": 59,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "introduction-to-github",
@@ -838,7 +973,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 10
+    "totalAssets": 10,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "introduction-to-html-and-css",
@@ -868,7 +1008,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 45
+    "totalAssets": 45,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "introduction-to-microsoft-teams",
@@ -898,7 +1043,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "it-fundamentals",
@@ -928,7 +1078,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 81
+    "totalAssets": 81,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "itil-foundations",
@@ -958,7 +1113,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 101
+    "totalAssets": 101,
+    "deployment": {
+      "state": "Complete",
+      "expected": 19,
+      "actual": 19
+    }
   },
   {
     "id": "itil-specialist-4",
@@ -988,7 +1148,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "java-coding-booster-intensive",
@@ -1018,7 +1183,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 15
+    "totalAssets": 15,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "java-language-fundamentals",
@@ -1048,7 +1218,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 62
+    "totalAssets": 62,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "java-oop",
@@ -1078,7 +1253,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 132
+    "totalAssets": 132,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "javascript",
@@ -1108,7 +1288,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "javascript-coding-booster-intensive",
@@ -1138,7 +1323,12 @@ var courseOverviewData = [
       "modIntros": 1,
       "modRecaps": 0
     },
-    "totalAssets": 9
+    "totalAssets": 9,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "javascript-react-for-csharp",
@@ -1168,7 +1358,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 50
+    "totalAssets": 50,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "layers-and-file-i-o-for-csharp",
@@ -1198,7 +1393,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 34
+    "totalAssets": 34,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "linq-and-dependency-injection",
@@ -1228,7 +1428,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 26
+    "totalAssets": 26,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "linux-foundations",
@@ -1258,7 +1463,12 @@ var courseOverviewData = [
       "modIntros": 5,
       "modRecaps": 3
     },
-    "totalAssets": 74
+    "totalAssets": 74,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "macos-administration-fundamentals",
@@ -1288,7 +1498,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "microsoft-365-endpoint-administrator",
@@ -1318,7 +1533,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 41
+    "totalAssets": 41,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "microsoft-365-fundamentals",
@@ -1348,7 +1568,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 37
+    "totalAssets": 37,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "networking-fundamentals",
@@ -1378,7 +1603,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "non-relational-data",
@@ -1408,7 +1638,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 43
+    "totalAssets": 43,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "pandas",
@@ -1438,7 +1673,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 30
+    "totalAssets": 30,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "productivity-tools-reporting",
@@ -1468,7 +1708,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 29
+    "totalAssets": 29,
+    "deployment": {
+      "state": "Complete",
+      "expected": 4,
+      "actual": 4
+    }
   },
   {
     "id": "professional-communication",
@@ -1498,7 +1743,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "python-basics-for-software-dev",
@@ -1528,7 +1778,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 77
+    "totalAssets": 77,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "python-coding-booster-intensive",
@@ -1558,7 +1813,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 32
+    "totalAssets": 32,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "python-for-infrastructure-automation",
@@ -1588,7 +1848,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "react",
@@ -1618,7 +1883,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "security-and-cybersecurity-fundamentals",
@@ -1648,7 +1918,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 223
+    "totalAssets": 223,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "software-developer-pre-work",
@@ -1678,7 +1953,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "software-development-lifecycle",
@@ -1708,7 +1988,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "sql-coding-booster-intensive",
@@ -1738,7 +2023,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 8
+    "totalAssets": 8,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "sql-for-csharp",
@@ -1768,7 +2058,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 49
+    "totalAssets": 49,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "sql-fundamentals-for-operations",
@@ -1798,7 +2093,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 142
+    "totalAssets": 142,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "student-onboarding",
@@ -1828,7 +2128,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "technical-documentation",
@@ -1858,7 +2163,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "troubleshooting-supporting-in-an-enterprise-environment",
@@ -1888,7 +2198,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 70
+    "totalAssets": 70,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   },
   {
     "id": "web-development-with-javascript",
@@ -1918,7 +2233,12 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 15
+    "totalAssets": 15,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
   }
 ];
 

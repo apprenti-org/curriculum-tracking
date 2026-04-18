@@ -418,7 +418,8 @@ const courseData = [
     "note": "20 hours, 7 modules, 19 lessons. ITIL 4 Foundation certification prep.",
     "driveFolder": "https://drive.google.com/drive/folders/1aljEOFGVRecJDz1QsGRCNTjBs-i81esw",
     "deployRepo": "https://github.com/apprenti-org/itil-foundations-content",
-    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "lms": "Complete"
   },
   {
     "id": "itil-specialist-4",
