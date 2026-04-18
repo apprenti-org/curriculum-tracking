@@ -205,7 +205,7 @@
       },
       "syllabus": "data-literacy",
       "outline": "Course Outline: Data Fundamentals \u2014 Data Literacy",
-      "note": "7 modules, 24 lessons. Deployed to deploy/content (PDFs) and deploy/html. PLE manifest generated and integrated.",
+      "note": "7 modules, 24 lessons, 107 PDFs. Deploy repo: apprenti-org/data-literacy-deploy. PLE manifest integrated. Welcome interactive packaged as SCORM 1.2 (ready for Absorb upload).",
       "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"
     },
     {
