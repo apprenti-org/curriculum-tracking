@@ -399,5 +399,57 @@ class TestDeploymentStatus(unittest.TestCase):
             self.assertEqual(result['state'], 'Complete')
 
 
+class TestPhase1PdfScoping(unittest.TestCase):
+    """Tests for #36: the Phase 1 lesson-NN-*.pdf recognition must NOT
+    expand is_doc() globally. Legacy _COURSES/ trees contain PDFs that
+    should not be double-counted as lessons, quizzes, etc.
+    """
+
+    def test_is_doc_excludes_pdf(self):
+        # is_doc() must only recognize author-editable source docs;
+        # .pdf belongs to the deploy/output layer and is handled
+        # separately by count_phase1_assets and the Phase 1 branch of
+        # check_lesson_exists.
+        self.assertFalse(gen_overview.is_doc('Lesson_ ETL with Pandas.pdf'))
+        self.assertFalse(gen_overview.is_doc('lesson-03-intro.pdf'))
+        # Still recognized:
+        self.assertTrue(gen_overview.is_doc('Lesson_ ETL with Pandas.gdoc'))
+        self.assertTrue(gen_overview.is_doc('Lesson_ ETL with Pandas.docx'))
+        self.assertTrue(gen_overview.is_doc('Lesson_ ETL with Pandas.md'))
+
+    def test_count_assets_ignores_legacy_pdfs(self):
+        # A legacy _COURSES/ tree with .gdoc source + a .pdf sibling must
+        # count only the .gdoc as a lesson (the .pdf is a rendered mirror,
+        # not an additional artifact).
+        files = [
+            'Lesson_ ETL with Pandas.gdoc',
+            'Lesson_ ETL with Pandas.pdf',
+        ]
+        counts = gen_overview.count_assets(files)
+        self.assertEqual(counts['lessons'], 1)
+
+    def test_check_lesson_exists_phase1_branch_recognizes_lesson_pdf(self):
+        # The Phase 1 branch still matches `lesson-NN-<name>.pdf` even
+        # though is_doc() no longer accepts .pdf globally.
+        files = ['lesson-03-what-is-itsm.pdf']
+        self.assertTrue(gen_overview.check_lesson_exists(files, 3))
+
+    def test_check_lesson_exists_phase1_branch_excludes_qualifiers(self):
+        # Quiz and instructor-guide alone are not lesson content.
+        self.assertFalse(gen_overview.check_lesson_exists(['lesson-03-quiz.pdf'], 3))
+        self.assertFalse(gen_overview.check_lesson_exists(['lesson-03-instructor-guide.pdf'], 3))
+        self.assertFalse(gen_overview.check_lesson_exists(['lesson-03-exercise-my-task.pdf'], 3))
+        self.assertFalse(gen_overview.check_lesson_exists(
+            ['lesson-03-instructor-guide-exercise-my-task.pdf'], 3
+        ))
+
+    def test_check_lesson_exists_phase1_branch_false_positive_guard(self):
+        # A lesson whose title embeds 'exercise' mid-name (not as the first
+        # token after the lesson-NN- prefix) should still count.
+        # curriculum-tracking#36 secondary.
+        files = ['lesson-05-building-exercise-routines.pdf']
+        self.assertTrue(gen_overview.check_lesson_exists(files, 5))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -543,7 +543,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 51,
+      "lessons": 26,
       "slides": 0,
       "quizzes": 1,
       "activities": 45,
@@ -553,7 +553,7 @@ var courseOverviewData = [
       "modIntros": 1,
       "modRecaps": 0
     },
-    "totalAssets": 98,
+    "totalAssets": 73,
     "deployment": {
       "state": "Complete",
       "expected": 1,
@@ -578,7 +578,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 28,
+      "lessons": 14,
       "slides": 14,
       "quizzes": 0,
       "activities": 59,
@@ -588,7 +588,7 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 106,
+    "totalAssets": 92,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -613,17 +613,17 @@ var courseOverviewData = [
     "coverage": 14,
     "lessonsWithContent": 2,
     "assets": {
-      "lessons": 30,
+      "lessons": 15,
       "slides": 25,
       "quizzes": 0,
       "activities": 80,
-      "demos": 4,
+      "demos": 2,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 3,
       "modRecaps": 0
     },
-    "totalAssets": 142,
+    "totalAssets": 125,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -648,17 +648,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 33,
+      "lessons": 17,
       "slides": 12,
       "quizzes": 0,
       "activities": 83,
-      "demos": 8,
+      "demos": 5,
       "caseStudies": 0,
       "instructorGuides": 6,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 142,
+    "totalAssets": 123,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -683,7 +683,7 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 41,
+      "lessons": 24,
       "slides": 2,
       "quizzes": 0,
       "activities": 49,
@@ -693,7 +693,7 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 92,
+    "totalAssets": 75,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -858,7 +858,7 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 24,
+      "lessons": 16,
       "slides": 0,
       "quizzes": 0,
       "activities": 20,
@@ -868,7 +868,7 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 44,
+    "totalAssets": 36,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -893,17 +893,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 74,
+      "lessons": 39,
       "slides": 10,
       "quizzes": 0,
       "activities": 45,
-      "demos": 4,
+      "demos": 2,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 133,
+    "totalAssets": 96,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -928,17 +928,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 43,
+      "lessons": 21,
       "slides": 2,
       "quizzes": 0,
-      "activities": 2,
-      "demos": 12,
+      "activities": 4,
+      "demos": 6,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 59,
+    "totalAssets": 33,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -1243,17 +1243,17 @@ var courseOverviewData = [
     "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 48,
+      "lessons": 24,
       "slides": 0,
       "quizzes": 0,
       "activities": 67,
-      "demos": 17,
+      "demos": 9,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 132,
+    "totalAssets": 100,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -1628,7 +1628,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 13,
+      "lessons": 12,
       "slides": 1,
       "quizzes": 0,
       "activities": 28,
@@ -1638,7 +1638,7 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 43,
+    "totalAssets": 42,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -1663,7 +1663,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 11,
+      "lessons": 6,
       "slides": 1,
       "quizzes": 0,
       "activities": 18,
@@ -1673,7 +1673,7 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 30,
+    "totalAssets": 25,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -1768,7 +1768,7 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 11,
+      "lessons": 9,
       "slides": 4,
       "quizzes": 1,
       "activities": 60,
@@ -1778,7 +1778,7 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 77,
+    "totalAssets": 75,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -2083,17 +2083,17 @@ var courseOverviewData = [
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 33,
+      "lessons": 17,
       "slides": 12,
       "quizzes": 0,
       "activities": 83,
-      "demos": 8,
+      "demos": 5,
       "caseStudies": 0,
       "instructorGuides": 6,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 142,
+    "totalAssets": 123,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
