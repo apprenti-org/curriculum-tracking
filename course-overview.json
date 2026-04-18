@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17T23:58:10",
+  "generated": "2026-04-18T00:07:29",
   "courseCount": 64,
   "courses": [
     {
@@ -30,7 +30,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 30
+      "totalAssets": 30,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "agile-project-management-with-scrum",
@@ -60,7 +65,12 @@
         "modIntros": 4,
         "modRecaps": 8
       },
-      "totalAssets": 67
+      "totalAssets": 67,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "ai-foundations",
@@ -90,7 +100,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "aspnet",
@@ -120,7 +135,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 20
+      "totalAssets": 20,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "business-analysis-fundamentals",
@@ -150,7 +170,12 @@
         "modIntros": 1,
         "modRecaps": 4
       },
-      "totalAssets": 176
+      "totalAssets": 176,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "business-and-it-fundamentals",
@@ -180,7 +205,12 @@
         "modIntros": 0,
         "modRecaps": 9
       },
-      "totalAssets": 84
+      "totalAssets": 84,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "csharp-data-access",
@@ -210,7 +240,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 24
+      "totalAssets": 24,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "csharp-language-fundamentals",
@@ -240,7 +275,12 @@
         "modIntros": 2,
         "modRecaps": 0
       },
-      "totalAssets": 49
+      "totalAssets": 49,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "csharp-oop",
@@ -270,7 +310,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 26
+      "totalAssets": 26,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "c-plus-plus-coding-booster-intensive",
@@ -300,7 +345,12 @@
         "modIntros": 7,
         "modRecaps": 7
       },
-      "totalAssets": 59
+      "totalAssets": 59,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "ci-cd-pipeline-concepts",
@@ -330,7 +380,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "cloud-fundamentals",
@@ -360,7 +415,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "compliance-and-security-awareness",
@@ -390,7 +450,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 223
+      "totalAssets": 223,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "comptia-a-plus",
@@ -420,7 +485,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 86
+      "totalAssets": 86,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "comptia-network-plus",
@@ -450,7 +520,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "data-fundamentals-data-literacy",
@@ -480,7 +555,12 @@
         "modIntros": 1,
         "modRecaps": 0
       },
-      "totalAssets": 98
+      "totalAssets": 98,
+      "deployment": {
+        "state": "Complete",
+        "expected": 1,
+        "actual": 1
+      }
     },
     {
       "id": "data-fundamentals-data-visualizations-and-power-bi",
@@ -510,7 +590,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 106
+      "totalAssets": 106,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "data-fundamentals-excel-for-data-analysts",
@@ -540,7 +625,12 @@
         "modIntros": 3,
         "modRecaps": 0
       },
-      "totalAssets": 142
+      "totalAssets": 142,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "data-fundamentals-sql-for-data",
@@ -570,7 +660,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 142
+      "totalAssets": 142,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "databases-in-java",
@@ -600,7 +695,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 92
+      "totalAssets": 92,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "helpdesk-software-fundamentals",
@@ -630,7 +730,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "http-services",
@@ -660,7 +765,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "infrastructure-as-code-fundamentals",
@@ -690,7 +800,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "instructor-onboarding",
@@ -720,7 +835,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "introduction-to-advanced-concepts-in-java",
@@ -750,7 +870,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 44
+      "totalAssets": 44,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "introduction-to-aws-cloud-platform",
@@ -780,7 +905,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 133
+      "totalAssets": 133,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "introduction-to-cloud-technology",
@@ -810,7 +940,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 59
+      "totalAssets": 59,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "introduction-to-github",
@@ -840,7 +975,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 10
+      "totalAssets": 10,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "introduction-to-html-and-css",
@@ -870,7 +1010,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 45
+      "totalAssets": 45,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "introduction-to-microsoft-teams",
@@ -900,7 +1045,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "it-fundamentals",
@@ -930,7 +1080,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 81
+      "totalAssets": 81,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "itil-foundations",
@@ -960,7 +1115,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 101
+      "totalAssets": 101,
+      "deployment": {
+        "state": "Complete",
+        "expected": 19,
+        "actual": 19
+      }
     },
     {
       "id": "itil-specialist-4",
@@ -990,7 +1150,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "java-coding-booster-intensive",
@@ -1020,7 +1185,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 15
+      "totalAssets": 15,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "java-language-fundamentals",
@@ -1050,7 +1220,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 62
+      "totalAssets": 62,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "java-oop",
@@ -1080,7 +1255,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 132
+      "totalAssets": 132,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "javascript",
@@ -1110,7 +1290,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "javascript-coding-booster-intensive",
@@ -1140,7 +1325,12 @@
         "modIntros": 1,
         "modRecaps": 0
       },
-      "totalAssets": 9
+      "totalAssets": 9,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "javascript-react-for-csharp",
@@ -1170,7 +1360,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 50
+      "totalAssets": 50,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "layers-and-file-i-o-for-csharp",
@@ -1200,7 +1395,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 34
+      "totalAssets": 34,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "linq-and-dependency-injection",
@@ -1230,7 +1430,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 26
+      "totalAssets": 26,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "linux-foundations",
@@ -1260,7 +1465,12 @@
         "modIntros": 5,
         "modRecaps": 3
       },
-      "totalAssets": 74
+      "totalAssets": 74,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "macos-administration-fundamentals",
@@ -1290,7 +1500,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "microsoft-365-endpoint-administrator",
@@ -1320,7 +1535,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 41
+      "totalAssets": 41,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "microsoft-365-fundamentals",
@@ -1350,7 +1570,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 37
+      "totalAssets": 37,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "networking-fundamentals",
@@ -1380,7 +1605,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "non-relational-data",
@@ -1410,7 +1640,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 43
+      "totalAssets": 43,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "pandas",
@@ -1440,7 +1675,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 30
+      "totalAssets": 30,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "productivity-tools-reporting",
@@ -1470,7 +1710,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 29
+      "totalAssets": 29,
+      "deployment": {
+        "state": "Complete",
+        "expected": 4,
+        "actual": 4
+      }
     },
     {
       "id": "professional-communication",
@@ -1500,7 +1745,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "python-basics-for-software-dev",
@@ -1530,7 +1780,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 77
+      "totalAssets": 77,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "python-coding-booster-intensive",
@@ -1560,7 +1815,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 32
+      "totalAssets": 32,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "python-for-infrastructure-automation",
@@ -1590,7 +1850,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "react",
@@ -1620,7 +1885,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "security-and-cybersecurity-fundamentals",
@@ -1650,7 +1920,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 223
+      "totalAssets": 223,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "software-developer-pre-work",
@@ -1680,7 +1955,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "software-development-lifecycle",
@@ -1710,7 +1990,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "sql-coding-booster-intensive",
@@ -1740,7 +2025,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 8
+      "totalAssets": 8,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "sql-for-csharp",
@@ -1770,7 +2060,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 49
+      "totalAssets": 49,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "sql-fundamentals-for-operations",
@@ -1800,7 +2095,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 142
+      "totalAssets": 142,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "student-onboarding",
@@ -1830,7 +2130,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "technical-documentation",
@@ -1860,7 +2165,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0
+      "totalAssets": 0,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "troubleshooting-supporting-in-an-enterprise-environment",
@@ -1890,7 +2200,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 70
+      "totalAssets": 70,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     },
     {
       "id": "web-development-with-javascript",
@@ -1920,7 +2235,12 @@
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 15
+      "totalAssets": 15,
+      "deployment": {
+        "state": "Not Deployed",
+        "expected": 0,
+        "actual": 0
+      }
     }
   ]
 }

@@ -467,6 +467,64 @@ def parse_hours(text):
             pass
     return 0
 
+def compute_deployment_status(course_dir):
+    """Derive the Deployed pill state for a course.
+
+    Returns {state, expected, actual}:
+      expected = count of source interactives (both lesson-level
+                 modules/.../lessons/.../interactive.html and course-level
+                 interactives/*.html files)
+      actual   = count of packaged SCORM zips under deploy/content/**
+                 whose filenames start with 'scorm-' and end with '.zip'
+      state    = one of:
+        'Not Deployed'  — deploy/content/ missing
+        'Not Packaged'  — deploy/content/ exists, interactives exist, zero SCORMs
+        'Partial'       — 0 < actual < expected
+        'Complete'      — actual >= expected (includes expected=0 PDFs-only case)
+
+    curriculum-tracking#44.
+    """
+    deploy_content = os.path.join(course_dir, 'deploy', 'content')
+    deploy_exists = os.path.isdir(deploy_content)
+
+    expected = 0
+    modules_dir = os.path.join(course_dir, 'modules')
+    if os.path.isdir(modules_dir):
+        for mod in os.listdir(modules_dir):
+            lessons_dir = os.path.join(modules_dir, mod, 'lessons')
+            if not os.path.isdir(lessons_dir):
+                continue
+            for les in os.listdir(lessons_dir):
+                if os.path.isfile(os.path.join(lessons_dir, les, 'interactive.html')):
+                    expected += 1
+
+    course_interactives_dir = os.path.join(course_dir, 'interactives')
+    if os.path.isdir(course_interactives_dir):
+        for f in os.listdir(course_interactives_dir):
+            if f.lower().endswith('.html'):
+                expected += 1
+
+    actual = 0
+    if deploy_exists:
+        for root, _dirs, files in os.walk(deploy_content):
+            for f in files:
+                if f.startswith('scorm-') and f.lower().endswith('.zip'):
+                    actual += 1
+
+    if not deploy_exists:
+        state = 'Not Deployed'
+    elif expected == 0:
+        state = 'Complete'
+    elif actual == 0:
+        state = 'Not Packaged'
+    elif actual >= expected:
+        state = 'Complete'
+    else:
+        state = 'Partial'
+
+    return {'state': state, 'expected': expected, 'actual': actual}
+
+
 def match_folder_json_ids(folders, json_ids):
     """Pair course-folder names with courses.json ids.
 
@@ -940,6 +998,13 @@ def main():
         total_assets = sum(assets.values())
         source_modules = len([k for k in source_data['module_folders'] if k < 100])
 
+        course_folder_path = os.path.join(courses_dir, folder_id)
+        deployment = (
+            compute_deployment_status(course_folder_path)
+            if os.path.isdir(course_folder_path)
+            else {'state': 'Not Deployed', 'expected': 0, 'actual': 0}
+        )
+
         entry = {
             'id': cid,
             'name': name,
@@ -951,6 +1016,7 @@ def main():
             'lessonsWithContent': lessons_with_content,
             'assets': assets,
             'totalAssets': total_assets,
+            'deployment': deployment,
         }
 
         overview.append(entry)

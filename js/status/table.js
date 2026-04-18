@@ -37,6 +37,37 @@ function renderDocLink(exists, url, icon, titleYes, titleNo) {
 }
 
 /**
+ * Render the Deployed pill (auto-derived).
+ */
+function renderDeploymentPill(dep) {
+    var state = (dep && dep.state) || 'Not Deployed';
+    var cls = DEPLOYMENT_CLASSES[state] || 'not-started';
+    var label = state;
+    if (state === 'Partial' && dep && typeof dep.actual === 'number' && typeof dep.expected === 'number') {
+        label = 'Partial (' + dep.actual + '/' + dep.expected + ')';
+    }
+    return '<span class="status-pill status-' + cls + '" title="SCORM packages: ' +
+        (dep ? dep.actual + '/' + dep.expected : '0/0') +
+        '"><span class="status-dot dot-' + cls + '"></span>' + label + '</span>';
+}
+
+/**
+ * Render the In-LMS pill with a click-to-toggle dropdown.
+ */
+function renderLmsPill(value, idx) {
+    var v = value || 'Not Uploaded';
+    var cls = LMS_CLASSES[v] || 'not-started';
+    return '<span class="status-pill status-' + cls + '" onclick="toggleDropdown(event, ' + idx + ', \'lms\')">' +
+        '<span class="status-dot dot-' + cls + '"></span>' + v + '</span>' +
+        '<div class="status-dropdown" id="dd-lms-' + idx + '">' +
+        LMS_VALUES.map(function(s) {
+            return '<div class="status-option" onclick="setStatus(' + idx + ', \'lms\', \'' + s + '\')">' +
+                '<span class="status-dot dot-' + LMS_CLASSES[s] + '"></span> ' + s + '</div>';
+        }).join('') +
+        '</div>';
+}
+
+/**
  * Render document readiness icons (outline, syllabus, source)
  */
 function renderDocsIcons(item) {
@@ -86,6 +117,8 @@ function renderTable() {
             '<td class="asset-td">' + renderAssetCell(assets.slides) + '</td>' +
             '<td class="asset-td">' + renderAssetCell(assets.quizzes) + '</td>' +
             '<td class="asset-td">' + renderAssetCell(assets.activities) + '</td>' +
+            '<td class="status-cell">' + renderDeploymentPill(item.deployment) + '</td>' +
+            '<td class="status-cell">' + renderLmsPill(item.lms, realIdx) + '</td>' +
         '</tr>';
     }).join('');
 
@@ -113,6 +146,8 @@ function renderTable() {
             '<th><i class="fa-solid fa-tv"></i> Slides / SCORM</th>' +
             '<th><i class="fa-solid fa-circle-question"></i> Quizzes</th>' +
             '<th><i class="fa-solid fa-flask"></i> Activities</th>' +
+            '<th>Deployed</th>' +
+            '<th>In LMS</th>' +
         '</tr></thead><tbody>' + rows + '</tbody></table>';
 }
 

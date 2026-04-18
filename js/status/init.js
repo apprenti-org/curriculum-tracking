@@ -30,6 +30,9 @@ var contentData = courseData.map(function(c) {
         lessonsWithContent: ov ? ov.lessonsWithContent : 0,
         totalAssets: ov ? ov.totalAssets : 0,
         assets: ov ? ov.assets : null,
+        // Post-development state
+        deployment: ov && ov.deployment ? ov.deployment : { state: 'Not Deployed', expected: 0, actual: 0 },
+        lms: c.lms || 'Not Uploaded',
         // Link data for doc icons
         driveFolder: c.driveFolder || '',
         syllabusUrl: (typeof syllabiMap !== 'undefined' && syllabiMap[c.name]) ? 'syllabi/' + syllabiMap[c.name] : '',

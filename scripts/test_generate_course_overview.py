@@ -291,5 +291,113 @@ class TestFolderJsonMatching(unittest.TestCase):
         self.assertEqual(gen_overview.match_folder_json_ids([], ['a']), ({}, {}))
 
 
+class TestDeploymentStatus(unittest.TestCase):
+    """Tests for compute_deployment_status — counts source interactives and
+    packaged SCORMs to derive a Deployed pill state for the dashboard.
+
+    See curriculum-tracking#44.
+    """
+
+    def _make_course(self, tmp, slug, lessons_with_interactive=0, course_interactives=0, scorms=0):
+        """Build a minimal course folder tree in tmp and return its path."""
+        course_dir = os.path.join(tmp, 'courses', slug)
+        for i in range(lessons_with_interactive):
+            lesson_dir = os.path.join(course_dir, 'modules', f'01-m1', 'lessons', f'{i+1:02d}-l{i+1}')
+            os.makedirs(lesson_dir, exist_ok=True)
+            with open(os.path.join(lesson_dir, 'interactive.html'), 'w') as f:
+                f.write('<html></html>')
+        if course_interactives > 0:
+            ci_dir = os.path.join(course_dir, 'interactives')
+            os.makedirs(ci_dir, exist_ok=True)
+            for i in range(course_interactives):
+                with open(os.path.join(ci_dir, f'intro-{i}.html'), 'w') as f:
+                    f.write('<html></html>')
+        if scorms > 0:
+            deploy = os.path.join(course_dir, 'deploy', 'content')
+            os.makedirs(deploy, exist_ok=True)
+            for i in range(scorms):
+                with open(os.path.join(deploy, f'scorm-{slug}-{i}.zip'), 'w') as f:
+                    f.write('')
+        elif scorms == 0:
+            # Create deploy/content/ even with no scorms to exercise the
+            # "not packaged" vs "not deployed" branches.
+            pass
+        return course_dir
+
+    def test_not_deployed_when_deploy_folder_missing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            course_dir = self._make_course(tmp, 'foo', lessons_with_interactive=3)
+            result = gen_overview.compute_deployment_status(course_dir)
+            self.assertEqual(result['state'], 'Not Deployed')
+            self.assertEqual(result['expected'], 3)
+            self.assertEqual(result['actual'], 0)
+
+    def test_complete_when_design_first_lessons_all_packaged(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            course_dir = self._make_course(tmp, 'itil', lessons_with_interactive=5, scorms=5)
+            result = gen_overview.compute_deployment_status(course_dir)
+            self.assertEqual(result['state'], 'Complete')
+            self.assertEqual(result['expected'], 5)
+            self.assertEqual(result['actual'], 5)
+
+    def test_complete_when_content_first_welcome_packaged(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            course_dir = self._make_course(tmp, 'data-lit', course_interactives=1, scorms=1)
+            result = gen_overview.compute_deployment_status(course_dir)
+            self.assertEqual(result['state'], 'Complete')
+            self.assertEqual(result['expected'], 1)
+            self.assertEqual(result['actual'], 1)
+
+    def test_partial_when_some_lessons_packaged(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            course_dir = self._make_course(tmp, 'mid', lessons_with_interactive=5, scorms=2)
+            result = gen_overview.compute_deployment_status(course_dir)
+            self.assertEqual(result['state'], 'Partial')
+            self.assertEqual(result['expected'], 5)
+            self.assertEqual(result['actual'], 2)
+
+    def test_not_packaged_when_interactives_exist_but_no_scorms(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            # Create deploy tree (so not "Not Deployed") but without any scorms
+            course_dir = self._make_course(tmp, 'early', lessons_with_interactive=3)
+            os.makedirs(os.path.join(course_dir, 'deploy', 'content'), exist_ok=True)
+            result = gen_overview.compute_deployment_status(course_dir)
+            self.assertEqual(result['state'], 'Not Packaged')
+            self.assertEqual(result['expected'], 3)
+            self.assertEqual(result['actual'], 0)
+
+    def test_complete_when_no_interactives_and_deploy_exists(self):
+        """PDFs-only course: no interactives → nothing to SCORM-wrap. If deploy
+        tree exists, the course is fully deployed for its shape."""
+        with tempfile.TemporaryDirectory() as tmp:
+            course_dir = self._make_course(tmp, 'pdfs-only')
+            os.makedirs(os.path.join(course_dir, 'deploy', 'content'), exist_ok=True)
+            result = gen_overview.compute_deployment_status(course_dir)
+            self.assertEqual(result['state'], 'Complete')
+            self.assertEqual(result['expected'], 0)
+            self.assertEqual(result['actual'], 0)
+
+    def test_combined_lesson_and_course_level_interactives(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            course_dir = self._make_course(
+                tmp, 'hybrid', lessons_with_interactive=4, course_interactives=1, scorms=5
+            )
+            result = gen_overview.compute_deployment_status(course_dir)
+            self.assertEqual(result['state'], 'Complete')
+            self.assertEqual(result['expected'], 5)
+            self.assertEqual(result['actual'], 5)
+
+    def test_ignores_non_scorm_zips(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            course_dir = self._make_course(tmp, 'zips', lessons_with_interactive=1, scorms=1)
+            # Add a non-SCORM zip that shouldn't count
+            deploy = os.path.join(course_dir, 'deploy', 'content')
+            with open(os.path.join(deploy, 'asset-bundle.zip'), 'w') as f:
+                f.write('')
+            result = gen_overview.compute_deployment_status(course_dir)
+            self.assertEqual(result['actual'], 1)
+            self.assertEqual(result['state'], 'Complete')
+
+
 if __name__ == "__main__":
     unittest.main()

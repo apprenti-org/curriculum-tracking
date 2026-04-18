@@ -14,6 +14,21 @@ var STATUS_CLASSES = {
     'Complete': 'complete'
 };
 
+// Post-development state column classes (reuse existing pill colors).
+var DEPLOYMENT_CLASSES = {
+    'Complete': 'complete',
+    'Partial': 'in-progress',
+    'Not Packaged': 'scoping',
+    'Not Deployed': 'not-started'
+};
+
+var LMS_VALUES = ['Not Uploaded', 'Partial', 'Complete'];
+var LMS_CLASSES = {
+    'Not Uploaded': 'not-started',
+    'Partial': 'in-progress',
+    'Complete': 'complete'
+};
+
 // Syllabi map — course name → HTML filename in syllabi/
 // Add entries here as syllabi are rendered to HTML
 var syllabiMap = {
