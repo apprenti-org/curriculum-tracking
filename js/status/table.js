@@ -100,7 +100,7 @@ function renderTable() {
             : '';
         var assets = item.assets || {};
         return '<tr>' +
-            '<td><span class="cell-name">' + item.name + '</span>' + gapLink + '</td>' +
+            '<td><span class="cell-name">' + item.name + '</span>' + gapLink + unverifiedStatusBadge(item) + '</td>' +
             '<td class="membership-cell">' + buildMembershipHTML(item.membership) + '</td>' +
             '<td class="cell-hours">' + (item.hours || '\u2014') + '</td>' +
             '<td class="docs-cell">' + renderDocsIcons(item) + '</td>' +

@@ -13,7 +13,8 @@ const courseData = [
     "syllabus": "Syllabus: Advanced Python",
     "outline": "Course Outline: Advanced Python",
     "note": "Outline and syllabus complete — awaiting manual review",
-    "driveFolder": "https://drive.google.com/drive/folders/1-O-rT_oqlgdo1Qsz-7M0_p0MTblMTJ6v"
+    "driveFolder": "https://drive.google.com/drive/folders/1-O-rT_oqlgdo1Qsz-7M0_p0MTblMTJ6v",
+    "statusConfirmed": false
   },
   {
     "id": "agile-project-management-with-scrum",
@@ -26,7 +27,8 @@ const courseData = [
     "syllabus": "Syllabus: Agile Project Management with Scrum",
     "outline": "Course Outline: Agile Project Management with Scrum",
     "note": "Outline and syllabus complete — awaiting manual review",
-    "driveFolder": "https://drive.google.com/drive/folders/1roPHpPQD1LvTGz1xvWtbv-U-XFqr4VBo"
+    "driveFolder": "https://drive.google.com/drive/folders/1roPHpPQD1LvTGz1xvWtbv-U-XFqr4VBo",
+    "statusConfirmed": false
   },
   {
     "id": "ai-foundations",
@@ -39,7 +41,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Net New",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "aspnet",
@@ -52,7 +55,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: ASP.NET",
     "note": "Outline extracted from C# Fundamentals Module 8 — awaiting manual review and hours estimation",
-    "driveFolder": "https://drive.google.com/drive/folders/1SyzTnafr9h0VJCXjJyKCZe4FzuaWsdfQ"
+    "driveFolder": "https://drive.google.com/drive/folders/1SyzTnafr9h0VJCXjJyKCZe4FzuaWsdfQ",
+    "statusConfirmed": false
   },
   {
     "id": "business-analysis-fundamentals",
@@ -65,7 +69,8 @@ const courseData = [
     "syllabus": "https://docs.google.com/document/d/1CVtG0gWmNPmZEK7W-r4O52kV4S_X_Y8XsODDFm5WoRY",
     "outline": true,
     "note": "",
-    "driveFolder": "https://drive.google.com/drive/folders/1qotz71155ENbdEa_Fb6CIxc3-DqpAKqt"
+    "driveFolder": "https://drive.google.com/drive/folders/1qotz71155ENbdEa_Fb6CIxc3-DqpAKqt",
+    "statusConfirmed": false
   },
   {
     "id": "business-and-it-fundamentals",
@@ -78,7 +83,8 @@ const courseData = [
     "syllabus": "https://docs.google.com/document/d/17pj5dW9TVNm2wDfolJDa8Jz2Mtds18d9raiTliZWl6o",
     "outline": true,
     "note": "",
-    "driveFolder": "https://drive.google.com/drive/folders/1HksazKP6W9tqSJQWtJPbuEsbmslS7lfS"
+    "driveFolder": "https://drive.google.com/drive/folders/1HksazKP6W9tqSJQWtJPbuEsbmslS7lfS",
+    "statusConfirmed": false
   },
   {
     "id": "csharp-data-access",
@@ -91,7 +97,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: C# Data Access",
     "note": "Outline extracted from C# Fundamentals Module 7 — awaiting manual review and hours estimation",
-    "driveFolder": "https://drive.google.com/drive/folders/1bejAPyvTFN5lhaPD_3Eoaa0alAxgZ6Cj"
+    "driveFolder": "https://drive.google.com/drive/folders/1bejAPyvTFN5lhaPD_3Eoaa0alAxgZ6Cj",
+    "statusConfirmed": false
   },
   {
     "id": "csharp-language-fundamentals",
@@ -104,7 +111,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: C# Language Fundamentals",
     "note": "Outline extracted from C# Fundamentals Module 2 — awaiting manual review and hours estimation",
-    "driveFolder": "https://drive.google.com/drive/folders/187t9XrpPqtcHwhz2J6Jxt6xwqGjb5e0w"
+    "driveFolder": "https://drive.google.com/drive/folders/187t9XrpPqtcHwhz2J6Jxt6xwqGjb5e0w",
+    "statusConfirmed": false
   },
   {
     "id": "csharp-oop",
@@ -117,7 +125,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: C# OOP",
     "note": "Outline extracted from C# Fundamentals Module 3 — awaiting manual review and hours estimation",
-    "driveFolder": "https://drive.google.com/drive/folders/1LGCFMCWfYHOIoCz8rp5vNxR5JpZ8QQTd"
+    "driveFolder": "https://drive.google.com/drive/folders/1LGCFMCWfYHOIoCz8rp5vNxR5JpZ8QQTd",
+    "statusConfirmed": false
   },
   {
     "id": "c-plus-plus-coding-booster-intensive",
@@ -130,7 +139,8 @@ const courseData = [
     "syllabus": "Syllabus: C++ Coding Booster Intensive",
     "outline": "Course Outline: C++ Coding Booster Intensive",
     "note": "One-day intensive workshop for Visa apprentices — full syllabus and lesson plan available",
-    "driveFolder": "https://drive.google.com/drive/folders/1JAebFnmxFdqk6_PtvtMHKyf8bi21EOqn"
+    "driveFolder": "https://drive.google.com/drive/folders/1JAebFnmxFdqk6_PtvtMHKyf8bi21EOqn",
+    "statusConfirmed": false
   },
   {
     "id": "ci-cd-pipeline-concepts",
@@ -143,7 +153,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Net New",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "cloud-fundamentals",
@@ -156,7 +167,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Pacing Guide: IT Support Professional",
     "note": null,
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "compliance-and-security-awareness",
@@ -169,7 +181,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Existing Content",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "comptia-a-plus",
@@ -182,7 +195,8 @@ const courseData = [
     "syllabus": "Syllabus: Curriculum IT Support Professional",
     "outline": "Course Outline: CompTIA A+",
     "note": "v0.4.2 — 38/38 SCORM interactives complete. All modules 1-7 deployed. Content synced from review HTMLs, titles normalized.",
-    "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o"
+    "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o",
+    "statusConfirmed": false
   },
   {
     "id": "comptia-network-plus",
@@ -195,7 +209,8 @@ const courseData = [
     "syllabus": "Syllabus: CompTIA Network+",
     "outline": "Course Outline: CompTIA Network+",
     "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/15YQcw0_TywkjXJ1D0DhQP9CeIPeSMlz0"
+    "driveFolder": "https://drive.google.com/drive/folders/15YQcw0_TywkjXJ1D0DhQP9CeIPeSMlz0",
+    "statusConfirmed": false
   },
   {
     "id": "data-fundamentals-data-literacy",
@@ -208,7 +223,8 @@ const courseData = [
     "syllabus": "data-literacy",
     "outline": "Course Outline: Data Fundamentals — Data Literacy",
     "note": "7 modules, 24 lessons, 107 PDFs. Deploy repo: apprenti-org/data-literacy-deploy. PLE manifest integrated. Welcome interactive packaged as SCORM 1.2 (ready for Absorb upload).",
-    "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"
+    "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ",
+    "statusConfirmed": false
   },
   {
     "id": "data-fundamentals-data-visualizations-and-power-bi",
@@ -221,7 +237,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Data Fundamentals — Data Visualizations and Power BI",
     "note": "Existing content — full course outline, module folders, code-alongs, exercises, labs, and multi-part summative in Google Drive",
-    "driveFolder": "https://drive.google.com/drive/folders/1PwOtz40wQ7-xcscKQTBMRqnVUjpkaM2f"
+    "driveFolder": "https://drive.google.com/drive/folders/1PwOtz40wQ7-xcscKQTBMRqnVUjpkaM2f",
+    "statusConfirmed": false
   },
   {
     "id": "data-fundamentals-excel-for-data-analysts",
@@ -234,7 +251,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Data Fundamentals — Excel for Data Analysts",
     "note": "Existing content — full course outline, instructor guide, course overview, scenario, exercises with learner keys, and summative assessment in Google Drive",
-    "driveFolder": "https://drive.google.com/drive/folders/1RpKaf1sRrbX3F2s6as5fJn6MS1Aj8GB4"
+    "driveFolder": "https://drive.google.com/drive/folders/1RpKaf1sRrbX3F2s6as5fJn6MS1Aj8GB4",
+    "statusConfirmed": false
   },
   {
     "id": "data-fundamentals-sql-for-data",
@@ -247,7 +265,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Data Fundamentals — SQL for Data",
     "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z"
+    "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z",
+    "statusConfirmed": false
   },
   {
     "id": "databases-in-java",
@@ -260,7 +279,8 @@ const courseData = [
     "syllabus": "Syllabus: Databases in Java",
     "outline": "Course Outline: Databases in Java",
     "note": "Rich source content — 10 content modules, 23 lesson docs, 17 code-alongs, 13 exercises, 4 install guides, 1 lab, summative assessment. INCOMPLETE folder has 4 unfinished modules (Database Programming, BigDecimal, JDBC Template, Advanced JDBC Template). Slides and instructor guides available.",
-    "driveFolder": "https://drive.google.com/drive/folders/1g22pGVb41S-Wzdp-04rB7r5iP7KVid0d"
+    "driveFolder": "https://drive.google.com/drive/folders/1g22pGVb41S-Wzdp-04rB7r5iP7KVid0d",
+    "statusConfirmed": false
   },
   {
     "id": "helpdesk-software-fundamentals",
@@ -273,7 +293,8 @@ const courseData = [
     "syllabus": "Syllabus: Helpdesk Software Fundamentals",
     "outline": "Course Outline: Helpdesk Software Fundamentals",
     "note": "Rich source content — 7 lesson docs, 7 quizzes, 6 hands-on activities, slides folder in Google Drive. Covers ITSM fundamentals, helpdesk platforms (Zendesk, Freshdesk, ServiceNow), ticket lifecycle, knowledge management, automation, reporting, and best practices.",
-    "driveFolder": "https://drive.google.com/drive/folders/1vcee5L9CWraXObjJQwi2KwF-7NTGDdTJ"
+    "driveFolder": "https://drive.google.com/drive/folders/1vcee5L9CWraXObjJQwi2KwF-7NTGDdTJ",
+    "statusConfirmed": false
   },
   {
     "id": "http-services",
@@ -286,7 +307,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: HTTP Services",
     "note": "No formal course outline doc — outline constructed from two lesson documents in Google Drive. Related to Java M07 JDBC/HTTP Services module.",
-    "driveFolder": "https://drive.google.com/drive/folders/1VzQcpugiLw18KakVlxRROUW4hOuWcKwG"
+    "driveFolder": "https://drive.google.com/drive/folders/1VzQcpugiLw18KakVlxRROUW4hOuWcKwG",
+    "statusConfirmed": false
   },
   {
     "id": "infrastructure-as-code-fundamentals",
@@ -299,7 +321,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Net New",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "instructor-onboarding",
@@ -312,7 +335,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Instructor Onboarding",
     "note": "Existing content — course info doc, full course text, and large combined doc in Google Drive. Originally designed for Java Bootcamp instructor prep, broadly applicable. 2020 draft.",
-    "driveFolder": "https://drive.google.com/drive/folders/1KehRfpSrrS4gOyhoLgGiGx6SpxAqJbL3"
+    "driveFolder": "https://drive.google.com/drive/folders/1KehRfpSrrS4gOyhoLgGiGx6SpxAqJbL3",
+    "statusConfirmed": false
   },
   {
     "id": "introduction-to-advanced-concepts-in-java",
@@ -325,7 +349,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Introduction to Advanced Concepts in Java",
     "note": "Rich source content — 2 content modules, 16 lesson docs, 3 code-alongs, 10 exercises, 1 lab, 1 module assessment, 2 summative assessments (Sustainable Foraging, Airport Terminal Management System). Covers File I/O, design patterns (repository, domain, MVC), dependency injection, Spring DI (XML and annotations), BigDecimal, temporal types, lambdas, and streams.",
-    "driveFolder": "https://drive.google.com/drive/folders/1XRc60zapZP8beSVim2PUVsuCBNGYZzkF"
+    "driveFolder": "https://drive.google.com/drive/folders/1XRc60zapZP8beSVim2PUVsuCBNGYZzkF",
+    "statusConfirmed": false
   },
   {
     "id": "introduction-to-aws-cloud-platform",
@@ -338,7 +363,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Introduction to AWS Cloud Platform",
     "note": "Existing content — full course folder with 10 module subfolders and lesson docs in Google Drive. Very large combined doc also available. Referenced as 16h in Cloud Ops Specialist syllabus.",
-    "driveFolder": "https://drive.google.com/drive/folders/1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM"
+    "driveFolder": "https://drive.google.com/drive/folders/1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM",
+    "statusConfirmed": false
   },
   {
     "id": "introduction-to-cloud-technology",
@@ -351,7 +377,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Introduction to Cloud Technology",
     "note": "Existing content — full course outline, course intro, lesson docs, and demos (AWS/Azure/GCP portals) in Google Drive. Referenced as 'Introduction to Cloud' in SWD Java and Cloud Ops syllabi.",
-    "driveFolder": "https://drive.google.com/drive/folders/1JuELDVAwsj5-uOzNh1KXJ5aBTpc5vj4Q"
+    "driveFolder": "https://drive.google.com/drive/folders/1JuELDVAwsj5-uOzNh1KXJ5aBTpc5vj4Q",
+    "statusConfirmed": false
   },
   {
     "id": "introduction-to-github",
@@ -364,7 +391,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Introduction to GitHub",
     "note": "Existing content — course intro with 12 outcomes, detailed instructor guide with lesson structure, 4 lessons, 5 code-alongs, 1 exercise, quizzes. 8–16h per SWD Java syllabus.",
-    "driveFolder": "https://drive.google.com/drive/folders/1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN"
+    "driveFolder": "https://drive.google.com/drive/folders/1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN",
+    "statusConfirmed": false
   },
   {
     "id": "introduction-to-html-and-css",
@@ -377,7 +405,8 @@ const courseData = [
     "syllabus": "Syllabus: Introduction to HTML & CSS",
     "outline": "Course Outline: Introduction to HTML & CSS",
     "note": "Existing content — full syllabus with 3 modules, 40 hours, 16 lessons, 13 code-alongs, 4 exercises, and summative assessment. Part of Software Development Java curriculum as 'HTML & CSS'.",
-    "driveFolder": "https://drive.google.com/drive/folders/16UVQpNFHouifMNadvQzr98pdin5jRgtB"
+    "driveFolder": "https://drive.google.com/drive/folders/16UVQpNFHouifMNadvQzr98pdin5jRgtB",
+    "statusConfirmed": false
   },
   {
     "id": "introduction-to-microsoft-teams",
@@ -390,7 +419,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Introduction to Microsoft Teams",
     "note": "Existing content — 2 lesson docs with instructor guides covering Teams overview and creating/managing Teams & Channels. No formal syllabus. Related to Microsoft 365 Fundamentals track.",
-    "driveFolder": "https://drive.google.com/drive/folders/1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW"
+    "driveFolder": "https://drive.google.com/drive/folders/1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW",
+    "statusConfirmed": false
   },
   {
     "id": "it-fundamentals",
@@ -403,7 +433,8 @@ const courseData = [
     "syllabus": "Syllabus: IT Fundamentals",
     "outline": "Course Outline: IT Fundamentals",
     "note": "22/22 SCORM interactives complete (synced from CompTIA A+). All modules 1-7 deployed.",
-    "driveFolder": "https://drive.google.com/drive/folders/1fUbJerrPikWKXdvq0NyizzieFLJtkxEe"
+    "driveFolder": "https://drive.google.com/drive/folders/1fUbJerrPikWKXdvq0NyizzieFLJtkxEe",
+    "statusConfirmed": false
   },
   {
     "id": "itil-foundations",
@@ -419,7 +450,8 @@ const courseData = [
     "driveFolder": "https://drive.google.com/drive/folders/1aljEOFGVRecJDz1QsGRCNTjBs-i81esw",
     "deployRepo": "https://github.com/apprenti-org/itil-foundations-content",
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
-    "lms": "Complete"
+    "lms": "Complete",
+    "statusConfirmed": true
   },
   {
     "id": "itil-specialist-4",
@@ -432,7 +464,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Net New",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "java-coding-booster-intensive",
@@ -445,7 +478,8 @@ const courseData = [
     "syllabus": "Syllabus: Java Coding Booster Intensive",
     "outline": "Course Outline: Java Coding Booster Intensive",
     "note": "Existing content — full syllabus, 2-day outline, course intro/conclusion, software requirements, 8 module folders in Google Drive. 16h over 2 days. Visa SWD apprentice intensive with 85% AI-assisted mandate.",
-    "driveFolder": "https://drive.google.com/drive/folders/1SH-jSBKboZwxiLQVFaFfcLbGR4gEsh84"
+    "driveFolder": "https://drive.google.com/drive/folders/1SH-jSBKboZwxiLQVFaFfcLbGR4gEsh84",
+    "statusConfirmed": false
   },
   {
     "id": "java-language-fundamentals",
@@ -458,7 +492,8 @@ const courseData = [
     "syllabus": "Syllabus: Curriculum Software Development Java",
     "outline": "Course Outline: Java Language Fundamentals",
     "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK"
+    "driveFolder": "https://drive.google.com/drive/folders/1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK",
+    "statusConfirmed": false
   },
   {
     "id": "java-oop",
@@ -471,7 +506,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Java OOP",
     "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/1tv8SLDEgmhaODtDeM1HTQVqCcult6DhU"
+    "driveFolder": "https://drive.google.com/drive/folders/1tv8SLDEgmhaODtDeM1HTQVqCcult6DhU",
+    "statusConfirmed": false
   },
   {
     "id": "javascript",
@@ -484,7 +520,8 @@ const courseData = [
     "syllabus": "Syllabus: Curriculum Software Development Java",
     "outline": "Course Outline: JavaScript",
     "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/12iLgHoqrf4HuxzYCeMG1FY1Mry5yKj2W"
+    "driveFolder": "https://drive.google.com/drive/folders/12iLgHoqrf4HuxzYCeMG1FY1Mry5yKj2W",
+    "statusConfirmed": false
   },
   {
     "id": "javascript-coding-booster-intensive",
@@ -497,7 +534,8 @@ const courseData = [
     "syllabus": "Syllabus: JavaScript Coding Booster Intensive",
     "outline": "Course Outline: JavaScript Coding Booster Intensive",
     "note": "Existing content — full syllabus, course outline, course intro/conclusion, software requirements, 4 module folders in Google Drive. 8h one-day intensive. Visa SWD apprentice front-end simulation with 85% AI-assisted mandate. Dynamics 365 focus.",
-    "driveFolder": "https://drive.google.com/drive/folders/1LeMbVEU2XbZjzjjilc4W-fxEa66rvWJa"
+    "driveFolder": "https://drive.google.com/drive/folders/1LeMbVEU2XbZjzjjilc4W-fxEa66rvWJa",
+    "statusConfirmed": false
   },
   {
     "id": "javascript-react-for-csharp",
@@ -510,7 +548,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "C# track adaptation of 'Web Development with JavaScript and React' (40h). Course folder exists in Google Drive with assets/examples subfolder but no syllabus or outline docs yet.",
-    "driveFolder": "https://drive.google.com/drive/folders/1YRYWWeYYO6VODNUCLaNcVETeD3MOygkH"
+    "driveFolder": "https://drive.google.com/drive/folders/1YRYWWeYYO6VODNUCLaNcVETeD3MOygkH",
+    "statusConfirmed": false
   },
   {
     "id": "layers-and-file-i-o-for-csharp",
@@ -523,7 +562,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: C# Fundamentals (Module 4)",
     "note": "Module 4 of C# Fundamentals. Rich content: activities, assessments, examples, slides.",
-    "driveFolder": "https://drive.google.com/drive/folders/1h7usTWg71zrprq3td5ieED2k8eSj2RWi"
+    "driveFolder": "https://drive.google.com/drive/folders/1h7usTWg71zrprq3td5ieED2k8eSj2RWi",
+    "statusConfirmed": false
   },
   {
     "id": "linq-and-dependency-injection",
@@ -536,7 +576,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: C# Fundamentals (Module 5)",
     "note": "Module 5 of C# Fundamentals. Rich content: activities, assessments, examples.",
-    "driveFolder": "https://drive.google.com/drive/folders/1WLARrrkCaPGY5EeQXqqTBZd_2iPcDdcp"
+    "driveFolder": "https://drive.google.com/drive/folders/1WLARrrkCaPGY5EeQXqqTBZd_2iPcDdcp",
+    "statusConfirmed": false
   },
   {
     "id": "linux-foundations",
@@ -549,7 +590,8 @@ const courseData = [
     "syllabus": "linux-foundations",
     "outline": "Course Outline: Linux Foundations",
     "note": "Full source content across 4 modules (10 lessons) + summative assessment. All lessons have content docs, slides, quizzes, activities, and demos. 10/10 interactive SCORM reviews built. Instructor guides embedded in 34/42 activity/lab/demo docs.",
-    "driveFolder": "https://drive.google.com/drive/folders/1ilPpEuWyes1hj1xuEwPixQbj8SUbEkR0"
+    "driveFolder": "https://drive.google.com/drive/folders/1ilPpEuWyes1hj1xuEwPixQbj8SUbEkR0",
+    "statusConfirmed": false
   },
   {
     "id": "macos-administration-fundamentals",
@@ -562,7 +604,8 @@ const courseData = [
     "syllabus": "Syllabus: Curriculum IT Support Professional",
     "outline": "Course Outline: macOS Administration Fundamentals",
     "note": "IT Support track. Very detailed outline with full lesson plans, labs, quizzes, and capstone.",
-    "driveFolder": "https://drive.google.com/drive/folders/1_knrkmWCfrnkEshYoD308zkk_ZIdmpMx"
+    "driveFolder": "https://drive.google.com/drive/folders/1_knrkmWCfrnkEshYoD308zkk_ZIdmpMx",
+    "statusConfirmed": false
   },
   {
     "id": "microsoft-365-endpoint-administrator",
@@ -575,7 +618,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Microsoft 365 Endpoint Administrator",
     "note": "Rich source content — 11 modules (10 with content, 1 capstone placeholder), 10 lesson docs, 10 quizzes, 10 activities, 9 demos, 4 case studies, slides folder in Google Drive.",
-    "driveFolder": "https://drive.google.com/drive/folders/1uB-40aGxQOQYt5Jb-61LrFFcsBnxWwSU"
+    "driveFolder": "https://drive.google.com/drive/folders/1uB-40aGxQOQYt5Jb-61LrFFcsBnxWwSU",
+    "statusConfirmed": false
   },
   {
     "id": "microsoft-365-fundamentals",
@@ -588,7 +632,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Microsoft 365 Fundamentals",
     "note": "Rich source content — 4 modules, 8 lesson docs, 8 quizzes, 7 activities, 1 case study in Google Drive. Modules: Cloud Concepts, Productivity and Teamwork, Security and Compliance, Licensing and Support.",
-    "driveFolder": "https://drive.google.com/drive/folders/1m6xk7KPhOgBuLGOXYfPbf5PinBx5Ir3z"
+    "driveFolder": "https://drive.google.com/drive/folders/1m6xk7KPhOgBuLGOXYfPbf5PinBx5Ir3z",
+    "statusConfirmed": false
   },
   {
     "id": "networking-fundamentals",
@@ -601,7 +646,8 @@ const courseData = [
     "syllabus": "https://docs.google.com/document/d/1oLG43NJe_zfR9UFE6Ngi7aFCVBXoa6yEwbUq42nuZLQ",
     "outline": true,
     "note": "",
-    "driveFolder": "https://drive.google.com/drive/folders/19RvnmX6uP5lLf5KGk5nLl1r_ZAFA1rrZ"
+    "driveFolder": "https://drive.google.com/drive/folders/19RvnmX6uP5lLf5KGk5nLl1r_ZAFA1rrZ",
+    "statusConfirmed": false
   },
   {
     "id": "non-relational-data",
@@ -614,7 +660,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Non-Relational Data",
     "note": "DANL track. Rich content: instructor guide, source docs, videos, PDFs, files. Uses Azure.",
-    "driveFolder": "https://drive.google.com/drive/folders/1ikxlBfYTeB_ukUvuprJCz8RDMmK-wqYv"
+    "driveFolder": "https://drive.google.com/drive/folders/1ikxlBfYTeB_ukUvuprJCz8RDMmK-wqYv",
+    "statusConfirmed": false
   },
   {
     "id": "pandas",
@@ -627,7 +674,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Introduction: Pandas",
     "note": "DANL track. Rich content: lessons, exercises, Jupyter Notebooks. Uses real-world datasets.",
-    "driveFolder": "https://drive.google.com/drive/folders/1rGEdXkwx1oq5ZgKL3EPXKtHRGOn-Da6y"
+    "driveFolder": "https://drive.google.com/drive/folders/1rGEdXkwx1oq5ZgKL3EPXKtHRGOn-Da6y",
+    "statusConfirmed": false
   },
   {
     "id": "productivity-tools-reporting",
@@ -641,7 +689,8 @@ const courseData = [
     "outline": true,
     "note": "OSS Area 4 (S&PS). 4h, 2 modules, 4 lessons + integrated capstone. Excel and PowerPoint for technical reporting. Design + content complete (design-documentation PRs #46, #48, #54, #58, #59). Ready for SCORM packaging.",
     "driveFolder": null,
-    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": false
   },
   {
     "id": "professional-communication",
@@ -654,7 +703,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Extract from CompTIA A+",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "python-basics-for-software-dev",
@@ -667,7 +717,8 @@ const courseData = [
     "syllabus": "Syllabus: Course Python Basics for Software Development",
     "outline": "Course Outline: Python Basics (for Software Dev)",
     "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL"
+    "driveFolder": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL",
+    "statusConfirmed": false
   },
   {
     "id": "python-coding-booster-intensive",
@@ -680,7 +731,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Python Coding Booster Intensive",
     "note": "Two-day advanced Scrum simulation with AI-assisted engineering",
-    "driveFolder": "https://drive.google.com/drive/folders/1b50Og1_ySI4LMLWNzFpZDVizyhcFpNYI"
+    "driveFolder": "https://drive.google.com/drive/folders/1b50Og1_ySI4LMLWNzFpZDVizyhcFpNYI",
+    "statusConfirmed": false
   },
   {
     "id": "python-for-infrastructure-automation",
@@ -693,7 +745,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Net New",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "react",
@@ -706,7 +759,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: React",
     "note": "Standalone React course — SPAs, hooks, routing, MUI, testing",
-    "driveFolder": "https://drive.google.com/drive/folders/1G3WGrajgwCOyaHmLpj31kT85xki_nWLA"
+    "driveFolder": "https://drive.google.com/drive/folders/1G3WGrajgwCOyaHmLpj31kT85xki_nWLA",
+    "statusConfirmed": false
   },
   {
     "id": "security-and-cybersecurity-fundamentals",
@@ -719,7 +773,8 @@ const courseData = [
     "syllabus": "https://docs.google.com/document/d/107K3TF7jGpFCdnsnptD4_EDtjkXgqRC5O-Nn2OIKmFw",
     "outline": true,
     "note": "",
-    "driveFolder": "https://drive.google.com/drive/folders/1joUPCKG-lZo1j5aYWzBAsvD_dwgGASy1"
+    "driveFolder": "https://drive.google.com/drive/folders/1joUPCKG-lZo1j5aYWzBAsvD_dwgGASy1",
+    "statusConfirmed": false
   },
   {
     "id": "software-developer-pre-work",
@@ -732,7 +787,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Curriculum Outline: Software Developer Pre-Work",
     "note": "Foundational pre-work for incoming software dev apprentices",
-    "driveFolder": "https://drive.google.com/drive/folders/1ie5-gncPzKujrPurgNnc3-Y23flnsRvj"
+    "driveFolder": "https://drive.google.com/drive/folders/1ie5-gncPzKujrPurgNnc3-Y23flnsRvj",
+    "statusConfirmed": false
   },
   {
     "id": "software-development-lifecycle",
@@ -745,7 +801,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Software Development Lifecycle",
     "note": "Full SDLC walkthrough using Personal Budgeting App project",
-    "driveFolder": "https://drive.google.com/drive/folders/1iVh0NXsgCoSTgYLWGdiPb1YdLWmCxvxb"
+    "driveFolder": "https://drive.google.com/drive/folders/1iVh0NXsgCoSTgYLWGdiPb1YdLWmCxvxb",
+    "statusConfirmed": false
   },
   {
     "id": "sql-coding-booster-intensive",
@@ -758,7 +815,8 @@ const courseData = [
     "syllabus": "SQL Coding Booster Intensive Syllabus",
     "outline": "Course Outline: SQL Coding Booster Intensive",
     "note": "One-day Scrum simulation — ETL, data migration, Dynamics 365",
-    "driveFolder": "https://drive.google.com/drive/folders/1V82NKMLAb1kQCR7TjlYqPGmA0Sbe7OG_"
+    "driveFolder": "https://drive.google.com/drive/folders/1V82NKMLAb1kQCR7TjlYqPGmA0Sbe7OG_",
+    "statusConfirmed": false
   },
   {
     "id": "sql-for-csharp",
@@ -771,7 +829,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: SQL for C#",
     "note": "C# track adaptation of SQL for Data. Drive folder has code assets/examples but no outline docs yet.",
-    "driveFolder": "https://drive.google.com/drive/folders/1cRbfmR099VxfhZ1iGHwZqTyRuMdBZq9w"
+    "driveFolder": "https://drive.google.com/drive/folders/1cRbfmR099VxfhZ1iGHwZqTyRuMdBZq9w",
+    "statusConfirmed": false
   },
   {
     "id": "sql-fundamentals-for-operations",
@@ -784,7 +843,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Reduce from SQL for Data",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "student-onboarding",
@@ -797,7 +857,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Student Onboarding",
     "note": "Success manual for all incoming apprentices — learning philosophy, strategies, tools setup, policies",
-    "driveFolder": "https://drive.google.com/drive/folders/1-M5hN2HXwRJs-mg4WpiyQMHMxfY7gUeG"
+    "driveFolder": "https://drive.google.com/drive/folders/1-M5hN2HXwRJs-mg4WpiyQMHMxfY7gUeG",
+    "statusConfirmed": false
   },
   {
     "id": "technical-documentation",
@@ -810,7 +871,8 @@ const courseData = [
     "syllabus": null,
     "outline": null,
     "note": "Net New",
-    "driveFolder": null
+    "driveFolder": null,
+    "statusConfirmed": false
   },
   {
     "id": "troubleshooting-supporting-in-an-enterprise-environment",
@@ -823,7 +885,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Troubleshooting/Supporting in an Enterprise Environment",
     "note": "Rich source content — 7 modules, 12 lesson docs, 12 quizzes, 12 activities, 12 demos, 10 case studies in Google Drive. Covers troubleshooting methodology, startup/recovery, Group Policy, hardware/performance, network/remote connectivity, logon/access/security, and OS/applications.",
-    "driveFolder": "https://drive.google.com/drive/folders/1toy5qGCgyjMgT1k8ZkGxQvs-dRtK26J7"
+    "driveFolder": "https://drive.google.com/drive/folders/1toy5qGCgyjMgT1k8ZkGxQvs-dRtK26J7",
+    "statusConfirmed": false
   },
   {
     "id": "web-development-with-javascript",
@@ -836,7 +899,8 @@ const courseData = [
     "syllabus": null,
     "outline": "Course Outline: Web Development with JavaScript",
     "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv"
+    "driveFolder": "https://drive.google.com/drive/folders/1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv",
+    "statusConfirmed": false
   }
 ];
 

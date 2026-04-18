@@ -119,6 +119,7 @@ function buildCurriculumSummary(name, items, syllabus) {
                 html += '<div class="nav-course-item" data-course-name="' + c._name + '" data-course-id="' + (c._id || '') + '">' +
                     '<i class="fa-solid ' + si.icon + ' status-dot ' + si.cls + '" style="font-size:10px;" title="' + si.label + '"></i>' +
                     '<span class="nav-course-name">' + c._name + '</span>' +
+                    unverifiedStatusBadge(c._name) +
                     (c._hours ? '<span class="nav-course-hours"><i class="fa-regular fa-clock" style="font-size:9px;opacity:0.6;margin-right:2px;"></i>' + c._hours + 'h</span>' : '') +
                     '</div>';
             }
@@ -140,6 +141,7 @@ function buildNavItemFromCourse(course) {
     return '<div class="nav-course-item" data-course-name="' + name + '" data-course-id="' + id + '">' +
         '<i class="fa-solid ' + si.icon + ' status-dot ' + si.cls + '" style="font-size:10px;" title="' + si.label + '"></i>' +
         '<span class="nav-course-name">' + name + '</span>' +
+        unverifiedStatusBadge(name) +
         (hours ? '<span class="nav-course-hours"><i class="fa-regular fa-clock" style="font-size:9px;opacity:0.6;margin-right:2px;"></i>' + hours + 'h</span>' : '') +
         '</div>';
 }

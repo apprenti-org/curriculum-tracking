@@ -18,6 +18,7 @@ var contentData = courseData.map(function(c) {
         hours: c.hours,
         designStatus: c.status.design,
         devStatus: c.status.development,
+        statusConfirmed: c.statusConfirmed === true,
         note: c.note || '',
         membership: membershipMap[c.id] || membershipMap[c.name] || [],
         // Overview data (from course-overview.json)
