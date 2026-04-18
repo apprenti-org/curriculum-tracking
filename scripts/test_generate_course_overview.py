@@ -451,5 +451,131 @@ class TestPhase1PdfScoping(unittest.TestCase):
         self.assertTrue(gen_overview.check_lesson_exists(files, 5))
 
 
+class TestIntegrationMarkerPreservation(unittest.TestCase):
+    """Tests for #38: capstone integration markers must be preserved
+    across all mod_patterns branches, not just alt_module_pattern.
+
+    Before the fix, `## Module N: Final Assessment (integrated)` had its
+    `(integrated)` consumed as mod_patterns[0]'s hours group, so the
+    downstream capstone handler couldn't detect `is_integrated=True`
+    and synthesized a ghost lesson.
+    """
+
+    def _write_outline(self, tmpdir, body):
+        path = os.path.join(tmpdir, 'outline.md')
+        with open(path, 'w') as f:
+            f.write(body)
+        return path
+
+    def _count_all_lessons(self, mods):
+        return sum(len(m['lessons']) for m in mods)
+
+    def test_alt_module_pattern_integrated_no_synthesis(self):
+        # Regression guard for the branch that *already* preserved markers.
+        # The integrated Final Assessment module is dropped from the output
+        # (intentional — it's rolled into other modules), so no ghost
+        # lesson should be synthesized.
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._write_outline(tmp, """# Course Outline
+
+## Module 1: Intro (2 hours)
+### Lesson 1: Hello (1 hour)
+
+## Final Assessment (integrated)
+""")
+            mods = gen_overview.parse_outline(path)
+            self.assertEqual(self._count_all_lessons(mods), 1)
+
+    def test_module_prefix_integrated_no_synthesis(self):
+        # #38 core: the `## Module N:` form must also be treated as
+        # integrated (no ghost lesson synthesis), matching the alt_module
+        # branch behavior.
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._write_outline(tmp, """# Course Outline
+
+## Module 1: Intro (2 hours)
+### Lesson 1: Hello (1 hour)
+
+## Module 2: Final Assessment (integrated)
+""")
+            mods = gen_overview.parse_outline(path)
+            self.assertEqual(self._count_all_lessons(mods), 1,
+                             'Integrated capstone must not synthesize a ghost lesson')
+
+    def test_module_prefix_no_marker_synthesizes_capstone(self):
+        # Control case: without the (integrated) marker, the same module
+        # DOES get a synthesized ghost lesson (this proves the marker's
+        # presence is what prevents synthesis).
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._write_outline(tmp, """# Course Outline
+
+## Module 1: Intro (2 hours)
+### Lesson 1: Hello (1 hour)
+
+## Module 2: Final Assessment
+""")
+            mods = gen_overview.parse_outline(path)
+            self.assertEqual(self._count_all_lessons(mods), 2)
+
+    def test_module_prefix_hours_still_parse_as_hours(self):
+        # Regression guard: '(2 hours)' is still parsed as hours, not
+        # treated as an integration marker.
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._write_outline(tmp, """# Course Outline
+
+## Module 1: Intro (2 hours)
+### Lesson 1: Hello (1 hour)
+""")
+            mods = gen_overview.parse_outline(path)
+            self.assertEqual(mods[0]['name'], 'Intro')
+            self.assertEqual(mods[0]['hours'], 2.0)
+
+    def test_module_prefix_embedded_marker_also_skips_synthesis(self):
+        # Every word in _INTEGRATION_MARKER_WORDS should be honored,
+        # not just 'integrated'.
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._write_outline(tmp, """# Course Outline
+
+## Module 1: Intro (2 hours)
+### Lesson 1: Hello (1 hour)
+
+## Module 2: Capstone (embedded)
+""")
+            mods = gen_overview.parse_outline(path)
+            self.assertEqual(self._count_all_lessons(mods), 1)
+
+
+class TestResolveCourseSourcePhase1Fallback(unittest.TestCase):
+    """Tests for #37 Test 3: when a Phase 1 deploy folder exists but has
+    no lesson content (e.g., empty module folder), resolve_course_source
+    should fall through to the legacy scan rather than pinning the course
+    to an empty Phase 1 view.
+    """
+
+    def test_phase1_with_no_files_falls_back_to_legacy(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            # Phase 1 tree exists but has no files in its module subfolder
+            ws = os.path.join(tmp, '_COURSES Phase 1 - WORKING')
+            courses_dir = os.path.join(ws, 'courses')
+            phase1 = os.path.join(courses_dir, 'foo', 'deploy', 'content', 'module-01-intro')
+            os.makedirs(phase1, exist_ok=True)
+            # Legacy tree exists with a proper source doc
+            legacy = os.path.join(tmp, '_COURSES', 'Course: Foo', 'SOURCE DOCUMENTS', '01. Intro')
+            os.makedirs(legacy, exist_ok=True)
+            with open(os.path.join(legacy, 'Lesson 1 - Hello.gdoc'), 'w') as f:
+                f.write('')
+
+            paths = {
+                'courses_dir': courses_dir,
+                'courses_source': os.path.join(tmp, '_COURSES'),
+            }
+            course = {'id': 'foo', 'name': 'Foo'}
+            source_info, source_data = gen_overview.resolve_course_source(course, paths)
+
+            # Should have fallen back — returned info points to legacy, not Phase 1
+            self.assertIsNotNone(source_info)
+            self.assertNotIn('deploy/content', source_info[1] or '')
+
+
 if __name__ == "__main__":
     unittest.main()

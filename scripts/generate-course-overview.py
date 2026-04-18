@@ -38,6 +38,13 @@ def auto_detect_base():
         return candidate
     return None
 
+# Parenthesized words on a module header that indicate the module's content
+# is baked into other modules rather than being a standalone deliverable.
+# When parse_outline sees one of these, it preserves the marker on the
+# module name so the downstream capstone-synthesis pass can skip it.
+_INTEGRATION_MARKER_WORDS = {'integrated', 'embedded', 'baked in', 'woven in'}
+
+
 def is_doc(f):
     # Restricted to author-editable source formats. `.pdf` is intentionally
     # excluded: legacy _COURSES/ trees contain rendered PDF mirrors alongside
@@ -197,7 +204,7 @@ def count_phase1_assets(files):
     mod_recap) stay at 0.
 
     Pattern priority (first match wins):
-      1. scorm-*.zip                             -> interactives
+      1. scorm-*.zip                             -> slides
       2. *-quiz-answer-key.pdf                   -> skipped (paired with quiz)
       3. *-quiz.pdf                              -> quizzes
       4. *-instructor-guide-exercise-*.pdf       -> skipped (instructor copy)
@@ -323,12 +330,18 @@ def resolve_course_source(course, paths):
     course_id = course.get('id', '')
     name = course.get('name', course_id)
 
-    # Try Phase 1 first
+    # Try Phase 1 first. Treat a Phase 1 tree with zero files across all
+    # its module folders as "not really there" and fall through — an empty
+    # Phase 1 view would otherwise pin the course to 0% coverage even when
+    # a usable legacy source exists. See curriculum-tracking#37.
     phase1_path = find_phase1_deploy_folder(course_id, paths)
     if phase1_path:
         display = f"{course_id}/deploy/content"
         source_data = scan_phase1_deploy_folder(phase1_path)
-        if source_data['module_folders']:
+        has_phase1_files = any(
+            m.get('files') for m in source_data['module_folders'].values()
+        )
+        if has_phase1_files:
             return (phase1_path, display), source_data
 
     # Fall back to legacy _COURSES/ scan
@@ -650,6 +663,17 @@ def parse_outline(outline_path):
                 mod_num = int(groups[0])
                 mod_name = groups[1].strip()
                 mod_hours = parse_hours(groups[2]) if len(groups) > 2 else 0
+                # Preserve capstone integration markers that would otherwise
+                # be consumed as the hours group. Without this, a line like
+                # `## Module 8: Final Assessment (integrated)` loses the
+                # marker, so the downstream capstone handler can't detect
+                # is_integrated=True and synthesizes a ghost lesson.
+                # This mirrors the alt_module_pattern branch below.
+                # See curriculum-tracking#38.
+                if len(groups) > 2 and groups[2]:
+                    paren = groups[2].strip().lower()
+                    if paren in _INTEGRATION_MARKER_WORDS:
+                        mod_name = f"{mod_name} ({paren})"
                 current_module = {'number': mod_num, 'name': mod_name, 'hours': mod_hours, 'lessons': []}
                 modules.append(current_module)
                 matched_module = True
@@ -701,7 +725,7 @@ def parse_outline(outline_path):
                     paren = (m.group(2) or '').strip().lower()
                     hours = parse_hours(m.group(2)) if m.group(2) else 0
                     # Preserve integration markers so capstone handling can skip them
-                    if paren in {'integrated', 'embedded', 'baked in', 'woven in'}:
+                    if paren in _INTEGRATION_MARKER_WORDS:
                         name = f"{name} ({paren})"
                     mod_num = len(modules) + 1
                     current_module = {'number': mod_num, 'name': name, 'hours': hours, 'lessons': []}
