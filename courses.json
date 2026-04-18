@@ -201,11 +201,11 @@
       "hours": 25,
       "status": {
         "design": "Complete",
-        "development": "In Progress"
+        "development": "Complete"
       },
       "syllabus": "data-literacy",
       "outline": "Course Outline: Data Fundamentals \u2014 Data Literacy",
-      "note": "7 modules, 24 lessons. Source content scaffolded into WORKING folder (lesson content.md, instructor guides, activities, module quizzes, capstone). Deploy content build in progress.",
+      "note": "7 modules, 24 lessons. Deployed to deploy/content (PDFs) and deploy/html. PLE manifest generated and integrated. Known gap: Module 3 module-instructor-guide.md missing (with content team).",
       "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"
     },
     {
