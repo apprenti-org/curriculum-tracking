@@ -189,5 +189,107 @@ class TestPhase1Scanner(unittest.TestCase):
             self.assertEqual(source_data['module_folders'], {})
 
 
+class TestFolderJsonMatching(unittest.TestCase):
+    """Tests for match_folder_json_ids — the folder↔courses.json id matcher.
+
+    These tests guard against the bug where the fuzzy matcher iterated over
+    Python sets (non-deterministic across hash seeds) and took the first
+    overlap-≥2 match rather than the best match. See curriculum-tracking#53.
+    """
+
+    def test_direct_matches_preserved(self):
+        folders = ['itil-foundations', 'data-literacy']
+        json_ids = ['itil-foundations', 'data-literacy']
+        f2j, j2f = gen_overview.match_folder_json_ids(folders, json_ids)
+        self.assertEqual(f2j, {'itil-foundations': 'itil-foundations',
+                               'data-literacy': 'data-literacy'})
+        self.assertEqual(j2f, {'itil-foundations': 'itil-foundations',
+                               'data-literacy': 'data-literacy'})
+
+    def test_coding_booster_family_maps_correctly(self):
+        """All 5 Coding Booster folders → their matching -intensive json ids."""
+        folders = [
+            'cpp-coding-booster',
+            'java-coding-booster',
+            'javascript-coding-booster',
+            'python-coding-booster',
+            'sql-coding-booster',
+        ]
+        json_ids = [
+            'c-plus-plus-coding-booster-intensive',
+            'java-coding-booster-intensive',
+            'javascript-coding-booster-intensive',
+            'python-coding-booster-intensive',
+            'sql-coding-booster-intensive',
+        ]
+        f2j, _ = gen_overview.match_folder_json_ids(folders, json_ids)
+        self.assertEqual(f2j['cpp-coding-booster'], 'c-plus-plus-coding-booster-intensive')
+        self.assertEqual(f2j['java-coding-booster'], 'java-coding-booster-intensive')
+        self.assertEqual(f2j['javascript-coding-booster'], 'javascript-coding-booster-intensive')
+        self.assertEqual(f2j['python-coding-booster'], 'python-coding-booster-intensive')
+        self.assertEqual(f2j['sql-coding-booster'], 'sql-coding-booster-intensive')
+
+    def test_data_fundamentals_family_maps_correctly(self):
+        """Collision case: folders sharing 'data', 'sql', or 'for' route correctly."""
+        folders = [
+            'sql-for-data',
+            'excel-for-data-analysts',
+            'sql-fundamentals-operations',
+        ]
+        json_ids = [
+            'data-fundamentals-sql-for-data',
+            'data-fundamentals-excel-for-data-analysts',
+            'sql-fundamentals-for-operations',
+        ]
+        f2j, _ = gen_overview.match_folder_json_ids(folders, json_ids)
+        self.assertEqual(f2j['sql-for-data'], 'data-fundamentals-sql-for-data')
+        self.assertEqual(f2j['excel-for-data-analysts'],
+                         'data-fundamentals-excel-for-data-analysts')
+        self.assertEqual(f2j['sql-fundamentals-operations'],
+                         'sql-fundamentals-for-operations')
+
+    def test_unrelated_folders_unmatched(self):
+        """Folders with no shared tokens beyond noise don't get force-matched."""
+        folders = ['astronomy-basics']
+        json_ids = ['cooking-101', 'history-of-rome']
+        f2j, _ = gen_overview.match_folder_json_ids(folders, json_ids)
+        self.assertNotIn('astronomy-basics', f2j)
+
+    def test_deterministic_under_input_permutation(self):
+        """Output must be identical regardless of input list order."""
+        folders_a = [
+            'cpp-coding-booster', 'java-coding-booster',
+            'javascript-coding-booster', 'python-coding-booster',
+            'sql-coding-booster',
+        ]
+        folders_b = list(reversed(folders_a))
+        json_ids_a = [
+            'c-plus-plus-coding-booster-intensive',
+            'java-coding-booster-intensive',
+            'javascript-coding-booster-intensive',
+            'python-coding-booster-intensive',
+            'sql-coding-booster-intensive',
+        ]
+        json_ids_b = list(reversed(json_ids_a))
+        result_a = gen_overview.match_folder_json_ids(folders_a, json_ids_a)
+        result_b = gen_overview.match_folder_json_ids(folders_b, json_ids_b)
+        self.assertEqual(result_a, result_b)
+
+    def test_prefers_substring_over_lower_overlap(self):
+        """A folder id that's a substring of a json id beats a word-overlap peer."""
+        # 'java-coding-booster' is a de-hyphenated substring of
+        # 'java-coding-booster-intensive' (higher score)
+        # but only shares {coding,booster} with 'python-coding-booster-intensive'
+        folders = ['java-coding-booster']
+        json_ids = ['python-coding-booster-intensive', 'java-coding-booster-intensive']
+        f2j, _ = gen_overview.match_folder_json_ids(folders, json_ids)
+        self.assertEqual(f2j['java-coding-booster'], 'java-coding-booster-intensive')
+
+    def test_handles_empty_inputs(self):
+        self.assertEqual(gen_overview.match_folder_json_ids([], []), ({}, {}))
+        self.assertEqual(gen_overview.match_folder_json_ids(['a'], []), ({}, {}))
+        self.assertEqual(gen_overview.match_folder_json_ids([], ['a']), ({}, {}))
+
+
 if __name__ == "__main__":
     unittest.main()
