@@ -39,7 +39,37 @@ def auto_detect_base():
     return None
 
 def is_doc(f):
-    return f.endswith('.gdoc') or f.endswith('.docx') or f.endswith('.doc') or f.endswith('.md') or f.endswith('.pdf')
+    # Restricted to author-editable source formats. `.pdf` is intentionally
+    # excluded: legacy _COURSES/ trees contain rendered PDF mirrors alongside
+    # .gdoc sources, and including .pdf here double-counts them as lessons,
+    # quizzes, activities, etc. Phase 1 deploy-tree PDFs are handled by
+    # count_phase1_assets and by is_phase1_lesson_doc, both of which
+    # recognize .pdf directly without relying on this helper.
+    # See curriculum-tracking#36.
+    return f.endswith('.gdoc') or f.endswith('.docx') or f.endswith('.doc') or f.endswith('.md')
+
+
+def is_phase1_lesson_doc(f):
+    """True if f is a Phase 1 lesson-content PDF.
+
+    Recognizes `lesson-NN-<name>.pdf` but rejects the paired artifacts
+    (instructor guide, quiz, exercise). The qualifier check anchors to the
+    *first token* after the `lesson-NN-` prefix, so a lesson whose title
+    happens to contain 'exercise' mid-name (e.g.
+    `lesson-05-building-exercise-routines.pdf`) still counts.
+
+    Kept separate from is_doc() to scope .pdf recognition to Phase 1 trees
+    — legacy _COURSES/ source trees contain .pdf mirrors of .gdoc files
+    that must not double-count. See curriculum-tracking#36.
+    """
+    fl = f.lower()
+    if not fl.endswith('.pdf'):
+        return False
+    if not re.match(r'^lesson-\d{2}-', fl):
+        return False
+    if re.match(r'^lesson-\d{2}-(instructor|quiz|exercise)(?:-|\.)', fl):
+        return False
+    return True
 
 def is_slides(f):
     return f.endswith('.pptx') or f.endswith('.gslides')
@@ -828,16 +858,12 @@ def check_lesson_exists(mod_files, lesson_number, position_in_module=None):
         fl = f.lower()
         if re.match(r'Lesson\s+' + str(lesson_number) + r'\b', f, re.IGNORECASE) and is_doc(f):
             return True
-    # Phase 1 naming: lesson-NN-<name>.pdf (excluding instructor guides,
-    # quizzes, and exercises which are counted separately)
+    # Phase 1 lesson-content PDFs. See is_phase1_lesson_doc / #36.
     for num in set(filter(None, [lesson_number, position_in_module])):
         phase1_prefix = f"lesson-{num:02d}-"
         for f in mod_files:
             fl = f.lower()
-            if (fl.startswith(phase1_prefix) and is_doc(f)
-                and 'instructor-guide' not in fl
-                and 'quiz' not in fl
-                and 'exercise' not in fl):
+            if fl.startswith(phase1_prefix) and is_phase1_lesson_doc(f):
                 return True
     for num in set(filter(None, [lesson_number, position_in_module])):
         target_flat = f"{num:02d}-"
@@ -906,7 +932,13 @@ def compute_coverage(modules, source_data):
                             break
 
         mod_files = mod_source['files'] if mod_source else []
-        has_numbered_lessons = any(re.match(r'Lesson\s+\d+', f) for f in mod_files if is_doc(f))
+        # Phase 1 tree lessons come in as `lesson-NN-*.pdf`; legacy _COURSES/
+        # trees use `Lesson N ...`. Recognize both shapes here so the
+        # coverage scan routes into check_lesson_exists either way.
+        has_numbered_lessons = (
+            any(re.match(r'Lesson\s+\d+', f) for f in mod_files if is_doc(f))
+            or any(is_phase1_lesson_doc(f) for f in mod_files)
+        )
 
         for lesson_idx, lesson in enumerate(module['lessons']):
             position_in_module = lesson_idx + 1
