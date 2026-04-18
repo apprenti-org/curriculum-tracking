@@ -207,7 +207,7 @@ const courseData = [
     },
     "syllabus": "data-literacy",
     "outline": "Course Outline: Data Fundamentals — Data Literacy",
-    "note": "7 modules, 24 lessons. Deployed to deploy/content (PDFs) and deploy/html. PLE manifest generated and integrated. Known gap: Module 3 module-instructor-guide.md missing (with content team).",
+    "note": "7 modules, 24 lessons. Deployed to deploy/content (PDFs) and deploy/html. PLE manifest generated and integrated.",
     "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ"
   },
   {
