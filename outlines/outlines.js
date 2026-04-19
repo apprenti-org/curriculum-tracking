@@ -8439,8 +8439,8 @@ const courseOutlines = {
       }
     ]
   },
-  "Python Basics (for Software Dev)": {
-    "course": "Python Basics (for Software Dev)",
+  "Python Basics": {
+    "course": "Python Basics",
     "totalHours": 48,
     "totalLessons": 14,
     "totalModules": 6,

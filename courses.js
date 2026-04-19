@@ -707,15 +707,15 @@ const courseData = [
     "statusConfirmed": false
   },
   {
-    "id": "python-basics-for-software-dev",
-    "name": "Python Basics (for Software Dev)",
+    "id": "python-basics",
+    "name": "Python Basics",
     "hours": 48,
     "status": {
       "design": "Complete",
       "development": "Not Started"
     },
-    "syllabus": "Syllabus: Course Python Basics for Software Development",
-    "outline": "Course Outline: Python Basics (for Software Dev)",
+    "syllabus": "Syllabus: Python Basics",
+    "outline": "Course Outline: Python Basics",
     "note": null,
     "driveFolder": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL",
     "statusConfirmed": false
@@ -998,8 +998,8 @@ const curriculaData = [
         "id": "linux-foundations"
       },
       {
-        "name": "Python Basics (for Software Dev)",
-        "id": "python-basics-for-software-dev"
+        "name": "Python Basics",
+        "id": "python-basics"
       },
       {
         "name": "Advanced Python",
@@ -1105,8 +1105,8 @@ const curriculaData = [
         "note": "RTI Area 3",
         "courses": [
           {
-            "name": "Python Basics (for Software Dev)",
-            "id": "python-basics-for-software-dev"
+            "name": "Python Basics",
+            "id": "python-basics"
           },
           {
             "name": "Python for Infrastructure Automation",

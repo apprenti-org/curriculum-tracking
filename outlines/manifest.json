@@ -211,8 +211,8 @@
   },
   {
     "file": "python-basics.json",
-    "course": "Python Basics (for Software Dev)",
-    "id": "python-basics-for-software-dev"
+    "course": "Python Basics",
+    "id": "python-basics"
   },
   {
     "file": "python-coding-booster.json",

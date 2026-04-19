@@ -705,15 +705,15 @@
       "statusConfirmed": false
     },
     {
-      "id": "python-basics-for-software-dev",
-      "name": "Python Basics (for Software Dev)",
+      "id": "python-basics",
+      "name": "Python Basics",
       "hours": 48,
       "status": {
         "design": "Complete",
         "development": "Not Started"
       },
-      "syllabus": "Syllabus: Course Python Basics for Software Development",
-      "outline": "Course Outline: Python Basics (for Software Dev)",
+      "syllabus": "Syllabus: Python Basics",
+      "outline": "Course Outline: Python Basics",
       "note": null,
       "driveFolder": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL",
       "statusConfirmed": false
@@ -978,7 +978,7 @@
       "name": "IT Business Analyst",
       "courses": [
         "linux-foundations",
-        "python-basics-for-software-dev",
+        "python-basics",
         "advanced-python",
         "agile-project-management-with-scrum",
         "python-for-infrastructure-automation"
@@ -1036,7 +1036,7 @@
           "hours": 236,
           "note": "RTI Area 3",
           "courses": [
-            "python-basics-for-software-dev",
+            "python-basics",
             "python-for-infrastructure-automation",
             {
               "id": "java-language-fundamentals",

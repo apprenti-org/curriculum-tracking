@@ -847,7 +847,7 @@
       "url": "https://drive.google.com/drive/folders/1rGEdXkwx1oq5ZgKL3EPXKtHRGOn-Da6y"
     }
   },
-  "python-basics-for-software-dev": {
+  "python-basics": {
     "source_container": {
       "id": "1jXoF6uyjifRX5-1B_at3LmNgayobIjL0",
       "name": "02_source",
@@ -856,7 +856,7 @@
     "modules": {},
     "course_folder": {
       "id": "1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL",
-      "name": "Python Basics (for Software Dev)",
+      "name": "Python Basics",
       "url": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL"
     }
   },
