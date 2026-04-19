@@ -1751,8 +1751,8 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "python-basics-for-software-dev",
-    "name": "Python Basics (for Software Dev)",
+    "id": "python-basics",
+    "name": "Python Basics",
     "hours": 48,
     "outline": {
       "exists": true,

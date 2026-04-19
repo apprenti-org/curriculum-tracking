@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T07:04:34",
+  "generated": "2026-04-19T10:55:40",
   "courseCount": 64,
   "courses": [
     {
@@ -1753,8 +1753,8 @@
       }
     },
     {
-      "id": "python-basics-for-software-dev",
-      "name": "Python Basics (for Software Dev)",
+      "id": "python-basics",
+      "name": "Python Basics",
       "hours": 48,
       "outline": {
         "exists": true,

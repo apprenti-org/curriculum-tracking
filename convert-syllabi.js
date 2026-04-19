@@ -722,7 +722,7 @@ const manualMap = {
     'Pandas': 'pandas.html',
     'Productivity Tools for Technical Reporting': 'productivity-tools-reporting.html',
     'Professional Communication': 'professional-communication.html',
-    'Python Basics (for Software Dev)': 'python-basics-softdev.html',
+    'Python Basics': 'python-basics.html',
     'Python Coding Booster Intensive': 'python-coding-booster.html',
     'Python for Infrastructure Automation': 'python-infrastructure-automation.html',
     'React': 'react.html',
