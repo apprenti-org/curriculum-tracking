@@ -1762,27 +1762,27 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Python Basics (1)",
-      "modules": 9
+      "folder": "python-basics/deploy/content",
+      "modules": 7
     },
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 9,
-      "slides": 4,
-      "quizzes": 1,
-      "activities": 60,
-      "demos": 1,
+      "lessons": 0,
+      "slides": 10,
+      "quizzes": 0,
+      "activities": 0,
+      "demos": 0,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 75,
+    "totalAssets": 10,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 10,
+      "actual": 10
     }
   },
   {
@@ -1826,7 +1826,7 @@ var courseOverviewData = [
     "hours": 32,
     "outline": {
       "exists": true,
-      "modules": 5,
+      "modules": 6,
       "lessons": 17
     },
     "syllabus": true,
@@ -1850,9 +1850,9 @@ var courseOverviewData = [
     },
     "totalAssets": 0,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 15,
+      "actual": 15
     }
   },
   {
@@ -2068,7 +2068,7 @@ var courseOverviewData = [
   {
     "id": "sql-fundamentals-for-operations",
     "name": "SQL Fundamentals for Operations",
-    "hours": 20,
+    "hours": 24,
     "outline": {
       "exists": true,
       "modules": 5,

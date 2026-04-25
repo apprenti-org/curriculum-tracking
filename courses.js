@@ -835,7 +835,7 @@ const courseData = [
   {
     "id": "sql-fundamentals-for-operations",
     "name": "SQL Fundamentals for Operations",
-    "hours": 20,
+    "hours": 24,
     "status": {
       "design": "Not Started",
       "development": "Not Started"
@@ -1115,8 +1115,8 @@ const curriculaData = [
           {
             "name": "Java Language Fundamentals",
             "id": "java-language-fundamentals",
-            "hoursOverride": 44,
-            "note": "Reduced from 56h for this deployment"
+            "hoursOverride": 40,
+            "note": "Reduced from 56h base to 40h to match A-28 standard (Java+JS combined = 80h)"
           },
           {
             "name": "Web Development with JavaScript",
