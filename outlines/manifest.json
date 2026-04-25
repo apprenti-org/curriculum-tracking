@@ -220,6 +220,11 @@
     "id": "python-coding-booster-intensive"
   },
   {
+    "file": "python-infrastructure-automation.json",
+    "course": "Python for Infrastructure Automation",
+    "id": "python-infrastructure-automation"
+  },
+  {
     "file": "react.json",
     "course": "React",
     "id": "react"

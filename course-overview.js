@@ -1821,7 +1821,7 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "python-for-infrastructure-automation",
+    "id": "python-infrastructure-automation",
     "name": "Python for Infrastructure Automation",
     "hours": 32,
     "outline": {
@@ -1831,24 +1831,24 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "python-infrastructure-automation/deploy/content",
+      "modules": 5
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 88,
+    "lessonsWithContent": 15,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
+      "lessons": 45,
+      "slides": 15,
+      "quizzes": 15,
       "activities": 0,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 15,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 90,
     "deployment": {
       "state": "Complete",
       "expected": 15,
