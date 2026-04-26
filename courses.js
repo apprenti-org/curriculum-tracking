@@ -204,13 +204,13 @@ const courseData = [
     "hours": 96,
     "status": {
       "design": "Complete",
-      "development": "Not Started"
+      "development": "In Progress"
     },
     "syllabus": "Syllabus: CompTIA Network+",
     "outline": "Course Outline: CompTIA Network+",
-    "note": null,
+    "note": "22/22 SCORM interactives built across 5 modules in deployment/repos/comptia-network-plus/. PDFs not yet generated. Legacy scorm-design folder retains 19 DELETE- prefixed folders pending cleanup.",
     "driveFolder": "https://drive.google.com/drive/folders/15YQcw0_TywkjXJ1D0DhQP9CeIPeSMlz0",
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "data-fundamentals-data-literacy",
