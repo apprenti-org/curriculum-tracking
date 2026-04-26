@@ -712,13 +712,14 @@ const courseData = [
     "hours": 48,
     "status": {
       "design": "Complete",
-      "development": "Not Started"
+      "development": "In Progress"
     },
     "syllabus": "Syllabus: Python Basics",
     "outline": "Course Outline: Python Basics",
-    "note": null,
+    "note": "Outline restructured 2026-04-26 to 9 modules / 10 lessons per design-doc course-outline (was 6 modules / 14 lessons reconstruction). Per-module hours are TBD pending design-doc#83 (40h syllabus vs 48h OSS target) and design-doc#90 (LO + content extraction). Deploy tree has 10 SCORM zips + 14 PDFs. Used in OSS Course 6, Area 3 and Software Developer Java curriculum.",
     "driveFolder": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL",
-    "statusConfirmed": false
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": true
   },
   {
     "id": "python-coding-booster-intensive",
