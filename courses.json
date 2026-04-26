@@ -194,7 +194,7 @@
       "outline": "Course Outline: CompTIA A+",
       "note": "v0.4.2 \u2014 38/38 SCORM interactives complete. All modules 1-7 deployed. Content synced from review HTMLs, titles normalized.",
       "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o",
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "comptia-network-plus",
