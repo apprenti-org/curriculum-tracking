@@ -1,0 +1,151 @@
+{
+  "course": "CI/CD Pipeline Concepts",
+  "totalHours": 10,
+  "totalModules": 3,
+  "totalLessons": 8,
+  "modules": [
+    {
+      "name": "CI/CD pipeline concepts and tooling",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "CI/CD Fundamentals and Version Control for CI",
+          "hours": 1,
+          "topics": [
+            "What CI is, what CD is, and why teams adopt them",
+            "Trunk-based vs feature-branch development",
+            "Branch protection rules and required status checks",
+            "Conventional commits and CI-friendly history",
+            "Events that trigger pipelines (push, pull_request, schedule)",
+            "Individual: configure branch protection on a sample repo with one required status check"
+          ],
+          "objects": [
+            "Object: Lesson: CI/CD Fundamentals and Version Control for CI",
+            "Assessment: Quiz: CI/CD Fundamentals and Version Control for CI"
+          ]
+        },
+        {
+          "title": "Introduction to GitHub Actions",
+          "hours": 1,
+          "topics": [
+            "Workflows, jobs, steps — the GitHub Actions object model",
+            "The `.github/workflows/` directory and YAML basics",
+            "Events, runners, and the marketplace actions ecosystem",
+            "Authoring a first one-stage workflow that builds a generic Python sample",
+            "Pair coding: write and commit a `build.yml` that runs on every push and prints the Python version"
+          ],
+          "objects": [
+            "Object: Lesson: Introduction to GitHub Actions",
+            "Assessment: Quiz: Introduction to GitHub Actions"
+          ]
+        },
+        {
+          "title": "Build Automation and Automated Testing as a CI Step",
+          "hours": 1,
+          "topics": [
+            "Adding a test job alongside the build job *(OJL 3b)*",
+            "Status checks and the failing-build experience",
+            "Caching dependencies between runs (`actions/cache`)",
+            "Reading workflow logs and debugging a red build",
+            "Individual: extend the Lesson 2 workflow with a `pytest` job and intentionally break a test to observe the failure flow"
+          ],
+          "objects": [
+            "Object: Lesson: Build Automation and Automated Testing as a CI Step",
+            "Assessment: Quiz: Build Automation and Automated Testing as a CI Step"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pipeline architecture",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "Multi-Stage Pipelines",
+          "hours": 1,
+          "topics": [
+            "Jobs vs steps and when to split *(OJL 3b)*",
+            "`needs:` and the pipeline DAG",
+            "Matrix strategies for cross-version testing",
+            "Reusable workflows and composite actions",
+            "Worked example (instructor-led, not built by learners): a 6-stage / 2-environment promotion pipeline showing what production CI/CD architecture looks like",
+            "Pair coding: refactor a single-job workflow into two dependent jobs using `needs:`"
+          ],
+          "objects": [
+            "Object: Lesson: Multi-Stage Pipelines",
+            "Assessment: Quiz: Multi-Stage Pipelines"
+          ]
+        },
+        {
+          "title": "Secrets, Environments, and Environment Protection",
+          "hours": 1,
+          "topics": [
+            "Repository secrets vs organization secrets vs environment-scoped secrets *(OJL 3b)*",
+            "Configuring a GitHub Environment with required reviewers",
+            "Deployment branches and tag-based gating",
+            "OIDC for cloud-credential-less deployment (overview)",
+            "Individual: configure a `staging` environment with one secret and one required reviewer"
+          ],
+          "objects": [
+            "Object: Lesson: Secrets, Environments, and Environment Protection",
+            "Assessment: Quiz: Secrets, Environments, and Environment Protection"
+          ]
+        },
+        {
+          "title": "Monitoring and Feedback Loops",
+          "hours": 1,
+          "topics": [
+            "Workflow run statuses and surfacing them in the repo",
+            "Status badges in the README",
+            "Required checks on PRs and merge gating",
+            "Failure notifications: GitHub email, third-party (Slack/PagerDuty) overview",
+            "Pipeline observability — what to log, what to time",
+            "Individual: add a status badge to a repo README and configure required-check enforcement on the default branch"
+          ],
+          "objects": [
+            "Object: Lesson: Monitoring and Feedback Loops",
+            "Assessment: Quiz: Monitoring and Feedback Loops"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Automated testing and deployment",
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Deployment Strategies",
+          "hours": 1.25,
+          "topics": [
+            "Blue-green deployments — what, when, the tradeoffs *(OJL 3b)*",
+            "Canary releases — gradual rollout, observation windows",
+            "Rolling updates — load-balancer-driven node replacement",
+            "How each strategy is expressed in a GitHub Actions workflow",
+            "~20-minute in-lesson activity: short write-up choosing one strategy for a given scenario, with rationale",
+            "Individual write-up (in-lesson): \"Given a small SaaS product with 2 production app servers, which deployment strategy would you recommend, and why?\""
+          ],
+          "objects": [
+            "Object: Lesson: Deployment Strategies",
+            "Assessment: Quiz: Deployment Strategies"
+          ]
+        },
+        {
+          "title": "Release Management",
+          "hours": 1.25,
+          "topics": [
+            "Semantic versioning (MAJOR.MINOR.PATCH) and what bumps what *(OJL 3b)*",
+            "Tagging releases and the relationship between tags and pipelines",
+            "Auto-generated release notes",
+            "Rollback strategies — the previous-tag pattern, blue-green flip",
+            "Post-deployment verification — smoke tests, health checks",
+            "Pair coding: tag a release, observe the tag-triggered workflow run, then perform a tag-based rollback"
+          ],
+          "objects": [
+            "Object: Lesson: Release Management",
+            "Assessment: Quiz: Release Management"
+          ]
+        }
+      ]
+    }
+  ]
+}
