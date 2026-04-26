@@ -1,7 +1,296 @@
 {
-  "course": "java-language-fundamentals",
+  "course": "Java Language Fundamentals",
   "totalHours": 56,
-  "totalModules": 0,
-  "totalLessons": 0,
-  "modules": []
+  "totalModules": 11,
+  "totalLessons": 18,
+  "modules": [
+    {
+      "name": "Programming Foundations",
+      "hours": 4,
+      "description": "Introduces what programming is, how Java fits in the programming world, and sets up the development environment.",
+      "lessons": [
+        {
+          "title": "Programming and Code",
+          "hours": 2,
+          "topics": [
+            "What is programming? How code works (compilation vs interpretation)",
+            "Where Java fits in the programming world",
+            "Refactoring code; compilers and interpreters"
+          ]
+        },
+        {
+          "title": "Java JRE and JDK + IntelliJ Setup",
+          "hours": 2,
+          "topics": [
+            "Java Runtime Environment vs Java Development Kit",
+            "Installing IntelliJ IDEA Community Edition (code-along)",
+            "Creating and running a first IntelliJ project (code-along)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Core Java Syntax and Data Structures",
+      "hours": 6,
+      "description": "Foundational syntax, primitive data types, variables, and operators.",
+      "lessons": [
+        {
+          "title": "Common Syntax Elements",
+          "hours": 2,
+          "topics": [
+            "class/main structure",
+            "statements",
+            "semicolons",
+            "blocks",
+            "comments",
+            "identifiers",
+            "keywords"
+          ]
+        },
+        {
+          "title": "Data Types and Variables",
+          "hours": 2,
+          "topics": [
+            "primitives (int",
+            "double",
+            "boolean",
+            "char",
+            "byte",
+            "short",
+            "long",
+            "float)",
+            "declaration",
+            "initialization",
+            "type conversion"
+          ]
+        },
+        {
+          "title": "Operators",
+          "hours": 2,
+          "topics": [
+            "arithmetic",
+            "assignment",
+            "comparison",
+            "logical",
+            "increment/decrement",
+            "precedence"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Developing a Shopping Cart Application \u2014 Part 1",
+      "hours": 4,
+      "description": "First hands-on project introducing enums and the Shopping Cart progressive build that recurs through Modules 4\u201310.",
+      "lessons": [
+        {
+          "title": "Shopping Cart Start & Enums",
+          "hours": 4,
+          "topics": [
+            "Setting up the Shopping Cart project",
+            "Enums: definition, use cases, application",
+            "Applying enums to the Shopping Cart"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Working with Objects and Strings",
+      "hours": 6,
+      "description": "Object references, the String class, and string manipulation.",
+      "lessons": [
+        {
+          "title": "Objects and References",
+          "hours": 3,
+          "topics": [
+            "objects vs primitives",
+            "reference variables",
+            "null",
+            "equality (== vs .equals)"
+          ]
+        },
+        {
+          "title": "Strings",
+          "hours": 3,
+          "topics": [
+            "String class",
+            "immutability",
+            "common methods",
+            "StringBuilder",
+            "applying strings to the Shopping Cart"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Input/Output \u2014 Console IO",
+      "hours": 4,
+      "description": "Reading user input and displaying output via the console.",
+      "lessons": [
+        {
+          "title": "Console IO",
+          "hours": 4,
+          "topics": [
+            "System.out.println",
+            "Scanner class",
+            "parsing input types",
+            "validation",
+            "applying Console IO to the Shopping Cart"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Control Flow with Decisions and Loops",
+      "hours": 8,
+      "description": "Conditional logic, iteration, and flow-control practice. Largest module \u2014 also includes the Text Adventure mid-course lab.",
+      "lessons": [
+        {
+          "title": "Decisions",
+          "hours": 3,
+          "topics": [
+            "if/else if/else",
+            "switch",
+            "ternary",
+            "nested conditionals",
+            "applying to Shopping Cart"
+          ]
+        },
+        {
+          "title": "Loops",
+          "hours": 3,
+          "topics": [
+            "for",
+            "while",
+            "do-while",
+            "break",
+            "continue",
+            "nested loops",
+            "applying to Shopping Cart"
+          ]
+        },
+        {
+          "title": "Lab \u2014 Text Adventure Through Loops",
+          "hours": 2,
+          "topics": [
+            "interactive text-based adventure combining decisions and loops"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arrays and Data Collections",
+      "hours": 4,
+      "description": "Creating, accessing, and manipulating arrays.",
+      "lessons": [
+        {
+          "title": "Arrays",
+          "hours": 4,
+          "topics": [
+            "declaration",
+            "initialization",
+            "indexing",
+            "iteration (for + enhanced for)",
+            "common operations",
+            "applying to Shopping Cart"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Methods and Modular Programming",
+      "hours": 4,
+      "description": "Writing reusable code through methods.",
+      "lessons": [
+        {
+          "title": "Methods",
+          "hours": 4,
+          "topics": [
+            "defining/calling",
+            "parameters",
+            "return types",
+            "overloading",
+            "scope",
+            "applying to Shopping Cart"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Testing and Debugging",
+      "hours": 4,
+      "description": "Manual testing techniques and the IntelliJ debugger.",
+      "lessons": [
+        {
+          "title": "Manual Unit Testing",
+          "hours": 2,
+          "topics": [
+            "what unit testing is",
+            "writing test cases",
+            "expected vs actual",
+            "planning"
+          ]
+        },
+        {
+          "title": "Debugging",
+          "hours": 2,
+          "topics": [
+            "common Java errors",
+            "reading stack traces",
+            "IntelliJ debugger (breakpoints",
+            "stepping",
+            "watches)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Exception Handling and Error Management",
+      "hours": 4,
+      "description": "Understanding and handling exceptions in Java.",
+      "lessons": [
+        {
+          "title": "Exceptions",
+          "hours": 4,
+          "topics": [
+            "what exceptions are",
+            "try/catch",
+            "common exception types (NullPointerException",
+            "ArrayIndexOutOfBoundsException",
+            "etc.)",
+            "throwing exceptions",
+            "applying to Shopping Cart"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Capstone Lab \u2014 Complete Text Adventure",
+      "hours": 4,
+      "description": "Integrating all course concepts into a comprehensive application. Builds on the Module 6 Text Adventure mid-course lab.",
+      "lessons": [
+        {
+          "title": "Text Adventure Complete",
+          "hours": 4,
+          "topics": [
+            "building the complete text adventure",
+            "integrating arrays",
+            "methods",
+            "exceptions",
+            "and flow control",
+            "code review and refactoring"
+          ]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Capstone Assessment: Storage Lockers",
+    "hours": 4,
+    "items": [
+      "Comprehensive summative assessment combining all 11 modules",
+      "Single-source-file Java application",
+      "Rubric: rubric-java-language-fundamentals-storage-lockers-app.md"
+    ]
+  }
 }

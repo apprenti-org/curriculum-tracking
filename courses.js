@@ -487,11 +487,11 @@ const courseData = [
     "hours": 56,
     "status": {
       "design": "Complete",
-      "development": "Not Started"
+      "development": "Complete"
     },
     "syllabus": "Syllabus: Curriculum Software Development Java",
     "outline": "Course Outline: Java Language Fundamentals",
-    "note": "56h default (used by Software Developer Java); 40h variant for OSS via hoursOverride. Design-doc folder present in apprenti-org/design-documentation (course-outline + lessons + source mirror + standard-alignment); source migration #179 completed 2026-04-25 (117 source files mirrored). Used in OSS Course 8, Area 3 and Software Developer Java curriculum. No SCORM/PDFs yet — Phase 3 development not started.",
+    "note": "56h default (used by Software Developer Java); 40h variant for OSS via hoursOverride. 11 modules, 18 lessons. Design-doc folder in apprenti-org/design-documentation (outline + lesson outlines + source mirror + standard-alignment, A-28 OSS-Network). Phase 0 + Phase 1 scaffolding complete (PR #218). 18 interactive.html lesson pages authored from migrated source; 18 SCORM 1.2 zips packaged and uploaded to Absorb LMS 2026-04-26. PDFs / deploy tree (row 8) pending. Used in OSS Course 8, Area 3 and Software Developer Java curriculum.",
     "driveFolder": "https://drive.google.com/drive/folders/1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK",
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
     "statusConfirmed": true

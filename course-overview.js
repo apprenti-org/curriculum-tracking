@@ -1196,8 +1196,8 @@ var courseOverviewData = [
     "hours": 56,
     "outline": {
       "exists": true,
-      "modules": 12,
-      "lessons": 19
+      "modules": 13,
+      "lessons": 20
     },
     "syllabus": true,
     "source": {
@@ -1205,8 +1205,8 @@ var courseOverviewData = [
       "folder": "Course: Java Language Fundamentals",
       "modules": 11
     },
-    "coverage": 84,
-    "lessonsWithContent": 16,
+    "coverage": 85,
+    "lessonsWithContent": 17,
     "assets": {
       "lessons": 17,
       "slides": 0,
@@ -1221,7 +1221,7 @@ var courseOverviewData = [
     "totalAssets": 62,
     "deployment": {
       "state": "Not Deployed",
-      "expected": 0,
+      "expected": 18,
       "actual": 0
     }
   },

@@ -6128,30 +6128,30 @@ const courseOutlines = {
   "Java Language Fundamentals": {
     "course": "Java Language Fundamentals",
     "totalHours": 56,
-    "totalLessons": 18,
     "totalModules": 11,
+    "totalLessons": 18,
     "modules": [
       {
         "name": "Programming Foundations",
-        "hours": 6,
-        "description": "What programming is, how code works, and setting up the Java development environment.",
+        "hours": 4,
+        "description": "Introduces what programming is, how Java fits in the programming world, and sets up the development environment.",
         "lessons": [
           {
             "title": "Programming and Code",
-            "hours": 3,
+            "hours": 2,
             "topics": [
-              "What is programming?",
-              "How code works: compilation and execution",
-              "Where Java fits in the programming world"
+              "What is programming? How code works (compilation vs interpretation)",
+              "Where Java fits in the programming world",
+              "Refactoring code; compilers and interpreters"
             ]
           },
           {
-            "title": "Java JRE and JDK",
-            "hours": 3,
+            "title": "Java JRE and JDK + IntelliJ Setup",
+            "hours": 2,
             "topics": [
-              "JRE vs JDK",
-              "Installing IntelliJ IDEA",
-              "Creating and running a first project"
+              "Java Runtime Environment vs Java Development Kit",
+              "Installing IntelliJ IDEA Community Edition (code-along)",
+              "Creating and running a first IntelliJ project (code-along)"
             ]
           }
         ]
@@ -6159,48 +6159,63 @@ const courseOutlines = {
       {
         "name": "Core Java Syntax and Data Structures",
         "hours": 6,
-        "description": "Foundational syntax, data types, variables, and operators.",
+        "description": "Foundational syntax, primitive data types, variables, and operators.",
         "lessons": [
           {
             "title": "Common Syntax Elements",
             "hours": 2,
             "topics": [
-              "Java program structure (class, main method)",
-              "Statements, blocks, semicolons",
-              "Comments and naming conventions"
+              "class/main structure",
+              "statements",
+              "semicolons",
+              "blocks",
+              "comments",
+              "identifiers",
+              "keywords"
             ]
           },
           {
             "title": "Data Types and Variables",
             "hours": 2,
             "topics": [
-              "Primitive data types",
-              "Variable declaration and initialization",
-              "Type casting and constants"
+              "primitives (int",
+              "double",
+              "boolean",
+              "char",
+              "byte",
+              "short",
+              "long",
+              "float)",
+              "declaration",
+              "initialization",
+              "type conversion"
             ]
           },
           {
             "title": "Operators",
             "hours": 2,
             "topics": [
-              "Arithmetic, assignment, comparison operators",
-              "Logical operators",
-              "Operator precedence"
+              "arithmetic",
+              "assignment",
+              "comparison",
+              "logical",
+              "increment/decrement",
+              "precedence"
             ]
           }
         ]
       },
       {
-        "name": "Shopping Cart Application — Part 1",
+        "name": "Developing a Shopping Cart Application — Part 1",
         "hours": 4,
-        "description": "First hands-on project introducing enums and practical application building.",
+        "description": "First hands-on project introducing enums and the Shopping Cart progressive build that recurs through Modules 4–10.",
         "lessons": [
           {
             "title": "Shopping Cart Start & Enums",
             "hours": 4,
             "topics": [
               "Setting up the Shopping Cart project",
-              "Enums: definition and use cases",
+              "Enums: definition, use cases, application",
               "Applying enums to the Shopping Cart"
             ]
           }
@@ -6215,18 +6230,21 @@ const courseOutlines = {
             "title": "Objects and References",
             "hours": 3,
             "topics": [
-              "Objects vs primitives",
-              "Reference variables and memory",
-              "Null references and object equality"
+              "objects vs primitives",
+              "reference variables",
+              "null",
+              "equality (== vs .equals)"
             ]
           },
           {
             "title": "Strings",
             "hours": 3,
             "topics": [
-              "String immutability and methods",
-              "String comparison (equals vs ==)",
-              "StringBuilder and concatenation"
+              "String class",
+              "immutability",
+              "common methods",
+              "StringBuilder",
+              "applying strings to the Shopping Cart"
             ]
           }
         ]
@@ -6240,9 +6258,11 @@ const courseOutlines = {
             "title": "Console IO",
             "hours": 4,
             "topics": [
-              "System.out.println and formatting",
-              "Scanner class for user input",
-              "Parsing input types and validation"
+              "System.out.println",
+              "Scanner class",
+              "parsing input types",
+              "validation",
+              "applying Console IO to the Shopping Cart"
             ]
           }
         ]
@@ -6250,32 +6270,37 @@ const courseOutlines = {
       {
         "name": "Control Flow with Decisions and Loops",
         "hours": 8,
-        "description": "Conditional logic, iteration, and combining flow control structures.",
+        "description": "Conditional logic, iteration, and flow-control practice. Largest module — also includes the Text Adventure mid-course lab.",
         "lessons": [
           {
             "title": "Decisions",
             "hours": 3,
             "topics": [
-              "if/else if/else statements",
-              "switch statements",
-              "Ternary operator and nested conditionals"
+              "if/else if/else",
+              "switch",
+              "ternary",
+              "nested conditionals",
+              "applying to Shopping Cart"
             ]
           },
           {
             "title": "Loops",
             "hours": 3,
             "topics": [
-              "for, while, do-while loops",
-              "break and continue",
-              "Nested loops"
+              "for",
+              "while",
+              "do-while",
+              "break",
+              "continue",
+              "nested loops",
+              "applying to Shopping Cart"
             ]
           },
           {
-            "title": "Lab: Text Adventure Through Loops",
+            "title": "Lab — Text Adventure Through Loops",
             "hours": 2,
             "topics": [
-              "Interactive text-based adventure game",
-              "Combining decisions and loops"
+              "interactive text-based adventure combining decisions and loops"
             ]
           }
         ]
@@ -6289,9 +6314,12 @@ const courseOutlines = {
             "title": "Arrays",
             "hours": 4,
             "topics": [
-              "Array declaration and initialization",
-              "Accessing elements, iteration",
-              "Common array operations (search, sort)"
+              "declaration",
+              "initialization",
+              "indexing",
+              "iteration (for + enhanced for)",
+              "common operations",
+              "applying to Shopping Cart"
             ]
           }
         ]
@@ -6305,34 +6333,40 @@ const courseOutlines = {
             "title": "Methods",
             "hours": 4,
             "topics": [
-              "Defining and calling methods",
-              "Parameters and return types",
-              "Method overloading and scope"
+              "defining/calling",
+              "parameters",
+              "return types",
+              "overloading",
+              "scope",
+              "applying to Shopping Cart"
             ]
           }
         ]
       },
       {
         "name": "Testing and Debugging",
-        "hours": 6,
-        "description": "Manual testing techniques and debugging tools.",
+        "hours": 4,
+        "description": "Manual testing techniques and the IntelliJ debugger.",
         "lessons": [
           {
             "title": "Manual Unit Testing",
-            "hours": 3,
+            "hours": 2,
             "topics": [
-              "What is unit testing?",
-              "Writing manual test cases",
-              "Test planning and strategies"
+              "what unit testing is",
+              "writing test cases",
+              "expected vs actual",
+              "planning"
             ]
           },
           {
             "title": "Debugging",
-            "hours": 3,
+            "hours": 2,
             "topics": [
-              "Common Java errors and stack traces",
-              "IntelliJ debugger (breakpoints, stepping)",
-              "Systematic debugging approach"
+              "common Java errors",
+              "reading stack traces",
+              "IntelliJ debugger (breakpoints",
+              "stepping",
+              "watches)"
             ]
           }
         ]
@@ -6346,9 +6380,13 @@ const courseOutlines = {
             "title": "Exceptions",
             "hours": 4,
             "topics": [
-              "Try-catch blocks",
-              "Common exception types",
-              "Throwing exceptions"
+              "what exceptions are",
+              "try/catch",
+              "common exception types (NullPointerException",
+              "ArrayIndexOutOfBoundsException",
+              "etc.)",
+              "throwing exceptions",
+              "applying to Shopping Cart"
             ]
           }
         ]
@@ -6356,15 +6394,18 @@ const courseOutlines = {
       {
         "name": "Capstone Lab — Complete Text Adventure",
         "hours": 4,
-        "description": "Integrating all course concepts into a comprehensive application.",
+        "description": "Integrating all course concepts into a comprehensive application. Builds on the Module 6 Text Adventure mid-course lab.",
         "lessons": [
           {
             "title": "Text Adventure Complete",
             "hours": 4,
             "topics": [
-              "Integrating arrays, methods, exceptions, flow control",
-              "Complete application design",
-              "Code review and refactoring"
+              "building the complete text adventure",
+              "integrating arrays",
+              "methods",
+              "exceptions",
+              "and flow control",
+              "code review and refactoring"
             ]
           }
         ]
@@ -6374,9 +6415,9 @@ const courseOutlines = {
       "title": "Capstone Assessment: Storage Lockers",
       "hours": 4,
       "items": [
-        "Comprehensive summative assessment",
-        "Combines all 11 modules",
-        "Demonstrates single source file Java programming"
+        "Comprehensive summative assessment combining all 11 modules",
+        "Single-source-file Java application",
+        "Rubric: rubric-java-language-fundamentals-storage-lockers-app.md"
       ]
     }
   },
