@@ -901,9 +901,9 @@ const courseData = [
     },
     "syllabus": null,
     "outline": "Course Outline: Web Development with JavaScript",
-    "note": null,
+    "note": "Pre-design-doc-workflow course; source content lives in Drive folder. Tracking outline JSON (web-dev-javascript-react.json) and syllabus HTML reconstructed from source — 40h / 8 modules / 17 lessons. No working folder or design-doc folder yet (no Phase 0 reconciliation done). Used in OSS Course 9, Area 3.",
     "driveFolder": "https://drive.google.com/drive/folders/1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv",
-    "statusConfirmed": false
+    "statusConfirmed": true
   }
 ];
 
