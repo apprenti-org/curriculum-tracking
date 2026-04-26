@@ -1,70 +1,114 @@
 {
   "course": "Python Basics",
   "totalHours": 48,
-  "totalLessons": 14,
-  "totalModules": 6,
+  "totalLessons": 10,
+  "totalModules": 9,
+  "_note": "Structure synced to apprenti-org/design-documentation:course-design/python-basics/course-outline-python-basics.md (9 modules / 10 lessons). Per-module and per-lesson hours are TBD pending the hours discrepancy resolution (see apprenti-org/design-documentation#83) and content extraction (apprenti-org/design-documentation#90). totalHours: 48 reflects the OSS curriculum target (Course 6, Area 3); the upstream syllabus states 40h.",
   "modules": [
     {
       "name": "Introduction to Python",
-      "hours": 8,
-      "description": "Setting up the Python development environment and writing first programs.",
+      "hours": null,
       "lessons": [
-        { "title": "Course Introduction & Python Overview", "hours": 2, "topics": ["Course structure and expectations", "What is Python and why learn it?", "Python in software development"] },
-        { "title": "Setting Up the Development Environment", "hours": 3, "topics": ["Installing Python and package managers", "Installing VS Code for Python", "Configuring VS Code extensions"] },
-        { "title": "First Python Programs", "hours": 3, "topics": ["Writing and running Python scripts", "Basic calculator demo", "Modules and packages", "Using Git with Python"] }
+        {
+          "title": "Introduction to Python",
+          "hours": null,
+          "topics": [
+            "Python overview, key features, history",
+            "PEPs and PEP8"
+          ]
+        }
       ]
     },
     {
-      "name": "Variables and String Manipulation",
-      "hours": 8,
-      "description": "Working with variables, data types, user input, and string operations.",
+      "name": "Variables, Inputs, and String Manipulation",
+      "hours": null,
       "lessons": [
-        { "title": "Variables and Data Types", "hours": 4, "topics": ["Variable declaration and assignment", "Data types: int, float, str, bool", "Type conversion and casting", "Naming conventions"] },
-        { "title": "User Input and String Manipulation", "hours": 4, "topics": ["The input() function", "String indexing and slicing", "String methods", "String formatting with f-strings"] }
+        {
+          "title": "Variables and Strings in Python",
+          "hours": null,
+          "topics": []
+        }
       ]
     },
     {
-      "name": "Collections in Python",
-      "hours": 10,
-      "description": "Understanding and manipulating Python core data structures.",
+      "name": "Arrays and Flow Control",
+      "hours": null,
       "lessons": [
-        { "title": "Arrays and Lists", "hours": 4, "topics": ["Arrays in Python", "Lists: creation, indexing, slicing", "List methods and comprehensions"] },
-        { "title": "Tuples, Sets, and Dictionaries", "hours": 4, "topics": ["Tuples: immutability and use cases", "Sets: uniqueness and operations", "Dictionaries: key-value pairs", "Choosing the right collection"] },
-        { "title": "Collections Practice", "hours": 2, "topics": ["Nested collections", "Combining lists and tuples", "Data manipulation with sets and dictionaries"] }
+        {
+          "title": "Arrays in Python",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Lists in Python",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Pseudocode",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Flowcharting",
+          "hours": null,
+          "topics": []
+        }
       ]
     },
     {
-      "name": "Flow Control in Python",
-      "hours": 6,
-      "description": "Pseudocode, flowcharts, and control flow structures.",
+      "name": "Functions",
+      "hours": null,
       "lessons": [
-        { "title": "Pseudocode and Flowcharts", "hours": 2, "topics": ["Writing pseudocode", "Converting pseudocode to flowcharts", "Problem decomposition"] },
-        { "title": "Flow Control Structures", "hours": 4, "topics": ["Conditional statements (if, elif, else)", "Loops: for and while", "Loop control: break, continue, pass", "Nested control structures"] }
+        {
+          "title": "Functions",
+          "hours": null,
+          "topics": []
+        }
       ]
     },
     {
-      "name": "Functions and File I/O",
-      "hours": 10,
-      "description": "Code modularity through functions, exception handling, and file operations.",
+      "name": "Lists, Tuples, Sets and Dictionaries",
+      "hours": null,
       "lessons": [
-        { "title": "Functions", "hours": 4, "topics": ["Defining and calling functions", "Parameters, arguments, return values", "Default and keyword arguments", "Scope and variable lifetime"] },
-        { "title": "Exception Handling", "hours": 2, "topics": ["Try/except blocks", "Common exception types", "Raising exceptions", "Error handling best practices"] },
-        { "title": "File Input/Output", "hours": 4, "topics": ["Reading and writing text files", "File modes (read, write, append)", "Working with file paths", "Context managers (with statement)"] }
+        {
+          "title": "Lists, Tuples, Sets and Dictionaries",
+          "hours": null,
+          "topics": []
+        }
       ]
     },
     {
-      "name": "Testing Python",
-      "hours": 6,
-      "description": "Software testing concepts and Python testing tools.",
+      "name": "File IO",
+      "hours": null,
       "lessons": [
-        { "title": "Testing in Python", "hours": 4, "topics": ["Why testing matters", "Unit testing with unittest", "Writing test cases", "Test-driven development basics"] },
-        { "title": "Practice Lab: Tournament Tracker", "hours": 2, "topics": ["Integrated lab combining all concepts", "Building a complete Python application", "Applying testing to a real project"] }
+        {
+          "title": "File IO",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Python in Practice (Practice Lab)",
+      "hours": null,
+      "lessons": []
+    },
+    {
+      "name": "Summative Assessment",
+      "hours": null,
+      "lessons": []
+    },
+    {
+      "name": "Testing in Python",
+      "hours": null,
+      "lessons": [
+        {
+          "title": "Testing in Python",
+          "hours": null,
+          "topics": []
+        }
       ]
     }
-  ],
-  "assessment": {
-    "title": "Summative Assessments",
-    "hours": 4,
-    "items": ["Study Log Tracker (primary assessment)", "Python Mini-Project: Collections Tracker", "Python Mini-Project: Student Grade Tracker"]
-  }
+  ]
 }
