@@ -54,7 +54,9 @@ Advanced Python, Agile Project Management with Scrum, ASP.NET, Business Analysis
 
 The data follows this hierarchy: Curriculum → Group (optional) → Course → Module → Lesson. Courses can belong to multiple curricula with per-deployment hour overrides.
 
-Each course entry in `courses.json` includes name, hours, design/development status, syllabus reference, outline reference, note, and driveFolder (Google Drive source folder URL). The `courseOutlines` object (built from individual JSON files in `outlines/`) holds detailed outline data — modules, lessons, topics, and hours — for courses that have been fully ingested.
+Each course entry in `courses.json` includes name, hours, design/development status, syllabus reference, outline reference, note, driveFolder (Google Drive source folder URL), `sourceRepo` (optional, set when the course is in `apprenti-org/design-documentation`), and `statusConfirmed` (boolean — `true` once the course record has been audited and confirmed accurate; surfaces the dashboard's yield-sign "status not yet audited" badge when `false`). The `courseOutlines` object (built from individual JSON files in `outlines/`) holds detailed outline data — modules, lessons, topics, and hours — for courses that have been fully ingested.
+
+**Per-curriculum hour overrides:** A course can be delivered at different lengths in different curricula via `hoursOverride` in the curriculum-group reference (e.g. `java-language-fundamentals` defaults to 56h but is delivered at 40h in OSS). The course detail panel computes the range from the default + each override and renders `40–56 hours (varies by curriculum)` when there's variance, with a per-curriculum membership breakdown showing which curriculum uses which value. See `js/dashboard/detail-panel.js` `renderHoursMeta()` and `renderMembershipTags()`.
 
 ## JSON data files
 
@@ -141,6 +143,9 @@ Design and development status fields use these values: "Not Started", "Scoping",
 - Collapsible group subheaders within curricula
 - Course status dots (green check = outline loaded, gray circle = pending)
 - Course detail panel with metadata, membership tags, document refs, and full outline
+- **Hours range pill** — when a course is delivered at different lengths in different curricula via `hoursOverride`, the detail header shows the range (e.g. `40–56 hours (varies by curriculum)`) instead of a single value
+- **Per-curriculum hours breakdown** — each membership tag in the detail panel displays the hours for that specific curriculum (e.g. OSS @ 40h, SWD Java @ 56h)
+- **`statusConfirmed` badge** — courses with `statusConfirmed: false` show a yellow yield-sign badge ("status not yet audited") next to the course name; the badge disappears once an audit has confirmed the tracking record matches reality (see Curriculum Tracking Audit Process in the workspace CLAUDE.md)
 - Expandable module/lesson/topic hierarchy in outline view
 - Curriculum/group membership display on course detail
 - Syllabus links (HTML pages or Google Docs) with clean labels
