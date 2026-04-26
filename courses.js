@@ -152,9 +152,9 @@ const courseData = [
     },
     "syllabus": null,
     "outline": null,
-    "note": "Net New",
+    "note": "OSS Course 11, Area 3 — net-new course covering CI/CD pipeline architecture, automated testing and deployment. 10h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #84).",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "cloud-fundamentals",
@@ -180,9 +180,9 @@ const courseData = [
     },
     "syllabus": null,
     "outline": null,
-    "note": "Existing Content",
+    "note": "OSS Course 14, Area 4 — existing content to be migrated/refined for OSS Security & Professional Skills area. 4h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #86).",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "comptia-a-plus",
@@ -320,9 +320,9 @@ const courseData = [
     },
     "syllabus": null,
     "outline": null,
-    "note": "Net New",
+    "note": "OSS Course 12, Area 3 — net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #85).",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "instructor-onboarding",
@@ -691,7 +691,7 @@ const courseData = [
     "note": "OSS Area 4 (S&PS). 4h, 2 modules, 4 lessons + integrated capstone. Excel and PowerPoint for technical reporting. Design + content complete (design-documentation PRs #46, #48, #54, #58, #59). Ready for SCORM packaging.",
     "driveFolder": null,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "professional-communication",
@@ -703,9 +703,9 @@ const courseData = [
     },
     "syllabus": null,
     "outline": null,
-    "note": "Extract from CompTIA A+",
+    "note": "OSS Course 17, Area 4 — content to be extracted from CompTIA A+ for OSS Security & Professional Skills area. 4h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #88).",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "python-basics",
@@ -845,9 +845,9 @@ const courseData = [
     },
     "syllabus": null,
     "outline": null,
-    "note": "Reduce from SQL for Data",
+    "note": "OSS Course 10, Area 3 — net-new course, to be authored as a slim variant of SQL for Data (existing 'Reduce from SQL for Data' note). 24h matches the standard's SQL minimum. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #83).",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "student-onboarding",
@@ -873,9 +873,9 @@ const courseData = [
     },
     "syllabus": null,
     "outline": null,
-    "note": "Net New",
+    "note": "OSS Course 15, Area 4 — net-new microcourse covering technical documentation standards. 4h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #87).",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "troubleshooting-supporting-in-an-enterprise-environment",
