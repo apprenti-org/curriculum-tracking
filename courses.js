@@ -735,18 +735,19 @@ const courseData = [
     "statusConfirmed": false
   },
   {
-    "id": "python-for-infrastructure-automation",
+    "id": "python-infrastructure-automation",
     "name": "Python for Infrastructure Automation",
     "hours": 32,
     "status": {
-      "design": "Not Started",
-      "development": "Not Started"
+      "design": "Complete",
+      "development": "Complete"
     },
-    "syllabus": null,
-    "outline": null,
-    "note": "Net New",
+    "syllabus": "python-infrastructure-automation",
+    "outline": true,
+    "note": "OSS Area 3 (Programming, Automation & CI/CD). 32h, 5 modules, 15 lessons + 2h capstone. Net-new course designed from scratch against DOL A-28 standard. Phase 3 content production complete — all 15 lessons authored, alignment-passing, SCORM-packaged, and deployed (95 PDFs + 15 SCORM zips in deploy tree). Meta-issue #101; sub-issues #103, #129, #134, #144, #149, #152, #155, #156 all closed.",
     "driveFolder": null,
-    "statusConfirmed": false
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": true
   },
   {
     "id": "react",
@@ -1011,7 +1012,7 @@ const curriculaData = [
       },
       {
         "name": "Python for Infrastructure Automation",
-        "id": "python-for-infrastructure-automation"
+        "id": "python-infrastructure-automation"
       }
     ]
   },
@@ -1110,7 +1111,7 @@ const curriculaData = [
           },
           {
             "name": "Python for Infrastructure Automation",
-            "id": "python-for-infrastructure-automation"
+            "id": "python-infrastructure-automation"
           },
           {
             "name": "Java Language Fundamentals",

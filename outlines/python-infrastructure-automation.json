@@ -1,0 +1,262 @@
+{
+  "course": "python-infrastructure-automation",
+  "totalHours": 32,
+  "totalModules": 5,
+  "totalLessons": 15,
+  "modules": [
+    {
+      "name": "Python for Systems Administration",
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "File and System Operations",
+          "hours": 2,
+          "topics": [
+            "File I/O: text, binary, and context managers",
+            "Directory and path operations with `pathlib`",
+            "Reading environment variables with `os.environ`",
+            "`subprocess` for shelling out safely *(OJL 3a)*",
+            "Pair coding: directory-audit script using `pathlib` + `subprocess`"
+          ],
+          "objects": [
+            "Object: Lesson: File and System Operations",
+            "Assessment: Quiz: File and System Operations"
+          ]
+        },
+        {
+          "title": "Regular Expressions and Text Processing",
+          "hours": 2,
+          "topics": [
+            "`re` module basics: `match`, `search`, `findall`, `finditer`, `sub`",
+            "Pattern construction: anchors, groups, quantifiers",
+            "Named groups and `finditer` for parsing structured log data",
+            "Log-file analysis end-to-end",
+            "Individual: write a log analyzer extracting per-status-code counts and top client IPs"
+          ],
+          "objects": [
+            "Object: Lesson: Regular Expressions and Text Processing",
+            "Assessment: Quiz: Regular Expressions and Text Processing"
+          ]
+        },
+        {
+          "title": "Network Programming Basics",
+          "hours": 2,
+          "topics": [
+            "Sockets primer: TCP vs UDP, address families",
+            "HTTP with the `requests` library",
+            "Headers, JSON, authentication, timeouts",
+            "Network-diagnostic scripts",
+            "Individual: URL health checker handling timeouts and connection errors"
+          ],
+          "objects": [
+            "Object: Lesson: Network Programming Basics",
+            "Assessment: Quiz: Network Programming Basics"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure Automation Scripts",
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "Configuration Management Scripts",
+          "hours": 2,
+          "topics": [
+            "Parsing JSON, YAML, INI",
+            "Config validation with `jsonschema`",
+            "Bulk apply across hosts idempotently *(OJL 3e)*",
+            "Environment-specific overrides through layering",
+            "Pair coding: inventory-apply script with `--dry-run` default"
+          ],
+          "objects": [
+            "Object: Lesson: Configuration Management Scripts",
+            "Assessment: Quiz: Configuration Management Scripts"
+          ]
+        },
+        {
+          "title": "Monitoring and Alerting Scripts",
+          "hours": 2,
+          "topics": [
+            "System metrics with `psutil`",
+            "Health-check patterns: timeouts, retries, failure criteria",
+            "Alert dispatching: webhooks, SMTP, Slack",
+            "Monitoring workflow integration with thresholds and noise control",
+            "Individual: disk-usage monitor with webhook alert and alert deduplication"
+          ],
+          "objects": [
+            "Object: Lesson: Monitoring and Alerting Scripts",
+            "Assessment: Quiz: Monitoring and Alerting Scripts"
+          ]
+        },
+        {
+          "title": "Backup and Disaster Recovery Automation",
+          "hours": 2,
+          "topics": [
+            "Backup patterns: files, databases, cloud resources *(OJL 3a)*",
+            "Scheduling with cron and systemd timers",
+            "Restore-test automation *(OJL 4e)*",
+            "DR runbooks in Python",
+            "Individual: backup-and-verify script with SHA256 checksum validation"
+          ],
+          "objects": [
+            "Object: Lesson: Backup and Disaster Recovery Automation",
+            "Assessment: Quiz: Backup and Disaster Recovery Automation"
+          ]
+        },
+        {
+          "title": "Deployment and Provisioning Scripts",
+          "hours": 2,
+          "topics": [
+            "Provisioning automation *(OJL 3e)*",
+            "Application deployment scripts",
+            "Rolling-update and zero-downtime patterns",
+            "Rollback strategies",
+            "Pair coding: deploy + rollback script using a symlinked \"current\" release directory"
+          ],
+          "objects": [
+            "Object: Lesson: Deployment and Provisioning Scripts",
+            "Assessment: Quiz: Deployment and Provisioning Scripts"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Working with APIs and Cloud Platforms",
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "RESTful APIs and Cloud SDKs",
+          "hours": 2,
+          "topics": [
+            "`boto3` fundamentals for AWS",
+            "Azure SDK and GCP SDK parity examples",
+            "Credentials: env vars, IAM roles, profiles",
+            "Pagination, retries, rate limits",
+            "Individual: S3 inventory report using `boto3` paginators"
+          ],
+          "objects": [
+            "Object: Lesson: RESTful APIs and Cloud SDKs",
+            "Assessment: Quiz: RESTful APIs and Cloud SDKs"
+          ]
+        },
+        {
+          "title": "Infrastructure as Code with Python",
+          "hours": 2,
+          "topics": [
+            "IaC concepts: Pulumi vs Terraform vs CDK",
+            "Pulumi Python resources: S3, IAM, EC2",
+            "Stacks and state management",
+            "Preview → up → destroy workflow",
+            "Individual: mini Pulumi stack with S3 bucket and restricted IAM policy"
+          ],
+          "objects": [
+            "Object: Lesson: Infrastructure as Code with Python",
+            "Assessment: Quiz: Infrastructure as Code with Python"
+          ]
+        },
+        {
+          "title": "Monitoring and Logging Integration",
+          "hours": 2,
+          "topics": [
+            "Custom metrics: CloudWatch and Azure Monitor",
+            "Log aggregation patterns",
+            "Structured logging: JSON, levels, correlation IDs",
+            "Dashboards and alarms programmatically",
+            "Individual: emit a custom CloudWatch metric and attach an alarm"
+          ],
+          "objects": [
+            "Object: Lesson: Monitoring and Logging Integration",
+            "Assessment: Quiz: Monitoring and Logging Integration"
+          ]
+        },
+        {
+          "title": "Continuous Integration with Python",
+          "hours": 2,
+          "topics": [
+            "`pytest` basics for automation scripts",
+            "Project structure: packages, dependencies, lock files",
+            "GitHub Actions pipeline",
+            "Deploy gates and environment approvals",
+            "Pair coding: wire `pytest` into a GitHub Actions workflow using mocks for external calls"
+          ],
+          "objects": [
+            "Object: Lesson: Continuous Integration with Python",
+            "Assessment: Quiz: Continuous Integration with Python"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Advanced Automation and Best Practices",
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "Error Handling and Resilience",
+          "hours": 2,
+          "topics": [
+            "Retry with exponential backoff using `tenacity`",
+            "Circuit-breaker pattern",
+            "Graceful degradation strategies",
+            "Error logging with diagnostic context",
+            "Individual: wrap an API call with `tenacity` retries and a circuit breaker"
+          ],
+          "objects": [
+            "Object: Lesson: Error Handling and Resilience",
+            "Assessment: Quiz: Error Handling and Resilience"
+          ]
+        },
+        {
+          "title": "Concurrency and Parallel Processing",
+          "hours": 2,
+          "topics": [
+            "When to use what: GIL, I/O vs CPU-bound workloads",
+            "Threading and `concurrent.futures`",
+            "Multiprocessing",
+            "Asyncio and `aiohttp`",
+            "Individual: fetch 100 URLs three ways (sequential, threaded, asyncio) and compare"
+          ],
+          "objects": [
+            "Object: Lesson: Concurrency and Parallel Processing",
+            "Assessment: Quiz: Concurrency and Parallel Processing"
+          ]
+        },
+        {
+          "title": "Security and Secret Management",
+          "hours": 2,
+          "topics": [
+            "Secrets manager patterns: AWS Secrets Manager, HashiCorp Vault",
+            "Encryption at rest with the `cryptography` library",
+            "Credential hygiene in scripts",
+            "Security audit checklist",
+            "Individual: secret-backed API call verifying the key never leaks to logs"
+          ],
+          "objects": [
+            "Object: Lesson: Security and Secret Management",
+            "Assessment: Quiz: Security and Secret Management"
+          ]
+        },
+        {
+          "title": "Production Automation Patterns",
+          "hours": 2,
+          "topics": [
+            "Structured logging patterns",
+            "Distributed tracing with OpenTelemetry",
+            "Documentation conventions: runbooks, help flags, exit codes",
+            "Profiling automation performance",
+            "Individual: instrument an existing script with logs, spans, and a profiler run"
+          ],
+          "objects": [
+            "Object: Lesson: Production Automation Patterns",
+            "Assessment: Quiz: Production Automation Patterns"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Capstone Project",
+      "hours": 2,
+      "lessons": []
+    }
+  ]
+}
