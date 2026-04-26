@@ -1,7 +1,7 @@
 /**
  * Dashboard detail panel — renders course header, refs, status, membership
  * Depends on: courseOutlines (from outlines/outlines.js)
- *             courseLookup, curriculumMap (from nav-builder.js)
+ *             courseLookup, membershipMap (from shared/data-store.js)
  *             courseStatusMap (from courses.js)
  *             syllabiMap, gapAnalysisMap, GAP_ANALYSIS_DRIVE_FOLDER (from shared/constants.js)
  *             renderOutline, renderNoOutline (from outline-renderer.js)
@@ -29,7 +29,7 @@ function selectCourse(el) {
     html += '<div class="detail-header">';
     html += '<h2>' + courseName + '</h2>';
     html += '<div class="detail-meta">';
-    if (course.hours) html += '<span class="detail-meta-item"><i class="fa-regular fa-clock" style="opacity:0.6;"></i> <strong>' + course.hours + '</strong>&nbsp;hours</span>';
+    html += renderHoursMeta(course, courseName);
     if (outlineData) {
         html += '<span class="detail-meta-item"><i class="fa-solid fa-cubes" style="opacity:0.6;"></i> ' + outlineData.totalModules + ' modules</span>';
         html += '<span class="detail-meta-item"><i class="fa-solid fa-file-lines" style="opacity:0.6;"></i> ' + outlineData.totalLessons + ' lessons</span>';
@@ -59,29 +59,44 @@ function selectCourse(el) {
 
 }
 
-/** Render curriculum/group membership tags */
+/** Render curriculum/group membership tags with per-curriculum hours */
 function renderMembershipTags(courseName) {
-    var memberships = [];
-    Object.keys(curriculumMap).forEach(function(curName) {
-        var currentGroup = null;
-        curriculumMap[curName].items.forEach(function(item) {
-            if (item._group) { currentGroup = item._group; }
-            else if (item._name === courseName) {
-                memberships.push({ curriculum: curName, group: currentGroup });
-            }
-        });
-    });
+    var course = courseLookup[courseName] || {};
+    var key = course.id || courseName;
+    var memberships = (typeof membershipMap !== 'undefined' && membershipMap[key]) || [];
 
     if (!memberships.length) return '';
 
     var html = '<div class="detail-membership">';
     memberships.forEach(function(m) {
+        var hoursForCurriculum = m.hoursOverride || course.hours || null;
         html += '<div class="membership-tag"><i class="fa-solid fa-layer-group" style="font-size:10px;opacity:0.6;"></i> <span class="membership-curriculum">' + m.curriculum + '</span>';
         if (m.group) html += ' <i class="fa-solid fa-chevron-right" style="font-size:8px;opacity:0.4;margin:0 4px;"></i> <span class="membership-group">' + m.group + '</span>';
+        if (hoursForCurriculum) html += ' <span class="membership-hours" style="opacity:0.7;font-size:11px;margin-left:6px;"><i class="fa-regular fa-clock" style="font-size:10px;opacity:0.5;margin-right:2px;"></i>' + hoursForCurriculum + 'h</span>';
         html += '</div>';
     });
     html += '</div>';
     return html;
+}
+
+/** Render the hours metadata pill — single value, or "min–max hours (varies by curriculum)" */
+function renderHoursMeta(course, courseName) {
+    if (!course.hours) return '';
+    var key = course.id || courseName;
+    var memberships = (typeof membershipMap !== 'undefined' && membershipMap[key]) || [];
+
+    var distinct = {};
+    distinct[course.hours] = true;
+    memberships.forEach(function(m) {
+        if (m.hoursOverride) distinct[m.hoursOverride] = true;
+    });
+    var values = Object.keys(distinct).map(Number).sort(function(a, b) { return a - b; });
+
+    if (values.length <= 1) {
+        return '<span class="detail-meta-item"><i class="fa-regular fa-clock" style="opacity:0.6;"></i> <strong>' + course.hours + '</strong>&nbsp;hours</span>';
+    }
+
+    return '<span class="detail-meta-item"><i class="fa-regular fa-clock" style="opacity:0.6;"></i> <strong>' + values[0] + '–' + values[values.length - 1] + '</strong>&nbsp;hours <span style="opacity:0.6;font-size:11px;">(varies by curriculum)</span></span>';
 }
 
 /** Render syllabus / outline / Drive links */
