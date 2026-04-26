@@ -491,9 +491,10 @@ const courseData = [
     },
     "syllabus": "Syllabus: Curriculum Software Development Java",
     "outline": "Course Outline: Java Language Fundamentals",
-    "note": null,
+    "note": "56h default (used by Software Developer Java); 40h variant for OSS via hoursOverride. Design-doc folder present in apprenti-org/design-documentation (course-outline + lessons + source mirror + standard-alignment); source migration #179 completed 2026-04-25 (117 source files mirrored). Used in OSS Course 8, Area 3 and Software Developer Java curriculum. No SCORM/PDFs yet — Phase 3 development not started.",
     "driveFolder": "https://drive.google.com/drive/folders/1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK",
-    "statusConfirmed": false
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": true
   },
   {
     "id": "java-oop",
