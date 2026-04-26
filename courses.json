@@ -150,9 +150,9 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "Net New",
+      "note": "OSS Course 11, Area 3 \u2014 net-new course covering CI/CD pipeline architecture, automated testing and deployment. 10h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #84).",
       "driveFolder": null,
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "cloud-fundamentals",
@@ -178,9 +178,9 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "Existing Content",
+      "note": "OSS Course 14, Area 4 \u2014 existing content to be migrated/refined for OSS Security & Professional Skills area. 4h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #86).",
       "driveFolder": null,
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "comptia-a-plus",
@@ -318,9 +318,9 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "Net New",
+      "note": "OSS Course 12, Area 3 \u2014 net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #85).",
       "driveFolder": null,
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "instructor-onboarding",
@@ -489,7 +489,7 @@
       },
       "syllabus": "Syllabus: Curriculum Software Development Java",
       "outline": "Course Outline: Java Language Fundamentals",
-      "note": "56h default (used by Software Developer Java); 40h variant for OSS via hoursOverride. Design-doc folder present in apprenti-org/design-documentation (course-outline + lessons + source mirror + standard-alignment); source migration #179 completed 2026-04-25 (117 source files mirrored). Used in OSS Course 8, Area 3 and Software Developer Java curriculum. No SCORM/PDFs yet — Phase 3 development not started.",
+      "note": "56h default (used by Software Developer Java); 40h variant for OSS via hoursOverride. Design-doc folder present in apprenti-org/design-documentation (course-outline + lessons + source mirror + standard-alignment); source migration #179 completed 2026-04-25 (117 source files mirrored). Used in OSS Course 8, Area 3 and Software Developer Java curriculum. No SCORM/PDFs yet \u2014 Phase 3 development not started.",
       "driveFolder": "https://drive.google.com/drive/folders/1WsYJI5dqg9t__bmSmUCb2qCY7ywV-SwK",
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -689,7 +689,7 @@
       "note": "OSS Area 4 (S&PS). 4h, 2 modules, 4 lessons + integrated capstone. Excel and PowerPoint for technical reporting. Design + content complete (design-documentation PRs #46, #48, #54, #58, #59). Ready for SCORM packaging.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "professional-communication",
@@ -701,9 +701,9 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "Extract from CompTIA A+",
+      "note": "OSS Course 17, Area 4 \u2014 content to be extracted from CompTIA A+ for OSS Security & Professional Skills area. 4h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #88).",
       "driveFolder": null,
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "python-basics",
@@ -744,7 +744,7 @@
       },
       "syllabus": "python-infrastructure-automation",
       "outline": true,
-      "note": "OSS Area 3 (Programming, Automation & CI/CD). 32h, 5 modules, 15 lessons + 2h capstone. Net-new course designed from scratch against DOL A-28 standard. Phase 3 content production complete — all 15 lessons authored, alignment-passing, SCORM-packaged, and deployed (95 PDFs + 15 SCORM zips in deploy tree). Meta-issue #101; sub-issues #103, #129, #134, #144, #149, #152, #155, #156 all closed.",
+      "note": "OSS Area 3 (Programming, Automation & CI/CD). 32h, 5 modules, 15 lessons + 2h capstone. Net-new course designed from scratch against DOL A-28 standard. Phase 3 content production complete \u2014 all 15 lessons authored, alignment-passing, SCORM-packaged, and deployed (95 PDFs + 15 SCORM zips in deploy tree). Meta-issue #101; sub-issues #103, #129, #134, #144, #149, #152, #155, #156 all closed.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -843,9 +843,9 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "Reduce from SQL for Data",
+      "note": "OSS Course 10, Area 3 \u2014 net-new course, to be authored as a slim variant of SQL for Data (existing 'Reduce from SQL for Data' note). 24h matches the standard's SQL minimum. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #83).",
       "driveFolder": null,
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "student-onboarding",
@@ -871,9 +871,9 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "Net New",
+      "note": "OSS Course 15, Area 4 \u2014 net-new microcourse covering technical documentation standards. 4h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #87).",
       "driveFolder": null,
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "troubleshooting-supporting-in-an-enterprise-environment",
@@ -899,7 +899,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Web Development with JavaScript",
-      "note": "Pre-design-doc-workflow course; source content lives in Drive folder. Tracking outline JSON (web-dev-javascript-react.json) and syllabus HTML reconstructed from source — 40h / 8 modules / 17 lessons. No working folder or design-doc folder yet (no Phase 0 reconciliation done). Used in OSS Course 9, Area 3.",
+      "note": "Pre-design-doc-workflow course; source content lives in Drive folder. Tracking outline JSON (web-dev-javascript-react.json) and syllabus HTML reconstructed from source \u2014 40h / 8 modules / 17 lessons. No working folder or design-doc folder yet (no Phase 0 reconciliation done). Used in OSS Course 9, Area 3.",
       "driveFolder": "https://drive.google.com/drive/folders/1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv",
       "statusConfirmed": true
     }
