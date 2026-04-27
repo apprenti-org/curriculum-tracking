@@ -2,7 +2,7 @@
   "course": "CI/CD Pipeline Concepts",
   "totalHours": 10,
   "totalModules": 3,
-  "totalLessons": 8,
+  "totalLessons": 9,
   "modules": [
     {
       "name": "CI/CD pipeline concepts and tooling",
@@ -21,6 +21,7 @@
           ],
           "objects": [
             "Object: Lesson: CI/CD Fundamentals and Version Control for CI",
+            "SCORM: Interactive — CI/CD Fundamentals and Version Control for CI",
             "Assessment: Quiz: CI/CD Fundamentals and Version Control for CI"
           ]
         },
@@ -36,6 +37,7 @@
           ],
           "objects": [
             "Object: Lesson: Introduction to GitHub Actions",
+            "SCORM: Interactive — Introduction to GitHub Actions",
             "Assessment: Quiz: Introduction to GitHub Actions"
           ]
         },
@@ -51,6 +53,7 @@
           ],
           "objects": [
             "Object: Lesson: Build Automation and Automated Testing as a CI Step",
+            "SCORM: Interactive — Build Automation and Automated Testing as a CI Step",
             "Assessment: Quiz: Build Automation and Automated Testing as a CI Step"
           ]
         }
@@ -73,6 +76,7 @@
           ],
           "objects": [
             "Object: Lesson: Multi-Stage Pipelines",
+            "SCORM: Interactive — Multi-Stage Pipelines",
             "Assessment: Quiz: Multi-Stage Pipelines"
           ]
         },
@@ -88,6 +92,7 @@
           ],
           "objects": [
             "Object: Lesson: Secrets, Environments, and Environment Protection",
+            "SCORM: Interactive — Secrets, Environments, and Environment Protection",
             "Assessment: Quiz: Secrets, Environments, and Environment Protection"
           ]
         },
@@ -104,6 +109,7 @@
           ],
           "objects": [
             "Object: Lesson: Monitoring and Feedback Loops",
+            "SCORM: Interactive — Monitoring and Feedback Loops",
             "Assessment: Quiz: Monitoring and Feedback Loops"
           ]
         }
@@ -126,6 +132,7 @@
           ],
           "objects": [
             "Object: Lesson: Deployment Strategies",
+            "SCORM: Interactive — Deployment Strategies",
             "Assessment: Quiz: Deployment Strategies"
           ]
         },
@@ -142,7 +149,26 @@
           ],
           "objects": [
             "Object: Lesson: Release Management",
+            "SCORM: Interactive — Release Management",
             "Assessment: Quiz: Release Management"
+          ]
+        },
+        {
+          "title": "Build a Working CI/CD Pipeline (Capstone)",
+          "hours": 1.5,
+          "topics": [
+            "Lab brief: 4-stage pipeline (lint, test, build, deploy-staging) with one environment + one secret",
+            "Phase 1: Build the 4-Stage Pipeline (35 min) — author the workflow YAML",
+            "Phase 2: Configure the staging Environment (15 min) — protection rule + secret",
+            "Phase 3: Verify and Document (20 min) — green run + README section",
+            "Stretch goal (optional): swap in a Course 7 / Course 12 codebase",
+            "Individual capstone lab: produce green end-to-end run + portfolio-grade README"
+          ],
+          "objects": [
+            "Object: Lesson: Build a Working CI/CD Pipeline (Capstone)",
+            "SCORM: Interactive — Build a Working CI/CD Pipeline (Capstone)",
+            "Assessment: Quiz: Build a Working CI/CD Pipeline (Capstone)",
+            "Object: Activity — Build a 4-Stage CI/CD Pipeline End-to-End (Capstone)"
           ]
         }
       ]
