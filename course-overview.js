@@ -357,7 +357,7 @@ var courseOverviewData = [
     "outline": {
       "exists": true,
       "modules": 4,
-      "lessons": 8
+      "lessons": 9
     },
     "syllabus": true,
     "source": {
@@ -381,7 +381,7 @@ var courseOverviewData = [
     "totalAssets": 0,
     "deployment": {
       "state": "Not Deployed",
-      "expected": 0,
+      "expected": 9,
       "actual": 0
     }
   },
