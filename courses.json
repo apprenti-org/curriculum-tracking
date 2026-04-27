@@ -145,13 +145,14 @@
       "name": "CI/CD Pipeline Concepts",
       "hours": 10,
       "status": {
-        "design": "Not Started",
-        "development": "Not Started"
+        "design": "Complete",
+        "development": "Complete"
       },
       "syllabus": null,
       "outline": null,
-      "note": "OSS Course 11, Area 3 \u2014 net-new course covering CI/CD pipeline architecture, automated testing and deployment. 10h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #84).",
+      "note": "OSS Course 11, Area 3 \u2014 GitHub-Actions-focused CI/CD course. 10h, 3 modules, 9 lessons (incl. 1.5h capstone). Design folder complete in apprenti-org/design-documentation (course outline + 8 lesson outlines + 9 lesson sources + standard alignment). Phase 3 production complete via #236: 60 production files (9 lessons \u00d7 6 artifacts + 3 module READMEs + 3 MODULE-REPORTs); 18/18 alignment passes per module; 0 permanent quarantines. Course-completion report at _COURSES Phase 1 - WORKING/courses/cicd-pipeline-concepts/_REVIEW/course-completion-report.md. Module review gates written, awaiting human sign-off. Per tracking #94.",
       "driveFolder": null,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
     },
     {
