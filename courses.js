@@ -3,6 +3,22 @@ var dashboardVersion = "0.4.2";
 
 const courseData = [
   {
+    "id": "aba-banking-foundations",
+    "name": "ABA Banking Foundations",
+    "hours": null,
+    "status": {
+      "design": "External",
+      "development": "External"
+    },
+    "external": true,
+    "provider": "American Bankers Association",
+    "syllabus": null,
+    "outline": null,
+    "note": "External provider (American Bankers Association). Course details TBD — hours, syllabus URL, and RTI area coverage to be confirmed.",
+    "driveFolder": null,
+    "statusConfirmed": false
+  },
+  {
     "id": "advanced-python",
     "name": "Advanced Python",
     "hours": null,
@@ -913,7 +929,7 @@ const curriculaData = [
     "name": "Client Technical Support Engineer",
     "groups": [
       {
-        "name": "Foundational IT & Operations",
+        "name": "Foundational IT and Operations",
         "hours": 120,
         "courses": [
           {
@@ -923,13 +939,37 @@ const curriculaData = [
         ]
       },
       {
-        "name": "Foundations of IT Service Management",
-        "hours": 42,
+        "name": "Fundamentals of IT Service Management",
+        "hours": 20,
         "courses": [
           {
+            "name": "ITIL Foundations",
+            "id": "itil-foundations"
+          }
+        ]
+      },
+      {
+        "name": "Banking Fundamentals and Customer Service",
+        "hours": null,
+        "external": true,
+        "courses": [
+          {
+            "name": "ABA Banking Foundations",
+            "id": "aba-banking-foundations"
+          }
+        ]
+      },
+      {
+        "name": "AI and Advanced Supports",
+        "hours": 36,
+        "courses": [
+          {
+            "name": "AI Foundations",
+            "id": "ai-foundations"
+          },
+          {
             "name": "Helpdesk Software Fundamentals",
-            "id": "helpdesk-software-fundamentals",
-            "hoursOverride": 13
+            "id": "helpdesk-software-fundamentals"
           }
         ]
       }

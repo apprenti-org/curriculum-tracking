@@ -1,6 +1,22 @@
 {
   "courses": [
     {
+      "id": "aba-banking-foundations",
+      "name": "ABA Banking Foundations",
+      "hours": null,
+      "status": {
+        "design": "External",
+        "development": "External"
+      },
+      "external": true,
+      "provider": "American Bankers Association",
+      "syllabus": null,
+      "outline": null,
+      "note": "External provider (American Bankers Association). Course details TBD — hours, syllabus URL, and RTI area coverage to be confirmed.",
+      "driveFolder": null,
+      "statusConfirmed": false
+    },
+    {
       "id": "advanced-python",
       "name": "Advanced Python",
       "hours": null,
@@ -910,20 +926,33 @@
       "name": "Client Technical Support Engineer",
       "groups": [
         {
-          "name": "Foundational IT & Operations",
+          "name": "Foundational IT and Operations",
           "hours": 120,
           "courses": [
             "comptia-a-plus"
           ]
         },
         {
-          "name": "Foundations of IT Service Management",
-          "hours": 42,
+          "name": "Fundamentals of IT Service Management",
+          "hours": 20,
           "courses": [
-            {
-              "id": "helpdesk-software-fundamentals",
-              "hoursOverride": 13
-            }
+            "itil-foundations"
+          ]
+        },
+        {
+          "name": "Banking Fundamentals and Customer Service",
+          "hours": null,
+          "external": true,
+          "courses": [
+            "aba-banking-foundations"
+          ]
+        },
+        {
+          "name": "AI and Advanced Supports",
+          "hours": 36,
+          "courses": [
+            "ai-foundations",
+            "helpdesk-software-fundamentals"
           ]
         }
       ]
