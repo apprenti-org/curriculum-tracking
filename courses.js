@@ -48,17 +48,17 @@ const courseData = [
   },
   {
     "id": "ai-foundations",
-    "name": "AI Foundations",
+    "name": "AI Foundations and Ethics",
     "hours": 20,
     "status": {
-      "design": "Not Started",
-      "development": "Not Started"
+      "design": "Complete",
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": null,
-    "note": "Net New",
+    "note": "20 hours. Live in Absorb LMS. Drive folder, syllabus URL, and outline reference TBD — follow-up required.",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "aspnet",
@@ -207,7 +207,7 @@ const courseData = [
     "hours": 120,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "Syllabus: Curriculum IT Support Professional",
     "outline": "Course Outline: CompTIA A+",
@@ -305,13 +305,13 @@ const courseData = [
     "hours": 16,
     "status": {
       "design": "Complete",
-      "development": "Not Started"
+      "development": "Complete"
     },
     "syllabus": "Syllabus: Helpdesk Software Fundamentals",
     "outline": "Course Outline: Helpdesk Software Fundamentals",
     "note": "Rich source content — 7 lesson docs, 7 quizzes, 6 hands-on activities, slides folder in Google Drive. Covers ITSM fundamentals, helpdesk platforms (Zendesk, Freshdesk, ServiceNow), ticket lifecycle, knowledge management, automation, reporting, and best practices.",
     "driveFolder": "https://drive.google.com/drive/folders/1vcee5L9CWraXObjJQwi2KwF-7NTGDdTJ",
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "http-services",
@@ -964,7 +964,7 @@ const curriculaData = [
         "hours": 36,
         "courses": [
           {
-            "name": "AI Foundations",
+            "name": "AI Foundations and Ethics",
             "id": "ai-foundations"
           },
           {
@@ -1179,7 +1179,7 @@ const curriculaData = [
             "id": "infrastructure-as-code-fundamentals"
           },
           {
-            "name": "AI Foundations",
+            "name": "AI Foundations and Ethics",
             "id": "ai-foundations"
           }
         ]

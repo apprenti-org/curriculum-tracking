@@ -107,7 +107,7 @@ var courseOverviewData = [
   },
   {
     "id": "ai-foundations",
-    "name": "AI Foundations",
+    "name": "AI Foundations and Ethics",
     "hours": 20,
     "outline": {
       "exists": true,
