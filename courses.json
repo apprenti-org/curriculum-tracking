@@ -46,17 +46,17 @@
     },
     {
       "id": "ai-foundations",
-      "name": "AI Foundations",
+      "name": "AI Foundations and Ethics",
       "hours": 20,
       "status": {
-        "design": "Not Started",
-        "development": "Not Started"
+        "design": "Complete",
+        "development": "Complete"
       },
       "syllabus": null,
       "outline": null,
-      "note": "Net New",
+      "note": "20 hours. Live in Absorb LMS. Drive folder, syllabus URL, and outline reference TBD — follow-up required.",
       "driveFolder": null,
-      "statusConfirmed": false
+      "statusConfirmed": true
     },
     {
       "id": "aspnet",

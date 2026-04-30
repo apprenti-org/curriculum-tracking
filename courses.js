@@ -48,17 +48,17 @@ const courseData = [
   },
   {
     "id": "ai-foundations",
-    "name": "AI Foundations",
+    "name": "AI Foundations and Ethics",
     "hours": 20,
     "status": {
-      "design": "Not Started",
-      "development": "Not Started"
+      "design": "Complete",
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": null,
-    "note": "Net New",
+    "note": "20 hours. Live in Absorb LMS. Drive folder, syllabus URL, and outline reference TBD — follow-up required.",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "aspnet",
@@ -964,7 +964,7 @@ const curriculaData = [
         "hours": 36,
         "courses": [
           {
-            "name": "AI Foundations",
+            "name": "AI Foundations and Ethics",
             "id": "ai-foundations"
           },
           {
@@ -1179,7 +1179,7 @@ const curriculaData = [
             "id": "infrastructure-as-code-fundamentals"
           },
           {
-            "name": "AI Foundations",
+            "name": "AI Foundations and Ethics",
             "id": "ai-foundations"
           }
         ]
