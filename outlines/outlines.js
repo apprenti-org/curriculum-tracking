@@ -630,6 +630,150 @@ const courseOutlines = {
       }
     ]
   },
+  "AI Foundations and Ethics": {
+    "course": "AI Foundations and Ethics",
+    "totalHours": 20,
+    "totalLessons": 12,
+    "totalModules": 4,
+    "modules": [
+      {
+        "name": "Introduction to AI and Machine Learning Fundamentals",
+        "hours": 5,
+        "description": "Introduction to artificial intelligence concepts, machine learning paradigms, and practical applications of AI in modern business environments.",
+        "lessons": [
+          {
+            "title": "What is Artificial Intelligence?",
+            "hours": 2,
+            "topics": [
+              "Historical development of AI",
+              "AI vs. machine learning vs. deep learning",
+              "Current state of AI technology"
+            ]
+          },
+          {
+            "title": "Machine Learning Basics",
+            "hours": 2,
+            "topics": [
+              "Supervised vs. unsupervised learning",
+              "Training, validation, and testing datasets",
+              "Model evaluation metrics"
+            ]
+          },
+          {
+            "title": "Real-World AI Applications",
+            "hours": 1,
+            "topics": [
+              "Use cases across industries",
+              "ROI and business impact",
+              "Ethical considerations"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Generative AI and Large Language Models",
+        "hours": 5,
+        "description": "Exploration of generative AI, large language models (LLMs), and practical applications with modern AI tools like ChatGPT and co-pilots.",
+        "lessons": [
+          {
+            "title": "What Are Large Language Models?",
+            "hours": 2,
+            "topics": [
+              "How LLMs work",
+              "Training and fine-tuning",
+              "Limitations and capabilities"
+            ]
+          },
+          {
+            "title": "Prompt Engineering",
+            "hours": 2,
+            "topics": [
+              "Effective prompt design",
+              "Best practices for interaction",
+              "Advanced prompting techniques"
+            ]
+          },
+          {
+            "title": "ChatGPT, Copilots, and AI Assistants",
+            "hours": 1,
+            "topics": [
+              "Tools and platforms overview",
+              "Practical demonstrations",
+              "Integration into workflows"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data Organization and Preparation",
+        "hours": 5,
+        "description": "Understanding data structures, data quality, and preparation techniques necessary for effective AI model training.",
+        "lessons": [
+          {
+            "title": "Data Types and Structures",
+            "hours": 2,
+            "topics": [
+              "Structured vs. unstructured data",
+              "Data formats and sources",
+              "Data collection methods"
+            ]
+          },
+          {
+            "title": "Data Quality and Cleaning",
+            "hours": 2,
+            "topics": [
+              "Identifying data issues",
+              "Preprocessing techniques",
+              "Data validation and quality assurance"
+            ]
+          },
+          {
+            "title": "Feature Engineering and Selection",
+            "hours": 1,
+            "topics": [
+              "Identifying relevant features",
+              "Data transformation techniques",
+              "Handling missing values"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "AI Tools, Ethics, and Implementation",
+        "hours": 5,
+        "description": "Practical experience with AI tools, ethical frameworks, and strategies for implementing AI solutions responsibly.",
+        "lessons": [
+          {
+            "title": "AI Tools and Platforms",
+            "hours": 2,
+            "topics": [
+              "Data science platforms",
+              "No-code/low-code AI tools",
+              "Integration capabilities"
+            ]
+          },
+          {
+            "title": "Responsible AI and Ethics",
+            "hours": 2,
+            "topics": [
+              "Bias identification and mitigation",
+              "Privacy and security considerations",
+              "Regulatory compliance"
+            ]
+          },
+          {
+            "title": "Implementing AI Solutions",
+            "hours": 1,
+            "topics": [
+              "Project planning frameworks",
+              "Implementation strategies",
+              "Measuring success"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "ASP.NET": {
     "course": "ASP.NET",
     "totalHours": null,

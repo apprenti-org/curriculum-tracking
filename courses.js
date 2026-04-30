@@ -55,7 +55,7 @@ const courseData = [
       "development": "Complete"
     },
     "syllabus": "ai-foundations",
-    "outline": null,
+    "outline": true,
     "note": "20 hours. AI fundamentals, generative AI, co-pilots, data organization, responsible AI. Live in Absorb LMS. Outline JSON not yet generated.",
     "driveFolder": "https://drive.google.com/drive/folders/1HHhZILu16sPkqu4nNC9MQwSY6bOj12pR",
     "statusConfirmed": true

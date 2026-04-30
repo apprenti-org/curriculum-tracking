@@ -10,6 +10,11 @@
     "id": "agile-project-management-with-scrum"
   },
   {
+    "file": "ai-foundations.json",
+    "course": "AI Foundations and Ethics",
+    "id": "ai-foundations"
+  },
+  {
     "file": "aspnet.json",
     "course": "ASP.NET",
     "id": "aspnet"
