@@ -52,10 +52,10 @@
         "design": "Complete",
         "development": "Complete"
       },
-      "syllabus": null,
+      "syllabus": "ai-foundations",
       "outline": null,
-      "note": "20 hours. Live in Absorb LMS. Drive folder, syllabus URL, and outline reference TBD — follow-up required.",
-      "driveFolder": null,
+      "note": "20 hours. AI fundamentals, generative AI, co-pilots, data organization, responsible AI. Live in Absorb LMS. Outline JSON not yet generated.",
+      "driveFolder": "https://drive.google.com/drive/folders/1HHhZILu16sPkqu4nNC9MQwSY6bOj12pR",
       "statusConfirmed": true
     },
     {
