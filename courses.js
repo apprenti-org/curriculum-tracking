@@ -332,12 +332,12 @@ const courseData = [
     "name": "Infrastructure as Code Fundamentals",
     "hours": 22,
     "status": {
-      "design": "Not Started",
-      "development": "Not Started"
+      "design": "Complete",
+      "development": "In Progress"
     },
     "syllabus": null,
-    "outline": null,
-    "note": "OSS Course 12, Area 3 — net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #85).",
+    "outline": "infrastructure-as-code-fundamentals",
+    "note": "OSS Course 12, Area 3 — net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h. Phase 0 reconciliation complete (apprenti-org/design-documentation#298); outline JSON registered. Phase 1 scaffolding ahead.",
     "driveFolder": null,
     "statusConfirmed": true
   },
