@@ -95,6 +95,11 @@
     "id": "http-services"
   },
   {
+    "file": "infrastructure-as-code-fundamentals.json",
+    "course": "Infrastructure as Code Fundamentals",
+    "id": "infrastructure-as-code-fundamentals"
+  },
+  {
     "file": "instructor-onboarding.json",
     "course": "Instructor Onboarding",
     "id": "instructor-onboarding"

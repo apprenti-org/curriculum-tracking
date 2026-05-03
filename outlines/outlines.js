@@ -4388,6 +4388,283 @@ const courseOutlines = {
       }
     ]
   },
+  "Infrastructure as Code Fundamentals": {
+    "course": "Infrastructure as Code Fundamentals",
+    "totalHours": 22,
+    "totalModules": 4,
+    "totalLessons": 15,
+    "modules": [
+      {
+        "name": "Infrastructure as Code fundamentals",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "What Is Infrastructure as Code?",
+            "hours": 1,
+            "topics": [
+              "The pre-IaC world: ClickOps, snowflake servers, configuration drift",
+              "IaC definition and the four properties learners will hear repeatedly: declarative, idempotent, version-controlled, reproducible",
+              "Provisioning vs. configuration management vs. orchestration — a vocabulary map",
+              "Where IaC lives in the broader DevOps lifecycle (relationship to CI/CD from Course 11)",
+              "The IaC market overview: Terraform, CloudFormation, Pulumi, Ansible, Bicep — what each is for",
+              "Individual reading + discussion: a short pre-IaC vs. post-IaC scenario; learners identify the failure modes IaC eliminates"
+            ],
+            "objects": [
+              "Object: Lesson: What Is Infrastructure as Code?",
+              "Assessment: Quiz: What Is Infrastructure as Code?"
+            ]
+          },
+          {
+            "title": "Declarative vs. Imperative, State, and Idempotency",
+            "hours": 1.5,
+            "topics": [
+              "Declarative (\"what I want\") vs. imperative (\"how to get there\") — concrete code comparisons",
+              "Idempotency: the same code applied N times produces the same end state",
+              "State: why an IaC tool needs to know what it created, and the failure modes when state is lost or corrupted",
+              "Drift: when the real world diverges from the declared state",
+              "Reading an execution plan before applying it (`terraform plan` preview, no install yet)",
+              "Pair discussion: given three sample shell scripts and three sample Terraform snippets, classify each as declarative or imperative and explain why"
+            ],
+            "objects": [
+              "Object: Lesson: Declarative vs. Imperative, State, and Idempotency",
+              "Assessment: Quiz: Declarative vs. Imperative, State, and Idempotency"
+            ]
+          },
+          {
+            "title": "Version Control for IaC — A Tour",
+            "hours": 0.5,
+            "topics": [
+              "Why infrastructure code lives in Git the same way application code does",
+              "The IaC `.gitignore` essentials: state files, lockfiles, credentials, `.terraform/` directories",
+              "What's different about reviewing IaC PRs vs. application-code PRs (state-affecting changes, blast radius, secrets) — brief tour, deeper PR-review treatment lands in M4 L13",
+              "Repo layout patterns at a glance: monorepo vs. per-environment vs. per-component",
+              "Quick demo + Q&A: instructor shows the recommended IaC `.gitignore` and walks through one \"what would you flag in this PR?\" example"
+            ],
+            "objects": [
+              "Object: Lesson: Version Control for IaC — A Tour",
+              "Assessment: Quiz: Version Control for IaC — A Tour"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Terraform fundamentals",
+        "hours": 11,
+        "lessons": [
+          {
+            "title": "Terraform Setup and First Resource",
+            "hours": 1.5,
+            "topics": [
+              "Installing the Terraform CLI; verifying with `terraform version` *(OJL 3d)*",
+              "Provider concept and the AWS (or LocalStack) provider block",
+              "Authoring a first `.tf` file: a single S3 bucket",
+              "The Terraform workflow: `init`, `plan`, `apply`, `destroy`",
+              "Reading the plan output and what each `+`, `-`, `~` symbol means",
+              "Code-along: provision and destroy a single S3 bucket end-to-end; commit the `.tf` file but not the state"
+            ],
+            "objects": [
+              "Object: Lesson: Terraform Setup and First Resource",
+              "Assessment: Quiz: Terraform Setup and First Resource"
+            ]
+          },
+          {
+            "title": "HCL Syntax — Variables, Outputs, and Locals",
+            "hours": 1.5,
+            "topics": [
+              "HCL block structure: `resource`, `variable`, `output`, `locals`, `data` *(OJL 3d)*",
+              "Input variables: declaration, default values, type constraints, `terraform.tfvars` files",
+              "Output values: surfacing IDs, ARNs, and URLs after apply",
+              "Locals: computed values used inside the configuration",
+              "Variable precedence: env vars vs. tfvars vs. CLI flags",
+              "Pair coding: parameterize the L4 bucket using a variable for `bucket_name` and an output for the bucket ARN"
+            ],
+            "objects": [
+              "Object: Lesson: HCL Syntax — Variables, Outputs, and Locals",
+              "Assessment: Quiz: HCL Syntax — Variables, Outputs, and Locals"
+            ]
+          },
+          {
+            "title": "Multiple Resources and Resource Dependencies",
+            "hours": 1.5,
+            "topics": [
+              "Implicit dependencies (resource references in expressions) *(OJL 3d)*",
+              "Explicit dependencies with `depends_on`",
+              "The dependency graph; reading `terraform graph` output at a high level",
+              "Worked example: an EC2 instance that depends on a security group that depends on a VPC reference",
+              "`count` and `for_each` for creating sets of similar resources",
+              "Individual: extend the L5 bucket configuration with a second bucket and an IAM policy that grants read on both, demonstrating implicit dependencies"
+            ],
+            "objects": [
+              "Object: Lesson: Multiple Resources and Resource Dependencies",
+              "Assessment: Quiz: Multiple Resources and Resource Dependencies"
+            ]
+          },
+          {
+            "title": "Terraform State",
+            "hours": 2,
+            "topics": [
+              "What state is and why Terraform needs it *(OJL 3d)*",
+              "Local state (`terraform.tfstate`) — the default and its limits",
+              "Remote state with an S3 backend + DynamoDB lock table",
+              "State locking: what happens when two engineers run `apply` simultaneously",
+              "Reading state with `terraform show` and `terraform state list`",
+              "State surgery basics: `terraform state mv` and `terraform state rm` — what they do and when they're needed",
+              "Sensitive data in state: never commit, mark outputs `sensitive = true`",
+              "Code-along: migrate a project from local state to a remote S3 backend with locking, then trigger a deliberate lock conflict in a paired session"
+            ],
+            "objects": [
+              "Object: Lesson: Terraform State",
+              "Assessment: Quiz: Terraform State"
+            ]
+          },
+          {
+            "title": "Modules — Reusable Terraform Components",
+            "hours": 2,
+            "topics": [
+              "The module concept: composing infrastructure from parameterized building blocks *(OJL 3d)*",
+              "Authoring a local module: required folder layout, `variables.tf`, `outputs.tf`, `main.tf`",
+              "Calling a module: `source`, `version`, passing inputs, reading outputs",
+              "The Terraform Registry: finding and using community modules; reading module docs",
+              "Versioning modules; pinning vs. floating versions",
+              "When to make a module vs. when to inline (the over-modularization anti-pattern)",
+              "Individual: refactor the L6 multi-resource configuration into a `web-bucket` local module with two inputs and two outputs, then consume it from a root configuration"
+            ],
+            "objects": [
+              "Object: Lesson: Modules — Reusable Terraform Components",
+              "Assessment: Quiz: Modules — Reusable Terraform Components"
+            ]
+          },
+          {
+            "title": "The Terraform Workflow in a Team Setting",
+            "hours": 1.5,
+            "topics": [
+              "Branching strategy for IaC PRs *(OJL 3d)*",
+              "Running `plan` in CI and posting the plan to a PR comment",
+              "Apply gates: who pushes the button, when, and against which environment",
+              "Workspaces (and why most teams use directory-per-environment instead)",
+              "Drift detection: scheduled `plan` runs that flag uncommitted changes in the real world",
+              "Pair coding: open a PR that changes the bucket configuration; another learner reviews the `plan` output and either approves or requests changes"
+            ],
+            "objects": [
+              "Object: Lesson: The Terraform Workflow in a Team Setting",
+              "Assessment: Quiz: The Terraform Workflow in a Team Setting"
+            ]
+          },
+          {
+            "title": "Failure Modes and Debugging IaC",
+            "hours": 1,
+            "topics": [
+              "The scenarios that distinguish supporting IaC in production from running `terraform apply` on the happy path *(OJL 3d)*",
+              "Broken or missing Terraform state: lost state file, accidental deletion, state drift after out-of-band changes",
+              "Incorrect dependencies that trigger destroy-and-recreate: when a small attribute change destroys a resource the team expected to be modified in place",
+              "Reading a risky `terraform plan`: recognizing destructive changes, refusing to apply, escalating",
+              "Diagnosing through `terraform plan`, `terraform refresh`, `terraform state list`, `terraform state show`",
+              "Recovery moves: `terraform import` to rebuild state for an existing resource, releasing a stuck state lock, walking back a misapply",
+              "Guided lab: instructor presents three broken-state scenarios (missing state file, attribute change that would destroy a database, stuck lock); learners diagnose each, explain in writing what would happen if they applied as-is, and execute the recovery"
+            ],
+            "objects": [
+              "Object: Lesson: Failure Modes and Debugging IaC",
+              "Assessment: Quiz: Failure Modes and Debugging IaC"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Configuration management with Ansible — concept + demo",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "Provisioning vs. Configuration Management",
+            "hours": 1,
+            "topics": [
+              "Provisioning (Terraform) vs. configuration management (Ansible, Chef, Puppet) — the distinction and where the boundary blurs",
+              "The \"build immutable, configure mutable\" debate at a survey level",
+              "When Terraform alone is enough; when Ansible adds value (post-provision software install, in-place patching)",
+              "Why this distinction matters in modern IaC and on the OSS-Network apprentice's most likely encounters with Ansible on the job",
+              "Group discussion: given three real-world infrastructure tasks, identify which is provisioning, which is configuration, and which is both"
+            ],
+            "objects": [
+              "Object: Lesson: Provisioning vs. Configuration Management",
+              "Assessment: Quiz: Provisioning vs. Configuration Management"
+            ]
+          },
+          {
+            "title": "Ansible at a Glance — Guided Demo",
+            "hours": 1,
+            "topics": [
+              "Instructor-led guided demo; students observe and ask questions, no individual hands-on",
+              "Ansible's agentless model: SSH + Python on the target",
+              "YAML and the playbook structure: plays, tasks, modules, handlers",
+              "Inventory files: static vs. dynamic",
+              "Walkthrough of a 3-task playbook against an EC2 target: install nginx, write a config file, start the service — narrating idempotency at each step",
+              "When to glue Terraform + Ansible together vs. picking one",
+              "Observation + Q&A during the demo; learners record one question and one observation in their notes for later cohort discussion"
+            ],
+            "objects": [
+              "Object: Lesson: Ansible at a Glance — Guided Demo",
+              "Assessment: Quiz: Ansible at a Glance — Guided Demo"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Best practices for production-ready IaC",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "Secrets, Sensitive Data, and Cloud-Native IaC at a Glance",
+            "hours": 1,
+            "topics": [
+              "Why hardcoded secrets in `.tf` files (and Git history) are a recurring breach vector *(OJL 3d)*",
+              "Environment variables and `TF_VAR_` prefix",
+              "Vendor-native secret stores: AWS Secrets Manager, Azure Key Vault, HashiCorp Vault overview",
+              "Sensitive variables and outputs (`sensitive = true`)",
+              "State file as a secrets-leak vector — encryption at rest, access control on the backend bucket",
+              "Brief landscape comparison (≈10 min): how CloudFormation, ARM/Bicep, and GCP DM handle the same secrets problem; when a team would deliberately choose a vendor-native tool over Terraform",
+              "Individual: refactor a sample `.tf` file that contains a hardcoded password to read from a `TF_VAR_db_password` environment variable, and mark the corresponding output `sensitive`"
+            ],
+            "objects": [
+              "Object: Lesson: Secrets, Sensitive Data, and Cloud-Native IaC at a Glance",
+              "Assessment: Quiz: Secrets, Sensitive Data, and Cloud-Native IaC at a Glance"
+            ]
+          },
+          {
+            "title": "Cost Awareness and Cleanup Discipline",
+            "hours": 1,
+            "topics": [
+              "Cloud resources cost money even when \"idle\" — EC2 sitting at 0% CPU, RDS instances overnight, NAT gateways, NLBs, EIPs, unattached EBS volumes",
+              "The IaC-specific risk: easy to provision means easy to forget — and forgotten infrastructure is billed forever",
+              "`terraform destroy` as a first-class workflow operation, not an afterthought",
+              "Avoiding orphaned resources from failed applies (resources created before the apply errored out)",
+              "Tagging strategies for cost attribution: `Owner`, `Environment`, `CostCenter`, `AutoStop` patterns",
+              "Where AWS Cost Explorer and Cost Allocation Tags fit in the IaC workflow",
+              "Lab: provision a small Terraform stack (an EC2 instance plus an EBS volume plus an EIP), use AWS Pricing Calculator (or a provided rate sheet) to identify the cost meters, run `terraform destroy`, then verify in the AWS console that all three resources are gone — including the EIP, which often outlives an apply error"
+            ],
+            "objects": [
+              "Object: Lesson: Cost Awareness and Cleanup Discipline",
+              "Assessment: Quiz: Cost Awareness and Cleanup Discipline"
+            ]
+          },
+          {
+            "title": "IaC Code Review, Testing, and Documentation",
+            "hours": 1,
+            "topics": [
+              "The IaC PR review checklist: what reviewers look for that's different from app-code review *(OJL 3d)*",
+              "`terraform fmt` and `terraform validate` as pre-commit gates",
+              "`tflint` and policy-as-code (OPA / Sentinel) at a survey level",
+              "Documenting modules: the README convention (`terraform-docs` overview)",
+              "Plan-output discipline: when a \"small\" plan is actually a big change (callback to L10 failure modes)",
+              "Pair: review another learner's PR from L9 using a provided checklist; submit one approve/request-changes review with at least two specific comments"
+            ],
+            "objects": [
+              "Object: Lesson: IaC Code Review, Testing, and Documentation",
+              "Assessment: Quiz: IaC Code Review, Testing, and Documentation"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Instructor Onboarding": {
     "course": "Instructor Onboarding",
     "totalHours": 48,
