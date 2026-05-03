@@ -54,7 +54,7 @@ The meta-issue tracks the 11-row sub-issue chain below. Each sub-issue must clos
 | # | Process | Canonical spec | Issue template |
 |---|---|---|---|
 | 1 | Source Migration | [`source-migration-process.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/source-migration-process.md) | [`issue-template--source-migration.md`](https://github.com/apprenti-org/design-documentation/blob/main/.github/ISSUE_TEMPLATE/issue-template--source-migration.md) |
-| 2 | Course Outline Creation | [`curriculum-design-process.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/curriculum-design-process.md) | [`issue-template--course-outline-creation.md`](https://github.com/apprenti-org/design-documentation/blob/main/.github/ISSUE_TEMPLATE/issue-template--course-outline-creation.md) |
+| 2 | Course Outline Creation | [`course-outline-creation-process.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/course-outline-creation-process.md) | [`issue-template--course-outline-creation.md`](https://github.com/apprenti-org/design-documentation/blob/main/.github/ISSUE_TEMPLATE/issue-template--course-outline-creation.md) |
 | 3 | Lesson Outline Creation | [`lesson-design-guide.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/lesson-design-guide.md) | [`issue-template--lesson-outline-creation.md`](https://github.com/apprenti-org/design-documentation/blob/main/.github/ISSUE_TEMPLATE/issue-template--lesson-outline-creation.md) |
 | 4 | Lesson Source Content Creation | [`lesson-design-guide.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/lesson-design-guide.md) | [`issue-template--lesson-source-content-creation.md`](https://github.com/apprenti-org/design-documentation/blob/main/.github/ISSUE_TEMPLATE/issue-template--lesson-source-content-creation.md) |
 | 5 | Content Scaffolding (Phase 0+1) | [`content-development-process.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/content-development-process.md) | [`issue-template--content-scaffolding.md`](https://github.com/apprenti-org/design-documentation/blob/main/.github/ISSUE_TEMPLATE/issue-template--content-scaffolding.md) |
@@ -134,13 +134,13 @@ Every row section below uses the same shape:
 
 - [ ] Open the course-outline-creation sub-issue from `issue-template--course-outline-creation.md`.
 - [ ] Read the DOL standard for the topic-area + RTI-topic that this course covers.
-- [ ] Draft the course outline following the curriculum-design-process spec.
+- [ ] Draft the course outline following the course-outline-creation-process spec.
 - [ ] Confirm hours allocation matches the curriculum's per-course assignment.
 - [ ] Open PR; merge.
 
 **AI-assisted path:**
 
-> *Prompt TBD — see canonical spec at [`curriculum-design-process.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/curriculum-design-process.md). This prompt will be filled in after Spec 2's IaC course onboarding dogfoods this row.*
+> *Prompt TBD — see canonical spec at [`course-outline-creation-process.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/course-outline-creation-process.md). This prompt will be filled in after Spec 2's IaC course onboarding dogfoods this row.*
 
 **Verification:**
 - Course outline file exists at the canonical path.
@@ -149,7 +149,7 @@ Every row section below uses the same shape:
 
 **Common pitfalls:** Hours drift between the curriculum outline and the course outline. Run the curriculum-design verification before promoting to tracking.
 
-**Canonical spec:** [`curriculum-design-process.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/curriculum-design-process.md) *(filename predates the row label; contents cover Course Outline Creation)*
+**Canonical spec:** [`course-outline-creation-process.md`](https://github.com/apprenti-org/design-documentation/blob/main/curricula-design/design-process-documentation/course-outline-creation-process.md)
 **Issue template:** [`issue-template--course-outline-creation.md`](https://github.com/apprenti-org/design-documentation/blob/main/.github/ISSUE_TEMPLATE/issue-template--course-outline-creation.md)
 
 ---
@@ -490,4 +490,5 @@ The meta-issue closes when **all** of these are true:
 
 | Date | Issue | Description |
 |---|---|---|
+| 2026-05-02 | apprenti-org/curriculum-tracking#110 | Row 2 links repointed from `curriculum-design-process.md` (orientation doc) to `course-outline-creation-process.md` (new run-procedure spec from `apprenti-org/design-documentation#280`, closing #277). |
 | 2026-05-02 | apprenti-org/curriculum-tracking#106 | Runbook v1 initial publication. All 11 rows present; AI-assisted path subsections are "Prompt TBD" placeholders, to be filled during the IaC course dogfood (Spec 2). |
