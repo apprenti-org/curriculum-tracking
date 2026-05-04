@@ -174,6 +174,20 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ctse-capstone",
+    "name": "Client Technical Support Engineer Capstone",
+    "hours": 20,
+    "status": {
+      "design": "Not Started",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": null,
+    "note": "Net-new integrative capstone (20h / 4 days). Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases — Discovery, Design, Build, Operate, Report. Covers Areas 1, 2, 3 (integrative QA), and 4. New Course Onboarding chain initiated.",
+    "driveFolder": null,
+    "statusConfirmed": false
+  },
+  {
     "id": "cloud-fundamentals",
     "name": "Cloud Fundamentals",
     "hours": 16,
@@ -970,6 +984,16 @@ const curriculaData = [
           {
             "name": "Helpdesk Software Fundamentals",
             "id": "helpdesk-software-fundamentals"
+          }
+        ]
+      },
+      {
+        "name": "Applied Support Integration",
+        "hours": 20,
+        "courses": [
+          {
+            "name": "Client Technical Support Engineer Capstone",
+            "id": "ctse-capstone"
           }
         ]
       }
