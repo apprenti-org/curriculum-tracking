@@ -50,6 +50,11 @@
     "id": "c-plus-plus-coding-booster-intensive"
   },
   {
+    "file": "ctse-capstone.json",
+    "course": "Client Technical Support Engineer Capstone",
+    "id": "ctse-capstone"
+  },
+  {
     "file": "comptia-a-plus.json",
     "course": "CompTIA A+",
     "id": "comptia-a-plus"

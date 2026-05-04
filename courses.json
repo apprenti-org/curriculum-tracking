@@ -176,13 +176,14 @@
       "name": "Client Technical Support Engineer Capstone",
       "hours": 20,
       "status": {
-        "design": "Not Started",
-        "development": "Not Started"
+        "design": "Complete",
+        "development": "In Progress"
       },
-      "syllabus": null,
-      "outline": null,
-      "note": "Net-new integrative capstone (20h / 4 days). Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases — Discovery, Design, Build, Operate, Report. Covers Areas 1, 2, 3 (integrative QA), and 4. New Course Onboarding chain initiated.",
+      "syllabus": "Syllabus: Client Technical Support Engineer Capstone",
+      "outline": "Course Outline: Client Technical Support Engineer Capstone",
+      "note": "Net-new integrative capstone (20h / 4 days). 5 modules / 5 lessons. Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases — Discovery, Design, Build, Operate, Report. Content scaffolding complete (Phase 0 + Phase 1). All lesson artifacts stubbed. Ready for content production.",
       "driveFolder": null,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": false
     },
     {

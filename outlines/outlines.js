@@ -1604,6 +1604,104 @@ const courseOutlines = {
       ]
     }
   },
+  "Client Technical Support Engineer Capstone": {
+    "course": "Client Technical Support Engineer Capstone",
+    "totalHours": 20,
+    "totalModules": 5,
+    "totalLessons": 5,
+    "modules": [
+      {
+        "name": "Discovery — IT Environment Assessment",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "IT Environment Assessment",
+            "hours": 4,
+            "topics": [
+              "Scenario briefing: company context, IT Support Lead role, program overview, five-phase structure, deliverable rubrics",
+              "Discovery methodology: structured intake questionnaire, stakeholder interview simulation, environment walk-through exercise",
+              "Technical Support Methodology: applying a systematic intake approach to an unknown environment",
+              "Advanced Troubleshooting Techniques: identifying current pain points from symptoms; distinguishing incidents from underlying problems",
+              "Producing the environment document: required sections, level of detail, what an employer reviewer will evaluate",
+              "Checkpoint gate: IT environment document reviewed by instructor before Phase 2 begins"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Design — Service Architecture",
+        "hours": 5,
+        "lessons": [
+          {
+            "title": "Service Architecture Design",
+            "hours": 5,
+            "topics": [
+              "Ticketing Systems & Case Management: ticket categories, severity classifications, queue routing design",
+              "Customer Service Excellence Fundamentals: defining service standards from the customer perspective; drafting service descriptions in plain language",
+              "Quality Assurance & Performance Excellence: establishing measurable SLA targets (resolution time by priority, first-contact resolution rate, escalation SLA)",
+              "Advanced Communication & Stakeholder Management: escalation framework design; defining communication protocols for P1/P2 incidents; stakeholder notification criteria",
+              "Service catalog structure: scope definition (in-scope vs out-of-scope), tier mapping, internal vs vendor escalation paths",
+              "SLA document structure: priority levels, response/resolution targets, breach conditions, reporting cadence",
+              "Checkpoint gate: service catalog and SLA document reviewed by instructor before Phase 3 begins"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Build — Helpdesk Platform Configuration",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Helpdesk Platform Configuration",
+            "hours": 4,
+            "topics": [
+              "Ticketing Systems & Case Management: creating ticket categories and queues aligned to the service catalog; mapping SLA rules to priority levels; configuring ticket fields for required metadata",
+              "Software Testing & Quality Assurance: functional testing of the configured system — submission test, routing test, SLA timer test, automation trigger test; documenting test results",
+              "Automations: configuring one automation rule (e.g., auto-assign by category, auto-acknowledge on submission); verifying trigger conditions",
+              "Knowledge base template: creating one KB article template for the highest-priority recurring issue from Phase 1 (format: symptom, cause, resolution steps, escalation trigger)",
+              "Configuration documentation: screenshot evidence + brief written explanation of each configuration decision tracing back to the service catalog and SLA document"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Operate — Simulated Ticket Processing",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Simulated Ticket Processing",
+            "hours": 4,
+            "topics": [
+              "Technical Support Methodology: applying structured intake → diagnosis → resolution → documentation workflow for each ticket",
+              "Advanced Troubleshooting Techniques: diagnosing symptom descriptions; identifying root cause vs surface issue; applying knowledge base articles",
+              "Customer Service Excellence Fundamentals: tone and clarity in resolution notes; communication protocol for escalation scenarios (following the Phase 2 escalation framework)",
+              "System Reports & Analytics: manually tracking SLA adherence per ticket; flagging breaches; counting first-contact resolutions vs escalations",
+              "Ticket log completion: required fields, resolution note quality standards (what constitutes a substantive resolution note vs a placeholder)",
+              "Escalation scenarios: two tickets are designated as escalation scenarios — students must document the escalation trigger, the communication sent, and the resolution path"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Report — Performance Analysis and Debrief",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "Performance Report and Debrief",
+            "hours": 3,
+            "topics": [
+              "System Reports & Analytics: calculating key metrics from the Phase 4 ticket log (volume by priority, average time-to-resolve, SLA compliance rate, first-contact resolution rate, escalation rate)",
+              "Quality Assurance & Performance Excellence: interpreting metrics against SLA targets; identifying performance gaps; formulating improvement recommendations",
+              "Time Management & Productivity: analyzing throughput relative to staffing and ticket volume; identifying bottlenecks in the simulated operation",
+              "Advanced Communication & Stakeholder Management: structuring the report for a management audience; executive summary format; data visualization conventions",
+              "Professional Development & Career Growth: written reflection on the capstone experience — one design decision the student would revisit, one skill gap identified, one practice to carry into the workplace",
+              "Group debrief (final 30 min): share-outs on hardest design decision, most surprising Phase 4 result, and one improvement to the SLA document in hindsight"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "CompTIA A+": {
     "course": "CompTIA A+",
     "totalHours": 120,
