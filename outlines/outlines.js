@@ -1624,6 +1624,9 @@ const courseOutlines = {
               "Advanced Troubleshooting Techniques: identifying current pain points from symptoms; distinguishing incidents from underlying problems",
               "Producing the environment document: required sections, level of detail, what an employer reviewer will evaluate",
               "Checkpoint gate: IT environment document reviewed by instructor before Phase 2 begins"
+            ],
+            "objects": [
+              "SCORM: Interactive — IT Environment Assessment"
             ]
           }
         ]
@@ -1643,6 +1646,9 @@ const courseOutlines = {
               "Service catalog structure: scope definition (in-scope vs out-of-scope), tier mapping, internal vs vendor escalation paths",
               "SLA document structure: priority levels, response/resolution targets, breach conditions, reporting cadence",
               "Checkpoint gate: service catalog and SLA document reviewed by instructor before Phase 3 begins"
+            ],
+            "objects": [
+              "SCORM: Interactive — Service Architecture Design"
             ]
           }
         ]
@@ -1660,6 +1666,9 @@ const courseOutlines = {
               "Automations: configuring one automation rule (e.g., auto-assign by category, auto-acknowledge on submission); verifying trigger conditions",
               "Knowledge base template: creating one KB article template for the highest-priority recurring issue from Phase 1 (format: symptom, cause, resolution steps, escalation trigger)",
               "Configuration documentation: screenshot evidence + brief written explanation of each configuration decision tracing back to the service catalog and SLA document"
+            ],
+            "objects": [
+              "SCORM: Interactive — Helpdesk Platform Configuration"
             ]
           }
         ]
@@ -1678,6 +1687,9 @@ const courseOutlines = {
               "System Reports & Analytics: manually tracking SLA adherence per ticket; flagging breaches; counting first-contact resolutions vs escalations",
               "Ticket log completion: required fields, resolution note quality standards (what constitutes a substantive resolution note vs a placeholder)",
               "Escalation scenarios: two tickets are designated as escalation scenarios — students must document the escalation trigger, the communication sent, and the resolution path"
+            ],
+            "objects": [
+              "SCORM: Interactive — Simulated Ticket Processing"
             ]
           }
         ]
@@ -1696,6 +1708,9 @@ const courseOutlines = {
               "Advanced Communication & Stakeholder Management: structuring the report for a management audience; executive summary format; data visualization conventions",
               "Professional Development & Career Growth: written reflection on the capstone experience — one design decision the student would revisit, one skill gap identified, one practice to carry into the workplace",
               "Group debrief (final 30 min): share-outs on hardest design decision, most surprising Phase 4 result, and one improvement to the SLA document in hindsight"
+            ],
+            "objects": [
+              "SCORM: Interactive — Performance Report and Debrief"
             ]
           }
         ]
