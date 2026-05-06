@@ -14,7 +14,7 @@ const courseData = [
     "provider": "American Bankers Association",
     "syllabus": null,
     "outline": null,
-    "note": "External provider (American Bankers Association). Course details TBD â€” hours, syllabus URL, and RTI area coverage to be confirmed.",
+    "note": "External provider (American Bankers Association). Course details TBD — hours, syllabus URL, and RTI area coverage to be confirmed.",
     "driveFolder": null,
     "statusConfirmed": false
   },
@@ -197,7 +197,7 @@ const courseData = [
     },
     "syllabus": "Syllabus: Client Technical Support Engineer Capstone",
     "outline": "Course Outline: Client Technical Support Engineer Capstone",
-    "note": "Net-new integrative capstone (20h / 4 days). 5 modules / 5 lessons. Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases â€” Discovery, Design, Build, Operate, Report. All content produced: content.md, instructor-guide.md, Capstone Deliverables checklist (quiz.md), and interactive.html for all 5 lessons. Course-completion report at _REVIEW/course-completion-report.md.",
+    "note": "Net-new integrative capstone (20h / 4 days). 5 modules / 5 lessons. Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases — Discovery, Design, Build, Operate, Report. All content produced: content.md, instructor-guide.md, Capstone Deliverables checklist (quiz.md), and interactive.html for all 5 lessons. Course-completion report at _REVIEW/course-completion-report.md.",
     "driveFolder": null,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
     "statusConfirmed": false
@@ -362,11 +362,11 @@ const courseData = [
     "hours": 22,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": "infrastructure-as-code-fundamentals",
-    "note": "OSS Course 12, Area 3 — net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h. Phase 0 reconciliation complete (apprenti-org/design-documentation#298); outline JSON registered. Phase 1 scaffolding ahead.",
+    "note": "OSS Course 12, Area 3 — net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h, 5 modules, 16 lessons (incl. M5 capstone authored against capstone-design-process.md v0.2.0). Content production complete; deploy tree shipped to workspace deploy/content/ with 97 PDFs + 16 SCORM zips. Pending: Phase 1 manual interactive review, Phase 3 Absorb upload, LMS publish.",
     "driveFolder": null,
     "statusConfirmed": true
   },
