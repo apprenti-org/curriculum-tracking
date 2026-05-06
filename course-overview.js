@@ -106,6 +106,41 @@ var courseOverviewData = [
     }
   },
   {
+    "id": "ai-assisted-learning-and-study-skills",
+    "name": "AI Assisted Learning and Study Skills",
+    "hours": 2,
+    "outline": {
+      "exists": true,
+      "modules": 2,
+      "lessons": 3
+    },
+    "syllabus": true,
+    "source": {
+      "exists": true,
+      "folder": "ai-assisted-learning-and-study-skills/deploy/content",
+      "modules": 1
+    },
+    "coverage": 67,
+    "lessonsWithContent": 2,
+    "assets": {
+      "lessons": 6,
+      "slides": 2,
+      "quizzes": 2,
+      "activities": 0,
+      "demos": 0,
+      "caseStudies": 0,
+      "instructorGuides": 2,
+      "modIntros": 0,
+      "modRecaps": 0
+    },
+    "totalAssets": 12,
+    "deployment": {
+      "state": "Complete",
+      "expected": 2,
+      "actual": 2
+    }
+  },
+  {
     "id": "ai-foundations",
     "name": "AI Foundations and Ethics",
     "hours": 20,
@@ -418,6 +453,41 @@ var courseOverviewData = [
       "state": "Complete",
       "expected": 9,
       "actual": 9
+    }
+  },
+  {
+    "id": "ctse-capstone",
+    "name": "Client Technical Support Engineer Capstone",
+    "hours": 20,
+    "outline": {
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
+    },
+    "syllabus": false,
+    "source": {
+      "exists": false,
+      "folder": "Course: Client Technical Support Engineer",
+      "modules": 0
+    },
+    "coverage": null,
+    "lessonsWithContent": 0,
+    "assets": {
+      "lessons": 0,
+      "slides": 0,
+      "quizzes": 0,
+      "activities": 0,
+      "demos": 0,
+      "caseStudies": 0,
+      "instructorGuides": 0,
+      "modIntros": 0,
+      "modRecaps": 0
+    },
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
     }
   },
   {
@@ -835,9 +905,9 @@ var courseOverviewData = [
     },
     "totalAssets": 0,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 16,
+      "actual": 16
     }
   },
   {

@@ -1,8 +1,8 @@
 {
   "course": "Infrastructure as Code Fundamentals",
   "totalHours": 22,
-  "totalModules": 4,
-  "totalLessons": 15,
+  "totalModules": 5,
+  "totalLessons": 16,
   "modules": [
     {
       "name": "Infrastructure as Code fundamentals",
@@ -14,13 +14,14 @@
           "topics": [
             "The pre-IaC world: ClickOps, snowflake servers, configuration drift",
             "IaC definition and the four properties learners will hear repeatedly: declarative, idempotent, version-controlled, reproducible",
-            "Provisioning vs. configuration management vs. orchestration — a vocabulary map",
+            "Provisioning vs. configuration management vs. orchestration \u2014 a vocabulary map",
             "Where IaC lives in the broader DevOps lifecycle (relationship to CI/CD from Course 11)",
-            "The IaC market overview: Terraform, CloudFormation, Pulumi, Ansible, Bicep — what each is for",
+            "The IaC market overview: Terraform, CloudFormation, Pulumi, Ansible, Bicep \u2014 what each is for",
             "Individual reading + discussion: a short pre-IaC vs. post-IaC scenario; learners identify the failure modes IaC eliminates"
           ],
           "objects": [
             "Object: Lesson: What Is Infrastructure as Code?",
+            "SCORM: Interactive \u2014 What Is Infrastructure as Code?",
             "Assessment: Quiz: What Is Infrastructure as Code?"
           ]
         },
@@ -28,7 +29,7 @@
           "title": "Declarative vs. Imperative, State, and Idempotency",
           "hours": 1.5,
           "topics": [
-            "Declarative (\"what I want\") vs. imperative (\"how to get there\") — concrete code comparisons",
+            "Declarative (\"what I want\") vs. imperative (\"how to get there\") \u2014 concrete code comparisons",
             "Idempotency: the same code applied N times produces the same end state",
             "State: why an IaC tool needs to know what it created, and the failure modes when state is lost or corrupted",
             "Drift: when the real world diverges from the declared state",
@@ -37,22 +38,24 @@
           ],
           "objects": [
             "Object: Lesson: Declarative vs. Imperative, State, and Idempotency",
+            "SCORM: Interactive \u2014 Declarative vs. Imperative, State, and Idempotency",
             "Assessment: Quiz: Declarative vs. Imperative, State, and Idempotency"
           ]
         },
         {
-          "title": "Version Control for IaC — A Tour",
+          "title": "Version Control for IaC \u2014 A Tour",
           "hours": 0.5,
           "topics": [
             "Why infrastructure code lives in Git the same way application code does",
             "The IaC `.gitignore` essentials: state files, lockfiles, credentials, `.terraform/` directories",
-            "What's different about reviewing IaC PRs vs. application-code PRs (state-affecting changes, blast radius, secrets) — brief tour, deeper PR-review treatment lands in M4 L13",
+            "What's different about reviewing IaC PRs vs. application-code PRs (state-affecting changes, blast radius, secrets) \u2014 brief tour, deeper PR-review treatment lands in M4 L13",
             "Repo layout patterns at a glance: monorepo vs. per-environment vs. per-component",
             "Quick demo + Q&A: instructor shows the recommended IaC `.gitignore` and walks through one \"what would you flag in this PR?\" example"
           ],
           "objects": [
-            "Object: Lesson: Version Control for IaC — A Tour",
-            "Assessment: Quiz: Version Control for IaC — A Tour"
+            "Object: Lesson: Version Control for IaC \u2014 A Tour",
+            "SCORM: Interactive \u2014 Version Control for IaC \u2014 A Tour",
+            "Assessment: Quiz: Version Control for IaC \u2014 A Tour"
           ]
         }
       ]
@@ -74,11 +77,12 @@
           ],
           "objects": [
             "Object: Lesson: Terraform Setup and First Resource",
+            "SCORM: Interactive \u2014 Terraform Setup and First Resource",
             "Assessment: Quiz: Terraform Setup and First Resource"
           ]
         },
         {
-          "title": "HCL Syntax — Variables, Outputs, and Locals",
+          "title": "HCL Syntax \u2014 Variables, Outputs, and Locals",
           "hours": 1.5,
           "topics": [
             "HCL block structure: `resource`, `variable`, `output`, `locals`, `data` *(OJL 3d)*",
@@ -89,8 +93,9 @@
             "Pair coding: parameterize the L4 bucket using a variable for `bucket_name` and an output for the bucket ARN"
           ],
           "objects": [
-            "Object: Lesson: HCL Syntax — Variables, Outputs, and Locals",
-            "Assessment: Quiz: HCL Syntax — Variables, Outputs, and Locals"
+            "Object: Lesson: HCL Syntax \u2014 Variables, Outputs, and Locals",
+            "SCORM: Interactive \u2014 HCL Syntax \u2014 Variables, Outputs, and Locals",
+            "Assessment: Quiz: HCL Syntax \u2014 Variables, Outputs, and Locals"
           ]
         },
         {
@@ -106,6 +111,7 @@
           ],
           "objects": [
             "Object: Lesson: Multiple Resources and Resource Dependencies",
+            "SCORM: Interactive \u2014 Multiple Resources and Resource Dependencies",
             "Assessment: Quiz: Multiple Resources and Resource Dependencies"
           ]
         },
@@ -114,21 +120,22 @@
           "hours": 2,
           "topics": [
             "What state is and why Terraform needs it *(OJL 3d)*",
-            "Local state (`terraform.tfstate`) — the default and its limits",
+            "Local state (`terraform.tfstate`) \u2014 the default and its limits",
             "Remote state with an S3 backend + DynamoDB lock table",
             "State locking: what happens when two engineers run `apply` simultaneously",
             "Reading state with `terraform show` and `terraform state list`",
-            "State surgery basics: `terraform state mv` and `terraform state rm` — what they do and when they're needed",
+            "State surgery basics: `terraform state mv` and `terraform state rm` \u2014 what they do and when they're needed",
             "Sensitive data in state: never commit, mark outputs `sensitive = true`",
             "Code-along: migrate a project from local state to a remote S3 backend with locking, then trigger a deliberate lock conflict in a paired session"
           ],
           "objects": [
             "Object: Lesson: Terraform State",
+            "SCORM: Interactive \u2014 Terraform State",
             "Assessment: Quiz: Terraform State"
           ]
         },
         {
-          "title": "Modules — Reusable Terraform Components",
+          "title": "Modules \u2014 Reusable Terraform Components",
           "hours": 2,
           "topics": [
             "The module concept: composing infrastructure from parameterized building blocks *(OJL 3d)*",
@@ -140,8 +147,9 @@
             "Individual: refactor the L6 multi-resource configuration into a `web-bucket` local module with two inputs and two outputs, then consume it from a root configuration"
           ],
           "objects": [
-            "Object: Lesson: Modules — Reusable Terraform Components",
-            "Assessment: Quiz: Modules — Reusable Terraform Components"
+            "Object: Lesson: Modules \u2014 Reusable Terraform Components",
+            "SCORM: Interactive \u2014 Modules \u2014 Reusable Terraform Components",
+            "Assessment: Quiz: Modules \u2014 Reusable Terraform Components"
           ]
         },
         {
@@ -157,6 +165,7 @@
           ],
           "objects": [
             "Object: Lesson: The Terraform Workflow in a Team Setting",
+            "SCORM: Interactive \u2014 The Terraform Workflow in a Team Setting",
             "Assessment: Quiz: The Terraform Workflow in a Team Setting"
           ]
         },
@@ -174,20 +183,21 @@
           ],
           "objects": [
             "Object: Lesson: Failure Modes and Debugging IaC",
+            "SCORM: Interactive \u2014 Failure Modes and Debugging IaC",
             "Assessment: Quiz: Failure Modes and Debugging IaC"
           ]
         }
       ]
     },
     {
-      "name": "Configuration management with Ansible — concept + demo",
+      "name": "Configuration management with Ansible \u2014 concept + demo",
       "hours": 2,
       "lessons": [
         {
           "title": "Provisioning vs. Configuration Management",
           "hours": 1,
           "topics": [
-            "Provisioning (Terraform) vs. configuration management (Ansible, Chef, Puppet) — the distinction and where the boundary blurs",
+            "Provisioning (Terraform) vs. configuration management (Ansible, Chef, Puppet) \u2014 the distinction and where the boundary blurs",
             "The \"build immutable, configure mutable\" debate at a survey level",
             "When Terraform alone is enough; when Ansible adds value (post-provision software install, in-place patching)",
             "Why this distinction matters in modern IaC and on the OSS-Network apprentice's most likely encounters with Ansible on the job",
@@ -195,24 +205,26 @@
           ],
           "objects": [
             "Object: Lesson: Provisioning vs. Configuration Management",
+            "SCORM: Interactive \u2014 Provisioning vs. Configuration Management",
             "Assessment: Quiz: Provisioning vs. Configuration Management"
           ]
         },
         {
-          "title": "Ansible at a Glance — Guided Demo",
+          "title": "Ansible at a Glance \u2014 Guided Demo",
           "hours": 1,
           "topics": [
             "Instructor-led guided demo; students observe and ask questions, no individual hands-on",
             "Ansible's agentless model: SSH + Python on the target",
             "YAML and the playbook structure: plays, tasks, modules, handlers",
             "Inventory files: static vs. dynamic",
-            "Walkthrough of a 3-task playbook against an EC2 target: install nginx, write a config file, start the service — narrating idempotency at each step",
+            "Walkthrough of a 3-task playbook against an EC2 target: install nginx, write a config file, start the service \u2014 narrating idempotency at each step",
             "When to glue Terraform + Ansible together vs. picking one",
             "Observation + Q&A during the demo; learners record one question and one observation in their notes for later cohort discussion"
           ],
           "objects": [
-            "Object: Lesson: Ansible at a Glance — Guided Demo",
-            "Assessment: Quiz: Ansible at a Glance — Guided Demo"
+            "Object: Lesson: Ansible at a Glance \u2014 Guided Demo",
+            "SCORM: Interactive \u2014 Ansible at a Glance \u2014 Guided Demo",
+            "Assessment: Quiz: Ansible at a Glance \u2014 Guided Demo"
           ]
         }
       ]
@@ -229,12 +241,13 @@
             "Environment variables and `TF_VAR_` prefix",
             "Vendor-native secret stores: AWS Secrets Manager, Azure Key Vault, HashiCorp Vault overview",
             "Sensitive variables and outputs (`sensitive = true`)",
-            "State file as a secrets-leak vector — encryption at rest, access control on the backend bucket",
-            "Brief landscape comparison (≈10 min): how CloudFormation, ARM/Bicep, and GCP DM handle the same secrets problem; when a team would deliberately choose a vendor-native tool over Terraform",
+            "State file as a secrets-leak vector \u2014 encryption at rest, access control on the backend bucket",
+            "Brief landscape comparison (\u224810 min): how CloudFormation, ARM/Bicep, and GCP DM handle the same secrets problem; when a team would deliberately choose a vendor-native tool over Terraform",
             "Individual: refactor a sample `.tf` file that contains a hardcoded password to read from a `TF_VAR_db_password` environment variable, and mark the corresponding output `sensitive`"
           ],
           "objects": [
             "Object: Lesson: Secrets, Sensitive Data, and Cloud-Native IaC at a Glance",
+            "SCORM: Interactive \u2014 Secrets, Sensitive Data, and Cloud-Native IaC at a Glance",
             "Assessment: Quiz: Secrets, Sensitive Data, and Cloud-Native IaC at a Glance"
           ]
         },
@@ -242,16 +255,17 @@
           "title": "Cost Awareness and Cleanup Discipline",
           "hours": 1,
           "topics": [
-            "Cloud resources cost money even when \"idle\" — EC2 sitting at 0% CPU, RDS instances overnight, NAT gateways, NLBs, EIPs, unattached EBS volumes",
-            "The IaC-specific risk: easy to provision means easy to forget — and forgotten infrastructure is billed forever",
+            "Cloud resources cost money even when \"idle\" \u2014 EC2 sitting at 0% CPU, RDS instances overnight, NAT gateways, NLBs, EIPs, unattached EBS volumes",
+            "The IaC-specific risk: easy to provision means easy to forget \u2014 and forgotten infrastructure is billed forever",
             "`terraform destroy` as a first-class workflow operation, not an afterthought",
             "Avoiding orphaned resources from failed applies (resources created before the apply errored out)",
             "Tagging strategies for cost attribution: `Owner`, `Environment`, `CostCenter`, `AutoStop` patterns",
             "Where AWS Cost Explorer and Cost Allocation Tags fit in the IaC workflow",
-            "Lab: provision a small Terraform stack (an EC2 instance plus an EBS volume plus an EIP), use AWS Pricing Calculator (or a provided rate sheet) to identify the cost meters, run `terraform destroy`, then verify in the AWS console that all three resources are gone — including the EIP, which often outlives an apply error"
+            "Lab: provision a small Terraform stack (an EC2 instance plus an EBS volume plus an EIP), use AWS Pricing Calculator (or a provided rate sheet) to identify the cost meters, run `terraform destroy`, then verify in the AWS console that all three resources are gone \u2014 including the EIP, which often outlives an apply error"
           ],
           "objects": [
             "Object: Lesson: Cost Awareness and Cleanup Discipline",
+            "SCORM: Interactive \u2014 Cost Awareness and Cleanup Discipline",
             "Assessment: Quiz: Cost Awareness and Cleanup Discipline"
           ]
         },
@@ -268,7 +282,31 @@
           ],
           "objects": [
             "Object: Lesson: IaC Code Review, Testing, and Documentation",
+            "SCORM: Interactive \u2014 IaC Code Review, Testing, and Documentation",
             "Assessment: Quiz: IaC Code Review, Testing, and Documentation"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Capstone \u2014 Provision a Two-Tier Web Stack with Terraform",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "Capstone \u2014 Provision a Two-Tier Web Stack with Terraform",
+          "hours": 3,
+          "topics": [
+            "Course-level capstone integrating M1\u2013M4 \u2014 provision a working two-tier web stack via a single `terraform apply`",
+            "Required mechanics: VPC reference, security group with SSH/HTTP rules, EC2 micro-instance, S3 bucket with `Owner`+`Environment` tags, IAM role + instance profile, module split (`modules/web-stack/`)",
+            "Remote state: S3 backend + DynamoDB lock table (with bootstrap)",
+            "AWS provider `default_tags` block at root for cost attribution",
+            "Embedded failure scenarios with recovery (instructor injects 2 of 3): broken state object, destructive plan, stuck DynamoDB lock",
+            "Apprentice deliverables: working Terraform configuration, architecture-decision README, plan-output explanation, cost inventory, production-failure reflection, OJL evidence map",
+            "Assessment: Competency-Based Rubric (CBR) per capstone-design-process.md v0.2.0 \u2014 OJL 3.d (Support IaC, primary, 8 observable behaviors) + 1.b (software-defined infrastructure, awareness, 3 behaviors); Proficient is the pass bar"
+          ],
+          "objects": [
+            "Object: Lesson: Capstone \u2014 Provision a Two-Tier Web Stack with Terraform",
+            "SCORM: Interactive \u2014 Capstone \u2014 Provision a Two-Tier Web Stack with Terraform"
           ]
         }
       ]

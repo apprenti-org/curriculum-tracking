@@ -4551,8 +4551,8 @@ const courseOutlines = {
   "Infrastructure as Code Fundamentals": {
     "course": "Infrastructure as Code Fundamentals",
     "totalHours": 22,
-    "totalModules": 4,
-    "totalLessons": 15,
+    "totalModules": 5,
+    "totalLessons": 16,
     "modules": [
       {
         "name": "Infrastructure as Code fundamentals",
@@ -4571,6 +4571,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: What Is Infrastructure as Code?",
+              "SCORM: Interactive — What Is Infrastructure as Code?",
               "Assessment: Quiz: What Is Infrastructure as Code?"
             ]
           },
@@ -4587,6 +4588,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Declarative vs. Imperative, State, and Idempotency",
+              "SCORM: Interactive — Declarative vs. Imperative, State, and Idempotency",
               "Assessment: Quiz: Declarative vs. Imperative, State, and Idempotency"
             ]
           },
@@ -4602,6 +4604,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Version Control for IaC — A Tour",
+              "SCORM: Interactive — Version Control for IaC — A Tour",
               "Assessment: Quiz: Version Control for IaC — A Tour"
             ]
           }
@@ -4624,6 +4627,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Terraform Setup and First Resource",
+              "SCORM: Interactive — Terraform Setup and First Resource",
               "Assessment: Quiz: Terraform Setup and First Resource"
             ]
           },
@@ -4640,6 +4644,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: HCL Syntax — Variables, Outputs, and Locals",
+              "SCORM: Interactive — HCL Syntax — Variables, Outputs, and Locals",
               "Assessment: Quiz: HCL Syntax — Variables, Outputs, and Locals"
             ]
           },
@@ -4656,6 +4661,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Multiple Resources and Resource Dependencies",
+              "SCORM: Interactive — Multiple Resources and Resource Dependencies",
               "Assessment: Quiz: Multiple Resources and Resource Dependencies"
             ]
           },
@@ -4674,6 +4680,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Terraform State",
+              "SCORM: Interactive — Terraform State",
               "Assessment: Quiz: Terraform State"
             ]
           },
@@ -4691,6 +4698,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Modules — Reusable Terraform Components",
+              "SCORM: Interactive — Modules — Reusable Terraform Components",
               "Assessment: Quiz: Modules — Reusable Terraform Components"
             ]
           },
@@ -4707,6 +4715,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Terraform Workflow in a Team Setting",
+              "SCORM: Interactive — The Terraform Workflow in a Team Setting",
               "Assessment: Quiz: The Terraform Workflow in a Team Setting"
             ]
           },
@@ -4724,6 +4733,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Failure Modes and Debugging IaC",
+              "SCORM: Interactive — Failure Modes and Debugging IaC",
               "Assessment: Quiz: Failure Modes and Debugging IaC"
             ]
           }
@@ -4745,6 +4755,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Provisioning vs. Configuration Management",
+              "SCORM: Interactive — Provisioning vs. Configuration Management",
               "Assessment: Quiz: Provisioning vs. Configuration Management"
             ]
           },
@@ -4762,6 +4773,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Ansible at a Glance — Guided Demo",
+              "SCORM: Interactive — Ansible at a Glance — Guided Demo",
               "Assessment: Quiz: Ansible at a Glance — Guided Demo"
             ]
           }
@@ -4785,6 +4797,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secrets, Sensitive Data, and Cloud-Native IaC at a Glance",
+              "SCORM: Interactive — Secrets, Sensitive Data, and Cloud-Native IaC at a Glance",
               "Assessment: Quiz: Secrets, Sensitive Data, and Cloud-Native IaC at a Glance"
             ]
           },
@@ -4802,6 +4815,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Cost Awareness and Cleanup Discipline",
+              "SCORM: Interactive — Cost Awareness and Cleanup Discipline",
               "Assessment: Quiz: Cost Awareness and Cleanup Discipline"
             ]
           },
@@ -4818,7 +4832,31 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: IaC Code Review, Testing, and Documentation",
+              "SCORM: Interactive — IaC Code Review, Testing, and Documentation",
               "Assessment: Quiz: IaC Code Review, Testing, and Documentation"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Capstone — Provision a Two-Tier Web Stack with Terraform",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "Capstone — Provision a Two-Tier Web Stack with Terraform",
+            "hours": 3,
+            "topics": [
+              "Course-level capstone integrating M1–M4 — provision a working two-tier web stack via a single `terraform apply`",
+              "Required mechanics: VPC reference, security group with SSH/HTTP rules, EC2 micro-instance, S3 bucket with `Owner`+`Environment` tags, IAM role + instance profile, module split (`modules/web-stack/`)",
+              "Remote state: S3 backend + DynamoDB lock table (with bootstrap)",
+              "AWS provider `default_tags` block at root for cost attribution",
+              "Embedded failure scenarios with recovery (instructor injects 2 of 3): broken state object, destructive plan, stuck DynamoDB lock",
+              "Apprentice deliverables: working Terraform configuration, architecture-decision README, plan-output explanation, cost inventory, production-failure reflection, OJL evidence map",
+              "Assessment: Competency-Based Rubric (CBR) per capstone-design-process.md v0.2.0 — OJL 3.d (Support IaC, primary, 8 observable behaviors) + 1.b (software-defined infrastructure, awareness, 3 behaviors); Proficient is the pass bar"
+            ],
+            "objects": [
+              "Object: Lesson: Capstone — Provision a Two-Tier Web Stack with Terraform",
+              "SCORM: Interactive — Capstone — Provision a Two-Tier Web Stack with Terraform"
             ]
           }
         ]
