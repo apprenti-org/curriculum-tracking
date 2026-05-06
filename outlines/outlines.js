@@ -630,6 +630,53 @@ const courseOutlines = {
       }
     ]
   },
+  "AI Assisted Learning and Study Skills": {
+    "course": "ai-assisted-learning-and-study-skills",
+    "totalHours": 2,
+    "totalModules": 1,
+    "totalLessons": 2,
+    "modules": [
+      {
+        "name": "AI as a Learning Tool",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "Prompting Structures and AI-Assisted Problem Solving",
+            "hours": 1,
+            "topics": [
+              "What generative AI tools are and how they produce responses (brief framing — not a deep dive)",
+              "Basic prompting structures: role, context, task, format (RCTF model)",
+              "Using AI to break down complex problems into manageable parts",
+              "Using AI to rephrase and simplify difficult technical concepts for study",
+              "Prompt iteration: why first outputs are drafts, not final answers",
+              "Individual: Take a technical concept from the current course track, prompt an AI tool to explain it in three different ways (beginner / intermediate / expert level), then evaluate which explanation is most useful and explain why — written reflection submitted to instructor"
+            ],
+            "objects": [
+              "Object: Lesson: Prompting Structures and AI-Assisted Problem Solving",
+              "Assessment: Quiz: Prompting Structures and AI-Assisted Problem Solving"
+            ]
+          },
+          {
+            "title": "AI for Self-Assessment and Critical Verification",
+            "hours": 1,
+            "topics": [
+              "Generating customized quizzes and practice questions using AI",
+              "Designing effective quiz prompts: topic scope, difficulty level, question format",
+              "What \"AI drift\" means: how AI can confidently produce incorrect, outdated, or off-topic information",
+              "What \"hallucinations\" are: fabricated facts, false citations, plausible-sounding errors",
+              "A practical verification workflow: checking AI output against authoritative sources before use",
+              "When to rely on AI output and when to verify first",
+              "Individual: Use an AI tool to generate a 5-question quiz on a topic from the current module; evaluate each question for accuracy against course materials; flag any questions that appear to contain drift or hallucinations with a written explanation of the issue"
+            ],
+            "objects": [
+              "Object: Lesson: AI for Self-Assessment and Critical Verification",
+              "Assessment: Quiz: AI for Self-Assessment and Critical Verification"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "AI Foundations and Ethics": {
     "course": "AI Foundations and Ethics",
     "totalHours": 20,

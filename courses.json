@@ -12,7 +12,7 @@
       "provider": "American Bankers Association",
       "syllabus": null,
       "outline": null,
-      "note": "External provider (American Bankers Association). Course details TBD — hours, syllabus URL, and RTI area coverage to be confirmed.",
+      "note": "External provider (American Bankers Association). Course details TBD \u00e2\u20ac\u201d hours, syllabus URL, and RTI area coverage to be confirmed.",
       "driveFolder": null,
       "statusConfirmed": false
     },
@@ -42,6 +42,20 @@
       "outline": "Course Outline: Agile Project Management with Scrum",
       "note": "Outline and syllabus complete \u2014 awaiting manual review",
       "driveFolder": "https://drive.google.com/drive/folders/1roPHpPQD1LvTGz1xvWtbv-U-XFqr4VBo",
+      "statusConfirmed": false
+    },
+    {
+      "id": "ai-assisted-learning-and-study-skills",
+      "name": "AI Assisted Learning and Study Skills",
+      "hours": 2,
+      "status": {
+        "design": "Complete",
+        "development": "In Progress"
+      },
+      "syllabus": null,
+      "outline": true,
+      "note": "Net-new 2h cross-curriculum course. Module 1: AI as a Learning Tool. 2 lessons: Prompting Structures and AI-Assisted Problem Solving (1h); AI for Self-Assessment and Critical Verification (1h). Cross-curriculum: CTSE, Cloud Ops, DANL, CyberSec, ITBA, SWD, ITSP, Web Dev. RTI/OJL mapping deferred per curriculum. Content scaffolding complete (Phase 0 + 1).",
+      "driveFolder": null,
       "statusConfirmed": false
     },
     {
@@ -181,7 +195,7 @@
       },
       "syllabus": "Syllabus: Client Technical Support Engineer Capstone",
       "outline": "Course Outline: Client Technical Support Engineer Capstone",
-      "note": "Net-new integrative capstone (20h / 4 days). 5 modules / 5 lessons. Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases — Discovery, Design, Build, Operate, Report. All content produced: content.md, instructor-guide.md, Capstone Deliverables checklist (quiz.md), and interactive.html for all 5 lessons. Course-completion report at _REVIEW/course-completion-report.md.",
+      "note": "Net-new integrative capstone (20h / 4 days). 5 modules / 5 lessons. Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases \u00e2\u20ac\u201d Discovery, Design, Build, Operate, Report. All content produced: content.md, instructor-guide.md, Capstone Deliverables checklist (quiz.md), and interactive.html for all 5 lessons. Course-completion report at _REVIEW/course-completion-report.md.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": false
