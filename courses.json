@@ -364,8 +364,9 @@
       },
       "syllabus": null,
       "outline": "infrastructure-as-code-fundamentals",
-      "note": "OSS Course 12, Area 3 \u2014 net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h, 5 modules, 16 lessons (incl. M5 capstone authored against capstone-design-process.md v0.2.0). Content production complete; deploy tree shipped to workspace deploy/content/ with 97 PDFs + 16 SCORM zips. Pending: Phase 1 manual interactive review, Phase 3 Absorb upload, LMS publish.",
+      "note": "OSS Course 12, Area 3 \u2014 net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h, 5 modules, 16 lessons (incl. M5 capstone \u2014 first lesson authored against capstone-design-process.md v0.2.0; CBR + evidence-map locked as canonical templates). Live in Absorb 2026-05-06 (97 PDFs + 16 SCORM zips uploaded; course published to learner catalog). Apprenti-org code repos: infrastructure-as-code-student + infrastructure-as-code-instructor. Onboarding meta apprenti-org/design-documentation#281.",
       "driveFolder": null,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
     },
     {
