@@ -58,7 +58,7 @@ const courseData = [
     "outline": true,
     "note": "Net-new 2h cross-curriculum course. Module 1: AI as a Learning Tool. 2 lessons: Prompting Structures and AI-Assisted Problem Solving (1h); AI for Self-Assessment and Critical Verification (1h). Cross-curriculum: CTSE, Cloud Ops, DANL, CyberSec, ITBA, SWD, ITSP, Web Dev. Content production complete (Phase 3, issue #354). RTI/OJL mapping deferred per curriculum.",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "ai-foundations",
