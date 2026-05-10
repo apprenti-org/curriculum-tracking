@@ -736,7 +736,7 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "data-fundamentals-sql-for-data",
+    "id": "sql-for-data",
     "name": "Data Fundamentals — SQL for Data",
     "hours": 50,
     "outline": {
@@ -2171,8 +2171,8 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "sql-fundamentals-for-operations",
-    "name": "SQL Fundamentals for Operations",
+    "id": "sql-fundamentals",
+    "name": "SQL Fundamentals",
     "hours": 24,
     "outline": {
       "exists": true,

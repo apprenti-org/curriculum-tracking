@@ -3729,219 +3729,6 @@ const courseOutlines = {
       ]
     }
   },
-  "Data Fundamentals — SQL for Data": {
-    "course": "Data Fundamentals — SQL for Data",
-    "totalHours": 50,
-    "totalLessons": 16,
-    "totalModules": 7,
-    "modules": [
-      {
-        "name": "Introduction to Data Analysis",
-        "hours": 8,
-        "description": "Data analysis fundamentals, data modeling, and normalization concepts.",
-        "lessons": [
-          {
-            "title": "Intro to Data Analysis",
-            "hours": 2,
-            "topics": [
-              "What is data analysis?",
-              "The role of a data analyst",
-              "Data-driven decision making"
-            ]
-          },
-          {
-            "title": "Data Analysis Types",
-            "hours": 2,
-            "topics": [
-              "Descriptive, diagnostic, predictive, and prescriptive analysis",
-              "Choosing the right analysis type for business questions"
-            ]
-          },
-          {
-            "title": "Data Modeling for Analysis",
-            "hours": 2,
-            "topics": [
-              "Data modeling concepts",
-              "Entity Relationship Diagrams (ERDs)",
-              "Data dictionaries"
-            ]
-          },
-          {
-            "title": "Normalization and Denormalization",
-            "hours": 2,
-            "topics": [
-              "Normal forms and data integrity",
-              "When to normalize vs denormalize",
-              "Reducing redundancy in data tables"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Docker and SQL Concepts",
-        "hours": 6,
-        "description": "Containerization fundamentals and setting up the SQL development environment.",
-        "lessons": [
-          {
-            "title": "Docker Fundamentals",
-            "hours": 2,
-            "topics": [
-              "What is Docker?",
-              "Containers vs virtual machines",
-              "Docker use cases for data environments"
-            ]
-          },
-          {
-            "title": "Docker Commands and Concepts",
-            "hours": 2,
-            "topics": [
-              "Core Docker commands",
-              "Docker concepts for SQL environments",
-              "Install: Docker Desktop"
-            ]
-          },
-          {
-            "title": "SQL Server Setup",
-            "hours": 2,
-            "topics": [
-              "Install: SQL Server Express and Azure Data Studio",
-              "Setting up the sample database",
-              "Connecting and navigating ADS"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "SQL Fundamentals",
-        "hours": 8,
-        "description": "Core SQL querying, filtering, and data retrieval skills.",
-        "lessons": [
-          {
-            "title": "Basic SQL",
-            "hours": 4,
-            "topics": [
-              "SELECT statements",
-              "FROM clause and table references",
-              "Sorting with ORDER BY",
-              "Limiting results"
-            ]
-          },
-          {
-            "title": "Filtering SQL",
-            "hours": 4,
-            "topics": [
-              "WHERE clause and conditions",
-              "Comparison and logical operators",
-              "LIKE, IN, BETWEEN",
-              "NULL handling"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Advanced SQL",
-        "hours": 6,
-        "description": "Aggregate functions and date handling for data analysis.",
-        "lessons": [
-          {
-            "title": "Aggregates",
-            "hours": 4,
-            "topics": [
-              "COUNT, SUM, AVG, MIN, MAX",
-              "GROUP BY and HAVING clauses",
-              "Aggregate expressions in queries"
-            ]
-          },
-          {
-            "title": "Date Handling",
-            "hours": 2,
-            "topics": [
-              "Date data types and formats",
-              "Date functions and calculations",
-              "Filtering and grouping by date"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Joins and Subqueries",
-        "hours": 10,
-        "description": "Combining data from multiple tables and writing nested queries.",
-        "lessons": [
-          {
-            "title": "Joins",
-            "hours": 5,
-            "topics": [
-              "INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN",
-              "Join syntax and table aliases",
-              "Multi-table joins",
-              "Music Collection Joins exercise"
-            ]
-          },
-          {
-            "title": "Subqueries",
-            "hours": 5,
-            "topics": [
-              "Subqueries in WHERE, FROM, and SELECT clauses",
-              "Correlated vs non-correlated subqueries",
-              "Joins vs Subqueries — when to use which",
-              "Adventure Works exercise"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Database Creation and Maintenance",
-        "hours": 8,
-        "description": "Data Definition Language, Data Manipulation Language, and data import/export.",
-        "lessons": [
-          {
-            "title": "DDL — Data Definition Language",
-            "hours": 4,
-            "topics": [
-              "CREATE, ALTER, DROP statements",
-              "Table structure and constraints",
-              "Primary keys, foreign keys, indexes"
-            ]
-          },
-          {
-            "title": "DML — Data Manipulation Language",
-            "hours": 4,
-            "topics": [
-              "INSERT, UPDATE, DELETE statements",
-              "Data modification best practices",
-              "Import and export operations"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "SQL for Business",
-        "hours": 4,
-        "description": "Applying SQL skills to real-world business scenarios.",
-        "lessons": [
-          {
-            "title": "SQL for Business",
-            "hours": 4,
-            "topics": [
-              "Business-oriented SQL queries",
-              "Translating business questions into SQL",
-              "Reporting and analysis workflows"
-            ]
-          }
-        ]
-      }
-    ],
-    "assessment": {
-      "title": "Summative Assessment: Souvenirs Data",
-      "hours": 0,
-      "items": [
-        "Interactive assessment preparation",
-        "Summative Assessment: Souvenirs Data",
-        "Graded with rubric"
-      ]
-    }
-  },
   "Databases in Java": {
     "course": "Databases in Java",
     "totalHours": 40,
@@ -10293,6 +10080,167 @@ const courseOutlines = {
           }
         ],
         "name": "Summative Assessment"
+      }
+    ]
+  },
+  "SQL for Data": {
+    "course": "SQL for Data",
+    "totalHours": 50,
+    "totalModules": 9,
+    "totalLessons": 18,
+    "modules": [
+      {
+        "name": "Course Introduction",
+        "hours": 1,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Course Introduction",
+            "hours": null,
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Introduction To Data Analysis",
+        "hours": 7.5,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Intro To Data Analysis",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Data Analysis Types",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Data Modeling For Analysis",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Normalization And Denormalization",
+            "hours": null,
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Docker And Sql Concepts",
+        "hours": 5,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Docker",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Docker Commands Core",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Docker Concepts",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Configuring A Dockerfile",
+            "hours": null,
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Sql Fundamentals",
+        "hours": 9.5,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Basic Sql",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Filtering And Ordering",
+            "hours": null,
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Advanced Sql",
+        "hours": 5,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Aggregates",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Date Handling",
+            "hours": null,
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Joins And Subqueries",
+        "hours": 8.5,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Joins",
+            "hours": null,
+            "topics": []
+          },
+          {
+            "title": "Subqueries",
+            "hours": null,
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Database Creation And Maintenance",
+        "hours": 10.5,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Data Definition Language",
+            "hours": null,
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Sql For Business",
+        "hours": 2.25,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Sql For Business",
+            "hours": null,
+            "topics": []
+          }
+        ]
+      },
+      {
+        "name": "Summative Assessment",
+        "hours": 0.75,
+        "description": "",
+        "lessons": [
+          {
+            "title": "Summative Souvenirs Data",
+            "hours": null,
+            "topics": []
+          }
+        ]
       }
     ]
   },

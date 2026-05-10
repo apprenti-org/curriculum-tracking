@@ -738,7 +738,7 @@
       }
     },
     {
-      "id": "data-fundamentals-sql-for-data",
+      "id": "sql-for-data",
       "name": "Data Fundamentals \u2014 SQL for Data",
       "hours": 50,
       "outline": {
@@ -2173,8 +2173,8 @@
       }
     },
     {
-      "id": "sql-fundamentals-for-operations",
-      "name": "SQL Fundamentals for Operations",
+      "id": "sql-fundamentals",
+      "name": "SQL Fundamentals",
       "hours": 24,
       "outline": {
         "exists": true,

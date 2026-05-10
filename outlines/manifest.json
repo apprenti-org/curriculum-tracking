@@ -85,11 +85,6 @@
     "id": "data-fundamentals-excel-for-data-analysts"
   },
   {
-    "file": "data-fundamentals-sql.json",
-    "course": "Data Fundamentals \u2014 SQL for Data",
-    "id": "data-fundamentals-sql-for-data"
-  },
-  {
     "file": "databases-in-java.json",
     "course": "Databases in Java",
     "id": "databases-in-java"
@@ -273,6 +268,11 @@
     "file": "sql-for-csharp.json",
     "course": "SQL for C#",
     "id": "sql-for-csharp"
+  },
+  {
+    "file": "sql-for-data.json",
+    "course": "SQL for Data",
+    "id": "sql-for-data"
   },
   {
     "file": "student-onboarding.json",

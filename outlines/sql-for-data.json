@@ -1,1 +1,161 @@
-{}
+{
+  "course": "SQL for Data",
+  "totalHours": 50,
+  "totalModules": 9,
+  "totalLessons": 18,
+  "modules": [
+    {
+      "name": "Course Introduction",
+      "hours": 1.0,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Course Introduction",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Introduction To Data Analysis",
+      "hours": 7.5,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Intro To Data Analysis",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Data Analysis Types",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Data Modeling For Analysis",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Normalization And Denormalization",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Docker And Sql Concepts",
+      "hours": 5.0,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Docker",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Docker Commands Core",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Docker Concepts",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Configuring A Dockerfile",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Sql Fundamentals",
+      "hours": 9.5,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Basic Sql",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Filtering And Ordering",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Advanced Sql",
+      "hours": 5.0,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Aggregates",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Date Handling",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Joins And Subqueries",
+      "hours": 8.5,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Joins",
+          "hours": null,
+          "topics": []
+        },
+        {
+          "title": "Subqueries",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Database Creation And Maintenance",
+      "hours": 10.5,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Data Definition Language",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Sql For Business",
+      "hours": 2.25,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Sql For Business",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "Summative Assessment",
+      "hours": 0.75,
+      "description": "",
+      "lessons": [
+        {
+          "title": "Summative Souvenirs Data",
+          "hours": null,
+          "topics": []
+        }
+      ]
+    }
+  ]
+}
