@@ -2171,8 +2171,8 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "sql-fundamentals-for-operations",
-    "name": "SQL Fundamentals for Operations",
+    "id": "sql-fundamentals",
+    "name": "SQL Fundamentals",
     "hours": 24,
     "outline": {
       "exists": true,

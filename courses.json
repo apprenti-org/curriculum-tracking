@@ -881,8 +881,8 @@
       "statusConfirmed": false
     },
     {
-      "id": "sql-fundamentals-for-operations",
-      "name": "SQL Fundamentals for Operations",
+      "id": "sql-fundamentals",
+      "name": "SQL Fundamentals",
       "hours": 24,
       "status": {
         "design": "Not Started",
@@ -1114,7 +1114,7 @@
               "note": "Reduced from 56h base to 40h to match A-28 standard (Java+JS combined = 80h)"
             },
             "web-development-with-javascript",
-            "sql-fundamentals-for-operations",
+            "sql-fundamentals",
             "ci-cd-pipeline-concepts",
             "infrastructure-as-code-fundamentals",
             "ai-foundations"

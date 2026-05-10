@@ -883,8 +883,8 @@ const courseData = [
     "statusConfirmed": false
   },
   {
-    "id": "sql-fundamentals-for-operations",
-    "name": "SQL Fundamentals for Operations",
+    "id": "sql-fundamentals",
+    "name": "SQL Fundamentals",
     "hours": 24,
     "status": {
       "design": "Not Started",
@@ -1207,8 +1207,8 @@ const curriculaData = [
             "id": "web-development-with-javascript"
           },
           {
-            "name": "SQL Fundamentals for Operations",
-            "id": "sql-fundamentals-for-operations"
+            "name": "SQL Fundamentals",
+            "id": "sql-fundamentals"
           },
           {
             "name": "CI/CD Pipeline Concepts",
