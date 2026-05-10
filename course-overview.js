@@ -736,7 +736,7 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "data-fundamentals-sql-for-data",
+    "id": "sql-for-data",
     "name": "Data Fundamentals — SQL for Data",
     "hours": 50,
     "outline": {

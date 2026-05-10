@@ -301,20 +301,6 @@ const courseData = [
     "statusConfirmed": false
   },
   {
-    "id": "data-fundamentals-sql-for-data",
-    "name": "Data Fundamentals — SQL for Data",
-    "hours": 50,
-    "status": {
-      "design": "Complete",
-      "development": "Not Started"
-    },
-    "syllabus": null,
-    "outline": "Course Outline: Data Fundamentals — SQL for Data",
-    "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z",
-    "statusConfirmed": false
-  },
-  {
     "id": "databases-in-java",
     "name": "Databases in Java",
     "hours": 40,
@@ -883,6 +869,20 @@ const courseData = [
     "statusConfirmed": false
   },
   {
+    "id": "sql-for-data",
+    "name": "SQL for Data",
+    "hours": 50,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: SQL for Data",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z",
+    "statusConfirmed": false
+  },
+  {
     "id": "sql-fundamentals-for-operations",
     "name": "SQL Fundamentals for Operations",
     "hours": 24,
@@ -1265,8 +1265,8 @@ const curriculaData = [
         "id": "web-development-with-javascript"
       },
       {
-        "name": "Data Fundamentals — SQL for Data",
-        "id": "data-fundamentals-sql-for-data"
+        "name": "SQL for Data",
+        "id": "sql-for-data"
       }
     ]
   }
