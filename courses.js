@@ -80,7 +80,7 @@ const courseData = [
     "hours": 2,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "ai-driven-specifications",
     "outline": true,
