@@ -821,6 +821,13 @@ const courseOutlines = {
       }
     ]
   },
+  "AI-Driven Specifications: The Blueprint Method": {
+    "course": "AI-Driven Specifications: The Blueprint Method",
+    "totalHours": 2,
+    "totalModules": 0,
+    "totalLessons": 0,
+    "modules": []
+  },
   "ASP.NET": {
     "course": "ASP.NET",
     "totalHours": null,

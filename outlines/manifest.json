@@ -20,6 +20,11 @@
     "id": "ai-foundations"
   },
   {
+    "file": "ai-driven-specifications.json",
+    "course": "AI-Driven Specifications: The Blueprint Method",
+    "id": "ai-driven-specifications"
+  },
+  {
     "file": "aspnet.json",
     "course": "ASP.NET",
     "id": "aspnet"

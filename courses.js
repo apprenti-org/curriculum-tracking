@@ -75,6 +75,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-driven-specifications",
+    "name": "AI-Driven Specifications: The Blueprint Method",
+    "hours": 2,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": "ai-driven-specifications",
+    "outline": true,
+    "note": "2 hours, 2 modules, 4 lessons. Spec-driven development with AI as a problem-decomposition tool. Net-new.",
+    "driveFolder": "",
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": false
+  },
+  {
     "id": "aspnet",
     "name": "ASP.NET",
     "hours": null,
@@ -298,6 +313,20 @@ const courseData = [
     "outline": "Course Outline: Data Fundamentals — Excel for Data Analysts",
     "note": "Existing content — full course outline, instructor guide, course overview, scenario, exercises with learner keys, and summative assessment in Google Drive",
     "driveFolder": "https://drive.google.com/drive/folders/1RpKaf1sRrbX3F2s6as5fJn6MS1Aj8GB4",
+    "statusConfirmed": false
+  },
+  {
+    "id": "data-fundamentals-sql-for-data",
+    "name": "Data Fundamentals — SQL for Data",
+    "hours": 50,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: Data Fundamentals — SQL for Data",
+    "note": null,
+    "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z",
     "statusConfirmed": false
   },
   {
@@ -869,22 +898,8 @@ const courseData = [
     "statusConfirmed": false
   },
   {
-    "id": "sql-for-data",
-    "name": "SQL for Data",
-    "hours": 50,
-    "status": {
-      "design": "Complete",
-      "development": "Not Started"
-    },
-    "syllabus": null,
-    "outline": "Course Outline: SQL for Data",
-    "note": null,
-    "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z",
-    "statusConfirmed": false
-  },
-  {
-    "id": "sql-fundamentals",
-    "name": "SQL Fundamentals",
+    "id": "sql-fundamentals-for-operations",
+    "name": "SQL Fundamentals for Operations",
     "hours": 24,
     "status": {
       "design": "Not Started",
@@ -1207,8 +1222,8 @@ const curriculaData = [
             "id": "web-development-with-javascript"
           },
           {
-            "name": "SQL Fundamentals",
-            "id": "sql-fundamentals"
+            "name": "SQL Fundamentals for Operations",
+            "id": "sql-fundamentals-for-operations"
           },
           {
             "name": "CI/CD Pipeline Concepts",
@@ -1265,8 +1280,8 @@ const curriculaData = [
         "id": "web-development-with-javascript"
       },
       {
-        "name": "SQL for Data",
-        "id": "sql-for-data"
+        "name": "Data Fundamentals — SQL for Data",
+        "id": "data-fundamentals-sql-for-data"
       }
     ]
   }
