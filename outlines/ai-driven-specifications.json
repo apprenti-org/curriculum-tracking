@@ -1,7 +1,80 @@
 {
   "course": "AI-Driven Specifications: The Blueprint Method",
   "totalHours": 2,
-  "totalModules": 0,
-  "totalLessons": 0,
-  "modules": []
+  "totalModules": 2,
+  "totalLessons": 4,
+  "modules": [
+    {
+      "name": "Thinking Before Typing",
+      "hours": 1,
+      "lessons": [
+        {
+          "title": "The Specification Mindset",
+          "hours": 0.5,
+          "topics": [
+            "Why beginners get stuck: diving into syntax without a plan (\"the syntax woods\")",
+            "What spec-driven development is and why it works for beginners and professionals alike",
+            "AI as architect vs. magic code button: the critical distinction",
+            "The \"blueprint\" model: how a specification functions as a step-by-step logical map",
+            "Activity: Reflection exercise — given two developer scenarios (one who codes immediately, one who writes a spec first), learners identify which produces better outcomes and explain why"
+          ],
+          "objects": [
+            "SCORM: Interactive — The Specification Mindset",
+            "Assessment: Quiz: The Specification Mindset"
+          ]
+        },
+        {
+          "title": "Anatomy of a Specification",
+          "hours": 0.5,
+          "topics": [
+            "The four components of a complete spec: inputs, outputs, logic, and edge cases",
+            "Use cases: describing what a user does, step by step, in a proposed system",
+            "Requirements language: precise, testable, and implementer-neutral",
+            "Reading a spec as a coding manual: how each requirement maps to an implementation step",
+            "Activity: Analysis exercise — learners review a sample specification and label each section; identify what is missing and propose additions"
+          ],
+          "objects": [
+            "SCORM: Interactive — Anatomy of a Specification",
+            "Assessment: Quiz: Anatomy of a Specification"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Building and Using Blueprints",
+      "hours": 1,
+      "lessons": [
+        {
+          "title": "Collaborating with AI to Write a Spec",
+          "hours": 0.5,
+          "topics": [
+            "Prompting strategies: asking AI to decompose a problem, not solve it",
+            "Reviewing AI output: identifying what is precise, what is vague, and what is missing",
+            "Identifying and filling edge cases: \"what happens when…?\" as a discipline",
+            "Iterating toward a complete specification: the prompt–review–refine loop",
+            "Activity: Guided code-along — learners follow a structured prompting sequence against a provided problem statement to produce a first-draft specification, then critique it against the four-component checklist from Lesson 2"
+          ],
+          "objects": [
+            "SCORM: Interactive — Collaborating with AI to Write a Spec",
+            "Assessment: Quiz: Collaborating with AI to Write a Spec"
+          ]
+        },
+        {
+          "title": "From Specification to Implementation Plan",
+          "hours": 0.5,
+          "topics": [
+            "Reading a spec as a coding roadmap: one requirement, one implementation step",
+            "Translating specification steps into pseudocode or ordered implementation notes",
+            "Staying the pilot: when and how to override or correct AI suggestions",
+            "Use cases as a verification tool: does the implementation plan satisfy every use case?",
+            "Activity: Independent exercise — learners receive a complete specification for a simple program and produce a numbered implementation plan without writing any code"
+          ],
+          "objects": [
+            "SCORM: Interactive — From Specification to Implementation Plan",
+            "Assessment: Quiz: From Specification to Implementation Plan"
+          ]
+        }
+      ]
+    }
+  ]
 }

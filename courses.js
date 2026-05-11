@@ -80,14 +80,14 @@ const courseData = [
     "hours": 2,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "ai-driven-specifications",
     "outline": true,
-    "note": "2 hours, 2 modules, 4 lessons. Spec-driven development with AI as a problem-decomposition tool. Net-new.",
+    "note": "2 hours, 2 modules, 4 lessons. Spec-driven development with AI as a problem-decomposition tool. Net-new. Live in Absorb LMS 2026-05-11.",
     "driveFolder": "",
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "aspnet",
