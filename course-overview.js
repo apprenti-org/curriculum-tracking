@@ -186,28 +186,28 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "ai-driven-specifications/deploy/content",
+      "modules": 2
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 80,
+    "lessonsWithContent": 4,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
-      "activities": 0,
+      "lessons": 10,
+      "slides": 4,
+      "quizzes": 4,
+      "activities": 1,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 4,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 23,
     "deployment": {
-      "state": "Not Deployed",
+      "state": "Complete",
       "expected": 4,
-      "actual": 0
+      "actual": 4
     }
   },
   {
