@@ -47,7 +47,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Advanced Python",
+      "folder": "Course  Advanced Python",
       "modules": 9
     },
     "coverage": 93,
@@ -82,7 +82,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Agile Project Management with Scrum",
+      "folder": "Course  Agile Project Management with Scrum",
       "modules": 5
     },
     "coverage": 12,
@@ -176,6 +176,41 @@ var courseOverviewData = [
     }
   },
   {
+    "id": "ai-driven-specifications",
+    "name": "AI-Driven Specifications: The Blueprint Method",
+    "hours": 2,
+    "outline": {
+      "exists": true,
+      "modules": 3,
+      "lessons": 5
+    },
+    "syllabus": true,
+    "source": {
+      "exists": false,
+      "folder": null,
+      "modules": 0
+    },
+    "coverage": 0,
+    "lessonsWithContent": 0,
+    "assets": {
+      "lessons": 0,
+      "slides": 0,
+      "quizzes": 0,
+      "activities": 0,
+      "demos": 0,
+      "caseStudies": 0,
+      "instructorGuides": 0,
+      "modIntros": 0,
+      "modRecaps": 0
+    },
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
+  },
+  {
     "id": "aspnet",
     "name": "ASP.NET",
     "hours": null,
@@ -187,7 +222,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: ASPNET",
+      "folder": "Course  ASPNET",
       "modules": 1
     },
     "coverage": 83,
@@ -222,23 +257,23 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Business Analysis Fundamentals",
+      "folder": "Course  Business Analysis Fundamentals",
       "modules": 5
     },
-    "coverage": 86,
-    "lessonsWithContent": 32,
+    "coverage": 73,
+    "lessonsWithContent": 27,
     "assets": {
-      "lessons": 31,
+      "lessons": 26,
       "slides": 32,
-      "quizzes": 32,
-      "activities": 56,
+      "quizzes": 27,
+      "activities": 47,
       "demos": 7,
-      "caseStudies": 7,
+      "caseStudies": 6,
       "instructorGuides": 6,
       "modIntros": 1,
       "modRecaps": 4
     },
-    "totalAssets": 176,
+    "totalAssets": 156,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -257,7 +292,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Business and IT Fundamentals",
+      "folder": "Course  Business and IT Fundamentals",
       "modules": 8
     },
     "coverage": 92,
@@ -292,7 +327,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: C# Data Access",
+      "folder": "Course  C# Data Access",
       "modules": 1
     },
     "coverage": 71,
@@ -327,7 +362,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: C# Language Fundamentals",
+      "folder": "Course  C# Language Fundamentals",
       "modules": 1
     },
     "coverage": 92,
@@ -362,7 +397,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: C# OOP",
+      "folder": "Course  C# OOP",
       "modules": 1
     },
     "coverage": 88,
@@ -397,7 +432,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: C++ Coding Booster",
+      "folder": "Course  C++ Coding Booster",
       "modules": 9
     },
     "coverage": 0,
@@ -467,7 +502,7 @@ var courseOverviewData = [
     "syllabus": false,
     "source": {
       "exists": false,
-      "folder": "Course: Client Technical Support Engineer",
+      "folder": "Course  Client Technical Support Engineer",
       "modules": 0
     },
     "coverage": null,
@@ -537,7 +572,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Security and Cybersecurity Fundamentals",
+      "folder": "Course  Security and Cybersecurity Fundamentals",
       "modules": 7
     },
     "coverage": 100,
@@ -572,7 +607,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "COURSE: CompTIA A+",
+      "folder": "COURSE  CompTIA A+",
       "modules": 7
     },
     "coverage": 15,
@@ -607,7 +642,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "COURSE: CompTIA Network+ 96",
+      "folder": "COURSE  CompTIA Network+ 96",
       "modules": 0
     },
     "coverage": 0,
@@ -642,7 +677,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Data Literacy",
+      "folder": "Course  Data Literacy",
       "modules": 9
     },
     "coverage": 0,
@@ -677,7 +712,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Data Visualizations and Power BI",
+      "folder": "Course  Data Visualizations and Power BI",
       "modules": 8
     },
     "coverage": 0,
@@ -712,7 +747,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Excel for Data Analysts",
+      "folder": "Course  Excel for Data Analysts",
       "modules": 10
     },
     "coverage": 14,
@@ -736,22 +771,22 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "sql-for-data",
+    "id": "data-fundamentals-sql-for-data",
     "name": "Data Fundamentals — SQL for Data",
     "hours": 50,
     "outline": {
       "exists": true,
-      "modules": 8,
-      "lessons": 17
+      "modules": 2,
+      "lessons": 9
     },
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: SQL for Data",
+      "folder": "Course  SQL for Data",
       "modules": 8
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 11,
+    "lessonsWithContent": 1,
     "assets": {
       "lessons": 17,
       "slides": 12,
@@ -765,9 +800,9 @@ var courseOverviewData = [
     },
     "totalAssets": 123,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 18,
+      "actual": 18
     }
   },
   {
@@ -782,7 +817,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Databases in Java",
+      "folder": "Course  Databases in Java",
       "modules": 12
     },
     "coverage": null,
@@ -817,7 +852,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "COURSE: Helpdesk Software",
+      "folder": "COURSE  Helpdesk Software",
       "modules": 0
     },
     "coverage": 0,
@@ -852,7 +887,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "Course: HTTP Services",
+      "folder": "Course  HTTP Services",
       "modules": 0
     },
     "coverage": 0,
@@ -922,7 +957,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "Course: Instructor Onboarding",
+      "folder": "Course  Instructor Onboarding",
       "modules": 0
     },
     "coverage": 0,
@@ -957,7 +992,7 @@ var courseOverviewData = [
     "syllabus": false,
     "source": {
       "exists": true,
-      "folder": "Course: Introduction to Advanced Concepts in Java",
+      "folder": "Course  Introduction to Advanced Concepts in Java",
       "modules": 3
     },
     "coverage": null,
@@ -992,7 +1027,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Introduction to AWS Cloud Platform",
+      "folder": "Course  Introduction to AWS Cloud Platform",
       "modules": 10
     },
     "coverage": 0,
@@ -1027,7 +1062,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Introduction to Cloud Technologies",
+      "folder": "Course  Introduction to Cloud Technologies",
       "modules": 6
     },
     "coverage": 0,
@@ -1062,7 +1097,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Introduction to GitHub",
+      "folder": "Course  Introduction to GitHub",
       "modules": 1
     },
     "coverage": 0,
@@ -1097,7 +1132,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Introduction to HTML & CSS (1)",
+      "folder": "Course  Introduction to HTML & CSS",
       "modules": 3
     },
     "coverage": 0,
@@ -1132,7 +1167,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "Course: Introduction to Microsoft Teams",
+      "folder": "Course  Introduction to Microsoft Teams",
       "modules": 0
     },
     "coverage": 0,
@@ -1167,7 +1202,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: IT Fundamentals",
+      "folder": "Course  IT Fundamentals",
       "modules": 7
     },
     "coverage": 100,
@@ -1272,7 +1307,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Java Booster",
+      "folder": "Course  Java Booster",
       "modules": 8
     },
     "coverage": 0,
@@ -1307,7 +1342,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Java Language Fundamentals",
+      "folder": "Course  Java Language Fundamentals",
       "modules": 11
     },
     "coverage": 85,
@@ -1342,7 +1377,7 @@ var courseOverviewData = [
     "syllabus": false,
     "source": {
       "exists": true,
-      "folder": "Course: Java OOP",
+      "folder": "Course  Java OOP",
       "modules": 6
     },
     "coverage": null,
@@ -1376,24 +1411,24 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "Course  JavaScript",
+      "modules": 4
     },
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
+      "lessons": 24,
+      "slides": 11,
       "quizzes": 0,
-      "activities": 0,
-      "demos": 0,
+      "activities": 35,
+      "demos": 5,
       "caseStudies": 0,
       "instructorGuides": 0,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 75,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -1412,7 +1447,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: JavaScript Booster",
+      "folder": "Course  JavaScript Booster",
       "modules": 4
     },
     "coverage": 0,
@@ -1447,7 +1482,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: JavaScript React for C#",
+      "folder": "Course  JavaScript React for C#",
       "modules": 1
     },
     "coverage": 0,
@@ -1482,7 +1517,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Layers and File IO for C#",
+      "folder": "Course  Layers and File IO for C#",
       "modules": 1
     },
     "coverage": 80,
@@ -1517,7 +1552,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: LINQ and Dependency Injection",
+      "folder": "Course  LINQ and Dependency Injection",
       "modules": 1
     },
     "coverage": 67,
@@ -1552,7 +1587,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Linux Foundations",
+      "folder": "Course  Linux Foundations",
       "modules": 4
     },
     "coverage": 100,
@@ -1587,7 +1622,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "COURSE: macOS Administration Fundamentals",
+      "folder": "COURSE  macOS Administration Fundamentals",
       "modules": 0
     },
     "coverage": 0,
@@ -1622,7 +1657,7 @@ var courseOverviewData = [
     "syllabus": false,
     "source": {
       "exists": true,
-      "folder": "COURSE: Microsoft Endpoint Administrator",
+      "folder": "COURSE  Microsoft Endpoint Administrator",
       "modules": 11
     },
     "coverage": null,
@@ -1657,7 +1692,7 @@ var courseOverviewData = [
     "syllabus": false,
     "source": {
       "exists": true,
-      "folder": "COURSE: Microsoft 365 Fundamentals",
+      "folder": "COURSE  Microsoft 365 Fundamentals",
       "modules": 4
     },
     "coverage": null,
@@ -1692,7 +1727,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "Course: Networking Fundamentals",
+      "folder": "Course  Networking Fundamentals",
       "modules": 0
     },
     "coverage": null,
@@ -1727,7 +1762,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Non-Relational Data",
+      "folder": "Course  Non-Relational Data",
       "modules": 5
     },
     "coverage": 0,
@@ -1762,7 +1797,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Pandas",
+      "folder": "Course  Pandas",
       "modules": 6
     },
     "coverage": 0,
@@ -1902,7 +1937,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Python Booster",
+      "folder": "Course  Python Booster",
       "modules": 8
     },
     "coverage": 0,
@@ -1972,7 +2007,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "Course: React",
+      "folder": "Course  React",
       "modules": 0
     },
     "coverage": null,
@@ -2007,7 +2042,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Security and Cybersecurity Fundamentals",
+      "folder": "Course  Security and Cybersecurity Fundamentals",
       "modules": 7
     },
     "coverage": null,
@@ -2041,8 +2076,8 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": "Course: Software Developer Prework",
+      "exists": true,
+      "folder": "CURRICULUM  Software Developer Java",
       "modules": 0
     },
     "coverage": null,
@@ -2054,11 +2089,11 @@ var courseOverviewData = [
       "activities": 0,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 1,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 1,
     "deployment": {
       "state": "Not Deployed",
       "expected": 0,
@@ -2077,7 +2112,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "Course: Software Development Lifecycle",
+      "folder": "Course  Software Development Lifecycle",
       "modules": 0
     },
     "coverage": null,
@@ -2112,7 +2147,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: SQL Booster",
+      "folder": "Course  SQL Booster",
       "modules": 4
     },
     "coverage": null,
@@ -2147,7 +2182,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: SQL for C#",
+      "folder": "Course  SQL for C#",
       "modules": 1
     },
     "coverage": null,
@@ -2171,18 +2206,18 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "sql-fundamentals",
-    "name": "SQL Fundamentals",
+    "id": "sql-fundamentals-for-operations",
+    "name": "SQL Fundamentals for Operations",
     "hours": 24,
     "outline": {
       "exists": true,
-      "modules": 5,
-      "lessons": 14
+      "modules": 2,
+      "lessons": 11
     },
-    "syllabus": true,
+    "syllabus": false,
     "source": {
       "exists": true,
-      "folder": "Course: SQL for Data",
+      "folder": "Course  SQL for Data",
       "modules": 8
     },
     "coverage": 0,
@@ -2217,7 +2252,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": false,
-      "folder": "Course: Student Onboarding",
+      "folder": "Course  Student Onboarding",
       "modules": 0
     },
     "coverage": null,
@@ -2287,7 +2322,7 @@ var courseOverviewData = [
     "syllabus": false,
     "source": {
       "exists": true,
-      "folder": "COURSE: Troubleshooting Supporting in an Enterprise Environment",
+      "folder": "COURSE  Troubleshooting Supporting in an Enterprise Environment",
       "modules": 7
     },
     "coverage": null,
@@ -2322,7 +2357,7 @@ var courseOverviewData = [
     "syllabus": true,
     "source": {
       "exists": true,
-      "folder": "Course: Web Development with JavaScript",
+      "folder": "Course  Web Development with JavaScript",
       "modules": 1
     },
     "coverage": 0,
