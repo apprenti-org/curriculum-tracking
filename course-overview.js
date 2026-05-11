@@ -206,7 +206,7 @@ var courseOverviewData = [
     "totalAssets": 0,
     "deployment": {
       "state": "Not Deployed",
-      "expected": 0,
+      "expected": 4,
       "actual": 0
     }
   },
