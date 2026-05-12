@@ -215,7 +215,7 @@ const courseData = [
     "note": "Net-new integrative capstone (20h / 4 days). 5 modules / 5 lessons. Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases — Discovery, Design, Build, Operate, Report. All content produced: content.md, instructor-guide.md, Capstone Deliverables checklist (quiz.md), and interactive.html for all 5 lessons. Course-completion report at _REVIEW/course-completion-report.md.",
     "driveFolder": null,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "cloud-fundamentals",
