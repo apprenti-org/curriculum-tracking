@@ -20,6 +20,11 @@
     "id": "ai-foundations"
   },
   {
+    "file": "ai-assisted-test-driven-development.json",
+    "course": "AI-Assisted Test Driven Development",
+    "id": "ai-assisted-test-driven-development"
+  },
+  {
     "file": "ai-driven-specifications.json",
     "course": "AI-Driven Specifications: The Blueprint Method",
     "id": "ai-driven-specifications"

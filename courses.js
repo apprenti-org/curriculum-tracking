@@ -75,6 +75,20 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-assisted-test-driven-development",
+    "name": "AI-Assisted Test Driven Development",
+    "hours": 2,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": null,
+    "outline": true,
+    "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: Red-Green-Refactor with AI (1h); Test Doubles, Mocks, and Coverage (1h). RTI/OJL alignment deferred — JVFD curriculum design folder not yet created. Standard Alignment Report skipped per decision gate (<=4h, non-cert). Content scaffolding in progress (issue #444).",
+    "driveFolder": null,
+    "statusConfirmed": false
+  },
+  {
     "id": "ai-driven-specifications",
     "name": "AI-Driven Specifications: The Blueprint Method",
     "hours": 2,
