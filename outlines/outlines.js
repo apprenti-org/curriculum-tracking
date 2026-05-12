@@ -821,6 +821,13 @@ const courseOutlines = {
       }
     ]
   },
+  "AI-Assisted Test Driven Development": {
+    "course": "AI-Assisted Test Driven Development",
+    "totalHours": 2,
+    "totalModules": 0,
+    "totalLessons": 0,
+    "modules": []
+  },
   "AI-Driven Specifications: The Blueprint Method": {
     "course": "AI-Driven Specifications: The Blueprint Method",
     "totalHours": 2,
