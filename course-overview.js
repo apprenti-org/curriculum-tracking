@@ -186,28 +186,28 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "ai-assisted-test-driven-development/deploy/content",
+      "modules": 1
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 67,
+    "lessonsWithContent": 2,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
+      "lessons": 8,
+      "slides": 2,
+      "quizzes": 2,
       "activities": 0,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 2,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 14,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 2,
+      "actual": 2
     }
   },
   {
