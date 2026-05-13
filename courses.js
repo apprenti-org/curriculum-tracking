@@ -80,13 +80,13 @@ const courseData = [
     "hours": 2,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": true,
-    "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: Red-Green-Refactor with AI (1h); Test Doubles, Mocks, and Coverage (1h). RTI/OJL alignment deferred — JVFD curriculum design folder not yet created. Standard Alignment Report skipped per decision gate (<=4h, non-cert). Content scaffolding in progress (issue #444).",
+    "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: Red-Green-Refactor with AI (1h); Test Doubles, Mocks, and Coverage (1h). Both SCORM zips deployed to Absorb; starter/solution repos provisioned at apprenti-org/ai-assisted-test-driven-development-student and -instructor. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "ai-driven-specifications",
