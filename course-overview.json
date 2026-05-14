@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-14T11:42:25",
+  "generated": "2026-05-14T15:04:34",
   "courseCount": 70,
   "courses": [
     {
@@ -188,28 +188,28 @@
       },
       "syllabus": true,
       "source": {
-        "exists": false,
-        "folder": null,
-        "modules": 0
+        "exists": true,
+        "folder": "ai-assisted-coding-fundamentals/deploy/content",
+        "modules": 2
       },
-      "coverage": 0,
-      "lessonsWithContent": 0,
+      "coverage": 60,
+      "lessonsWithContent": 3,
       "assets": {
-        "lessons": 0,
-        "slides": 0,
-        "quizzes": 0,
+        "lessons": 9,
+        "slides": 3,
+        "quizzes": 3,
         "activities": 0,
         "demos": 0,
         "caseStudies": 0,
-        "instructorGuides": 0,
+        "instructorGuides": 3,
         "modIntros": 0,
         "modRecaps": 0
       },
-      "totalAssets": 0,
+      "totalAssets": 18,
       "deployment": {
-        "state": "Not Deployed",
+        "state": "Complete",
         "expected": 3,
-        "actual": 0
+        "actual": 3
       }
     },
     {

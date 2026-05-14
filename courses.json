@@ -80,9 +80,9 @@
         "design": "Complete",
         "development": "Complete"
       },
-      "syllabus": null,
+      "syllabus": "syllabi/ai-assisted-coding-fundamentals.html",
       "outline": true,
-      "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). Phase 3 content production complete (issue #476); interactive.html produced for all 4 lessons. Starter/solution repos staged (code-manifest issue #474). RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+      "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). Rows 7–10 complete: content production (#476), SCORM packaging (#478), deployment (#479), starter asset audit (#480). Student repo: apprenti-org/ai-assisted-coding-fundamentals-student. Pending: LMS Upload (#481). RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
       "driveFolder": null,
       "statusConfirmed": false
     },
