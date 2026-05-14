@@ -20,6 +20,11 @@
     "id": "ai-foundations"
   },
   {
+    "file": "ai-assisted-coding-fundamentals.json",
+    "course": "AI-Assisted Coding Fundamentals",
+    "id": "ai-assisted-coding-fundamentals"
+  },
+  {
     "file": "ai-assisted-test-driven-development.json",
     "course": "AI-Assisted Test Driven Development",
     "id": "ai-assisted-test-driven-development"
