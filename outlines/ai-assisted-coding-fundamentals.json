@@ -1,0 +1,76 @@
+{
+  "course": "AI-Assisted Coding Fundamentals",
+  "totalHours": 4,
+  "totalModules": 2,
+  "totalLessons": 4,
+  "modules": [
+    {
+      "name": "AI-Assisted Code Generation",
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Your First AI-Assisted Program",
+          "hours": 1,
+          "topics": [
+            "**What AI coding assistants are — and aren't (10 min)**",
+            "**Writing your first prompt (15 min)**",
+            "**Code-along: read before you run (25 min)**",
+            "**Wrap-Up and Reflection (5 min)**"
+          ],
+          "objects": [
+            "Object: Lesson: Your First AI-Assisted Program",
+            "Assessment: Quiz: Your First AI-Assisted Program"
+          ]
+        },
+        {
+          "title": "Prompting AI Effectively for Code",
+          "hours": 1,
+          "topics": [
+            "**Anatomy of a good coding prompt (15 min)**",
+            "**Iterating prompts (15 min)**",
+            "**Code-along: prompt iteration on a grade calculator (20 min)**",
+            "**Wrap-Up and Reflection (5 min)**"
+          ],
+          "objects": [
+            "Object: Lesson: Prompting AI Effectively for Code",
+            "Assessment: Quiz: Prompting AI Effectively for Code"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Code Quality and Responsible Use",
+      "hours": 2,
+      "lessons": [
+        {
+          "title": "Debugging and Refactoring with AI",
+          "hours": 1,
+          "topics": [
+            "**Using AI to debug — the right way (15 min)**",
+            "**Refactoring with AI (15 min)**",
+            "**Code-along: debug and refactor a failing calculator (20 min)**",
+            "**Wrap-Up and Reflection (5 min)**"
+          ],
+          "objects": [
+            "Object: Lesson: Debugging and Refactoring with AI",
+            "Assessment: Quiz: Debugging and Refactoring with AI"
+          ]
+        },
+        {
+          "title": "Reviewing AI-Generated Code for Security and Accuracy",
+          "hours": 1,
+          "topics": [
+            "**Why AI-generated code needs review (10 min)**",
+            "**A practical review checklist (20 min)**",
+            "**Code-along: review and fix a flagged snippet (20 min)**",
+            "**Wrap-Up and Reflection (5 min)**"
+          ],
+          "objects": [
+            "Object: Lesson: Reviewing AI-Generated Code for Security and Accuracy",
+            "Assessment: Quiz: Reviewing AI-Generated Code for Security and Accuracy"
+          ]
+        }
+      ]
+    }
+  ]
+}
