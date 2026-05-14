@@ -75,6 +75,20 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-assisted-coding-fundamentals",
+    "name": "AI-Assisted Coding Fundamentals",
+    "hours": 4,
+    "status": {
+      "design": "Complete",
+      "development": "Complete"
+    },
+    "syllabus": null,
+    "outline": true,
+    "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). Phase 3 content production complete (issue #476); interactive.html produced for all 4 lessons. Starter/solution repos staged (code-manifest issue #474). RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+    "driveFolder": null,
+    "statusConfirmed": false
+  },
+  {
     "id": "ai-assisted-test-driven-development",
     "name": "AI-Assisted Test Driven Development",
     "hours": 2,
