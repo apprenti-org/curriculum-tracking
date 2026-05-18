@@ -926,16 +926,16 @@ const courseData = [
     "statusConfirmed": false
   },
   {
-    "id": "sql-fundamentals-for-operations",
-    "name": "SQL Fundamentals for Operations",
+    "id": "sql-fundamentals",
+    "name": "SQL Fundamentals",
     "hours": 24,
     "status": {
-      "design": "Not Started",
-      "development": "Not Started"
+      "design": "Complete",
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": null,
-    "note": "OSS Course 10, Area 3 — net-new course, to be authored as a slim variant of SQL for Data (existing 'Reduce from SQL for Data' note). 24h matches the standard's SQL minimum. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #83).",
+    "note": "OSS Course 10, Area 3. Derived from sql-for-data (50h Data Analyst) — 24h ops-flavored variant. 13 lessons, 9 modules. Live in Absorb 2026-05-18. See apprenti-org/design-documentation#361 onboarding meta.",
     "driveFolder": null,
     "statusConfirmed": true
   },
@@ -1250,8 +1250,8 @@ const curriculaData = [
             "id": "web-development-with-javascript"
           },
           {
-            "name": "SQL Fundamentals for Operations",
-            "id": "sql-fundamentals-for-operations"
+            "name": "SQL Fundamentals",
+            "id": "sql-fundamentals"
           },
           {
             "name": "CI/CD Pipeline Concepts",
