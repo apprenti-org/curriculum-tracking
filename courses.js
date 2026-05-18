@@ -84,9 +84,9 @@ const courseData = [
     },
     "syllabus": "syllabi/ai-assisted-coding-fundamentals.html",
     "outline": true,
-    "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). Rows 7–10 complete: content production (#476), SCORM packaging (#478), deployment (#479), starter asset audit (#480). Student repo: apprenti-org/ai-assisted-coding-fundamentals-student. Pending: LMS Upload (#481). RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+    "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). All 12 onboarding rows complete: content production (#476), SCORM packaging (#478), deployment (#479), starter asset audit (#480), LMS upload (#486). Student repo: apprenti-org/ai-assisted-coding-fundamentals-student. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
     "driveFolder": null,
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "ai-assisted-test-driven-development",
