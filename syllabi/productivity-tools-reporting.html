@@ -313,7 +313,7 @@ code {
             <div class="header-meta">
                 <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network</span>
                 <span><i class="fa-regular fa-clock"></i> 4 hours</span>
-                <span class="badge">DRAFT</span>
+                <span class="badge">CURRENT</span>
             </div>
         </div>
         <section>
@@ -324,9 +324,17 @@ code {
         <hr class="divider">
 
         <section>
-            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Technical Report Project</h2>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment</h2>
             <div class="assessment-box">
-                <p>Learners will create an operational analysis project that includes an Excel dashboard analyzing relevant technical metrics and a PowerPoint presentation communicating findings and recommendations to stakeholders. The assessment evaluates ability to organize data, create effective visualizations, and communicate technical information clearly.</p>
+                <p>The summative assessment is integrated across the last activity in each module. No separate assessment hour is allocated.</p>
+                <p>Capstone deliverable:</p>
+                <p>1. An Excel workbook analyzing a provided operational dataset (incident log or capacity metrics) with at least one pivot table and one dashboard view</p>
+                <p>2. A 5–7 slide PowerPoint briefing that explains the findings and recommends an action</p>
+                <p>Evaluation rubric:</p>
+                <p>- Data handling: accuracy, appropriate formulas, clear structure</p>
+                <p>- Visualization: chart-type fit, readability, honesty (no misleading axes/scales)</p>
+                <p>- Presentation: logical structure, audience-appropriate depth, professional design</p>
+                <p>- Communication: clarity of recommendation, supporting evidence, Q&amp;A preparedness</p>
             </div>
         </section>
 
@@ -335,12 +343,27 @@ code {
         <section>
             <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
             <ol class="outcomes">
-                <li>Organize and analyze technical data effectively in Excel</li>
-                <li>Create formulas and calculations for operational metrics</li>
-                <li>Design dashboards that visualize key performance indicators</li>
-                <li>Structure technical presentations for diverse audiences</li>
-                <li>Create visual diagrams and flowcharts to clarify complex concepts</li>
-                <li>Present data-driven recommendations professionally</li>
+                <li>Organize operational data in Excel using appropriate worksheet structure, naming, and data types</li>
+                <li>Apply data validation and cleanup techniques to prepare raw operational exports for analysis</li>
+                <li>Use Excel formulas to calculate common technical metrics (MTTR, uptime %, ticket counts by severity)</li>
+                <li>Use Excel Tables and structured references to build spreadsheets that stay correct as data grows</li>
+                <li>Apply sorting, filtering, and conditional formatting to surface anomalies in operational data</li>
+                <li>Select the appropriate chart type for a given data-communication goal (comparison, trend, composition, distribution)</li>
+                <li>Create pivot tables and pivot charts to summarize operational data</li>
+                <li>Build a one-page operational dashboard combining KPI summaries, trends, and status indicators</li>
+                <li>Use conditional formatting as a lightweight visualization technique (heat maps, data bars, icon sets)</li>
+                <li>Export Excel charts and dashboards for use in documentation and presentations</li>
+                <li>Identify and fix misleading visualizations (truncated axes, chart-type mismatch, 3D distortion)</li>
+                <li>Structure a technical presentation using the problem → evidence → options → recommendation pattern</li>
+                <li>Apply slide design best practices (layout, hierarchy, typography, contrast) to improve readability</li>
+                <li>Use PowerPoint layouts, master slides, and themes to enforce consistency across a deck</li>
+                <li>Create technical diagrams (network topology, flow diagrams, architecture blocks) using shapes and SmartArt</li>
+                <li>Embed Excel charts and tables into slides without losing fidelity or linking incorrectly</li>
+                <li>Frame a set of findings as a data story tied to the audience's decision</li>
+                <li>Annotate charts and visuals to direct audience attention to the key takeaway</li>
+                <li>Adapt the same technical findings for different audiences (executive summary vs technical deep-dive)</li>
+                <li>Prepare for and handle Q&amp;A, including defending claims with data and capturing follow-ups</li>
+                <li>Use PowerPoint presenter tools (speaker notes, rehearse with timing, basic accessibility settings)</li>
             </ol>
         </section>
 
@@ -356,15 +379,27 @@ code {
                     <span class="module-hours">2 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Data Management and Analysis</div>
+                    <div class="lesson-heading">Lesson: 1: Data Management and Analysis in Excel (1h)</div>
                     <ul class="topic-list">
-                        <li>Spreadsheet design</li>
-                        <li>Technical metrics and formulas</li>
+                        <li>Spreadsheet design and organization for technical data (naming conventions, worksheet structure, data ranges)</li>
+                        <li>Data entry, validation, and cleanup (removing duplicates, handling missing values, data types)</li>
+                        <li>Formulas and functions for technical metrics (SUM, AVERAGE, COUNTIF, SUMIF, IF, VLOOKUP/XLOOKUP)</li>
+                        <li>Tables and structured references for maintainable spreadsheets</li>
+                        <li>Sorting, filtering, and conditional formatting to surface anomalies</li>
+                        <li>Common operational data sources: log exports, ticketing reports, monitoring CSVs</li>
+                        <li>Clean a provided log-export CSV and produce a sortable incident table</li>
+                        <li>Build a small KPI calculator (MTTR, uptime %, ticket volume by severity) from sample operations data</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Data Visualization</div>
+                    <div class="lesson-heading">Lesson: 2: Data Visualization and Operational Dashboards (1h)</div>
                     <ul class="topic-list">
-                        <li>Charts and dashboards</li>
-                        <li>KPI visualization</li>
+                        <li>Chart types and when to use them (column, bar, line, pie, scatter) — data visualization</li>
+                        <li>Pivot tables and pivot charts for summarizing technical data</li>
+                        <li>Building an operational dashboard: KPI tiles, trend lines, status indicators</li>
+                        <li>Conditional formatting for visual health checks (heat maps, data bars, icon sets)</li>
+                        <li>Exporting charts and dashboards for inclusion in presentations and documentation</li>
+                        <li>Avoiding misleading visualizations (truncated axes, 3D distortion, chart-type mismatch)</li>
+                        <li>Convert a flat KPI table into a pivot-driven dashboard with at least three visual elements</li>
+                        <li>Critique a set of sample charts and justify one fix per chart</li>
                     </ul>
                 </div>
             </div>
@@ -376,31 +411,31 @@ code {
                     <span class="module-hours">2 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Presentation Design</div>
+                    <div class="lesson-heading">Lesson: 3: Presentation Design Principles (1h)</div>
                     <ul class="topic-list">
-                        <li>Structure and visual design</li>
-                        <li>Technical diagrams</li>
+                        <li>Structuring a technical presentation: problem → evidence → options → recommendation</li>
+                        <li>Slide design best practices: consistent layout, hierarchy, readable typography, contrast</li>
+                        <li>Using PowerPoint layouts, master slides, and themes for consistency</li>
+                        <li>Creating technical diagrams: network topology, architecture blocks, flow diagrams, sequence steps</li>
+                        <li>SmartArt and shape-based diagrams for process flows, runbook visualizations, and escalation paths</li>
+                        <li>Embedding and formatting Excel charts/tables inside slides without losing fidelity</li>
+                        <li>Rebuild a dense text-heavy slide into a structured, visual slide following design principles</li>
+                        <li>Create a network/system diagram for a provided operational scenario using shapes or SmartArt</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Presenting Data</div>
+                    <div class="lesson-heading">Lesson: 4: Presenting Data and Recommendations (1h)</div>
                     <ul class="topic-list">
-                        <li>Data visualization in presentations</li>
-                        <li>Communicating recommendations</li>
+                        <li>Telling a data story: framing findings around the audience's decision</li>
+                        <li>Choosing the right chart for the message (comparison, trend, distribution, composition)</li>
+                        <li>Annotating charts to direct attention (callouts, highlights, plain-language takeaways)</li>
+                        <li>Preparing for different audiences: executive summary vs technical deep-dive</li>
+                        <li>Handling Q&amp;A: backing up claims with data, admitting limits, capturing follow-ups</li>
+                        <li>Presenter tools: notes, rehearse-with-timing, and basic accessibility (alt text, contrast, reading order)</li>
+                        <li>Deliver a 5-minute technical briefing (incident review or capacity report) using a provided dataset</li>
+                        <li>Peer feedback on clarity, structure, and visual effectiveness</li>
                     </ul>
                 </div>
             </div>
 
-        </section>
-
-        <hr class="divider">
-
-        <section>
-            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
-            <ul class="labs-list">
-                <li>Creating operational dashboards from sample data</li>
-                <li>Designing technical diagrams in PowerPoint</li>
-                <li>Presenting findings to technical and non-technical audiences</li>
-                <li>Capstone: Develop and present comprehensive technical report with dashboard and presentation</li>
-            </ul>
         </section>
 
     </div>
