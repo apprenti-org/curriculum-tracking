@@ -73,6 +73,21 @@
       "statusConfirmed": true
     },
     {
+      "id": "ai-assisted-cicd-pipelines",
+      "name": "AI-Assisted CI/CD Pipelines",
+      "hours": 2,
+      "status": {
+        "design": "Complete",
+        "development": "In Progress"
+      },
+      "syllabus": "syllabi/ai-assisted-cicd-pipelines.html",
+      "outline": true,
+      "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: CI/CD Concepts and Generating Workflows with AI (1h); Building a Spring Application Pipeline with GitHub Actions (1h). GitHub Actions, Spring Boot TemperatureConverter, red/green build cycle, AI-assisted workflow YAML generation and build log interpretation. Content scaffolding in progress (Phase 0 + 1 complete, Row 5 of onboarding \u2014 meta #525). RTI/OJL alignment deferred \u2014 JVFD curriculum design folder not yet created.",
+      "driveFolder": null,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+      "statusConfirmed": false
+    },
+    {
       "id": "ai-assisted-coding-fundamentals",
       "name": "AI-Assisted Coding Fundamentals",
       "hours": 4,
@@ -82,7 +97,7 @@
       },
       "syllabus": "syllabi/ai-assisted-coding-fundamentals.html",
       "outline": true,
-      "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). All 12 onboarding rows complete: content production (#476), SCORM packaging (#478), deployment (#479), starter asset audit (#480), LMS upload (#486). Student repo: apprenti-org/ai-assisted-coding-fundamentals-student. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+      "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). All 12 onboarding rows complete: content production (#476), SCORM packaging (#478), deployment (#479), starter asset audit (#480), LMS upload (#486). Student repo: apprenti-org/ai-assisted-coding-fundamentals-student. RTI/OJL alignment deferred \u2014 JVFD curriculum design folder not yet created.",
       "driveFolder": null,
       "statusConfirmed": true
     },

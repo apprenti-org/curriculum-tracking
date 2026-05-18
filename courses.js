@@ -75,6 +75,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-assisted-cicd-pipelines",
+    "name": "AI-Assisted CI/CD Pipelines",
+    "hours": 2,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": "syllabi/ai-assisted-cicd-pipelines.html",
+    "outline": true,
+    "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: CI/CD Concepts and Generating Workflows with AI (1h); Building a Spring Application Pipeline with GitHub Actions (1h). GitHub Actions, Spring Boot TemperatureConverter, red/green build cycle, AI-assisted workflow YAML generation and build log interpretation. Content scaffolding in progress (Phase 0 + 1 complete, Row 5 of onboarding — meta #525). RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+    "driveFolder": null,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": false
+  },
+  {
     "id": "ai-assisted-coding-fundamentals",
     "name": "AI-Assisted Coding Fundamentals",
     "hours": 4,

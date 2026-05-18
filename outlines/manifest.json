@@ -20,6 +20,11 @@
     "id": "ai-foundations"
   },
   {
+    "file": "ai-assisted-cicd-pipelines.json",
+    "course": "AI-Assisted CI/CD Pipelines",
+    "id": "ai-assisted-cicd-pipelines"
+  },
+  {
     "file": "ai-assisted-coding-fundamentals.json",
     "course": "AI-Assisted Coding Fundamentals",
     "id": "ai-assisted-coding-fundamentals"

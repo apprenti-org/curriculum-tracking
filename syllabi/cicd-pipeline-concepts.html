@@ -313,7 +313,7 @@ code {
             <div class="header-meta">
                 <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network</span>
                 <span><i class="fa-regular fa-clock"></i> 10 hours</span>
-                <span class="badge">DRAFT</span>
+                <span class="badge">CURRENT</span>
             </div>
         </div>
         <section>
@@ -324,24 +324,49 @@ code {
         <hr class="divider">
 
         <section>
-            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Pipeline Design and Implementation</h2>
-            <div class="assessment-box">
-                <p>Learners will design and implement a functional CI/CD pipeline for a sample application or infrastructure project. The assessment evaluates understanding of pipeline architecture, ability to select and configure appropriate tools, knowledge of deployment strategies, and practical implementation skills. Learners will demonstrate their pipeline through automated testing, successful deployments, and documented workflows.</p>
-            </div>
-        </section>
-
-        <hr class="divider">
-
-        <section>
             <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
             <ol class="outcomes">
-                <li>Explain the principles of continuous integration and continuous deployment</li>
-                <li>Design version control workflows and branching strategies for team collaboration</li>
-                <li>Configure automated build and testing processes</li>
-                <li>Select appropriate CI/CD tools for specific use cases</li>
-                <li>Implement deployment strategies that minimize risk and downtime</li>
-                <li>Monitor and troubleshoot CI/CD pipelines</li>
-                <li>Document and communicate pipeline workflows to team members</li>
+                <li>Define continuous integration (CI) and continuous deployment (CD), and explain why teams adopt them.</li>
+                <li>Distinguish trunk-based from feature-branch development workflows and identify when each fits.</li>
+                <li>Configure GitHub branch protection rules with required status checks on a sample repository.</li>
+                <li>Write CI-friendly commit messages using the conventional commits format.</li>
+                <li>Identify the GitHub Actions events (`push`, `pull_request`, `schedule`) that trigger pipeline runs.</li>
+                <li>Identify the four-level GitHub Actions object model: workflow, job, step, action.</li>
+                <li>Locate and parse a workflow file in the `.github/workflows/` directory.</li>
+                <li>Use marketplace actions (`actions/checkout`, `actions/setup-python`) to compose a workflow without writing custom shell.</li>
+                <li>Author a one-stage workflow file that runs on every push and prints the Python version.</li>
+                <li>Add a test job to an existing workflow that runs alongside the build job. (OJL 3b)</li>
+                <li>Interpret status check results on a pull request and trace failures back to the failing step.</li>
+                <li>Configure dependency caching with `actions/cache` to reduce workflow run time.</li>
+                <li>Debug a red build by reading workflow logs and identifying root cause vs symptom.</li>
+                <li>Distinguish jobs from steps and identify when work belongs in a separate job versus another step. (OJL 3b)</li>
+                <li>Express job dependencies using `needs:` to build a directed pipeline graph.</li>
+                <li>Use matrix strategies (`strategy.matrix`) to run a job across multiple language/OS versions in parallel.</li>
+                <li>Identify use cases for reusable workflows and composite actions.</li>
+                <li>Read a 6-stage / 2-environment promotion pipeline and explain how each stage gates the next.</li>
+                <li>Distinguish repository secrets, organization secrets, and environment secrets, and identify when to use each. (OJL 3b)</li>
+                <li>Configure a GitHub Environment with required reviewers and deployment branch restrictions.</li>
+                <li>Reference environment-scoped secrets safely in workflow YAML using the `secrets.&lt;NAME&gt;` context.</li>
+                <li>Describe how OIDC enables credential-less cloud deployment and why it's preferred over long-lived access keys.</li>
+                <li>Read workflow run statuses from the GitHub UI and identify common failure patterns from the run summary.</li>
+                <li>Add a status badge to a repository README using the GitHub Actions badge URL convention.</li>
+                <li>Configure required status checks to enforce CI gating on the default branch.</li>
+                <li>Identify the workflow-failure notification options available in GitHub and via third-party integrations.</li>
+                <li>Apply pipeline observability practices: what to log, what to time, and where to surface results.</li>
+                <li>Define blue-green deployment and identify the operational scenarios where its tradeoffs fit best. (OJL 3b)</li>
+                <li>Describe canary releases and explain the role of the observation window in catching regressions early.</li>
+                <li>Explain rolling updates and the role of the load balancer in coordinating node replacement.</li>
+                <li>Compare deployment strategies for a given operational scenario and recommend one with rationale.</li>
+                <li>Identify how each deployment strategy is expressed in a GitHub Actions workflow.</li>
+                <li>Apply semantic versioning rules (MAJOR.MINOR.PATCH) to determine the correct version bump for a code change. (OJL 3b)</li>
+                <li>Tag a release in Git and configure a tag-triggered GitHub Actions workflow.</li>
+                <li>Generate release notes from conventional commit history.</li>
+                <li>Execute a tag-based rollback when a deployment fails.</li>
+                <li>Run post-deployment verification using smoke tests and health checks.</li>
+                <li>Author a 4-stage CI/CD workflow (Lint → Test → Build → Deploy) on a course-provided sample repository. (OJL 3b)</li>
+                <li>Configure a GitHub Environment with one protection rule and one consumed secret.</li>
+                <li>Trigger the pipeline on pull request and produce a green end-to-end run.</li>
+                <li>Document the pipeline shape in a README section that an external reader can use to understand the architecture.</li>
             </ol>
         </section>
 
@@ -353,19 +378,34 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">1</span>
-                    <span class="module-title">Continuous Integration Fundamentals</span>
+                    <span class="module-title">CI/CD pipeline concepts and tooling</span>
                     <span class="module-hours">3 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Version Control Essentials</div>
+                    <div class="lesson-heading">Lesson: 1: CI/CD Fundamentals and Version Control for CI (1h)</div>
                     <ul class="topic-list">
-                        <li>Git workflows and branching</li>
-                        <li>Code review practices</li>
+                        <li>What CI is, what CD is, and why teams adopt them</li>
+                        <li>Trunk-based vs feature-branch development</li>
+                        <li>Branch protection rules and required status checks</li>
+                        <li>Conventional commits and CI-friendly history</li>
+                        <li>Events that trigger pipelines (push, pull_request, schedule)</li>
+                        <li>Individual: configure branch protection on a sample repo with one required status check</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Build Automation</div>
+                    <div class="lesson-heading">Lesson: 2: Introduction to GitHub Actions (1h)</div>
                     <ul class="topic-list">
-                        <li>Automated testing integration</li>
-                        <li>Build pipeline setup</li>
+                        <li>Workflows, jobs, steps — the GitHub Actions object model</li>
+                        <li>The `.github/workflows/` directory and YAML basics</li>
+                        <li>Events, runners, and the marketplace actions ecosystem</li>
+                        <li>Authoring a first one-stage workflow that builds a generic Python sample</li>
+                        <li>Pair coding: write and commit a `build.yml` that runs on every push and prints the Python version</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: Build Automation and Automated Testing as a CI Step (1h)</div>
+                    <ul class="topic-list">
+                        <li>Adding a test job alongside the build job (OJL 3b)</li>
+                        <li>Status checks and the failing-build experience</li>
+                        <li>Caching dependencies between runs (`actions/cache`)</li>
+                        <li>Reading workflow logs and debugging a red build</li>
+                        <li>Individual: extend the Lesson 2 workflow with a `pytest` job and intentionally break a test to observe the failure flow</li>
                     </ul>
                 </div>
             </div>
@@ -373,23 +413,35 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">2</span>
-                    <span class="module-title">Continuous Deployment and Release Management</span>
-                    <span class="module-hours">4 hours</span>
+                    <span class="module-title">Pipeline architecture</span>
+                    <span class="module-hours">3 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Pipeline Architecture</div>
+                    <div class="lesson-heading">Lesson: 4: Multi-Stage Pipelines (1h)</div>
                     <ul class="topic-list">
-                        <li>Pipeline stages and tools</li>
-                        <li>Feedback mechanisms</li>
+                        <li>Jobs vs steps and when to split (OJL 3b)</li>
+                        <li>`needs:` and the pipeline DAG</li>
+                        <li>Matrix strategies for cross-version testing</li>
+                        <li>Reusable workflows and composite actions</li>
+                        <li>Worked example (instructor-led, not built by learners): a 6-stage / 2-environment promotion pipeline showing what production CI/CD architecture looks like</li>
+                        <li>Pair coding: refactor a single-job workflow into two dependent jobs using `needs:`</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Deployment Strategies</div>
+                    <div class="lesson-heading">Lesson: 5: Secrets, Environments, and Environment Protection (1h)</div>
                     <ul class="topic-list">
-                        <li>Blue-green and canary deployments</li>
-                        <li>Rolling updates</li>
+                        <li>Repository secrets vs organization secrets vs environment-scoped secrets (OJL 3b)</li>
+                        <li>Configuring a GitHub Environment with required reviewers</li>
+                        <li>Deployment branches and tag-based gating</li>
+                        <li>OIDC for cloud-credential-less deployment (overview)</li>
+                        <li>Individual: configure a `staging` environment with one secret and one required reviewer</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Release Management</div>
+                    <div class="lesson-heading">Lesson: 6: Monitoring and Feedback Loops (1h)</div>
                     <ul class="topic-list">
-                        <li>Versioning and rollback</li>
+                        <li>Workflow run statuses and surfacing them in the repo</li>
+                        <li>Status badges in the README</li>
+                        <li>Required checks on PRs and merge gating</li>
+                        <li>Failure notifications: GitHub email, third-party (Slack/PagerDuty) overview</li>
+                        <li>Pipeline observability — what to log, what to time</li>
+                        <li>Individual: add a status badge to a repo README and configure required-check enforcement on the default branch</li>
                     </ul>
                 </div>
             </div>
@@ -397,35 +449,31 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">3</span>
-                    <span class="module-title">CI/CD Tools and Implementation</span>
-                    <span class="module-hours">3 hours</span>
+                    <span class="module-title">Automated testing and deployment</span>
+                    <span class="module-hours">4 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Tool Exploration</div>
+                    <div class="lesson-heading">Lesson: 7: Deployment Strategies (1.25h)</div>
                     <ul class="topic-list">
-                        <li>Jenkins, GitLab CI, GitHub Actions</li>
-                        <li>Tool comparison</li>
+                        <li>Blue-green deployments — what, when, the tradeoffs (OJL 3b)</li>
+                        <li>Canary releases — gradual rollout, observation windows</li>
+                        <li>Rolling updates — load-balancer-driven node replacement</li>
+                        <li>How each strategy is expressed in a GitHub Actions workflow</li>
+                        <li>~20-minute in-lesson activity: short write-up choosing one strategy for a given scenario, with rationale</li>
+                        <li>Individual write-up (in-lesson): "Given a small SaaS product with 2 production app servers, which deployment strategy would you recommend, and why?"</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Hands-On Pipeline Creation</div>
+                    <div class="lesson-heading">Lesson: 8: Release Management (1.25h)</div>
                     <ul class="topic-list">
-                        <li>Building automated pipelines</li>
-                        <li>Integration and troubleshooting</li>
+                        <li>Semantic versioning (MAJOR.MINOR.PATCH) and what bumps what (OJL 3b)</li>
+                        <li>Tagging releases and the relationship between tags and pipelines</li>
+                        <li>Auto-generated release notes</li>
+                        <li>Rollback strategies — the previous-tag pattern, blue-green flip</li>
+                        <li>Post-deployment verification — smoke tests, health checks</li>
+                        <li>Pair coding: tag a release, observe the tag-triggered workflow run, then perform a tag-based rollback</li>
                     </ul>
                 </div>
             </div>
 
-        </section>
-
-        <hr class="divider">
-
-        <section>
-            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
-            <ul class="labs-list">
-                <li>Git workflow exercises with branching and merging</li>
-                <li>Setting up automated testing within a build pipeline</li>
-                <li>Configuring a CI/CD tool (Jenkins, GitLab CI, or GitHub Actions)</li>
-                <li>Capstone: Design and implement a complete CI/CD pipeline for a sample project</li>
-            </ul>
         </section>
 
     </div>

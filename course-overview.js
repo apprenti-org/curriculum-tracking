@@ -176,6 +176,41 @@ var courseOverviewData = [
     }
   },
   {
+    "id": "ai-assisted-cicd-pipelines",
+    "name": "AI-Assisted CI/CD Pipelines",
+    "hours": 2,
+    "outline": {
+      "exists": true,
+      "modules": 2,
+      "lessons": 3
+    },
+    "syllabus": true,
+    "source": {
+      "exists": false,
+      "folder": null,
+      "modules": 0
+    },
+    "coverage": 0,
+    "lessonsWithContent": 0,
+    "assets": {
+      "lessons": 0,
+      "slides": 0,
+      "quizzes": 0,
+      "activities": 0,
+      "demos": 0,
+      "caseStudies": 0,
+      "instructorGuides": 0,
+      "modIntros": 0,
+      "modRecaps": 0
+    },
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
+  },
+  {
     "id": "ai-assisted-coding-fundamentals",
     "name": "AI-Assisted Coding Fundamentals",
     "hours": 4,
@@ -2276,38 +2311,38 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "sql-fundamentals-for-operations",
-    "name": "SQL Fundamentals for Operations",
+    "id": "sql-fundamentals",
+    "name": "SQL Fundamentals",
     "hours": 24,
     "outline": {
-      "exists": true,
-      "modules": 2,
-      "lessons": 11
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
     },
     "syllabus": false,
     "source": {
       "exists": true,
-      "folder": "Course  SQL for Data",
-      "modules": 8
+      "folder": "sql-fundamentals/deploy/content",
+      "modules": 9
     },
-    "coverage": 0,
+    "coverage": null,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 17,
-      "slides": 12,
-      "quizzes": 0,
-      "activities": 83,
-      "demos": 5,
+      "lessons": 27,
+      "slides": 13,
+      "quizzes": 2,
+      "activities": 16,
+      "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 6,
+      "instructorGuides": 3,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 123,
+    "totalAssets": 61,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 13,
+      "actual": 13
     }
   },
   {

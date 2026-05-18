@@ -311,9 +311,9 @@ code {
         <div class="header">
             <h1>Syllabus: Infrastructure as Code Fundamentals</h1>
             <div class="header-meta">
-                <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network</span>
+                <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network (course 12)</span>
                 <span><i class="fa-regular fa-clock"></i> 22 hours</span>
-                <span class="badge">DRAFT</span>
+                <span class="badge">CURRENT</span>
             </div>
         </div>
         <section>
@@ -324,25 +324,90 @@ code {
         <hr class="divider">
 
         <section>
-            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Multi-Environment Infrastructure Project</h2>
-            <div class="assessment-box">
-                <p>Learners will design and implement a complete infrastructure deployment using Terraform and Ansible across multiple environments. The assessment evaluates understanding of IaC concepts, proficiency with major tools, ability to design modular and maintainable infrastructure, and integration with CI/CD practices. Learners will document their infrastructure, demonstrate deployments, and explain design decisions.</p>
-            </div>
-        </section>
-
-        <hr class="divider">
-
-        <section>
             <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
             <ol class="outcomes">
-                <li>Explain the principles, benefits, and paradigms of Infrastructure as Code</li>
-                <li>Write and manage Terraform configurations for cloud provisioning</li>
-                <li>Manage state, modules, and variables in Terraform projects</li>
-                <li>Create and manage Ansible playbooks for configuration management</li>
-                <li>Implement infrastructure deployments on AWS, Azure, and Google Cloud</li>
-                <li>Apply testing and validation strategies to infrastructure code</li>
-                <li>Integrate infrastructure code into CI/CD pipelines</li>
-                <li>Detect and remediate configuration drift in managed infrastructure</li>
+                <li>Describe the pre-IaC operations world and the failure modes that motivated IaC.</li>
+                <li>Define Infrastructure as Code and state its four defining properties.</li>
+                <li>Distinguish provisioning, configuration management, and orchestration as categories of automation.</li>
+                <li>Explain where IaC sits in the broader DevOps lifecycle relative to CI/CD.</li>
+                <li>Identify the major tools in the IaC market and the niche each occupies.</li>
+                <li>Distinguish declarative and imperative approaches to automation with concrete code examples.</li>
+                <li>Define idempotency and explain why it matters for safe re-runs.</li>
+                <li>Describe what IaC state is, why a tool needs it, and the failure modes when it is lost or corrupted.</li>
+                <li>Explain configuration drift and how IaC tools detect it.</li>
+                <li>Read a basic execution plan and identify what an IaC tool intends to create, change, or destroy.</li>
+                <li>Explain why infrastructure code belongs in Git the same as application code.</li>
+                <li>Identify the entries that must appear in an IaC `.gitignore` and why each is excluded.</li>
+                <li>Describe what makes reviewing an IaC PR different from reviewing application code.</li>
+                <li>Install the Terraform CLI and verify the installation with `terraform version`.</li>
+                <li>Explain the provider concept and configure the AWS (or LocalStack) provider in a `.tf` file.</li>
+                <li>Author a `.tf` file that declares a single S3 bucket resource.</li>
+                <li>Execute the four-command Terraform workflow — `init`, `plan`, `apply`, `destroy` — against a real or local cloud.</li>
+                <li>Read `terraform plan` output and identify the meaning of `+`, `-`, and `~` symbols.</li>
+                <li>Identify the major HCL block types (`resource`, `variable`, `output`, `locals`, `data`) and the role of each.</li>
+                <li>Declare an input variable with a default value, type constraint, and description.</li>
+                <li>Declare an output value that surfaces a resource attribute after apply.</li>
+                <li>Use a `locals` block to compute reusable values inside a configuration.</li>
+                <li>State the variable precedence order across environment variables, `.tfvars` files, and CLI flags.</li>
+                <li>Recognize implicit dependencies that arise from resource references in expressions.</li>
+                <li>Declare an explicit dependency using `depends_on` and explain when it is needed.</li>
+                <li>Describe Terraform's dependency graph and what `terraform graph` output represents at a high level.</li>
+                <li>Apply `count` and `for_each` to provision multiple similar resources from a single block.</li>
+                <li>Diagnose a multi-resource configuration where dependencies are declared incorrectly or missing.</li>
+                <li>Explain what Terraform state is, what it contains, and why Terraform requires it.</li>
+                <li>Describe the limits of local state and the failure modes that motivate remote state for team work.</li>
+                <li>Configure a Terraform S3 backend with a DynamoDB lock table for remote state.</li>
+                <li>Explain how Terraform state locking prevents concurrent applies and recover from a stuck lock with `terraform force-unlock`.</li>
+                <li>Read and interpret state with `terraform show` and `terraform state list`.</li>
+                <li>Use `terraform state mv` and `terraform state rm` and explain when each is appropriate.</li>
+                <li>Identify how sensitive data leaks through state and apply mitigations (`sensitive = true`, backend encryption).</li>
+                <li>Define a Terraform module and explain how composition reduces duplication and clarifies infrastructure design.</li>
+                <li>Author a local module with the standard folder layout (`main.tf`, `variables.tf`, `outputs.tf`).</li>
+                <li>Call a module from a root configuration using `source`, `version`, and input arguments.</li>
+                <li>Find, evaluate, and use a community module from the Terraform Registry.</li>
+                <li>Apply module versioning conventions (semver pinning vs floating).</li>
+                <li>Decide when to make a module vs when to inline resources, recognizing the over-modularization anti-pattern.</li>
+                <li>Describe the typical branching strategy for Terraform PRs and how it differs from app-code branching.</li>
+                <li>Configure a CI workflow that runs `terraform plan` on a PR and posts the plan output as a PR comment.</li>
+                <li>Explain apply gates: who approves an apply, when, and against which environment.</li>
+                <li>Compare Terraform workspaces against directory-per-environment as strategies for managing multiple environments.</li>
+                <li>Describe drift detection as a scheduled-CI activity and what to do when drift is found.</li>
+                <li>Diagnose broken or missing Terraform state and choose an appropriate recovery path.</li>
+                <li>Recognize a `terraform plan` that contains destructive operations and refuse to apply it without escalation.</li>
+                <li>Identify dependency-induced destroy-and-recreate operations from plan output and explain why they happen.</li>
+                <li>Use `terraform refresh`, `terraform state list`, and `terraform state show` as a diagnostic toolkit.</li>
+                <li>Apply recovery moves: `terraform import` for rebuilding state, `terraform force-unlock` for stuck locks.</li>
+                <li>Distinguish provisioning and configuration management as categories of automation work.</li>
+                <li>Explain the "build immutable, configure mutable" philosophy at a survey level.</li>
+                <li>Identify when Terraform alone is sufficient and when configuration management adds value.</li>
+                <li>Describe where an OSS-Network apprentice is most likely to encounter Ansible on the job.</li>
+                <li>Describe Ansible's agentless model and the requirements it places on managed targets.</li>
+                <li>Identify the structure of a playbook: plays, tasks, modules, and handlers.</li>
+                <li>Differentiate static and dynamic inventory and explain when each is used.</li>
+                <li>Recognize idempotency in action by interpreting Ansible run output across repeated runs.</li>
+                <li>Describe a common Terraform + Ansible integration pattern.</li>
+                <li>Explain why hardcoded secrets in `.tf` files (and Git history) are a recurring breach vector.</li>
+                <li>Use environment variables and the `TF_VAR_` prefix to inject secrets into Terraform without committing them.</li>
+                <li>Identify the major vendor-native secret stores and their role in IaC workflows.</li>
+                <li>Mark variables and outputs as `sensitive` and explain what that does and does not protect.</li>
+                <li>Describe how state files become a secrets-leak vector and the mitigations.</li>
+                <li>Compare Terraform with CloudFormation, ARM/Bicep, and GCP Deployment Manager at a survey level.</li>
+                <li>Identify which cloud resource types incur cost even when idle, and estimate the cost meters for a small stack.</li>
+                <li>Explain the IaC-specific cost risk: easy to provision means easy to forget.</li>
+                <li>Apply `terraform destroy` as a first-class workflow operation, including handling failed-apply orphans.</li>
+                <li>Apply a cost-attribution tagging strategy (`Owner`, `Environment`, `CostCenter`, `AutoStop`) consistently across resources.</li>
+                <li>Describe where AWS Cost Explorer and Cost Allocation Tags fit in the IaC workflow.</li>
+                <li>Apply an IaC PR review checklist that distinguishes IaC review from app-code review.</li>
+                <li>Configure `terraform fmt` and `terraform validate` as pre-commit gates.</li>
+                <li>Describe `tflint` and policy-as-code (OPA / Sentinel) at a survey level.</li>
+                <li>Document a Terraform module using the README convention and `terraform-docs`.</li>
+                <li>Apply plan-output discipline when reviewing changes — recognizing when a "small" plan is actually a big change.</li>
+                <li>Author a Terraform configuration that provisions a working two-tier web stack via a single `terraform apply`.</li>
+                <li>Document the architecture in a README that explains the resource, network, and IAM choices behind the configuration.</li>
+                <li>Explain a `terraform plan` output in prose, identifying changing resources and the meaning of action symbols.</li>
+                <li>Diagnose and recover from at least two embedded failure scenarios drawn from L10 (broken state, destructive plan, stuck state lock).</li>
+                <li>Inventory the cost meters in the stack and execute a clean `terraform destroy` with no orphaned resources.</li>
+                <li>Reflect in writing on what could go wrong with the same stack in a long-lived production environment.</li>
             </ol>
         </section>
 
@@ -354,24 +419,35 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">1</span>
-                    <span class="module-title">Infrastructure as Code Principles and Concepts</span>
-                    <span class="module-hours">4 hours</span>
+                    <span class="module-title">Infrastructure as Code fundamentals</span>
+                    <span class="module-hours">3 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: What is Infrastructure as Code?</div>
+                    <div class="lesson-heading">Lesson: 1: What Is Infrastructure as Code? (1h)</div>
                     <ul class="topic-list">
-                        <li>IaC benefits and concepts</li>
-                        <li>Declarative vs. imperative</li>
+                        <li>The pre-IaC world: ClickOps, snowflake servers, configuration drift</li>
+                        <li>IaC definition and the four properties learners will hear repeatedly: declarative, idempotent, version-controlled, reproducible</li>
+                        <li>Provisioning vs. configuration management vs. orchestration — a vocabulary map</li>
+                        <li>Where IaC lives in the broader DevOps lifecycle (relationship to CI/CD from Course 11)</li>
+                        <li>The IaC market overview: Terraform, CloudFormation, Pulumi, Ansible, Bicep — what each is for</li>
+                        <li>Individual reading + discussion: a short pre-IaC vs. post-IaC scenario; learners identify the failure modes IaC eliminates</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: IaC Tools and Paradigms</div>
+                    <div class="lesson-heading">Lesson: 2: Declarative vs. Imperative, State, and Idempotency (1.5h)</div>
                     <ul class="topic-list">
-                        <li>Tool categories and selection</li>
-                        <li>Terraform, Ansible, CloudFormation, Pulumi</li>
+                        <li>Declarative ("what I want") vs. imperative ("how to get there") — concrete code comparisons</li>
+                        <li>Idempotency: the same code applied N times produces the same end state</li>
+                        <li>State: why an IaC tool needs to know what it created, and the failure modes when state is lost or corrupted</li>
+                        <li>Drift: when the real world diverges from the declared state</li>
+                        <li>Reading an execution plan before applying it (`terraform plan` preview, no install yet)</li>
+                        <li>Pair discussion: given three sample shell scripts and three sample Terraform snippets, classify each as declarative or imperative and explain why</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Best Practices</div>
+                    <div class="lesson-heading">Lesson: 3: Version Control for IaC — A Tour (0.5h)</div>
                     <ul class="topic-list">
-                        <li>Code organization</li>
-                        <li>GitOps principles</li>
+                        <li>Why infrastructure code lives in Git the same way application code does</li>
+                        <li>The IaC `.gitignore` essentials: state files, lockfiles, credentials, `.terraform/` directories</li>
+                        <li>What's different about reviewing IaC PRs vs. application-code PRs (state-affecting changes, blast radius, secrets) — brief tour, deeper PR-review treatment lands in M4 L13</li>
+                        <li>Repo layout patterns at a glance: monorepo vs. per-environment vs. per-component</li>
+                        <li>Quick demo + Q&amp;A: instructor shows the recommended IaC `.gitignore` and walks through one "what would you flag in this PR?" example</li>
                     </ul>
                 </div>
             </div>
@@ -379,29 +455,76 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">2</span>
-                    <span class="module-title">Terraform Fundamentals</span>
-                    <span class="module-hours">5 hours</span>
+                    <span class="module-title">Terraform fundamentals</span>
+                    <span class="module-hours">11 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Terraform Syntax and Providers</div>
+                    <div class="lesson-heading">Lesson: 4: Terraform Setup and First Resource (1.5h)</div>
                     <ul class="topic-list">
-                        <li>HCL structure</li>
-                        <li>Resource definition</li>
+                        <li>Installing the Terraform CLI; verifying with `terraform version` (OJL 3d)</li>
+                        <li>Provider concept and the AWS (or LocalStack) provider block</li>
+                        <li>Authoring a first `.tf` file: a single S3 bucket</li>
+                        <li>The Terraform workflow: `init`, `plan`, `apply`, `destroy`</li>
+                        <li>Reading the plan output and what each `+`, `-`, `~` symbol means</li>
+                        <li>Code-along: provision and destroy a single S3 bucket end-to-end; commit the `.tf` file but not the state</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: State Management</div>
+                    <div class="lesson-heading">Lesson: 5: HCL Syntax — Variables, Outputs, and Locals (1.5h)</div>
                     <ul class="topic-list">
-                        <li>State concept and backends</li>
-                        <li>Remote state handling</li>
+                        <li>HCL block structure: `resource`, `variable`, `output`, `locals`, `data` (OJL 3d)</li>
+                        <li>Input variables: declaration, default values, type constraints, `terraform.tfvars` files</li>
+                        <li>Output values: surfacing IDs, ARNs, and URLs after apply</li>
+                        <li>Locals: computed values used inside the configuration</li>
+                        <li>Variable precedence: env vars vs. tfvars vs. CLI flags</li>
+                        <li>Pair coding: parameterize the L4 bucket using a variable for `bucket_name` and an output for the bucket ARN</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Modules and Reusability</div>
+                    <div class="lesson-heading">Lesson: 6: Multiple Resources and Resource Dependencies (1.5h)</div>
                     <ul class="topic-list">
-                        <li>Creating modules</li>
-                        <li>Module composition</li>
+                        <li>Implicit dependencies (resource references in expressions) (OJL 3d)</li>
+                        <li>Explicit dependencies with `depends_on`</li>
+                        <li>The dependency graph; reading `terraform graph` output at a high level</li>
+                        <li>Worked example: an EC2 instance that depends on a security group that depends on a VPC reference</li>
+                        <li>`count` and `for_each` for creating sets of similar resources</li>
+                        <li>Individual: extend the L5 bucket configuration with a second bucket and an IAM policy that grants read on both, demonstrating implicit dependencies</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Variables and Outputs</div>
+                    <div class="lesson-heading">Lesson: 7: Terraform State (2h)</div>
                     <ul class="topic-list">
-                        <li>Input validation</li>
-                        <li>Environment management</li>
+                        <li>What state is and why Terraform needs it (OJL 3d)</li>
+                        <li>Local state (`terraform.tfstate`) — the default and its limits</li>
+                        <li>Remote state with an S3 backend + DynamoDB lock table</li>
+                        <li>State locking: what happens when two engineers run `apply` simultaneously</li>
+                        <li>Reading state with `terraform show` and `terraform state list`</li>
+                        <li>State surgery basics: `terraform state mv` and `terraform state rm` — what they do and when they're needed</li>
+                        <li>Sensitive data in state: never commit, mark outputs `sensitive = true`</li>
+                        <li>Code-along: migrate a project from local state to a remote S3 backend with locking, then trigger a deliberate lock conflict in a paired session</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: Modules — Reusable Terraform Components (2h)</div>
+                    <ul class="topic-list">
+                        <li>The module concept: composing infrastructure from parameterized building blocks (OJL 3d)</li>
+                        <li>Authoring a local module: required folder layout, `variables.tf`, `outputs.tf`, `main.tf`</li>
+                        <li>Calling a module: `source`, `version`, passing inputs, reading outputs</li>
+                        <li>The Terraform Registry: finding and using community modules; reading module docs</li>
+                        <li>Versioning modules; pinning vs. floating versions</li>
+                        <li>When to make a module vs. when to inline (the over-modularization anti-pattern)</li>
+                        <li>Individual: refactor the L6 multi-resource configuration into a `web-bucket` local module with two inputs and two outputs, then consume it from a root configuration</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: The Terraform Workflow in a Team Setting (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>Branching strategy for IaC PRs (OJL 3d)</li>
+                        <li>Running `plan` in CI and posting the plan to a PR comment</li>
+                        <li>Apply gates: who pushes the button, when, and against which environment</li>
+                        <li>Workspaces (and why most teams use directory-per-environment instead)</li>
+                        <li>Drift detection: scheduled `plan` runs that flag uncommitted changes in the real world</li>
+                        <li>Pair coding: open a PR that changes the bucket configuration; another learner reviews the `plan` output and either approves or requests changes</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 10: Failure Modes and Debugging IaC (1h)</div>
+                    <ul class="topic-list">
+                        <li>The scenarios that distinguish supporting IaC in production from running `terraform apply` on the happy path (OJL 3d)</li>
+                        <li>Broken or missing Terraform state: lost state file, accidental deletion, state drift after out-of-band changes</li>
+                        <li>Incorrect dependencies that trigger destroy-and-recreate: when a small attribute change destroys a resource the team expected to be modified in place</li>
+                        <li>Reading a risky `terraform plan`: recognizing destructive changes, refusing to apply, escalating</li>
+                        <li>Diagnosing through `terraform plan`, `terraform refresh`, `terraform state list`, `terraform state show`</li>
+                        <li>Recovery moves: `terraform import` to rebuild state for an existing resource, releasing a stuck state lock, walking back a misapply</li>
+                        <li>Guided lab: instructor presents three broken-state scenarios (missing state file, attribute change that would destroy a database, stuck lock); learners diagnose each, explain in writing what would happen if they applied as-is, and execute the recovery</li>
                     </ul>
                 </div>
             </div>
@@ -409,24 +532,27 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">3</span>
-                    <span class="module-title">Configuration Management with Ansible</span>
-                    <span class="module-hours">4 hours</span>
+                    <span class="module-title">Configuration management with Ansible — concept + demo</span>
+                    <span class="module-hours">2 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Ansible Fundamentals</div>
+                    <div class="lesson-heading">Lesson: 11: Provisioning vs. Configuration Management (1h)</div>
                     <ul class="topic-list">
-                        <li>Playbooks and YAML</li>
-                        <li>Inventory management</li>
+                        <li>Provisioning (Terraform) vs. configuration management (Ansible, Chef, Puppet) — the distinction and where the boundary blurs</li>
+                        <li>The "build immutable, configure mutable" debate at a survey level</li>
+                        <li>When Terraform alone is enough; when Ansible adds value (post-provision software install, in-place patching)</li>
+                        <li>Why this distinction matters in modern IaC and on the OSS-Network apprentice's most likely encounters with Ansible on the job</li>
+                        <li>Group discussion: given three real-world infrastructure tasks, identify which is provisioning, which is configuration, and which is both</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Modules and Tasks</div>
+                    <div class="lesson-heading">Lesson: 12: Ansible at a Glance — Guided Demo (1h)</div>
                     <ul class="topic-list">
-                        <li>Common modules</li>
-                        <li>Handlers and conditionals</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: Advanced Playbooks</div>
-                    <ul class="topic-list">
-                        <li>Roles and organization</li>
-                        <li>Template engine</li>
+                        <li>Instructor-led guided demo; students observe and ask questions, no individual hands-on</li>
+                        <li>Ansible's agentless model: SSH + Python on the target</li>
+                        <li>YAML and the playbook structure: plays, tasks, modules, handlers</li>
+                        <li>Inventory files: static vs. dynamic</li>
+                        <li>Walkthrough of a 3-task playbook against an EC2 target: install nginx, write a config file, start the service — narrating idempotency at each step</li>
+                        <li>When to glue Terraform + Ansible together vs. picking one</li>
+                        <li>Observation + Q&amp;A during the demo; learners record one question and one observation in their notes for later cohort discussion</li>
                     </ul>
                 </div>
             </div>
@@ -434,66 +560,42 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">4</span>
-                    <span class="module-title">Cloud-Specific IaC</span>
-                    <span class="module-hours">5 hours</span>
+                    <span class="module-title">Best practices for production-ready IaC</span>
+                    <span class="module-hours">3 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: AWS CloudFormation</div>
+                    <div class="lesson-heading">Lesson: 13: Secrets, Sensitive Data, and Cloud-Native IaC at a Glance (1h)</div>
                     <ul class="topic-list">
-                        <li>Template syntax</li>
-                        <li>Stacks and resources</li>
+                        <li>Why hardcoded secrets in `.tf` files (and Git history) are a recurring breach vector (OJL 3d)</li>
+                        <li>Environment variables and `TF_VAR_` prefix</li>
+                        <li>Vendor-native secret stores: AWS Secrets Manager, Azure Key Vault, HashiCorp Vault overview</li>
+                        <li>Sensitive variables and outputs (`sensitive = true`)</li>
+                        <li>State file as a secrets-leak vector — encryption at rest, access control on the backend bucket</li>
+                        <li>Brief landscape comparison (≈10 min): how CloudFormation, ARM/Bicep, and GCP DM handle the same secrets problem; when a team would deliberately choose a vendor-native tool over Terraform</li>
+                        <li>Individual: refactor a sample `.tf` file that contains a hardcoded password to read from a `TF_VAR_db_password` environment variable, and mark the corresponding output `sensitive`</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Azure and Google Cloud IaC</div>
+                    <div class="lesson-heading">Lesson: 14: Cost Awareness and Cleanup Discipline (1h)</div>
                     <ul class="topic-list">
-                        <li>ARM templates</li>
-                        <li>Multi-cloud considerations</li>
+                        <li>Cloud resources cost money even when "idle" — EC2 sitting at 0% CPU, RDS instances overnight, NAT gateways, NLBs, EIPs, unattached EBS volumes</li>
+                        <li>The IaC-specific risk: easy to provision means easy to forget — and forgotten infrastructure is billed forever</li>
+                        <li>`terraform destroy` as a first-class workflow operation, not an afterthought</li>
+                        <li>Avoiding orphaned resources from failed applies (resources created before the apply errored out)</li>
+                        <li>Tagging strategies for cost attribution: `Owner`, `Environment`, `CostCenter`, `AutoStop` patterns</li>
+                        <li>Where AWS Cost Explorer and Cost Allocation Tags fit in the IaC workflow</li>
+                        <li>Lab: provision a small Terraform stack (an EC2 instance plus an EBS volume plus an EIP), use AWS Pricing Calculator (or a provided rate sheet) to identify the cost meters, run `terraform destroy`, then verify in the AWS console that all three resources are gone — including the EIP, which often outlives an apply error</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Terraform for Multi-Cloud</div>
+                    <div class="lesson-heading">Lesson: 15: IaC Code Review, Testing, and Documentation (1h)</div>
                     <ul class="topic-list">
-                        <li>Multi-cloud provisioning</li>
-                        <li>CI/CD integration</li>
+                        <li>The IaC PR review checklist: what reviewers look for that's different from app-code review (OJL 3d)</li>
+                        <li>`terraform fmt` and `terraform validate` as pre-commit gates</li>
+                        <li>`tflint` and policy-as-code (OPA / Sentinel) at a survey level</li>
+                        <li>Documenting modules: the README convention (`terraform-docs` overview)</li>
+                        <li>Plan-output discipline: when a "small" plan is actually a big change (callback to L10 failure modes)</li>
+                        <li>Pair: review another learner's PR from L9 using a provided checklist; submit one approve/request-changes review with at least two specific comments</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="module">
-                <div class="module-head">
-                    <span class="module-num">5</span>
-                    <span class="module-title">IaC Workflow and Operations</span>
-                    <span class="module-hours">4 hours</span>
-                </div>
-                <div class="module-body">
-                    <div class="lesson-heading">Lesson: Testing and Validation</div>
-                    <ul class="topic-list">
-                        <li>Static analysis and policy as code</li>
-                        <li>Integration testing</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: CI/CD for Infrastructure</div>
-                    <ul class="topic-list">
-                        <li>Pipeline design</li>
-                        <li>Automated testing and approval workflows</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: Drift Detection and Operations</div>
-                    <ul class="topic-list">
-                        <li>Configuration drift detection</li>
-                        <li>Monitoring and remediation</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-
-        <hr class="divider">
-
-        <section>
-            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
-            <ul class="labs-list">
-                <li>Setting up Terraform configurations and state management</li>
-                <li>Creating and deploying Ansible playbooks across multiple hosts</li>
-                <li>Building infrastructure on AWS, Azure, and Google Cloud</li>
-                <li>Implementing IaC testing with tflint and Sentinel</li>
-                <li>Capstone: Design and deploy a multi-environment infrastructure project with CI/CD integration</li>
-            </ul>
         </section>
 
     </div>

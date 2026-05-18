@@ -821,6 +821,48 @@ const courseOutlines = {
       }
     ]
   },
+  "AI-Assisted CI/CD Pipelines": {
+    "course": "ai-assisted-cicd-pipelines",
+    "totalHours": 2,
+    "totalModules": 1,
+    "totalLessons": 2,
+    "modules": [
+      {
+        "name": "AI-Assisted CI/CD Pipelines",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "CI/CD Concepts and Generating Workflows with AI",
+            "hours": 1,
+            "topics": [
+              "**What CI/CD is and why it matters (10 min)**",
+              "**GitHub Actions anatomy (15 min)**",
+              "**Using AI to generate workflow YAML (20 min)**",
+              "**Wrap-Up and Reflection (5 min)**"
+            ],
+            "objects": [
+              "Object: Lesson: CI/CD Concepts and Generating Workflows with AI",
+              "Assessment: Quiz: CI/CD Concepts and Generating Workflows with AI"
+            ]
+          },
+          {
+            "title": "Building a Spring Application Pipeline with GitHub Actions",
+            "hours": 1,
+            "topics": [
+              "**Setting up the project (10 min)**",
+              "**Code-along: TemperatureConverter pipeline (35 min)**",
+              "**Using AI to read build logs (10 min)**",
+              "**Wrap-Up and Reflection (5 min)**"
+            ],
+            "objects": [
+              "Object: Lesson: Building a Spring Application Pipeline with GitHub Actions",
+              "Assessment: Quiz: Building a Spring Application Pipeline with GitHub Actions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "AI-Assisted Coding Fundamentals": {
     "course": "AI-Assisted Coding Fundamentals",
     "totalHours": 4,
