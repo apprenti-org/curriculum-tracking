@@ -971,14 +971,15 @@
       "name": "Technical Documentation",
       "hours": 4,
       "status": {
-        "design": "Not Started",
-        "development": "Not Started"
+        "design": "Complete",
+        "development": "Complete"
       },
       "syllabus": null,
-      "outline": null,
-      "note": "OSS Course 15, Area 4 \u2014 net-new microcourse covering technical documentation standards. 4h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #87).",
+      "outline": true,
+      "note": "Net-new 4h course for OSS Course 15, Area 4 (Security & Professional Skills). 2 modules, 4 lessons: Documentation Types and Purposes; Writing Clear and Audience-Appropriate Documentation; Runbooks and Troubleshooting Guides; Knowledge Management and Maintenance. Live in Absorb 2026-05-19 (4 SCORM 1.2 packages + 26 PDFs deployed; course published to learner catalog). Onboarding meta apprenti-org/design-documentation#561 closed. Slide decks (Row 8) deferred under apprenti-org/design-documentation#604 \u2192 #606 (slide-spec rework); course shipped without slides.",
       "driveFolder": null,
-      "statusConfirmed": true
+      "statusConfirmed": true,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation"
     },
     {
       "id": "troubleshooting-supporting-in-an-enterprise-environment",
