@@ -186,28 +186,28 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "ai-assisted-cicd-pipelines/deploy/content",
+      "modules": 1
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 67,
+    "lessonsWithContent": 2,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
+      "lessons": 2,
+      "slides": 2,
+      "quizzes": 2,
       "activities": 0,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 2,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 8,
     "deployment": {
-      "state": "Not Deployed",
+      "state": "Complete",
       "expected": 2,
-      "actual": 0
+      "actual": 2
     }
   },
   {
@@ -2386,33 +2386,33 @@ var courseOverviewData = [
     "hours": 4,
     "outline": {
       "exists": true,
-      "modules": 3,
-      "lessons": 5
+      "modules": 2,
+      "lessons": 4
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "technical-documentation/deploy/content",
+      "modules": 2
     },
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
-      "activities": 0,
+      "lessons": 4,
+      "slides": 4,
+      "quizzes": 4,
+      "activities": 4,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 4,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 20,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 4,
+      "actual": 4
     }
   },
   {
