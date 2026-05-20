@@ -130,7 +130,7 @@ const courseData = [
     "note": "Net-new 1h course for Software Developer (JVFD). 1 module, 2 lessons: Generating Professional Content with AI Prompts (0.5h); Tailoring Communication for Stakeholder Audiences (0.5h). Quiz only — no exercises or activities. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
     "driveFolder": null,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "ai-driven-specifications",
