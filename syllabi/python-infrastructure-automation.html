@@ -311,9 +311,9 @@ code {
         <div class="header">
             <h1>Syllabus: Python for Infrastructure Automation</h1>
             <div class="header-meta">
-                <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network</span>
+                <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network (Course 7, RTI Area 3)</span>
                 <span><i class="fa-regular fa-clock"></i> 32 hours</span>
-                <span class="badge">DRAFT</span>
+                <span class="badge">CURRENT</span>
             </div>
         </div>
         <section>
@@ -324,27 +324,68 @@ code {
         <hr class="divider">
 
         <section>
-            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Infrastructure Automation Project</h2>
-            <div class="assessment-box">
-                <p>Learners will design and implement a comprehensive automation solution for a realistic operational challenge. The project may involve automating provisioning, implementing monitoring and alerting, creating deployment automation, or developing cloud infrastructure management tools. The assessment evaluates Python proficiency, understanding of operations workflows, API integration skills, error handling, and code quality.</p>
-            </div>
-        </section>
-
-        <hr class="divider">
-
-        <section>
             <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
             <ol class="outcomes">
-                <li>Apply Python fundamentals to systems administration tasks</li>
-                <li>Develop scripts for file operations, text processing, and log analysis</li>
-                <li>Implement network programming solutions for operational needs</li>
-                <li>Automate configuration management and system provisioning</li>
-                <li>Create monitoring, alerting, and health check automation</li>
-                <li>Implement backup and disaster recovery automation</li>
-                <li>Use cloud provider SDKs to manage infrastructure programmatically</li>
-                <li>Develop infrastructure automation using Pulumi and other IaC frameworks</li>
-                <li>Integrate Python automation into CI/CD pipelines</li>
-                <li>Implement secure, resilient, and performant automation solutions</li>
+                <li>Use `pathlib` to traverse and manipulate filesystem paths.</li>
+                <li>Read and write files with appropriate modes, encoding, and context managers.</li>
+                <li>Read environment variables and apply defaults when variables are missing.</li>
+                <li>Execute subprocesses safely, capturing output and exit codes.</li>
+                <li>Apply `re` module functions (`match`, `search`, `findall`, `finditer`, `sub`) to common text tasks.</li>
+                <li>Construct regex patterns using anchors, groups, and quantifiers.</li>
+                <li>Use named groups and `finditer` to parse structured data from logs.</li>
+                <li>Analyze a real log file end-to-end and extract operational metrics.</li>
+                <li>Describe the socket abstraction at a high level (TCP vs UDP, address families).</li>
+                <li>Use the `requests` library to call HTTP and HTTPS APIs.</li>
+                <li>Handle common request patterns: headers, JSON, authentication, timeouts.</li>
+                <li>Build a basic network-diagnostic script that checks a list of endpoints.</li>
+                <li>Parse configuration files in JSON, YAML, and INI formats.</li>
+                <li>Validate configuration against a schema using `jsonschema`.</li>
+                <li>Apply configuration across multiple hosts idempotently.</li>
+                <li>Handle environment-specific config overrides through layering.</li>
+                <li>Collect system metrics using `psutil` and OS tools.</li>
+                <li>Design health checks with timeouts, retries, and clear failure criteria.</li>
+                <li>Dispatch alerts via webhooks, SMTP, and Slack.</li>
+                <li>Integrate monitoring into an ops workflow with thresholds and noise control.</li>
+                <li>Design backup scripts for files, databases, and cloud resources.</li>
+                <li>Schedule backup jobs with cron expressions or systemd timers.</li>
+                <li>Verify backups through automated restore testing.</li>
+                <li>Document recovery procedures in a runbook callable from Python.</li>
+                <li>Automate provisioning of servers and services.</li>
+                <li>Deploy applications with managed dependencies and repeatable steps.</li>
+                <li>Implement rolling-update and zero-downtime deployment patterns.</li>
+                <li>Roll back a failed deployment safely.</li>
+                <li>Interact with AWS services programmatically using `boto3`.</li>
+                <li>Compare Azure SDK and GCP SDK patterns to `boto3`.</li>
+                <li>Manage credentials securely (roles, env vars, profiles).</li>
+                <li>Handle pagination, retries, and rate limits in SDK calls.</li>
+                <li>Describe IaC concepts and compare to imperative scripting.</li>
+                <li>Use Pulumi to define AWS resources in Python.</li>
+                <li>Manage Pulumi stacks and state backends.</li>
+                <li>Execute the preview → up → destroy workflow.</li>
+                <li>Send custom metrics to CloudWatch and Azure Monitor.</li>
+                <li>Aggregate logs from multiple sources into a centralized pipeline.</li>
+                <li>Structure logs for automated analysis (JSON, levels, correlation IDs).</li>
+                <li>Create dashboards and alarms programmatically.</li>
+                <li>Write tests for automation scripts with `pytest`.</li>
+                <li>Structure a Python project for reproducible CI runs.</li>
+                <li>Integrate scripts into a GitHub Actions CI pipeline.</li>
+                <li>Gate deployments on test outcomes with environment approvals.</li>
+                <li>Apply retry patterns with exponential backoff and jitter.</li>
+                <li>Implement the circuit-breaker pattern for external dependencies.</li>
+                <li>Design graceful-degradation fallbacks.</li>
+                <li>Log errors with enough context for downstream investigation.</li>
+                <li>Distinguish threading, multiprocessing, and asyncio patterns in Python.</li>
+                <li>Apply threading (via `concurrent.futures`) for I/O-bound workloads.</li>
+                <li>Apply multiprocessing for CPU-bound workloads.</li>
+                <li>Use `asyncio` and `aiohttp` for high-concurrency network operations.</li>
+                <li>Retrieve secrets from AWS Secrets Manager and HashiCorp Vault.</li>
+                <li>Encrypt data at rest using the `cryptography` library.</li>
+                <li>Handle credentials securely in scripts and avoid common pitfalls.</li>
+                <li>Audit automation scripts against a security checklist.</li>
+                <li>Emit structured logs with consistent schema and correlation IDs.</li>
+                <li>Add distributed tracing with OpenTelemetry to automation scripts.</li>
+                <li>Document scripts for ops consumers (runbooks, help flags, exit codes).</li>
+                <li>Measure and profile automation performance.</li>
             </ol>
         </section>
 
@@ -357,28 +398,32 @@ code {
                 <div class="module-head">
                     <span class="module-num">1</span>
                     <span class="module-title">Python for Systems Administration</span>
-                    <span class="module-hours">8 hours</span>
+                    <span class="module-hours">6 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Python Fundamentals Review</div>
+                    <div class="lesson-heading">Lesson: 1: File and System Operations (2h)</div>
                     <ul class="topic-list">
-                        <li>Core concepts and debugging</li>
-                        <li>Functions and modules</li>
+                        <li>File I/O: text, binary, and context managers</li>
+                        <li>Directory and path operations with `pathlib`</li>
+                        <li>Reading environment variables with `os.environ`</li>
+                        <li>`subprocess` for shelling out safely (OJL 3a)</li>
+                        <li>Pair coding: directory-audit script using `pathlib` + `subprocess`</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: File and System Operations</div>
+                    <div class="lesson-heading">Lesson: 2: Regular Expressions and Text Processing (2h)</div>
                     <ul class="topic-list">
-                        <li>File I/O and path management</li>
-                        <li>Subprocess and system commands</li>
+                        <li>`re` module basics: `match`, `search`, `findall`, `finditer`, `sub`</li>
+                        <li>Pattern construction: anchors, groups, quantifiers</li>
+                        <li>Named groups and `finditer` for parsing structured log data</li>
+                        <li>Log-file analysis end-to-end</li>
+                        <li>Individual: write a log analyzer extracting per-status-code counts and top client IPs</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Regular Expressions and Text Processing</div>
+                    <div class="lesson-heading">Lesson: 3: Network Programming Basics (2h)</div>
                     <ul class="topic-list">
-                        <li>Pattern matching</li>
-                        <li>Log file analysis</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: Network Programming</div>
-                    <ul class="topic-list">
-                        <li>Socket programming</li>
-                        <li>API interactions</li>
+                        <li>Sockets primer: TCP vs UDP, address families</li>
+                        <li>HTTP with the `requests` library</li>
+                        <li>Headers, JSON, authentication, timeouts</li>
+                        <li>Network-diagnostic scripts</li>
+                        <li>Individual: URL health checker handling timeouts and connection errors</li>
                     </ul>
                 </div>
             </div>
@@ -390,25 +435,37 @@ code {
                     <span class="module-hours">8 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Configuration Management</div>
+                    <div class="lesson-heading">Lesson: 4: Configuration Management Scripts (2h)</div>
                     <ul class="topic-list">
-                        <li>Configuration file parsing</li>
-                        <li>Bulk configuration automation</li>
+                        <li>Parsing JSON, YAML, INI</li>
+                        <li>Config validation with `jsonschema`</li>
+                        <li>Bulk apply across hosts idempotently (OJL 3e)</li>
+                        <li>Environment-specific overrides through layering</li>
+                        <li>Pair coding: inventory-apply script with `--dry-run` default</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Monitoring and Alerting</div>
+                    <div class="lesson-heading">Lesson: 5: Monitoring and Alerting Scripts (2h)</div>
                     <ul class="topic-list">
-                        <li>System metrics collection</li>
-                        <li>Alert automation</li>
+                        <li>System metrics with `psutil`</li>
+                        <li>Health-check patterns: timeouts, retries, failure criteria</li>
+                        <li>Alert dispatching: webhooks, SMTP, Slack</li>
+                        <li>Monitoring workflow integration with thresholds and noise control</li>
+                        <li>Individual: disk-usage monitor with webhook alert and alert deduplication</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Backup and Disaster Recovery</div>
+                    <div class="lesson-heading">Lesson: 6: Backup and Disaster Recovery Automation (2h)</div>
                     <ul class="topic-list">
-                        <li>Backup automation</li>
-                        <li>Recovery testing</li>
+                        <li>Backup patterns: files, databases, cloud resources (OJL 3a)</li>
+                        <li>Scheduling with cron and systemd timers</li>
+                        <li>Restore-test automation (OJL 4e)</li>
+                        <li>DR runbooks in Python</li>
+                        <li>Individual: backup-and-verify script with SHA256 checksum validation</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Deployment Automation</div>
+                    <div class="lesson-heading">Lesson: 7: Deployment and Provisioning Scripts (2h)</div>
                     <ul class="topic-list">
-                        <li>Provisioning automation</li>
-                        <li>Zero-downtime deployments</li>
+                        <li>Provisioning automation (OJL 3e)</li>
+                        <li>Application deployment scripts</li>
+                        <li>Rolling-update and zero-downtime patterns</li>
+                        <li>Rollback strategies</li>
+                        <li>Pair coding: deploy + rollback script using a symlinked "current" release directory</li>
                     </ul>
                 </div>
             </div>
@@ -416,29 +473,41 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">3</span>
-                    <span class="module-title">Cloud APIs and Platforms</span>
+                    <span class="module-title">Working with APIs and Cloud Platforms</span>
                     <span class="module-hours">8 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Cloud SDKs</div>
+                    <div class="lesson-heading">Lesson: 8: RESTful APIs and Cloud SDKs (2h)</div>
                     <ul class="topic-list">
-                        <li>AWS, Azure, Google Cloud</li>
-                        <li>Programmatic infrastructure management</li>
+                        <li>`boto3` fundamentals for AWS</li>
+                        <li>Azure SDK and GCP SDK parity examples</li>
+                        <li>Credentials: env vars, IAM roles, profiles</li>
+                        <li>Pagination, retries, rate limits</li>
+                        <li>Individual: S3 inventory report using `boto3` paginators</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Infrastructure as Code with Python</div>
+                    <div class="lesson-heading">Lesson: 9: Infrastructure as Code with Python (2h)</div>
                     <ul class="topic-list">
-                        <li>Pulumi framework</li>
-                        <li>Cloud resource management</li>
+                        <li>IaC concepts: Pulumi vs Terraform vs CDK</li>
+                        <li>Pulumi Python resources: S3, IAM, EC2</li>
+                        <li>Stacks and state management</li>
+                        <li>Preview → up → destroy workflow</li>
+                        <li>Individual: mini Pulumi stack with S3 bucket and restricted IAM policy</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Monitoring and Logging</div>
+                    <div class="lesson-heading">Lesson: 10: Monitoring and Logging Integration (2h)</div>
                     <ul class="topic-list">
-                        <li>Monitoring tool integration</li>
-                        <li>Log analysis and aggregation</li>
+                        <li>Custom metrics: CloudWatch and Azure Monitor</li>
+                        <li>Log aggregation patterns</li>
+                        <li>Structured logging: JSON, levels, correlation IDs</li>
+                        <li>Dashboards and alarms programmatically</li>
+                        <li>Individual: emit a custom CloudWatch metric and attach an alarm</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: CI/CD Integration</div>
+                    <div class="lesson-heading">Lesson: 11: Continuous Integration with Python (2h)</div>
                     <ul class="topic-list">
-                        <li>Testing automation scripts</li>
-                        <li>Pipeline integration</li>
+                        <li>`pytest` basics for automation scripts</li>
+                        <li>Project structure: packages, dependencies, lock files</li>
+                        <li>GitHub Actions pipeline</li>
+                        <li>Deploy gates and environment approvals</li>
+                        <li>Pair coding: wire `pytest` into a GitHub Actions workflow using mocks for external calls</li>
                     </ul>
                 </div>
             </div>
@@ -446,47 +515,53 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">4</span>
-                    <span class="module-title">Advanced Automation</span>
+                    <span class="module-title">Advanced Automation and Best Practices</span>
                     <span class="module-hours">8 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Error Handling and Resilience</div>
+                    <div class="lesson-heading">Lesson: 12: Error Handling and Resilience (2h)</div>
                     <ul class="topic-list">
-                        <li>Robust error strategies</li>
-                        <li>Retry logic</li>
+                        <li>Retry with exponential backoff using `tenacity`</li>
+                        <li>Circuit-breaker pattern</li>
+                        <li>Graceful degradation strategies</li>
+                        <li>Error logging with diagnostic context</li>
+                        <li>Individual: wrap an API call with `tenacity` retries and a circuit breaker</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Concurrency and Performance</div>
+                    <div class="lesson-heading">Lesson: 13: Concurrency and Parallel Processing (2h)</div>
                     <ul class="topic-list">
-                        <li>Threading and multiprocessing</li>
-                        <li>Asynchronous programming</li>
+                        <li>When to use what: GIL, I/O vs CPU-bound workloads</li>
+                        <li>Threading and `concurrent.futures`</li>
+                        <li>Multiprocessing</li>
+                        <li>Asyncio and `aiohttp`</li>
+                        <li>Individual: fetch 100 URLs three ways (sequential, threaded, asyncio) and compare</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Security and Secrets</div>
+                    <div class="lesson-heading">Lesson: 14: Security and Secret Management (2h)</div>
                     <ul class="topic-list">
-                        <li>Credential management</li>
-                        <li>Encryption practices</li>
+                        <li>Secrets manager patterns: AWS Secrets Manager, HashiCorp Vault</li>
+                        <li>Encryption at rest with the `cryptography` library</li>
+                        <li>Credential hygiene in scripts</li>
+                        <li>Security audit checklist</li>
+                        <li>Individual: secret-backed API call verifying the key never leaks to logs</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Production Patterns</div>
+                    <div class="lesson-heading">Lesson: 15: Production Automation Patterns (2h)</div>
                     <ul class="topic-list">
-                        <li>Logging and observability</li>
-                        <li>Performance monitoring</li>
+                        <li>Structured logging patterns</li>
+                        <li>Distributed tracing with OpenTelemetry</li>
+                        <li>Documentation conventions: runbooks, help flags, exit codes</li>
+                        <li>Profiling automation performance</li>
+                        <li>Individual: instrument an existing script with logs, spans, and a profiler run</li>
                     </ul>
                 </div>
             </div>
 
-        </section>
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Capstone Project</span>
+                    <span class="module-hours">2 hours</span>
+                </div>
+            </div>
 
-        <hr class="divider">
-
-        <section>
-            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
-            <ul class="labs-list">
-                <li>System administration automation scripts</li>
-                <li>Log parsing and analysis projects</li>
-                <li>Cloud infrastructure provisioning with Python</li>
-                <li>Monitoring and alerting system implementation</li>
-                <li>Backup automation script development</li>
-                <li>Capstone: Complete infrastructure automation project with error handling, testing, and CI/CD integration</li>
-            </ul>
         </section>
 
     </div>
