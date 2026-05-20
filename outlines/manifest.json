@@ -35,6 +35,11 @@
     "id": "ai-assisted-test-driven-development"
   },
   {
+    "file": "ai-assisted-user-communication-and-documentation.json",
+    "course": "AI-Assisted User Communication and Documentation",
+    "id": "ai-assisted-user-communication-and-documentation"
+  },
+  {
     "file": "ai-driven-specifications.json",
     "course": "AI-Driven Specifications: The Blueprint Method",
     "id": "ai-driven-specifications"

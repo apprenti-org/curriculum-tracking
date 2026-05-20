@@ -946,6 +946,38 @@ const courseOutlines = {
     "totalLessons": 0,
     "modules": []
   },
+  "AI-Assisted User Communication and Documentation": {
+    "course": "AI-Assisted User Communication and Documentation",
+    "totalHours": 1,
+    "totalModules": 1,
+    "totalLessons": 2,
+    "modules": [
+      {
+        "name": "AI-Assisted User Communication and Documentation",
+        "hours": 1,
+        "lessons": [
+          {
+            "title": "Generating Professional Content with AI Prompts",
+            "hours": 0.5,
+            "objects": [
+              "Object: Lesson: Generating Professional Content with AI Prompts",
+              "Assessment: Quiz: Generating Professional Content with AI Prompts",
+              "SCORM: Interactive — Generating Professional Content with AI Prompts"
+            ]
+          },
+          {
+            "title": "Tailoring Communication for Stakeholder Audiences",
+            "hours": 0.5,
+            "objects": [
+              "Object: Lesson: Tailoring Communication for Stakeholder Audiences",
+              "Assessment: Quiz: Tailoring Communication for Stakeholder Audiences",
+              "SCORM: Interactive — Tailoring Communication for Stakeholder Audiences"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "AI-Driven Specifications: The Blueprint Method": {
     "course": "AI-Driven Specifications: The Blueprint Method",
     "totalHours": 2,

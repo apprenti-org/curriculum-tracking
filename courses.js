@@ -118,6 +118,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-assisted-user-communication-and-documentation",
+    "name": "AI-Assisted User Communication and Documentation",
+    "hours": 1,
+    "status": {
+      "design": "Complete",
+      "development": "Complete"
+    },
+    "syllabus": "syllabi/ai-assisted-user-communication-and-documentation.html",
+    "outline": true,
+    "note": "Net-new 1h course for Software Developer (JVFD). 1 module, 2 lessons: Generating Professional Content with AI Prompts (0.5h); Tailoring Communication for Stakeholder Audiences (0.5h). Quiz only — no exercises or activities. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+    "driveFolder": null,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": false
+  },
+  {
     "id": "ai-driven-specifications",
     "name": "AI-Driven Specifications: The Blueprint Method",
     "hours": 2,
