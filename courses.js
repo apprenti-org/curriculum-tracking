@@ -104,6 +104,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-assisted-meeting-facilitation",
+    "name": "AI-Assisted Meeting Facilitation",
+    "hours": 1,
+    "status": {
+      "design": "Complete",
+      "development": "Complete"
+    },
+    "syllabus": "syllabi/ai-assisted-meeting-facilitation.html",
+    "outline": true,
+    "note": "Net-new 1h course. 1 module, 2 lessons: Summarizing and Extracting Insights from Transcripts (0.5h); Generating Structured Follow-Up Communication with AI (0.5h). Quiz + SCORM interactive per lesson. No code activities.",
+    "driveFolder": null,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": true
+  },
+  {
     "id": "ai-assisted-test-driven-development",
     "name": "AI-Assisted Test Driven Development",
     "hours": 2,

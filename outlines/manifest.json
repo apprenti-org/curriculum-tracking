@@ -30,6 +30,11 @@
     "id": "ai-assisted-coding-fundamentals"
   },
   {
+    "file": "ai-assisted-meeting-facilitation.json",
+    "course": "AI-Assisted Meeting Facilitation",
+    "id": "ai-assisted-meeting-facilitation"
+  },
+  {
     "file": "ai-assisted-test-driven-development.json",
     "course": "AI-Assisted Test Driven Development",
     "id": "ai-assisted-test-driven-development"

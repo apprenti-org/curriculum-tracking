@@ -37,6 +37,7 @@ var syllabiMap = {
     'AI-Assisted CI/CD Pipelines': 'ai-assisted-cicd-pipelines.html',
     'AI-Assisted Coding Fundamentals': 'ai-assisted-coding-fundamentals.html',
     'AI-Assisted Learning and Study Skills': 'ai-assisted-learning-and-study-skills.html',
+    'AI-Assisted Meeting Facilitation': 'ai-assisted-meeting-facilitation.html',
     'AI-Assisted Test Driven Development': 'ai-assisted-test-driven-development.html',
     'AI-Assisted User Communication and Documentation': 'ai-assisted-user-communication-and-documentation.html',
     'AI-Driven Specifications: The Blueprint Method': 'ai-driven-specifications.html',

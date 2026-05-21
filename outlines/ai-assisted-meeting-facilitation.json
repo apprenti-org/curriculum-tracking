@@ -1,0 +1,44 @@
+{
+  "course": "AI-Assisted Meeting Facilitation",
+  "totalHours": 1,
+  "totalModules": 1,
+  "totalLessons": 2,
+  "modules": [
+    {
+      "name": "AI-Assisted Meeting Facilitation",
+      "hours": 1,
+      "lessons": [
+        {
+          "title": "Summarizing and Extracting Insights from Transcripts",
+          "hours": 0.5,
+          "topics": [
+            "**Why unstructured communication is hard to process manually (8 min)**",
+            "**Prompt design for summarization (10 min)**",
+            "**Distinguishing confirmed facts from assumptions (9 min)**",
+            "**Wrap-Up and Reflection (3 min)**"
+          ],
+          "objects": [
+            "Object: Lesson: Summarizing and Extracting Insights from Transcripts",
+            "Assessment: Quiz: Summarizing and Extracting Insights from Transcripts",
+            "SCORM: scorm-lesson-01-summarizing-and-extracting-insights-from-transcripts.zip"
+          ]
+        },
+        {
+          "title": "Generating Structured Follow-Up Communication with AI",
+          "hours": 0.5,
+          "topics": [
+            "**Common post-meeting artifacts and their prompt requirements (9 min)**",
+            "**Prompt design for structured professional output (9 min)**",
+            "**Responsible use and human review (9 min)**",
+            "**Wrap-Up and Reflection (3 min)**"
+          ],
+          "objects": [
+            "Object: Lesson: Generating Structured Follow-Up Communication with AI",
+            "Assessment: Quiz: Generating Structured Follow-Up Communication with AI",
+            "SCORM: scorm-lesson-02-generating-structured-follow-up-communication-with-ai.zip"
+          ]
+        }
+      ]
+    }
+  ]
+}
