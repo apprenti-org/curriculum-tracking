@@ -1,0 +1,180 @@
+{
+  "course": "OSS Capstone — Ops Incident Simulation",
+  "totalHours": 40,
+  "totalModules": 5,
+  "totalLessons": 11,
+  "modules": [
+    {
+      "name": "Stand Up the Monitored Service",
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "IaC Stand-Up",
+          "hours": 4,
+          "topics": [
+            "Provision compute, network, and storage via declarative IaC (Terraform or equivalent)",
+            "Apply least-privilege access controls and a documented secrets-management approach",
+            "Configure at least one network-layer concern (DNS, firewall rule, load balancer, or routing) and at least one cloud or hybrid resource",
+            "Commit infrastructure to version control with intent-explaining commit messages"
+          ],
+          "objects": [
+            "SCORM: Interactive — IaC Stand-Up"
+          ]
+        },
+        {
+          "title": "Monitoring + Runbook",
+          "hours": 4,
+          "topics": [
+            "Configure metrics, logs, or traces for the stood-up service",
+            "Define at least one alert rule on operationally meaningful conditions; verify end-to-end alert delivery",
+            "Author the runbook: deployment procedure, monitoring access paths, rollback steps",
+            "Declare SLA / SLO / OLA targets before the incident phase begins"
+          ],
+          "objects": [
+            "SCORM: Interactive — Monitoring + Runbook"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Detect and Triage",
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "Alert Ingestion + Severity Call",
+          "hours": 3,
+          "topics": [
+            "Receive the scripted alert from monitoring and review its signal",
+            "Investigate from monitoring data to scope blast radius and identify affected systems",
+            "Classify severity with recorded rationale per the runbook escalation pattern",
+            "File the initial incident triage ticket"
+          ],
+          "objects": [
+            "SCORM: Interactive — Alert Ingestion + Severity Call"
+          ]
+        },
+        {
+          "title": "Triage Investigation",
+          "hours": 3,
+          "topics": [
+            "Use monitoring + logs + traces to narrow the suspected cause class",
+            "Identify stakeholders requiring notification at the chosen severity level",
+            "Update the triage ticket with the working hypothesis and next-step plan",
+            "Hand off to the bridge phase with the ticket updated"
+          ],
+          "objects": [
+            "SCORM: Interactive — Triage Investigation"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Run the Incident",
+      "hours": 10,
+      "lessons": [
+        {
+          "title": "Incident Bridge Coordination",
+          "hours": 4,
+          "topics": [
+            "Run the simulated incident bridge (live or async with simulated stakeholders)",
+            "Follow the escalation pattern appropriate to severity (status cadence, stakeholder communications)",
+            "Record decision points with timestamps",
+            "Coordinate working theories with monitoring evidence in real time"
+          ],
+          "objects": [
+            "SCORM: Interactive — Incident Bridge Coordination"
+          ]
+        },
+        {
+          "title": "Service Restoration",
+          "hours": 3,
+          "topics": [
+            "Apply the restoration intervention(s)",
+            "Validate restoration against monitoring signals; confirm SLA / SLO impact window",
+            "Document remaining risk and watch-list items"
+          ],
+          "objects": [
+            "SCORM: Interactive — Service Restoration"
+          ]
+        },
+        {
+          "title": "Communications Timeline",
+          "hours": 3,
+          "topics": [
+            "Compile the bridge communications into a coherent chronological record",
+            "Distinguish learner-visible events from supervisor-only events",
+            "Cross-reference monitoring data + decisions in the timeline"
+          ],
+          "objects": [
+            "SCORM: Interactive — Communications Timeline"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Root Cause Analysis + Automate",
+      "hours": 10,
+      "lessons": [
+        {
+          "title": "Root Cause Analysis Document",
+          "hours": 4,
+          "topics": [
+            "Establish the incident timeline from monitoring and event sources",
+            "Distinguish symptoms from causes in writing",
+            "Identify the proximate trigger and at least one contributing cause",
+            "Propose preventive changes tied to each contributing cause",
+            "Document SLA / SLO impact in the RCA"
+          ],
+          "objects": [
+            "SCORM: Interactive — Root Cause Analysis Document"
+          ]
+        },
+        {
+          "title": "Automation Design + Impact Assessment",
+          "hours": 3,
+          "topics": [
+            "Choose one preventive change to automate (script, IaC change, monitoring config, runbook revision)",
+            "Design the automation: trigger, behavior, idempotency, rollback path",
+            "Perform an impact assessment: blast radius, rollback strategy, stakeholder notification plan"
+          ],
+          "objects": [
+            "SCORM: Interactive — Automation Design + Impact Assessment"
+          ]
+        },
+        {
+          "title": "Automation Implementation",
+          "hours": 3,
+          "topics": [
+            "Build and merge the automation improvement",
+            "Demonstrate reproducible / re-runnable execution from clean state",
+            "Update the runbook to reflect the new automation",
+            "Validate against monitoring after deploy"
+          ],
+          "objects": [
+            "SCORM: Interactive — Automation Implementation"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cross-Functional Handoff + Capstone Signoff",
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "Handoff Artifact + CBR Signoff",
+          "hours": 6,
+          "topics": [
+            "Produce the cross-functional handoff artifact: doc, deck, or recorded walkthrough appropriate to non-technical stakeholders",
+            "Demonstrate the resolution + automation improvement in the handoff",
+            "Walk OJL supervisor through the apprentice-authored evidence map paired with the CBR (§9 of governing spec)",
+            "Supervisor scores the CBR; apprentice addresses any Beginning / Developing competencies per §8d (per-competency revision)",
+            "Capstone closes when every tagged competency rates Proficient or Advanced"
+          ],
+          "objects": [
+            "SCORM: Interactive — Handoff Artifact + CBR Signoff"
+          ]
+        }
+      ]
+    }
+  ]
+}
