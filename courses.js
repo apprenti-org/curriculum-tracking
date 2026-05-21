@@ -785,6 +785,21 @@ const courseData = [
     "statusConfirmed": false
   },
   {
+    "id": "oss-capstone",
+    "name": "OSS Capstone — Ops Incident Simulation",
+    "hours": 40,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": "Course Outline: OSS Capstone — Ops Incident Simulation",
+    "note": "OSS Course 18, Capstone Assessment area (supplemental to 560h RTI). Net-new curriculum-level capstone — 5 modules / 11 lessons / 40h ops-incident simulation. Forward CBR (apprenti-org/design-documentation#643) authored before course; Phase 1 (#669) added course to OSS curriculum and transitioned CBR to active. Phase 2 onboarding META: apprenti-org/design-documentation#670.",
+    "driveFolder": null,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation",
+    "statusConfirmed": true
+  },
+  {
     "id": "pandas",
     "name": "Pandas",
     "hours": 50,

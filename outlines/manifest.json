@@ -240,6 +240,11 @@
     "id": "non-relational-data"
   },
   {
+    "file": "oss-capstone.json",
+    "course": "OSS Capstone \u2014 Ops Incident Simulation",
+    "id": "oss-capstone"
+  },
+  {
     "file": "pandas.json",
     "course": "Pandas",
     "id": "pandas"
