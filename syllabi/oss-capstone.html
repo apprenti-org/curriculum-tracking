@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: OSS Capstone — Ops Incident Simulation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+.review-banner {
+    background: rgba(255, 183, 3, 0.10);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--amber);
+    font-weight: 600;
+}
+.review-banner i {
+    font-size: 16px;
+    flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: OSS Capstone — Ops Incident Simulation</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network — Capstone Assessment area (supplemental to 560h RTI)</span>
+                <span><i class="fa-regular fa-clock"></i> 40 hours</span>
+                <span class="badge">CURRENT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Course description pending.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Provision a small distributed service to a cloud sandbox (or local cloud emulation) using declarative Infrastructure-as-Code — choosing tooling, file layout, and module boundaries appropriate to the service.</li>
+                <li>Configure at least one network-layer concern (DNS, firewall, load balancer, or routing) as part of the IaC and document why that choice fits the service.</li>
+                <li>Apply least-privilege access controls to at least one resource in the IaC, with a documented secrets-management approach for any credentials the service requires.</li>
+                <li>Demonstrate reproducible build from clean state — destroying and re-creating the environment from IaC at least once — and commit the infrastructure with intent-explaining commit messages.</li>
+                <li>Configure at least one observability signal (metrics, logs, or traces) on the stood-up service, with sufficient data to reconstruct service behavior after the fact.</li>
+                <li>Define at least one alert rule that triggers on an operationally meaningful condition, and verify alert delivery via end-to-end test.</li>
+                <li>Declare explicit SLA / SLO / OLA targets for the service before the incident phase, with defensible rationale.</li>
+                <li>Author a runbook covering deployment procedure, monitoring access paths, common operations, rollback steps, and known limitations — readable by an operator unfamiliar with this specific service.</li>
+                <li>Receive an operational alert and use the alert payload + runbook to orient quickly.</li>
+                <li>Investigate alert context from monitoring data to scope blast radius before any remediation.</li>
+                <li>Make and document an explicit severity classification with named rationale tied to operational impact.</li>
+                <li>File a complete initial incident triage ticket: timestamp, signal source, severity, blast radius, working hypothesis.</li>
+                <li>Cross-reference monitoring data across signal classes (metrics + logs + traces) to narrow a suspected cause class.</li>
+                <li>Identify which stakeholders require notification at the chosen severity level and trigger those notifications per the runbook.</li>
+                <li>Update the triage ticket with a refined working hypothesis and the next-step investigation plan.</li>
+                <li>Distinguish working hypothesis (provisional) from attribution (claim about root cause) in incident communications.</li>
+                <li>Open and run an incident bridge using a documented escalation pattern with severity-appropriate cadence.</li>
+                <li>Direct investigative experiments against the working hypothesis, recording each experiment's pre-state, execution, observed outcome, and what it tells you.</li>
+                <li>Coordinate working theories with monitoring evidence in real time without over-attributing prematurely.</li>
+                <li>Record decision points with timestamps such that the timeline can be reconstructed accurately afterward.</li>
+                <li>Apply a restoration intervention with documented blast-radius assumption and rollback plan, under time pressure.</li>
+                <li>Validate restoration against monitoring signals — confirming the SLA / SLO impact window has closed by data, not by assumption.</li>
+                <li>Document remaining risk and watch-list items for the post-restoration window.</li>
+                <li>Recognize fault-tolerance gaps surfaced by the incident and capture them for Module 4's automation improvement.</li>
+                <li>Compile a chronological incident timeline from the bridge + restoration logs, distinguishing significant events from observations.</li>
+                <li>Distinguish apprentice-internal events from stakeholder-external events when summarizing.</li>
+                <li>Cross-reference monitoring data and decisions in the timeline so the story is anchored in evidence, not memory.</li>
+                <li>Annotate the Lesson-2 runbook with gaps surfaced during the incident.</li>
+                <li>Establish the incident timeline (from Lesson 7 source data) framed for retrospective analysis rather than chronological narration.</li>
+                <li>Distinguish symptoms (what failed visibly) from causes (what produced the failure) in writing.</li>
+                <li>Identify the proximate trigger and one or more contributing causes.</li>
+                <li>Propose preventive changes tied to each contributing cause, scoped specifically enough for Lesson 9 implementation.</li>
+                <li>Document SLA / SLO / OLA impact: budget consumed, business consequence, residual budget.</li>
+                <li>Select one preventive change from the RCA using documented decision criteria.</li>
+                <li>Design an automation: trigger, behavior, idempotency, rollback path, observability.</li>
+                <li>Conduct an impact assessment: blast radius, rollback strategy, stakeholder plan, rollout sequencing.</li>
+                <li>Produce a peer-reviewable design document.</li>
+                <li>Implement the automation designed in Lesson 9, in whichever form the design requires.</li>
+                <li>Make the automation idempotent and reproducible — re-runnable without producing duplicate side effects.</li>
+                <li>Update the runbook (Lesson 2) to reflect the new automation: invocation, expected behavior, failure modes, rollback.</li>
+                <li>Validate against monitoring post-deploy, confirming observability hooks emit expected signals.</li>
+                <li>Produce a cross-functional handoff artifact appropriate to a non-technical stakeholder audience.</li>
+                <li>Demonstrate the incident resolution and automation improvement in a form a non-technical reviewer can verify.</li>
+                <li>Compile the apprentice-authored evidence map per §9 of `capstone-design-process.md`.</li>
+                <li>Participate in the CBR signoff transaction, including per-competency revision for any Beginning / Developing ratings.</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Stand Up the Monitored Service</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: IaC Stand-Up (4h)</div>
+                    <ul class="topic-list">
+                        <li>Provision compute, network, and storage via declarative IaC (Terraform or equivalent)</li>
+                        <li>Apply least-privilege access controls and secrets-management approach</li>
+                        <li>Configure at least one network-layer concern (DNS, firewall rule, load balancer, or routing) and at least one cloud resource</li>
+                        <li>Commit infrastructure to version control with intent-explaining commit messages</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Monitoring + Runbook (4h)</div>
+                    <ul class="topic-list">
+                        <li>Configure metrics, logs, or traces for the service</li>
+                        <li>Define at least one alert rule on operationally meaningful conditions; verify end-to-end alert delivery</li>
+                        <li>Author the runbook: deployment procedure, monitoring access paths, rollback steps</li>
+                        <li>Declare SLA / SLO / OLA targets before the incident phase begins</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Detect and Triage</span>
+                    <span class="module-hours">6 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 3: Alert Ingestion + Severity Call (3h)</div>
+                    <ul class="topic-list">
+                        <li>Receive the scripted alert from monitoring</li>
+                        <li>Investigate from monitoring data to scope blast radius and identify affected systems</li>
+                        <li>Classify severity with recorded rationale</li>
+                        <li>File the initial incident ticket</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 4: Triage Investigation (3h)</div>
+                    <ul class="topic-list">
+                        <li>Use monitoring + logs + traces to narrow the suspected cause class</li>
+                        <li>Identify stakeholders requiring notification at the chosen severity level</li>
+                        <li>Hand off to the bridge phase with the ticket updated</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Run the Incident</span>
+                    <span class="module-hours">10 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 5: Incident Bridge Coordination (4h)</div>
+                    <ul class="topic-list">
+                        <li>Run the simulated bridge (live or async with simulated stakeholders)</li>
+                        <li>Follow the escalation pattern appropriate to severity (status cadence, stakeholder communications)</li>
+                        <li>Record decision points with timestamps</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: Service Restoration (3h)</div>
+                    <ul class="topic-list">
+                        <li>Apply the restoration intervention(s)</li>
+                        <li>Validate restoration against monitoring signals; confirm SLA / SLO impact window</li>
+                        <li>Document remaining risk and watch-list items</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 7: Communications Timeline (3h)</div>
+                    <ul class="topic-list">
+                        <li>Compile the bridge communications into a coherent chronological record</li>
+                        <li>Distinguish learner-visible events from supervisor-only events</li>
+                        <li>Cross-reference monitoring data + decisions in the timeline</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Root Cause Analysis + Automate</span>
+                    <span class="module-hours">10 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 8: Root Cause Analysis Document (4h)</div>
+                    <ul class="topic-list">
+                        <li>Establish the incident timeline from monitoring and event sources</li>
+                        <li>Distinguish symptoms from causes in writing</li>
+                        <li>Identify the proximate trigger and at least one contributing cause</li>
+                        <li>Propose preventive changes tied to each contributing cause</li>
+                        <li>Document SLA / SLO impact in the RCA</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: Automation Design + Impact Assessment (3h)</div>
+                    <ul class="topic-list">
+                        <li>Choose one preventive change to automate (script, IaC change, monitoring config, runbook revision)</li>
+                        <li>Design the automation: trigger, behavior, idempotency, rollback path</li>
+                        <li>Perform an impact assessment: blast radius, rollback strategy, stakeholder notification plan</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 10: Automation Implementation (3h)</div>
+                    <ul class="topic-list">
+                        <li>Build and merge the automation improvement</li>
+                        <li>Demonstrate reproducible / re-runnable execution from clean state</li>
+                        <li>Update the runbook to reflect the new automation</li>
+                        <li>Validate against monitoring after deploy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Cross-Functional Handoff + Capstone Signoff</span>
+                    <span class="module-hours">6 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 11: Handoff Artifact + CBR Signoff (6h)</div>
+                    <ul class="topic-list">
+                        <li>Produce the cross-functional handoff artifact: doc, deck, or recorded walkthrough appropriate to non-technical stakeholders</li>
+                        <li>Demonstrate the resolution + automation improvement in the handoff</li>
+                        <li>Walk OJL supervisor through the apprentice-authored evidence map paired with the CBR (§9 of governing spec)</li>
+                        <li>Supervisor scores the CBR; apprentice addresses any Beginning / Developing competencies per §8d (per-competency revision)</li>
+                        <li>Capstone closes when every tagged competency rates Proficient or Advanced</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>

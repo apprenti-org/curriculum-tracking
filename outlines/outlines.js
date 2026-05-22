@@ -8922,7 +8922,7 @@ const courseOutlines = {
               "Commit infrastructure to version control with intent-explaining commit messages"
             ],
             "objects": [
-              "SCORM: Interactive — IaC Stand-Up"
+              "SCORM: scorm-lesson-01-iac-stand-up.zip"
             ]
           },
           {
@@ -8935,7 +8935,7 @@ const courseOutlines = {
               "Declare SLA / SLO / OLA targets before the incident phase begins"
             ],
             "objects": [
-              "SCORM: Interactive — Monitoring + Runbook"
+              "SCORM: scorm-lesson-02-monitoring-runbook.zip"
             ]
           }
         ]
@@ -8954,7 +8954,7 @@ const courseOutlines = {
               "File the initial incident triage ticket"
             ],
             "objects": [
-              "SCORM: Interactive — Alert Ingestion + Severity Call"
+              "SCORM: scorm-lesson-03-alert-ingestion-severity-call.zip"
             ]
           },
           {
@@ -8967,7 +8967,7 @@ const courseOutlines = {
               "Hand off to the bridge phase with the ticket updated"
             ],
             "objects": [
-              "SCORM: Interactive — Triage Investigation"
+              "SCORM: scorm-lesson-04-triage-investigation.zip"
             ]
           }
         ]
@@ -8986,7 +8986,7 @@ const courseOutlines = {
               "Coordinate working theories with monitoring evidence in real time"
             ],
             "objects": [
-              "SCORM: Interactive — Incident Bridge Coordination"
+              "SCORM: scorm-lesson-05-incident-bridge-coordination.zip"
             ]
           },
           {
@@ -8998,7 +8998,7 @@ const courseOutlines = {
               "Document remaining risk and watch-list items"
             ],
             "objects": [
-              "SCORM: Interactive — Service Restoration"
+              "SCORM: scorm-lesson-06-service-restoration.zip"
             ]
           },
           {
@@ -9010,7 +9010,7 @@ const courseOutlines = {
               "Cross-reference monitoring data + decisions in the timeline"
             ],
             "objects": [
-              "SCORM: Interactive — Communications Timeline"
+              "SCORM: scorm-lesson-07-communications-timeline.zip"
             ]
           }
         ]
@@ -9030,7 +9030,7 @@ const courseOutlines = {
               "Document SLA / SLO impact in the RCA"
             ],
             "objects": [
-              "SCORM: Interactive — Root Cause Analysis Document"
+              "SCORM: scorm-lesson-08-root-cause-analysis-document.zip"
             ]
           },
           {
@@ -9042,7 +9042,7 @@ const courseOutlines = {
               "Perform an impact assessment: blast radius, rollback strategy, stakeholder notification plan"
             ],
             "objects": [
-              "SCORM: Interactive — Automation Design + Impact Assessment"
+              "SCORM: scorm-lesson-09-automation-design-impact-assessment.zip"
             ]
           },
           {
@@ -9055,7 +9055,7 @@ const courseOutlines = {
               "Validate against monitoring after deploy"
             ],
             "objects": [
-              "SCORM: Interactive — Automation Implementation"
+              "SCORM: scorm-lesson-10-automation-implementation.zip"
             ]
           }
         ]
@@ -9075,7 +9075,7 @@ const courseOutlines = {
               "Capstone closes when every tagged competency rates Proficient or Advanced"
             ],
             "objects": [
-              "SCORM: Interactive — Handoff Artifact + CBR Signoff"
+              "SCORM: scorm-lesson-11-handoff-cbr-signoff.zip"
             ]
           }
         ]
