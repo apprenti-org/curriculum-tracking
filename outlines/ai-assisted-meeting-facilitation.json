@@ -1,12 +1,12 @@
 {
   "course": "AI-Assisted Meeting Facilitation",
-  "totalHours": 1,
+  "totalHours": 1.5,
   "totalModules": 1,
-  "totalLessons": 2,
+  "totalLessons": 3,
   "modules": [
     {
       "name": "AI-Assisted Meeting Facilitation",
-      "hours": 1,
+      "hours": 1.5,
       "lessons": [
         {
           "title": "Summarizing and Extracting Insights from Transcripts",
@@ -36,6 +36,21 @@
             "Object: Lesson: Generating Structured Follow-Up Communication with AI",
             "Assessment: Quiz: Generating Structured Follow-Up Communication with AI",
             "SCORM: scorm-lesson-02-generating-structured-follow-up-communication-with-ai.zip"
+          ]
+        },
+        {
+          "title": "Principles of Running Effective Meetings",
+          "hours": 0.5,
+          "topics": [
+            "**Three conditions for a meeting to succeed (10 min)**",
+            "**Agenda design and facilitation techniques (10 min)**",
+            "**Capturing decisions and action items (8 min)**",
+            "**Wrap-Up and Reflection (2 min)**"
+          ],
+          "objects": [
+            "Object: Lesson: Principles of Running Effective Meetings",
+            "Assessment: Quiz: Principles of Running Effective Meetings",
+            "SCORM: scorm-lesson-03-principles-of-running-effective-meetings.zip"
           ]
         }
       ]
