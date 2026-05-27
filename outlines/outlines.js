@@ -939,6 +939,80 @@ const courseOutlines = {
       }
     ]
   },
+  "AI-Assisted IT Service Management": {
+    "course": "AI-Assisted IT Service Management",
+    "totalHours": 4,
+    "totalModules": 1,
+    "totalLessons": 4,
+    "modules": [
+      {
+        "name": "AI-Assisted IT Service Management",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "AI Tools for ITSM — Evaluation and Selection",
+            "hours": 1,
+            "topics": [
+              "Landscape of AI-enhanced ITSM tools: CRM systems, ticketing platforms (e.g., ServiceNow, Jira Service Management), and prioritization engines",
+              "Criteria for evaluating AI tools: accuracy, integration requirements, auditability, and cost",
+              "How AI prioritization algorithms work and how to manage AI-enhanced ticket queues",
+              "Risks and human oversight requirements: bias in prioritization, over-automation, escalation paths",
+              "**Wrap-Up and Reflection (5 min)**"
+            ],
+            "objects": [
+              "Object: Lesson: AI Tools for ITSM — Evaluation and Selection",
+              "Assessment: Quiz: AI Tools for ITSM — Evaluation and Selection"
+            ]
+          },
+          {
+            "title": "Prompt Design for Ticket Triage and Acknowledgment",
+            "hours": 1,
+            "topics": [
+              "Why unstructured client emails and tickets are hard to process consistently",
+              "Prompt structures for extracting key fields from unstructured ticket text: category, urgency, affected system, and requested action",
+              "Designing prompts to generate professional, consistent ticket acknowledgment messages",
+              "Iterating prompts: identifying when outputs are vague, off-tone, or inaccurate and how to refine",
+              "**Wrap-Up and Reflection (5 min)**"
+            ],
+            "objects": [
+              "Object: Lesson: Prompt Design for Ticket Triage and Acknowledgment",
+              "Assessment: Quiz: Prompt Design for Ticket Triage and Acknowledgment"
+            ]
+          },
+          {
+            "title": "Generating Structured Resolution Summaries and Querying Historical Notes",
+            "hours": 1,
+            "topics": [
+              "Components of a resolution summary: symptom, root cause, resolution steps, verification, and follow-up actions",
+              "Prompting AI to produce structured resolution summaries from unstructured technician notes",
+              "Using LLMs to query and synthesize information from a corpus of past resolution notes (retrieval patterns, semantic search concepts)",
+              "Accuracy and attribution: fact-checking AI-synthesized content against source records",
+              "**Wrap-Up and Reflection (5 min)**"
+            ],
+            "objects": [
+              "Object: Lesson: Generating Structured Resolution Summaries and Querying Historical Notes",
+              "Assessment: Quiz: Generating Structured Resolution Summaries and Querying Historical Notes"
+            ]
+          },
+          {
+            "title": "Simplifying Complex Technical Documents with AI",
+            "hours": 1,
+            "topics": [
+              "When technical documents need simplification: runbooks for non-technical stakeholders, escalation guides, KB articles",
+              "Prompting AI to rewrite or summarize complex technical content for a specified audience",
+              "Generating knowledge base entries from resolved ticket data",
+              "Responsible use in ITSM: audit trails, human review gates, and attribution standards",
+              "**Wrap-Up and Reflection (5 min)**"
+            ],
+            "objects": [
+              "Object: Lesson: Simplifying Complex Technical Documents with AI",
+              "Assessment: Quiz: Simplifying Complex Technical Documents with AI"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "AI-Assisted Meeting Facilitation": {
     "course": "AI-Assisted Meeting Facilitation",
     "totalHours": 1.5,

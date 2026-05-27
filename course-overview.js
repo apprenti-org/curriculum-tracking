@@ -246,6 +246,41 @@ var courseOverviewData = [
     }
   },
   {
+    "id": "ai-assisted-it-service-management",
+    "name": "AI-Assisted IT Service Management",
+    "hours": 4,
+    "outline": {
+      "exists": true,
+      "modules": 2,
+      "lessons": 5
+    },
+    "syllabus": true,
+    "source": {
+      "exists": false,
+      "folder": null,
+      "modules": 0
+    },
+    "coverage": 0,
+    "lessonsWithContent": 0,
+    "assets": {
+      "lessons": 0,
+      "slides": 0,
+      "quizzes": 0,
+      "activities": 0,
+      "demos": 0,
+      "caseStudies": 0,
+      "instructorGuides": 0,
+      "modIntros": 0,
+      "modRecaps": 0
+    },
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
+  },
+  {
     "id": "ai-assisted-meeting-facilitation",
     "name": "AI-Assisted Meeting Facilitation",
     "hours": 1,
