@@ -256,15 +256,15 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "ai-assisted-meeting-facilitation/deploy/content",
+      "modules": 1
     },
     "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
-      "slides": 0,
+      "slides": 1,
       "quizzes": 0,
       "activities": 0,
       "demos": 0,
@@ -273,11 +273,11 @@ var courseOverviewData = [
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 1,
     "deployment": {
       "state": "Complete",
-      "expected": 0,
-      "actual": 0
+      "expected": 1,
+      "actual": 1
     }
   },
   {
@@ -1965,34 +1965,34 @@ var courseOverviewData = [
     "name": "OSS Capstone — Ops Incident Simulation",
     "hours": 40,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 3,
+      "lessons": 9
     },
-    "syllabus": false,
+    "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "oss-capstone/deploy/content",
+      "modules": 5
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
+      "lessons": 33,
+      "slides": 11,
+      "quizzes": 11,
       "activities": 0,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 11,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 66,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 11,
+      "actual": 11
     }
   },
   {
