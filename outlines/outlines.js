@@ -961,7 +961,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: AI Tools for ITSM — Evaluation and Selection",
-              "Assessment: Quiz: AI Tools for ITSM — Evaluation and Selection"
+              "Assessment: Quiz: AI Tools for ITSM — Evaluation and Selection",
+              "SCORM: scorm-lesson-01-ai-tools-for-itsm-evaluation-and-selection.zip"
             ]
           },
           {
@@ -976,7 +977,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Prompt Design for Ticket Triage and Acknowledgment",
-              "Assessment: Quiz: Prompt Design for Ticket Triage and Acknowledgment"
+              "Assessment: Quiz: Prompt Design for Ticket Triage and Acknowledgment",
+              "SCORM: scorm-lesson-02-prompt-design-for-ticket-triage-and-acknowledgment.zip"
             ]
           },
           {
@@ -991,7 +993,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Generating Structured Resolution Summaries and Querying Historical Notes",
-              "Assessment: Quiz: Generating Structured Resolution Summaries and Querying Historical Notes"
+              "Assessment: Quiz: Generating Structured Resolution Summaries and Querying Historical Notes",
+              "SCORM: scorm-lesson-03-generating-structured-resolution-summaries-and-querying-historical-notes.zip"
             ]
           },
           {
@@ -1006,7 +1009,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Simplifying Complex Technical Documents with AI",
-              "Assessment: Quiz: Simplifying Complex Technical Documents with AI"
+              "Assessment: Quiz: Simplifying Complex Technical Documents with AI",
+              "SCORM: scorm-lesson-04-simplifying-complex-technical-documents-with-ai.zip"
             ]
           }
         ]
