@@ -30,6 +30,11 @@
     "id": "ai-assisted-coding-fundamentals"
   },
   {
+    "file": "ai-assisted-it-service-management.json",
+    "course": "AI-Assisted IT Service Management",
+    "id": "ai-assisted-it-service-management"
+  },
+  {
     "file": "ai-assisted-meeting-facilitation.json",
     "course": "AI-Assisted Meeting Facilitation",
     "id": "ai-assisted-meeting-facilitation"
@@ -101,17 +106,17 @@
   },
   {
     "file": "data-literacy.json",
-    "course": "Data Fundamentals \u2014 Data Literacy",
+    "course": "Data Fundamentals — Data Literacy",
     "id": "data-fundamentals-data-literacy"
   },
   {
     "file": "data-viz-power-bi.json",
-    "course": "Data Fundamentals \u2014 Data Visualizations and Power BI",
+    "course": "Data Fundamentals — Data Visualizations and Power BI",
     "id": "data-fundamentals-data-visualizations-and-power-bi"
   },
   {
     "file": "excel-for-data-analysts.json",
-    "course": "Data Fundamentals \u2014 Excel for Data Analysts",
+    "course": "Data Fundamentals — Excel for Data Analysts",
     "id": "data-fundamentals-excel-for-data-analysts"
   },
   {
@@ -246,7 +251,7 @@
   },
   {
     "file": "oss-capstone.json",
-    "course": "OSS Capstone \u2014 Ops Incident Simulation",
+    "course": "OSS Capstone — Ops Incident Simulation",
     "id": "oss-capstone"
   },
   {

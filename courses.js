@@ -104,6 +104,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-assisted-it-service-management",
+    "name": "AI-Assisted IT Service Management",
+    "hours": 4,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": null,
+    "outline": true,
+    "note": "Net-new 4h supplemental course for OSS Course 14 (above 560h RTI minimum). 1 module, 4 lessons: AI Tools for ITSM evaluation; Prompt Design for Ticket Triage and Acknowledgment; Generating Structured Resolution Summaries and Querying Historical Notes; Simplifying Complex Technical Documents with AI. OJL 5.c, 5.d. Onboarding meta apprenti-org/design-documentation#696.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "ai-assisted-meeting-facilitation",
     "name": "AI-Assisted Meeting Facilitation",
     "hours": 1,
