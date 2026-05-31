@@ -109,7 +109,7 @@ const courseData = [
     "hours": 4,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "syllabi/ai-assisted-infrastructure-design-build-and-configuration.html",
     "outline": true,
