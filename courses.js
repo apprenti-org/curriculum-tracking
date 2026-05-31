@@ -104,6 +104,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-assisted-infrastructure-design-build-and-configuration",
+    "name": "AI-Assisted Infrastructure Design, Build and Configuration",
+    "hours": 4,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": "syllabi/ai-assisted-infrastructure-design-build-and-configuration.html",
+    "outline": true,
+    "note": "Net-new 4h supplemental course for CTSE. 1 module, 4 lessons: Querying/Synthesizing Domain-Specific Text Corpora with LLMs; Structuring Unstructured Data into Analytical Reports; Generating IaC Scripts/Configuration/Automation Code with AI; Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks. OJL 4.e, 4.i. No exercises. Onboarding meta apprenti-org/design-documentation#728.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "ai-assisted-it-service-management",
     "name": "AI-Assisted IT Service Management",
     "hours": 4,

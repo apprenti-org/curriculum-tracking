@@ -313,7 +313,7 @@ code {
             <div class="header-meta">
                 <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network</span>
                 <span><i class="fa-regular fa-clock"></i> 4 hours</span>
-                <span class="badge">DRAFT</span>
+                <span class="badge">CURRENT</span>
             </div>
         </div>
         <section>
@@ -324,25 +324,20 @@ code {
         <hr class="divider">
 
         <section>
-            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Documentation Portfolio Project</h2>
-            <div class="assessment-box">
-                <p>Learners will create a portfolio of technical documentation including a system runbook, troubleshooting guide, and knowledge base article. The assessment evaluates clarity, completeness, accuracy, organization, and adherence to documentation standards. Documentation will be reviewed for usability by diverse technical audiences.</p>
-            </div>
-        </section>
-
-        <hr class="divider">
-
-        <section>
             <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
             <ol class="outcomes">
-                <li>Identify different types of technical documentation and their purposes</li>
-                <li>Write clear, concise technical documentation for diverse audiences</li>
-                <li>Create step-by-step runbooks for operational procedures</li>
-                <li>Develop troubleshooting guides and decision trees</li>
-                <li>Document system architecture and technical specifications</li>
-                <li>Organize and maintain technical knowledge bases</li>
-                <li>Use documentation tools and platforms effectively</li>
-                <li>Ensure documentation is accurate, current, and accessible</li>
+                <li>Identify the major categories of technical documentation used in IT operations — system docs, runbooks, SOPs, API/code docs, technical specifications, and architecture documents.</li>
+                <li>Describe the audience, purpose, and lifecycle position of each documentation type.</li>
+                <li>Select the appropriate documentation type for a given operational scenario.</li>
+                <li>Apply audience analysis to determine what a reader actually needs from a document.</li>
+                <li>Use plain-language conventions — short sentences, active voice, defined terms, and disciplined use of jargon — to write technical prose that stays clear under pressure.</li>
+                <li>Structure documentation with a consistent heading hierarchy, scannable layout, and explicit callouts for warnings, prerequisites, and side effects.</li>
+                <li>Author a step-by-step runbook with all required elements — trigger, preconditions, numbered steps, verification, and rollback guidance — including the variants used for disaster-recovery and change/release procedures.</li>
+                <li>Build a troubleshooting decision tree that moves an engineer from an observable symptom through a diagnostic check to a corrective action.</li>
+                <li>Identify and avoid common runbook anti-patterns: under-specified steps, missing rollback, missing verification, and stale dependencies.</li>
+                <li>Compare common documentation tools and platforms — wikis, source-controlled markdown repositories, and dedicated knowledge-base platforms — and select an approach appropriate to a team's needs and constraints.</li>
+                <li>Apply version control, update cadence, and clear ownership patterns to keep documentation accurate as systems and procedures evolve.</li>
+                <li>Organize a knowledge base for findability — naming conventions, tags, cross-linking, and explicit deprecation — so documentation remains discoverable and trustworthy as it grows.</li>
             </ol>
         </section>
 
@@ -358,17 +353,19 @@ code {
                     <span class="module-hours">2 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Documentation Types and Purposes</div>
+                    <div class="lesson-heading">Lesson: 1: Documentation Types and Purposes (1h)</div>
                     <ul class="topic-list">
-                        <li>Runbooks and procedures</li>
-                        <li>System documentation</li>
-                        <li>Technical specifications</li>
+                        <li>System documentation, runbooks, and standard operating procedures (SOPs)</li>
+                        <li>API and code documentation</li>
+                        <li>Technical specifications and architecture documents</li>
+                        <li>Choosing the right documentation type for the audience, lifecycle stage, and operational risk</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Clear Technical Writing</div>
+                    <div class="lesson-heading">Lesson: 2: Writing Clear and Audience-Appropriate Documentation (1h)</div>
                     <ul class="topic-list">
-                        <li>Audience analysis</li>
-                        <li>Organization and structure</li>
-                        <li>Templates and standards</li>
+                        <li>Audience analysis: who reads this, with what context, under what pressure</li>
+                        <li>Plain-language conventions: short sentences, active voice, defined terms, no unnecessary jargon</li>
+                        <li>Consistent structure: heading hierarchy, scannability, callouts for warnings and prerequisites</li>
+                        <li>Documentation templates and house standards</li>
                     </ul>
                 </div>
             </div>
@@ -376,39 +373,27 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">2</span>
-                    <span class="module-title">Operational Documentation</span>
+                    <span class="module-title">Creating Operational Documentation</span>
                     <span class="module-hours">2 hours</span>
                 </div>
                 <div class="module-body">
-                    <div class="lesson-heading">Lesson: Runbooks and Troubleshooting</div>
+                    <div class="lesson-heading">Lesson: 3: Runbooks and Troubleshooting Guides (1h)</div>
                     <ul class="topic-list">
-                        <li>Step-by-step procedures</li>
-                        <li>Decision trees</li>
-                        <li>Disaster recovery procedures</li>
+                        <li>Step-by-step runbooks: triggers, preconditions, numbered steps, verification, rollback guidance</li>
+                        <li>Disaster-recovery and change/release documentation patterns</li>
+                        <li>Troubleshooting decision trees: symptom → diagnostic check → action</li>
+                        <li>Common runbook anti-patterns (under-specified steps, missing rollback, missing verification, stale dependencies)</li>
                     </ul>
-                    <div class="lesson-heading">Lesson: Knowledge Management</div>
+                    <div class="lesson-heading">Lesson: 4: Knowledge Management and Maintenance (1h)</div>
                     <ul class="topic-list">
-                        <li>Documentation tools</li>
-                        <li>Version control and updates</li>
-                        <li>Knowledge base organization</li>
+                        <li>Documentation tools and platforms (wikis, source-controlled markdown, knowledge bases)</li>
+                        <li>Version control, update cadence, and ownership</li>
+                        <li>Accessibility and searchability — naming conventions, tags, cross-links</li>
+                        <li>Knowledge-base organization, deprecation, and end-of-life</li>
                     </ul>
                 </div>
             </div>
 
-        </section>
-
-        <hr class="divider">
-
-        <section>
-            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
-            <ul class="labs-list">
-                <li>Writing clear technical descriptions of complex systems</li>
-                <li>Creating step-by-step runbooks for operational procedures</li>
-                <li>Developing troubleshooting decision trees</li>
-                <li>Organizing documentation for knowledge bases</li>
-                <li>Documenting disaster recovery and change procedures</li>
-                <li>Capstone: Create portfolio of runbook, troubleshooting guide, and knowledge base article</li>
-            </ul>
         </section>
 
     </div>
