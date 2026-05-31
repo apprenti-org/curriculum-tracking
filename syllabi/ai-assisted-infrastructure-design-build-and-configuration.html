@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syllabus: AI-Assisted User Communication and Documentation</title>
+    <title>Syllabus: AI-Assisted Infrastructure Design, Build and Configuration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 :root[data-theme="dark"] {
@@ -309,10 +309,10 @@ code {
         <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
 
         <div class="header">
-            <h1>Syllabus: AI-Assisted User Communication and Documentation</h1>
+            <h1>Syllabus: AI-Assisted Infrastructure Design, Build and Configuration</h1>
             <div class="header-meta">
-                <span><i class="fa-solid fa-layer-group"></i> Software Developer (JVFD)</span>
-                <span><i class="fa-regular fa-clock"></i> 1 hours</span>
+                <span><i class="fa-solid fa-layer-group"></i> Client Technical Support Engineer (CTSE)</span>
+                <span><i class="fa-regular fa-clock"></i> 4 hours</span>
                 <span class="badge">CURRENT</span>
             </div>
         </div>
@@ -326,14 +326,26 @@ code {
         <section>
             <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
             <ol class="outcomes">
-                <li>Identify professional writing tasks in a software development workplace where AI can reduce time and effort.</li>
-                <li>Construct a structured AI prompt using role, task, context, and constraints to produce a first-draft workplace document.</li>
-                <li>Apply a three-step review checklist — factual accuracy, appropriate tone, completeness — to an AI-generated draft.</li>
-                <li>Write follow-up prompts to close specific gaps identified during draft review.</li>
-                <li>Describe the key differences between communicating with engineering peers, product managers, and business stakeholders in a software development context.</li>
-                <li>Extend an AI prompt with an audience brief that adjusts vocabulary, detail level, and tone for a target reader.</li>
-                <li>Use AI to produce multiple audience-appropriate versions of the same content from a single source brief.</li>
-                <li>Evaluate audience-adjusted AI output against a four-point rubric: vocabulary match, detail level, tone/formality, and actionability.</li>
+                <li>Identify the characteristics of large domain-specific text corpora relevant to AI-assisted querying</li>
+                <li>Apply prompt strategies for targeted retrieval from domain-specific technical corpora</li>
+                <li>Use LLMs as guided problem-solving assistants for complex, multi-step technical methodologies</li>
+                <li>Apply iterative prompt refinement to improve retrieval quality and output specificity</li>
+                <li>Validate LLM-synthesized information against authoritative source documents</li>
+                <li>Identify common sources of unstructured technical data in IT support workflows</li>
+                <li>Design prompts to extract structured fields from unstructured technical inputs</li>
+                <li>Design prompts that synthesize multiple source documents into coherent analytical summaries</li>
+                <li>Apply standard report structure conventions to AI-generated analytical output</li>
+                <li>Evaluate AI-generated reports for completeness, consistency, and accurate attribution</li>
+                <li>Apply prompt patterns to generate IaC declarations, configuration files, and shell automation scripts</li>
+                <li>Specify environment constraints, idempotency requirements, and security posture in AI prompts</li>
+                <li>Validate AI-generated code for correctness, security gaps, and organizational standards compliance</li>
+                <li>Apply iteration and inline documentation patterns to refine and document AI-generated scripts</li>
+                <li>Identify categories of infrastructure tasks appropriate for AI-assisted generation versus human authorship</li>
+                <li>Interpret AI tool diagnostic output including confidence scores, uncertainty indicators, and model limitation disclosures</li>
+                <li>Monitor AI-assisted workflows for output drift, silent failures, and unexpected behavior in operational contexts</li>
+                <li>Apply responsible AI frameworks to anticipate negative user experience and business impact before deployment</li>
+                <li>Evaluate AI-generated decisions against an ethical analysis checklist</li>
+                <li>Document AI decisions to satisfy audit trail and accountability requirements</li>
             </ol>
         </section>
 
@@ -345,8 +357,42 @@ code {
             <div class="module">
                 <div class="module-head">
                     <span class="module-num">1</span>
-                    <span class="module-title">AI-Assisted User Communication and Documentation</span>
-                    <span class="module-hours">1 hours</span>
+                    <span class="module-title">AI-Assisted Infrastructure Design, Build and Configuration</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Querying and Synthesizing Domain-Specific Text Corpora with LLMs (1h)</div>
+                    <ul class="topic-list">
+                        <li>Characteristics of large domain-specific text corpora: technical runbooks, knowledge bases, vendor documentation, and internal playbooks</li>
+                        <li>Prompt strategies for targeted retrieval: semantic framing, constraint specification, and context injection</li>
+                        <li>Using LLMs as guided problem-solving assistants for complex, multi-step technical methodologies</li>
+                        <li>Iterative refinement: identifying when LLM output is incomplete or off-target and improving prompt specificity</li>
+                        <li>Validating synthesized information: cross-referencing LLM output against authoritative source documents</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Structuring Unstructured Data into Analytical Reports (1h)</div>
+                    <ul class="topic-list">
+                        <li>Sources of unstructured technical data: incident logs, diagnostic dumps, meeting notes, ticket threads, and change records</li>
+                        <li>Prompting for extraction: pulling structured fields (status, action items, owners, blockers, timelines) from unstructured input</li>
+                        <li>Prompting for synthesis: aggregating multiple source documents into coherent analytical summaries</li>
+                        <li>Report structure conventions: executive summary, findings, supporting detail, and recommendations</li>
+                        <li>Quality checks for AI-generated reports: completeness, internal consistency, accurate attribution, and tone calibration</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: Generating IaC Scripts, Configuration, and Automation Code with AI (1h)</div>
+                    <ul class="topic-list">
+                        <li>Prompt patterns for IaC artifacts: infrastructure state declarations, YAML/JSON configuration files, and shell automation scripts</li>
+                        <li>Specifying constraints in prompts: environment targets, idempotency requirements, naming conventions, and security posture</li>
+                        <li>Validating AI-generated code: reviewing for correctness, security gaps, secret handling, and adherence to organizational standards</li>
+                        <li>Iteration and documentation patterns: using AI to refine, explain, inline-comment, and version generated scripts</li>
+                        <li>Scope boundaries: categories of infrastructure tasks where AI assistance is appropriate vs. where human authorship is required</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 4: Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks (1h)</div>
+                    <ul class="topic-list">
+                        <li>Reading AI tool diagnostic output: confidence scores, uncertainty indicators, and model limitation disclosures</li>
+                        <li>Monitoring AI-assisted workflows: detecting output drift, silent failures, and unexpected behavior in operational contexts</li>
+                        <li>Responsible AI frameworks: structured approaches for anticipating negative user experience and business impact before deployment</li>
+                        <li>Ethical analysis checklist: bias in training data, explainability requirements, regulatory compliance, and escalation triggers</li>
+                        <li>Documenting AI decisions: audit trail requirements for AI-generated configuration and diagnostic actions</li>
+                    </ul>
                 </div>
             </div>
 

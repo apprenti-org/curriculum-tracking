@@ -939,6 +939,80 @@ const courseOutlines = {
       }
     ]
   },
+  "AI-Assisted Infrastructure Design, Build and Configuration": {
+    "course": "AI-Assisted Infrastructure Design, Build and Configuration",
+    "totalHours": 4,
+    "totalModules": 1,
+    "totalLessons": 4,
+    "modules": [
+      {
+        "name": "AI-Assisted Infrastructure Design, Build and Configuration",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Querying and Synthesizing Domain-Specific Text Corpora with LLMs",
+            "hours": 1,
+            "topics": [
+              "Characteristics of large domain-specific text corpora: technical runbooks, knowledge bases, vendor documentation, and internal playbooks",
+              "Prompt strategies for targeted retrieval: semantic framing, constraint specification, and context injection",
+              "Using LLMs as guided problem-solving assistants for complex, multi-step technical methodologies",
+              "Iterative refinement: identifying when LLM output is incomplete or off-target and improving prompt specificity",
+              "Validating synthesized information: cross-referencing LLM output against authoritative source documents"
+            ],
+            "objects": [
+              "Object: Lesson: Querying and Synthesizing Domain-Specific Text Corpora with LLMs",
+              "Assessment: Quiz: Querying and Synthesizing Domain-Specific Text Corpora with LLMs"
+            ]
+          },
+          {
+            "title": "Structuring Unstructured Data into Analytical Reports",
+            "hours": 1,
+            "topics": [
+              "Sources of unstructured technical data: incident logs, diagnostic dumps, meeting notes, ticket threads, and change records",
+              "Prompting for extraction: pulling structured fields (status, action items, owners, blockers, timelines) from unstructured input",
+              "Prompting for synthesis: aggregating multiple source documents into coherent analytical summaries",
+              "Report structure conventions: executive summary, findings, supporting detail, and recommendations",
+              "Quality checks for AI-generated reports: completeness, internal consistency, accurate attribution, and tone calibration"
+            ],
+            "objects": [
+              "Object: Lesson: Structuring Unstructured Data into Analytical Reports",
+              "Assessment: Quiz: Structuring Unstructured Data into Analytical Reports"
+            ]
+          },
+          {
+            "title": "Generating IaC Scripts, Configuration, and Automation Code with AI",
+            "hours": 1,
+            "topics": [
+              "Prompt patterns for IaC artifacts: infrastructure state declarations, YAML/JSON configuration files, and shell automation scripts",
+              "Specifying constraints in prompts: environment targets, idempotency requirements, naming conventions, and security posture",
+              "Validating AI-generated code: reviewing for correctness, security gaps, secret handling, and adherence to organizational standards",
+              "Iteration and documentation patterns: using AI to refine, explain, inline-comment, and version generated scripts",
+              "Scope boundaries: categories of infrastructure tasks where AI assistance is appropriate vs. where human authorship is required"
+            ],
+            "objects": [
+              "Object: Lesson: Generating IaC Scripts, Configuration, and Automation Code with AI",
+              "Assessment: Quiz: Generating IaC Scripts, Configuration, and Automation Code with AI"
+            ]
+          },
+          {
+            "title": "Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks",
+            "hours": 1,
+            "topics": [
+              "Reading AI tool diagnostic output: confidence scores, uncertainty indicators, and model limitation disclosures",
+              "Monitoring AI-assisted workflows: detecting output drift, silent failures, and unexpected behavior in operational contexts",
+              "Responsible AI frameworks: structured approaches for anticipating negative user experience and business impact before deployment",
+              "Ethical analysis checklist: bias in training data, explainability requirements, regulatory compliance, and escalation triggers",
+              "Documenting AI decisions: audit trail requirements for AI-generated configuration and diagnostic actions"
+            ],
+            "objects": [
+              "Object: Lesson: Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks",
+              "Assessment: Quiz: Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "AI-Assisted IT Service Management": {
     "course": "AI-Assisted IT Service Management",
     "totalHours": 4,

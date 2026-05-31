@@ -246,8 +246,8 @@ var courseOverviewData = [
     }
   },
   {
-    "id": "ai-assisted-it-service-management",
-    "name": "AI-Assisted IT Service Management",
+    "id": "ai-assisted-infrastructure-design-build-and-configuration",
+    "name": "AI-Assisted Infrastructure Design, Build and Configuration",
     "hours": 4,
     "outline": {
       "exists": true,
@@ -278,6 +278,41 @@ var courseOverviewData = [
       "state": "Not Deployed",
       "expected": 0,
       "actual": 0
+    }
+  },
+  {
+    "id": "ai-assisted-it-service-management",
+    "name": "AI-Assisted IT Service Management",
+    "hours": 4,
+    "outline": {
+      "exists": true,
+      "modules": 2,
+      "lessons": 5
+    },
+    "syllabus": true,
+    "source": {
+      "exists": true,
+      "folder": "ai-assisted-it-service-management/deploy/content",
+      "modules": 1
+    },
+    "coverage": 40,
+    "lessonsWithContent": 2,
+    "assets": {
+      "lessons": 2,
+      "slides": 2,
+      "quizzes": 2,
+      "activities": 2,
+      "demos": 0,
+      "caseStudies": 0,
+      "instructorGuides": 2,
+      "modIntros": 0,
+      "modRecaps": 0
+    },
+    "totalAssets": 10,
+    "deployment": {
+      "state": "Complete",
+      "expected": 2,
+      "actual": 2
     }
   },
   {
