@@ -124,13 +124,13 @@ const courseData = [
     "hours": 4,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "syllabi/ai-assisted-it-governance.html",
     "outline": true,
     "note": "Net-new 4h supplemental course for CTSE. 1 module, 4 lessons: AI for Policy Document Drafting and Text Analysis; Reviewing and Ensuring Consistency in Technical Documents; Applying Responsible AI Frameworks for Compliance and Security Governance; Ethical and Business Risk Analysis with AI. OJL 4.i, 5.a. No exercises. Onboarding meta apprenti-org/design-documentation#764.",
     "driveFolder": null,
-    "statusConfirmed": false,
+    "statusConfirmed": true,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
   },
   {

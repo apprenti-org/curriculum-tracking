@@ -1055,7 +1055,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: AI for Policy Document Drafting and Text Analysis",
-              "Assessment: Quiz: AI for Policy Document Drafting and Text Analysis"
+              "Assessment: Quiz: AI for Policy Document Drafting and Text Analysis",
+              "SCORM: scorm-lesson-01-ai-for-policy-document-drafting-and-text-analysis.zip"
             ]
           },
           {
@@ -1070,7 +1071,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Reviewing and Ensuring Consistency in Technical Documents",
-              "Assessment: Quiz: Reviewing and Ensuring Consistency in Technical Documents"
+              "Assessment: Quiz: Reviewing and Ensuring Consistency in Technical Documents",
+              "SCORM: scorm-lesson-02-reviewing-and-ensuring-consistency-in-technical-documents.zip"
             ]
           },
           {
@@ -1085,7 +1087,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Applying Responsible AI Frameworks for Compliance and Security Governance",
-              "Assessment: Quiz: Applying Responsible AI Frameworks for Compliance and Security Governance"
+              "Assessment: Quiz: Applying Responsible AI Frameworks for Compliance and Security Governance",
+              "SCORM: scorm-lesson-03-applying-responsible-ai-frameworks-for-compliance-and-security-governance.zip"
             ]
           },
           {
@@ -1100,7 +1103,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Ethical and Business Risk Analysis with AI",
-              "Assessment: Quiz: Ethical and Business Risk Analysis with AI"
+              "Assessment: Quiz: Ethical and Business Risk Analysis with AI",
+              "SCORM: scorm-lesson-04-ethical-and-business-risk-analysis-with-ai.zip"
             ]
           }
         ]
