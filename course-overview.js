@@ -291,28 +291,28 @@ var courseOverviewData = [
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "ai-assisted-it-governance/deploy/content",
+      "modules": 1
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 60,
+    "lessonsWithContent": 3,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
+      "lessons": 3,
+      "slides": 3,
+      "quizzes": 3,
       "activities": 0,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 3,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 12,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 3,
+      "actual": 3
     }
   },
   {
