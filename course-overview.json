@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-31T15:17:10",
+  "generated": "2026-06-01T09:44:21",
   "courseCount": 76,
   "courses": [
     {
@@ -277,7 +277,7 @@
       },
       "totalAssets": 0,
       "deployment": {
-        "state": "Not Deployed",
+        "state": "Complete",
         "expected": 0,
         "actual": 0
       }
