@@ -12,7 +12,7 @@
       "provider": "American Bankers Association",
       "syllabus": null,
       "outline": null,
-      "note": "External provider (American Bankers Association). Course details TBD — hours, syllabus URL, and RTI area coverage to be confirmed.",
+      "note": "External provider (American Bankers Association). Course details TBD \u2014 hours, syllabus URL, and RTI area coverage to be confirmed.",
       "driveFolder": null,
       "statusConfirmed": false
     },
@@ -26,7 +26,7 @@
       },
       "syllabus": "Syllabus: Advanced Python",
       "outline": "Course Outline: Advanced Python",
-      "note": "Outline and syllabus complete — awaiting manual review",
+      "note": "Outline and syllabus complete \u2014 awaiting manual review",
       "driveFolder": "https://drive.google.com/drive/folders/1-O-rT_oqlgdo1Qsz-7M0_p0MTblMTJ6v",
       "statusConfirmed": false
     },
@@ -40,7 +40,7 @@
       },
       "syllabus": "Syllabus: Agile Project Management with Scrum",
       "outline": "Course Outline: Agile Project Management with Scrum",
-      "note": "Outline and syllabus complete — awaiting manual review",
+      "note": "Outline and syllabus complete \u2014 awaiting manual review",
       "driveFolder": "https://drive.google.com/drive/folders/1roPHpPQD1LvTGz1xvWtbv-U-XFqr4VBo",
       "statusConfirmed": false
     },
@@ -82,7 +82,7 @@
       },
       "syllabus": "syllabi/ai-assisted-cicd-pipelines.html",
       "outline": true,
-      "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: CI/CD Concepts and Generating Workflows with AI (1h); Building a Spring Application Pipeline with GitHub Actions (1h). GitHub Actions, Spring Boot TemperatureConverter, red/green build cycle, AI-assisted workflow YAML generation and build log interpretation. Live in Absorb LMS 2026-05-19. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+      "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: CI/CD Concepts and Generating Workflows with AI (1h); Building a Spring Application Pipeline with GitHub Actions (1h). GitHub Actions, Spring Boot TemperatureConverter, red/green build cycle, AI-assisted workflow YAML generation and build log interpretation. Live in Absorb LMS 2026-05-19. RTI/OJL alignment deferred \u2014 JVFD curriculum design folder not yet created.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -97,7 +97,7 @@
       },
       "syllabus": "syllabi/ai-assisted-coding-fundamentals.html",
       "outline": true,
-      "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). All 12 onboarding rows complete: content production (#476), SCORM packaging (#478), deployment (#479), starter asset audit (#480), LMS upload (#486). Student repo: apprenti-org/ai-assisted-coding-fundamentals-student. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+      "note": "Net-new 4h course for Software Developer (JVFD). 2 modules, 4 lessons: Your First AI-Assisted Program (1h), Prompting AI Effectively for Code (1h), Debugging and Refactoring with AI (1h), Reviewing AI-Generated Code for Security and Accuracy (1h). All 12 onboarding rows complete: content production (#476), SCORM packaging (#478), deployment (#479), starter asset audit (#480), LMS upload (#486). Student repo: apprenti-org/ai-assisted-coding-fundamentals-student. RTI/OJL alignment deferred \u2014 JVFD curriculum design folder not yet created.",
       "driveFolder": null,
       "statusConfirmed": true
     },
@@ -114,6 +114,21 @@
       "note": "Net-new 4h supplemental course for CTSE. 1 module, 4 lessons: Querying/Synthesizing Domain-Specific Text Corpora with LLMs; Structuring Unstructured Data into Analytical Reports; Generating IaC Scripts/Configuration/Automation Code with AI; Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks. OJL 4.e, 4.i. No exercises. Onboarding meta apprenti-org/design-documentation#728.",
       "driveFolder": null,
       "statusConfirmed": true,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+    },
+    {
+      "id": "ai-assisted-it-governance",
+      "name": "AI-Assisted IT Governance",
+      "hours": 4,
+      "status": {
+        "design": "Complete",
+        "development": "In Progress"
+      },
+      "syllabus": "syllabi/ai-assisted-it-governance.html",
+      "outline": true,
+      "note": "Net-new 4h supplemental course for CTSE. 1 module, 4 lessons: AI for Policy Document Drafting and Text Analysis; Reviewing and Ensuring Consistency in Technical Documents; Applying Responsible AI Frameworks for Compliance and Security Governance; Ethical and Business Risk Analysis with AI. OJL 4.i, 5.a. No exercises. Onboarding meta apprenti-org/design-documentation#764.",
+      "driveFolder": null,
+      "statusConfirmed": false,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation"
     },
     {
@@ -156,7 +171,7 @@
       },
       "syllabus": null,
       "outline": true,
-      "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: Red-Green-Refactor with AI (1h); Test Doubles, Mocks, and Coverage (1h). Both SCORM zips deployed to Absorb; starter/solution repos provisioned at apprenti-org/ai-assisted-test-driven-development-student and -instructor. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+      "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: Red-Green-Refactor with AI (1h); Test Doubles, Mocks, and Coverage (1h). Both SCORM zips deployed to Absorb; starter/solution repos provisioned at apprenti-org/ai-assisted-test-driven-development-student and -instructor. RTI/OJL alignment deferred \u2014 JVFD curriculum design folder not yet created.",
       "driveFolder": null,
       "statusConfirmed": true
     },
@@ -170,7 +185,7 @@
       },
       "syllabus": "syllabi/ai-assisted-user-communication-and-documentation.html",
       "outline": true,
-      "note": "Net-new 1h course for Software Developer (JVFD). 1 module, 2 lessons: Generating Professional Content with AI Prompts (0.5h); Tailoring Communication for Stakeholder Audiences (0.5h). Quiz only — no exercises or activities. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+      "note": "Net-new 1h course for Software Developer (JVFD). 1 module, 2 lessons: Generating Professional Content with AI Prompts (0.5h); Tailoring Communication for Stakeholder Audiences (0.5h). Quiz only \u2014 no exercises or activities. RTI/OJL alignment deferred \u2014 JVFD curriculum design folder not yet created.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -200,7 +215,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: ASP.NET",
-      "note": "Outline extracted from C# Fundamentals Module 8 — awaiting manual review and hours estimation",
+      "note": "Outline extracted from C# Fundamentals Module 8 \u2014 awaiting manual review and hours estimation",
       "driveFolder": "https://drive.google.com/drive/folders/1SyzTnafr9h0VJCXjJyKCZe4FzuaWsdfQ",
       "statusConfirmed": false
     },
@@ -242,7 +257,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: C# Data Access",
-      "note": "Outline extracted from C# Fundamentals Module 7 — awaiting manual review and hours estimation",
+      "note": "Outline extracted from C# Fundamentals Module 7 \u2014 awaiting manual review and hours estimation",
       "driveFolder": "https://drive.google.com/drive/folders/1bejAPyvTFN5lhaPD_3Eoaa0alAxgZ6Cj",
       "statusConfirmed": false
     },
@@ -256,7 +271,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: C# Language Fundamentals",
-      "note": "Outline extracted from C# Fundamentals Module 2 — awaiting manual review and hours estimation",
+      "note": "Outline extracted from C# Fundamentals Module 2 \u2014 awaiting manual review and hours estimation",
       "driveFolder": "https://drive.google.com/drive/folders/187t9XrpPqtcHwhz2J6Jxt6xwqGjb5e0w",
       "statusConfirmed": false
     },
@@ -270,7 +285,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: C# OOP",
-      "note": "Outline extracted from C# Fundamentals Module 3 — awaiting manual review and hours estimation",
+      "note": "Outline extracted from C# Fundamentals Module 3 \u2014 awaiting manual review and hours estimation",
       "driveFolder": "https://drive.google.com/drive/folders/1LGCFMCWfYHOIoCz8rp5vNxR5JpZ8QQTd",
       "statusConfirmed": false
     },
@@ -284,7 +299,7 @@
       },
       "syllabus": "Syllabus: C++ Coding Booster Intensive",
       "outline": "Course Outline: C++ Coding Booster Intensive",
-      "note": "One-day intensive workshop for Visa apprentices — full syllabus and lesson plan available",
+      "note": "One-day intensive workshop for Visa apprentices \u2014 full syllabus and lesson plan available",
       "driveFolder": "https://drive.google.com/drive/folders/1JAebFnmxFdqk6_PtvtMHKyf8bi21EOqn",
       "statusConfirmed": false
     },
@@ -298,7 +313,7 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "OSS Course 11, Area 3 — GitHub-Actions-focused CI/CD course. 10h, 3 modules, 9 lessons (incl. 1.5h capstone). Design folder complete in apprenti-org/design-documentation (course outline + 8 lesson outlines + 9 lesson sources + standard alignment). Phase 3 production complete via #236: 60 production files (9 lessons × 6 artifacts + 3 module READMEs + 3 MODULE-REPORTs); 18/18 alignment passes per module; 0 permanent quarantines. Course-completion report at _COURSES Phase 1 - WORKING/courses/cicd-pipeline-concepts/_REVIEW/course-completion-report.md. Module review gates written, awaiting human sign-off. Per tracking #94.",
+      "note": "OSS Course 11, Area 3 \u2014 GitHub-Actions-focused CI/CD course. 10h, 3 modules, 9 lessons (incl. 1.5h capstone). Design folder complete in apprenti-org/design-documentation (course outline + 8 lesson outlines + 9 lesson sources + standard alignment). Phase 3 production complete via #236: 60 production files (9 lessons \u00d7 6 artifacts + 3 module READMEs + 3 MODULE-REPORTs); 18/18 alignment passes per module; 0 permanent quarantines. Course-completion report at _COURSES Phase 1 - WORKING/courses/cicd-pipeline-concepts/_REVIEW/course-completion-report.md. Module review gates written, awaiting human sign-off. Per tracking #94.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -313,7 +328,7 @@
       },
       "syllabus": "Syllabus: Client Technical Support Engineer Capstone",
       "outline": "Course Outline: Client Technical Support Engineer Capstone",
-      "note": "Net-new integrative capstone (20h / 4 days). 5 modules / 5 lessons. Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases — Discovery, Design, Build, Operate, Report. All content produced: content.md, instructor-guide.md, Capstone Deliverables checklist (quiz.md), and interactive.html for all 5 lessons. Course-completion report at _REVIEW/course-completion-report.md.",
+      "note": "Net-new integrative capstone (20h / 4 days). 5 modules / 5 lessons. Simulated scenario: students act as IT Support Lead to stand up a service desk from scratch across 5 phases \u2014 Discovery, Design, Build, Operate, Report. All content produced: content.md, instructor-guide.md, Capstone Deliverables checklist (quiz.md), and interactive.html for all 5 lessons. Course-completion report at _REVIEW/course-completion-report.md.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -342,7 +357,7 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "OSS Course 14, Area 4 — existing content to be migrated/refined for OSS Security & Professional Skills area. 4h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #86).",
+      "note": "OSS Course 14, Area 4 \u2014 existing content to be migrated/refined for OSS Security & Professional Skills area. 4h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #86).",
       "driveFolder": null,
       "statusConfirmed": true
     },
@@ -356,7 +371,7 @@
       },
       "syllabus": "Syllabus: Curriculum IT Support Professional",
       "outline": "Course Outline: CompTIA A+",
-      "note": "v0.4.2 — 38/38 SCORM interactives complete. All modules 1-7 deployed. Content synced from review HTMLs, titles normalized.",
+      "note": "v0.4.2 \u2014 38/38 SCORM interactives complete. All modules 1-7 deployed. Content synced from review HTMLs, titles normalized.",
       "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o",
       "statusConfirmed": true
     },
@@ -376,56 +391,56 @@
     },
     {
       "id": "data-fundamentals-data-literacy",
-      "name": "Data Fundamentals — Data Literacy",
+      "name": "Data Fundamentals \u2014 Data Literacy",
       "hours": 25,
       "status": {
         "design": "Complete",
         "development": "Complete"
       },
       "syllabus": "data-literacy",
-      "outline": "Course Outline: Data Fundamentals — Data Literacy",
+      "outline": "Course Outline: Data Fundamentals \u2014 Data Literacy",
       "note": "7 modules, 24 lessons, 107 PDFs. Deploy repo: apprenti-org/data-literacy-deploy. PLE manifest integrated. Welcome interactive packaged as SCORM 1.2 (ready for Absorb upload).",
       "driveFolder": "https://drive.google.com/drive/folders/17-Ll0td-RhLRdvpzksoFHNX70AZX4ikQ",
       "statusConfirmed": false
     },
     {
       "id": "data-fundamentals-data-visualizations-and-power-bi",
-      "name": "Data Fundamentals — Data Visualizations and Power BI",
+      "name": "Data Fundamentals \u2014 Data Visualizations and Power BI",
       "hours": 50,
       "status": {
         "design": "Needs Review",
         "development": "Not Started"
       },
       "syllabus": null,
-      "outline": "Course Outline: Data Fundamentals — Data Visualizations and Power BI",
-      "note": "Existing content — full course outline, module folders, code-alongs, exercises, labs, and multi-part summative in Google Drive",
+      "outline": "Course Outline: Data Fundamentals \u2014 Data Visualizations and Power BI",
+      "note": "Existing content \u2014 full course outline, module folders, code-alongs, exercises, labs, and multi-part summative in Google Drive",
       "driveFolder": "https://drive.google.com/drive/folders/1PwOtz40wQ7-xcscKQTBMRqnVUjpkaM2f",
       "statusConfirmed": false
     },
     {
       "id": "data-fundamentals-excel-for-data-analysts",
-      "name": "Data Fundamentals — Excel for Data Analysts",
+      "name": "Data Fundamentals \u2014 Excel for Data Analysts",
       "hours": 50,
       "status": {
         "design": "Needs Review",
         "development": "Not Started"
       },
       "syllabus": null,
-      "outline": "Course Outline: Data Fundamentals — Excel for Data Analysts",
-      "note": "Existing content — full course outline, instructor guide, course overview, scenario, exercises with learner keys, and summative assessment in Google Drive",
+      "outline": "Course Outline: Data Fundamentals \u2014 Excel for Data Analysts",
+      "note": "Existing content \u2014 full course outline, instructor guide, course overview, scenario, exercises with learner keys, and summative assessment in Google Drive",
       "driveFolder": "https://drive.google.com/drive/folders/1RpKaf1sRrbX3F2s6as5fJn6MS1Aj8GB4",
       "statusConfirmed": false
     },
     {
       "id": "data-fundamentals-sql-for-data",
-      "name": "Data Fundamentals — SQL for Data",
+      "name": "Data Fundamentals \u2014 SQL for Data",
       "hours": 50,
       "status": {
         "design": "Complete",
         "development": "Not Started"
       },
       "syllabus": null,
-      "outline": "Course Outline: Data Fundamentals — SQL for Data",
+      "outline": "Course Outline: Data Fundamentals \u2014 SQL for Data",
       "note": null,
       "driveFolder": "https://drive.google.com/drive/folders/1brcOX4Cce5PKvje0ZTKBrHgF7alND39Z",
       "statusConfirmed": false
@@ -440,7 +455,7 @@
       },
       "syllabus": "Syllabus: Databases in Java",
       "outline": "Course Outline: Databases in Java",
-      "note": "Rich source content — 10 content modules, 23 lesson docs, 17 code-alongs, 13 exercises, 4 install guides, 1 lab, summative assessment. INCOMPLETE folder has 4 unfinished modules (Database Programming, BigDecimal, JDBC Template, Advanced JDBC Template). Slides and instructor guides available.",
+      "note": "Rich source content \u2014 10 content modules, 23 lesson docs, 17 code-alongs, 13 exercises, 4 install guides, 1 lab, summative assessment. INCOMPLETE folder has 4 unfinished modules (Database Programming, BigDecimal, JDBC Template, Advanced JDBC Template). Slides and instructor guides available.",
       "driveFolder": "https://drive.google.com/drive/folders/1g22pGVb41S-Wzdp-04rB7r5iP7KVid0d",
       "statusConfirmed": false
     },
@@ -454,7 +469,7 @@
       },
       "syllabus": "Syllabus: Helpdesk Software Fundamentals",
       "outline": "Course Outline: Helpdesk Software Fundamentals",
-      "note": "Rich source content — 7 lesson docs, 7 quizzes, 6 hands-on activities, slides folder in Google Drive. Covers ITSM fundamentals, helpdesk platforms (Zendesk, Freshdesk, ServiceNow), ticket lifecycle, knowledge management, automation, reporting, and best practices.",
+      "note": "Rich source content \u2014 7 lesson docs, 7 quizzes, 6 hands-on activities, slides folder in Google Drive. Covers ITSM fundamentals, helpdesk platforms (Zendesk, Freshdesk, ServiceNow), ticket lifecycle, knowledge management, automation, reporting, and best practices.",
       "driveFolder": "https://drive.google.com/drive/folders/1vcee5L9CWraXObjJQwi2KwF-7NTGDdTJ",
       "statusConfirmed": true
     },
@@ -468,7 +483,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: HTTP Services",
-      "note": "No formal course outline doc — outline constructed from two lesson documents in Google Drive. Related to Java M07 JDBC/HTTP Services module.",
+      "note": "No formal course outline doc \u2014 outline constructed from two lesson documents in Google Drive. Related to Java M07 JDBC/HTTP Services module.",
       "driveFolder": "https://drive.google.com/drive/folders/1VzQcpugiLw18KakVlxRROUW4hOuWcKwG",
       "statusConfirmed": false
     },
@@ -482,7 +497,7 @@
       },
       "syllabus": null,
       "outline": "infrastructure-as-code-fundamentals",
-      "note": "OSS Course 12, Area 3 — net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h, 5 modules, 16 lessons (incl. M5 capstone — first lesson authored against capstone-design-process.md v0.2.0; CBR + evidence-map locked as canonical templates). Live in Absorb 2026-05-06 (97 PDFs + 16 SCORM zips uploaded; course published to learner catalog). Apprenti-org code repos: infrastructure-as-code-student + infrastructure-as-code-instructor. Onboarding meta apprenti-org/design-documentation#281.",
+      "note": "OSS Course 12, Area 3 \u2014 net-new course covering Terraform, Ansible, and cloud-native IaC fundamentals. 22h, 5 modules, 16 lessons (incl. M5 capstone \u2014 first lesson authored against capstone-design-process.md v0.2.0; CBR + evidence-map locked as canonical templates). Live in Absorb 2026-05-06 (97 PDFs + 16 SCORM zips uploaded; course published to learner catalog). Apprenti-org code repos: infrastructure-as-code-student + infrastructure-as-code-instructor. Onboarding meta apprenti-org/design-documentation#281.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -497,7 +512,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Instructor Onboarding",
-      "note": "Existing content — course info doc, full course text, and large combined doc in Google Drive. Originally designed for Java Bootcamp instructor prep, broadly applicable. 2020 draft.",
+      "note": "Existing content \u2014 course info doc, full course text, and large combined doc in Google Drive. Originally designed for Java Bootcamp instructor prep, broadly applicable. 2020 draft.",
       "driveFolder": "https://drive.google.com/drive/folders/1KehRfpSrrS4gOyhoLgGiGx6SpxAqJbL3",
       "statusConfirmed": false
     },
@@ -511,7 +526,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Introduction to Advanced Concepts in Java",
-      "note": "Rich source content — 2 content modules, 16 lesson docs, 3 code-alongs, 10 exercises, 1 lab, 1 module assessment, 2 summative assessments (Sustainable Foraging, Airport Terminal Management System). Covers File I/O, design patterns (repository, domain, MVC), dependency injection, Spring DI (XML and annotations), BigDecimal, temporal types, lambdas, and streams.",
+      "note": "Rich source content \u2014 2 content modules, 16 lesson docs, 3 code-alongs, 10 exercises, 1 lab, 1 module assessment, 2 summative assessments (Sustainable Foraging, Airport Terminal Management System). Covers File I/O, design patterns (repository, domain, MVC), dependency injection, Spring DI (XML and annotations), BigDecimal, temporal types, lambdas, and streams.",
       "driveFolder": "https://drive.google.com/drive/folders/1XRc60zapZP8beSVim2PUVsuCBNGYZzkF",
       "statusConfirmed": false
     },
@@ -525,7 +540,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Introduction to AWS Cloud Platform",
-      "note": "Existing content — full course folder with 10 module subfolders and lesson docs in Google Drive. Very large combined doc also available. Referenced as 16h in Cloud Ops Specialist syllabus.",
+      "note": "Existing content \u2014 full course folder with 10 module subfolders and lesson docs in Google Drive. Very large combined doc also available. Referenced as 16h in Cloud Ops Specialist syllabus.",
       "driveFolder": "https://drive.google.com/drive/folders/1X_LKRkFbjrWvAtFVipSL6LNOyu9NWBzM",
       "statusConfirmed": false
     },
@@ -539,7 +554,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Introduction to Cloud Technology",
-      "note": "Existing content — full course outline, course intro, lesson docs, and demos (AWS/Azure/GCP portals) in Google Drive. Referenced as 'Introduction to Cloud' in SWD Java and Cloud Ops syllabi.",
+      "note": "Existing content \u2014 full course outline, course intro, lesson docs, and demos (AWS/Azure/GCP portals) in Google Drive. Referenced as 'Introduction to Cloud' in SWD Java and Cloud Ops syllabi.",
       "driveFolder": "https://drive.google.com/drive/folders/1JuELDVAwsj5-uOzNh1KXJ5aBTpc5vj4Q",
       "statusConfirmed": false
     },
@@ -553,7 +568,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Introduction to GitHub",
-      "note": "Existing content — course intro with 12 outcomes, detailed instructor guide with lesson structure, 4 lessons, 5 code-alongs, 1 exercise, quizzes. 8–16h per SWD Java syllabus.",
+      "note": "Existing content \u2014 course intro with 12 outcomes, detailed instructor guide with lesson structure, 4 lessons, 5 code-alongs, 1 exercise, quizzes. 8\u201316h per SWD Java syllabus.",
       "driveFolder": "https://drive.google.com/drive/folders/1UR0Q77PdzDRYnaOC_Stu6Je80Z6zdpkN",
       "statusConfirmed": false
     },
@@ -567,7 +582,7 @@
       },
       "syllabus": "Syllabus: Introduction to HTML & CSS",
       "outline": "Course Outline: Introduction to HTML & CSS",
-      "note": "Existing content — full syllabus with 3 modules, 40 hours, 16 lessons, 13 code-alongs, 4 exercises, and summative assessment. Part of Software Development Java curriculum as 'HTML & CSS'.",
+      "note": "Existing content \u2014 full syllabus with 3 modules, 40 hours, 16 lessons, 13 code-alongs, 4 exercises, and summative assessment. Part of Software Development Java curriculum as 'HTML & CSS'.",
       "driveFolder": "https://drive.google.com/drive/folders/16UVQpNFHouifMNadvQzr98pdin5jRgtB",
       "statusConfirmed": false
     },
@@ -581,7 +596,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Introduction to Microsoft Teams",
-      "note": "Existing content — 2 lesson docs with instructor guides covering Teams overview and creating/managing Teams & Channels. No formal syllabus. Related to Microsoft 365 Fundamentals track.",
+      "note": "Existing content \u2014 2 lesson docs with instructor guides covering Teams overview and creating/managing Teams & Channels. No formal syllabus. Related to Microsoft 365 Fundamentals track.",
       "driveFolder": "https://drive.google.com/drive/folders/1l0w-W4C0m05BkrSuZ67L_kF-8lT1vbmW",
       "statusConfirmed": false
     },
@@ -640,7 +655,7 @@
       },
       "syllabus": "Syllabus: Java Coding Booster Intensive",
       "outline": "Course Outline: Java Coding Booster Intensive",
-      "note": "Existing content — full syllabus, 2-day outline, course intro/conclusion, software requirements, 8 module folders in Google Drive. 16h over 2 days. Visa SWD apprentice intensive with 85% AI-assisted mandate.",
+      "note": "Existing content \u2014 full syllabus, 2-day outline, course intro/conclusion, software requirements, 8 module folders in Google Drive. 16h over 2 days. Visa SWD apprentice intensive with 85% AI-assisted mandate.",
       "driveFolder": "https://drive.google.com/drive/folders/1SH-jSBKboZwxiLQVFaFfcLbGR4gEsh84",
       "statusConfirmed": false
     },
@@ -697,7 +712,7 @@
       },
       "syllabus": "Syllabus: JavaScript Coding Booster Intensive",
       "outline": "Course Outline: JavaScript Coding Booster Intensive",
-      "note": "Existing content — full syllabus, course outline, course intro/conclusion, software requirements, 4 module folders in Google Drive. 8h one-day intensive. Visa SWD apprentice front-end simulation with 85% AI-assisted mandate. Dynamics 365 focus.",
+      "note": "Existing content \u2014 full syllabus, course outline, course intro/conclusion, software requirements, 4 module folders in Google Drive. 8h one-day intensive. Visa SWD apprentice front-end simulation with 85% AI-assisted mandate. Dynamics 365 focus.",
       "driveFolder": "https://drive.google.com/drive/folders/1LeMbVEU2XbZjzjjilc4W-fxEa66rvWJa",
       "statusConfirmed": false
     },
@@ -781,7 +796,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Microsoft 365 Endpoint Administrator",
-      "note": "Rich source content — 11 modules (10 with content, 1 capstone placeholder), 10 lesson docs, 10 quizzes, 10 activities, 9 demos, 4 case studies, slides folder in Google Drive.",
+      "note": "Rich source content \u2014 11 modules (10 with content, 1 capstone placeholder), 10 lesson docs, 10 quizzes, 10 activities, 9 demos, 4 case studies, slides folder in Google Drive.",
       "driveFolder": "https://drive.google.com/drive/folders/1uB-40aGxQOQYt5Jb-61LrFFcsBnxWwSU",
       "statusConfirmed": false
     },
@@ -795,7 +810,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Microsoft 365 Fundamentals",
-      "note": "Rich source content — 4 modules, 8 lesson docs, 8 quizzes, 7 activities, 1 case study in Google Drive. Modules: Cloud Concepts, Productivity and Teamwork, Security and Compliance, Licensing and Support.",
+      "note": "Rich source content \u2014 4 modules, 8 lesson docs, 8 quizzes, 7 activities, 1 case study in Google Drive. Modules: Cloud Concepts, Productivity and Teamwork, Security and Compliance, Licensing and Support.",
       "driveFolder": "https://drive.google.com/drive/folders/1m6xk7KPhOgBuLGOXYfPbf5PinBx5Ir3z",
       "statusConfirmed": false
     },
@@ -829,15 +844,15 @@
     },
     {
       "id": "oss-capstone",
-      "name": "OSS Capstone — Ops Incident Simulation",
+      "name": "OSS Capstone \u2014 Ops Incident Simulation",
       "hours": 40,
       "status": {
         "design": "Complete",
         "development": "Complete"
       },
       "syllabus": "syllabi/oss-capstone.html",
-      "outline": "Course Outline: OSS Capstone — Ops Incident Simulation",
-      "note": "OSS Course 18, Capstone Assessment area (supplemental to 560h RTI). Net-new curriculum-level capstone — 5 modules / 11 lessons / 40h ops-incident simulation. Forward CBR (apprenti-org/design-documentation#643) authored before course; Phase 1 (#669) added course to OSS curriculum and transitioned CBR to active. Phase 2 onboarding META: apprenti-org/design-documentation#670.",
+      "outline": "Course Outline: OSS Capstone \u2014 Ops Incident Simulation",
+      "note": "OSS Course 18, Capstone Assessment area (supplemental to 560h RTI). Net-new curriculum-level capstone \u2014 5 modules / 11 lessons / 40h ops-incident simulation. Forward CBR (apprenti-org/design-documentation#643) authored before course; Phase 1 (#669) added course to OSS curriculum and transitioned CBR to active. Phase 2 onboarding META: apprenti-org/design-documentation#670.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -881,7 +896,7 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "OSS Course 17, Area 4 — content to be extracted from CompTIA A+ for OSS Security & Professional Skills area. 4h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #88).",
+      "note": "OSS Course 17, Area 4 \u2014 content to be extracted from CompTIA A+ for OSS Security & Professional Skills area. 4h. Active dev pipeline \u2014 design work beginning soon. Audit confirms Not Started baseline (per #88).",
       "driveFolder": null,
       "statusConfirmed": true
     },
@@ -924,7 +939,7 @@
       },
       "syllabus": "python-infrastructure-automation",
       "outline": true,
-      "note": "OSS Area 3 (Programming, Automation & CI/CD). 32h, 5 modules, 15 lessons + 2h capstone. Net-new course designed from scratch against DOL A-28 standard. Phase 3 content production complete — all 15 lessons authored, alignment-passing, SCORM-packaged, and deployed (95 PDFs + 15 SCORM zips in deploy tree). Meta-issue #101; sub-issues #103, #129, #134, #144, #149, #152, #155, #156 all closed.",
+      "note": "OSS Area 3 (Programming, Automation & CI/CD). 32h, 5 modules, 15 lessons + 2h capstone. Net-new course designed from scratch against DOL A-28 standard. Phase 3 content production complete \u2014 all 15 lessons authored, alignment-passing, SCORM-packaged, and deployed (95 PDFs + 15 SCORM zips in deploy tree). Meta-issue #101; sub-issues #103, #129, #134, #144, #149, #152, #155, #156 all closed.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": true
@@ -939,7 +954,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: React",
-      "note": "Standalone React course — SPAs, hooks, routing, MUI, testing",
+      "note": "Standalone React course \u2014 SPAs, hooks, routing, MUI, testing",
       "driveFolder": "https://drive.google.com/drive/folders/1G3WGrajgwCOyaHmLpj31kT85xki_nWLA",
       "statusConfirmed": false
     },
@@ -995,7 +1010,7 @@
       },
       "syllabus": "SQL Coding Booster Intensive Syllabus",
       "outline": "Course Outline: SQL Coding Booster Intensive",
-      "note": "One-day Scrum simulation — ETL, data migration, Dynamics 365",
+      "note": "One-day Scrum simulation \u2014 ETL, data migration, Dynamics 365",
       "driveFolder": "https://drive.google.com/drive/folders/1V82NKMLAb1kQCR7TjlYqPGmA0Sbe7OG_",
       "statusConfirmed": false
     },
@@ -1023,7 +1038,7 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "OSS Course 10, Area 3. Derived from sql-for-data (50h Data Analyst) — 24h ops-flavored variant. 13 lessons, 9 modules. Live in Absorb 2026-05-18. See apprenti-org/design-documentation#361 onboarding meta.",
+      "note": "OSS Course 10, Area 3. Derived from sql-for-data (50h Data Analyst) \u2014 24h ops-flavored variant. 13 lessons, 9 modules. Live in Absorb 2026-05-18. See apprenti-org/design-documentation#361 onboarding meta.",
       "driveFolder": null,
       "statusConfirmed": true
     },
@@ -1037,7 +1052,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Student Onboarding",
-      "note": "Success manual for all incoming apprentices — learning philosophy, strategies, tools setup, policies",
+      "note": "Success manual for all incoming apprentices \u2014 learning philosophy, strategies, tools setup, policies",
       "driveFolder": "https://drive.google.com/drive/folders/1-M5hN2HXwRJs-mg4WpiyQMHMxfY7gUeG",
       "statusConfirmed": false
     },
@@ -1051,7 +1066,7 @@
       },
       "syllabus": null,
       "outline": true,
-      "note": "Net-new 4h course for OSS Course 15, Area 4 (Security & Professional Skills). 2 modules, 4 lessons: Documentation Types and Purposes; Writing Clear and Audience-Appropriate Documentation; Runbooks and Troubleshooting Guides; Knowledge Management and Maintenance. Live in Absorb 2026-05-19 (4 SCORM 1.2 packages + 26 PDFs deployed; course published to learner catalog). Onboarding meta apprenti-org/design-documentation#561 closed. Slide decks (Row 8) deferred under apprenti-org/design-documentation#604 → #606 (slide-spec rework); course shipped without slides.",
+      "note": "Net-new 4h course for OSS Course 15, Area 4 (Security & Professional Skills). 2 modules, 4 lessons: Documentation Types and Purposes; Writing Clear and Audience-Appropriate Documentation; Runbooks and Troubleshooting Guides; Knowledge Management and Maintenance. Live in Absorb 2026-05-19 (4 SCORM 1.2 packages + 26 PDFs deployed; course published to learner catalog). Onboarding meta apprenti-org/design-documentation#561 closed. Slide decks (Row 8) deferred under apprenti-org/design-documentation#604 \u2192 #606 (slide-spec rework); course shipped without slides.",
       "driveFolder": null,
       "statusConfirmed": true,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation"
@@ -1066,7 +1081,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Troubleshooting/Supporting in an Enterprise Environment",
-      "note": "Rich source content — 7 modules, 12 lesson docs, 12 quizzes, 12 activities, 12 demos, 10 case studies in Google Drive. Covers troubleshooting methodology, startup/recovery, Group Policy, hardware/performance, network/remote connectivity, logon/access/security, and OS/applications.",
+      "note": "Rich source content \u2014 7 modules, 12 lesson docs, 12 quizzes, 12 activities, 12 demos, 10 case studies in Google Drive. Covers troubleshooting methodology, startup/recovery, Group Policy, hardware/performance, network/remote connectivity, logon/access/security, and OS/applications.",
       "driveFolder": "https://drive.google.com/drive/folders/1toy5qGCgyjMgT1k8ZkGxQvs-dRtK26J7",
       "statusConfirmed": false
     },
@@ -1080,7 +1095,7 @@
       },
       "syllabus": null,
       "outline": "Course Outline: Web Development with JavaScript",
-      "note": "Pre-design-doc-workflow course; source content lives in Drive folder. Tracking outline JSON (web-dev-javascript-react.json) and syllabus HTML reconstructed from source — 40h / 8 modules / 17 lessons. No working folder or design-doc folder yet (no Phase 0 reconciliation done). Used in OSS Course 9, Area 3.",
+      "note": "Pre-design-doc-workflow course; source content lives in Drive folder. Tracking outline JSON (web-dev-javascript-react.json) and syllabus HTML reconstructed from source \u2014 40h / 8 modules / 17 lessons. No working folder or design-doc folder yet (no Phase 0 reconciliation done). Used in OSS Course 9, Area 3.",
       "driveFolder": "https://drive.google.com/drive/folders/1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv",
       "statusConfirmed": true
     }
@@ -1202,7 +1217,7 @@
       ]
     },
     {
-      "name": "Operations Support Specialist — Network",
+      "name": "Operations Support Specialist \u2014 Network",
       "slug": "operations-support-specialist",
       "standard": {
         "appendix": "A-28",
