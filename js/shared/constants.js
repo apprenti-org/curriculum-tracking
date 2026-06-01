@@ -37,6 +37,7 @@ var syllabiMap = {
     'AI-Assisted CI/CD Pipelines': 'ai-assisted-cicd-pipelines.html',
     'AI-Assisted Coding Fundamentals': 'ai-assisted-coding-fundamentals.html',
     'AI-Assisted Infrastructure Design, Build and Configuration': 'ai-assisted-infrastructure-design-build-and-configuration.html',
+    'AI-Assisted IT Governance': 'ai-assisted-it-governance.html',
     'AI-Assisted IT Service Management': 'ai-assisted-it-service-management.html',
     'AI-Assisted Learning and Study Skills': 'ai-assisted-learning-and-study-skills.html',
     'AI-Assisted Meeting Facilitation': 'ai-assisted-meeting-facilitation.html',
