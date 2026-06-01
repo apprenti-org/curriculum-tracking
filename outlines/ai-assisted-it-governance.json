@@ -1,0 +1,74 @@
+{
+  "course": "AI-Assisted IT Governance",
+  "totalHours": 4,
+  "totalModules": 1,
+  "totalLessons": 4,
+  "modules": [
+    {
+      "name": "AI-Assisted IT Governance",
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "AI for Policy Document Drafting and Text Analysis",
+          "hours": 1,
+          "topics": [
+            "Characteristics of policy and protocol documents: structure, precision requirements, compliance language, and audience considerations",
+            "Using AI to analyze existing policy documents: identifying gaps, redundancies, and outdated provisions",
+            "Prompt strategies for drafting policy content: specifying jurisdiction, organizational constraints, and regulatory context",
+            "Iterative refinement: using targeted feedback prompts to improve AI-drafted policy language",
+            "Validating AI-generated policy text: human review checkpoints and escalation criteria"
+          ],
+          "objects": [
+            "Object: Lesson: AI for Policy Document Drafting and Text Analysis",
+            "Assessment: Quiz: AI for Policy Document Drafting and Text Analysis"
+          ]
+        },
+        {
+          "title": "Reviewing and Ensuring Consistency in Technical Documents",
+          "hours": 1,
+          "topics": [
+            "Multi-document consistency challenges: terminology drift, conflicting clauses, version gaps, and cross-reference errors",
+            "AI-assisted review workflows: cross-referencing documents for contradictions, alignment failures, and naming inconsistencies",
+            "Prompt strategies for consistency checks: specifying terminology standards, style guides, and reference documents",
+            "Structured output patterns: using AI to produce consistency audit reports with actionable findings",
+            "Human oversight of AI review output: interpreting, prioritizing, and acting on AI-identified inconsistencies"
+          ],
+          "objects": [
+            "Object: Lesson: Reviewing and Ensuring Consistency in Technical Documents",
+            "Assessment: Quiz: Reviewing and Ensuring Consistency in Technical Documents"
+          ]
+        },
+        {
+          "title": "Applying Responsible AI Frameworks for Compliance and Security Governance",
+          "hours": 1,
+          "topics": [
+            "Responsible AI frameworks: key components of structured governance approaches for AI-assisted work",
+            "Compliance auditing with AI: reviewing content and outputs against regulatory requirements (e.g., GLBA, Reg E, FCRA)",
+            "Security governance documentation: using AI to draft and review security policies, controls documentation, and access management procedures",
+            "Adherence checks: verifying that AI-assisted policy content aligns with current regulatory and security standards",
+            "Scope limits: categories of compliance and governance decisions requiring human authority and review"
+          ],
+          "objects": [
+            "Object: Lesson: Applying Responsible AI Frameworks for Compliance and Security Governance",
+            "Assessment: Quiz: Applying Responsible AI Frameworks for Compliance and Security Governance"
+          ]
+        },
+        {
+          "title": "Ethical and Business Risk Analysis with AI",
+          "hours": 1,
+          "topics": [
+            "Ethical risk analysis: identifying bias, fairness concerns, and unintended consequences in AI-assisted decisions and outputs",
+            "Business risk analysis using AI: prompting for risk identification, categorization, likelihood, and mitigation strategies",
+            "Business Continuity Plan (BCP) drafting: using AI to structure and populate BCP frameworks from existing operational context",
+            "Evaluating AI risk analysis output: distinguishing well-grounded findings from plausible-but-unsupported claims",
+            "Documentation discipline: recording AI-generated risk assessments and the human decisions made in response"
+          ],
+          "objects": [
+            "Object: Lesson: Ethical and Business Risk Analysis with AI",
+            "Assessment: Quiz: Ethical and Business Risk Analysis with AI"
+          ]
+        }
+      ]
+    }
+  ]
+}
