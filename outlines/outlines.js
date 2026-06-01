@@ -961,6 +961,11 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Querying and Synthesizing Domain-Specific Text Corpora with LLMs",
+              {
+                "type": "SCORM",
+                "title": "Interactive — Querying and Synthesizing Domain-Specific Text Corpora with LLMs",
+                "file": "scorm-lesson-01-querying-and-synthesizing-domain-specific-text-corpora-with-llms.zip"
+              },
               "Assessment: Quiz: Querying and Synthesizing Domain-Specific Text Corpora with LLMs"
             ]
           },
@@ -976,6 +981,11 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Structuring Unstructured Data into Analytical Reports",
+              {
+                "type": "SCORM",
+                "title": "Interactive — Structuring Unstructured Data into Analytical Reports",
+                "file": "scorm-lesson-02-structuring-unstructured-data-into-analytical-reports.zip"
+              },
               "Assessment: Quiz: Structuring Unstructured Data into Analytical Reports"
             ]
           },
@@ -991,6 +1001,11 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Generating IaC Scripts, Configuration, and Automation Code with AI",
+              {
+                "type": "SCORM",
+                "title": "Interactive — Generating IaC Scripts, Configuration, and Automation Code with AI",
+                "file": "scorm-lesson-03-generating-iac-scripts-configuration-and-automation-code-with-ai.zip"
+              },
               "Assessment: Quiz: Generating IaC Scripts, Configuration, and Automation Code with AI"
             ]
           },
@@ -1006,6 +1021,11 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks",
+              {
+                "type": "SCORM",
+                "title": "Interactive — Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks",
+                "file": "scorm-lesson-04-evaluating-ai-diagnostic-output-and-applying-responsible-ai-frameworks.zip"
+              },
               "Assessment: Quiz: Evaluating AI Diagnostic Output and Applying Responsible AI Frameworks"
             ]
           }
