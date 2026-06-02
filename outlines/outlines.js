@@ -1255,6 +1255,42 @@ const courseOutlines = {
     "totalLessons": 0,
     "modules": []
   },
+  "AI-Assisted Threat Analysis and Defense": {
+    "course": "AI-Assisted Threat Analysis and Defense",
+    "id": "ai-assisted-threat-analysis-and-defense",
+    "totalHours": 4,
+    "moduleCount": 1,
+    "lessonCount": 4,
+    "modules": [
+      {
+        "name": "AI-Assisted Threat Analysis and Defense",
+        "sequence": 1,
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Extracting and Synthesizing Threat Intelligence with AI",
+            "sequence": 1,
+            "hours": 1
+          },
+          {
+            "title": "AI-Assisted Secure Coding and IAM Practices",
+            "sequence": 2,
+            "hours": 1
+          },
+          {
+            "title": "Evaluating AI-Enhanced Security Tools: IDS/IPS and SIEM",
+            "sequence": 3,
+            "hours": 1
+          },
+          {
+            "title": "Responsible AI for Compliance and Incident Response Automation",
+            "sequence": 4,
+            "hours": 1
+          }
+        ]
+      }
+    ]
+  },
   "AI-Assisted User Communication and Documentation": {
     "course": "AI-Assisted User Communication and Documentation",
     "totalHours": 1,

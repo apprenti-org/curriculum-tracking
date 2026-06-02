@@ -55,6 +55,11 @@
     "id": "ai-assisted-test-driven-development"
   },
   {
+    "file": "ai-assisted-threat-analysis-and-defense.json",
+    "course": "AI-Assisted Threat Analysis and Defense",
+    "id": "ai-assisted-threat-analysis-and-defense"
+  },
+  {
     "file": "ai-assisted-user-communication-and-documentation.json",
     "course": "AI-Assisted User Communication and Documentation",
     "id": "ai-assisted-user-communication-and-documentation"
