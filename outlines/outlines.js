@@ -6965,6 +6965,207 @@ const courseOutlines = {
       }
     ]
   },
+  "ITIL Specialist 4": {
+    "course": "ITIL Specialist 4",
+    "totalHours": 16,
+    "totalModules": 4,
+    "totalLessons": 12,
+    "modules": [
+      {
+        "name": "Monitoring, Observability & Event Management",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Observability Principles: Metrics, Logs, and Traces",
+            "hours": 1.5,
+            "topics": [
+              "The three pillars of observability (metrics, logs, distributed traces) and what each answers",
+              "Monitoring vs. observability — when predefined checks are insufficient",
+              "White-box vs. black-box telemetry; cardinality and signal cost",
+              "*Activities:* Code-along (instrument a service / read a telemetry dashboard), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Observability Principles: Metrics, Logs, and Traces",
+              "Assessment: Quiz: Observability Principles: Metrics, Logs, and Traces"
+            ]
+          },
+          {
+            "title": "Monitoring & Event Management in Operation",
+            "hours": 1.5,
+            "topics": [
+              "The ITIL monitoring & event management practice applied to a running service",
+              "Event classification: informational, warning, exception",
+              "Health checks, synthetic monitoring, and golden signals (latency, traffic, errors, saturation)",
+              "*Activities:* Lab (configure monitoring against a sample service), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Monitoring & Event Management in Operation",
+              "Assessment: Quiz: Monitoring & Event Management in Operation"
+            ]
+          },
+          {
+            "title": "Alerting, Signal Quality & an Introduction to AIOps",
+            "hours": 1,
+            "topics": [
+              "Designing actionable alerts; thresholds, alert fatigue, and on-call sustainability",
+              "Event correlation and noise reduction",
+              "AIOps intro: ML-assisted detection, correlation, and event grouping (e.g., Datadog intelligent monitoring / PagerDuty ML event correlation) to reduce alert fatigue",
+              "*Activities:* Demo (AIOps correlation walkthrough), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Alerting, Signal Quality & an Introduction to AIOps",
+              "Assessment: Quiz: Alerting, Signal Quality & an Introduction to AIOps"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Operational Incident & Problem Management",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Incident Handling, Severity & Escalation",
+            "hours": 1.5,
+            "topics": [
+              "The incident lifecycle: detect, log, categorize, prioritize, diagnose, resolve, close",
+              "Severity/priority matrices (impact × urgency) and SLA-driven response targets",
+              "Functional vs. hierarchical escalation and the incident bridge",
+              "*Activities:* Lab (triage and escalate a simulated incident), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Incident Handling, Severity & Escalation",
+              "Assessment: Quiz: Incident Handling, Severity & Escalation"
+            ]
+          },
+          {
+            "title": "Problem Management & Root Cause Analysis",
+            "hours": 1.5,
+            "topics": [
+              "Reactive vs. proactive problem management",
+              "RCA techniques (5 Whys, fishbone/Ishikawa, fault-tree); evidence and timeline reconstruction",
+              "Known-error records, workarounds, and the link back to incidents",
+              "*Activities:* Lab (perform an RCA on a worked incident), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Problem Management & Root Cause Analysis",
+              "Assessment: Quiz: Problem Management & Root Cause Analysis"
+            ]
+          },
+          {
+            "title": "Knowledge, Runbooks & Incident Response Documentation",
+            "hours": 1,
+            "topics": [
+              "Runbook structure and the operational knowledge lifecycle",
+              "Blameless post-incident reviews and capturing follow-up actions",
+              "Documentation-as-restoration-asset: keeping runbooks current and discoverable",
+              "*Activities:* Code-along (author a runbook from an incident), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Knowledge, Runbooks & Incident Response Documentation",
+              "Assessment: Quiz: Knowledge, Runbooks & Incident Response Documentation"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Change Enablement, Release & Deployment in Operations",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Change Enablement & Impact / Risk Assessment",
+            "hours": 1.5,
+            "topics": [
+              "Change types: standard (pre-authorized — e.g., a recurring, pre-approved patch), normal (assessed — e.g., a DB upgrade routed through the CAB), emergency (e.g., a 3am production-outage fix)",
+              "Impact and risk assessment; the change authority and the CAB/ECAB",
+              "Change schedules, freeze windows, and backout planning",
+              "*Activities:* Lab (assess and classify a proposed production change), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Change Enablement & Impact / Risk Assessment",
+              "Assessment: Quiz: Change Enablement & Impact / Risk Assessment"
+            ]
+          },
+          {
+            "title": "Release & Deployment Management",
+            "hours": 1.5,
+            "topics": [
+              "Release packaging, phasing, and rollout patterns (big-bang, phased, blue/green, canary)",
+              "Deployment management vs. release management in practice",
+              "Rollback, feature flags, and validating a release in production",
+              "*Activities:* Code-along (plan a phased release with a rollback path), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Release & Deployment Management",
+              "Assessment: Quiz: Release & Deployment Management"
+            ]
+          },
+          {
+            "title": "CI/CD-Adjacent Controls & Change/Release Governance",
+            "hours": 1,
+            "topics": [
+              "Operational controls layered on automated CI/CD delivery (approvals, gates, audit trail)",
+              "Separation of duties, change records, and traceability",
+              "Governance, post-implementation review, and continuous improvement of the change flow",
+              "*Activities:* Demo (governance/audit-trail walkthrough), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: CI/CD-Adjacent Controls & Change/Release Governance",
+              "Assessment: Quiz: CI/CD-Adjacent Controls & Change/Release Governance"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Reliability Engineering — HA, Resiliency, SLOs & Error Budgets",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "High Availability, Redundancy & Fault Tolerance",
+            "hours": 1.5,
+            "topics": [
+              "HA architectures: redundancy, failover, clustering, load balancing",
+              "Fault tolerance, graceful degradation, and self-healing patterns",
+              "Availability math: MTTR/MTBF, the \"nines,\" and single points of failure",
+              "*Activities:* Lab (analyze a topology for SPOFs and add redundancy), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: High Availability, Redundancy & Fault Tolerance",
+              "Assessment: Quiz: High Availability, Redundancy & Fault Tolerance"
+            ]
+          },
+          {
+            "title": "SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets",
+            "hours": 1.5,
+            "topics": [
+              "Site reliability engineering and the SLI → SLO → SLA → OLA chain",
+              "Error budgets: defining, spending, and using them to balance reliability vs. feature velocity",
+              "Meeting uptime targets and reporting against operational service levels",
+              "Scope boundary: this course covers *operating to* SLAs/SLOs (meeting targets, computing error budgets, escalating breaches); SLA *negotiation/design* is out of scope (Strategist tier / customer-engagement)",
+              "*Activities:* Lab (define SLIs/SLOs and compute an error budget), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets",
+              "Assessment: Quiz: SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets"
+            ]
+          },
+          {
+            "title": "Chaos Engineering, Service Continuity & Disaster Recovery",
+            "hours": 1,
+            "topics": [
+              "Chaos engineering: hypothesis-driven failure injection to verify resilience",
+              "Service continuity management; RTO/RPO and continuity planning",
+              "Backup, disaster recovery, and DR testing",
+              "*Activities:* Demo (chaos experiment walkthrough), exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Chaos Engineering, Service Continuity & Disaster Recovery",
+              "Assessment: Quiz: Chaos Engineering, Service Continuity & Disaster Recovery"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Java Coding Booster Intensive": {
     "course": "Java Coding Booster Intensive",
     "totalHours": 16,
