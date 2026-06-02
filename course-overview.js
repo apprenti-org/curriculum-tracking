@@ -421,6 +421,41 @@ var courseOverviewData = [
     }
   },
   {
+    "id": "ai-assisted-threat-analysis-and-defense",
+    "name": "AI-Assisted Threat Analysis and Defense",
+    "hours": 4,
+    "outline": {
+      "exists": false,
+      "modules": 0,
+      "lessons": 0
+    },
+    "syllabus": false,
+    "source": {
+      "exists": false,
+      "folder": null,
+      "modules": 0
+    },
+    "coverage": null,
+    "lessonsWithContent": 0,
+    "assets": {
+      "lessons": 0,
+      "slides": 0,
+      "quizzes": 0,
+      "activities": 0,
+      "demos": 0,
+      "caseStudies": 0,
+      "instructorGuides": 0,
+      "modIntros": 0,
+      "modRecaps": 0
+    },
+    "totalAssets": 0,
+    "deployment": {
+      "state": "Not Deployed",
+      "expected": 0,
+      "actual": 0
+    }
+  },
+  {
     "id": "ai-assisted-user-communication-and-documentation",
     "name": "AI-Assisted User Communication and Documentation",
     "hours": 1,
@@ -1546,33 +1581,33 @@ var courseOverviewData = [
     "hours": 16,
     "outline": {
       "exists": true,
-      "modules": 2,
-      "lessons": 2
+      "modules": 3,
+      "lessons": 6
     },
     "syllabus": true,
     "source": {
-      "exists": false,
-      "folder": null,
-      "modules": 0
+      "exists": true,
+      "folder": "itil-specialist-4/deploy/content",
+      "modules": 4
     },
-    "coverage": 0,
-    "lessonsWithContent": 0,
+    "coverage": 17,
+    "lessonsWithContent": 1,
     "assets": {
-      "lessons": 0,
-      "slides": 0,
-      "quizzes": 0,
-      "activities": 0,
+      "lessons": 33,
+      "slides": 11,
+      "quizzes": 11,
+      "activities": 11,
       "demos": 0,
       "caseStudies": 0,
-      "instructorGuides": 0,
+      "instructorGuides": 11,
       "modIntros": 0,
       "modRecaps": 0
     },
-    "totalAssets": 0,
+    "totalAssets": 77,
     "deployment": {
-      "state": "Not Deployed",
-      "expected": 0,
-      "actual": 0
+      "state": "Complete",
+      "expected": 11,
+      "actual": 11
     }
   },
   {
