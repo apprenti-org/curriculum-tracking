@@ -195,6 +195,11 @@
     "id": "itil-foundations"
   },
   {
+    "file": "itil-specialist-4.json",
+    "course": "ITIL Specialist 4",
+    "id": "itil-specialist-4"
+  },
+  {
     "file": "java-coding-booster.json",
     "course": "Java Coding Booster Intensive",
     "id": "java-coding-booster-intensive"

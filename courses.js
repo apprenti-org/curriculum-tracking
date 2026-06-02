@@ -638,12 +638,12 @@ const courseData = [
     "name": "ITIL Specialist 4",
     "hours": 16,
     "status": {
-      "design": "Not Started",
-      "development": "Not Started"
+      "design": "Complete",
+      "development": "In Progress"
     },
     "syllabus": null,
-    "outline": null,
-    "note": "Net New",
+    "outline": true,
+    "note": "Design complete (outline + standard-alignment + 12 lesson sources merged); 12-lesson tree scaffolded via Phase 0+1. Content production (row 7) pending.",
     "driveFolder": null,
     "statusConfirmed": false
   },
