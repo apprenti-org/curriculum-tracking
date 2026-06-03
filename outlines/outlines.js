@@ -1270,22 +1270,70 @@ const courseOutlines = {
           {
             "title": "Extracting and Synthesizing Threat Intelligence with AI",
             "sequence": 1,
-            "hours": 1
+            "hours": 1,
+            "topics": [
+              "Types of unstructured security data sources: threat reports, CVE advisories, incident write-ups, vendor bulletins",
+              "Structured vs. unstructured data and AI's value in threat intelligence extraction workflows",
+              "Effective extraction prompts: naming indicator types, specifying format, prohibiting confabulation",
+              "Evaluating AI output quality: hallucination, omission, and confidence drift",
+              "Synthesizing verified AI-extracted data into a structured threat brief"
+            ],
+            "objects": [
+              "Object: Lesson: Extracting and Synthesizing Threat Intelligence with AI",
+              "Assessment: Quiz: Extracting and Synthesizing Threat Intelligence with AI",
+              "SCORM: scorm-lesson-01-extracting-and-synthesizing-threat-intelligence-with-ai.zip"
+            ]
           },
           {
             "title": "AI-Assisted Secure Coding and IAM Practices",
             "sequence": 2,
-            "hours": 1
+            "hours": 1,
+            "topics": [
+              "Writing security-constrained encryption prompts: algorithm, mode, key size, key management",
+              "IAM least-privilege principle applied to AI-generated policy stubs",
+              "Four-class vulnerability review checklist: hardcoded secrets, insecure crypto, missing input validation, broad exception handling",
+              "AI-assisted security test creation: vacuous vs. meaningful security assertions",
+              "Data submission ethics: PII, credentials, proprietary logic, and compliance implications"
+            ],
+            "objects": [
+              "Object: Lesson: AI-Assisted Secure Coding and IAM Practices",
+              "Assessment: Quiz: AI-Assisted Secure Coding and IAM Practices",
+              "SCORM: scorm-lesson-02-ai-assisted-secure-coding-and-iam-practices.zip"
+            ]
           },
           {
             "title": "Evaluating AI-Enhanced Security Tools: IDS/IPS and SIEM",
             "sequence": 3,
-            "hours": 1
+            "hours": 1,
+            "topics": [
+              "AI integration in IDS/IPS (anomaly-based detection) and SIEM (ML correlation, UEBA, case prioritization)",
+              "Interpreting AI-generated alerts: confidence scores, contextual enrichment, and triage priority formula",
+              "Base-rate fallacy in low-prevalence threat environments",
+              "Precision, recall, and F1 for AI security tool evaluation",
+              "Data governance and access control requirements for AI-powered security tooling"
+            ],
+            "objects": [
+              "Object: Lesson: Evaluating AI-Enhanced Security Tools: IDS/IPS and SIEM",
+              "Assessment: Quiz: Evaluating AI-Enhanced Security Tools: IDS/IPS and SIEM",
+              "SCORM: scorm-lesson-03-evaluating-ai-enhanced-security-tools-ids-ips-and-siem.zip"
+            ]
           },
           {
             "title": "Responsible AI for Compliance and Incident Response Automation",
             "sequence": 4,
-            "hours": 1
+            "hours": 1,
+            "topics": [
+              "Responsible AI framework: fairness, transparency, accountability, and auditability",
+              "Mapping AI security findings to compliance obligations: GLBA, Reg E, FCRA",
+              "AI-assisted incident documentation: verified-data-first workflow and compliance considerations",
+              "SOAR definition and how playbooks encode automated incident response",
+              "Designing a five-stage SOAR playbook with human approval gates"
+            ],
+            "objects": [
+              "Object: Lesson: Responsible AI for Compliance and Incident Response Automation",
+              "Assessment: Quiz: Responsible AI for Compliance and Incident Response Automation",
+              "SCORM: scorm-lesson-04-responsible-ai-for-compliance-and-incident-response-automation.zip"
+            ]
           }
         ]
       }

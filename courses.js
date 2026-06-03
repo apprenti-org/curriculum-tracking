@@ -190,7 +190,7 @@ const courseData = [
     "note": "Net-new 4h supplemental course for CTSE (Client Technical Support Engineer). Group 4: AI and Advanced Supports. OJL mapping: 4.e/4.f/5.a. Covers AI for security operations: threat intelligence extraction, secure coding (encryption/IAM), IDS/IPS/SIEM evaluation, responsible AI for compliance, SOAR playbooks. 1 module, 4 lessons. Deployed 2026-06-03. Onboarding meta apprenti-org/design-documentation#792.",
     "driveFolder": null,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
-    "statusConfirmed": false
+    "statusConfirmed": true
   },
   {
     "id": "ai-assisted-user-communication-and-documentation",
