@@ -425,17 +425,17 @@ var courseOverviewData = [
     "name": "AI-Assisted Threat Analysis and Defense",
     "hours": 4,
     "outline": {
-      "exists": false,
-      "modules": 0,
-      "lessons": 0
+      "exists": true,
+      "modules": 2,
+      "lessons": 5
     },
-    "syllabus": false,
+    "syllabus": true,
     "source": {
       "exists": false,
       "folder": null,
       "modules": 0
     },
-    "coverage": null,
+    "coverage": 0,
     "lessonsWithContent": 0,
     "assets": {
       "lessons": 0,
