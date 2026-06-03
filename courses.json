@@ -181,11 +181,11 @@
       "hours": 4,
       "status": {
         "design": "Complete",
-        "development": "In Progress"
+        "development": "Complete"
       },
       "syllabus": "syllabi/ai-assisted-threat-analysis-and-defense.html",
       "outline": true,
-      "note": "Net-new 4h supplemental course for CTSE (Client Technical Support Engineer). Group 4: AI and Advanced Supports. OJL mapping: 4.e (diagnostic/monitoring tools), 4.f (system logs and traces), 5.a (compliance concerns). Covers AI for security operations, GenAI tools for threat intelligence extraction, secure coding practices (encryption/IAM), IDS/IPS/SIEM evaluation, responsible AI for compliance, and SOAR playbooks. Phase 0 reconciliation complete. Onboarding meta apprenti-org/design-documentation#792.",
+      "note": "Net-new 4h supplemental course for CTSE (Client Technical Support Engineer). Group 4: AI and Advanced Supports. OJL mapping: 4.e/4.f/5.a. Covers AI for security operations: threat intelligence extraction, secure coding (encryption/IAM), IDS/IPS/SIEM evaluation, responsible AI for compliance, SOAR playbooks. 1 module, 4 lessons. Deployed 2026-06-03. Onboarding meta apprenti-org/design-documentation#792.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
       "statusConfirmed": false
