@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: ITIL Specialist 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+.review-banner {
+    background: rgba(255, 183, 3, 0.10);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--amber);
+    font-weight: 600;
+}
+.review-banner i {
+    font-size: 16px;
+    flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: ITIL Specialist 4</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Operations Support Specialist — Network</span>
+                <span><i class="fa-regular fa-clock"></i> 16 hours</span>
+                <span class="badge">CURRENT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Course description pending.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment</h2>
+            <div class="assessment-box">
+                <p>| Field | Value |</p>
+                <p>|---|---|</p>
+                <p>| Hours | 0 (assessment time is distributed across module formative checks and the summative quiz; no standalone instructional hours) |</p>
+                <p>| Format | Cert-style summative knowledge assessment |</p>
+                <p>Summative assessment strategy. A cumulative, certification-style multiple-choice assessment modeled on the ITIL 4 CDS / HVIT exam format (40 multiple-choice questions, 90-minute window, 70% pass mark) as a design reference — this is a course summative, not PeopleCert exam prep. Questions are weighted toward the two topics this course owns (monitoring/observability and HA/resiliency/fault tolerance) and toward the exam-critical key-term distinctions called out in each module (incident vs. problem vs. known error; change enablement vs. release vs. deployment; SLI vs. SLO vs. SLA vs. OLA). Scenario items require applying a practice to an operational situation rather than reciting a definition.</p>
+                <p>Integrated capstone scenario. As part of the summative (no added course hours — the capstone is delivered within the distributed assessment time), the learner works one cumulative scenario that spans all four modules. A production service shows rising latency; the learner: (1) uses observability (metrics/logs/traces, golden signals) to diagnose the degradation (Module 1); (2) triages and escalates the incident with the correct severity and escalation path (Module 2); (3) performs root cause analysis (Module 2); (4) assesses a proposed fix through change enablement — classifying the change and running an impact/risk assessment (Module 3); and (5) verifies that the fix keeps the service within its error budget against the relevant SLO (Module 4). Deliverable: an incident report + RCA write-up + change assessment + an updated runbook.</p>
+                <p>Formative assessment strategy. Each lesson carries a `quiz.md` sized at `target_questions = ceil(5 × hours)` per the workspace quiz-sizing rule (e.g., 8 questions for a 1.5h lesson, 5 for a 1.0h lesson) plus the hands-on activity pairs listed per lesson (labs, code-alongs, demos, exercises). Each module ends with a module review gate before the next module begins.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Distinguish observability from monitoring and explain when predefined checks are insufficient</li>
+                <li>Describe what metrics measure and the operational questions they answer well (and poorly)</li>
+                <li>Describe what logs capture and explain when structured logging and correlation IDs matter</li>
+                <li>Explain how distributed traces localize latency and errors across services using spans and trace context</li>
+                <li>Differentiate white-box from black-box telemetry and explain how cardinality and signal cost constrain what to instrument</li>
+                <li>Explain the purpose of the ITIL monitoring and event management practice and how it operates a live service</li>
+                <li>Classify events as informational, warning, or exception and distinguish an event from an alert and an incident</li>
+                <li>Apply health checks and synthetic monitoring to verify a service from inside and outside</li>
+                <li>Use the four golden signals — latency, traffic, errors, saturation — to assess service health</li>
+                <li>Design actionable alerts and explain how poor alerting causes alert fatigue and on-call burnout</li>
+                <li>Apply event correlation and noise-reduction techniques to reduce alert volume without losing signal</li>
+                <li>Describe how AIOps uses machine learning for detection, correlation, and event grouping to reduce alert fatigue</li>
+                <li>Explain the purpose of incident management and distinguish an incident from a problem and a known error</li>
+                <li>Walk the incident lifecycle from detection through logging, categorization, prioritization, diagnosis, resolution, and closure</li>
+                <li>Prioritize an incident using an impact-by-urgency matrix and map it to SLA-driven response targets</li>
+                <li>Apply functional and hierarchical escalation and describe the role of the incident bridge in a major incident</li>
+                <li>Distinguish problem management from incident management and contrast reactive with proactive problem management</li>
+                <li>Apply structured root-cause analysis techniques (5 Whys, fishbone/Ishikawa, fault-tree) to investigate an incident from evidence and timeline</li>
+                <li>Produce a known-error record that links root cause to incidents and documents a workaround</li>
+                <li>Structure a runbook and explain the operational knowledge lifecycle that keeps it current and discoverable</li>
+                <li>Conduct a blameless post-incident review that captures findings and tracked follow-up actions</li>
+                <li>Author a runbook from a worked incident as a reusable restoration asset</li>
+                <li>Distinguish change enablement from release and deployment management, and classify a change as standard, normal, or emergency</li>
+                <li>Conduct an impact and risk assessment for a proposed production change, including a backout plan</li>
+                <li>Place a change correctly against the change authority, the CAB/ECAB, the change schedule, and freeze windows</li>
+                <li>Distinguish release management from deployment management and explain how deploying differs from releasing</li>
+                <li>Compare rollout patterns (big-bang, phased, blue/green, canary) and select one for a given risk profile</li>
+                <li>Plan a phased release with a rollback path, feature flags, and in-production validation</li>
+                <li>Explain how operational controls (approvals, gates, audit trail) layer onto automated CI/CD delivery</li>
+                <li>Apply separation of duties and change records to establish traceability for automated releases</li>
+                <li>Use post-implementation review and governance to continuously improve the change flow</li>
+                <li>Distinguish high availability, fault tolerance, and resiliency, and identify the redundancy, failover, clustering, and load-balancing patterns behind them</li>
+                <li>Explain graceful degradation and self-healing patterns and where each applies</li>
+                <li>Apply availability math (MTTR, MTBF, the "nines") and analyze a topology for single points of failure</li>
+                <li>Distinguish SLI, SLO, SLA, and OLA and explain how they chain together</li>
+                <li>Define meaningful SLIs and SLOs for a service and relate them to uptime targets and operational reporting</li>
+                <li>Compute an error budget from an SLO and apply it to balance reliability against feature velocity</li>
+                <li>Explain chaos engineering as hypothesis-driven failure injection to verify resilience</li>
+                <li>Describe service continuity management and distinguish RTO from RPO</li>
+                <li>Outline backup and disaster-recovery approaches and the role of DR testing</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Monitoring, Observability &amp; Event Management</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Observability Principles: Metrics, Logs, and Traces (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>The three pillars of observability (metrics, logs, distributed traces) and what each answers</li>
+                        <li>Monitoring vs. observability — when predefined checks are insufficient</li>
+                        <li>White-box vs. black-box telemetry; cardinality and signal cost</li>
+                        <li>Activities: Code-along (instrument a service / read a telemetry dashboard), exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Monitoring &amp; Event Management in Operation (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>The ITIL monitoring &amp; event management practice applied to a running service</li>
+                        <li>Event classification: informational, warning, exception</li>
+                        <li>Health checks, synthetic monitoring, and golden signals (latency, traffic, errors, saturation)</li>
+                        <li>Activities: Lab (configure monitoring against a sample service), exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: Alerting, Signal Quality &amp; an Introduction to AIOps (1h)</div>
+                    <ul class="topic-list">
+                        <li>Designing actionable alerts; thresholds, alert fatigue, and on-call sustainability</li>
+                        <li>Event correlation and noise reduction</li>
+                        <li>AIOps intro: ML-assisted detection, correlation, and event grouping (e.g., Datadog intelligent monitoring / PagerDuty ML event correlation) to reduce alert fatigue</li>
+                        <li>Activities: Demo (AIOps correlation walkthrough), exercise</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Operational Incident &amp; Problem Management</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 4: Incident Handling, Severity &amp; Escalation (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>The incident lifecycle: detect, log, categorize, prioritize, diagnose, resolve, close</li>
+                        <li>Severity/priority matrices (impact × urgency) and SLA-driven response targets</li>
+                        <li>Functional vs. hierarchical escalation and the incident bridge</li>
+                        <li>Activities: Lab (triage and escalate a simulated incident), exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 5: Problem Management &amp; Root Cause Analysis (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>Reactive vs. proactive problem management</li>
+                        <li>RCA techniques (5 Whys, fishbone/Ishikawa, fault-tree); evidence and timeline reconstruction</li>
+                        <li>Known-error records, workarounds, and the link back to incidents</li>
+                        <li>Activities: Lab (perform an RCA on a worked incident), exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: Knowledge, Runbooks &amp; Incident Response Documentation (1h)</div>
+                    <ul class="topic-list">
+                        <li>Runbook structure and the operational knowledge lifecycle</li>
+                        <li>Blameless post-incident reviews and capturing follow-up actions</li>
+                        <li>Documentation-as-restoration-asset: keeping runbooks current and discoverable</li>
+                        <li>Activities: Code-along (author a runbook from an incident), exercise</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Change Enablement, Release &amp; Deployment in Operations</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 7: Change Enablement &amp; Impact / Risk Assessment (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>Change types: standard (pre-authorized — e.g., a recurring, pre-approved patch), normal (assessed — e.g., a DB upgrade routed through the CAB), emergency (e.g., a 3am production-outage fix)</li>
+                        <li>Impact and risk assessment; the change authority and the CAB/ECAB</li>
+                        <li>Change schedules, freeze windows, and backout planning</li>
+                        <li>Activities: Lab (assess and classify a proposed production change), exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: Release &amp; Deployment Management (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>Release packaging, phasing, and rollout patterns (big-bang, phased, blue/green, canary)</li>
+                        <li>Deployment management vs. release management in practice</li>
+                        <li>Rollback, feature flags, and validating a release in production</li>
+                        <li>Activities: Code-along (plan a phased release with a rollback path), exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: CI/CD-Adjacent Controls &amp; Change/Release Governance (1h)</div>
+                    <ul class="topic-list">
+                        <li>Operational controls layered on automated CI/CD delivery (approvals, gates, audit trail)</li>
+                        <li>Separation of duties, change records, and traceability</li>
+                        <li>Governance, post-implementation review, and continuous improvement of the change flow</li>
+                        <li>Activities: Demo (governance/audit-trail walkthrough), exercise</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Reliability Engineering — HA, Resiliency, SLOs &amp; Error Budgets</span>
+                    <span class="module-hours">4 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 10: High Availability, Redundancy &amp; Fault Tolerance (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>HA architectures: redundancy, failover, clustering, load balancing</li>
+                        <li>Fault tolerance, graceful degradation, and self-healing patterns</li>
+                        <li>Availability math: MTTR/MTBF, the "nines," and single points of failure</li>
+                        <li>Activities: Lab (analyze a topology for SPOFs and add redundancy), exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 11: SRE, SLIs/SLOs/SLAs/OLAs &amp; Error Budgets (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>Site reliability engineering and the SLI → SLO → SLA → OLA chain</li>
+                        <li>Error budgets: defining, spending, and using them to balance reliability vs. feature velocity</li>
+                        <li>Meeting uptime targets and reporting against operational service levels</li>
+                        <li>Scope boundary: this course covers operating to SLAs/SLOs (meeting targets, computing error budgets, escalating breaches); SLA negotiation/design is out of scope (Strategist tier / customer-engagement)</li>
+                        <li>Activities: Lab (define SLIs/SLOs and compute an error budget), exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 12: Chaos Engineering, Service Continuity &amp; Disaster Recovery (1h)</div>
+                    <ul class="topic-list">
+                        <li>Chaos engineering: hypothesis-driven failure injection to verify resilience</li>
+                        <li>Service continuity management; RTO/RPO and continuity planning</li>
+                        <li>Backup, disaster recovery, and DR testing</li>
+                        <li>Activities: Demo (chaos experiment walkthrough), exercise</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>
