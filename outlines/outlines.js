@@ -7070,7 +7070,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Observability Principles: Metrics, Logs, and Traces",
-              "Assessment: Quiz: Observability Principles: Metrics, Logs, and Traces"
+              "Assessment: Quiz: Observability Principles: Metrics, Logs, and Traces",
+              "SCORM: Interactive — Observability Principles: Metrics, Logs, and Traces (scorm-lesson-01-observability-principles-metrics-logs-traces.zip)"
             ]
           },
           {
@@ -7084,7 +7085,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Monitoring & Event Management in Operation",
-              "Assessment: Quiz: Monitoring & Event Management in Operation"
+              "Assessment: Quiz: Monitoring & Event Management in Operation",
+              "SCORM: Interactive — Monitoring & Event Management in Operation (scorm-lesson-02-monitoring-event-management-in-operation.zip)"
             ]
           },
           {
@@ -7098,7 +7100,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Alerting, Signal Quality & an Introduction to AIOps",
-              "Assessment: Quiz: Alerting, Signal Quality & an Introduction to AIOps"
+              "Assessment: Quiz: Alerting, Signal Quality & an Introduction to AIOps",
+              "SCORM: Interactive — Alerting, Signal Quality & an Introduction to AIOps (scorm-lesson-03-alerting-signal-quality-aiops-intro.zip)"
             ]
           }
         ]
@@ -7118,7 +7121,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Incident Handling, Severity & Escalation",
-              "Assessment: Quiz: Incident Handling, Severity & Escalation"
+              "Assessment: Quiz: Incident Handling, Severity & Escalation",
+              "SCORM: Interactive — Incident Handling, Severity & Escalation (scorm-lesson-04-incident-handling-severity-escalation.zip)"
             ]
           },
           {
@@ -7132,7 +7136,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Problem Management & Root Cause Analysis",
-              "Assessment: Quiz: Problem Management & Root Cause Analysis"
+              "Assessment: Quiz: Problem Management & Root Cause Analysis",
+              "SCORM: Interactive — Problem Management & Root Cause Analysis (scorm-lesson-05-problem-management-rca.zip)"
             ]
           },
           {
@@ -7146,7 +7151,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Knowledge, Runbooks & Incident Response Documentation",
-              "Assessment: Quiz: Knowledge, Runbooks & Incident Response Documentation"
+              "Assessment: Quiz: Knowledge, Runbooks & Incident Response Documentation",
+              "SCORM: Interactive — Knowledge, Runbooks & Incident Response Documentation (scorm-lesson-06-knowledge-runbooks-incident-response-documentation.zip)"
             ]
           }
         ]
@@ -7166,7 +7172,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Change Enablement & Impact / Risk Assessment",
-              "Assessment: Quiz: Change Enablement & Impact / Risk Assessment"
+              "Assessment: Quiz: Change Enablement & Impact / Risk Assessment",
+              "SCORM: Interactive — Change Enablement & Impact / Risk Assessment (scorm-lesson-07-change-enablement-impact-risk-assessment.zip)"
             ]
           },
           {
@@ -7180,7 +7187,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Release & Deployment Management",
-              "Assessment: Quiz: Release & Deployment Management"
+              "Assessment: Quiz: Release & Deployment Management",
+              "SCORM: Interactive — Release & Deployment Management (scorm-lesson-08-release-deployment-management.zip)"
             ]
           },
           {
@@ -7194,7 +7202,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: CI/CD-Adjacent Controls & Change/Release Governance",
-              "Assessment: Quiz: CI/CD-Adjacent Controls & Change/Release Governance"
+              "Assessment: Quiz: CI/CD-Adjacent Controls & Change/Release Governance",
+              "SCORM: Interactive — CI/CD-Adjacent Controls & Change/Release Governance (scorm-lesson-09-cicd-adjacent-controls-change-release-governance.zip)"
             ]
           }
         ]
@@ -7214,7 +7223,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: High Availability, Redundancy & Fault Tolerance",
-              "Assessment: Quiz: High Availability, Redundancy & Fault Tolerance"
+              "Assessment: Quiz: High Availability, Redundancy & Fault Tolerance",
+              "SCORM: Interactive — High Availability, Redundancy & Fault Tolerance (scorm-lesson-10-high-availability-redundancy-fault-tolerance.zip)"
             ]
           },
           {
@@ -7229,7 +7239,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets",
-              "Assessment: Quiz: SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets"
+              "Assessment: Quiz: SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets",
+              "SCORM: Interactive — SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets (scorm-lesson-11-sre-slis-slos-slas-olas-error-budgets.zip)"
             ]
           },
           {
@@ -7243,7 +7254,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Chaos Engineering, Service Continuity & Disaster Recovery",
-              "Assessment: Quiz: Chaos Engineering, Service Continuity & Disaster Recovery"
+              "Assessment: Quiz: Chaos Engineering, Service Continuity & Disaster Recovery",
+              "SCORM: Interactive — Chaos Engineering, Service Continuity & Disaster Recovery (scorm-lesson-12-chaos-engineering-service-continuity-dr.zip)"
             ]
           }
         ]

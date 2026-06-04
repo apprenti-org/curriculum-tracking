@@ -72,7 +72,7 @@ var syllabiMap = {
     'Introduction to Microsoft Teams': 'intro-to-microsoft-teams.html',
     'IT Fundamentals': 'it-fundamentals.html',
     'ITIL Foundations': 'itil-foundations.html',
-    'ITIL Specialist 4': 'itil-specialist.html',
+    'ITIL Specialist 4': 'itil-specialist-4.html',
     'Java Coding Booster Intensive': 'java-coding-booster.html',
     'Java Language Fundamentals': 'java-language-fundamentals.html',
     'JavaScript': 'javascript.html',

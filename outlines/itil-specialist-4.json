@@ -13,13 +13,14 @@
           "hours": 1.5,
           "topics": [
             "The three pillars of observability (metrics, logs, distributed traces) and what each answers",
-            "Monitoring vs. observability — when predefined checks are insufficient",
+            "Monitoring vs. observability \u2014 when predefined checks are insufficient",
             "White-box vs. black-box telemetry; cardinality and signal cost",
             "*Activities:* Code-along (instrument a service / read a telemetry dashboard), exercise"
           ],
           "objects": [
             "Object: Lesson: Observability Principles: Metrics, Logs, and Traces",
-            "Assessment: Quiz: Observability Principles: Metrics, Logs, and Traces"
+            "Assessment: Quiz: Observability Principles: Metrics, Logs, and Traces",
+            "SCORM: Interactive \u2014 Observability Principles: Metrics, Logs, and Traces (scorm-lesson-01-observability-principles-metrics-logs-traces.zip)"
           ]
         },
         {
@@ -33,7 +34,8 @@
           ],
           "objects": [
             "Object: Lesson: Monitoring & Event Management in Operation",
-            "Assessment: Quiz: Monitoring & Event Management in Operation"
+            "Assessment: Quiz: Monitoring & Event Management in Operation",
+            "SCORM: Interactive \u2014 Monitoring & Event Management in Operation (scorm-lesson-02-monitoring-event-management-in-operation.zip)"
           ]
         },
         {
@@ -47,7 +49,8 @@
           ],
           "objects": [
             "Object: Lesson: Alerting, Signal Quality & an Introduction to AIOps",
-            "Assessment: Quiz: Alerting, Signal Quality & an Introduction to AIOps"
+            "Assessment: Quiz: Alerting, Signal Quality & an Introduction to AIOps",
+            "SCORM: Interactive \u2014 Alerting, Signal Quality & an Introduction to AIOps (scorm-lesson-03-alerting-signal-quality-aiops-intro.zip)"
           ]
         }
       ]
@@ -61,13 +64,14 @@
           "hours": 1.5,
           "topics": [
             "The incident lifecycle: detect, log, categorize, prioritize, diagnose, resolve, close",
-            "Severity/priority matrices (impact × urgency) and SLA-driven response targets",
+            "Severity/priority matrices (impact \u00d7 urgency) and SLA-driven response targets",
             "Functional vs. hierarchical escalation and the incident bridge",
             "*Activities:* Lab (triage and escalate a simulated incident), exercise"
           ],
           "objects": [
             "Object: Lesson: Incident Handling, Severity & Escalation",
-            "Assessment: Quiz: Incident Handling, Severity & Escalation"
+            "Assessment: Quiz: Incident Handling, Severity & Escalation",
+            "SCORM: Interactive \u2014 Incident Handling, Severity & Escalation (scorm-lesson-04-incident-handling-severity-escalation.zip)"
           ]
         },
         {
@@ -81,7 +85,8 @@
           ],
           "objects": [
             "Object: Lesson: Problem Management & Root Cause Analysis",
-            "Assessment: Quiz: Problem Management & Root Cause Analysis"
+            "Assessment: Quiz: Problem Management & Root Cause Analysis",
+            "SCORM: Interactive \u2014 Problem Management & Root Cause Analysis (scorm-lesson-05-problem-management-rca.zip)"
           ]
         },
         {
@@ -95,7 +100,8 @@
           ],
           "objects": [
             "Object: Lesson: Knowledge, Runbooks & Incident Response Documentation",
-            "Assessment: Quiz: Knowledge, Runbooks & Incident Response Documentation"
+            "Assessment: Quiz: Knowledge, Runbooks & Incident Response Documentation",
+            "SCORM: Interactive \u2014 Knowledge, Runbooks & Incident Response Documentation (scorm-lesson-06-knowledge-runbooks-incident-response-documentation.zip)"
           ]
         }
       ]
@@ -108,14 +114,15 @@
           "title": "Change Enablement & Impact / Risk Assessment",
           "hours": 1.5,
           "topics": [
-            "Change types: standard (pre-authorized — e.g., a recurring, pre-approved patch), normal (assessed — e.g., a DB upgrade routed through the CAB), emergency (e.g., a 3am production-outage fix)",
+            "Change types: standard (pre-authorized \u2014 e.g., a recurring, pre-approved patch), normal (assessed \u2014 e.g., a DB upgrade routed through the CAB), emergency (e.g., a 3am production-outage fix)",
             "Impact and risk assessment; the change authority and the CAB/ECAB",
             "Change schedules, freeze windows, and backout planning",
             "*Activities:* Lab (assess and classify a proposed production change), exercise"
           ],
           "objects": [
             "Object: Lesson: Change Enablement & Impact / Risk Assessment",
-            "Assessment: Quiz: Change Enablement & Impact / Risk Assessment"
+            "Assessment: Quiz: Change Enablement & Impact / Risk Assessment",
+            "SCORM: Interactive \u2014 Change Enablement & Impact / Risk Assessment (scorm-lesson-07-change-enablement-impact-risk-assessment.zip)"
           ]
         },
         {
@@ -129,7 +136,8 @@
           ],
           "objects": [
             "Object: Lesson: Release & Deployment Management",
-            "Assessment: Quiz: Release & Deployment Management"
+            "Assessment: Quiz: Release & Deployment Management",
+            "SCORM: Interactive \u2014 Release & Deployment Management (scorm-lesson-08-release-deployment-management.zip)"
           ]
         },
         {
@@ -143,13 +151,14 @@
           ],
           "objects": [
             "Object: Lesson: CI/CD-Adjacent Controls & Change/Release Governance",
-            "Assessment: Quiz: CI/CD-Adjacent Controls & Change/Release Governance"
+            "Assessment: Quiz: CI/CD-Adjacent Controls & Change/Release Governance",
+            "SCORM: Interactive \u2014 CI/CD-Adjacent Controls & Change/Release Governance (scorm-lesson-09-cicd-adjacent-controls-change-release-governance.zip)"
           ]
         }
       ]
     },
     {
-      "name": "Reliability Engineering — HA, Resiliency, SLOs & Error Budgets",
+      "name": "Reliability Engineering \u2014 HA, Resiliency, SLOs & Error Budgets",
       "hours": 4,
       "lessons": [
         {
@@ -163,14 +172,15 @@
           ],
           "objects": [
             "Object: Lesson: High Availability, Redundancy & Fault Tolerance",
-            "Assessment: Quiz: High Availability, Redundancy & Fault Tolerance"
+            "Assessment: Quiz: High Availability, Redundancy & Fault Tolerance",
+            "SCORM: Interactive \u2014 High Availability, Redundancy & Fault Tolerance (scorm-lesson-10-high-availability-redundancy-fault-tolerance.zip)"
           ]
         },
         {
           "title": "SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets",
           "hours": 1.5,
           "topics": [
-            "Site reliability engineering and the SLI → SLO → SLA → OLA chain",
+            "Site reliability engineering and the SLI \u2192 SLO \u2192 SLA \u2192 OLA chain",
             "Error budgets: defining, spending, and using them to balance reliability vs. feature velocity",
             "Meeting uptime targets and reporting against operational service levels",
             "Scope boundary: this course covers *operating to* SLAs/SLOs (meeting targets, computing error budgets, escalating breaches); SLA *negotiation/design* is out of scope (Strategist tier / customer-engagement)",
@@ -178,7 +188,8 @@
           ],
           "objects": [
             "Object: Lesson: SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets",
-            "Assessment: Quiz: SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets"
+            "Assessment: Quiz: SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets",
+            "SCORM: Interactive \u2014 SRE, SLIs/SLOs/SLAs/OLAs & Error Budgets (scorm-lesson-11-sre-slis-slos-slas-olas-error-budgets.zip)"
           ]
         },
         {
@@ -192,7 +203,8 @@
           ],
           "objects": [
             "Object: Lesson: Chaos Engineering, Service Continuity & Disaster Recovery",
-            "Assessment: Quiz: Chaos Engineering, Service Continuity & Disaster Recovery"
+            "Assessment: Quiz: Chaos Engineering, Service Continuity & Disaster Recovery",
+            "SCORM: Interactive \u2014 Chaos Engineering, Service Continuity & Disaster Recovery (scorm-lesson-12-chaos-engineering-service-continuity-dr.zip)"
           ]
         }
       ]
