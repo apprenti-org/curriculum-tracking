@@ -2419,7 +2419,8 @@ const courseOutlines = {
               "Object: Slideshow: Introduction to IT and Industry Relevance",
               "Assessment: Quiz: Introduction to IT and Industry Relevance",
               "Object: Activity: Introduction to IT and Industry Relevance",
-              "Object: Demo: Introduction to IT and Industry Relevance"
+              "Object: Demo: Introduction to IT and Industry Relevance",
+              "SCORM: Interactive — Introduction to IT and Industry Relevance (scorm-lesson-01-overview-it-industry.zip)"
             ]
           },
           {
@@ -2436,7 +2437,8 @@ const courseOutlines = {
               "Object: Slideshow: Identifying Computer Components",
               "Assessment: Quiz: Identifying Computer Components",
               "Object: Activity: Identifying Computer Components",
-              "Object: Demo: Identifying Computer Components"
+              "Object: Demo: Identifying Computer Components",
+              "SCORM: Interactive — Identifying Computer Components (scorm-lesson-02-identifying-computer-components.zip)"
             ]
           },
           {
@@ -2453,7 +2455,8 @@ const courseOutlines = {
               "Object: Slideshow: Understanding System Architecture",
               "Assessment: Quiz: Understanding System Architecture",
               "Object: Activity: Understanding System Architecture",
-              "Object: Demo: Understanding System Architecture"
+              "Object: Demo: Understanding System Architecture",
+              "SCORM: Interactive — Understanding System Architecture (scorm-lesson-03-system-architecture.zip)"
             ]
           },
           {
@@ -2470,7 +2473,8 @@ const courseOutlines = {
               "Object: Slideshow: Basic Hardware Troubleshooting",
               "Assessment: Quiz: Basic Hardware Troubleshooting",
               "Object: Activity: Basic Hardware Troubleshooting",
-              "Object: Demo: Basic Hardware Troubleshooting"
+              "Object: Demo: Basic Hardware Troubleshooting",
+              "SCORM: Interactive — Basic Hardware Troubleshooting (scorm-lesson-04-hardware-troubleshooting.zip)"
             ]
           },
           {
@@ -2488,7 +2492,8 @@ const courseOutlines = {
               "Object: Slideshow: Mobile Device Hardware and Accessories",
               "Assessment: Quiz: Mobile Device Hardware and Accessories",
               "Object: Activity: Mobile Device Hardware and Accessories",
-              "Object: Demo: Mobile Device Hardware and Accessories"
+              "Object: Demo: Mobile Device Hardware and Accessories",
+              "SCORM: Interactive — Mobile Device Hardware and Accessories (scorm-lesson-05-mobile-device-hardware.zip)"
             ]
           }
         ]
@@ -2520,7 +2525,8 @@ const courseOutlines = {
               "Object: Demo: Introduction to Operating Systems (2)",
               "Object: Demo: Introduction to Operating Systems (3)",
               "Object: Demo: Introduction to Operating Systems (4)",
-              "Object: Demo: Introduction to Operating Systems (5)"
+              "Object: Demo: Introduction to Operating Systems (5)",
+              "SCORM: Interactive — Introduction to Operating Systems (scorm-lesson-06-intro-operating-systems.zip)"
             ]
           },
           {
@@ -2545,7 +2551,8 @@ const courseOutlines = {
               "Object: Demo: Installing and Configuring Windows OS (2)",
               "Object: Demo: Installing and Configuring Windows OS (3)",
               "Object: Demo: Installing and Configuring Windows OS (4)",
-              "Object: Demo: Installing and Configuring Windows OS (5)"
+              "Object: Demo: Installing and Configuring Windows OS (5)",
+              "SCORM: Interactive — Installing and Configuring Windows OS (scorm-lesson-07-installing-configuring-windows.zip)"
             ]
           },
           {
@@ -2570,7 +2577,8 @@ const courseOutlines = {
               "Object: Demo: Working with Software Applications (2)",
               "Object: Demo: Working with Software Applications (3)",
               "Object: Demo: Working with Software Applications (4)",
-              "Object: Demo: Working with Software Applications (5)"
+              "Object: Demo: Working with Software Applications (5)",
+              "SCORM: Interactive — Working with Software Applications (scorm-lesson-08-software-applications.zip)"
             ]
           },
           {
@@ -2595,7 +2603,8 @@ const courseOutlines = {
               "Object: Demo: System Maintenance and Optimization (2)",
               "Object: Demo: System Maintenance and Optimization (3)",
               "Object: Demo: System Maintenance and Optimization (4)",
-              "Object: Demo: System Maintenance and Optimization (5)"
+              "Object: Demo: System Maintenance and Optimization (5)",
+              "SCORM: Interactive — System Maintenance and Optimization (scorm-lesson-09-system-maintenance.zip)"
             ]
           },
           {
@@ -2620,7 +2629,8 @@ const courseOutlines = {
               "Object: Demo: Introduction to Client-Side Virtualization (2)",
               "Object: Demo: Introduction to Client-Side Virtualization (3)",
               "Object: Demo: Introduction to Client-Side Virtualization (4)",
-              "Object: Demo: Introduction to Client-Side Virtualization (5)"
+              "Object: Demo: Introduction to Client-Side Virtualization (5)",
+              "SCORM: Interactive — Introduction to Client-Side Virtualization (scorm-lesson-10-virtualization.zip)"
             ]
           },
           {
@@ -2645,7 +2655,8 @@ const courseOutlines = {
               "Object: Demo: Essential Windows Command Line Tools (2)",
               "Object: Demo: Essential Windows Command Line Tools (3)",
               "Object: Demo: Essential Windows Command Line Tools (4)",
-              "Object: Demo: Essential Windows Command Line Tools (5)"
+              "Object: Demo: Essential Windows Command Line Tools (5)",
+              "SCORM: Interactive — Essential Windows Command Line Tools (scorm-lesson-11-windows-command-line.zip)"
             ]
           },
           {
@@ -2670,7 +2681,8 @@ const courseOutlines = {
               "Object: Demo: Using Windows Control Panel and Settings (2)",
               "Object: Demo: Using Windows Control Panel and Settings (3)",
               "Object: Demo: Using Windows Control Panel and Settings (4)",
-              "Object: Demo: Using Windows Control Panel and Settings (5)"
+              "Object: Demo: Using Windows Control Panel and Settings (5)",
+              "SCORM: Interactive — Using Windows Control Panel and Settings (scorm-lesson-12-control-panel-settings.zip)"
             ]
           },
           {
@@ -2695,7 +2707,8 @@ const courseOutlines = {
               "Object: Demo: Application Installation and Configuration Best Practices (2)",
               "Object: Demo: Application Installation and Configuration Best Practices (3)",
               "Object: Demo: Application Installation and Configuration Best Practices (4)",
-              "Object: Demo: Application Installation and Configuration Best Practices (5)"
+              "Object: Demo: Application Installation and Configuration Best Practices (5)",
+              "SCORM: Interactive — Application Installation and Configuration Best Practices (scorm-lesson-13-app-installation.zip)"
             ]
           },
           {
@@ -2720,7 +2733,8 @@ const courseOutlines = {
               "Object: Demo: Introduction to Scripting for IT Fundamentals (2)",
               "Object: Demo: Introduction to Scripting for IT Fundamentals (3)",
               "Object: Demo: Introduction to Scripting for IT Fundamentals (4)",
-              "Object: Demo: Introduction to Scripting for IT Fundamentals (5)"
+              "Object: Demo: Introduction to Scripting for IT Fundamentals (5)",
+              "SCORM: Interactive — Introduction to Scripting for IT Fundamentals (scorm-lesson-14-scripting-automation.zip)"
             ]
           }
         ]
@@ -2744,7 +2758,8 @@ const courseOutlines = {
               "Object: Slideshow: Introduction to Networking Concepts",
               "Assessment: Quiz: Introduction to Networking Concepts",
               "Object: Activity: Introduction to Networking Concepts",
-              "Object: Demo: Introduction to Networking Concepts"
+              "Object: Demo: Introduction to Networking Concepts",
+              "SCORM: Interactive — Introduction to Networking Concepts (scorm-lesson-15-networking-concepts.zip)"
             ]
           },
           {
@@ -2761,7 +2776,8 @@ const courseOutlines = {
               "Object: Slideshow: IP Addressing and Network Configuration",
               "Assessment: Quiz: IP Addressing and Network Configuration",
               "Object: Activity: IP Addressing and Network Configuration",
-              "Object: Demo: IP Addressing and Network Configuration"
+              "Object: Demo: IP Addressing and Network Configuration",
+              "SCORM: Interactive — IP Addressing and Network Configuration (scorm-lesson-16-ip-addressing.zip)"
             ]
           },
           {
@@ -2778,7 +2794,8 @@ const courseOutlines = {
               "Object: Slideshow: Basic Network Security and Troubleshooting",
               "Assessment: Quiz: Basic Network Security and Troubleshooting",
               "Object: Activity: Basic Network Security and Troubleshooting",
-              "Object: Demo: Basic Network Security and Troubleshooting"
+              "Object: Demo: Basic Network Security and Troubleshooting",
+              "SCORM: Interactive — Basic Network Security and Troubleshooting (scorm-lesson-17-network-security-troubleshooting.zip)"
             ]
           },
           {
@@ -2796,7 +2813,8 @@ const courseOutlines = {
               "Object: Slideshow: Remote Access Tools and Best Practices",
               "Assessment: Quiz: Remote Access Tools and Best Practices",
               "Object: Activity: Remote Access Tools and Best Practices",
-              "Object: Demo: Remote Access Tools and Best Practices"
+              "Object: Demo: Remote Access Tools and Best Practices",
+              "SCORM: Interactive — Remote Access Tools and Best Practices (scorm-lesson-18-remote-access.zip)"
             ]
           }
         ]
@@ -2830,7 +2848,8 @@ const courseOutlines = {
               "Object: Demo: Introduction to Cybersecurity (2)",
               "Object: Demo: Introduction to Cybersecurity (3)",
               "Object: Demo: Introduction to Cybersecurity (4)",
-              "Object: Activity: Case Study: Introduction to Cybersecurity"
+              "Object: Activity: Case Study: Introduction to Cybersecurity",
+              "SCORM: Interactive — Introduction to Cybersecurity (scorm-lesson-19-intro-cybersecurity.zip)"
             ]
           },
           {
@@ -2857,7 +2876,8 @@ const courseOutlines = {
               "Object: Demo: Implementing Basic Security Measures (2)",
               "Object: Demo: Implementing Basic Security Measures (3)",
               "Object: Demo: Implementing Basic Security Measures (4)",
-              "Object: Activity: Case Study: Implementing Basic Security Measures"
+              "Object: Activity: Case Study: Implementing Basic Security Measures",
+              "SCORM: Interactive — Implementing Basic Security Measures (scorm-lesson-20-basic-security-measures.zip)"
             ]
           },
           {
@@ -2884,7 +2904,8 @@ const courseOutlines = {
               "Object: Demo: Cybersecurity Best Practices and Incident Response (2)",
               "Object: Demo: Cybersecurity Best Practices and Incident Response (3)",
               "Object: Demo: Cybersecurity Best Practices and Incident Response (4)",
-              "Object: Activity: Case Study: Cybersecurity Best Practices and Incident Response"
+              "Object: Activity: Case Study: Cybersecurity Best Practices and Incident Response",
+              "SCORM: Interactive — Cybersecurity Best Practices and Incident Response (scorm-lesson-21-incident-response.zip)"
             ]
           },
           {
@@ -2912,7 +2933,8 @@ const courseOutlines = {
               "Object: Demo: Wireless Security Protocols and Authentication Methods (2)",
               "Object: Demo: Wireless Security Protocols and Authentication Methods (3)",
               "Object: Demo: Wireless Security Protocols and Authentication Methods (4)",
-              "Object: Activity: Case Study: Wireless Security Protocols and Authentication Methods"
+              "Object: Activity: Case Study: Wireless Security Protocols and Authentication Methods",
+              "SCORM: Interactive — Wireless Security Protocols and Authentication Methods (scorm-lesson-22-wireless-security.zip)"
             ]
           },
           {
@@ -2940,7 +2962,8 @@ const courseOutlines = {
               "Object: Demo: Social Engineering Attacks and Prevention (2)",
               "Object: Demo: Social Engineering Attacks and Prevention (3)",
               "Object: Demo: Social Engineering Attacks and Prevention (4)",
-              "Object: Activity: Case Study: Social Engineering Attacks and Prevention"
+              "Object: Activity: Case Study: Social Engineering Attacks and Prevention",
+              "SCORM: Interactive — Social Engineering Attacks and Prevention (scorm-lesson-23-social-engineering.zip)"
             ]
           },
           {
@@ -2968,7 +2991,8 @@ const courseOutlines = {
               "Object: Demo: Secure Data Disposal and Destruction Methods (2)",
               "Object: Demo: Secure Data Disposal and Destruction Methods (3)",
               "Object: Demo: Secure Data Disposal and Destruction Methods (4)",
-              "Object: Activity: Case Study: Secure Data Disposal and Destruction Methods"
+              "Object: Activity: Case Study: Secure Data Disposal and Destruction Methods",
+              "SCORM: Interactive — Secure Data Disposal and Destruction Methods (scorm-lesson-24-data-disposal.zip)"
             ]
           },
           {
@@ -2996,7 +3020,8 @@ const courseOutlines = {
               "Object: Demo: Securing Mobile and Embedded Devices (2)",
               "Object: Demo: Securing Mobile and Embedded Devices (3)",
               "Object: Demo: Securing Mobile and Embedded Devices (4)",
-              "Object: Activity: Case Study: Securing Mobile and Embedded Devices"
+              "Object: Activity: Case Study: Securing Mobile and Embedded Devices",
+              "SCORM: Interactive — Securing Mobile and Embedded Devices (scorm-lesson-25-mobile-embedded-security.zip)"
             ]
           },
           {
@@ -3024,7 +3049,8 @@ const courseOutlines = {
               "Object: Demo: Secure Browser Configurations (2)",
               "Object: Demo: Secure Browser Configurations (3)",
               "Object: Demo: Secure Browser Configurations (4)",
-              "Object: Activity: Case Study: Secure Browser Configurations"
+              "Object: Activity: Case Study: Secure Browser Configurations",
+              "SCORM: Interactive — Secure Browser Configurations (scorm-lesson-26-browser-security.zip)"
             ]
           }
         ]
@@ -3048,7 +3074,8 @@ const courseOutlines = {
               "Object: Slideshow: Introduction to IT Troubleshooting",
               "Assessment: Quiz: Introduction to IT Troubleshooting",
               "Object: Activity: Introduction to IT Troubleshooting (1)",
-              "Object: Activity: Introduction to IT Troubleshooting (2)"
+              "Object: Activity: Introduction to IT Troubleshooting (2)",
+              "SCORM: Interactive — Introduction to IT Troubleshooting (scorm-lesson-27-troubleshooting-methodology.zip)"
             ]
           },
           {
@@ -3065,7 +3092,8 @@ const courseOutlines = {
               "Object: Slideshow: Diagnosing and Resolving Hardware and Software Issues",
               "Assessment: Quiz: Diagnosing and Resolving Hardware and Software Issues",
               "Object: Activity: Diagnosing and Resolving Hardware and Software Issues (1)",
-              "Object: Activity: Diagnosing and Resolving Hardware and Software Issues (2)"
+              "Object: Activity: Diagnosing and Resolving Hardware and Software Issues (2)",
+              "SCORM: Interactive — Diagnosing and Resolving Hardware and Software Issues (scorm-lesson-28-hardware-software-diagnosis.zip)"
             ]
           },
           {
@@ -3082,7 +3110,8 @@ const courseOutlines = {
               "Object: Slideshow: Network and Security Troubleshooting",
               "Assessment: Quiz: Network and Security Troubleshooting",
               "Object: Activity: Network and Security Troubleshooting (1)",
-              "Object: Activity: Network and Security Troubleshooting (2)"
+              "Object: Activity: Network and Security Troubleshooting (2)",
+              "SCORM: Interactive — Network and Security Troubleshooting (scorm-lesson-29-network-security-troubleshooting-adv.zip)"
             ]
           },
           {
@@ -3100,7 +3129,8 @@ const courseOutlines = {
               "Object: Slideshow: Troubleshooting Display, Video, and Projector Issues",
               "Assessment: Quiz: Troubleshooting Display, Video, and Projector Issues",
               "Object: Activity: Troubleshooting Display, Video, and Projector Issues (1)",
-              "Object: Activity: Troubleshooting Display, Video, and Projector Issues (2)"
+              "Object: Activity: Troubleshooting Display, Video, and Projector Issues (2)",
+              "SCORM: Interactive — Troubleshooting Display, Video, and Projector Issues (scorm-lesson-30-display-video-projector.zip)"
             ]
           },
           {
@@ -3118,7 +3148,8 @@ const courseOutlines = {
               "Object: Slideshow: Troubleshooting RAID Arrays and Storage Drives",
               "Assessment: Quiz: Troubleshooting RAID Arrays and Storage Drives",
               "Object: Activity: Troubleshooting RAID Arrays and Storage Drives (1)",
-              "Object: Activity: Troubleshooting RAID Arrays and Storage Drives (2)"
+              "Object: Activity: Troubleshooting RAID Arrays and Storage Drives (2)",
+              "SCORM: Interactive — Troubleshooting RAID Arrays and Storage Drives (scorm-lesson-31-raid-storage.zip)"
             ]
           }
         ]
@@ -3138,7 +3169,8 @@ const courseOutlines = {
               "Partitioning and volume management"
             ],
             "objects": [
-              "SCORM 1.2: Introduction to Data Storage"
+              "SCORM 1.2: Introduction to Data Storage",
+              "SCORM: Interactive — Introduction to Data Storage (scorm-lesson-32-intro-data-storage.zip)"
             ]
           },
           {
@@ -3151,7 +3183,8 @@ const courseOutlines = {
               "Hybrid cloud integration"
             ],
             "objects": [
-              "SCORM 1.2: Cloud Storage and File Management"
+              "SCORM 1.2: Cloud Storage and File Management",
+              "SCORM: Interactive — Cloud Storage and File Management (scorm-lesson-33-cloud-storage.zip)"
             ]
           },
           {
@@ -3164,7 +3197,8 @@ const courseOutlines = {
               "Data restoration and testing"
             ],
             "objects": [
-              "SCORM 1.2: Data Backup and Recovery"
+              "SCORM 1.2: Data Backup and Recovery",
+              "SCORM: Interactive — Data Backup and Recovery (scorm-lesson-34-backup-recovery.zip)"
             ]
           }
         ]
@@ -3189,7 +3223,8 @@ const courseOutlines = {
               "Assessment: Quiz: IT Ethics and Legal Considerations",
               "Object: Activity: IT Ethics and Legal Considerations",
               "Object: Activity: Case Study: IT Ethics and Legal Considerations (1)",
-              "Object: Activity: Case Study: IT Ethics and Legal Considerations (2)"
+              "Object: Activity: Case Study: IT Ethics and Legal Considerations (2)",
+              "SCORM: Interactive — IT Ethics and Legal Considerations (scorm-lesson-35-it-ethics-legal.zip)"
             ]
           },
           {
@@ -3207,7 +3242,8 @@ const courseOutlines = {
               "Assessment: Quiz: Professionalism and Workplace Communication",
               "Object: Activity: Professionalism and Workplace Communication",
               "Object: Activity: Case Study: Professionalism and Workplace Communication (1)",
-              "Object: Activity: Case Study: Professionalism and Workplace Communication (2)"
+              "Object: Activity: Case Study: Professionalism and Workplace Communication (2)",
+              "SCORM: Interactive — Professionalism and Workplace Communication (scorm-lesson-36-professionalism-communication.zip)"
             ]
           },
           {
@@ -3226,7 +3262,8 @@ const courseOutlines = {
               "Assessment: Quiz: Introduction to Change Management in IT",
               "Object: Activity: Introduction to Change Management in IT",
               "Object: Activity: Case Study: Introduction to Change Management in IT (1)",
-              "Object: Activity: Case Study: Introduction to Change Management in IT (2)"
+              "Object: Activity: Case Study: Introduction to Change Management in IT (2)",
+              "SCORM: Interactive — Introduction to Change Management in IT (scorm-lesson-37-change-management.zip)"
             ]
           },
           {
@@ -3245,7 +3282,8 @@ const courseOutlines = {
               "Assessment: Quiz: Environmental Responsibilities in IT",
               "Object: Activity: Environmental Responsibilities in IT",
               "Object: Activity: Case Study: Environmental Responsibilities in IT (1)",
-              "Object: Activity: Case Study: Environmental Responsibilities in IT (2)"
+              "Object: Activity: Case Study: Environmental Responsibilities in IT (2)",
+              "SCORM: Interactive — Environmental Responsibilities in IT (scorm-lesson-38-green-it.zip)"
             ]
           }
         ]

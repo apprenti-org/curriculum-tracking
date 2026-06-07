@@ -388,7 +388,7 @@ const courseData = [
     },
     "syllabus": "Syllabus: Curriculum IT Support Professional",
     "outline": "Course Outline: CompTIA A+",
-    "note": "v0.4.2 — 38/38 SCORM interactives complete. All modules 1-7 deployed. Content synced from review HTMLs, titles normalized.",
+    "note": "Canonicalized on the content-dev system: 38 interactives rebuilt on the canonical template (quiz 'Try again', fixed Pro-FA icons + duplicate Key Terms heading, lesson-name SCORM titles); 10 answer-key corrections + quiz length-bias removed (52%->7%); 30 per-activity instructor guides ported; deploy tree (174 PDFs + 38 SCORM + html); 7 modules / 38 lessons. Pre-upload reconciliation complete.",
     "driveFolder": "https://drive.google.com/drive/folders/1Sc6HPEa8bYFzm50IHccFEuLKBgqkU22o",
     "statusConfirmed": true
   },
