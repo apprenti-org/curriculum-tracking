@@ -1218,6 +1218,194 @@ const curriculaData = [
     ]
   },
   {
+    "name": "Cyber Developer Associate",
+    "slug": "cyber-developer-associate",
+    "standard": {
+      "appendix": "A-31",
+      "title": "Cyber Developer Associate",
+      "onetSocCode": "15-1252.00",
+      "rapidsCode": "1129CB",
+      "sourceUrl": null,
+      "markdownReference": "_STANDARDS/Appendix A-31 Cyber Developer Associate DRAFT 05082026.docx",
+      "status": "DRAFT",
+      "draftDate": "2026-05-08"
+    },
+    "groups": [
+      {
+        "name": "AI Foundations and Ethics",
+        "hours": 40,
+        "note": "Phase 1",
+        "courses": [
+          {
+            "name": "Introduction to GitHub",
+            "hoursOverride": 6
+          },
+          {
+            "name": "AI Foundations and Ethics",
+            "id": "ai-foundations"
+          },
+          {
+            "name": "AI-Assisted Coding Fundamentals",
+            "id": "ai-assisted-coding-fundamentals"
+          },
+          {
+            "name": "AI-Driven Specifications: The Blueprint Method",
+            "id": "ai-driven-specifications"
+          },
+          {
+            "name": "LLM History & Capabilities Deep Dive",
+            "hoursOverride": 8
+          }
+        ]
+      },
+      {
+        "name": "Compressed Cybersecurity & Introduction to Python",
+        "hours": 120,
+        "note": "Phase 2",
+        "courses": [
+          {
+            "name": "Python Basics",
+            "id": "python-basics"
+          },
+          {
+            "name": "Compressed Cybersecurity Fundamentals",
+            "hoursOverride": 60
+          },
+          {
+            "name": "Compliance and Security Awareness",
+            "id": "compliance-and-security-awareness"
+          },
+          {
+            "name": "Python Threat Modeling Assignment",
+            "hoursOverride": 8
+          }
+        ]
+      },
+      {
+        "name": "Secure Java Language Fundamentals",
+        "hours": 160,
+        "note": "Phase 3",
+        "courses": [
+          {
+            "name": "Java Language Fundamentals — Secure Edition",
+            "hoursOverride": 56
+          },
+          {
+            "name": "AI-Assisted Test Driven Development",
+            "id": "ai-assisted-test-driven-development"
+          },
+          {
+            "name": "Secure Java Programming Supplement",
+            "hoursOverride": 102
+          }
+        ]
+      },
+      {
+        "name": "Secure Data Management",
+        "hours": 80,
+        "note": "Phase 4",
+        "courses": [
+          {
+            "name": "SQL Fundamentals — Secure SQL",
+            "hoursOverride": 24
+          },
+          {
+            "name": "Databases in Java — Secure DB",
+            "hoursOverride": 40
+          },
+          {
+            "name": "Docker Container Isolation",
+            "hoursOverride": 16
+          }
+        ]
+      },
+      {
+        "name": "Secure AI Integration, APIs & Advanced Programming",
+        "hours": 120,
+        "note": "Phase 5",
+        "courses": [
+          {
+            "name": "Java OOP — Secure-OOP",
+            "hoursOverride": 40
+          },
+          {
+            "name": "Introduction to Advanced Concepts in Java — Secure Edition",
+            "hoursOverride": 30
+          },
+          {
+            "name": "Spring MVC Secure Coding",
+            "hoursOverride": 10
+          },
+          {
+            "name": "CI/CD Pipeline Concepts",
+            "id": "ci-cd-pipeline-concepts"
+          },
+          {
+            "name": "Secure LLM API Integration",
+            "hoursOverride": 20
+          },
+          {
+            "name": "MCP Servers",
+            "hoursOverride": 10
+          }
+        ]
+      },
+      {
+        "name": "Secure Web and Front-End Development",
+        "hours": 120,
+        "note": "Phase 6",
+        "courses": [
+          {
+            "name": "Introduction to HTML & CSS — Secure Edition",
+            "hoursOverride": 40
+          },
+          {
+            "name": "JavaScript — XSS Edition",
+            "hoursOverride": 16
+          },
+          {
+            "name": "Web Development with JavaScript — Secure-by-Design",
+            "hoursOverride": 40
+          },
+          {
+            "name": "XSS Defense & Secure Data Parsing Lab",
+            "hoursOverride": 24
+          }
+        ]
+      },
+      {
+        "name": "Advanced Security Integration Module",
+        "hours": 120,
+        "note": "Phase 7",
+        "courses": [
+          {
+            "name": "AI Code Auditing for Security",
+            "hoursOverride": 40
+          },
+          {
+            "name": "Safe Hybrid Development / Legacy Integration",
+            "hoursOverride": 70
+          },
+          {
+            "name": "AI-Assisted Assessment Prep",
+            "hoursOverride": 10
+          }
+        ]
+      },
+      {
+        "name": "Capstone Project",
+        "hours": 40,
+        "note": "Phase 8",
+        "courses": [
+          {
+            "name": "Transaction Validation Service Capstone",
+            "hoursOverride": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "CyberSecurity Analyst",
     "syllabus": "https://docs.google.com/document/d/14-ByDX4VgO6S3azaJ9IbUsvJYKr99_7TOzygszBJWSc",
     "courses": [
