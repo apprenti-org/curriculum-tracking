@@ -590,6 +590,21 @@ const courseData = [
     "statusConfirmed": false
   },
   {
+    "id": "introduction-to-github-secure",
+    "name": "Introduction to GitHub (Cyber Developer Associate)",
+    "hours": 6,
+    "status": {
+      "design": "Complete",
+      "development": "Not Started"
+    },
+    "syllabus": null,
+    "outline": true,
+    "note": "Cyber Developer Associate condensed 6h edition of Introduction to GitHub (new -secure course, distinct from the shared introduction-to-github). 2 modules, 5 lessons: Git Background; GitHub for Individuals; GitHub for Groups; Resolving Merge Conflicts; Secrets and Credentials Hygiene. Design folder + 5 lesson outlines complete; Phase 1 scaffold built. Built from the migrated reference (course-design/intro-to-github/source/). Onboarding meta apprenti-org/design-documentation#834.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "introduction-to-html-and-css",
     "name": "Introduction to HTML & CSS",
     "hours": 40,
@@ -1237,8 +1252,8 @@ const curriculaData = [
         "note": "Phase 1",
         "courses": [
           {
-            "name": "Introduction to GitHub",
-            "hoursOverride": 6
+            "name": "Introduction to GitHub (Cyber Developer Associate)",
+            "id": "introduction-to-github-secure"
           },
           {
             "name": "AI Foundations and Ethics",
