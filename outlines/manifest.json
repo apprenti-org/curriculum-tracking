@@ -180,6 +180,11 @@
     "id": "introduction-to-github"
   },
   {
+    "file": "introduction-to-github-secure.json",
+    "course": "Introduction to GitHub (Cyber Developer Associate)",
+    "id": "introduction-to-github-secure"
+  },
+  {
     "file": "intro-to-html-css.json",
     "course": "Introduction to HTML & CSS",
     "id": "introduction-to-html-and-css"

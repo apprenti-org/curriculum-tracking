@@ -1,0 +1,47 @@
+{
+  "course": "Introduction to GitHub (Cyber Developer Associate)",
+  "totalHours": 6,
+  "totalLessons": 5,
+  "totalModules": 2,
+  "modules": [
+    {
+      "name": "Git and GitHub Basics",
+      "hours": 3,
+      "description": "The core of version control: what Git and GitHub are, and the everyday individual workflow of creating repositories, committing work, and synchronizing with a remote.",
+      "lessons": [
+        {
+          "title": "Git Background",
+          "hours": 1,
+          "topics": ["What Git and GitHub are; version control and why it matters", "Distributed vs. centralized version control", "Core vocabulary: repository, commit, branch, remote, clone, push, pull, merge", "Local vs. remote; installing and configuring Git and a GitHub account"]
+        },
+        {
+          "title": "GitHub for Individuals",
+          "hours": 2,
+          "topics": ["Initializing a repository; local and remote workflow", "Staging and committing; check in / check out", "Pushing to and pulling from upstream remotes; cloning", "Repository structure and README basics"]
+        }
+      ]
+    },
+    {
+      "name": "Collaboration and Secure Practices",
+      "hours": 3,
+      "description": "Working with others on a shared repository — branches, pull requests, and merge conflicts — plus keeping credentials out of version control.",
+      "lessons": [
+        {
+          "title": "GitHub for Groups",
+          "hours": 1.5,
+          "topics": ["Branching strategies for team work", "Pull requests and code review", "GitHub Issues and basic team collaboration workflow"]
+        },
+        {
+          "title": "Resolving Merge Conflicts",
+          "hours": 1,
+          "topics": ["What causes a merge conflict", "Resolving conflicts on GitHub and on the command line", "Reading diffs and verifying the resolved result"]
+        },
+        {
+          "title": "Secrets and Credentials Hygiene in Git",
+          "hours": 0.5,
+          "topics": ["Why secrets must never be committed (history is permanent and shareable)", ".gitignore for credentials and environment files", "Safe handling of tokens and keys", "Remediating a secret that was committed"]
+        }
+      ]
+    }
+  ]
+}
