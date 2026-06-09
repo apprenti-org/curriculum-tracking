@@ -6192,6 +6192,11 @@ const courseOutlines = {
               "Distributed vs. centralized version control",
               "Core vocabulary: repository, commit, branch, remote, clone, push, pull, merge",
               "Local vs. remote; installing and configuring Git and a GitHub account"
+            ],
+            "objects": [
+              "Object: Lesson: Git Background",
+              "Assessment: Quiz: Git Background",
+              "SCORM: scorm-lesson-01-git-background"
             ]
           },
           {
@@ -6202,6 +6207,11 @@ const courseOutlines = {
               "Staging and committing; check in / check out",
               "Pushing to and pulling from upstream remotes; cloning",
               "Repository structure and README basics"
+            ],
+            "objects": [
+              "Object: Lesson: GitHub for Individuals",
+              "Assessment: Quiz: GitHub for Individuals",
+              "SCORM: scorm-lesson-02-github-for-individuals"
             ]
           }
         ]
@@ -6218,6 +6228,11 @@ const courseOutlines = {
               "Branching strategies for team work",
               "Pull requests and code review",
               "GitHub Issues and basic team collaboration workflow"
+            ],
+            "objects": [
+              "Object: Lesson: GitHub for Groups",
+              "Assessment: Quiz: GitHub for Groups",
+              "SCORM: scorm-lesson-03-github-for-groups"
             ]
           },
           {
@@ -6227,6 +6242,11 @@ const courseOutlines = {
               "What causes a merge conflict",
               "Resolving conflicts on GitHub and on the command line",
               "Reading diffs and verifying the resolved result"
+            ],
+            "objects": [
+              "Object: Lesson: Resolving Merge Conflicts",
+              "Assessment: Quiz: Resolving Merge Conflicts",
+              "SCORM: scorm-lesson-04-resolving-merge-conflicts"
             ]
           },
           {
@@ -6237,6 +6257,11 @@ const courseOutlines = {
               ".gitignore for credentials and environment files",
               "Safe handling of tokens and keys",
               "Remediating a secret that was committed"
+            ],
+            "objects": [
+              "Object: Lesson: Secrets and Credentials Hygiene in Git",
+              "Assessment: Quiz: Secrets and Credentials Hygiene in Git",
+              "SCORM: scorm-lesson-05-secrets-and-credentials-hygiene"
             ]
           }
         ]

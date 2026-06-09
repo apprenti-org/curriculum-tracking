@@ -12,12 +12,32 @@
         {
           "title": "Git Background",
           "hours": 1,
-          "topics": ["What Git and GitHub are; version control and why it matters", "Distributed vs. centralized version control", "Core vocabulary: repository, commit, branch, remote, clone, push, pull, merge", "Local vs. remote; installing and configuring Git and a GitHub account"]
+          "topics": [
+            "What Git and GitHub are; version control and why it matters",
+            "Distributed vs. centralized version control",
+            "Core vocabulary: repository, commit, branch, remote, clone, push, pull, merge",
+            "Local vs. remote; installing and configuring Git and a GitHub account"
+          ],
+          "objects": [
+            "Object: Lesson: Git Background",
+            "Assessment: Quiz: Git Background",
+            "SCORM: scorm-lesson-01-git-background"
+          ]
         },
         {
           "title": "GitHub for Individuals",
           "hours": 2,
-          "topics": ["Initializing a repository; local and remote workflow", "Staging and committing; check in / check out", "Pushing to and pulling from upstream remotes; cloning", "Repository structure and README basics"]
+          "topics": [
+            "Initializing a repository; local and remote workflow",
+            "Staging and committing; check in / check out",
+            "Pushing to and pulling from upstream remotes; cloning",
+            "Repository structure and README basics"
+          ],
+          "objects": [
+            "Object: Lesson: GitHub for Individuals",
+            "Assessment: Quiz: GitHub for Individuals",
+            "SCORM: scorm-lesson-02-github-for-individuals"
+          ]
         }
       ]
     },
@@ -29,17 +49,45 @@
         {
           "title": "GitHub for Groups",
           "hours": 1.5,
-          "topics": ["Branching strategies for team work", "Pull requests and code review", "GitHub Issues and basic team collaboration workflow"]
+          "topics": [
+            "Branching strategies for team work",
+            "Pull requests and code review",
+            "GitHub Issues and basic team collaboration workflow"
+          ],
+          "objects": [
+            "Object: Lesson: GitHub for Groups",
+            "Assessment: Quiz: GitHub for Groups",
+            "SCORM: scorm-lesson-03-github-for-groups"
+          ]
         },
         {
           "title": "Resolving Merge Conflicts",
           "hours": 1,
-          "topics": ["What causes a merge conflict", "Resolving conflicts on GitHub and on the command line", "Reading diffs and verifying the resolved result"]
+          "topics": [
+            "What causes a merge conflict",
+            "Resolving conflicts on GitHub and on the command line",
+            "Reading diffs and verifying the resolved result"
+          ],
+          "objects": [
+            "Object: Lesson: Resolving Merge Conflicts",
+            "Assessment: Quiz: Resolving Merge Conflicts",
+            "SCORM: scorm-lesson-04-resolving-merge-conflicts"
+          ]
         },
         {
           "title": "Secrets and Credentials Hygiene in Git",
           "hours": 0.5,
-          "topics": ["Why secrets must never be committed (history is permanent and shareable)", ".gitignore for credentials and environment files", "Safe handling of tokens and keys", "Remediating a secret that was committed"]
+          "topics": [
+            "Why secrets must never be committed (history is permanent and shareable)",
+            ".gitignore for credentials and environment files",
+            "Safe handling of tokens and keys",
+            "Remediating a secret that was committed"
+          ],
+          "objects": [
+            "Object: Lesson: Secrets and Credentials Hygiene in Git",
+            "Assessment: Quiz: Secrets and Credentials Hygiene in Git",
+            "SCORM: scorm-lesson-05-secrets-and-credentials-hygiene"
+          ]
         }
       ]
     }
