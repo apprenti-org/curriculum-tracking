@@ -250,6 +250,11 @@
     "id": "linux-foundations"
   },
   {
+    "file": "llm-history-and-capabilities.json",
+    "course": "LLM History & Capabilities Deep Dive (Cyber Developer Associate)",
+    "id": "llm-history-and-capabilities"
+  },
+  {
     "file": "macos-administration.json",
     "course": "macOS Administration Fundamentals",
     "id": "macos-administration-fundamentals"

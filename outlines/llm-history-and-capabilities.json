@@ -1,0 +1,97 @@
+{
+  "course": "LLM History & Capabilities Deep Dive (Cyber Developer Associate)",
+  "totalHours": 8,
+  "totalLessons": 5,
+  "totalModules": 2,
+  "modules": [
+    {
+      "name": "Foundations and How LLMs Work",
+      "hours": 4,
+      "description": "How artificial intelligence arrived at the large language model, what those models can and cannot do, and the mechanics underneath — tokens, context windows, and inference.",
+      "lessons": [
+        {
+          "title": "A Brief History of AI and Machine Learning",
+          "hours": 1.5,
+          "topics": [
+            "From symbolic AI and expert systems to statistical machine learning",
+            "The shift to neural networks and deep learning",
+            "The transformer breakthrough and the rise of large language models",
+            "Why this history matters: each shift changed what could be automated, and what could go wrong"
+          ],
+          "objects": [
+            "Object: Lesson: A Brief History of AI and Machine Learning",
+            "Assessment: Quiz: A Brief History of AI and Machine Learning",
+            "SCORM: scorm-lesson-01-a-brief-history-of-ai-and-machine-learning"
+          ]
+        },
+        {
+          "title": "What LLMs Can and Cannot Do",
+          "hours": 1.5,
+          "topics": [
+            "Genuine capabilities: language generation, summarization, translation, code assistance",
+            "Hard limits: no ground truth, no real-time knowledge, no reasoning guarantees",
+            "Capability vs. misconception — separating what models do from what people assume they do",
+            "Setting realistic expectations for an AI assistant"
+          ],
+          "objects": [
+            "Object: Lesson: What LLMs Can and Cannot Do",
+            "Assessment: Quiz: What LLMs Can and Cannot Do",
+            "SCORM: scorm-lesson-02-what-llms-can-and-cannot-do"
+          ]
+        },
+        {
+          "title": "How LLMs Work — Tokens, Context Windows, and Inference",
+          "hours": 1,
+          "topics": [
+            "Tokens: how text is broken into units a model processes",
+            "The context window: what the model can see at once, and what falls out of it",
+            "Inference: next-token prediction and why output is probabilistic, not retrieved",
+            "How these mechanics explain everyday model behavior"
+          ],
+          "objects": [
+            "Object: Lesson: How LLMs Work — Tokens, Context Windows, and Inference",
+            "Assessment: Quiz: How LLMs Work — Tokens, Context Windows, and Inference",
+            "SCORM: scorm-lesson-03-how-llms-work-tokens-context-windows-and-inference"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Failure Modes and Secure Implications",
+      "hours": 4,
+      "description": "Where large language models break down, how to recognize unreliable output, and what their limitations mean for writing secure software with AI assistance.",
+      "lessons": [
+        {
+          "title": "LLM Failure Modes — Hallucination, Drift, and Boundary Conditions",
+          "hours": 2,
+          "topics": [
+            "Hallucination: confident, fluent, and wrong — why it happens",
+            "Drift: how output degrades across long contexts and conversations",
+            "Boundary conditions: prompts at the edges of training and context limits",
+            "Recognizing the signals that an output should not be trusted as-is"
+          ],
+          "objects": [
+            "Object: Lesson: LLM Failure Modes — Hallucination, Drift, and Boundary Conditions",
+            "Assessment: Quiz: LLM Failure Modes — Hallucination, Drift, and Boundary Conditions",
+            "SCORM: scorm-lesson-04-llm-failure-modes-hallucination-drift-and-boundary-conditions"
+          ]
+        },
+        {
+          "title": "LLM Limitations and Secure Software Development",
+          "hours": 2,
+          "topics": [
+            "Why AI-generated code can be insecure, outdated, or subtly wrong",
+            "Treating model output as a draft to verify, never as authoritative",
+            "Where human review is non-negotiable: secrets, input validation, dependencies, logic",
+            "A habit of verification: turning the limitations from the rest of the course into working practice"
+          ],
+          "objects": [
+            "Object: Lesson: LLM Limitations and Secure Software Development",
+            "Assessment: Quiz: LLM Limitations and Secure Software Development",
+            "SCORM: scorm-lesson-05-llm-limitations-and-secure-software-development"
+          ]
+        }
+      ]
+    }
+  ]
+}
