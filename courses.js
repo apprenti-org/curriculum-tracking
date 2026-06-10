@@ -810,13 +810,13 @@ const courseData = [
     "hours": 8,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": true,
     "note": "Cyber Developer Associate net-new 8h Phase 1 course. 2 modules, 5 lessons: A Brief History of AI and Machine Learning; What LLMs Can and Cannot Do; How LLMs Work (Tokens, Context Windows, Inference); LLM Failure Modes (Hallucination, Drift, Boundary Conditions); LLM Limitations and Secure Software Development. Design complete (course outline + standard-alignment report + 5 lesson outlines + 5 lesson sources). Development in progress (Content Scaffolding, Phase 0+1). Onboarding meta apprenti-org/design-documentation#849.",
     "driveFolder": null,
-    "statusConfirmed": false,
+    "statusConfirmed": true,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
   },
   {
