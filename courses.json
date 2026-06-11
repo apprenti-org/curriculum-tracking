@@ -990,6 +990,21 @@
       "statusConfirmed": true
     },
     {
+      "id": "python-threat-modeling-assignment",
+      "name": "Python Threat Modeling Assignment (Cyber Developer Associate)",
+      "hours": 8,
+      "status": {
+        "design": "Complete",
+        "development": "In Progress"
+      },
+      "syllabus": null,
+      "outline": true,
+      "note": "Cyber Developer Associate net-new 8h Phase 2 course-level capstone. 1 module, 1 capstone lesson: apprentices threat-model a software architecture diagram (identify threat actors, attack vectors, vulnerabilities) and write a Python LogParser (class + lambda filters) to mine system logs for corroborating evidence, producing a CIA-mapped threat analysis, an apprentice evidence map, and a reflection. Delivers the A-31 Phase 2 'Python Threat Modeling' assignment line. OJL 2.a (primary) + 3.d (OOP/lambda portion). Assessed by a Competency-Based Rubric (no quiz). Design complete (course outline + lesson outline + lesson source); development in progress (Content Scaffolding, Phase 0+1). Onboarding meta apprenti-org/design-documentation#874.",
+      "driveFolder": null,
+      "statusConfirmed": true,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+    },
+    {
       "id": "react",
       "name": "React",
       "hours": 40,
