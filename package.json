@@ -7,6 +7,7 @@
     "build": "node build.js",
     "build:watch": "node build.js --watch",
     "validate": "node build.js --validate",
-    "build:verbose": "node build.js --verbose"
+    "build:verbose": "node build.js --verbose",
+    "test": "node --test"
   }
 }

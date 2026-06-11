@@ -1,8 +1,21 @@
 const fs = require('fs');
 const path = require('path');
+const { resolveSyllabiDirs } = require('./resolve-syllabi-dirs');
 
-const coursesDir = '/sessions/busy-relaxed-dirac/mnt/Curriculum for Training Operations/_COURSES Phase 1 - WORKING/courses';
-const syllabiDir = '/sessions/busy-relaxed-dirac/mnt/Curriculum for Training Operations/_COURSES Phase 1 - WORKING/tracking/repo/syllabi';
+// syllabiDir is repo-relative (this tracking repo); coursesDir comes from
+// --workspace=<path> or the SYLLABI_WORKSPACE env var. No hardcoded paths.
+const { coursesDir, syllabiDir } = resolveSyllabiDirs({
+  argv: process.argv,
+  env: process.env,
+  scriptDir: __dirname,
+});
+
+if (!coursesDir) {
+  console.error('ERROR: course source directory not set.');
+  console.error('Pass --workspace=<path to the workspace root> (the folder containing "_COURSES Phase 1 - WORKING/"), or set SYLLABI_WORKSPACE.');
+  console.error('Example: node convert-syllabi.js --workspace="/path/to/Curriculum for Training Operations Code Repository"');
+  process.exit(1);
+}
 
 // CSS from the existing template
 const CSS = `
