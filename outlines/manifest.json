@@ -310,6 +310,11 @@
     "id": "python-infrastructure-automation"
   },
   {
+    "file": "python-threat-modeling-assignment.json",
+    "course": "Python Threat Modeling Assignment",
+    "id": "python-threat-modeling-assignment"
+  },
+  {
     "file": "react.json",
     "course": "React",
     "id": "react"

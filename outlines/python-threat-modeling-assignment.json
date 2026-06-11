@@ -1,0 +1,28 @@
+{
+  "course": "Python Threat Modeling Assignment",
+  "totalHours": 8,
+  "totalModules": 1,
+  "totalLessons": 1,
+  "modules": [
+    {
+      "name": "Capstone — Python Threat Modeling",
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "Capstone — Python Threat Modeling",
+          "hours": 8,
+          "topics": [
+            "Threat-model a software architecture diagram: identify threat actors, attack vectors, and vulnerabilities (OJL 2.a)",
+            "Build a Python log parser — a `LogParser` class with lambda filters — to surface corroborating evidence (OJL 3.d)",
+            "Synthesize a CIA-mapped threat analysis separating confirmed from hypothetical findings",
+            "Author the apprentice evidence map and submit the deliverable set through GitHub"
+          ],
+          "objects": [
+            "Object: Lesson: Capstone — Python Threat Modeling",
+            "Assessment: Quiz: Capstone — Python Threat Modeling"
+          ]
+        }
+      ]
+    }
+  ]
+}
