@@ -597,7 +597,7 @@
       },
       "syllabus": null,
       "outline": true,
-      "note": "Cyber Developer Associate condensed 6h edition of Introduction to GitHub (new -secure course, distinct from the shared introduction-to-github). 2 modules, 5 lessons: Git Background; GitHub for Individuals; GitHub for Groups; Resolving Merge Conflicts; Secrets and Credentials Hygiene. Content + interactive.html + SCORM + deploy repos (content/instructor/student) + instructor guides & pacing all complete. Slides deferred (#606). Built from the migrated reference (course-design/intro-to-github/source/). Onboarding meta apprenti-org/design-documentation#834.",
+      "note": "Cyber Developer Associate condensed 6h edition of Introduction to GitHub (new -secure course, distinct from the shared introduction-to-github). 2 modules, 5 lessons: Git Background; GitHub for Individuals; GitHub for Groups; Resolving Merge Conflicts; Secrets and Credentials Hygiene. Content + interactive.html + SCORM + deploy repos (content/instructor/student) + instructor guides & pacing all complete. Slides deferred (#606). Built from the migrated reference (course-design/intro-to-github/source/). Onboarding meta apprenti-org/design-documentation#834. Live in Absorb 2026-06-15.",
       "driveFolder": null,
       "statusConfirmed": true,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation"
