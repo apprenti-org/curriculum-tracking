@@ -10550,7 +10550,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: File and System Operations",
-              "Assessment: Quiz: File and System Operations"
+              "Assessment: Quiz: File and System Operations",
+              "SCORM: Interactive — File and System Operations (scorm-lesson-01-file-and-system-operations.zip)"
             ]
           },
           {
@@ -10565,7 +10566,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Regular Expressions and Text Processing",
-              "Assessment: Quiz: Regular Expressions and Text Processing"
+              "Assessment: Quiz: Regular Expressions and Text Processing",
+              "SCORM: Interactive — Regular Expressions and Text Processing (scorm-lesson-02-regular-expressions-and-text-processing.zip)"
             ]
           },
           {
@@ -10580,7 +10582,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Network Programming Basics",
-              "Assessment: Quiz: Network Programming Basics"
+              "Assessment: Quiz: Network Programming Basics",
+              "SCORM: Interactive — Network Programming Basics (scorm-lesson-03-network-programming-basics.zip)"
             ]
           }
         ]
@@ -10601,7 +10604,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Configuration Management Scripts",
-              "Assessment: Quiz: Configuration Management Scripts"
+              "Assessment: Quiz: Configuration Management Scripts",
+              "SCORM: Interactive — Configuration Management Scripts (scorm-lesson-04-configuration-management-scripts.zip)"
             ]
           },
           {
@@ -10616,7 +10620,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Monitoring and Alerting Scripts",
-              "Assessment: Quiz: Monitoring and Alerting Scripts"
+              "Assessment: Quiz: Monitoring and Alerting Scripts",
+              "SCORM: Interactive — Monitoring and Alerting Scripts (scorm-lesson-05-monitoring-and-alerting-scripts.zip)"
             ]
           },
           {
@@ -10631,7 +10636,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Backup and Disaster Recovery Automation",
-              "Assessment: Quiz: Backup and Disaster Recovery Automation"
+              "Assessment: Quiz: Backup and Disaster Recovery Automation",
+              "SCORM: Interactive — Backup and Disaster Recovery Automation (scorm-lesson-06-backup-and-disaster-recovery-automation.zip)"
             ]
           },
           {
@@ -10646,7 +10652,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Deployment and Provisioning Scripts",
-              "Assessment: Quiz: Deployment and Provisioning Scripts"
+              "Assessment: Quiz: Deployment and Provisioning Scripts",
+              "SCORM: Interactive — Deployment and Provisioning Scripts (scorm-lesson-07-deployment-and-provisioning-scripts.zip)"
             ]
           }
         ]
@@ -10667,7 +10674,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: RESTful APIs and Cloud SDKs",
-              "Assessment: Quiz: RESTful APIs and Cloud SDKs"
+              "Assessment: Quiz: RESTful APIs and Cloud SDKs",
+              "SCORM: Interactive — RESTful APIs and Cloud SDKs (scorm-lesson-08-restful-apis-and-cloud-sdks.zip)"
             ]
           },
           {
@@ -10682,7 +10690,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Infrastructure as Code with Python",
-              "Assessment: Quiz: Infrastructure as Code with Python"
+              "Assessment: Quiz: Infrastructure as Code with Python",
+              "SCORM: Interactive — Infrastructure as Code with Python (scorm-lesson-09-infrastructure-as-code-with-python.zip)"
             ]
           },
           {
@@ -10697,7 +10706,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Monitoring and Logging Integration",
-              "Assessment: Quiz: Monitoring and Logging Integration"
+              "Assessment: Quiz: Monitoring and Logging Integration",
+              "SCORM: Interactive — Monitoring and Logging Integration (scorm-lesson-10-monitoring-and-logging-integration.zip)"
             ]
           },
           {
@@ -10712,7 +10722,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Continuous Integration with Python",
-              "Assessment: Quiz: Continuous Integration with Python"
+              "Assessment: Quiz: Continuous Integration with Python",
+              "SCORM: Interactive — Continuous Integration with Python (scorm-lesson-11-continuous-integration-with-python.zip)"
             ]
           }
         ]
@@ -10733,7 +10744,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Error Handling and Resilience",
-              "Assessment: Quiz: Error Handling and Resilience"
+              "Assessment: Quiz: Error Handling and Resilience",
+              "SCORM: Interactive — Error Handling and Resilience (scorm-lesson-12-error-handling-and-resilience.zip)"
             ]
           },
           {
@@ -10748,7 +10760,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Concurrency and Parallel Processing",
-              "Assessment: Quiz: Concurrency and Parallel Processing"
+              "Assessment: Quiz: Concurrency and Parallel Processing",
+              "SCORM: Interactive — Concurrency and Parallel Processing (scorm-lesson-13-concurrency-and-parallel-processing.zip)"
             ]
           },
           {
@@ -10763,7 +10776,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Security and Secret Management",
-              "Assessment: Quiz: Security and Secret Management"
+              "Assessment: Quiz: Security and Secret Management",
+              "SCORM: Interactive — Security and Secret Management (scorm-lesson-14-security-and-secret-management.zip)"
             ]
           },
           {
@@ -10778,7 +10792,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Production Automation Patterns",
-              "Assessment: Quiz: Production Automation Patterns"
+              "Assessment: Quiz: Production Automation Patterns",
+              "SCORM: Interactive — Production Automation Patterns (scorm-lesson-15-production-automation-patterns.zip)"
             ]
           }
         ]
