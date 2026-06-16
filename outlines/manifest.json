@@ -260,6 +260,11 @@
     "id": "macos-administration-fundamentals"
   },
   {
+    "file": "mcp-servers.json",
+    "course": "MCP Servers (Cyber Developer Associate)",
+    "id": "mcp-servers"
+  },
+  {
     "file": "microsoft-endpoint-administrator.json",
     "course": "Microsoft 365 Endpoint Administrator",
     "id": "microsoft-365-endpoint-administrator"

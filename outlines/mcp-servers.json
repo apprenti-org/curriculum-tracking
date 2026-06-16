@@ -1,0 +1,148 @@
+{
+  "course": "MCP Servers",
+  "totalHours": 10,
+  "totalModules": 2,
+  "totalLessons": 9,
+  "modules": [
+    {
+      "name": "MCP Foundations & Your First Secure Server",
+      "hours": 5,
+      "lessons": [
+        {
+          "title": "What MCP Is and the Trust Model",
+          "hours": 1,
+          "topics": [
+            "Why the Model Context Protocol exists: standardized context for language models",
+            "The host / client / server architecture and how messages flow",
+            "The MCP server as a security boundary, not just a connector",
+            "Local context versus direct database access — framing the course's central problem",
+            "Activity type: demonstration"
+          ],
+          "objects": [
+            "Object: Lesson: What MCP Is and the Trust Model",
+            "Assessment: Quiz: What MCP Is and the Trust Model"
+          ]
+        },
+        {
+          "title": "MCP Primitives — Tools, Resources, and Prompts",
+          "hours": 1,
+          "topics": [
+            "Tools (model-invoked actions), resources (readable data), and prompts (reusable templates)",
+            "Choosing the right primitive for a given need",
+            "The data-exposure surface each primitive creates",
+            "Activity type: exercise"
+          ],
+          "objects": [
+            "Object: Lesson: MCP Primitives — Tools, Resources, and Prompts",
+            "Assessment: Quiz: MCP Primitives — Tools, Resources, and Prompts"
+          ]
+        },
+        {
+          "title": "Building Your First Secure Server with the Python SDK",
+          "hours": 1.5,
+          "topics": [
+            "Setting up the official Python MCP SDK",
+            "Defining a single read-only tool over a local transaction store",
+            "Serving over the stdio transport",
+            "Connecting a client and observing the boundary in action",
+            "Activity type: code-along"
+          ],
+          "objects": [
+            "Object: Lesson: Building Your First Secure Server with the Python SDK",
+            "Assessment: Quiz: Building Your First Secure Server with the Python SDK"
+          ]
+        },
+        {
+          "title": "Exposing Data with Least Privilege — Resources vs Tools",
+          "hours": 1.5,
+          "topics": [
+            "Scoping what the model can see to the minimum required",
+            "Resources versus tools for exposing stored data",
+            "Returning safe, shaped views instead of raw rows",
+            "Activity types: code-along, exercise"
+          ],
+          "objects": [
+            "Object: Lesson: Exposing Data with Least Privilege — Resources vs Tools",
+            "Assessment: Quiz: Exposing Data with Least Privilege — Resources vs Tools"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hardening the Boundary",
+      "hours": 5,
+      "lessons": [
+        {
+          "title": "Preventing Database Exposure at the Boundary",
+          "hours": 1,
+          "topics": [
+            "Scoped queries instead of open data access",
+            "Parameterization at the boundary",
+            "Never handing the model raw SQL or a database connection",
+            "Activity types: code-along, exercise"
+          ],
+          "objects": [
+            "Object: Lesson: Preventing Database Exposure at the Boundary",
+            "Assessment: Quiz: Preventing Database Exposure at the Boundary"
+          ]
+        },
+        {
+          "title": "Validating Inputs and Sanitizing Returned Data",
+          "hours": 1,
+          "topics": [
+            "Validating tool arguments before they reach data access",
+            "Sanitizing data returned across the boundary",
+            "Prompt-injection and sensitive-data-leakage vectors and defenses",
+            "Activity types: code-along, exercise"
+          ],
+          "objects": [
+            "Object: Lesson: Validating Inputs and Sanitizing Returned Data",
+            "Assessment: Quiz: Validating Inputs and Sanitizing Returned Data"
+          ]
+        },
+        {
+          "title": "Authentication and Authorization for MCP Servers",
+          "hours": 1,
+          "topics": [
+            "Authenticating callers of an MCP server",
+            "Authorizing access per tool and per resource",
+            "Least-privilege credentials for the server's own data access",
+            "Activity types: code-along, exercise"
+          ],
+          "objects": [
+            "Object: Lesson: Authentication and Authorization for MCP Servers",
+            "Assessment: Quiz: Authentication and Authorization for MCP Servers"
+          ]
+        },
+        {
+          "title": "Secure Error Handling and Logging",
+          "hours": 1,
+          "topics": [
+            "Error handling that leaks no schema, stack traces, or sensitive values",
+            "Logging that records what is needed without exposing secrets or personally identifiable information",
+            "Failure modes that keep the boundary intact",
+            "Activity types: code-along, exercise"
+          ],
+          "objects": [
+            "Object: Lesson: Secure Error Handling and Logging",
+            "Assessment: Quiz: Secure Error Handling and Logging"
+          ]
+        },
+        {
+          "title": "Capstone Lab — Shielded Transaction Context",
+          "hours": 1,
+          "topics": [
+            "Assemble a secure MCP server that provides transaction context to a language model with the database fully shielded",
+            "Demonstrate least-privilege exposure, input validation, sanitization, authorization, and safe error handling together",
+            "Verify the boundary holds against database-exposure and injection attempts",
+            "Activity type: hands-on capstone lab (adapted capstone structure per `capstone-design-process.md`)"
+          ],
+          "objects": [
+            "Object: Lesson: Capstone Lab — Shielded Transaction Context",
+            "Assessment: Quiz: Capstone Lab — Shielded Transaction Context"
+          ]
+        }
+      ]
+    }
+  ]
+}
