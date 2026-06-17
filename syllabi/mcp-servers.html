@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: MCP Servers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+.review-banner {
+    background: rgba(255, 183, 3, 0.10);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--amber);
+    font-weight: 600;
+}
+.review-banner i {
+    font-size: 16px;
+    flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: MCP Servers</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Cyber Developer Associate</span>
+                <span><i class="fa-regular fa-clock"></i> 10 hours</span>
+                <span class="badge">CURRENT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Course description pending.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Explain why the Model Context Protocol exists and how its host, client, and server roles route context to a language model.</li>
+                <li>Explain why an MCP server is a security boundary rather than a passive connector.</li>
+                <li>Frame the course's central problem: providing useful local context to a model without exposing the underlying database.</li>
+                <li>Distinguish the three MCP primitives — tools, resources, and prompts — by what each one does.</li>
+                <li>Choose the appropriate primitive for a given context-provision need.</li>
+                <li>Identify the data-exposure surface each primitive creates and its security implications.</li>
+                <li>Set up the official Python MCP SDK and scaffold a runnable server.</li>
+                <li>Define a single read-only tool that returns a scoped answer from a local transaction store.</li>
+                <li>Run the server over the stdio transport.</li>
+                <li>Connect a client and trace a request and response across the boundary.</li>
+                <li>Apply the least-privilege principle to scope what a model can see through the server.</li>
+                <li>Choose between resources and tools for exposing stored data based on exposure risk.</li>
+                <li>Return safe, shaped views of data instead of raw rows.</li>
+                <li>Recognize and correct common over-exposure anti-patterns.</li>
+                <li>Apply scoped retrieval so the server reads only the data a task requires.</li>
+                <li>Parameterize all data access at the boundary to prevent injection into queries.</li>
+                <li>Keep raw SQL and database connections entirely off the model side.</li>
+                <li>Validate tool arguments against a strict schema before they are used.</li>
+                <li>Sanitize data returned across the boundary to prevent sensitive-data leakage.</li>
+                <li>Recognize and defend against prompt-injection vectors carried in data.</li>
+                <li>Distinguish authentication from authorization in the context of an MCP server.</li>
+                <li>Authorize access per operation so each tool exposes only what its caller may use.</li>
+                <li>Configure least-privilege credentials for the server's own access to the data store.</li>
+                <li>Return errors across the boundary that reveal no schema, stack traces, or sensitive values.</li>
+                <li>Log server activity usefully without recording secrets or personally identifiable information.</li>
+                <li>Design failure modes that keep the boundary intact under error conditions.</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">MCP Foundations &amp; Your First Secure Server</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: What MCP Is and the Trust Model (1h)</div>
+                    <ul class="topic-list">
+                        <li>Why the Model Context Protocol exists: standardized context for language models</li>
+                        <li>The host / client / server architecture and how messages flow</li>
+                        <li>The MCP server as a security boundary, not just a connector</li>
+                        <li>Local context versus direct database access — framing the course's central problem</li>
+                        <li>Activity type: demonstration</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: MCP Primitives — Tools, Resources, and Prompts (1h)</div>
+                    <ul class="topic-list">
+                        <li>Tools (model-invoked actions), resources (readable data), and prompts (reusable templates)</li>
+                        <li>Choosing the right primitive for a given need</li>
+                        <li>The data-exposure surface each primitive creates</li>
+                        <li>Activity type: exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: Building Your First Secure Server with the Python SDK (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>Setting up the official Python MCP SDK</li>
+                        <li>Defining a single read-only tool over a local transaction store</li>
+                        <li>Serving over the stdio transport</li>
+                        <li>Connecting a client and observing the boundary in action</li>
+                        <li>Activity type: code-along</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 4: Exposing Data with Least Privilege — Resources vs Tools (1.5h)</div>
+                    <ul class="topic-list">
+                        <li>Scoping what the model can see to the minimum required</li>
+                        <li>Resources versus tools for exposing stored data</li>
+                        <li>Returning safe, shaped views instead of raw rows</li>
+                        <li>Activity types: code-along, exercise</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Hardening the Boundary</span>
+                    <span class="module-hours">5 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 5: Preventing Database Exposure at the Boundary (1h)</div>
+                    <ul class="topic-list">
+                        <li>Scoped queries instead of open data access</li>
+                        <li>Parameterization at the boundary</li>
+                        <li>Never handing the model raw SQL or a database connection</li>
+                        <li>Activity types: code-along, exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: Validating Inputs and Sanitizing Returned Data (1h)</div>
+                    <ul class="topic-list">
+                        <li>Validating tool arguments before they reach data access</li>
+                        <li>Sanitizing data returned across the boundary</li>
+                        <li>Prompt-injection and sensitive-data-leakage vectors and defenses</li>
+                        <li>Activity types: code-along, exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 7: Authentication and Authorization for MCP Servers (1h)</div>
+                    <ul class="topic-list">
+                        <li>Authenticating callers of an MCP server</li>
+                        <li>Authorizing access per tool and per resource</li>
+                        <li>Least-privilege credentials for the server's own data access</li>
+                        <li>Activity types: code-along, exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: Secure Error Handling and Logging (1h)</div>
+                    <ul class="topic-list">
+                        <li>Error handling that leaks no schema, stack traces, or sensitive values</li>
+                        <li>Logging that records what is needed without exposing secrets or personally identifiable information</li>
+                        <li>Failure modes that keep the boundary intact</li>
+                        <li>Activity types: code-along, exercise</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: Capstone Lab — Shielded Transaction Context (1h)</div>
+                    <ul class="topic-list">
+                        <li>Assemble a secure MCP server that provides transaction context to a language model with the database fully shielded</li>
+                        <li>Demonstrate least-privilege exposure, input validation, sanitization, authorization, and safe error handling together</li>
+                        <li>Verify the boundary holds against database-exposure and injection attempts</li>
+                        <li>Activity type: hands-on capstone lab (adapted capstone structure per `capstone-design-process.md`)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>
