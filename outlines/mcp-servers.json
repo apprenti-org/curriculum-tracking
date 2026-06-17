@@ -1,148 +1,141 @@
 {
-  "course": "MCP Servers",
-  "totalHours": 10,
-  "totalModules": 2,
-  "totalLessons": 9,
-  "modules": [
+ "course": "MCP Servers (Cyber Developer Associate)",
+ "totalHours": 10,
+ "totalLessons": 9,
+ "totalModules": 2,
+ "modules": [
+  {
+   "name": "MCP Foundations & Your First Secure Server",
+   "hours": 5,
+   "description": "MCP's trust model and primitives, then building a first secure server that exposes only shaped, least-privilege answers over a transaction store.",
+   "lessons": [
     {
-      "name": "MCP Foundations & Your First Secure Server",
-      "hours": 5,
-      "lessons": [
-        {
-          "title": "What MCP Is and the Trust Model",
-          "hours": 1,
-          "topics": [
-            "Why the Model Context Protocol exists: standardized context for language models",
-            "The host / client / server architecture and how messages flow",
-            "The MCP server as a security boundary, not just a connector",
-            "Local context versus direct database access — framing the course's central problem",
-            "Activity type: demonstration"
-          ],
-          "objects": [
-            "Object: Lesson: What MCP Is and the Trust Model",
-            "Assessment: Quiz: What MCP Is and the Trust Model"
-          ]
-        },
-        {
-          "title": "MCP Primitives — Tools, Resources, and Prompts",
-          "hours": 1,
-          "topics": [
-            "Tools (model-invoked actions), resources (readable data), and prompts (reusable templates)",
-            "Choosing the right primitive for a given need",
-            "The data-exposure surface each primitive creates",
-            "Activity type: exercise"
-          ],
-          "objects": [
-            "Object: Lesson: MCP Primitives — Tools, Resources, and Prompts",
-            "Assessment: Quiz: MCP Primitives — Tools, Resources, and Prompts"
-          ]
-        },
-        {
-          "title": "Building Your First Secure Server with the Python SDK",
-          "hours": 1.5,
-          "topics": [
-            "Setting up the official Python MCP SDK",
-            "Defining a single read-only tool over a local transaction store",
-            "Serving over the stdio transport",
-            "Connecting a client and observing the boundary in action",
-            "Activity type: code-along"
-          ],
-          "objects": [
-            "Object: Lesson: Building Your First Secure Server with the Python SDK",
-            "Assessment: Quiz: Building Your First Secure Server with the Python SDK"
-          ]
-        },
-        {
-          "title": "Exposing Data with Least Privilege — Resources vs Tools",
-          "hours": 1.5,
-          "topics": [
-            "Scoping what the model can see to the minimum required",
-            "Resources versus tools for exposing stored data",
-            "Returning safe, shaped views instead of raw rows",
-            "Activity types: code-along, exercise"
-          ],
-          "objects": [
-            "Object: Lesson: Exposing Data with Least Privilege — Resources vs Tools",
-            "Assessment: Quiz: Exposing Data with Least Privilege — Resources vs Tools"
-          ]
-        }
-      ]
+     "title": "What MCP Is and the Trust Model",
+     "hours": 1,
+     "topics": [
+      "Why MCP Exists and How the Roles Fit Together",
+      "The MCP Server as a Security Boundary",
+      "Local Context Without Database Exposure",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — What MCP Is and the Trust Model (scorm-lesson-01-what-mcp-is-and-the-trust-model.zip)"
+     ]
     },
     {
-      "name": "Hardening the Boundary",
-      "hours": 5,
-      "lessons": [
-        {
-          "title": "Preventing Database Exposure at the Boundary",
-          "hours": 1,
-          "topics": [
-            "Scoped queries instead of open data access",
-            "Parameterization at the boundary",
-            "Never handing the model raw SQL or a database connection",
-            "Activity types: code-along, exercise"
-          ],
-          "objects": [
-            "Object: Lesson: Preventing Database Exposure at the Boundary",
-            "Assessment: Quiz: Preventing Database Exposure at the Boundary"
-          ]
-        },
-        {
-          "title": "Validating Inputs and Sanitizing Returned Data",
-          "hours": 1,
-          "topics": [
-            "Validating tool arguments before they reach data access",
-            "Sanitizing data returned across the boundary",
-            "Prompt-injection and sensitive-data-leakage vectors and defenses",
-            "Activity types: code-along, exercise"
-          ],
-          "objects": [
-            "Object: Lesson: Validating Inputs and Sanitizing Returned Data",
-            "Assessment: Quiz: Validating Inputs and Sanitizing Returned Data"
-          ]
-        },
-        {
-          "title": "Authentication and Authorization for MCP Servers",
-          "hours": 1,
-          "topics": [
-            "Authenticating callers of an MCP server",
-            "Authorizing access per tool and per resource",
-            "Least-privilege credentials for the server's own data access",
-            "Activity types: code-along, exercise"
-          ],
-          "objects": [
-            "Object: Lesson: Authentication and Authorization for MCP Servers",
-            "Assessment: Quiz: Authentication and Authorization for MCP Servers"
-          ]
-        },
-        {
-          "title": "Secure Error Handling and Logging",
-          "hours": 1,
-          "topics": [
-            "Error handling that leaks no schema, stack traces, or sensitive values",
-            "Logging that records what is needed without exposing secrets or personally identifiable information",
-            "Failure modes that keep the boundary intact",
-            "Activity types: code-along, exercise"
-          ],
-          "objects": [
-            "Object: Lesson: Secure Error Handling and Logging",
-            "Assessment: Quiz: Secure Error Handling and Logging"
-          ]
-        },
-        {
-          "title": "Capstone Lab — Shielded Transaction Context",
-          "hours": 1,
-          "topics": [
-            "Assemble a secure MCP server that provides transaction context to a language model with the database fully shielded",
-            "Demonstrate least-privilege exposure, input validation, sanitization, authorization, and safe error handling together",
-            "Verify the boundary holds against database-exposure and injection attempts",
-            "Activity type: hands-on capstone lab (adapted capstone structure per `capstone-design-process.md`)"
-          ],
-          "objects": [
-            "Object: Lesson: Capstone Lab — Shielded Transaction Context",
-            "Assessment: Quiz: Capstone Lab — Shielded Transaction Context"
-          ]
-        }
-      ]
+     "title": "MCP Primitives — Tools, Resources, and Prompts",
+     "hours": 1,
+     "topics": [
+      "The Three Primitives and What Each Does",
+      "Choosing the Right Primitive",
+      "The Data-Exposure Surface of Each Primitive",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — MCP Primitives — Tools, Resources, and Prompts (scorm-lesson-02-mcp-primitives-tools-resources-prompts.zip)"
+     ]
+    },
+    {
+     "title": "Building Your First Secure Server with the Python SDK",
+     "hours": 1.5,
+     "topics": [
+      "Setting Up the Python MCP SDK",
+      "Defining a Read-Only Tool",
+      "Running Over the stdio Transport",
+      "Connecting a Client and Tracing a Request",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — Building Your First Secure Server with the Python SDK (scorm-lesson-03-building-your-first-secure-server.zip)"
+     ]
+    },
+    {
+     "title": "Exposing Data with Least Privilege — Resources vs Tools",
+     "hours": 1.5,
+     "topics": [
+      "Least Privilege at the MCP Boundary",
+      "Resources vs Tools for Data Exposure",
+      "Returning Safe, Shaped Views",
+      "Over-Exposure Anti-Patterns",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — Exposing Data with Least Privilege — Resources vs Tools (scorm-lesson-04-exposing-data-with-least-privilege.zip)"
+     ]
     }
-  ]
+   ]
+  },
+  {
+   "name": "Hardening the Boundary",
+   "hours": 5,
+   "description": "Closing the common exposure paths — database access, input validation and output sanitization, authorization, and safe error handling and logging — culminating in the course capstone.",
+   "lessons": [
+    {
+     "title": "Preventing Database Exposure at the Boundary",
+     "hours": 1,
+     "topics": [
+      "Scoped Retrieval, Not Open Access",
+      "Parameterization at the Boundary",
+      "Never Hand Over SQL or Connections",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — Preventing Database Exposure at the Boundary (scorm-lesson-05-preventing-database-exposure.zip)"
+     ]
+    },
+    {
+     "title": "Validating Inputs and Sanitizing Returned Data",
+     "hours": 1,
+     "topics": [
+      "Validating Tool Arguments *(OJL 1.c)",
+      "Sanitizing Returned Data *(OJL 1.c)",
+      "Prompt-Injection Vectors Across the Boundary",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — Validating Inputs and Sanitizing Returned Data (scorm-lesson-06-validating-inputs-and-sanitizing-data.zip)"
+     ]
+    },
+    {
+     "title": "Authentication and Authorization for MCP Servers",
+     "hours": 1,
+     "topics": [
+      "Authentication vs Authorization at the Server",
+      "Authorizing Access Per Operation",
+      "Least-Privilege Credentials for the Data Store",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — Authentication and Authorization for MCP Servers (scorm-lesson-07-authentication-and-authorization.zip)"
+     ]
+    },
+    {
+     "title": "Secure Error Handling and Logging",
+     "hours": 1,
+     "topics": [
+      "Errors That Don't Leak",
+      "Logging Without Leaking",
+      "Failure Modes That Hold the Boundary",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — Secure Error Handling and Logging (scorm-lesson-08-secure-error-handling-and-logging.zip)"
+     ]
+    },
+    {
+     "title": "Capstone Lab — Shielded Transaction Context",
+     "hours": 1,
+     "topics": [
+      "What You Build",
+      "The Build Flow",
+      "Adversarial Verification",
+      "Wrap-Up"
+     ],
+     "objects": [
+      "SCORM: Interactive — Capstone Lab — Shielded Transaction Context (scorm-lesson-09-capstone-shielded-transaction-context.zip)"
+     ]
+    }
+   ]
+  }
+ ]
 }

@@ -839,13 +839,13 @@ const courseData = [
     "hours": 10,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": true,
     "note": "Cyber Developer Associate net-new 10h Phase 5 course. 2 modules, 9 lessons (L9 course-level capstone lab): What MCP Is & the Trust Model; MCP Primitives (tools/resources/prompts); Building Your First Secure Server (Python SDK, stdio); Exposing Data with Least Privilege; Preventing Database Exposure; Validating Inputs & Sanitizing Data; Authentication & Authorization; Secure Error Handling & Logging; Capstone Lab — Shielded Transaction Context. Security-by-construction; official Python MCP SDK; running example exposes transaction context to an LLM with the database shielded. Design complete (course outline + standard-alignment report + 9 lesson outlines + 9 lesson sources); content scaffolding underway. OJL 1.c. Onboarding meta apprenti-org/design-documentation#957.",
     "driveFolder": null,
-    "statusConfirmed": false,
+    "statusConfirmed": true,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
   },
   {
