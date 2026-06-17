@@ -4747,6 +4747,219 @@ const courseOutlines = {
       ]
     }
   },
+  "Docker Container Isolation (Cyber Developer Associate)": {
+    "course": "Docker Container Isolation",
+    "totalHours": 16,
+    "totalModules": 4,
+    "totalLessons": 13,
+    "modules": [
+      {
+        "name": "Container Isolation Fundamentals",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Why Containers — Isolation as a Security Boundary",
+            "hours": 1,
+            "topics": [
+              "Virtual machines versus containers, and what \"isolation\" actually means",
+              "What isolation buys you for security: blast-radius containment, reproducibility, least exposure",
+              "The course's central problem: secure, isolated database environments",
+              "Activity type: demonstration"
+            ],
+            "objects": [
+              "Object: Lesson: Why Containers — Isolation as a Security Boundary",
+              "Assessment: Quiz: Why Containers — Isolation as a Security Boundary"
+            ]
+          },
+          {
+            "title": "The Anatomy of Container Isolation",
+            "hours": 1,
+            "topics": [
+              "Namespaces, control groups (cgroups), and the isolated filesystem/network/process view",
+              "What is isolated by default — and what is *not*",
+              "How the host mediates the boundary the container sees",
+              "Activity type: demonstration"
+            ],
+            "objects": [
+              "Object: Lesson: The Anatomy of Container Isolation",
+              "Assessment: Quiz: The Anatomy of Container Isolation"
+            ]
+          },
+          {
+            "title": "Images, Registries, and Trusted Base Images",
+            "hours": 1,
+            "topics": [
+              "Images as templates; tags and image digests",
+              "Registries and image provenance; choosing a trusted base image",
+              "Base-image selection as a supply-chain security decision",
+              "Activity type: exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Images, Registries, and Trusted Base Images",
+              "Assessment: Quiz: Images, Registries, and Trusted Base Images"
+            ]
+          },
+          {
+            "title": "Core Docker CLI for Isolated Environments",
+            "hours": 1,
+            "topics": [
+              "`run` / `create` / `start` / `stop` / `ps` / `inspect` / `rm`",
+              "Observing the isolation boundary directly (processes, mounts, network from inside vs. outside)",
+              "Reading container state when something looks missing",
+              "Activity type: code-along"
+            ],
+            "objects": [
+              "Object: Lesson: Core Docker CLI for Isolated Environments",
+              "Assessment: Quiz: Core Docker CLI for Isolated Environments"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Building & Running Isolated Database Environments",
+        "hours": 5,
+        "lessons": [
+          {
+            "title": "Running a Database in a Container",
+            "hours": 1,
+            "topics": [
+              "Pulling and running a database image",
+              "Ephemeral versus persistent containers",
+              "Port publishing as attack surface — expose only what is needed",
+              "Activity type: code-along"
+            ],
+            "objects": [
+              "Object: Lesson: Running a Database in a Container",
+              "Assessment: Quiz: Running a Database in a Container"
+            ]
+          },
+          {
+            "title": "Authoring a Dockerfile for a Hardened DB Image",
+            "hours": 1.5,
+            "topics": [
+              "`FROM` / `COPY` / `RUN` / `CMD` / `WORKDIR` and the build/tag lifecycle",
+              "Minimal, purpose-scoped layers; `COPY` over `ADD`; why fewer instructions means less to exploit",
+              "Building a database image scoped to exactly one job",
+              "Activity types: code-along, exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Authoring a Dockerfile for a Hardened DB Image",
+              "Assessment: Quiz: Authoring a Dockerfile for a Hardened DB Image"
+            ]
+          },
+          {
+            "title": "Persisting Data Securely with Volumes",
+            "hours": 1,
+            "topics": [
+              "Named volumes versus bind mounts; the data lifecycle independent of the container",
+              "Protecting data at rest in isolated storage; backups and ownership",
+              "Activity type: code-along"
+            ],
+            "objects": [
+              "Object: Lesson: Persisting Data Securely with Volumes",
+              "Assessment: Quiz: Persisting Data Securely with Volumes"
+            ]
+          },
+          {
+            "title": "Network Isolation for Database Environments",
+            "hours": 1.5,
+            "topics": [
+              "User-defined networks versus the default bridge",
+              "Restricting reachability so only the application that needs the database can reach it",
+              "Never exposing the database port to the host/world by default",
+              "Activity types: code-along, exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Network Isolation for Database Environments",
+              "Assessment: Quiz: Network Isolation for Database Environments"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hardening & Securing Information Through Isolation",
+        "hours": 5,
+        "lessons": [
+          {
+            "title": "Least-Privilege Containers — Non-Root and Capabilities",
+            "hours": 1,
+            "topics": [
+              "Running as a non-root user; dropping Linux capabilities",
+              "Read-only root filesystems and `no-new-privileges`",
+              "Why a container that escapes should land somewhere harmless",
+              "Activity types: code-along, exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Least-Privilege Containers — Non-Root and Capabilities",
+              "Assessment: Quiz: Least-Privilege Containers — Non-Root and Capabilities"
+            ]
+          },
+          {
+            "title": "Secrets Management — Keeping Credentials Out of Images",
+            "hours": 1.5,
+            "topics": [
+              "Why credentials must never live in an image or its layers (layer history is forever)",
+              "Injecting DB credentials at run time; Docker secrets and environment-injection patterns",
+              "Detecting a credential that leaked into a build",
+              "Activity types: code-along, exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Secrets Management — Keeping Credentials Out of Images",
+              "Assessment: Quiz: Secrets Management — Keeping Credentials Out of Images"
+            ]
+          },
+          {
+            "title": "Hardening Images — Minimal Base, Scanning, and Updates",
+            "hours": 1.5,
+            "topics": [
+              "Minimal and distroless base images to shrink attack surface",
+              "Image scanning for known vulnerabilities",
+              "A patch/rebuild cadence that keeps an image current",
+              "Activity types: code-along, exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Hardening Images — Minimal Base, Scanning, and Updates",
+              "Assessment: Quiz: Hardening Images — Minimal Base, Scanning, and Updates"
+            ]
+          },
+          {
+            "title": "Maintaining Isolated Environments Over Time",
+            "hours": 1,
+            "topics": [
+              "The \"maintain\" half of OJL 5.a: rebuilds, image refreshes, and drift",
+              "Log hygiene and inspecting a long-running environment",
+              "Safe decommissioning — removing containers, volumes, and secrets",
+              "Activity type: exercise"
+            ],
+            "objects": [
+              "Object: Lesson: Maintaining Isolated Environments Over Time",
+              "Assessment: Quiz: Maintaining Isolated Environments Over Time"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Capstone",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "Capstone Lab — Secure Isolated Database Environment",
+            "hours": 2,
+            "topics": [
+              "Assemble a complete isolated database environment: a non-root, network-isolated, volume-backed database container with credentials kept out of the image",
+              "Demonstrate the isolation boundary holds — no unintended reachability, no secrets in the image, least privilege in effect",
+              "Defend the isolation and hardening choices made",
+              "Activity type: hands-on capstone lab (adapted capstone structure per `capstone-design-process.md`)"
+            ],
+            "objects": [
+              "Object: Lesson: Capstone Lab — Secure Isolated Database Environment",
+              "Assessment: Quiz: Capstone Lab — Secure Isolated Database Environment"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Helpdesk Software Fundamentals": {
     "course": "Helpdesk Software Fundamentals",
     "totalHours": 16,

@@ -140,6 +140,11 @@
   "id": "databases-in-java"
  },
  {
+  "file": "docker-container-isolation.json",
+  "course": "Docker Container Isolation (Cyber Developer Associate)",
+  "id": "docker-container-isolation"
+ },
+ {
   "file": "helpdesk-software-fundamentals.json",
   "course": "Helpdesk Software Fundamentals",
   "id": "helpdesk-software-fundamentals"
