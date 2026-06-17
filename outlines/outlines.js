@@ -4768,7 +4768,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Why Containers — Isolation as a Security Boundary",
-              "Assessment: Quiz: Why Containers — Isolation as a Security Boundary"
+              "Assessment: Quiz: Why Containers — Isolation as a Security Boundary",
+              "SCORM: Interactive — Why Containers — Isolation as a Security Boundary (scorm-lesson-01-why-containers-isolation-as-a-security-boundary.zip)"
             ]
           },
           {
@@ -4782,7 +4783,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Anatomy of Container Isolation",
-              "Assessment: Quiz: The Anatomy of Container Isolation"
+              "Assessment: Quiz: The Anatomy of Container Isolation",
+              "SCORM: Interactive — The Anatomy of Container Isolation (scorm-lesson-02-the-anatomy-of-container-isolation.zip)"
             ]
           },
           {
@@ -4796,7 +4798,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Images, Registries, and Trusted Base Images",
-              "Assessment: Quiz: Images, Registries, and Trusted Base Images"
+              "Assessment: Quiz: Images, Registries, and Trusted Base Images",
+              "SCORM: Interactive — Images, Registries, and Trusted Base Images (scorm-lesson-03-images-registries-and-trusted-base-images.zip)"
             ]
           },
           {
@@ -4810,7 +4813,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Core Docker CLI for Isolated Environments",
-              "Assessment: Quiz: Core Docker CLI for Isolated Environments"
+              "Assessment: Quiz: Core Docker CLI for Isolated Environments",
+              "SCORM: Interactive — Core Docker CLI for Isolated Environments (scorm-lesson-04-core-docker-cli-for-isolated-environments.zip)"
             ]
           }
         ]
@@ -4830,7 +4834,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Running a Database in a Container",
-              "Assessment: Quiz: Running a Database in a Container"
+              "Assessment: Quiz: Running a Database in a Container",
+              "SCORM: Interactive — Running a Database in a Container (scorm-lesson-05-running-a-database-in-a-container.zip)"
             ]
           },
           {
@@ -4844,7 +4849,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Authoring a Dockerfile for a Hardened DB Image",
-              "Assessment: Quiz: Authoring a Dockerfile for a Hardened DB Image"
+              "Assessment: Quiz: Authoring a Dockerfile for a Hardened DB Image",
+              "SCORM: Interactive — Authoring a Dockerfile for a Hardened DB Image (scorm-lesson-06-authoring-a-dockerfile-for-a-hardened-db-image.zip)"
             ]
           },
           {
@@ -4857,7 +4863,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Persisting Data Securely with Volumes",
-              "Assessment: Quiz: Persisting Data Securely with Volumes"
+              "Assessment: Quiz: Persisting Data Securely with Volumes",
+              "SCORM: Interactive — Persisting Data Securely with Volumes (scorm-lesson-07-persisting-data-securely-with-volumes.zip)"
             ]
           },
           {
@@ -4871,7 +4878,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Network Isolation for Database Environments",
-              "Assessment: Quiz: Network Isolation for Database Environments"
+              "Assessment: Quiz: Network Isolation for Database Environments",
+              "SCORM: Interactive — Network Isolation for Database Environments (scorm-lesson-08-network-isolation-for-database-environments.zip)"
             ]
           }
         ]
@@ -4891,7 +4899,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Least-Privilege Containers — Non-Root and Capabilities",
-              "Assessment: Quiz: Least-Privilege Containers — Non-Root and Capabilities"
+              "Assessment: Quiz: Least-Privilege Containers — Non-Root and Capabilities",
+              "SCORM: Interactive — Least-Privilege Containers — Non-Root and Capabilities (scorm-lesson-09-least-privilege-containers-non-root-and-capabilities.zip)"
             ]
           },
           {
@@ -4905,7 +4914,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secrets Management — Keeping Credentials Out of Images",
-              "Assessment: Quiz: Secrets Management — Keeping Credentials Out of Images"
+              "Assessment: Quiz: Secrets Management — Keeping Credentials Out of Images",
+              "SCORM: Interactive — Secrets Management — Keeping Credentials Out of Images (scorm-lesson-10-secrets-management-keeping-credentials-out-of-images.zip)"
             ]
           },
           {
@@ -4919,7 +4929,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hardening Images — Minimal Base, Scanning, and Updates",
-              "Assessment: Quiz: Hardening Images — Minimal Base, Scanning, and Updates"
+              "Assessment: Quiz: Hardening Images — Minimal Base, Scanning, and Updates",
+              "SCORM: Interactive — Hardening Images — Minimal Base, Scanning, and Updates (scorm-lesson-11-hardening-images-minimal-base-scanning-and-updates.zip)"
             ]
           },
           {
@@ -4933,7 +4944,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Maintaining Isolated Environments Over Time",
-              "Assessment: Quiz: Maintaining Isolated Environments Over Time"
+              "Assessment: Quiz: Maintaining Isolated Environments Over Time",
+              "SCORM: Interactive — Maintaining Isolated Environments Over Time (scorm-lesson-12-maintaining-isolated-environments-over-time.zip)"
             ]
           }
         ]
@@ -4953,7 +4965,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Capstone Lab — Secure Isolated Database Environment",
-              "Assessment: Quiz: Capstone Lab — Secure Isolated Database Environment"
+              "SCORM: Interactive — Capstone Lab — Secure Isolated Database Environment (scorm-lesson-13-capstone-secure-isolated-database-environment.zip)"
             ]
           }
         ]

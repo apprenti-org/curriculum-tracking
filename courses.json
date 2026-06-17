@@ -480,13 +480,13 @@
       "hours": 16,
       "status": {
         "design": "Complete",
-        "development": "In Progress"
+        "development": "Complete"
       },
       "syllabus": null,
       "outline": true,
-      "note": "Cyber Developer Associate net-new 16h Phase 4 (Secure Data Management) course. Design complete through lesson sources (course outline, 13 lesson outlines, 13 lesson sources); content scaffolding in progress. Security by construction — container isolation as a security boundary; running goal is a secure, isolated database environment. OJL 5.a. Onboarding meta apprenti-org/design-documentation#983.",
+      "note": "Cyber Developer Associate net-new 16h Phase 4 (Secure Data Management) course. 4 modules, 13 lessons (L13 capstone). Built and deployed: content (apprenti-org/docker-container-isolation-content), student starters (docker-container-isolation-student), instructor solutions + guides + pacing (docker-container-isolation-instructor); 13 SCORM packages. Security by construction — container isolation as a security boundary; secure, isolated database environment. OJL 5.a. Pending Absorb publication. Onboarding meta apprenti-org/design-documentation#983.",
       "driveFolder": null,
-      "statusConfirmed": false,
+      "statusConfirmed": true,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation"
     },
     {
