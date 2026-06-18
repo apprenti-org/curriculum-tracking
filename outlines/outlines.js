@@ -11250,6 +11250,137 @@ const courseOutlines = {
       }
     ]
   },
+  "Secure LLM API Integration": {
+    "course": "Secure LLM API Integration",
+    "totalHours": 20,
+    "totalModules": 3,
+    "totalLessons": 8,
+    "modules": [
+      {
+        "name": "Consuming LLM APIs Safely",
+        "hours": 6,
+        "lessons": [
+          {
+            "title": "Anatomy of an LLM API Call",
+            "hours": 2,
+            "topics": [
+              "HTTP requests to an LLM API: endpoints, headers, authentication",
+              "Request and response JSON shapes; status codes and error envelopes",
+              "The model boundary as an untrusted edge — why client-side discipline matters"
+            ],
+            "objects": [
+              "Object: Lesson: Anatomy of an LLM API Call",
+              "Assessment: Quiz: Anatomy of an LLM API Call"
+            ]
+          },
+          {
+            "title": "Safely Parsing JSON Responses from LLM APIs",
+            "hours": 2,
+            "topics": [
+              "Defensive JSON parsing: never assume shape; validate against a schema",
+              "Handling malformed, partial, and unexpected responses without crashing",
+              "Type coercion and bounds checks before using model output"
+            ],
+            "objects": [
+              "Object: Lesson: Safely Parsing JSON Responses from LLM APIs",
+              "Assessment: Quiz: Safely Parsing JSON Responses from LLM APIs"
+            ]
+          },
+          {
+            "title": "API Key Management and Secrets Handling",
+            "hours": 2,
+            "topics": [
+              "Keeping keys out of source: environment variables, secret stores / vaults",
+              "Key scoping, rotation, and revocation",
+              "Safe runtime loading; avoiding accidental logging or echoing of secrets"
+            ],
+            "objects": [
+              "Object: Lesson: API Key Management and Secrets Handling",
+              "Assessment: Quiz: API Key Management and Secrets Handling"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Defending the AI Boundary",
+        "hours": 7,
+        "lessons": [
+          {
+            "title": "Prompt Injection — Threat Model and Attack Patterns",
+            "hours": 2,
+            "topics": [
+              "What prompt injection is; direct vs indirect (data-borne) injection",
+              "Attack patterns: instruction override, data exfiltration, tool/agent abuse",
+              "Mapping the trust boundary: where untrusted text enters the prompt"
+            ],
+            "objects": [
+              "Object: Lesson: Prompt Injection — Threat Model and Attack Patterns",
+              "Assessment: Quiz: Prompt Injection — Threat Model and Attack Patterns"
+            ]
+          },
+          {
+            "title": "Strict Data Sanitization to Prevent Prompt Injection",
+            "hours": 2.5,
+            "topics": [
+              "Input sanitization and allow-listing before composing prompts",
+              "Separating instructions from data; delimiting and neutralizing untrusted text",
+              "Validating tool / function-call arguments the model proposes"
+            ],
+            "objects": [
+              "Object: Lesson: Strict Data Sanitization to Prevent Prompt Injection",
+              "Assessment: Quiz: Strict Data Sanitization to Prevent Prompt Injection"
+            ]
+          },
+          {
+            "title": "Preventing Sensitive Data Leakage",
+            "hours": 2.5,
+            "topics": [
+              "Output filtering and PII / secret redaction before returning model responses",
+              "Minimizing what is sent to the model; data-retention and prompt-logging hygiene",
+              "Logging discipline — never log raw prompts, responses, or secrets"
+            ],
+            "objects": [
+              "Object: Lesson: Preventing Sensitive Data Leakage",
+              "Assessment: Quiz: Preventing Sensitive Data Leakage"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Building a Secure LLM API Application",
+        "hours": 7,
+        "lessons": [
+          {
+            "title": "Architecting a Secure Python LLM Microservice",
+            "hours": 2,
+            "topics": [
+              "Service structure: request handling, the LLM client layer, response handling",
+              "Where each control lives — key management, sanitization, output filtering",
+              "Failure handling, timeouts, and rate / abuse limits at the boundary"
+            ],
+            "objects": [
+              "Object: Lesson: Architecting a Secure Python LLM Microservice",
+              "Assessment: Quiz: Architecting a Secure Python LLM Microservice"
+            ]
+          },
+          {
+            "title": "Capstone — Advanced Python AI Service",
+            "hours": 5,
+            "topics": [
+              "**Authored as a `type: capstone` lesson** (see `capstone-design-process.md` §5/§5a).",
+              "Scenario: build a secure Python microservice that consumes an LLM via an API",
+              "Demonstrates proper API key management and safe AI response handling end to end",
+              "Assessed by the Competency-Based Rubric (`cbr.md`) + evidence map — no quiz"
+            ],
+            "objects": [
+              "Object: Lesson: Capstone — Advanced Python AI Service",
+              "Assessment: Quiz: Capstone — Advanced Python AI Service"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Security and Cybersecurity Fundamentals": {
     "courseName": "Security and Cybersecurity Fundamentals",
     "totalHours": 220,
