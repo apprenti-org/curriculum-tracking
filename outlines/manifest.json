@@ -330,6 +330,11 @@
   "id": "react"
  },
  {
+  "file": "secure-llm-api-integration.json",
+  "course": "Secure LLM API Integration",
+  "id": "secure-llm-api-integration"
+ },
+ {
   "file": "security-cybersecurity-fundamentals.json",
   "course": "Security and Cybersecurity Fundamentals",
   "id": "security-and-cybersecurity-fundamentals"
