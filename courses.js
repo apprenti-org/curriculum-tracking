@@ -1051,6 +1051,21 @@ const courseData = [
     "statusConfirmed": false
   },
   {
+    "id": "secure-llm-api-integration",
+    "name": "Secure LLM API Integration (Cyber Developer Associate)",
+    "hours": 20,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": null,
+    "outline": true,
+    "note": "Cyber Developer Associate net-new 20h Phase 5 course. 3 modules, 8 lessons (L8 capstone). Design complete; content production (Row 7, apprenti-org/design-documentation#1023) and SCORM packaging (Row 9, #1026) complete; deployment pending (development flips to Complete at Pre-Upload Reconciliation per precedent). Security focus: consuming LLM APIs safely, defending the AI boundary against prompt injection and data leakage, and building a secure Python LLM microservice. OJL 1.c. Onboarding meta apprenti-org/design-documentation#1013.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "security-and-cybersecurity-fundamentals",
     "name": "Security and Cybersecurity Fundamentals",
     "hours": 220,
