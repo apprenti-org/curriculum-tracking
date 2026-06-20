@@ -1,0 +1,182 @@
+{
+  "course": "XSS Defense & Secure Data Parsing Lab",
+  "totalHours": 24,
+  "totalModules": 3,
+  "totalLessons": 12,
+  "modules": [
+    {
+      "name": "XSS Defense Labs",
+      "hours": 10,
+      "lessons": [
+        {
+          "title": "Reflected XSS and the Sink Map",
+          "hours": 2,
+          "topics": [
+            "Trace untrusted input from request to DOM sink",
+            "Reproduce a reflected XSS, then neutralize it with `textContent` and contextual output handling",
+            "Build a reusable map of dangerous DOM sinks to watch for"
+          ],
+          "objects": [
+            "Object: Lesson: Reflected XSS and the Sink Map",
+            "Assessment: Quiz: Reflected XSS and the Sink Map"
+          ]
+        },
+        {
+          "title": "Stored XSS and Safe Rendering",
+          "hours": 2,
+          "topics": [
+            "How persisted, attacker-controlled data executes on render",
+            "Render stored data without executing it",
+            "Encode-on-output discipline across DOM updates"
+          ],
+          "objects": [
+            "Object: Lesson: Stored XSS and Safe Rendering",
+            "Assessment: Quiz: Stored XSS and Safe Rendering"
+          ]
+        },
+        {
+          "title": "DOM-Based XSS — innerHTML vs. textContent",
+          "hours": 2,
+          "topics": [
+            "Identify client-side-only XSS that never reaches the server",
+            "Refactor `innerHTML` / `insertAdjacentHTML` sinks to `textContent` and safe DOM APIs",
+            "When `createElement` + `append` beats string-built HTML"
+          ],
+          "objects": [
+            "Object: Lesson: DOM-Based XSS — innerHTML vs. textContent",
+            "Assessment: Quiz: DOM-Based XSS — innerHTML vs. textContent"
+          ]
+        },
+        {
+          "title": "Dangerous Contexts — URLs, Attributes, and Event Handlers",
+          "hours": 2,
+          "topics": [
+            "`javascript:` URLs and unsafe `href` / `src` assignment",
+            "Attribute injection and `setAttribute` pitfalls",
+            "Inline event handlers (`on*`) as XSS sinks and their safe alternatives"
+          ],
+          "objects": [
+            "Object: Lesson: Dangerous Contexts — URLs, Attributes, and Event Handlers",
+            "Assessment: Quiz: Dangerous Contexts — URLs, Attributes, and Event Handlers"
+          ]
+        },
+        {
+          "title": "Rendering Untrusted HTML Safely",
+          "hours": 2,
+          "topics": [
+            "When HTML must be rendered: sanitization as XSS defense",
+            "Using a vetted sanitizer (DOMPurify) and a manual allow-list approach",
+            "Verifying the sanitized output actually blocks the payload"
+          ],
+          "objects": [
+            "Object: Lesson: Rendering Untrusted HTML Safely",
+            "Assessment: Quiz: Rendering Untrusted HTML Safely"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Secure Data Parsing Labs",
+      "hours": 8,
+      "lessons": [
+        {
+          "title": "Defensive JSON.parse on Untrusted Input",
+          "hours": 2,
+          "topics": [
+            "Never trust the shape: validate parsed JSON against an expected schema",
+            "Handle malformed, partial, and hostile payloads without crashing",
+            "Type and bounds checks before using parsed values"
+          ],
+          "objects": [
+            "Object: Lesson: Defensive JSON.parse on Untrusted Input",
+            "Assessment: Quiz: Defensive JSON.parse on Untrusted Input"
+          ]
+        },
+        {
+          "title": "Prototype Pollution via Insecure Object Handling",
+          "hours": 2,
+          "topics": [
+            "How `__proto__` / `constructor` keys poison objects during merge or assign",
+            "Reproduce a prototype-pollution attack sourced from parsed JSON",
+            "Defend with null-prototype objects, key guards, and safe merge"
+          ],
+          "objects": [
+            "Object: Lesson: Prototype Pollution via Insecure Object Handling",
+            "Assessment: Quiz: Prototype Pollution via Insecure Object Handling"
+          ]
+        },
+        {
+          "title": "JSON.stringify Pitfalls and Safe Serialization",
+          "hours": 2,
+          "topics": [
+            "Accidental data leakage through over-broad serialization",
+            "`replacer` functions and `toJSON` to control what is emitted",
+            "`reviver` functions on parse; circular-reference and type hazards"
+          ],
+          "objects": [
+            "Object: Lesson: JSON.stringify Pitfalls and Safe Serialization",
+            "Assessment: Quiz: JSON.stringify Pitfalls and Safe Serialization"
+          ]
+        },
+        {
+          "title": "Insecure Object Handling Patterns",
+          "hours": 2,
+          "topics": [
+            "Unsafe dynamic property access and client-side mass assignment",
+            "Type coercion and equality bugs that bypass checks",
+            "Safe object-handling patterns for untrusted data"
+          ],
+          "objects": [
+            "Object: Lesson: Insecure Object Handling Patterns",
+            "Assessment: Quiz: Insecure Object Handling Patterns"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Integrated Client-Side Defense Labs",
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "Secure Render Pipeline — fetch → parse → render",
+          "hours": 2,
+          "topics": [
+            "Consume an API, parse the response defensively, and render to the DOM safely",
+            "Place each control at the right layer of the pipeline",
+            "Verify no untrusted value reaches a dangerous sink"
+          ],
+          "objects": [
+            "Object: Lesson: Secure Render Pipeline — fetch → parse → render",
+            "Assessment: Quiz: Secure Render Pipeline — fetch → parse → render"
+          ]
+        },
+        {
+          "title": "Find-and-Fix Audit Lab",
+          "hours": 2,
+          "topics": [
+            "Audit a small vulnerable client app for XSS and unsafe-parsing flaws",
+            "Prioritize and remediate each finding",
+            "Confirm fixes with the attack payloads that previously succeeded"
+          ],
+          "objects": [
+            "Object: Lesson: Find-and-Fix Audit Lab",
+            "Assessment: Quiz: Find-and-Fix Audit Lab"
+          ]
+        },
+        {
+          "title": "Defense-in-Depth Scenario Lab",
+          "hours": 2,
+          "topics": [
+            "Harden a realistic feature that combines rendering and data parsing",
+            "Layer safe DOM APIs, sanitization, schema validation, and safe object handling",
+            "Demonstrate the feature resists a scripted set of attacks"
+          ],
+          "objects": [
+            "Object: Lesson: Defense-in-Depth Scenario Lab",
+            "Assessment: Quiz: Defense-in-Depth Scenario Lab"
+          ]
+        }
+      ]
+    }
+  ]
+}
