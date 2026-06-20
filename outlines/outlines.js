@@ -11270,7 +11270,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Anatomy of an LLM API Call",
-              "Assessment: Quiz: Anatomy of an LLM API Call"
+              "Assessment: Quiz: Anatomy of an LLM API Call",
+              "SCORM: Interactive — Anatomy of an LLM API Call (scorm-lesson-01-anatomy-of-an-llm-api-call.zip)"
             ]
           },
           {
@@ -11283,7 +11284,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Safely Parsing JSON Responses from LLM APIs",
-              "Assessment: Quiz: Safely Parsing JSON Responses from LLM APIs"
+              "Assessment: Quiz: Safely Parsing JSON Responses from LLM APIs",
+              "SCORM: Interactive — Safely Parsing JSON Responses from LLM APIs (scorm-lesson-02-safely-parsing-json-responses.zip)"
             ]
           },
           {
@@ -11296,7 +11298,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: API Key Management and Secrets Handling",
-              "Assessment: Quiz: API Key Management and Secrets Handling"
+              "Assessment: Quiz: API Key Management and Secrets Handling",
+              "SCORM: Interactive — API Key Management and Secrets Handling (scorm-lesson-03-api-key-management-and-secrets-handling.zip)"
             ]
           }
         ]
@@ -11315,7 +11318,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Prompt Injection — Threat Model and Attack Patterns",
-              "Assessment: Quiz: Prompt Injection — Threat Model and Attack Patterns"
+              "Assessment: Quiz: Prompt Injection — Threat Model and Attack Patterns",
+              "SCORM: Interactive — Prompt Injection — Threat Model and Attack Patterns (scorm-lesson-04-prompt-injection-threat-model.zip)"
             ]
           },
           {
@@ -11328,7 +11332,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Strict Data Sanitization to Prevent Prompt Injection",
-              "Assessment: Quiz: Strict Data Sanitization to Prevent Prompt Injection"
+              "Assessment: Quiz: Strict Data Sanitization to Prevent Prompt Injection",
+              "SCORM: Interactive — Strict Data Sanitization to Prevent Prompt Injection (scorm-lesson-05-strict-data-sanitization.zip)"
             ]
           },
           {
@@ -11341,7 +11346,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Preventing Sensitive Data Leakage",
-              "Assessment: Quiz: Preventing Sensitive Data Leakage"
+              "Assessment: Quiz: Preventing Sensitive Data Leakage",
+              "SCORM: Interactive — Preventing Sensitive Data Leakage (scorm-lesson-06-preventing-sensitive-data-leakage.zip)"
             ]
           }
         ]
@@ -11360,7 +11366,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Architecting a Secure Python LLM Microservice",
-              "Assessment: Quiz: Architecting a Secure Python LLM Microservice"
+              "Assessment: Quiz: Architecting a Secure Python LLM Microservice",
+              "SCORM: Interactive — Architecting a Secure Python LLM Microservice (scorm-lesson-07-architecting-a-secure-python-llm-microservice.zip)"
             ]
           },
           {
@@ -11374,7 +11381,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Capstone — Advanced Python AI Service",
-              "Assessment: Quiz: Capstone — Advanced Python AI Service"
+              "Assessment: Quiz: Capstone — Advanced Python AI Service",
+              "SCORM: Interactive — Capstone — Advanced Python AI Service (scorm-lesson-08-capstone-advanced-python-ai-service.zip)"
             ]
           }
         ]
