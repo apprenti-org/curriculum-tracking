@@ -18,7 +18,8 @@
           ],
           "objects": [
             "Object: Lesson: Reflected XSS and the Sink Map",
-            "Assessment: Quiz: Reflected XSS and the Sink Map"
+            "Assessment: Quiz: Reflected XSS and the Sink Map",
+            "SCORM: Interactive — Reflected XSS and the Sink Map (scorm-lesson-01-reflected-xss-and-the-sink-map.zip)"
           ]
         },
         {
@@ -31,7 +32,8 @@
           ],
           "objects": [
             "Object: Lesson: Stored XSS and Safe Rendering",
-            "Assessment: Quiz: Stored XSS and Safe Rendering"
+            "Assessment: Quiz: Stored XSS and Safe Rendering",
+            "SCORM: Interactive — Stored XSS and Safe Rendering (scorm-lesson-02-stored-xss-and-safe-rendering.zip)"
           ]
         },
         {
@@ -44,7 +46,8 @@
           ],
           "objects": [
             "Object: Lesson: DOM-Based XSS — innerHTML vs. textContent",
-            "Assessment: Quiz: DOM-Based XSS — innerHTML vs. textContent"
+            "Assessment: Quiz: DOM-Based XSS — innerHTML vs. textContent",
+            "SCORM: Interactive — DOM-Based XSS — innerHTML vs. textContent (scorm-lesson-03-dom-based-xss-innerhtml-vs-textcontent.zip)"
           ]
         },
         {
@@ -57,7 +60,8 @@
           ],
           "objects": [
             "Object: Lesson: Dangerous Contexts — URLs, Attributes, and Event Handlers",
-            "Assessment: Quiz: Dangerous Contexts — URLs, Attributes, and Event Handlers"
+            "Assessment: Quiz: Dangerous Contexts — URLs, Attributes, and Event Handlers",
+            "SCORM: Interactive — Dangerous Contexts — URLs, Attributes, and Event Handlers (scorm-lesson-04-dangerous-contexts-urls-attributes-event-handlers.zip)"
           ]
         },
         {
@@ -70,7 +74,8 @@
           ],
           "objects": [
             "Object: Lesson: Rendering Untrusted HTML Safely",
-            "Assessment: Quiz: Rendering Untrusted HTML Safely"
+            "Assessment: Quiz: Rendering Untrusted HTML Safely",
+            "SCORM: Interactive — Rendering Untrusted HTML Safely (scorm-lesson-05-rendering-untrusted-html-safely.zip)"
           ]
         }
       ]
@@ -89,7 +94,8 @@
           ],
           "objects": [
             "Object: Lesson: Defensive JSON.parse on Untrusted Input",
-            "Assessment: Quiz: Defensive JSON.parse on Untrusted Input"
+            "Assessment: Quiz: Defensive JSON.parse on Untrusted Input",
+            "SCORM: Interactive — Defensive JSON.parse on Untrusted Input (scorm-lesson-06-defensive-json-parse-on-untrusted-input.zip)"
           ]
         },
         {
@@ -102,7 +108,8 @@
           ],
           "objects": [
             "Object: Lesson: Prototype Pollution via Insecure Object Handling",
-            "Assessment: Quiz: Prototype Pollution via Insecure Object Handling"
+            "Assessment: Quiz: Prototype Pollution via Insecure Object Handling",
+            "SCORM: Interactive — Prototype Pollution via Insecure Object Handling (scorm-lesson-07-prototype-pollution-via-insecure-object-handling.zip)"
           ]
         },
         {
@@ -115,7 +122,8 @@
           ],
           "objects": [
             "Object: Lesson: JSON.stringify Pitfalls and Safe Serialization",
-            "Assessment: Quiz: JSON.stringify Pitfalls and Safe Serialization"
+            "Assessment: Quiz: JSON.stringify Pitfalls and Safe Serialization",
+            "SCORM: Interactive — JSON.stringify Pitfalls and Safe Serialization (scorm-lesson-08-json-stringify-pitfalls-and-safe-serialization.zip)"
           ]
         },
         {
@@ -128,7 +136,8 @@
           ],
           "objects": [
             "Object: Lesson: Insecure Object Handling Patterns",
-            "Assessment: Quiz: Insecure Object Handling Patterns"
+            "Assessment: Quiz: Insecure Object Handling Patterns",
+            "SCORM: Interactive — Insecure Object Handling Patterns (scorm-lesson-09-insecure-object-handling-patterns.zip)"
           ]
         }
       ]
@@ -147,7 +156,8 @@
           ],
           "objects": [
             "Object: Lesson: Secure Render Pipeline — fetch → parse → render",
-            "Assessment: Quiz: Secure Render Pipeline — fetch → parse → render"
+            "Assessment: Quiz: Secure Render Pipeline — fetch → parse → render",
+            "SCORM: Interactive — Secure Render Pipeline — fetch → parse → render (scorm-lesson-10-secure-render-pipeline-fetch-parse-render.zip)"
           ]
         },
         {
@@ -160,7 +170,8 @@
           ],
           "objects": [
             "Object: Lesson: Find-and-Fix Audit Lab",
-            "Assessment: Quiz: Find-and-Fix Audit Lab"
+            "Assessment: Quiz: Find-and-Fix Audit Lab",
+            "SCORM: Interactive — Find-and-Fix Audit Lab (scorm-lesson-11-find-and-fix-audit-lab.zip)"
           ]
         },
         {
@@ -173,7 +184,8 @@
           ],
           "objects": [
             "Object: Lesson: Defense-in-Depth Scenario Lab",
-            "Assessment: Quiz: Defense-in-Depth Scenario Lab"
+            "Assessment: Quiz: Defense-in-Depth Scenario Lab",
+            "SCORM: Interactive — Defense-in-Depth Scenario Lab (scorm-lesson-12-defense-in-depth-scenario-lab.zip)"
           ]
         }
       ]
