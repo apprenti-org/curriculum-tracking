@@ -1203,6 +1203,21 @@
       "note": "Pre-design-doc-workflow course; source content lives in Drive folder. Tracking outline JSON (web-dev-javascript-react.json) and syllabus HTML reconstructed from source — 40h / 8 modules / 17 lessons. No working folder or design-doc folder yet (no Phase 0 reconciliation done). Used in OSS Course 9, Area 3.",
       "driveFolder": "https://drive.google.com/drive/folders/1sgXBEFNAIVxqU5fj2Z6KA8NGQDjeMXRv",
       "statusConfirmed": true
+    },
+    {
+      "id": "xss-defense-secure-data-parsing-lab",
+      "name": "XSS Defense & Secure Data Parsing Lab (Cyber Developer Associate)",
+      "hours": 24,
+      "status": {
+        "design": "Complete",
+        "development": "In Progress"
+      },
+      "syllabus": "Syllabus: XSS Defense & Secure Data Parsing Lab",
+      "outline": true,
+      "note": "Cyber Developer Associate net-new 24h Phase 6 hands-on lab. 3 modules, 12 lessons. Design + content production (Row 7, apprenti-org/design-documentation#1044) + SCORM packaging (Row 9, #1046) + deployment (Row 10, #1047) + instructor/pacing guide (Row 11, #1048) complete; LMS upload (Row 14) pending — development flips to Complete after upload per precedent. Secure-by-design web defense: safe DOM manipulation to prevent XSS, and secure client-side data parsing (JSON / insecure object handling). OJL 4.a + 4.b. Onboarding meta #1033.",
+      "driveFolder": null,
+      "statusConfirmed": false,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation"
     }
   ],
   "curricula": [

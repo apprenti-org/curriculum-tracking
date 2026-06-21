@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: XSS Defense &amp; Secure Data Parsing Lab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+.review-banner {
+    background: rgba(255, 183, 3, 0.10);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--amber);
+    font-weight: 600;
+}
+.review-banner i {
+    font-size: 16px;
+    flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: XSS Defense &amp; Secure Data Parsing Lab</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Cyber Developer Associate — Phase 6 (Secure Web and Front-End Development)</span>
+                <span><i class="fa-regular fa-clock"></i> 24 hours</span>
+                <span class="badge">CURRENT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Course description pending.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Trace untrusted input from an HTTP request through application code to the exact DOM sink where it is rendered, and explain why that path is the unit of analysis for Cross-Site Scripting (XSS) defense.</li>
+                <li>Reproduce a reflected XSS attack by submitting a script payload through a query parameter and confirming it executes in the browser.</li>
+                <li>Identify the common dangerous DOM sinks — `innerHTML`, `outerHTML`, `insertAdjacentHTML`, `document.write`, and inline event-handler assignment — that turn untrusted strings into executing markup.</li>
+                <li>Neutralize a reflected XSS by replacing the dangerous sink with `textContent` (or another safe DOM API) so the payload renders as inert literal text.</li>
+                <li>Build a reusable sink map that catalogs each dangerous sink, its safe counterpart, and the rendering context in which it appears.</li>
+                <li>Explain how stored Cross-Site Scripting (XSS) differs from reflected XSS, and why persisted attacker-controlled data executes for every viewer on render.</li>
+                <li>Reproduce a stored XSS by persisting a script payload through an application's data store and confirming it executes when the stored data is later rendered to the DOM.</li>
+                <li>Refactor a render routine that builds list or feed markup with `innerHTML` so that persisted data is rendered with `textContent` and safe DOM-construction APIs instead.</li>
+                <li>Implement encode-on-output discipline so that the same persisted value is rendered safely at every DOM update, not just the first.</li>
+                <li>Identify DOM-based Cross-Site Scripting (XSS) as a client-side-only vulnerability whose source and sink both live in JavaScript and never reach the server.</li>
+                <li>Trace a DOM-based XSS from a client-side source such as `location.hash` to a dangerous sink, and explain why server-side defenses cannot see it.</li>
+                <li>Refactor `innerHTML` and `insertAdjacentHTML` sinks to `textContent` and safe DOM APIs to neutralize a DOM-based XSS.</li>
+                <li>Determine when `createElement` plus `append` is the correct choice over string-built HTML, and apply it to build dynamic content safely.</li>
+                <li>Reproduce a `javascript:` URL Cross-Site Scripting (XSS) by assigning an untrusted value to an `href` or `src`, and neutralize it by validating the URL scheme before assignment.</li>
+                <li>Identify attribute-injection sinks where untrusted data is written into element attributes, and use `setAttribute` safely while avoiding dangerous-attribute assignment.</li>
+                <li>Reproduce an event-handler XSS through inline `on` attribute assignment and replace it with `addEventListener` so untrusted data never becomes executable code.</li>
+                <li>Verify that each context-specific fix blocks its payload, and extend the sink map with rows for URL, attribute, and event-handler contexts.</li>
+                <li>Explain when rendering untrusted HTML is a genuine requirement and why `textContent` cannot be used in that case, framing sanitization as a Cross-Site Scripting (XSS) output defense of last resort.</li>
+                <li>Implement safe rendering of untrusted HTML with a vetted sanitizer (DOMPurify), configuring it to strip script, event-handler, and dangerous-URL vectors before assignment to the DOM.</li>
+                <li>Implement a manual allow-list sanitizer that parses untrusted HTML and keeps only permitted tags and attributes, and explain why allow-listing beats blocklisting.</li>
+                <li>Verify that sanitized output actually neutralizes the payload by re-running attacks against the rendered result and confirming no script executes.</li>
+                <li>Explain why every value that crosses into the browser — including a `fetch` response body — is untrusted input at the moment `JSON.parse` runs, and why "never assume shape" is the foundational client-side parsing rule.</li>
+                <li>Parse untrusted JSON safely by wrapping `JSON.parse` so that a malformed or truncated payload is caught and converted to a safe rejection rather than an unhandled exception.</li>
+                <li>Validate parsed JSON against an explicit shape — confirming required keys, types, and structure — before any value is read or used downstream.</li>
+                <li>Implement type and bounds checks on individual parsed values as the final gate before the data is handed to application logic.</li>
+                <li>Explain how the JavaScript prototype chain makes `__proto__`, `constructor`, and `prototype` keys dangerous when they arrive inside parsed JSON.</li>
+                <li>Reproduce a prototype-pollution attack in which a crafted JSON payload flowing through a naive merge or property-assignment routine corrupts `Object.prototype`.</li>
+                <li>Defend object construction against pollution using null-prototype objects, explicit key guards, and `Object.hasOwn` for property reads.</li>
+                <li>Implement a safe deep-merge that rejects dangerous keys and preserves the defense across nested input.</li>
+                <li>Detect accidental data leakage caused by over-broad `JSON.stringify` that serializes more of an object than was intended.</li>
+                <li>Serialize objects safely by controlling the emitted output with a `replacer` allow-list and `toJSON` methods.</li>
+                <li>Defend against `JSON.stringify` runtime hazards — circular references, value types that serialize unexpectedly, and silently dropped values.</li>
+                <li>Implement a controlled round-trip that pairs a safe `replacer` on serialize with a guarded `reviver` on parse.</li>
+                <li>Detect unsafe dynamic property access where a key derived from untrusted input is used to read or write an object.</li>
+                <li>Defend against client-side mass assignment by copying only an allow-list of fields from a parsed object onto an application object.</li>
+                <li>Identify type-coercion and loose-equality bugs that let untrusted values bypass validation checks.</li>
+                <li>Implement safe object-handling patterns that combine key guards, allow-list copying, and strict comparison for untrusted data.</li>
+                <li>Assemble a three-stage client-side pipeline — fetch, parse, render — and identify the distinct trust boundary and control point that sits between each stage.</li>
+                <li>Apply defensive parsing to a fetched response, validating shape and types and guarding against prototype-pollution keys before any parsed value is held as application data.</li>
+                <li>Harden the render stage so that every untrusted value reaches the Document Object Model (DOM) through a safe sink (`textContent`, safe DOM APIs, or a vetted sanitizer) and never through a dangerous one.</li>
+                <li>Verify the assembled pipeline end to end, demonstrating that no untrusted value reaches a dangerous sink and that a malformed or hostile response fails closed without crashing the page.</li>
+                <li>Audit a small client-side application to locate Cross-Site Scripting (XSS) and insecure-parsing flaws by tracing untrusted data from its source to its sink.</li>
+                <li>Prioritize the findings by exploitability and impact, distinguishing a directly exploitable sink from a latent or lower-risk weakness.</li>
+                <li>Remediate each finding by replacing the dangerous pattern with the correct safe one — safe DOM sinks for rendering flaws, defensive parsing and prototype-pollution guards for data flaws.</li>
+                <li>Confirm each fix by re-running the attack payload that previously succeeded and demonstrating it no longer executes or corrupts application state.</li>
+                <li>Explain defense in depth for a client-side feature and identify the independent layers that must each stop an attack on its own.</li>
+                <li>Harden a realistic feature that combines rendering and data parsing by layering safe DOM manipulation, sanitization, schema validation, and safe object handling.</li>
+                <li>Verify layer independence by disabling one control and demonstrating that a downstream layer still blocks the attack, then restoring the control.</li>
+                <li>Demonstrate that the hardened feature resists a scripted attack set, producing evidence that every payload is neutralized and application state stays intact.</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">XSS Defense Labs</span>
+                    <span class="module-hours">10 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Reflected XSS and the Sink Map (2h)</div>
+                    <ul class="topic-list">
+                        <li>Trace untrusted input from request to DOM sink</li>
+                        <li>Reproduce a reflected XSS, then neutralize it with `textContent` and contextual output handling</li>
+                        <li>Build a reusable map of dangerous DOM sinks to watch for</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Stored XSS and Safe Rendering (2h)</div>
+                    <ul class="topic-list">
+                        <li>How persisted, attacker-controlled data executes on render</li>
+                        <li>Render stored data without executing it</li>
+                        <li>Encode-on-output discipline across DOM updates</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: DOM-Based XSS — innerHTML vs. textContent (2h)</div>
+                    <ul class="topic-list">
+                        <li>Identify client-side-only XSS that never reaches the server</li>
+                        <li>Refactor `innerHTML` / `insertAdjacentHTML` sinks to `textContent` and safe DOM APIs</li>
+                        <li>When `createElement` + `append` beats string-built HTML</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 4: Dangerous Contexts — URLs, Attributes, and Event Handlers (2h)</div>
+                    <ul class="topic-list">
+                        <li>`javascript:` URLs and unsafe `href` / `src` assignment</li>
+                        <li>Attribute injection and `setAttribute` pitfalls</li>
+                        <li>Inline event handlers (`on`) as XSS sinks and their safe alternatives</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 5: Rendering Untrusted HTML Safely (2h)</div>
+                    <ul class="topic-list">
+                        <li>When HTML must be rendered: sanitization as XSS defense</li>
+                        <li>Using a vetted sanitizer (DOMPurify) and a manual allow-list approach</li>
+                        <li>Verifying the sanitized output actually blocks the payload</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Secure Data Parsing Labs</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 6: Defensive JSON.parse on Untrusted Input (2h)</div>
+                    <ul class="topic-list">
+                        <li>Never trust the shape: validate parsed JSON against an expected schema</li>
+                        <li>Handle malformed, partial, and hostile payloads without crashing</li>
+                        <li>Type and bounds checks before using parsed values</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 7: Prototype Pollution via Insecure Object Handling (2h)</div>
+                    <ul class="topic-list">
+                        <li>How `__proto__` / `constructor` keys poison objects during merge or assign</li>
+                        <li>Reproduce a prototype-pollution attack sourced from parsed JSON</li>
+                        <li>Defend with null-prototype objects, key guards, and safe merge</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: JSON.stringify Pitfalls and Safe Serialization (2h)</div>
+                    <ul class="topic-list">
+                        <li>Accidental data leakage through over-broad serialization</li>
+                        <li>`replacer` functions and `toJSON` to control what is emitted</li>
+                        <li>`reviver` functions on parse; circular-reference and type hazards</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: Insecure Object Handling Patterns (2h)</div>
+                    <ul class="topic-list">
+                        <li>Unsafe dynamic property access and client-side mass assignment</li>
+                        <li>Type coercion and equality bugs that bypass checks</li>
+                        <li>Safe object-handling patterns for untrusted data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Integrated Client-Side Defense Labs</span>
+                    <span class="module-hours">6 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 10: Secure Render Pipeline — fetch → parse → render (2h)</div>
+                    <ul class="topic-list">
+                        <li>Consume an API, parse the response defensively, and render to the DOM safely</li>
+                        <li>Place each control at the right layer of the pipeline</li>
+                        <li>Verify no untrusted value reaches a dangerous sink</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 11: Find-and-Fix Audit Lab (2h)</div>
+                    <ul class="topic-list">
+                        <li>Audit a small vulnerable client app for XSS and unsafe-parsing flaws</li>
+                        <li>Prioritize and remediate each finding</li>
+                        <li>Confirm fixes with the attack payloads that previously succeeded</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 12: Defense-in-Depth Scenario Lab (2h)</div>
+                    <ul class="topic-list">
+                        <li>Harden a realistic feature that combines rendering and data parsing</li>
+                        <li>Layer safe DOM APIs, sanitization, schema validation, and safe object handling</li>
+                        <li>Demonstrate the feature resists a scripted set of attacks</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>
