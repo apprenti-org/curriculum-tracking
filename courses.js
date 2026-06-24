@@ -486,7 +486,7 @@ const courseData = [
     },
     "syllabus": null,
     "outline": true,
-    "note": "Cyber Developer Associate net-new 16h Phase 4 (Secure Data Management) course. 4 modules, 13 lessons (L13 capstone). Built and deployed: content (apprenti-org/docker-container-isolation-content), student starters (docker-container-isolation-student), instructor solutions + guides + pacing (docker-container-isolation-instructor); 13 SCORM packages. Security by construction — container isolation as a security boundary; secure, isolated database environment. OJL 5.a. Pending Absorb publication. Onboarding meta apprenti-org/design-documentation#983.",
+    "note": "Cyber Developer Associate net-new 16h Phase 4 (Secure Data Management) course. 4 modules, 13 lessons (L13 capstone). Built and deployed: content (apprenti-org/docker-container-isolation-content), student starters (docker-container-isolation-student), instructor solutions + guides + pacing (docker-container-isolation-instructor); 13 SCORM packages. Security by construction — container isolation as a security boundary; secure, isolated database environment. OJL 5.a. Uploaded and published to Absorb (Row 14 complete). Onboarding meta apprenti-org/design-documentation#983.",
     "driveFolder": null,
     "statusConfirmed": true,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
@@ -1212,13 +1212,13 @@ const courseData = [
     "hours": 24,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "Syllabus: XSS Defense & Secure Data Parsing Lab",
     "outline": true,
-    "note": "Cyber Developer Associate net-new 24h Phase 6 hands-on lab. 3 modules, 12 lessons. Design + content production (Row 7, apprenti-org/design-documentation#1044) + SCORM packaging (Row 9, #1046) + deployment (Row 10, #1047) + instructor/pacing guide (Row 11, #1048) complete; LMS upload (Row 14) pending — development flips to Complete after upload per precedent. Secure-by-design web defense: safe DOM manipulation to prevent XSS, and secure client-side data parsing (JSON / insecure object handling). OJL 4.a + 4.b. Onboarding meta #1033.",
+    "note": "Cyber Developer Associate net-new 24h Phase 6 hands-on lab. 3 modules, 12 lessons. Design + content production (Row 7, apprenti-org/design-documentation#1044) + SCORM packaging (Row 9, #1046) + deployment (Row 10, #1047) + instructor/pacing guide (Row 11, #1048) complete; uploaded and published to Absorb (Row 14 complete). Secure-by-design web defense: safe DOM manipulation to prevent XSS, and secure client-side data parsing (JSON / insecure object handling). OJL 4.a + 4.b. Onboarding meta #1033.",
     "driveFolder": null,
-    "statusConfirmed": false,
+    "statusConfirmed": true,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
   }
 ];
