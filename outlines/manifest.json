@@ -20,6 +20,11 @@
   "id": "ai-foundations"
  },
  {
+  "file": "ai-assisted-assessment-prep.json",
+  "course": "AI-Assisted Assessment Prep",
+  "id": "ai-assisted-assessment-prep"
+ },
+ {
   "file": "ai-assisted-cicd-pipelines.json",
   "course": "AI-Assisted CI/CD Pipelines",
   "id": "ai-assisted-cicd-pipelines"

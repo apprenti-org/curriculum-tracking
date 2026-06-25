@@ -1,0 +1,117 @@
+{
+  "course": "AI-Assisted Assessment Prep (Cyber Developer Associate)",
+  "totalHours": 10,
+  "totalModules": 3,
+  "totalLessons": 7,
+  "modules": [
+    {
+      "name": "Collaborating Cleanly with AI Copilots",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "The Copilot as Collaborator, Not Author",
+          "hours": 1.5,
+          "topics": [
+            "What \"clean collaboration\" means: directing the copilot vs. deferring to it",
+            "The copilot as a fast junior pair — useful, fallible, and never the decision-maker",
+            "Where responsibility stays with the developer, no matter who typed the code"
+          ],
+          "objects": [
+            "Object: Lesson: The Copilot as Collaborator, Not Author",
+            "Assessment: Quiz: The Copilot as Collaborator, Not Author"
+          ]
+        },
+        {
+          "title": "Driving the Copilot — Scoped, Verifiable Requests",
+          "hours": 1.5,
+          "topics": [
+            "Small, scoped prompts vs. \"generate the whole feature\" dumps",
+            "Keeping generated changes reviewable and asking for explanations you can check",
+            "Maintaining your own mental model so you never ship code you cannot read"
+          ],
+          "objects": [
+            "Object: Lesson: Driving the Copilot — Scoped, Verifiable Requests",
+            "Assessment: Quiz: Driving the Copilot — Scoped, Verifiable Requests"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Recognizing Red Flags in AI-Generated Code",
+      "hours": 4,
+      "lessons": [
+        {
+          "title": "Red Flags — Duplication, Bloat, and Copy-Paste Sprawl",
+          "hours": 1.5,
+          "topics": [
+            "Excessive code duplication as the canonical red flag of AI output",
+            "Boilerplate bloat, dead abstractions, and over-engineered suggestions",
+            "Plausible-looking code that does not fit the surrounding codebase"
+          ],
+          "objects": [
+            "Object: Lesson: Red Flags — Duplication, Bloat, and Copy-Paste Sprawl",
+            "Assessment: Quiz: Red Flags — Duplication, Bloat, and Copy-Paste Sprawl"
+          ]
+        },
+        {
+          "title": "Hallucinations and Insecure Patterns",
+          "hours": 1.5,
+          "topics": [
+            "Hallucinations: invented APIs, non-existent methods, and wrong library usage",
+            "Recognizing insecure patterns the copilot reaches for — unsafe defaults, a flawed dependency-injection setup — at the level needed to reject them",
+            "Why fluent, confident output earns *less* trust, not more"
+          ],
+          "objects": [
+            "Object: Lesson: Hallucinations and Insecure Patterns",
+            "Assessment: Quiz: Hallucinations and Insecure Patterns"
+          ]
+        },
+        {
+          "title": "Avoiding Blind Acceptance — Verify Before You Commit",
+          "hours": 1,
+          "topics": [
+            "The blind-acceptance trap: \"it compiled\" and \"it looks right\" are not verification",
+            "A lightweight personal routine to verify AI-generated code before accepting it",
+            "Knowing when to reject and rewrite rather than patch"
+          ],
+          "objects": [
+            "Object: Lesson: Avoiding Blind Acceptance — Verify Before You Commit",
+            "Assessment: Quiz: Avoiding Blind Acceptance — Verify Before You Commit"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Documenting AI Collaboration for Assessment",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "Writing the AI-Collaboration Record",
+          "hours": 1.5,
+          "topics": [
+            "What to capture: what you asked, what you accepted or rejected, and how you verified it",
+            "Making AI use transparent and traceable rather than hidden",
+            "A reusable, lightweight format for documenting collaboration as you work"
+          ],
+          "objects": [
+            "Object: Lesson: Writing the AI-Collaboration Record",
+            "Assessment: Quiz: Writing the AI-Collaboration Record"
+          ]
+        },
+        {
+          "title": "Passing Technical Assessments and Peer Code Reviews",
+          "hours": 1.5,
+          "topics": [
+            "Presenting your AI-collaboration approach in a code review or technical assessment",
+            "Answering \"did you understand this code?\" — demonstrating ownership, not deflection",
+            "Walkthrough: defend an AI-assisted change end-to-end, from prompt to verified commit"
+          ],
+          "objects": [
+            "Object: Lesson: Passing Technical Assessments and Peer Code Reviews",
+            "Assessment: Quiz: Passing Technical Assessments and Peer Code Reviews"
+          ]
+        }
+      ]
+    }
+  ]
+}
