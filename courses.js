@@ -75,6 +75,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "ai-assisted-assessment-prep",
+    "name": "AI-Assisted Assessment Prep (Cyber Developer Associate)",
+    "hours": 10,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": "Syllabus: AI-Assisted Assessment Prep",
+    "outline": true,
+    "note": "Cyber Developer Associate net-new 10h Phase 7 course. 3 modules, 7 lessons (no capstone; conceptual/professional-practice). Teaches clean collaboration with AI copilots, recognizing red flags (excessive duplication, hallucinations, insecure patterns), avoiding blind acceptance, and documenting AI collaboration to pass technical assessments & peer code reviews. OJL 6.c primary; 1.d narrow (recognition only). Design+outline (#1071) + lesson outlines (#1073) + lesson sources (#1075) + scaffolding (#1078) + content/interactives 42/42 check.js (Row 7, #1081) + SCORM 7 zips (Row 9, #1083) + deployment 3 private repos (Row 10, #1084) + instructor/pacing guide (Row 11, #1085) + starter asset audit (Row 12, #1086) complete. Pre-upload (Row 13); LMS upload (Row 14) pending. Onboarding meta #1070.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "ai-assisted-cicd-pipelines",
     "name": "AI-Assisted CI/CD Pipelines",
     "hours": 2,
