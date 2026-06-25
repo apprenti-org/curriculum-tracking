@@ -1108,6 +1108,21 @@ const courseData = [
     "statusConfirmed": false
   },
   {
+    "id": "spring-mvc-secure-coding",
+    "name": "Spring MVC Secure Coding (Cyber Developer Associate)",
+    "hours": 10,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": "Syllabus: Spring MVC Secure Coding",
+    "outline": true,
+    "note": "Cyber Developer Associate net-new 10h Phase 5 course. 3 modules, 6 lessons (L6 capstone). Covers the 'Spring MVC with secure coding' clause of the shared Advanced Java RTI topic; teaches Spring MVC through a security lens — input validation, secure transport (headers/CSRF/CORS), Spring Security authn/authz, and safe error handling. Design + content (Row 7, apprenti-org/design-documentation#1063) + SCORM (Row 9, #1064) + deployment (Row 10, #1065) + instructor/pacing guide (Row 11, #1066) + starter asset audit (Row 12, #1067) complete; LMS upload (Row 14) pending. No OJL claimed (topic-coverage course; consistent with the 15/15-verified curriculum mapping). Onboarding meta #1051.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "sql-coding-booster-intensive",
     "name": "SQL Coding Booster Intensive",
     "hours": 8,
