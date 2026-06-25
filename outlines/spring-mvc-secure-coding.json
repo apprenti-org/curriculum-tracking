@@ -18,7 +18,8 @@
           ],
           "objects": [
             "Object: Lesson: HTTP, JSON, and the Spring MVC Request Lifecycle",
-            "Assessment: Quiz: HTTP, JSON, and the Spring MVC Request Lifecycle"
+            "Assessment: Quiz: HTTP, JSON, and the Spring MVC Request Lifecycle",
+            "SCORM: Interactive — HTTP, JSON, and the Spring MVC Request Lifecycle (scorm-lesson-01-http-json-and-the-spring-mvc-request-lifecycle.zip)"
           ]
         },
         {
@@ -31,7 +32,8 @@
           ],
           "objects": [
             "Object: Lesson: Controllers, Request Mapping, and Input Validation",
-            "Assessment: Quiz: Controllers, Request Mapping, and Input Validation"
+            "Assessment: Quiz: Controllers, Request Mapping, and Input Validation",
+            "SCORM: Interactive — Controllers, Request Mapping, and Input Validation (scorm-lesson-02-controllers-request-mapping-and-input-validation.zip)"
           ]
         }
       ]
@@ -50,7 +52,8 @@
           ],
           "objects": [
             "Object: Lesson: Secure REST Endpoint Design — Headers, CSRF, and CORS",
-            "Assessment: Quiz: Secure REST Endpoint Design — Headers, CSRF, and CORS"
+            "Assessment: Quiz: Secure REST Endpoint Design — Headers, CSRF, and CORS",
+            "SCORM: Interactive — Secure REST Endpoint Design — Headers, CSRF, and CORS (scorm-lesson-03-secure-rest-endpoint-design-headers-csrf-cors.zip)"
           ]
         },
         {
@@ -63,7 +66,8 @@
           ],
           "objects": [
             "Object: Lesson: Spring Security Essentials — Authentication and Authorization",
-            "Assessment: Quiz: Spring Security Essentials — Authentication and Authorization"
+            "Assessment: Quiz: Spring Security Essentials — Authentication and Authorization",
+            "SCORM: Interactive — Spring Security Essentials — Authentication and Authorization (scorm-lesson-04-spring-security-essentials-authentication-and-authorization.zip)"
           ]
         },
         {
@@ -76,7 +80,8 @@
           ],
           "objects": [
             "Object: Lesson: Secure Error Handling — No Stack-Trace Leakage",
-            "Assessment: Quiz: Secure Error Handling — No Stack-Trace Leakage"
+            "Assessment: Quiz: Secure Error Handling — No Stack-Trace Leakage",
+            "SCORM: Interactive — Secure Error Handling — No Stack-Trace Leakage (scorm-lesson-05-secure-error-handling-no-stack-trace-leakage.zip)"
           ]
         }
       ]
@@ -95,7 +100,8 @@
           ],
           "objects": [
             "Object: Lesson: Secure-Endpoint Capstone Lab",
-            "Assessment: Quiz: Secure-Endpoint Capstone Lab"
+            "Assessment: Quiz: Secure-Endpoint Capstone Lab",
+            "SCORM: Interactive — Secure-Endpoint Capstone Lab (scorm-lesson-06-secure-endpoint-capstone-lab.zip)"
           ]
         }
       ]
