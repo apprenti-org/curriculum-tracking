@@ -350,6 +350,11 @@
   "id": "software-development-lifecycle"
  },
  {
+  "file": "spring-mvc-secure-coding.json",
+  "course": "Spring MVC Secure Coding",
+  "id": "spring-mvc-secure-coding"
+ },
+ {
   "file": "sql-coding-booster.json",
   "course": "SQL Coding Booster Intensive",
   "id": "sql-coding-booster-intensive"

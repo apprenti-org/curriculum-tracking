@@ -11653,6 +11653,116 @@ const courseOutlines = {
       }
     ]
   },
+  "Spring MVC Secure Coding": {
+    "course": "Spring MVC Secure Coding",
+    "totalHours": 10,
+    "totalModules": 3,
+    "totalLessons": 6,
+    "modules": [
+      {
+        "name": "Spring MVC Foundations",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "HTTP, JSON, and the Spring MVC Request Lifecycle",
+            "hours": 1.5,
+            "topics": [
+              "The request lifecycle: from `DispatcherServlet` through handler mapping to the controller",
+              "How HTTP bodies and JSON bind to method parameters and DTOs",
+              "Where untrusted input enters — the attack surface of a Spring endpoint"
+            ],
+            "objects": [
+              "Object: Lesson: HTTP, JSON, and the Spring MVC Request Lifecycle",
+              "Assessment: Quiz: HTTP, JSON, and the Spring MVC Request Lifecycle",
+              "SCORM: Interactive — HTTP, JSON, and the Spring MVC Request Lifecycle (scorm-lesson-01-http-json-and-the-spring-mvc-request-lifecycle.zip)"
+            ]
+          },
+          {
+            "title": "Controllers, Request Mapping, and Input Validation",
+            "hours": 1.5,
+            "topics": [
+              "`@RestController`, request mapping, and DTO-based request binding",
+              "Bean Validation (`@Valid`, constraint annotations) to enforce shape and bounds",
+              "Rejecting malformed or hostile requests before they reach business logic"
+            ],
+            "objects": [
+              "Object: Lesson: Controllers, Request Mapping, and Input Validation",
+              "Assessment: Quiz: Controllers, Request Mapping, and Input Validation",
+              "SCORM: Interactive — Controllers, Request Mapping, and Input Validation (scorm-lesson-02-controllers-request-mapping-and-input-validation.zip)"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Securing the Endpoints",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Secure REST Endpoint Design — Headers, CSRF, and CORS",
+            "hours": 1.5,
+            "topics": [
+              "Security response headers and why they matter for an API",
+              "CSRF protection: when it applies to REST endpoints and how Spring enforces it",
+              "Configuring CORS as a least-privilege allow-list, not a wildcard"
+            ],
+            "objects": [
+              "Object: Lesson: Secure REST Endpoint Design — Headers, CSRF, and CORS",
+              "Assessment: Quiz: Secure REST Endpoint Design — Headers, CSRF, and CORS",
+              "SCORM: Interactive — Secure REST Endpoint Design — Headers, CSRF, and CORS (scorm-lesson-03-secure-rest-endpoint-design-headers-csrf-cors.zip)"
+            ]
+          },
+          {
+            "title": "Spring Security Essentials — Authentication and Authorization",
+            "hours": 1.5,
+            "topics": [
+              "The Spring Security filter chain and where it sits in the request lifecycle",
+              "Authentication primitives: establishing who is calling",
+              "Authorization primitives: protecting endpoints by role and least privilege"
+            ],
+            "objects": [
+              "Object: Lesson: Spring Security Essentials — Authentication and Authorization",
+              "Assessment: Quiz: Spring Security Essentials — Authentication and Authorization",
+              "SCORM: Interactive — Spring Security Essentials — Authentication and Authorization (scorm-lesson-04-spring-security-essentials-authentication-and-authorization.zip)"
+            ]
+          },
+          {
+            "title": "Secure Error Handling — No Stack-Trace Leakage",
+            "hours": 1,
+            "topics": [
+              "How default error responses leak stack traces, types, and system internals",
+              "Centralized exception handling (`@ControllerAdvice` / `@ExceptionHandler`) for safe responses",
+              "Returning useful, non-revealing error payloads and correct status codes"
+            ],
+            "objects": [
+              "Object: Lesson: Secure Error Handling — No Stack-Trace Leakage",
+              "Assessment: Quiz: Secure Error Handling — No Stack-Trace Leakage",
+              "SCORM: Interactive — Secure Error Handling — No Stack-Trace Leakage (scorm-lesson-05-secure-error-handling-no-stack-trace-leakage.zip)"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Secure-Endpoint Capstone",
+        "hours": 3,
+        "lessons": [
+          {
+            "title": "Secure-Endpoint Capstone Lab",
+            "hours": 3,
+            "topics": [
+              "Build a REST endpoint that validates input, authenticates and authorizes callers, sets correct headers/CSRF/CORS, and handles errors safely",
+              "Audit the endpoint against the course's secure-coding controls",
+              "Demonstrate the endpoint resists a scripted set of attacks (bad input, unauthorized access, error-leak probes)"
+            ],
+            "objects": [
+              "Object: Lesson: Secure-Endpoint Capstone Lab",
+              "Assessment: Quiz: Secure-Endpoint Capstone Lab",
+              "SCORM: Interactive — Secure-Endpoint Capstone Lab (scorm-lesson-06-secure-endpoint-capstone-lab.zip)"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "SQL Coding Booster Intensive": {
     "course": "SQL Coding Booster Intensive",
     "totalHours": 8,
