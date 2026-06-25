@@ -841,7 +841,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Copilot as Collaborator, Not Author",
-              "Assessment: Quiz: The Copilot as Collaborator, Not Author"
+              "Assessment: Quiz: The Copilot as Collaborator, Not Author",
+              "SCORM: Interactive — The Copilot as Collaborator, Not Author (scorm-lesson-01-copilot-as-collaborator.zip)"
             ]
           },
           {
@@ -854,7 +855,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Driving the Copilot — Scoped, Verifiable Requests",
-              "Assessment: Quiz: Driving the Copilot — Scoped, Verifiable Requests"
+              "Assessment: Quiz: Driving the Copilot — Scoped, Verifiable Requests",
+              "SCORM: Interactive — Driving the Copilot — Scoped, Verifiable Requests (scorm-lesson-02-scoped-verifiable-requests.zip)"
             ]
           }
         ]
@@ -873,7 +875,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Red Flags — Duplication, Bloat, and Copy-Paste Sprawl",
-              "Assessment: Quiz: Red Flags — Duplication, Bloat, and Copy-Paste Sprawl"
+              "Assessment: Quiz: Red Flags — Duplication, Bloat, and Copy-Paste Sprawl",
+              "SCORM: Interactive — Red Flags — Duplication, Bloat, and Copy-Paste Sprawl (scorm-lesson-03-red-flags-duplication-bloat.zip)"
             ]
           },
           {
@@ -886,7 +889,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hallucinations and Insecure Patterns",
-              "Assessment: Quiz: Hallucinations and Insecure Patterns"
+              "Assessment: Quiz: Hallucinations and Insecure Patterns",
+              "SCORM: Interactive — Hallucinations and Insecure Patterns (scorm-lesson-04-hallucinations-insecure-patterns.zip)"
             ]
           },
           {
@@ -899,7 +903,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Avoiding Blind Acceptance — Verify Before You Commit",
-              "Assessment: Quiz: Avoiding Blind Acceptance — Verify Before You Commit"
+              "Assessment: Quiz: Avoiding Blind Acceptance — Verify Before You Commit",
+              "SCORM: Interactive — Avoiding Blind Acceptance — Verify Before You Commit (scorm-lesson-05-avoiding-blind-acceptance.zip)"
             ]
           }
         ]
@@ -918,7 +923,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Writing the AI-Collaboration Record",
-              "Assessment: Quiz: Writing the AI-Collaboration Record"
+              "Assessment: Quiz: Writing the AI-Collaboration Record",
+              "SCORM: Interactive — Writing the AI-Collaboration Record (scorm-lesson-06-writing-collaboration-record.zip)"
             ]
           },
           {
@@ -931,7 +937,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Passing Technical Assessments and Peer Code Reviews",
-              "Assessment: Quiz: Passing Technical Assessments and Peer Code Reviews"
+              "Assessment: Quiz: Passing Technical Assessments and Peer Code Reviews",
+              "SCORM: Interactive — Passing Technical Assessments and Peer Code Reviews (scorm-lesson-07-passing-assessments-peer-review.zip)"
             ]
           }
         ]
