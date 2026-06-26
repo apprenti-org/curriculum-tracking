@@ -15,6 +15,11 @@
   "id": "ai-assisted-learning-and-study-skills"
  },
  {
+  "file": "ai-code-auditing-for-security.json",
+  "course": "AI Code Auditing for Security",
+  "id": "ai-code-auditing-for-security"
+ },
+ {
   "file": "ai-foundations.json",
   "course": "AI Foundations and Ethics",
   "id": "ai-foundations"
