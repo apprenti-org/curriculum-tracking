@@ -697,7 +697,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Why AI-Generated Code Must Be Audited",
-              "Assessment: Quiz: Why AI-Generated Code Must Be Audited"
+              "Assessment: Quiz: Why AI-Generated Code Must Be Audited",
+              "SCORM: Interactive — Why AI-Generated Code Must Be Audited (scorm-lesson-01-why-audit-ai-code.zip)"
             ]
           },
           {
@@ -710,7 +711,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Threat Model of AI-Assisted Development",
-              "Assessment: Quiz: The Threat Model of AI-Assisted Development"
+              "Assessment: Quiz: The Threat Model of AI-Assisted Development",
+              "SCORM: Interactive — The Threat Model of AI-Assisted Development (scorm-lesson-02-threat-model-ai-development.zip)"
             ]
           },
           {
@@ -724,7 +726,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Code Audit Workflow",
-              "Assessment: Quiz: The Code Audit Workflow"
+              "Assessment: Quiz: The Code Audit Workflow",
+              "SCORM: Interactive — The Code Audit Workflow (scorm-lesson-03-code-audit-workflow.zip)"
             ]
           }
         ]
@@ -743,7 +746,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: What AI Hallucinations Look Like in Code",
-              "Assessment: Quiz: What AI Hallucinations Look Like in Code"
+              "Assessment: Quiz: What AI Hallucinations Look Like in Code",
+              "SCORM: Interactive — What AI Hallucinations Look Like in Code (scorm-lesson-04-what-hallucinations-look-like.zip)"
             ]
           },
           {
@@ -757,7 +761,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Detecting Hallucinated Dependencies and APIs",
-              "Assessment: Quiz: Detecting Hallucinated Dependencies and APIs"
+              "Assessment: Quiz: Detecting Hallucinated Dependencies and APIs",
+              "SCORM: Interactive — Detecting Hallucinated Dependencies and APIs (scorm-lesson-05-detecting-hallucinated-dependencies.zip)"
             ]
           },
           {
@@ -768,7 +773,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hands-On — Hunting Hallucinations",
-              "Assessment: Quiz: Hands-On — Hunting Hallucinations"
+              "Assessment: Quiz: Hands-On — Hunting Hallucinations",
+              "SCORM: Interactive — Hands-On — Hunting Hallucinations (scorm-lesson-06-hunting-hallucinations-lab.zip)"
             ]
           }
         ]
@@ -788,7 +794,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Reviewing Configurations for Security Flaws",
-              "Assessment: Quiz: Reviewing Configurations for Security Flaws"
+              "Assessment: Quiz: Reviewing Configurations for Security Flaws",
+              "SCORM: Interactive — Reviewing Configurations for Security Flaws (scorm-lesson-07-reviewing-configurations.zip)"
             ]
           },
           {
@@ -801,7 +808,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Understanding Dependency Injection and Its Risks",
-              "Assessment: Quiz: Understanding Dependency Injection and Its Risks"
+              "Assessment: Quiz: Understanding Dependency Injection and Its Risks",
+              "SCORM: Interactive — Understanding Dependency Injection and Its Risks (scorm-lesson-08-understanding-di-risks.zip)"
             ]
           },
           {
@@ -815,7 +823,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Auditing DI Setups for Vulnerabilities",
-              "Assessment: Quiz: Auditing DI Setups for Vulnerabilities"
+              "Assessment: Quiz: Auditing DI Setups for Vulnerabilities",
+              "SCORM: Interactive — Auditing DI Setups for Vulnerabilities (scorm-lesson-09-auditing-di-setups.zip)"
             ]
           },
           {
@@ -826,7 +835,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hands-On — Configuration and DI Audit Lab",
-              "Assessment: Quiz: Hands-On — Configuration and DI Audit Lab"
+              "Assessment: Quiz: Hands-On — Configuration and DI Audit Lab",
+              "SCORM: Interactive — Hands-On — Configuration and DI Audit Lab (scorm-lesson-10-config-di-audit-lab.zip)"
             ]
           }
         ]
@@ -845,7 +855,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Common Vulnerability Classes in AI-Generated Code",
-              "Assessment: Quiz: Common Vulnerability Classes in AI-Generated Code"
+              "Assessment: Quiz: Common Vulnerability Classes in AI-Generated Code",
+              "SCORM: Interactive — Common Vulnerability Classes in AI-Generated Code (scorm-lesson-11-common-vulnerability-classes.zip)"
             ]
           },
           {
@@ -858,7 +869,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: From Recognition to Confirmation",
-              "Assessment: Quiz: From Recognition to Confirmation"
+              "Assessment: Quiz: From Recognition to Confirmation",
+              "SCORM: Interactive — From Recognition to Confirmation (scorm-lesson-12-recognition-to-confirmation.zip)"
             ]
           },
           {
@@ -869,7 +881,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hands-On — Full Vulnerability Audit",
-              "Assessment: Quiz: Hands-On — Full Vulnerability Audit"
+              "Assessment: Quiz: Hands-On — Full Vulnerability Audit",
+              "SCORM: Interactive — Hands-On — Full Vulnerability Audit (scorm-lesson-13-full-vulnerability-audit-lab.zip)"
             ]
           }
         ]
@@ -889,7 +902,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Security-Flaw Remediation Workflows",
-              "Assessment: Quiz: Security-Flaw Remediation Workflows"
+              "Assessment: Quiz: Security-Flaw Remediation Workflows",
+              "SCORM: Interactive — Security-Flaw Remediation Workflows (scorm-lesson-14-remediation-workflows.zip)"
             ]
           },
           {
@@ -902,7 +916,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Pre-Deployment Audit Gate",
-              "Assessment: Quiz: The Pre-Deployment Audit Gate"
+              "Assessment: Quiz: The Pre-Deployment Audit Gate",
+              "SCORM: Interactive — The Pre-Deployment Audit Gate (scorm-lesson-15-pre-deployment-audit-gate.zip)"
             ]
           },
           {
@@ -914,7 +929,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Capstone Audit — End to End",
-              "Assessment: Quiz: Capstone Audit — End to End"
+              "Assessment: Quiz: Capstone Audit — End to End",
+              "SCORM: Interactive — Capstone Audit — End to End (scorm-lesson-16-capstone-audit-end-to-end.zip)"
             ]
           }
         ]
