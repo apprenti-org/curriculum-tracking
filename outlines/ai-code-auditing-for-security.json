@@ -1,244 +1,260 @@
 {
-  "course": "AI Code Auditing for Security (Cyber Developer Associate)",
-  "totalHours": 40,
-  "totalModules": 5,
-  "totalLessons": 16,
-  "modules": [
+ "course": "AI Code Auditing for Security (Cyber Developer Associate)",
+ "totalHours": 40,
+ "totalModules": 5,
+ "totalLessons": 16,
+ "modules": [
+  {
+   "name": "Foundations of AI Code Auditing",
+   "hours": 6,
+   "lessons": [
     {
-      "name": "Foundations of AI Code Auditing",
-      "hours": 6,
-      "lessons": [
-        {
-          "title": "Why AI-Generated Code Must Be Audited",
-          "hours": 2,
-          "topics": [
-            "The trust problem: plausibility is not correctness, and fluency is not safety",
-            "Two failure families — hallucinations (things that don't exist) vs. vulnerabilities (things that are exploitable)",
-            "Where AI code fails: training-data staleness, missing context, confident wrong defaults"
-          ],
-          "objects": [
-            "Object: Lesson: Why AI-Generated Code Must Be Audited",
-            "Assessment: Quiz: Why AI-Generated Code Must Be Audited"
-          ]
-        },
-        {
-          "title": "The Threat Model of AI-Assisted Development",
-          "hours": 2,
-          "topics": [
-            "The new attack surface: prompt → generated code → production pipeline",
-            "Supply-chain and dependency risk introduced by AI suggestions",
-            "What a security auditor looks for that a functional reviewer misses"
-          ],
-          "objects": [
-            "Object: Lesson: The Threat Model of AI-Assisted Development",
-            "Assessment: Quiz: The Threat Model of AI-Assisted Development"
-          ]
-        },
-        {
-          "title": "The Code Audit Workflow",
-          "hours": 2,
-          "topics": [
-            "A systematic, repeatable review process for AI-generated changes",
-            "Scoping an audit: what a pre-deployment review must cover",
-            "Manual review vs. tooling (linters, SAST, dependency scanners) — strengths and blind spots",
-            "*Activity:* walk a small AI-generated diff through the audit workflow end-to-end"
-          ],
-          "objects": [
-            "Object: Lesson: The Code Audit Workflow",
-            "Assessment: Quiz: The Code Audit Workflow"
-          ]
-        }
-      ]
+     "title": "Why AI-Generated Code Must Be Audited",
+     "hours": 2,
+     "topics": [
+      "The trust problem: plausibility is not correctness, and fluency is not safety",
+      "Two failure families — hallucinations (things that don't exist) vs. vulnerabilities (things that are exploitable)",
+      "Where AI code fails: training-data staleness, missing context, confident wrong defaults"
+     ],
+     "objects": [
+      "Object: Lesson: Why AI-Generated Code Must Be Audited",
+      "Assessment: Quiz: Why AI-Generated Code Must Be Audited",
+      "SCORM: Interactive — Why AI-Generated Code Must Be Audited (scorm-lesson-01-why-audit-ai-code.zip)"
+     ]
     },
     {
-      "name": "Spotting Hallucinations in AI-Generated Code",
-      "hours": 8,
-      "lessons": [
-        {
-          "title": "What AI Hallucinations Look Like in Code",
-          "hours": 2,
-          "topics": [
-            "Invented APIs, non-existent methods, and fabricated configuration keys",
-            "Wrong library usage: right name, wrong signature, wrong semantics",
-            "Why hallucinations are most dangerous when they *almost* work"
-          ],
-          "objects": [
-            "Object: Lesson: What AI Hallucinations Look Like in Code",
-            "Assessment: Quiz: What AI Hallucinations Look Like in Code"
-          ]
-        },
-        {
-          "title": "Detecting Hallucinated Dependencies and APIs",
-          "hours": 3,
-          "topics": [
-            "Verifying imports and symbols against authoritative documentation",
-            "Package hallucination and \"slopsquatting\": AI-suggested packages that don't exist (or that an attacker has registered)",
-            "Version and signature mismatches; confirming behavior, not just existence",
-            "*Activity:* verify a set of AI-suggested imports/APIs and flag the hallucinated ones"
-          ],
-          "objects": [
-            "Object: Lesson: Detecting Hallucinated Dependencies and APIs",
-            "Assessment: Quiz: Detecting Hallucinated Dependencies and APIs"
-          ]
-        },
-        {
-          "title": "Hands-On — Hunting Hallucinations",
-          "hours": 3,
-          "topics": [
-            "*Lab:* audit an AI-generated module for hallucinated APIs, methods, and dependencies; produce a findings list with evidence and a verify-or-reject decision for each"
-          ],
-          "objects": [
-            "Object: Lesson: Hands-On — Hunting Hallucinations",
-            "Assessment: Quiz: Hands-On — Hunting Hallucinations"
-          ]
-        }
-      ]
+     "title": "The Threat Model of AI-Assisted Development",
+     "hours": 2,
+     "topics": [
+      "The new attack surface: prompt → generated code → production pipeline",
+      "Supply-chain and dependency risk introduced by AI suggestions",
+      "What a security auditor looks for that a functional reviewer misses"
+     ],
+     "objects": [
+      "Object: Lesson: The Threat Model of AI-Assisted Development",
+      "Assessment: Quiz: The Threat Model of AI-Assisted Development",
+      "SCORM: Interactive — The Threat Model of AI-Assisted Development (scorm-lesson-02-threat-model-ai-development.zip)"
+     ]
     },
     {
-      "name": "Auditing Configurations and Dependency Injection",
-      "hours": 10,
-      "lessons": [
-        {
-          "title": "Reviewing Configurations for Security Flaws",
-          "hours": 3,
-          "topics": [
-            "Insecure defaults, exposed secrets, and credentials in generated config",
-            "Overly permissive settings (CORS, auth, file/network permissions, debug flags)",
-            "Environment and framework config: what AI commonly gets wrong",
-            "*Activity:* audit an AI-generated configuration set against a security checklist"
-          ],
-          "objects": [
-            "Object: Lesson: Reviewing Configurations for Security Flaws",
-            "Assessment: Quiz: Reviewing Configurations for Security Flaws"
-          ]
-        },
-        {
-          "title": "Understanding Dependency Injection and Its Risks",
-          "hours": 2,
-          "topics": [
-            "What Dependency Injection is and how AI tools generate DI setups",
-            "The security-relevant moving parts: what gets wired, with what scope, from where",
-            "Why DI is a high-value audit target — central wiring, broad blast radius"
-          ],
-          "objects": [
-            "Object: Lesson: Understanding Dependency Injection and Its Risks",
-            "Assessment: Quiz: Understanding Dependency Injection and Its Risks"
-          ]
-        },
-        {
-          "title": "Auditing DI Setups for Vulnerabilities",
-          "hours": 3,
-          "topics": [
-            "Injection of untrusted or attacker-controllable beans/components",
-            "Scope and lifecycle defects (shared mutable singletons, leaked request state)",
-            "Insecure or over-broad wiring; missing access boundaries between components",
-            "A systematic DI-audit pass: enumerate, trace provenance, check scope, verify boundaries"
-          ],
-          "objects": [
-            "Object: Lesson: Auditing DI Setups for Vulnerabilities",
-            "Assessment: Quiz: Auditing DI Setups for Vulnerabilities"
-          ]
-        },
-        {
-          "title": "Hands-On — Configuration and DI Audit Lab",
-          "hours": 2,
-          "topics": [
-            "*Lab:* audit an AI-generated DI configuration for the vulnerability classes above; document each finding with location, risk, and recommended fix"
-          ],
-          "objects": [
-            "Object: Lesson: Hands-On — Configuration and DI Audit Lab",
-            "Assessment: Quiz: Hands-On — Configuration and DI Audit Lab"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Identifying Security Flaws and Vulnerabilities",
-      "hours": 8,
-      "lessons": [
-        {
-          "title": "Common Vulnerability Classes in AI-Generated Code",
-          "hours": 3,
-          "topics": [
-            "Injection (SQL/command/path), broken authentication and access control",
-            "Insecure deserialization, unsafe input handling, sensitive-data exposure",
-            "How these classes recur in AI output, and the prompt patterns that elicit them"
-          ],
-          "objects": [
-            "Object: Lesson: Common Vulnerability Classes in AI-Generated Code",
-            "Assessment: Quiz: Common Vulnerability Classes in AI-Generated Code"
-          ]
-        },
-        {
-          "title": "From Recognition to Confirmation",
-          "hours": 2,
-          "topics": [
-            "Confirming exploitability: tracing untrusted input to a dangerous sink",
-            "Separating real vulnerabilities from false positives and theoretical-only findings",
-            "Severity and prioritization: what blocks deployment vs. what is logged"
-          ],
-          "objects": [
-            "Object: Lesson: From Recognition to Confirmation",
-            "Assessment: Quiz: From Recognition to Confirmation"
-          ]
-        },
-        {
-          "title": "Hands-On — Full Vulnerability Audit",
-          "hours": 3,
-          "topics": [
-            "*Lab:* perform a complete vulnerability audit of an AI-generated component, confirming and prioritizing each finding with evidence of exploitability"
-          ],
-          "objects": [
-            "Object: Lesson: Hands-On — Full Vulnerability Audit",
-            "Assessment: Quiz: Hands-On — Full Vulnerability Audit"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Remediation and Pre-Deployment Review",
-      "hours": 8,
-      "lessons": [
-        {
-          "title": "Security-Flaw Remediation Workflows",
-          "hours": 3,
-          "topics": [
-            "The fix → verify → re-audit loop; fixing the flaw without introducing a new one",
-            "Regression and re-test after remediation; confirming the fix actually closes the issue",
-            "When to remediate vs. reject-and-regenerate AI-authored code",
-            "*Activity:* remediate a confirmed finding and verify the fix"
-          ],
-          "objects": [
-            "Object: Lesson: Security-Flaw Remediation Workflows",
-            "Assessment: Quiz: Security-Flaw Remediation Workflows"
-          ]
-        },
-        {
-          "title": "The Pre-Deployment Audit Gate",
-          "hours": 2,
-          "topics": [
-            "Gating AI-generated code before deployment: entry criteria and sign-off",
-            "Documenting the audit — findings, decisions, and evidence — for defensible review",
-            "Integrating the audit gate into a team's review and CI/CD flow"
-          ],
-          "objects": [
-            "Object: Lesson: The Pre-Deployment Audit Gate",
-            "Assessment: Quiz: The Pre-Deployment Audit Gate"
-          ]
-        },
-        {
-          "title": "Capstone Audit — End to End",
-          "hours": 3,
-          "topics": [
-            "*Integrative lab:* audit a realistic AI-generated codebase from review → findings (hallucinations, config, DI, vulnerabilities) → confirmation → remediation → documented pre-deployment sign-off",
-            "Standard lesson (`type: lesson`) with an integrative audit activity — **not** a `type: capstone` summative lesson"
-          ],
-          "objects": [
-            "Object: Lesson: Capstone Audit — End to End",
-            "Assessment: Quiz: Capstone Audit — End to End"
-          ]
-        }
-      ]
+     "title": "The Code Audit Workflow",
+     "hours": 2,
+     "topics": [
+      "A systematic, repeatable review process for AI-generated changes",
+      "Scoping an audit: what a pre-deployment review must cover",
+      "Manual review vs. tooling (linters, SAST, dependency scanners) — strengths and blind spots",
+      "*Activity:* walk a small AI-generated diff through the audit workflow end-to-end"
+     ],
+     "objects": [
+      "Object: Lesson: The Code Audit Workflow",
+      "Assessment: Quiz: The Code Audit Workflow",
+      "SCORM: Interactive — The Code Audit Workflow (scorm-lesson-03-code-audit-workflow.zip)"
+     ]
     }
-  ]
+   ]
+  },
+  {
+   "name": "Spotting Hallucinations in AI-Generated Code",
+   "hours": 8,
+   "lessons": [
+    {
+     "title": "What AI Hallucinations Look Like in Code",
+     "hours": 2,
+     "topics": [
+      "Invented APIs, non-existent methods, and fabricated configuration keys",
+      "Wrong library usage: right name, wrong signature, wrong semantics",
+      "Why hallucinations are most dangerous when they *almost* work"
+     ],
+     "objects": [
+      "Object: Lesson: What AI Hallucinations Look Like in Code",
+      "Assessment: Quiz: What AI Hallucinations Look Like in Code",
+      "SCORM: Interactive — What AI Hallucinations Look Like in Code (scorm-lesson-04-what-hallucinations-look-like.zip)"
+     ]
+    },
+    {
+     "title": "Detecting Hallucinated Dependencies and APIs",
+     "hours": 3,
+     "topics": [
+      "Verifying imports and symbols against authoritative documentation",
+      "Package hallucination and \"slopsquatting\": AI-suggested packages that don't exist (or that an attacker has registered)",
+      "Version and signature mismatches; confirming behavior, not just existence",
+      "*Activity:* verify a set of AI-suggested imports/APIs and flag the hallucinated ones"
+     ],
+     "objects": [
+      "Object: Lesson: Detecting Hallucinated Dependencies and APIs",
+      "Assessment: Quiz: Detecting Hallucinated Dependencies and APIs",
+      "SCORM: Interactive — Detecting Hallucinated Dependencies and APIs (scorm-lesson-05-detecting-hallucinated-dependencies.zip)"
+     ]
+    },
+    {
+     "title": "Hands-On — Hunting Hallucinations",
+     "hours": 3,
+     "topics": [
+      "*Lab:* audit an AI-generated module for hallucinated APIs, methods, and dependencies; produce a findings list with evidence and a verify-or-reject decision for each"
+     ],
+     "objects": [
+      "Object: Lesson: Hands-On — Hunting Hallucinations",
+      "Assessment: Quiz: Hands-On — Hunting Hallucinations",
+      "SCORM: Interactive — Hands-On — Hunting Hallucinations (scorm-lesson-06-hunting-hallucinations-lab.zip)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Auditing Configurations and Dependency Injection",
+   "hours": 10,
+   "lessons": [
+    {
+     "title": "Reviewing Configurations for Security Flaws",
+     "hours": 3,
+     "topics": [
+      "Insecure defaults, exposed secrets, and credentials in generated config",
+      "Overly permissive settings (CORS, auth, file/network permissions, debug flags)",
+      "Environment and framework config: what AI commonly gets wrong",
+      "*Activity:* audit an AI-generated configuration set against a security checklist"
+     ],
+     "objects": [
+      "Object: Lesson: Reviewing Configurations for Security Flaws",
+      "Assessment: Quiz: Reviewing Configurations for Security Flaws",
+      "SCORM: Interactive — Reviewing Configurations for Security Flaws (scorm-lesson-07-reviewing-configurations.zip)"
+     ]
+    },
+    {
+     "title": "Understanding Dependency Injection and Its Risks",
+     "hours": 2,
+     "topics": [
+      "What Dependency Injection is and how AI tools generate DI setups",
+      "The security-relevant moving parts: what gets wired, with what scope, from where",
+      "Why DI is a high-value audit target — central wiring, broad blast radius"
+     ],
+     "objects": [
+      "Object: Lesson: Understanding Dependency Injection and Its Risks",
+      "Assessment: Quiz: Understanding Dependency Injection and Its Risks",
+      "SCORM: Interactive — Understanding Dependency Injection and Its Risks (scorm-lesson-08-understanding-di-risks.zip)"
+     ]
+    },
+    {
+     "title": "Auditing DI Setups for Vulnerabilities",
+     "hours": 3,
+     "topics": [
+      "Injection of untrusted or attacker-controllable beans/components",
+      "Scope and lifecycle defects (shared mutable singletons, leaked request state)",
+      "Insecure or over-broad wiring; missing access boundaries between components",
+      "A systematic DI-audit pass: enumerate, trace provenance, check scope, verify boundaries"
+     ],
+     "objects": [
+      "Object: Lesson: Auditing DI Setups for Vulnerabilities",
+      "Assessment: Quiz: Auditing DI Setups for Vulnerabilities",
+      "SCORM: Interactive — Auditing DI Setups for Vulnerabilities (scorm-lesson-09-auditing-di-setups.zip)"
+     ]
+    },
+    {
+     "title": "Hands-On — Configuration and DI Audit Lab",
+     "hours": 2,
+     "topics": [
+      "*Lab:* audit an AI-generated DI configuration for the vulnerability classes above; document each finding with location, risk, and recommended fix"
+     ],
+     "objects": [
+      "Object: Lesson: Hands-On — Configuration and DI Audit Lab",
+      "Assessment: Quiz: Hands-On — Configuration and DI Audit Lab",
+      "SCORM: Interactive — Hands-On — Configuration and DI Audit Lab (scorm-lesson-10-config-di-audit-lab.zip)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Identifying Security Flaws and Vulnerabilities",
+   "hours": 8,
+   "lessons": [
+    {
+     "title": "Common Vulnerability Classes in AI-Generated Code",
+     "hours": 3,
+     "topics": [
+      "Injection (SQL/command/path), broken authentication and access control",
+      "Insecure deserialization, unsafe input handling, sensitive-data exposure",
+      "How these classes recur in AI output, and the prompt patterns that elicit them"
+     ],
+     "objects": [
+      "Object: Lesson: Common Vulnerability Classes in AI-Generated Code",
+      "Assessment: Quiz: Common Vulnerability Classes in AI-Generated Code",
+      "SCORM: Interactive — Common Vulnerability Classes in AI-Generated Code (scorm-lesson-11-common-vulnerability-classes.zip)"
+     ]
+    },
+    {
+     "title": "From Recognition to Confirmation",
+     "hours": 2,
+     "topics": [
+      "Confirming exploitability: tracing untrusted input to a dangerous sink",
+      "Separating real vulnerabilities from false positives and theoretical-only findings",
+      "Severity and prioritization: what blocks deployment vs. what is logged"
+     ],
+     "objects": [
+      "Object: Lesson: From Recognition to Confirmation",
+      "Assessment: Quiz: From Recognition to Confirmation",
+      "SCORM: Interactive — From Recognition to Confirmation (scorm-lesson-12-recognition-to-confirmation.zip)"
+     ]
+    },
+    {
+     "title": "Hands-On — Full Vulnerability Audit",
+     "hours": 3,
+     "topics": [
+      "*Lab:* perform a complete vulnerability audit of an AI-generated component, confirming and prioritizing each finding with evidence of exploitability"
+     ],
+     "objects": [
+      "Object: Lesson: Hands-On — Full Vulnerability Audit",
+      "Assessment: Quiz: Hands-On — Full Vulnerability Audit",
+      "SCORM: Interactive — Hands-On — Full Vulnerability Audit (scorm-lesson-13-full-vulnerability-audit-lab.zip)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Remediation and Pre-Deployment Review",
+   "hours": 8,
+   "lessons": [
+    {
+     "title": "Security-Flaw Remediation Workflows",
+     "hours": 3,
+     "topics": [
+      "The fix → verify → re-audit loop; fixing the flaw without introducing a new one",
+      "Regression and re-test after remediation; confirming the fix actually closes the issue",
+      "When to remediate vs. reject-and-regenerate AI-authored code",
+      "*Activity:* remediate a confirmed finding and verify the fix"
+     ],
+     "objects": [
+      "Object: Lesson: Security-Flaw Remediation Workflows",
+      "Assessment: Quiz: Security-Flaw Remediation Workflows",
+      "SCORM: Interactive — Security-Flaw Remediation Workflows (scorm-lesson-14-remediation-workflows.zip)"
+     ]
+    },
+    {
+     "title": "The Pre-Deployment Audit Gate",
+     "hours": 2,
+     "topics": [
+      "Gating AI-generated code before deployment: entry criteria and sign-off",
+      "Documenting the audit — findings, decisions, and evidence — for defensible review",
+      "Integrating the audit gate into a team's review and CI/CD flow"
+     ],
+     "objects": [
+      "Object: Lesson: The Pre-Deployment Audit Gate",
+      "Assessment: Quiz: The Pre-Deployment Audit Gate",
+      "SCORM: Interactive — The Pre-Deployment Audit Gate (scorm-lesson-15-pre-deployment-audit-gate.zip)"
+     ]
+    },
+    {
+     "title": "Capstone Audit — End to End",
+     "hours": 3,
+     "topics": [
+      "*Integrative lab:* audit a realistic AI-generated codebase from review → findings (hallucinations, config, DI, vulnerabilities) → confirmation → remediation → documented pre-deployment sign-off",
+      "Standard lesson (`type: lesson`) with an integrative audit activity — **not** a `type: capstone` summative lesson"
+     ],
+     "objects": [
+      "Object: Lesson: Capstone Audit — End to End",
+      "Assessment: Quiz: Capstone Audit — End to End",
+      "SCORM: Interactive — Capstone Audit — End to End (scorm-lesson-16-capstone-audit-end-to-end.zip)"
+     ]
+    }
+   ]
+  }
+ ]
 }
