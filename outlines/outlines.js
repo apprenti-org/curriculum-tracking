@@ -12671,7 +12671,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Requirements & Threat Model",
-              "Assessment: Quiz: Requirements & Threat Model"
+              "SCORM: Interactive — Requirements & Threat Model (scorm-lesson-01-requirements-threat-model.zip)"
             ]
           },
           {
@@ -12684,7 +12684,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secure Architecture & AI-Collaboration Plan",
-              "Assessment: Quiz: Secure Architecture & AI-Collaboration Plan"
+              "SCORM: Interactive — Secure Architecture & AI-Collaboration Plan (scorm-lesson-02-secure-architecture-ai-collaboration-plan.zip)"
             ]
           }
         ]
@@ -12703,7 +12703,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Backend Validation Core",
-              "Assessment: Quiz: Backend Validation Core"
+              "SCORM: Interactive — Backend Validation Core (scorm-lesson-03-backend-validation-core.zip)"
             ]
           },
           {
@@ -12716,7 +12716,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secure Data Layer",
-              "Assessment: Quiz: Secure Data Layer"
+              "SCORM: Interactive — Secure Data Layer (scorm-lesson-04-secure-data-layer.zip)"
             ]
           },
           {
@@ -12729,7 +12729,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Front-End Integration",
-              "Assessment: Quiz: Front-End Integration"
+              "SCORM: Interactive — Front-End Integration (scorm-lesson-05-front-end-integration.zip)"
             ]
           }
         ]
@@ -12748,7 +12748,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Unit & Regression Tests",
-              "Assessment: Quiz: Unit & Regression Tests"
+              "SCORM: Interactive — Unit & Regression Tests (scorm-lesson-06-unit-regression-tests.zip)"
             ]
           },
           {
@@ -12761,7 +12761,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Security Testing + Coverage to >80%",
-              "Assessment: Quiz: Security Testing + Coverage to >80%"
+              "SCORM: Interactive — Security Testing + Coverage to >80% (scorm-lesson-07-security-testing-coverage.zip)"
             ]
           }
         ]
@@ -12780,7 +12780,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Build the CI/CD Pipeline",
-              "Assessment: Quiz: Build the CI/CD Pipeline"
+              "SCORM: Interactive — Build the CI/CD Pipeline (scorm-lesson-08-build-cicd-pipeline.zip)"
             ]
           },
           {
@@ -12793,7 +12793,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secure Package & Deploy",
-              "Assessment: Quiz: Secure Package & Deploy"
+              "SCORM: Interactive — Secure Package & Deploy (scorm-lesson-09-secure-package-deploy.zip)"
             ]
           }
         ]
@@ -12811,7 +12811,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: AI-Collaboration Documentation",
-              "Assessment: Quiz: AI-Collaboration Documentation"
+              "SCORM: Interactive — AI-Collaboration Documentation (scorm-lesson-10-ai-collaboration-documentation.zip)"
             ]
           },
           {
@@ -12825,7 +12825,7 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Evidence Map + CBR Signoff",
-              "Assessment: Quiz: Evidence Map + CBR Signoff"
+              "SCORM: Interactive — Evidence Map + CBR Signoff (scorm-lesson-11-evidence-map-cbr-signoff.zip)"
             ]
           }
         ]
