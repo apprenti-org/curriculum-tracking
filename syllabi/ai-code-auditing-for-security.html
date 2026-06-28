@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: AI Code Auditing for Security (Cyber Developer Associate)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+.review-banner {
+    background: rgba(255, 183, 3, 0.10);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--amber);
+    font-weight: 600;
+}
+.review-banner i {
+    font-size: 16px;
+    flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: AI Code Auditing for Security (Cyber Developer Associate)</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Cyber Developer Associate (A-31, DRAFT 2026-05-08) — Phase 7: Advanced Security Integration Module</span>
+                <span><i class="fa-regular fa-clock"></i> 40 hours</span>
+                <span class="badge">CURRENT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Course description pending.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Explain the trust problem in AI-generated code — why plausibility is not correctness and fluency is not safety.</li>
+                <li>Classify AI code defects into two failure families: hallucinations (things that don't exist) and vulnerabilities (things that are exploitable).</li>
+                <li>Identify where and why AI code fails — training-data staleness, missing context, and confident wrong defaults.</li>
+                <li>Describe the audit mandate: why AI-generated code is unverified until a deliberate security audit confirms it. (OJL 1.d)</li>
+                <li>Describe the new attack surface AI-assisted development introduces: prompt → generated code → production pipeline.</li>
+                <li>Explain the supply-chain and dependency risk that AI suggestions introduce, including hallucinated and typosquatted packages.</li>
+                <li>Identify what a security auditor looks for in AI output that a functional reviewer misses. (OJL 1.d)</li>
+                <li>Apply the threat model to predict where AI-generated changes most need auditing before deployment. (OJL 1.d)</li>
+                <li>Describe a systematic, repeatable review process for AI-generated changes from intake to documented decision. (OJL 1.d)</li>
+                <li>Apply audit scoping to determine what a pre-deployment review must cover for a given change. (OJL 1.d)</li>
+                <li>Explain the strengths and blind spots of manual review versus tooling (linters, SAST, dependency scanners).</li>
+                <li>Audit a small AI-generated diff end-to-end, producing a findings list with a verify-or-remediate decision for each. (OJL 1.d)</li>
+                <li>Define an AI hallucination in code and audit a snippet to detect invented APIs, non-existent methods, and fabricated configuration keys. (OJL 1.d)</li>
+                <li>Detect wrong library usage where the name is real but the signature or semantics are fabricated, and confirm the mismatch against the library's actual contract. (OJL 1.d)</li>
+                <li>Explain why hallucinations are most dangerous when they almost work, and articulate the audit reflex that catches them before deployment.</li>
+                <li>Verify AI-generated imports and symbols against authoritative documentation, distinguishing real-and-correct from real-but-misused and from outright invented. (OJL 1.d)</li>
+                <li>Detect package hallucination and "slopsquatting" — AI-suggested packages that do not exist or that an attacker has registered under the hallucinated name — and audit a dependency list for them. (OJL 1.d)</li>
+                <li>Confirm version and signature compatibility, auditing for APIs that exist in some version but not the one the project pins. (OJL 1.d)</li>
+                <li>Confirm behavior, not just existence, completing the verification loop with a confirm-or-reject decision per dependency and API.</li>
+                <li>Audit an AI-generated module end-to-end to detect hallucinated APIs, non-existent methods, and hallucinated/misused dependencies. (OJL 1.d)</li>
+                <li>Confirm each suspected hallucination against an authoritative source — existence, version, signature, and behavior. (OJL 1.d)</li>
+                <li>Produce a structured findings list with per-item evidence and a documented verify-or-reject decision suitable for a pre-deployment review. (OJL 1.d)</li>
+                <li>Identify insecure defaults and exposed secrets/credentials in AI-generated configuration files, and explain why generators reach for them.</li>
+                <li>Evaluate overly permissive settings — CORS, authentication, file/network permissions, and debug flags — against a least-privilege baseline. (OJL 1.d)</li>
+                <li>Trace common environment and framework configuration mistakes AI tools make, mapping each to its concrete security impact. (OJL 1.d)</li>
+                <li>Audit an AI-generated configuration set against a security checklist, documenting each finding with location and risk. (OJL 1.d)</li>
+                <li>Explain what Dependency Injection is and identify how AI tools generate DI setups. (OJL 1.d)</li>
+                <li>Identify the security-relevant moving parts of a DI setup — what gets wired, with what scope, and from where. (OJL 1.d)</li>
+                <li>Evaluate why DI is a high-value audit target — central wiring and broad blast radius — relative to other code to audit. (OJL 1.d)</li>
+                <li>Identify injection of untrusted or attacker-controllable beans/components in an AI-generated DI setup. (OJL 1.d)</li>
+                <li>Evaluate scope and lifecycle defects — shared mutable singletons and leaked request state — and explain their security impact. (OJL 1.d)</li>
+                <li>Audit for insecure or over-broad wiring and missing access boundaries between components. (OJL 1.d)</li>
+                <li>Execute a systematic DI-audit pass — enumerate, trace provenance, check scope, verify boundaries — over a flawed setup. (OJL 1.d)</li>
+                <li>Audit an AI-generated DI configuration end to end, applying the configuration checklist and the four-step DI-audit pass together. (OJL 1.d)</li>
+                <li>Identify findings across the module's vulnerability classes — insecure config, untrusted injection, scope/lifecycle defects, over-broad wiring, and missing boundaries. (OJL 1.d)</li>
+                <li>Document each finding with its location, risk, and recommended fix in an auditable findings report. (OJL 1.d)</li>
+                <li>Identify the injection family — SQL, command, and path injection — as it appears in AI-generated code. (OJL 1.d)</li>
+                <li>Identify broken authentication and access-control flaws in AI output, including missing checks and confused-deputy patterns. (OJL 1.d)</li>
+                <li>Identify insecure deserialization, unsafe input handling, and sensitive-data exposure in AI-generated code. (OJL 1.d)</li>
+                <li>Classify a flaw into the correct vulnerability class and explain why that class recurs in AI output.</li>
+                <li>Trace a vulnerability class back to the prompt pattern that commonly elicits it.</li>
+                <li>Trace untrusted input from its entry point to a dangerous sink to confirm a vulnerability is reachable. (OJL 1.d)</li>
+                <li>Confirm exploitability by reasoning about whether a real input can drive the flaw, not just whether the pattern is present. (OJL 1.d)</li>
+                <li>Separate real, exploitable findings from false positives and theoretical-only findings.</li>
+                <li>Prioritize confirmed findings by severity into what blocks deployment versus what is logged.</li>
+                <li>Identify the full set of vulnerability classes present in a complete AI-generated component. (OJL 1.d)</li>
+                <li>Classify each finding into its vulnerability class with a precise location. (OJL 1.d)</li>
+                <li>Trace untrusted input to its sink to confirm exploitability for each suspected finding. (OJL 1.d)</li>
+                <li>Distinguish confirmed exploitable findings from false positives and theoretical-only items with documented reasoning. (OJL 1.d)</li>
+                <li>Prioritize every confirmed finding by severity into block-vs-log dispositions.</li>
+                <li>Execute the fix → verify → re-audit loop on a confirmed finding, treating remediation as a closed loop rather than a one-shot edit. (OJL 1.d)</li>
+                <li>Remediate a security flaw without introducing a new one, applying minimal, targeted fixes and checking for regressions in adjacent code. (OJL 1.d)</li>
+                <li>Verify that a fix actually closes the issue — re-testing the original exploit path and confirming the flaw no longer reproduces. (OJL 1.d)</li>
+                <li>Decide when to remediate AI-authored code in place versus reject-and-regenerate, using flaw density, design soundness, and trust as the deciding factors.</li>
+                <li>Define a pre-deployment audit gate for AI-generated code — its entry criteria, pass/fail conditions, and sign-off — that operationalizes the standard's "before deployment" clause. (OJL 1.d)</li>
+                <li>Document an audit — findings, decisions, and evidence — so the gate decision is defensible under later review. (OJL 1.d)</li>
+                <li>Integrate the audit gate into a team's review and CI/CD flow, choosing what is automated versus what requires a human auditor sign-off. (OJL 1.d)</li>
+                <li>Audit a realistic AI-generated codebase end-to-end, integrating hallucination detection, configuration review, DI auditing, and vulnerability analysis into one coherent pass. (OJL 1.d)</li>
+                <li>Confirm each finding's exploitability and prioritize it, separating real flaws from false positives across the whole codebase. (OJL 1.d)</li>
+                <li>Remediate confirmed findings through the fix → verify → re-audit loop, or reject-and-regenerate where the code is too broken to patch. (OJL 1.d)</li>
+                <li>Document the audit and render a pre-deployment sign-off decision — pass with attestation, or fail with the blocking findings named — backed by defensible evidence. (OJL 1.d)</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Foundations of AI Code Auditing</span>
+                    <span class="module-hours">6 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: Why AI-Generated Code Must Be Audited (2h)</div>
+                    <ul class="topic-list">
+                        <li>The trust problem: plausibility is not correctness, and fluency is not safety</li>
+                        <li>Two failure families — hallucinations (things that don't exist) vs. vulnerabilities (things that are exploitable)</li>
+                        <li>Where AI code fails: training-data staleness, missing context, confident wrong defaults</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: The Threat Model of AI-Assisted Development (2h)</div>
+                    <ul class="topic-list">
+                        <li>The new attack surface: prompt → generated code → production pipeline</li>
+                        <li>Supply-chain and dependency risk introduced by AI suggestions</li>
+                        <li>What a security auditor looks for that a functional reviewer misses</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: The Code Audit Workflow (2h)</div>
+                    <ul class="topic-list">
+                        <li>A systematic, repeatable review process for AI-generated changes</li>
+                        <li>Scoping an audit: what a pre-deployment review must cover</li>
+                        <li>Manual review vs. tooling (linters, SAST, dependency scanners) — strengths and blind spots</li>
+                        <li>Activity: walk a small AI-generated diff through the audit workflow end-to-end</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Spotting Hallucinations in AI-Generated Code</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 4: What AI Hallucinations Look Like in Code (2h)</div>
+                    <ul class="topic-list">
+                        <li>Invented APIs, non-existent methods, and fabricated configuration keys</li>
+                        <li>Wrong library usage: right name, wrong signature, wrong semantics</li>
+                        <li>Why hallucinations are most dangerous when they almost work</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 5: Detecting Hallucinated Dependencies and APIs (3h)</div>
+                    <ul class="topic-list">
+                        <li>Verifying imports and symbols against authoritative documentation</li>
+                        <li>Package hallucination and "slopsquatting": AI-suggested packages that don't exist (or that an attacker has registered)</li>
+                        <li>Version and signature mismatches; confirming behavior, not just existence</li>
+                        <li>Activity: verify a set of AI-suggested imports/APIs and flag the hallucinated ones</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: Hands-On — Hunting Hallucinations (3h)</div>
+                    <ul class="topic-list">
+                        <li>Lab: audit an AI-generated module for hallucinated APIs, methods, and dependencies; produce a findings list with evidence and a verify-or-reject decision for each</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Auditing Configurations and Dependency Injection</span>
+                    <span class="module-hours">10 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 7: Reviewing Configurations for Security Flaws (3h)</div>
+                    <ul class="topic-list">
+                        <li>Insecure defaults, exposed secrets, and credentials in generated config</li>
+                        <li>Overly permissive settings (CORS, auth, file/network permissions, debug flags)</li>
+                        <li>Environment and framework config: what AI commonly gets wrong</li>
+                        <li>Activity: audit an AI-generated configuration set against a security checklist</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: Understanding Dependency Injection and Its Risks (2h)</div>
+                    <ul class="topic-list">
+                        <li>What Dependency Injection is and how AI tools generate DI setups</li>
+                        <li>The security-relevant moving parts: what gets wired, with what scope, from where</li>
+                        <li>Why DI is a high-value audit target — central wiring, broad blast radius</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: Auditing DI Setups for Vulnerabilities (3h)</div>
+                    <ul class="topic-list">
+                        <li>Injection of untrusted or attacker-controllable beans/components</li>
+                        <li>Scope and lifecycle defects (shared mutable singletons, leaked request state)</li>
+                        <li>Insecure or over-broad wiring; missing access boundaries between components</li>
+                        <li>A systematic DI-audit pass: enumerate, trace provenance, check scope, verify boundaries</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 10: Hands-On — Configuration and DI Audit Lab (2h)</div>
+                    <ul class="topic-list">
+                        <li>Lab: audit an AI-generated DI configuration for the vulnerability classes above; document each finding with location, risk, and recommended fix</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Identifying Security Flaws and Vulnerabilities</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 11: Common Vulnerability Classes in AI-Generated Code (3h)</div>
+                    <ul class="topic-list">
+                        <li>Injection (SQL/command/path), broken authentication and access control</li>
+                        <li>Insecure deserialization, unsafe input handling, sensitive-data exposure</li>
+                        <li>How these classes recur in AI output, and the prompt patterns that elicit them</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 12: From Recognition to Confirmation (2h)</div>
+                    <ul class="topic-list">
+                        <li>Confirming exploitability: tracing untrusted input to a dangerous sink</li>
+                        <li>Separating real vulnerabilities from false positives and theoretical-only findings</li>
+                        <li>Severity and prioritization: what blocks deployment vs. what is logged</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 13: Hands-On — Full Vulnerability Audit (3h)</div>
+                    <ul class="topic-list">
+                        <li>Lab: perform a complete vulnerability audit of an AI-generated component, confirming and prioritizing each finding with evidence of exploitability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Remediation and Pre-Deployment Review</span>
+                    <span class="module-hours">8 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 14: Security-Flaw Remediation Workflows (3h)</div>
+                    <ul class="topic-list">
+                        <li>The fix → verify → re-audit loop; fixing the flaw without introducing a new one</li>
+                        <li>Regression and re-test after remediation; confirming the fix actually closes the issue</li>
+                        <li>When to remediate vs. reject-and-regenerate AI-authored code</li>
+                        <li>Activity: remediate a confirmed finding and verify the fix</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 15: The Pre-Deployment Audit Gate (2h)</div>
+                    <ul class="topic-list">
+                        <li>Gating AI-generated code before deployment: entry criteria and sign-off</li>
+                        <li>Documenting the audit — findings, decisions, and evidence — for defensible review</li>
+                        <li>Integrating the audit gate into a team's review and CI/CD flow</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 16: Capstone Audit — End to End (3h)</div>
+                    <ul class="topic-list">
+                        <li>Integrative lab: audit a realistic AI-generated codebase from review → findings (hallucinations, config, DI, vulnerabilities) → confirmation → remediation → documented pre-deployment sign-off</li>
+                        <li>Standard lesson (`type: lesson`) with an integrative audit activity — not a `type: capstone` summative lesson</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>
