@@ -12651,6 +12651,187 @@ const courseOutlines = {
       }
     ]
   },
+  "Transaction Validation Service Capstone": {
+    "course": "Transaction Validation Service Capstone",
+    "totalHours": 40,
+    "totalModules": 5,
+    "totalLessons": 11,
+    "modules": [
+      {
+        "name": "Scope & Secure Design",
+        "hours": 6,
+        "lessons": [
+          {
+            "title": "Requirements & Threat Model",
+            "hours": 3,
+            "topics": [
+              "Elicit and document functional requirements for the Transaction Validation Service (validation rules, inputs, outputs, persistence needs)",
+              "Build a threat model identifying validation-bypass, injection, and data-integrity risks",
+              "Define acceptance criteria the finished service must satisfy"
+            ],
+            "objects": [
+              "Object: Lesson: Requirements & Threat Model",
+              "Assessment: Quiz: Requirements & Threat Model"
+            ]
+          },
+          {
+            "title": "Secure Architecture & AI-Collaboration Plan",
+            "hours": 3,
+            "topics": [
+              "Design the architecture integrating backend validation logic, secure data layer, and front-end; record security decisions at each boundary",
+              "Plan the AI-collaboration approach: where AI assistance will be used and how each AI-generated artifact will be independently validated before adoption",
+              "Establish the >80%-coverage and security-gate targets to be enforced later in the pipeline"
+            ],
+            "objects": [
+              "Object: Lesson: Secure Architecture & AI-Collaboration Plan",
+              "Assessment: Quiz: Secure Architecture & AI-Collaboration Plan"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Build the Service",
+        "hours": 12,
+        "lessons": [
+          {
+            "title": "Backend Validation Core",
+            "hours": 4,
+            "topics": [
+              "Implement the transaction-validation rules and core service logic",
+              "Apply secure-coding practices (input validation, error handling, no sensitive-data leakage)",
+              "Independently validate AI-generated code before adoption; record the validation outcome"
+            ],
+            "objects": [
+              "Object: Lesson: Backend Validation Core",
+              "Assessment: Quiz: Backend Validation Core"
+            ]
+          },
+          {
+            "title": "Secure Data Layer",
+            "hours": 4,
+            "topics": [
+              "Implement the data-persistence layer with parameterized access and least-privilege data handling",
+              "Enforce data-integrity constraints surfaced in the threat model",
+              "Independently validate AI-generated persistence code; record the validation outcome"
+            ],
+            "objects": [
+              "Object: Lesson: Secure Data Layer",
+              "Assessment: Quiz: Secure Data Layer"
+            ]
+          },
+          {
+            "title": "Front-End Integration",
+            "hours": 4,
+            "topics": [
+              "Implement the front-end and wire it to the backend service across the designed boundary",
+              "Apply front-end security practices (output encoding, safe handling of validation responses)",
+              "Independently validate AI-generated front-end code; record the validation outcome"
+            ],
+            "objects": [
+              "Object: Lesson: Front-End Integration",
+              "Assessment: Quiz: Front-End Integration"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Test to >80% Coverage",
+        "hours": 8,
+        "lessons": [
+          {
+            "title": "Unit & Regression Tests",
+            "hours": 4,
+            "topics": [
+              "Author unit tests for the validation rules, data layer, and integration points",
+              "Add regression tests covering threat-model cases and prior defects",
+              "Measure coverage and identify untested paths"
+            ],
+            "objects": [
+              "Object: Lesson: Unit & Regression Tests",
+              "Assessment: Quiz: Unit & Regression Tests"
+            ]
+          },
+          {
+            "title": "Security Testing + Coverage to >80%",
+            "hours": 4,
+            "topics": [
+              "Author security-focused tests (injection, validation-bypass, malformed input)",
+              "Close coverage gaps to exceed 80% measured coverage",
+              "Produce the coverage report that evidences the threshold is met and maintained"
+            ],
+            "objects": [
+              "Object: Lesson: Security Testing + Coverage to >80%",
+              "Assessment: Quiz: Security Testing + Coverage to >80%"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CI/CD Pipeline & Deploy",
+        "hours": 8,
+        "lessons": [
+          {
+            "title": "Build the CI/CD Pipeline",
+            "hours": 4,
+            "topics": [
+              "Construct the pipeline to build, test, and package the service securely",
+              "Enforce the >80%-coverage gate and a security gate as pipeline conditions",
+              "Manage secrets and artifacts securely within the pipeline"
+            ],
+            "objects": [
+              "Object: Lesson: Build the CI/CD Pipeline",
+              "Assessment: Quiz: Build the CI/CD Pipeline"
+            ]
+          },
+          {
+            "title": "Secure Package & Deploy",
+            "hours": 4,
+            "topics": [
+              "Securely package the backend and front-end services",
+              "Deploy through the pipeline; confirm the gates blocked or passed as designed",
+              "Capture the deployment record evidencing a successful, gated release"
+            ],
+            "objects": [
+              "Object: Lesson: Secure Package & Deploy",
+              "Assessment: Quiz: Secure Package & Deploy"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "AI-Collaboration Writeup + Capstone Signoff",
+        "hours": 6,
+        "lessons": [
+          {
+            "title": "AI-Collaboration Documentation",
+            "hours": 3,
+            "topics": [
+              "Consolidate the AI-collaboration record into a coherent document: where AI was used, the decisions made, and the independent-validation step applied to each AI-generated artifact",
+              "Demonstrate that the documented approach yields secure, independently validated output suitable to pass technical assessments and peer code review"
+            ],
+            "objects": [
+              "Object: Lesson: AI-Collaboration Documentation",
+              "Assessment: Quiz: AI-Collaboration Documentation"
+            ]
+          },
+          {
+            "title": "Evidence Map + CBR Signoff",
+            "hours": 3,
+            "topics": [
+              "Author the apprentice evidence map linking deliverables to OJL 6.a / 6.b / 6.c (governing spec §9)",
+              "Walk the OJL supervisor through the evidence map paired with the CBR (§9)",
+              "Supervisor scores the CBR; apprentice addresses any Beginning / Developing competencies per §8d (per-competency revision)",
+              "Capstone closes when every tagged competency rates Proficient or Advanced"
+            ],
+            "objects": [
+              "Object: Lesson: Evidence Map + CBR Signoff",
+              "Assessment: Quiz: Evidence Map + CBR Signoff"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Troubleshooting/Supporting in an Enterprise Environment": {
     "course": "Troubleshooting/Supporting in an Enterprise Environment",
     "totalHours": 32,

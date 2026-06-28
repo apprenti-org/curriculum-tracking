@@ -1,397 +1,402 @@
 [
- {
-  "file": "advanced-python.json",
-  "course": "Advanced Python",
-  "id": "advanced-python"
- },
- {
-  "file": "agile-project-management.json",
-  "course": "Agile Project Management with Scrum",
-  "id": "agile-project-management-with-scrum"
- },
- {
-  "file": "ai-assisted-learning-and-study-skills.json",
-  "course": "AI Assisted Learning and Study Skills",
-  "id": "ai-assisted-learning-and-study-skills"
- },
- {
-  "file": "ai-code-auditing-for-security.json",
-  "course": "AI Code Auditing for Security",
-  "id": "ai-code-auditing-for-security"
- },
- {
-  "file": "ai-foundations.json",
-  "course": "AI Foundations and Ethics",
-  "id": "ai-foundations"
- },
- {
-  "file": "ai-assisted-assessment-prep.json",
-  "course": "AI-Assisted Assessment Prep",
-  "id": "ai-assisted-assessment-prep"
- },
- {
-  "file": "ai-assisted-cicd-pipelines.json",
-  "course": "AI-Assisted CI/CD Pipelines",
-  "id": "ai-assisted-cicd-pipelines"
- },
- {
-  "file": "ai-assisted-coding-fundamentals.json",
-  "course": "AI-Assisted Coding Fundamentals",
-  "id": "ai-assisted-coding-fundamentals"
- },
- {
-  "file": "ai-assisted-infrastructure-design-build-and-configuration.json",
-  "course": "AI-Assisted Infrastructure Design, Build and Configuration",
-  "id": "ai-assisted-infrastructure-design-build-and-configuration"
- },
- {
-  "file": "ai-assisted-it-governance.json",
-  "course": "AI-Assisted IT Governance",
-  "id": "ai-assisted-it-governance"
- },
- {
-  "file": "ai-assisted-it-service-management.json",
-  "course": "AI-Assisted IT Service Management",
-  "id": "ai-assisted-it-service-management"
- },
- {
-  "file": "ai-assisted-meeting-facilitation.json",
-  "course": "AI-Assisted Meeting Facilitation",
-  "id": "ai-assisted-meeting-facilitation"
- },
- {
-  "file": "ai-assisted-test-driven-development.json",
-  "course": "AI-Assisted Test Driven Development",
-  "id": "ai-assisted-test-driven-development"
- },
- {
-  "file": "ai-assisted-threat-analysis-and-defense.json",
-  "course": "AI-Assisted Threat Analysis and Defense",
-  "id": "ai-assisted-threat-analysis-and-defense"
- },
- {
-  "file": "ai-assisted-user-communication-and-documentation.json",
-  "course": "AI-Assisted User Communication and Documentation",
-  "id": "ai-assisted-user-communication-and-documentation"
- },
- {
-  "file": "ai-driven-specifications.json",
-  "course": "AI-Driven Specifications: The Blueprint Method",
-  "id": "ai-driven-specifications"
- },
- {
-  "file": "aspnet.json",
-  "course": "ASP.NET",
-  "id": "aspnet"
- },
- {
-  "file": "business-analysis-fundamentals.json",
-  "course": "Business Analysis Fundamentals",
-  "id": "business-analysis-fundamentals"
- },
- {
-  "file": "business-and-it-fundamentals.json",
-  "course": "Business and IT Fundamentals",
-  "id": "business-and-it-fundamentals"
- },
- {
-  "file": "csharp-data-access.json",
-  "course": "C# Data Access",
-  "id": "csharp-data-access"
- },
- {
-  "file": "csharp-language-fundamentals.json",
-  "course": "C# Language Fundamentals",
-  "id": "csharp-language-fundamentals"
- },
- {
-  "file": "csharp-oop.json",
-  "course": "C# OOP",
-  "id": "csharp-oop"
- },
- {
-  "file": "cpp-coding-booster.json",
-  "course": "C++ Coding Booster Intensive",
-  "id": "c-plus-plus-coding-booster-intensive"
- },
- {
-  "file": "ctse-capstone.json",
-  "course": "Client Technical Support Engineer Capstone",
-  "id": "ctse-capstone"
- },
- {
-  "file": "comptia-a-plus.json",
-  "course": "CompTIA A+",
-  "id": "comptia-a-plus"
- },
- {
-  "file": "comptia-network-plus.json",
-  "course": "CompTIA Network+",
-  "id": "comptia-network-plus"
- },
- {
-  "file": "data-literacy.json",
-  "course": "Data Fundamentals — Data Literacy",
-  "id": "data-fundamentals-data-literacy"
- },
- {
-  "file": "data-viz-power-bi.json",
-  "course": "Data Fundamentals — Data Visualizations and Power BI",
-  "id": "data-fundamentals-data-visualizations-and-power-bi"
- },
- {
-  "file": "excel-for-data-analysts.json",
-  "course": "Data Fundamentals — Excel for Data Analysts",
-  "id": "data-fundamentals-excel-for-data-analysts"
- },
- {
-  "file": "databases-in-java.json",
-  "course": "Databases in Java",
-  "id": "databases-in-java"
- },
- {
-  "file": "docker-container-isolation.json",
-  "course": "Docker Container Isolation (Cyber Developer Associate)",
-  "id": "docker-container-isolation"
- },
- {
-  "file": "helpdesk-software-fundamentals.json",
-  "course": "Helpdesk Software Fundamentals",
-  "id": "helpdesk-software-fundamentals"
- },
- {
-  "file": "http-services.json",
-  "course": "HTTP Services",
-  "id": "http-services"
- },
- {
-  "file": "infrastructure-as-code-fundamentals.json",
-  "course": "Infrastructure as Code Fundamentals",
-  "id": "infrastructure-as-code-fundamentals"
- },
- {
-  "file": "instructor-onboarding.json",
-  "course": "Instructor Onboarding",
-  "id": "instructor-onboarding"
- },
- {
-  "file": "intro-advanced-concepts-java.json",
-  "course": "Introduction to Advanced Concepts in Java",
-  "id": "introduction-to-advanced-concepts-in-java"
- },
- {
-  "file": "intro-to-aws.json",
-  "course": "Introduction to AWS Cloud Platform",
-  "id": "introduction-to-aws-cloud-platform"
- },
- {
-  "file": "intro-to-cloud-technology.json",
-  "course": "Introduction to Cloud Technology",
-  "id": "introduction-to-cloud-technology"
- },
- {
-  "file": "intro-to-github.json",
-  "course": "Introduction to GitHub",
-  "id": "introduction-to-github"
- },
- {
-  "file": "introduction-to-github-secure.json",
-  "course": "Introduction to GitHub (Cyber Developer Associate)",
-  "id": "introduction-to-github-secure"
- },
- {
-  "file": "intro-to-html-css.json",
-  "course": "Introduction to HTML & CSS",
-  "id": "introduction-to-html-and-css"
- },
- {
-  "file": "intro-to-microsoft-teams.json",
-  "course": "Introduction to Microsoft Teams",
-  "id": "introduction-to-microsoft-teams"
- },
- {
-  "file": "it-fundamentals.json",
-  "course": "IT Fundamentals",
-  "id": "it-fundamentals"
- },
- {
-  "file": "itil-foundations.json",
-  "course": "ITIL Foundations",
-  "id": "itil-foundations"
- },
- {
-  "file": "itil-specialist-4.json",
-  "course": "ITIL Specialist 4",
-  "id": "itil-specialist-4"
- },
- {
-  "file": "java-coding-booster.json",
-  "course": "Java Coding Booster Intensive",
-  "id": "java-coding-booster-intensive"
- },
- {
-  "file": "java-language-fundamentals.json",
-  "course": "Java Language Fundamentals",
-  "id": "java-language-fundamentals"
- },
- {
-  "file": "java-oop.json",
-  "course": "Java OOP",
-  "id": "java-oop"
- },
- {
-  "file": "javascript.json",
-  "course": "JavaScript",
-  "id": "javascript"
- },
- {
-  "file": "javascript-coding-booster.json",
-  "course": "JavaScript Coding Booster Intensive",
-  "id": "javascript-coding-booster-intensive"
- },
- {
-  "file": "layers-and-file-io-csharp.json",
-  "course": "Layers and File I/O for C#",
-  "id": "layers-and-file-i-o-for-csharp"
- },
- {
-  "file": "linq-and-dependency-injection.json",
-  "course": "LINQ and Dependency Injection",
-  "id": "linq-and-dependency-injection"
- },
- {
-  "file": "linux-foundations.json",
-  "course": "Linux Foundations",
-  "id": "linux-foundations"
- },
- {
-  "file": "llm-history-and-capabilities.json",
-  "course": "LLM History & Capabilities Deep Dive (Cyber Developer Associate)",
-  "id": "llm-history-and-capabilities"
- },
- {
-  "file": "macos-administration.json",
-  "course": "macOS Administration Fundamentals",
-  "id": "macos-administration-fundamentals"
- },
- {
-  "file": "mcp-servers.json",
-  "course": "MCP Servers (Cyber Developer Associate)",
-  "id": "mcp-servers"
- },
- {
-  "file": "microsoft-endpoint-administrator.json",
-  "course": "Microsoft 365 Endpoint Administrator",
-  "id": "microsoft-365-endpoint-administrator"
- },
- {
-  "file": "microsoft-365-fundamentals.json",
-  "course": "Microsoft 365 Fundamentals",
-  "id": "microsoft-365-fundamentals"
- },
- {
-  "file": "networking-fundamentals.json",
-  "course": "Networking Fundamentals",
-  "id": "networking-fundamentals"
- },
- {
-  "file": "non-relational-data.json",
-  "course": "Non-Relational Data",
-  "id": "non-relational-data"
- },
- {
-  "file": "oss-capstone.json",
-  "course": "OSS Capstone — Ops Incident Simulation",
-  "id": "oss-capstone"
- },
- {
-  "file": "pandas.json",
-  "course": "Pandas",
-  "id": "pandas"
- },
- {
-  "file": "productivity-tools-reporting.json",
-  "course": "Productivity Tools for Technical Reporting",
-  "id": "productivity-tools-reporting"
- },
- {
-  "file": "python-basics.json",
-  "course": "Python Basics",
-  "id": "python-basics"
- },
- {
-  "file": "python-coding-booster.json",
-  "course": "Python Coding Booster Intensive",
-  "id": "python-coding-booster-intensive"
- },
- {
-  "file": "python-infrastructure-automation.json",
-  "course": "Python for Infrastructure Automation",
-  "id": "python-infrastructure-automation"
- },
- {
-  "file": "python-threat-modeling-assignment.json",
-  "course": "Python Threat Modeling Assignment",
-  "id": "python-threat-modeling-assignment"
- },
- {
-  "file": "react.json",
-  "course": "React",
-  "id": "react"
- },
- {
-  "file": "secure-llm-api-integration.json",
-  "course": "Secure LLM API Integration",
-  "id": "secure-llm-api-integration"
- },
- {
-  "file": "security-cybersecurity-fundamentals.json",
-  "course": "Security and Cybersecurity Fundamentals",
-  "id": "security-and-cybersecurity-fundamentals"
- },
- {
-  "file": "software-developer-prework.json",
-  "course": "Software Developer Pre-Work",
-  "id": "software-developer-pre-work"
- },
- {
-  "file": "software-development-lifecycle.json",
-  "course": "Software Development Lifecycle",
-  "id": "software-development-lifecycle"
- },
- {
-  "file": "spring-mvc-secure-coding.json",
-  "course": "Spring MVC Secure Coding",
-  "id": "spring-mvc-secure-coding"
- },
- {
-  "file": "sql-coding-booster.json",
-  "course": "SQL Coding Booster Intensive",
-  "id": "sql-coding-booster-intensive"
- },
- {
-  "file": "sql-for-csharp.json",
-  "course": "SQL for C#",
-  "id": "sql-for-csharp"
- },
- {
-  "file": "sql-for-data.json",
-  "course": "SQL for Data",
-  "id": "sql-for-data"
- },
- {
-  "file": "student-onboarding.json",
-  "course": "Student Onboarding",
-  "id": "student-onboarding"
- },
- {
-  "file": "troubleshooting-enterprise-environment.json",
-  "course": "Troubleshooting/Supporting in an Enterprise Environment",
-  "id": "troubleshooting-supporting-in-an-enterprise-environment"
- },
- {
-  "file": "web-dev-javascript-react.json",
-  "course": "Web Development with JavaScript",
-  "id": "web-development-with-javascript"
- }
+  {
+    "file": "advanced-python.json",
+    "course": "Advanced Python",
+    "id": "advanced-python"
+  },
+  {
+    "file": "agile-project-management.json",
+    "course": "Agile Project Management with Scrum",
+    "id": "agile-project-management-with-scrum"
+  },
+  {
+    "file": "ai-assisted-learning-and-study-skills.json",
+    "course": "AI Assisted Learning and Study Skills",
+    "id": "ai-assisted-learning-and-study-skills"
+  },
+  {
+    "file": "ai-code-auditing-for-security.json",
+    "course": "AI Code Auditing for Security",
+    "id": "ai-code-auditing-for-security"
+  },
+  {
+    "file": "ai-foundations.json",
+    "course": "AI Foundations and Ethics",
+    "id": "ai-foundations"
+  },
+  {
+    "file": "ai-assisted-assessment-prep.json",
+    "course": "AI-Assisted Assessment Prep",
+    "id": "ai-assisted-assessment-prep"
+  },
+  {
+    "file": "ai-assisted-cicd-pipelines.json",
+    "course": "AI-Assisted CI/CD Pipelines",
+    "id": "ai-assisted-cicd-pipelines"
+  },
+  {
+    "file": "ai-assisted-coding-fundamentals.json",
+    "course": "AI-Assisted Coding Fundamentals",
+    "id": "ai-assisted-coding-fundamentals"
+  },
+  {
+    "file": "ai-assisted-infrastructure-design-build-and-configuration.json",
+    "course": "AI-Assisted Infrastructure Design, Build and Configuration",
+    "id": "ai-assisted-infrastructure-design-build-and-configuration"
+  },
+  {
+    "file": "ai-assisted-it-governance.json",
+    "course": "AI-Assisted IT Governance",
+    "id": "ai-assisted-it-governance"
+  },
+  {
+    "file": "ai-assisted-it-service-management.json",
+    "course": "AI-Assisted IT Service Management",
+    "id": "ai-assisted-it-service-management"
+  },
+  {
+    "file": "ai-assisted-meeting-facilitation.json",
+    "course": "AI-Assisted Meeting Facilitation",
+    "id": "ai-assisted-meeting-facilitation"
+  },
+  {
+    "file": "ai-assisted-test-driven-development.json",
+    "course": "AI-Assisted Test Driven Development",
+    "id": "ai-assisted-test-driven-development"
+  },
+  {
+    "file": "ai-assisted-threat-analysis-and-defense.json",
+    "course": "AI-Assisted Threat Analysis and Defense",
+    "id": "ai-assisted-threat-analysis-and-defense"
+  },
+  {
+    "file": "ai-assisted-user-communication-and-documentation.json",
+    "course": "AI-Assisted User Communication and Documentation",
+    "id": "ai-assisted-user-communication-and-documentation"
+  },
+  {
+    "file": "ai-driven-specifications.json",
+    "course": "AI-Driven Specifications: The Blueprint Method",
+    "id": "ai-driven-specifications"
+  },
+  {
+    "file": "aspnet.json",
+    "course": "ASP.NET",
+    "id": "aspnet"
+  },
+  {
+    "file": "business-analysis-fundamentals.json",
+    "course": "Business Analysis Fundamentals",
+    "id": "business-analysis-fundamentals"
+  },
+  {
+    "file": "business-and-it-fundamentals.json",
+    "course": "Business and IT Fundamentals",
+    "id": "business-and-it-fundamentals"
+  },
+  {
+    "file": "csharp-data-access.json",
+    "course": "C# Data Access",
+    "id": "csharp-data-access"
+  },
+  {
+    "file": "csharp-language-fundamentals.json",
+    "course": "C# Language Fundamentals",
+    "id": "csharp-language-fundamentals"
+  },
+  {
+    "file": "csharp-oop.json",
+    "course": "C# OOP",
+    "id": "csharp-oop"
+  },
+  {
+    "file": "cpp-coding-booster.json",
+    "course": "C++ Coding Booster Intensive",
+    "id": "c-plus-plus-coding-booster-intensive"
+  },
+  {
+    "file": "ctse-capstone.json",
+    "course": "Client Technical Support Engineer Capstone",
+    "id": "ctse-capstone"
+  },
+  {
+    "file": "comptia-a-plus.json",
+    "course": "CompTIA A+",
+    "id": "comptia-a-plus"
+  },
+  {
+    "file": "comptia-network-plus.json",
+    "course": "CompTIA Network+",
+    "id": "comptia-network-plus"
+  },
+  {
+    "file": "data-literacy.json",
+    "course": "Data Fundamentals — Data Literacy",
+    "id": "data-fundamentals-data-literacy"
+  },
+  {
+    "file": "data-viz-power-bi.json",
+    "course": "Data Fundamentals — Data Visualizations and Power BI",
+    "id": "data-fundamentals-data-visualizations-and-power-bi"
+  },
+  {
+    "file": "excel-for-data-analysts.json",
+    "course": "Data Fundamentals — Excel for Data Analysts",
+    "id": "data-fundamentals-excel-for-data-analysts"
+  },
+  {
+    "file": "databases-in-java.json",
+    "course": "Databases in Java",
+    "id": "databases-in-java"
+  },
+  {
+    "file": "docker-container-isolation.json",
+    "course": "Docker Container Isolation (Cyber Developer Associate)",
+    "id": "docker-container-isolation"
+  },
+  {
+    "file": "helpdesk-software-fundamentals.json",
+    "course": "Helpdesk Software Fundamentals",
+    "id": "helpdesk-software-fundamentals"
+  },
+  {
+    "file": "http-services.json",
+    "course": "HTTP Services",
+    "id": "http-services"
+  },
+  {
+    "file": "infrastructure-as-code-fundamentals.json",
+    "course": "Infrastructure as Code Fundamentals",
+    "id": "infrastructure-as-code-fundamentals"
+  },
+  {
+    "file": "instructor-onboarding.json",
+    "course": "Instructor Onboarding",
+    "id": "instructor-onboarding"
+  },
+  {
+    "file": "intro-advanced-concepts-java.json",
+    "course": "Introduction to Advanced Concepts in Java",
+    "id": "introduction-to-advanced-concepts-in-java"
+  },
+  {
+    "file": "intro-to-aws.json",
+    "course": "Introduction to AWS Cloud Platform",
+    "id": "introduction-to-aws-cloud-platform"
+  },
+  {
+    "file": "intro-to-cloud-technology.json",
+    "course": "Introduction to Cloud Technology",
+    "id": "introduction-to-cloud-technology"
+  },
+  {
+    "file": "intro-to-github.json",
+    "course": "Introduction to GitHub",
+    "id": "introduction-to-github"
+  },
+  {
+    "file": "introduction-to-github-secure.json",
+    "course": "Introduction to GitHub (Cyber Developer Associate)",
+    "id": "introduction-to-github-secure"
+  },
+  {
+    "file": "intro-to-html-css.json",
+    "course": "Introduction to HTML & CSS",
+    "id": "introduction-to-html-and-css"
+  },
+  {
+    "file": "intro-to-microsoft-teams.json",
+    "course": "Introduction to Microsoft Teams",
+    "id": "introduction-to-microsoft-teams"
+  },
+  {
+    "file": "it-fundamentals.json",
+    "course": "IT Fundamentals",
+    "id": "it-fundamentals"
+  },
+  {
+    "file": "itil-foundations.json",
+    "course": "ITIL Foundations",
+    "id": "itil-foundations"
+  },
+  {
+    "file": "itil-specialist-4.json",
+    "course": "ITIL Specialist 4",
+    "id": "itil-specialist-4"
+  },
+  {
+    "file": "java-coding-booster.json",
+    "course": "Java Coding Booster Intensive",
+    "id": "java-coding-booster-intensive"
+  },
+  {
+    "file": "java-language-fundamentals.json",
+    "course": "Java Language Fundamentals",
+    "id": "java-language-fundamentals"
+  },
+  {
+    "file": "java-oop.json",
+    "course": "Java OOP",
+    "id": "java-oop"
+  },
+  {
+    "file": "javascript.json",
+    "course": "JavaScript",
+    "id": "javascript"
+  },
+  {
+    "file": "javascript-coding-booster.json",
+    "course": "JavaScript Coding Booster Intensive",
+    "id": "javascript-coding-booster-intensive"
+  },
+  {
+    "file": "layers-and-file-io-csharp.json",
+    "course": "Layers and File I/O for C#",
+    "id": "layers-and-file-i-o-for-csharp"
+  },
+  {
+    "file": "linq-and-dependency-injection.json",
+    "course": "LINQ and Dependency Injection",
+    "id": "linq-and-dependency-injection"
+  },
+  {
+    "file": "linux-foundations.json",
+    "course": "Linux Foundations",
+    "id": "linux-foundations"
+  },
+  {
+    "file": "llm-history-and-capabilities.json",
+    "course": "LLM History & Capabilities Deep Dive (Cyber Developer Associate)",
+    "id": "llm-history-and-capabilities"
+  },
+  {
+    "file": "macos-administration.json",
+    "course": "macOS Administration Fundamentals",
+    "id": "macos-administration-fundamentals"
+  },
+  {
+    "file": "mcp-servers.json",
+    "course": "MCP Servers (Cyber Developer Associate)",
+    "id": "mcp-servers"
+  },
+  {
+    "file": "microsoft-endpoint-administrator.json",
+    "course": "Microsoft 365 Endpoint Administrator",
+    "id": "microsoft-365-endpoint-administrator"
+  },
+  {
+    "file": "microsoft-365-fundamentals.json",
+    "course": "Microsoft 365 Fundamentals",
+    "id": "microsoft-365-fundamentals"
+  },
+  {
+    "file": "networking-fundamentals.json",
+    "course": "Networking Fundamentals",
+    "id": "networking-fundamentals"
+  },
+  {
+    "file": "non-relational-data.json",
+    "course": "Non-Relational Data",
+    "id": "non-relational-data"
+  },
+  {
+    "file": "oss-capstone.json",
+    "course": "OSS Capstone — Ops Incident Simulation",
+    "id": "oss-capstone"
+  },
+  {
+    "file": "pandas.json",
+    "course": "Pandas",
+    "id": "pandas"
+  },
+  {
+    "file": "productivity-tools-reporting.json",
+    "course": "Productivity Tools for Technical Reporting",
+    "id": "productivity-tools-reporting"
+  },
+  {
+    "file": "python-basics.json",
+    "course": "Python Basics",
+    "id": "python-basics"
+  },
+  {
+    "file": "python-coding-booster.json",
+    "course": "Python Coding Booster Intensive",
+    "id": "python-coding-booster-intensive"
+  },
+  {
+    "file": "python-infrastructure-automation.json",
+    "course": "Python for Infrastructure Automation",
+    "id": "python-infrastructure-automation"
+  },
+  {
+    "file": "python-threat-modeling-assignment.json",
+    "course": "Python Threat Modeling Assignment",
+    "id": "python-threat-modeling-assignment"
+  },
+  {
+    "file": "react.json",
+    "course": "React",
+    "id": "react"
+  },
+  {
+    "file": "secure-llm-api-integration.json",
+    "course": "Secure LLM API Integration",
+    "id": "secure-llm-api-integration"
+  },
+  {
+    "file": "security-cybersecurity-fundamentals.json",
+    "course": "Security and Cybersecurity Fundamentals",
+    "id": "security-and-cybersecurity-fundamentals"
+  },
+  {
+    "file": "software-developer-prework.json",
+    "course": "Software Developer Pre-Work",
+    "id": "software-developer-pre-work"
+  },
+  {
+    "file": "software-development-lifecycle.json",
+    "course": "Software Development Lifecycle",
+    "id": "software-development-lifecycle"
+  },
+  {
+    "file": "spring-mvc-secure-coding.json",
+    "course": "Spring MVC Secure Coding",
+    "id": "spring-mvc-secure-coding"
+  },
+  {
+    "file": "sql-coding-booster.json",
+    "course": "SQL Coding Booster Intensive",
+    "id": "sql-coding-booster-intensive"
+  },
+  {
+    "file": "sql-for-csharp.json",
+    "course": "SQL for C#",
+    "id": "sql-for-csharp"
+  },
+  {
+    "file": "sql-for-data.json",
+    "course": "SQL for Data",
+    "id": "sql-for-data"
+  },
+  {
+    "file": "student-onboarding.json",
+    "course": "Student Onboarding",
+    "id": "student-onboarding"
+  },
+  {
+    "file": "transaction-validation-service-capstone.json",
+    "course": "Transaction Validation Service Capstone",
+    "id": "transaction-validation-service-capstone"
+  },
+  {
+    "file": "troubleshooting-enterprise-environment.json",
+    "course": "Troubleshooting/Supporting in an Enterprise Environment",
+    "id": "troubleshooting-supporting-in-an-enterprise-environment"
+  },
+  {
+    "file": "web-dev-javascript-react.json",
+    "course": "Web Development with JavaScript",
+    "id": "web-development-with-javascript"
+  }
 ]
