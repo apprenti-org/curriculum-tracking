@@ -11634,6 +11634,387 @@ const courseOutlines = {
       }
     ]
   },
+  "Safe Hybrid Development / Legacy Integration": {
+    "course": "Safe Hybrid Development / Legacy Integration",
+    "totalHours": 70,
+    "totalModules": 6,
+    "totalLessons": 28,
+    "modules": [
+      {
+        "name": "Legacy Systems & the Hybrid Security Challenge",
+        "hours": 10,
+        "lessons": [
+          {
+            "title": "What Makes a System \"Legacy\" — and Why It's Risky",
+            "hours": 2,
+            "topics": [
+              "Characteristics of legacy monoliths: scale, age, undocumented behavior, tight coupling",
+              "Why \"it still works\" hides security risk",
+              "Business pressure to integrate vs. the cost of doing it unsafely"
+            ],
+            "objects": [
+              "Object: Lesson: What Makes a System \"Legacy\" — and Why It's Risky",
+              "Assessment: Quiz: What Makes a System \"Legacy\" — and Why It's Risky"
+            ]
+          },
+          {
+            "title": "Monoliths, Microservices, and the Hybrid Middle Ground",
+            "hours": 2,
+            "topics": [
+              "Monolith vs. microservice trade-offs from a security lens",
+              "What \"hybrid development\" means: new services alongside a living legacy core",
+              "The expanded attack surface a hybrid system creates"
+            ],
+            "objects": [
+              "Object: Lesson: Monoliths, Microservices, and the Hybrid Middle Ground",
+              "Assessment: Quiz: Monoliths, Microservices, and the Hybrid Middle Ground"
+            ]
+          },
+          {
+            "title": "The \"Booby Trap\" Problem — Hidden Dependencies & Latent Vulnerabilities",
+            "hours": 3,
+            "topics": [
+              "Hidden dependencies: shared state, implicit contracts, side effects",
+              "Latent vulnerabilities that activate only under integration",
+              "Case studies of integrations that introduced new vulnerabilities"
+            ],
+            "objects": [
+              "Object: Lesson: The \"Booby Trap\" Problem — Hidden Dependencies & Latent Vulnerabilities",
+              "Assessment: Quiz: The \"Booby Trap\" Problem — Hidden Dependencies & Latent Vulnerabilities"
+            ]
+          },
+          {
+            "title": "Threat-Modeling a Legacy Monolith",
+            "hours": 3,
+            "topics": [
+              "Identifying threat actors, trust boundaries, and attack vectors (supports OJL 2.a)",
+              "Data-flow and architecture-diagram analysis of a monolith",
+              "Producing a pre-integration threat model"
+            ],
+            "objects": [
+              "Object: Lesson: Threat-Modeling a Legacy Monolith",
+              "Assessment: Quiz: Threat-Modeling a Legacy Monolith"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mapping the Monolith — Discovering Hidden Dependencies",
+        "hours": 12,
+        "lessons": [
+          {
+            "title": "Inventorying a Legacy Codebase",
+            "hours": 2,
+            "topics": [
+              "Establishing what exists: entry points, modules, data stores, external integrations",
+              "Documentation gaps and how to fill them safely"
+            ],
+            "objects": [
+              "Object: Lesson: Inventorying a Legacy Codebase",
+              "Assessment: Quiz: Inventorying a Legacy Codebase"
+            ]
+          },
+          {
+            "title": "Static Dependency Analysis — Call Graphs & Coupling",
+            "hours": 3,
+            "topics": [
+              "Building call graphs and module-coupling maps",
+              "Spotting shared mutable state and implicit contracts statically"
+            ],
+            "objects": [
+              "Object: Lesson: Static Dependency Analysis — Call Graphs & Coupling",
+              "Assessment: Quiz: Static Dependency Analysis — Call Graphs & Coupling"
+            ]
+          },
+          {
+            "title": "Dynamic Analysis — Observing Runtime Behavior",
+            "hours": 3,
+            "topics": [
+              "Tracing, logging, and instrumentation to reveal runtime dependencies",
+              "Detecting side effects and hidden coupling that static analysis misses"
+            ],
+            "objects": [
+              "Object: Lesson: Dynamic Analysis — Observing Runtime Behavior",
+              "Assessment: Quiz: Dynamic Analysis — Observing Runtime Behavior"
+            ]
+          },
+          {
+            "title": "Cataloging Booby Traps — Risk Register & Integration Risk Assessment",
+            "hours": 2,
+            "topics": [
+              "Recording each hidden dependency as a scored integration risk",
+              "Prioritizing what must be neutralized before integration"
+            ],
+            "objects": [
+              "Object: Lesson: Cataloging Booby Traps — Risk Register & Integration Risk Assessment",
+              "Assessment: Quiz: Cataloging Booby Traps — Risk Register & Integration Risk Assessment"
+            ]
+          },
+          {
+            "title": "Hands-On — Map a Monolith's Attack & Dependency Surface",
+            "hours": 2,
+            "topics": [
+              "Apply static + dynamic analysis to a provided legacy system",
+              "Produce a dependency map and integration risk register"
+            ],
+            "objects": [
+              "Object: Lesson: Hands-On — Map a Monolith's Attack & Dependency Surface",
+              "Assessment: Quiz: Hands-On — Map a Monolith's Attack & Dependency Surface"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Secure Hybrid Architecture Patterns",
+        "hours": 12,
+        "lessons": [
+          {
+            "title": "Decomposition Strategy — Choosing Safe Seams",
+            "hours": 2,
+            "topics": [
+              "Where to cut: boundaries that minimize shared state and blast radius",
+              "Sequencing integration to reduce risk"
+            ],
+            "objects": [
+              "Object: Lesson: Decomposition Strategy — Choosing Safe Seams",
+              "Assessment: Quiz: Decomposition Strategy — Choosing Safe Seams"
+            ]
+          },
+          {
+            "title": "The Strangler Fig Pattern, Securely",
+            "hours": 3,
+            "topics": [
+              "Incrementally replacing legacy functionality without big-bang risk",
+              "Security considerations at each strangler step"
+            ],
+            "objects": [
+              "Object: Lesson: The Strangler Fig Pattern, Securely",
+              "Assessment: Quiz: The Strangler Fig Pattern, Securely"
+            ]
+          },
+          {
+            "title": "Anti-Corruption Layer — Containing Legacy Risk",
+            "hours": 3,
+            "topics": [
+              "Translating between legacy and new models to prevent risk leakage",
+              "Validating and sanitizing at the boundary"
+            ],
+            "objects": [
+              "Object: Lesson: Anti-Corruption Layer — Containing Legacy Risk",
+              "Assessment: Quiz: Anti-Corruption Layer — Containing Legacy Risk"
+            ]
+          },
+          {
+            "title": "API Gateways & Sidecars — Securing the Edge of the Hybrid",
+            "hours": 2,
+            "topics": [
+              "Centralizing auth, rate limiting, and policy at the gateway",
+              "Sidecar patterns for secure cross-cutting concerns"
+            ],
+            "objects": [
+              "Object: Lesson: API Gateways & Sidecars — Securing the Edge of the Hybrid",
+              "Assessment: Quiz: API Gateways & Sidecars — Securing the Edge of the Hybrid"
+            ]
+          },
+          {
+            "title": "Hands-On — Design a Secure Decomposition Boundary",
+            "hours": 2,
+            "topics": [
+              "Given the Module 2 risk register, design a safe seam + pattern choice",
+              "Justify the boundary against the threat model"
+            ],
+            "objects": [
+              "Object: Lesson: Hands-On — Design a Secure Decomposition Boundary",
+              "Assessment: Quiz: Hands-On — Design a Secure Decomposition Boundary"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Secure Service Integration",
+        "hours": 14,
+        "lessons": [
+          {
+            "title": "Service-to-Service Authentication (mTLS, Tokens)",
+            "hours": 3,
+            "topics": [
+              "Mutual TLS and token-based service identity",
+              "Key/secret management for service credentials"
+            ],
+            "objects": [
+              "Object: Lesson: Service-to-Service Authentication (mTLS, Tokens)",
+              "Assessment: Quiz: Service-to-Service Authentication (mTLS, Tokens)"
+            ]
+          },
+          {
+            "title": "Authorization & Trust Boundaries Across Services",
+            "hours": 2,
+            "topics": [
+              "Least-privilege between services; avoiding implicit trust",
+              "Propagating and validating identity across the seam"
+            ],
+            "objects": [
+              "Object: Lesson: Authorization & Trust Boundaries Across Services",
+              "Assessment: Quiz: Authorization & Trust Boundaries Across Services"
+            ]
+          },
+          {
+            "title": "Secure API Contracts & Schema Validation",
+            "hours": 3,
+            "topics": [
+              "Defining strict contracts; validating every cross-boundary payload",
+              "Versioning contracts without weakening security"
+            ],
+            "objects": [
+              "Object: Lesson: Secure API Contracts & Schema Validation",
+              "Assessment: Quiz: Secure API Contracts & Schema Validation"
+            ]
+          },
+          {
+            "title": "Secure Data Exchange & Consistency Across the Seam",
+            "hours": 3,
+            "topics": [
+              "Protecting data in transit between legacy and new services",
+              "Consistency patterns that don't open injection or race vulnerabilities"
+            ],
+            "objects": [
+              "Object: Lesson: Secure Data Exchange & Consistency Across the Seam",
+              "Assessment: Quiz: Secure Data Exchange & Consistency Across the Seam"
+            ]
+          },
+          {
+            "title": "Minimizing New Attack Surface During Integration",
+            "hours": 3,
+            "topics": [
+              "Closing unnecessary endpoints, ports, and privileges introduced by integration",
+              "Reviewing the post-integration surface against the pre-integration baseline"
+            ],
+            "objects": [
+              "Object: Lesson: Minimizing New Attack Surface During Integration",
+              "Assessment: Quiz: Minimizing New Attack Surface During Integration"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Integrating Without Introducing Vulnerabilities",
+        "hours": 12,
+        "lessons": [
+          {
+            "title": "Secure Coding at the Seams — Input Validation Across Boundaries",
+            "hours": 3,
+            "topics": [
+              "Treating the legacy side as untrusted (and vice versa)",
+              "Cross-boundary validation, encoding, and error handling"
+            ],
+            "objects": [
+              "Object: Lesson: Secure Coding at the Seams — Input Validation Across Boundaries",
+              "Assessment: Quiz: Secure Coding at the Seams — Input Validation Across Boundaries"
+            ]
+          },
+          {
+            "title": "Secrets & Configuration in a Hybrid System",
+            "hours": 2,
+            "topics": [
+              "Managing secrets/config across legacy and new services",
+              "Avoiding leakage through logs, configs, and error messages"
+            ],
+            "objects": [
+              "Object: Lesson: Secrets & Configuration in a Hybrid System",
+              "Assessment: Quiz: Secrets & Configuration in a Hybrid System"
+            ]
+          },
+          {
+            "title": "Security Regression Testing the Integration",
+            "hours": 3,
+            "topics": [
+              "Building tests that prove no new vulnerability was introduced",
+              "Edge-case and abuse-case testing at the boundary"
+            ],
+            "objects": [
+              "Object: Lesson: Security Regression Testing the Integration",
+              "Assessment: Quiz: Security Regression Testing the Integration"
+            ]
+          },
+          {
+            "title": "Monitoring & Detecting Booby-Trap Triggers in Production",
+            "hours": 2,
+            "topics": [
+              "Observability for the seam: detecting activated hidden dependencies",
+              "Alerting and safe rollback when a booby trap fires"
+            ],
+            "objects": [
+              "Object: Lesson: Monitoring & Detecting Booby-Trap Triggers in Production",
+              "Assessment: Quiz: Monitoring & Detecting Booby-Trap Triggers in Production"
+            ]
+          },
+          {
+            "title": "Hands-On — Integrate a Service Without New Vulnerabilities",
+            "hours": 2,
+            "topics": [
+              "Integrate a new service against the Module 4 design",
+              "Run security regression checks; confirm a clean surface"
+            ],
+            "objects": [
+              "Object: Lesson: Hands-On — Integrate a Service Without New Vulnerabilities",
+              "Assessment: Quiz: Hands-On — Integrate a Service Without New Vulnerabilities"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Capstone Integration Lab — Safe Hybrid Build",
+        "hours": 10,
+        "lessons": [
+          {
+            "title": "Scenario & Planning — The Legacy System & Integration Goal",
+            "hours": 2,
+            "topics": [
+              "Understand a provided legacy monolith and the new-service goal",
+              "Threat-model and plan the integration"
+            ],
+            "objects": [
+              "Object: Lesson: Scenario & Planning — The Legacy System & Integration Goal",
+              "Assessment: Quiz: Scenario & Planning — The Legacy System & Integration Goal"
+            ]
+          },
+          {
+            "title": "Discover & Neutralize Booby Traps",
+            "hours": 3,
+            "topics": [
+              "Map dependencies; identify and mitigate hidden risks before integration"
+            ],
+            "objects": [
+              "Object: Lesson: Discover & Neutralize Booby Traps",
+              "Assessment: Quiz: Discover & Neutralize Booby Traps"
+            ]
+          },
+          {
+            "title": "Implement the Secure Integration",
+            "hours": 3,
+            "topics": [
+              "Apply a secure pattern + secure service integration end to end"
+            ],
+            "objects": [
+              "Object: Lesson: Implement the Secure Integration",
+              "Assessment: Quiz: Implement the Secure Integration"
+            ]
+          },
+          {
+            "title": "Validate No New Vulnerabilities & Document",
+            "hours": 2,
+            "topics": [
+              "Security regression test the result; document the surface delta and residual risk"
+            ],
+            "objects": [
+              "Object: Lesson: Validate No New Vulnerabilities & Document",
+              "Assessment: Quiz: Validate No New Vulnerabilities & Document"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Secure LLM API Integration": {
     "course": "Secure LLM API Integration",
     "totalHours": 20,

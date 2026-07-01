@@ -340,6 +340,11 @@
     "id": "react"
   },
   {
+    "file": "safe-hybrid-development-legacy-integration.json",
+    "course": "Safe Hybrid Development / Legacy Integration",
+    "id": "safe-hybrid-development-legacy-integration"
+  },
+  {
     "file": "secure-llm-api-integration.json",
     "course": "Secure LLM API Integration",
     "id": "secure-llm-api-integration"
