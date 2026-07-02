@@ -11654,7 +11654,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: What Makes a System \"Legacy\" — and Why It's Risky",
-              "Assessment: Quiz: What Makes a System \"Legacy\" — and Why It's Risky"
+              "Assessment: Quiz: What Makes a System \"Legacy\" — and Why It's Risky",
+              "SCORM: Interactive — What Makes a System \"Legacy\" — and Why It's Risky (scorm-lesson-01-what-makes-a-system-legacy.zip)"
             ]
           },
           {
@@ -11667,7 +11668,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Monoliths, Microservices, and the Hybrid Middle Ground",
-              "Assessment: Quiz: Monoliths, Microservices, and the Hybrid Middle Ground"
+              "Assessment: Quiz: Monoliths, Microservices, and the Hybrid Middle Ground",
+              "SCORM: Interactive — Monoliths, Microservices, and the Hybrid Middle Ground (scorm-lesson-02-monoliths-microservices-hybrid.zip)"
             ]
           },
           {
@@ -11680,7 +11682,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The \"Booby Trap\" Problem — Hidden Dependencies & Latent Vulnerabilities",
-              "Assessment: Quiz: The \"Booby Trap\" Problem — Hidden Dependencies & Latent Vulnerabilities"
+              "Assessment: Quiz: The \"Booby Trap\" Problem — Hidden Dependencies & Latent Vulnerabilities",
+              "SCORM: Interactive — The \"Booby Trap\" Problem — Hidden Dependencies & Latent Vulnerabilities (scorm-lesson-03-the-booby-trap-problem.zip)"
             ]
           },
           {
@@ -11693,7 +11696,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Threat-Modeling a Legacy Monolith",
-              "Assessment: Quiz: Threat-Modeling a Legacy Monolith"
+              "Assessment: Quiz: Threat-Modeling a Legacy Monolith",
+              "SCORM: Interactive — Threat-Modeling a Legacy Monolith (scorm-lesson-04-threat-modeling-a-legacy-monolith.zip)"
             ]
           }
         ]
@@ -11711,7 +11715,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Inventorying a Legacy Codebase",
-              "Assessment: Quiz: Inventorying a Legacy Codebase"
+              "Assessment: Quiz: Inventorying a Legacy Codebase",
+              "SCORM: Interactive — Inventorying a Legacy Codebase (scorm-lesson-05-inventorying-a-legacy-codebase.zip)"
             ]
           },
           {
@@ -11723,7 +11728,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Static Dependency Analysis — Call Graphs & Coupling",
-              "Assessment: Quiz: Static Dependency Analysis — Call Graphs & Coupling"
+              "Assessment: Quiz: Static Dependency Analysis — Call Graphs & Coupling",
+              "SCORM: Interactive — Static Dependency Analysis — Call Graphs & Coupling (scorm-lesson-06-static-dependency-analysis.zip)"
             ]
           },
           {
@@ -11735,7 +11741,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Dynamic Analysis — Observing Runtime Behavior",
-              "Assessment: Quiz: Dynamic Analysis — Observing Runtime Behavior"
+              "Assessment: Quiz: Dynamic Analysis — Observing Runtime Behavior",
+              "SCORM: Interactive — Dynamic Analysis — Observing Runtime Behavior (scorm-lesson-07-dynamic-analysis-runtime-behavior.zip)"
             ]
           },
           {
@@ -11747,7 +11754,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Cataloging Booby Traps — Risk Register & Integration Risk Assessment",
-              "Assessment: Quiz: Cataloging Booby Traps — Risk Register & Integration Risk Assessment"
+              "Assessment: Quiz: Cataloging Booby Traps — Risk Register & Integration Risk Assessment",
+              "SCORM: Interactive — Cataloging Booby Traps — Risk Register & Integration Risk Assessment (scorm-lesson-08-cataloging-booby-traps-risk-register.zip)"
             ]
           },
           {
@@ -11759,7 +11767,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hands-On — Map a Monolith's Attack & Dependency Surface",
-              "Assessment: Quiz: Hands-On — Map a Monolith's Attack & Dependency Surface"
+              "Assessment: Quiz: Hands-On — Map a Monolith's Attack & Dependency Surface",
+              "SCORM: Interactive — Hands-On — Map a Monolith's Attack & Dependency Surface (scorm-lesson-09-map-monolith-attack-dependency-surface.zip)"
             ]
           }
         ]
@@ -11777,7 +11786,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Decomposition Strategy — Choosing Safe Seams",
-              "Assessment: Quiz: Decomposition Strategy — Choosing Safe Seams"
+              "Assessment: Quiz: Decomposition Strategy — Choosing Safe Seams",
+              "SCORM: Interactive — Decomposition Strategy — Choosing Safe Seams (scorm-lesson-10-decomposition-strategy-safe-seams.zip)"
             ]
           },
           {
@@ -11789,7 +11799,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Strangler Fig Pattern, Securely",
-              "Assessment: Quiz: The Strangler Fig Pattern, Securely"
+              "Assessment: Quiz: The Strangler Fig Pattern, Securely",
+              "SCORM: Interactive — The Strangler Fig Pattern, Securely (scorm-lesson-11-strangler-fig-pattern-securely.zip)"
             ]
           },
           {
@@ -11801,7 +11812,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Anti-Corruption Layer — Containing Legacy Risk",
-              "Assessment: Quiz: Anti-Corruption Layer — Containing Legacy Risk"
+              "Assessment: Quiz: Anti-Corruption Layer — Containing Legacy Risk",
+              "SCORM: Interactive — Anti-Corruption Layer — Containing Legacy Risk (scorm-lesson-12-anti-corruption-layer.zip)"
             ]
           },
           {
@@ -11813,7 +11825,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: API Gateways & Sidecars — Securing the Edge of the Hybrid",
-              "Assessment: Quiz: API Gateways & Sidecars — Securing the Edge of the Hybrid"
+              "Assessment: Quiz: API Gateways & Sidecars — Securing the Edge of the Hybrid",
+              "SCORM: Interactive — API Gateways & Sidecars — Securing the Edge of the Hybrid (scorm-lesson-13-api-gateways-sidecars.zip)"
             ]
           },
           {
@@ -11825,7 +11838,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hands-On — Design a Secure Decomposition Boundary",
-              "Assessment: Quiz: Hands-On — Design a Secure Decomposition Boundary"
+              "Assessment: Quiz: Hands-On — Design a Secure Decomposition Boundary",
+              "SCORM: Interactive — Hands-On — Design a Secure Decomposition Boundary (scorm-lesson-14-design-secure-decomposition-boundary.zip)"
             ]
           }
         ]
@@ -11843,7 +11857,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Service-to-Service Authentication (mTLS, Tokens)",
-              "Assessment: Quiz: Service-to-Service Authentication (mTLS, Tokens)"
+              "Assessment: Quiz: Service-to-Service Authentication (mTLS, Tokens)",
+              "SCORM: Interactive — Service-to-Service Authentication (mTLS, Tokens) (scorm-lesson-15-service-to-service-authentication.zip)"
             ]
           },
           {
@@ -11855,7 +11870,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Authorization & Trust Boundaries Across Services",
-              "Assessment: Quiz: Authorization & Trust Boundaries Across Services"
+              "Assessment: Quiz: Authorization & Trust Boundaries Across Services",
+              "SCORM: Interactive — Authorization & Trust Boundaries Across Services (scorm-lesson-16-authorization-trust-boundaries.zip)"
             ]
           },
           {
@@ -11867,7 +11883,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secure API Contracts & Schema Validation",
-              "Assessment: Quiz: Secure API Contracts & Schema Validation"
+              "Assessment: Quiz: Secure API Contracts & Schema Validation",
+              "SCORM: Interactive — Secure API Contracts & Schema Validation (scorm-lesson-17-secure-api-contracts-schema-validation.zip)"
             ]
           },
           {
@@ -11879,7 +11896,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secure Data Exchange & Consistency Across the Seam",
-              "Assessment: Quiz: Secure Data Exchange & Consistency Across the Seam"
+              "Assessment: Quiz: Secure Data Exchange & Consistency Across the Seam",
+              "SCORM: Interactive — Secure Data Exchange & Consistency Across the Seam (scorm-lesson-18-secure-data-exchange-consistency.zip)"
             ]
           },
           {
@@ -11891,7 +11909,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Minimizing New Attack Surface During Integration",
-              "Assessment: Quiz: Minimizing New Attack Surface During Integration"
+              "Assessment: Quiz: Minimizing New Attack Surface During Integration",
+              "SCORM: Interactive — Minimizing New Attack Surface During Integration (scorm-lesson-19-minimizing-new-attack-surface.zip)"
             ]
           }
         ]
@@ -11909,7 +11928,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secure Coding at the Seams — Input Validation Across Boundaries",
-              "Assessment: Quiz: Secure Coding at the Seams — Input Validation Across Boundaries"
+              "Assessment: Quiz: Secure Coding at the Seams — Input Validation Across Boundaries",
+              "SCORM: Interactive — Secure Coding at the Seams — Input Validation Across Boundaries (scorm-lesson-20-secure-coding-at-the-seams.zip)"
             ]
           },
           {
@@ -11921,7 +11941,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secrets & Configuration in a Hybrid System",
-              "Assessment: Quiz: Secrets & Configuration in a Hybrid System"
+              "Assessment: Quiz: Secrets & Configuration in a Hybrid System",
+              "SCORM: Interactive — Secrets & Configuration in a Hybrid System (scorm-lesson-21-secrets-and-configuration.zip)"
             ]
           },
           {
@@ -11933,7 +11954,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Security Regression Testing the Integration",
-              "Assessment: Quiz: Security Regression Testing the Integration"
+              "Assessment: Quiz: Security Regression Testing the Integration",
+              "SCORM: Interactive — Security Regression Testing the Integration (scorm-lesson-22-security-regression-testing.zip)"
             ]
           },
           {
@@ -11945,7 +11967,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Monitoring & Detecting Booby-Trap Triggers in Production",
-              "Assessment: Quiz: Monitoring & Detecting Booby-Trap Triggers in Production"
+              "Assessment: Quiz: Monitoring & Detecting Booby-Trap Triggers in Production",
+              "SCORM: Interactive — Monitoring & Detecting Booby-Trap Triggers in Production (scorm-lesson-23-monitoring-detecting-booby-trap-triggers.zip)"
             ]
           },
           {
@@ -11957,7 +11980,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hands-On — Integrate a Service Without New Vulnerabilities",
-              "Assessment: Quiz: Hands-On — Integrate a Service Without New Vulnerabilities"
+              "Assessment: Quiz: Hands-On — Integrate a Service Without New Vulnerabilities",
+              "SCORM: Interactive — Hands-On — Integrate a Service Without New Vulnerabilities (scorm-lesson-24-integrate-without-new-vulnerabilities.zip)"
             ]
           }
         ]
@@ -11975,7 +11999,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Scenario & Planning — The Legacy System & Integration Goal",
-              "Assessment: Quiz: Scenario & Planning — The Legacy System & Integration Goal"
+              "Assessment: Quiz: Scenario & Planning — The Legacy System & Integration Goal",
+              "SCORM: Interactive — Scenario & Planning — The Legacy System & Integration Goal (scorm-lesson-25-scenario-and-planning.zip)"
             ]
           },
           {
@@ -11986,7 +12011,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Discover & Neutralize Booby Traps",
-              "Assessment: Quiz: Discover & Neutralize Booby Traps"
+              "Assessment: Quiz: Discover & Neutralize Booby Traps",
+              "SCORM: Interactive — Discover & Neutralize Booby Traps (scorm-lesson-26-discover-neutralize-booby-traps.zip)"
             ]
           },
           {
@@ -11997,7 +12023,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Implement the Secure Integration",
-              "Assessment: Quiz: Implement the Secure Integration"
+              "Assessment: Quiz: Implement the Secure Integration",
+              "SCORM: Interactive — Implement the Secure Integration (scorm-lesson-27-implement-secure-integration.zip)"
             ]
           },
           {
@@ -12008,7 +12035,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Validate No New Vulnerabilities & Document",
-              "Assessment: Quiz: Validate No New Vulnerabilities & Document"
+              "Assessment: Quiz: Validate No New Vulnerabilities & Document",
+              "SCORM: Interactive — Validate No New Vulnerabilities & Document (scorm-lesson-28-validate-no-new-vulnerabilities.zip)"
             ]
           }
         ]
