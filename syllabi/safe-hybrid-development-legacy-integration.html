@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: Safe Hybrid Development / Legacy Integration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+:root[data-theme="dark"] {
+    --bg: #111117;
+    --surface: #1A1B23;
+    --surface-raised: #22232D;
+    --border: #2E2F3A;
+    --border-subtle: #23242E;
+    --text-primary: #F0F0EC;
+    --text-secondary: #C8C9CE;
+    --text-muted: #8B8D98;
+    --sky-blue: #8ECAE6;
+    --blue-green: #219EBC;
+    --deep-space: #023047;
+    --amber: #FFB703;
+    --tiger: #FB8500;
+    --link: #219EBC;
+    --link-hover: #8ECAE6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 32px 120px;
+}
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.back-link:hover { color: var(--link-hover); }
+.header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.header-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+.header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 183, 3, 0.12);
+    color: var(--amber);
+}
+section { margin-bottom: 32px; }
+section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+section h2 i { opacity: 0.6; font-size: 15px; }
+p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+.outcomes {
+    list-style: none;
+    counter-reset: outcome;
+}
+.outcomes li {
+    counter-increment: outcome;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+}
+.outcomes li::before {
+    content: counter(outcome) ".";
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 24px;
+    text-align: right;
+}
+.module {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.module-head {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.module-num {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 20px;
+}
+.module-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+.module-hours {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.module-body {
+    padding: 0 16px 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+.lesson-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 12px 0 6px;
+}
+.topic-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.topic-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.topic-list li::before {
+    content: "\2022";
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+.activities {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--surface-raised);
+    border-radius: 6px;
+}
+.activities-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+.activities li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.activities li::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+.assessment-box {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 16px;
+}
+.assessment-box p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+.assessment-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.assessment-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.assessment-box li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: #3fb950;
+}
+.software-list {
+    list-style: none;
+    padding: 0;
+}
+.software-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.software-list li::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+.labs-list {
+    list-style: none;
+    padding: 0;
+}
+.labs-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 3px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.labs-list li::before {
+    content: "\f120";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--sky-blue);
+}
+code {
+    background: var(--surface-raised);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--sky-blue);
+}
+.review-banner {
+    background: rgba(255, 183, 3, 0.10);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--amber);
+    font-weight: 600;
+}
+.review-banner i {
+    font-size: 16px;
+    flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="header">
+            <h1>Syllabus: Safe Hybrid Development / Legacy Integration</h1>
+            <div class="header-meta">
+                <span><i class="fa-solid fa-layer-group"></i> Cyber Developer Associate (A-31) — Phase 7: Advanced Security Integration Module</span>
+                <span><i class="fa-regular fa-clock"></i> 70 hours</span>
+                <span class="badge">CURRENT</span>
+            </div>
+        </div>
+        <section>
+            <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
+            <p>Course description pending.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> Learning Outcomes</h2>
+            <ol class="outcomes">
+                <li>Define what makes a system "legacy" — scale, age, tight coupling, and undocumented behavior — independent of its technology stack.</li>
+                <li>Explain why a system that "still works" can carry latent security risk that integration activates.</li>
+                <li>Describe the business pressure to integrate new functionality and the security cost of doing it unsafely.</li>
+                <li>Articulate the course thesis: a legacy monolith must be understood and threat-modeled before any new service touches it. (OJL 2.c)</li>
+                <li>Compare monolith and microservice architectures through a security lens — trust boundaries, blast radius, and attack surface.</li>
+                <li>Define "hybrid development": new services operating alongside a living legacy core.</li>
+                <li>Explain how a hybrid system expands the attack surface relative to either pure architecture. (OJL 2.c)</li>
+                <li>Identify the new trust boundaries a hybrid introduces between legacy and new components.</li>
+                <li>Define hidden dependencies — shared state, implicit contracts, and side effects — and explain why they're invisible during normal operation.</li>
+                <li>Explain latent vulnerabilities that activate only under integration (the "booby trap" failure mode).</li>
+                <li>Analyze real cases where integrating a new service introduced a new vulnerability through legacy behavior.</li>
+                <li>Recognize and categorize the booby-trap classes an integrator must hunt before integrating. (OJL 2.c)</li>
+                <li>Identify threat actors, trust boundaries, and attack vectors for a legacy monolith. (OJL 2.a)</li>
+                <li>Analyze architecture and data-flow diagrams to surface vulnerabilities and risky assumptions. (OJL 2.a)</li>
+                <li>Produce a pre-integration threat model that scopes where a new service can safely attach.</li>
+                <li>Prioritize the threats that an integration would amplify. (OJL 2.c)</li>
+                <li>Construct a systematic inventory of a legacy system's entry points, modules, data stores, and external integrations.</li>
+                <li>Distinguish documented behavior from actual behavior and identify documentation gaps that hide integration risk.</li>
+                <li>Apply safe, non-destructive discovery techniques that inventory a live legacy system without changing or breaking it.</li>
+                <li>Produce a structured inventory artifact that feeds static and dynamic analysis later in the module. (OJL 2.c)</li>
+                <li>Build a call graph and module-coupling map of a legacy monolith from its source, using the Lesson 5 inventory as the starting frame. (OJL 2.c)</li>
+                <li>Identify shared mutable state and implicit contracts that are visible statically — the hidden dependencies most likely to become booby traps.</li>
+                <li>Analyze a call graph as an architecture view to trace attack vectors and blast radius from a proposed integration seam. (OJL 2.a)</li>
+                <li>Document static findings as candidate dependencies and risks, noting what only dynamic analysis can confirm.</li>
+                <li>Apply tracing, logging, and instrumentation to observe a legacy system's actual runtime behavior and confirm the static map. (OJL 2.c)</li>
+                <li>Detect side effects and hidden coupling — timing, ordering, and conditional behavior — that static analysis cannot see.</li>
+                <li>Analyze observed runtime data flows as a refined architecture view to identify real attack paths and trust-boundary crossings. (OJL 2.a)</li>
+                <li>Reconcile dynamic findings with the static map and resolve the requires-dynamic-confirmation items from Lesson 6.</li>
+                <li>Record each discovered hidden dependency as a structured integration-risk entry with a clear trigger and impact.</li>
+                <li>Score and prioritize each entry by likelihood of activation and security impact to produce an integration risk register.</li>
+                <li>Determine which booby traps must be neutralized before integration versus monitored or accepted with justification. (OJL 2.c)</li>
+                <li>Hand off the risk register as the bridge to Module 3 decomposition and Module 5 mitigation decisions.</li>
+                <li>Apply the full discovery workflow — inventory, static analysis, dynamic analysis — to a provided legacy system end to end. (OJL 2.c)</li>
+                <li>Produce a combined dependency and data-flow map and analyze it as an architecture view to identify attack vectors and a proposed integration seam. (OJL 2.a)</li>
+                <li>Compile a scored integration risk register of the booby traps discovered, with neutralize/monitor/accept decisions.</li>
+                <li>Present and defend the map and register, justifying findings against evidence and the threat model.</li>
+                <li>Define a "seam" as a decomposition boundary and explain why seam choice is a security decision, not only an architectural one.</li>
+                <li>Evaluate candidate seams against shared state and blast radius using the Module 2 dependency map and risk register.</li>
+                <li>Sequence an integration so that the riskiest dependencies are isolated or neutralized before new code crosses the boundary. (OJL 2.c)</li>
+                <li>Justify a chosen seam against the pre-integration threat model, naming the booby traps it contains and the residual risk it leaves.</li>
+                <li>Explain the strangler fig pattern and how incremental replacement avoids the security risk of a big-bang rewrite.</li>
+                <li>Identify the security controls required at the routing/facade layer that fronts the monolith during strangulation.</li>
+                <li>Analyze the security considerations at each strangler step — dual-running, data ownership, and rollback — and how each can introduce or contain a booby trap. (OJL 2.c)</li>
+                <li>Plan a secure strangulation sequence that leaves the hybrid system in a defensible state after every increment.</li>
+                <li>Explain the anti-corruption layer (ACL) as a translation boundary that prevents the legacy model — and its hidden risk — from leaking into new services.</li>
+                <li>Design the ACL's translation and validation responsibilities so every value crossing from legacy to new is sanitized and well-formed. (OJL 2.c)</li>
+                <li>Treat the legacy side as untrusted: apply input validation, output encoding, and fail-closed defaults at the ACL to contain booby traps.</li>
+                <li>Distinguish the ACL from an API gateway and decide where each belongs in a hybrid architecture.</li>
+                <li>Explain how an API gateway centralizes authentication, rate limiting, and policy enforcement at the edge of a hybrid system.</li>
+                <li>Apply the sidecar pattern to enforce cross-cutting security concerns consistently across legacy and new components. (OJL 2.c)</li>
+                <li>Evaluate how gateways and sidecars contain legacy risk and where they themselves become new attack surface that must be hardened.</li>
+                <li>Decide how gateway, sidecar, and anti-corruption layer compose into a coherent secure hybrid architecture.</li>
+                <li>Select a safe seam for a provided legacy monolith using its Module 2 dependency map and integration risk register.</li>
+                <li>Choose and combine the appropriate Module 3 patterns (strangler fig, anti-corruption layer, API gateway, sidecar) for the chosen boundary. (OJL 2.c)</li>
+                <li>Produce a secure decomposition design that contains the register's booby traps and states residual risk.</li>
+                <li>Justify the design against the pre-integration threat model and defend it under peer review.</li>
+                <li>Explain why service-to-service authentication is mandatory at a hybrid seam, and why network-location trust ("it's inside the perimeter") is itself a booby trap.</li>
+                <li>Compare mutual TLS and token-based (e.g. signed bearer/JWT) service identity, and select an approach appropriate to a legacy-to-new integration.</li>
+                <li>Describe secure credential and key lifecycle management — issuance, rotation, revocation, and storage — for service identities.</li>
+                <li>Evaluate an authentication design against a pre-integration baseline to confirm it adds the minimum necessary attack surface. (OJL 2.c)</li>
+                <li>Distinguish authentication from authorization, and define a trust boundary as the line where one service stops trusting another by default.</li>
+                <li>Apply least-privilege between services — scoping what a service may do, not just confirming who it is — and explain why implicit trust is a booby trap.</li>
+                <li>Describe how to propagate and re-validate identity/authority across the seam (the confused-deputy problem) without granting the legacy core's privileges to the new service.</li>
+                <li>Evaluate an authorization design against the pre-integration baseline to confirm it grants the minimum privilege needed. (OJL 2.c)</li>
+                <li>Explain why an explicit API contract is a security control, and how implicit legacy contracts (Lesson 3) become booby traps at an integration seam.</li>
+                <li>Define a strict contract — types, ranges, required/optional fields, formats, and a closed (default-deny) schema — for a cross-boundary interface.</li>
+                <li>Implement schema validation on every cross-boundary payload, validating inbound and outbound, and rejecting rather than coercing malformed input.</li>
+                <li>Version and evolve a contract without weakening its security guarantees, and confirm the contract adds no unnecessary surface against the baseline. (OJL 2.c)</li>
+                <li>Protect data in transit across the seam — confidentiality, integrity, and authenticity — and explain what shared data stores expose at a hybrid boundary.</li>
+                <li>Analyze consistency patterns (synchronous vs. eventual, shared database vs. message-based) for the security risks each introduces between legacy and new services.</li>
+                <li>Identify how consistency mechanisms can re-open race conditions and injection paths (shared-state and timing booby traps from Module 1) and apply safeguards.</li>
+                <li>Evaluate a data-exchange design against the pre-integration baseline to confirm it minimizes new attack surface. (OJL 2.c)</li>
+                <li>Define attack surface for a hybrid system and explain how integration expands it across endpoints, ports, privileges, credentials, and data paths.</li>
+                <li>Establish a pre-integration surface baseline and compute the surface delta an integration introduces.</li>
+                <li>Apply surface-reduction techniques — closing unnecessary endpoints/ports, dropping privileges, and removing redundant or legacy-fallback paths.</li>
+                <li>Review a completed integration's post-integration surface against the baseline and justify every retained addition. (OJL 2.c)</li>
+                <li>Apply the "treat both sides as untrusted" principle, validating data crossing the seam in both directions between legacy and new services.</li>
+                <li>Implement layered input validation at the boundary — type, range, format, and semantic checks — using allow-list rather than deny-list strategies.</li>
+                <li>Apply correct output encoding and context-aware sanitization so data passed across the seam cannot weaponize a latent legacy flaw.</li>
+                <li>Design fail-closed error handling at the boundary that neither leaks information nor leaves the seam in an exploitable partial state. (OJL 2.c)</li>
+                <li>Identify how secrets and configuration diverge between a legacy monolith and new services, and the new exposure the hybrid seam creates.</li>
+                <li>Apply secure secret-management practices — externalized storage, least-privilege access, and rotation — across both legacy and new sides of the integration.</li>
+                <li>Prevent secret leakage through logs, error messages, configuration files, and version control at the boundary. (OJL 2.c)</li>
+                <li>Manage configuration as a security-relevant surface, using fail-safe defaults and environment separation across the hybrid system.</li>
+                <li>Establish a pre-integration security baseline against which the post-integration attack surface can be compared to prove no new exposure.</li>
+                <li>Design security regression tests that re-run on every change and fail the build when a known-good security property regresses.</li>
+                <li>Author abuse-case and edge-case tests at the seam that attempt to trigger the booby-trap classes discovered in earlier modules. (OJL 2.c)</li>
+                <li>Interpret and act on test results — distinguishing a real regression from noise, and gating release on a proven-clean surface.</li>
+                <li>Explain why testing is necessary but not sufficient, and the role of production monitoring as the last line of defense against an activated booby trap.</li>
+                <li>Instrument the seam with observability — structured logs, metrics, and traces — that surfaces hidden-dependency activation between legacy and new services.</li>
+                <li>Define alerts on booby-trap trigger signals and tune them to be actionable rather than noisy. (OJL 2.c)</li>
+                <li>Design safe, fast rollback and containment so a fired booby trap is reverted before it becomes an incident.</li>
+                <li>Implement a new service's integration against a provided legacy monolith using the Module 4 design and Module 5 secure-coding practices at the seam.</li>
+                <li>Apply cross-boundary validation, secure secret/config handling, and fail-closed error handling so the seam treats both sides as untrusted.</li>
+                <li>Run the security regression and abuse-case suite against the integration and confirm a clean, justified surface delta. (OJL 2.c)</li>
+                <li>Document the result — surface delta, passing trap tests, and a detection/rollback plan — as evidence the integration introduced no new vulnerability.</li>
+                <li>Read and summarize a provided legacy monolith and its new-service integration goal, identifying the business driver and the integration seam in scope.</li>
+                <li>Produce a pre-integration threat model of the monolith, naming threat actors, trust boundaries, and likely booby-trap classes to hunt.</li>
+                <li>Draft a capstone integration plan that sequences discovery, design, implementation, and validation across the remaining lab lessons. (OJL 2.c)</li>
+                <li>Define the "done" bar for the capstone: a working integration plus evidence it introduced no new vulnerability. (OJL 2.c)</li>
+                <li>Apply static and dynamic analysis to the capstone monolith to surface hidden dependencies along the integration seam.</li>
+                <li>Record each discovered hidden dependency as a scored entry in an integration risk register, classified by booby-trap type.</li>
+                <li>Decide and apply a neutralization action for each high-priority booby trap — mitigate, isolate, or contain — before any integration code is written. (OJL 2.c)</li>
+                <li>Confirm the seam is safe to build against, producing a discovery summary that hands off to the implementation stage. (OJL 2.c)</li>
+                <li>Apply a chosen secure architecture pattern (strangler fig, anti-corruption layer, gateway, or sidecar) to create a safe seam for the new service.</li>
+                <li>Implement secure service-to-service integration — authentication, authorization, and a validated API contract — across the seam.</li>
+                <li>Code the seam defensively, honoring the Lesson 26 design constraints so no neutralized booby trap is re-armed and no new attack surface is opened. (OJL 2.c)</li>
+                <li>Produce a working integration plus a post-integration surface baseline ready for validation. (OJL 2.c)</li>
+                <li>Run security regression and abuse-case tests against the integrated system to prove no new vulnerability was introduced at the seam.</li>
+                <li>Produce a surface delta comparing the pre-integration baseline to the post-integration surface, accounting for every change. (OJL 2.c)</li>
+                <li>Document residual risk and the production monitoring needed to detect any deferred booby-trap trigger. (OJL 2.c)</li>
+                <li>Assemble the capstone evidence package against the Lesson 25 "done" bar and reflect on the end-to-end safe-integration process. (OJL 2.c)</li>
+            </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">1</span>
+                    <span class="module-title">Legacy Systems &amp; the Hybrid Security Challenge</span>
+                    <span class="module-hours">10 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 1: What Makes a System "Legacy" — and Why It's Risky (2h)</div>
+                    <ul class="topic-list">
+                        <li>Characteristics of legacy monoliths: scale, age, undocumented behavior, tight coupling</li>
+                        <li>Why "it still works" hides security risk</li>
+                        <li>Business pressure to integrate vs. the cost of doing it unsafely</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 2: Monoliths, Microservices, and the Hybrid Middle Ground (2h)</div>
+                    <ul class="topic-list">
+                        <li>Monolith vs. microservice trade-offs from a security lens</li>
+                        <li>What "hybrid development" means: new services alongside a living legacy core</li>
+                        <li>The expanded attack surface a hybrid system creates</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 3: The "Booby Trap" Problem — Hidden Dependencies &amp; Latent Vulnerabilities (3h)</div>
+                    <ul class="topic-list">
+                        <li>Hidden dependencies: shared state, implicit contracts, side effects</li>
+                        <li>Latent vulnerabilities that activate only under integration</li>
+                        <li>Case studies of integrations that introduced new vulnerabilities</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 4: Threat-Modeling a Legacy Monolith (3h)</div>
+                    <ul class="topic-list">
+                        <li>Identifying threat actors, trust boundaries, and attack vectors (supports OJL 2.a)</li>
+                        <li>Data-flow and architecture-diagram analysis of a monolith</li>
+                        <li>Producing a pre-integration threat model</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">2</span>
+                    <span class="module-title">Mapping the Monolith — Discovering Hidden Dependencies</span>
+                    <span class="module-hours">12 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 5: Inventorying a Legacy Codebase (2h)</div>
+                    <ul class="topic-list">
+                        <li>Establishing what exists: entry points, modules, data stores, external integrations</li>
+                        <li>Documentation gaps and how to fill them safely</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 6: Static Dependency Analysis — Call Graphs &amp; Coupling (3h)</div>
+                    <ul class="topic-list">
+                        <li>Building call graphs and module-coupling maps</li>
+                        <li>Spotting shared mutable state and implicit contracts statically</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 7: Dynamic Analysis — Observing Runtime Behavior (3h)</div>
+                    <ul class="topic-list">
+                        <li>Tracing, logging, and instrumentation to reveal runtime dependencies</li>
+                        <li>Detecting side effects and hidden coupling that static analysis misses</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 8: Cataloging Booby Traps — Risk Register &amp; Integration Risk Assessment (2h)</div>
+                    <ul class="topic-list">
+                        <li>Recording each hidden dependency as a scored integration risk</li>
+                        <li>Prioritizing what must be neutralized before integration</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 9: Hands-On — Map a Monolith's Attack &amp; Dependency Surface (2h)</div>
+                    <ul class="topic-list">
+                        <li>Apply static + dynamic analysis to a provided legacy system</li>
+                        <li>Produce a dependency map and integration risk register</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">3</span>
+                    <span class="module-title">Secure Hybrid Architecture Patterns</span>
+                    <span class="module-hours">12 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 10: Decomposition Strategy — Choosing Safe Seams (2h)</div>
+                    <ul class="topic-list">
+                        <li>Where to cut: boundaries that minimize shared state and blast radius</li>
+                        <li>Sequencing integration to reduce risk</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 11: The Strangler Fig Pattern, Securely (3h)</div>
+                    <ul class="topic-list">
+                        <li>Incrementally replacing legacy functionality without big-bang risk</li>
+                        <li>Security considerations at each strangler step</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 12: Anti-Corruption Layer — Containing Legacy Risk (3h)</div>
+                    <ul class="topic-list">
+                        <li>Translating between legacy and new models to prevent risk leakage</li>
+                        <li>Validating and sanitizing at the boundary</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 13: API Gateways &amp; Sidecars — Securing the Edge of the Hybrid (2h)</div>
+                    <ul class="topic-list">
+                        <li>Centralizing auth, rate limiting, and policy at the gateway</li>
+                        <li>Sidecar patterns for secure cross-cutting concerns</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 14: Hands-On — Design a Secure Decomposition Boundary (2h)</div>
+                    <ul class="topic-list">
+                        <li>Given the Module 2 risk register, design a safe seam + pattern choice</li>
+                        <li>Justify the boundary against the threat model</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">4</span>
+                    <span class="module-title">Secure Service Integration</span>
+                    <span class="module-hours">14 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 15: Service-to-Service Authentication (mTLS, Tokens) (3h)</div>
+                    <ul class="topic-list">
+                        <li>Mutual TLS and token-based service identity</li>
+                        <li>Key/secret management for service credentials</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 16: Authorization &amp; Trust Boundaries Across Services (2h)</div>
+                    <ul class="topic-list">
+                        <li>Least-privilege between services; avoiding implicit trust</li>
+                        <li>Propagating and validating identity across the seam</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 17: Secure API Contracts &amp; Schema Validation (3h)</div>
+                    <ul class="topic-list">
+                        <li>Defining strict contracts; validating every cross-boundary payload</li>
+                        <li>Versioning contracts without weakening security</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 18: Secure Data Exchange &amp; Consistency Across the Seam (3h)</div>
+                    <ul class="topic-list">
+                        <li>Protecting data in transit between legacy and new services</li>
+                        <li>Consistency patterns that don't open injection or race vulnerabilities</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 19: Minimizing New Attack Surface During Integration (3h)</div>
+                    <ul class="topic-list">
+                        <li>Closing unnecessary endpoints, ports, and privileges introduced by integration</li>
+                        <li>Reviewing the post-integration surface against the pre-integration baseline</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">5</span>
+                    <span class="module-title">Integrating Without Introducing Vulnerabilities</span>
+                    <span class="module-hours">12 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 20: Secure Coding at the Seams — Input Validation Across Boundaries (3h)</div>
+                    <ul class="topic-list">
+                        <li>Treating the legacy side as untrusted (and vice versa)</li>
+                        <li>Cross-boundary validation, encoding, and error handling</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 21: Secrets &amp; Configuration in a Hybrid System (2h)</div>
+                    <ul class="topic-list">
+                        <li>Managing secrets/config across legacy and new services</li>
+                        <li>Avoiding leakage through logs, configs, and error messages</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 22: Security Regression Testing the Integration (3h)</div>
+                    <ul class="topic-list">
+                        <li>Building tests that prove no new vulnerability was introduced</li>
+                        <li>Edge-case and abuse-case testing at the boundary</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 23: Monitoring &amp; Detecting Booby-Trap Triggers in Production (2h)</div>
+                    <ul class="topic-list">
+                        <li>Observability for the seam: detecting activated hidden dependencies</li>
+                        <li>Alerting and safe rollback when a booby trap fires</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 24: Hands-On — Integrate a Service Without New Vulnerabilities (2h)</div>
+                    <ul class="topic-list">
+                        <li>Integrate a new service against the Module 4 design</li>
+                        <li>Run security regression checks; confirm a clean surface</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="module">
+                <div class="module-head">
+                    <span class="module-num">6</span>
+                    <span class="module-title">Capstone Integration Lab — Safe Hybrid Build</span>
+                    <span class="module-hours">10 hours</span>
+                </div>
+                <div class="module-body">
+                    <div class="lesson-heading">Lesson: 25: Scenario &amp; Planning — The Legacy System &amp; Integration Goal (2h)</div>
+                    <ul class="topic-list">
+                        <li>Understand a provided legacy monolith and the new-service goal</li>
+                        <li>Threat-model and plan the integration</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 26: Discover &amp; Neutralize Booby Traps (3h)</div>
+                    <ul class="topic-list">
+                        <li>Map dependencies; identify and mitigate hidden risks before integration</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 27: Implement the Secure Integration (3h)</div>
+                    <ul class="topic-list">
+                        <li>Apply a secure pattern + secure service integration end to end</li>
+                    </ul>
+                    <div class="lesson-heading">Lesson: 28: Validate No New Vulnerabilities &amp; Document (2h)</div>
+                    <ul class="topic-list">
+                        <li>Security regression test the result; document the surface delta and residual risk</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>
