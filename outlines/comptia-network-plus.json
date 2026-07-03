@@ -66,5 +66,29 @@
     "title": "Assessment & Exam Preparation",
     "hours": 4,
     "items": ["Full-length practice exams (simulation-based)", "Labs with real-world scenarios", "Final review session with Q&A", "Exam-taking strategies and test-day preparation"]
-  }
+  },
+  "objects": [
+    { "type": "scorm", "file": "scorm-lesson-01-osi-model-network-communication.zip", "module": "module-01-networking-concepts", "lesson": "lesson-01-osi-model-network-communication" },
+    { "type": "scorm", "file": "scorm-lesson-02-networking-appliances-applications.zip", "module": "module-01-networking-concepts", "lesson": "lesson-02-networking-appliances-applications" },
+    { "type": "scorm", "file": "scorm-lesson-03-cloud-concepts-connectivity.zip", "module": "module-01-networking-concepts", "lesson": "lesson-03-cloud-concepts-connectivity" },
+    { "type": "scorm", "file": "scorm-lesson-04-network-ports-protocols-services.zip", "module": "module-01-networking-concepts", "lesson": "lesson-04-network-ports-protocols-services" },
+    { "type": "scorm", "file": "scorm-lesson-05-transmission-media-network-topologies.zip", "module": "module-01-networking-concepts", "lesson": "lesson-05-transmission-media-network-topologies" },
+    { "type": "scorm", "file": "scorm-lesson-06-ipv4-addressing-modern-use-cases.zip", "module": "module-01-networking-concepts", "lesson": "lesson-06-ipv4-addressing-modern-use-cases" },
+    { "type": "scorm", "file": "scorm-lesson-07-routing-technologies-protocols.zip", "module": "module-02-network-implementation", "lesson": "lesson-07-routing-technologies-protocols" },
+    { "type": "scorm", "file": "scorm-lesson-08-switching-technologies-features.zip", "module": "module-02-network-implementation", "lesson": "lesson-08-switching-technologies-features" },
+    { "type": "scorm", "file": "scorm-lesson-09-wireless-networking.zip", "module": "module-02-network-implementation", "lesson": "lesson-09-wireless-networking" },
+    { "type": "scorm", "file": "scorm-lesson-10-ipv4-ipv6-network-services.zip", "module": "module-02-network-implementation", "lesson": "lesson-10-ipv4-ipv6-network-services" },
+    { "type": "scorm", "file": "scorm-lesson-11-organizational-processes-procedures.zip", "module": "module-03-network-operations", "lesson": "lesson-11-organizational-processes-procedures" },
+    { "type": "scorm", "file": "scorm-lesson-12-network-monitoring-tools-technologies.zip", "module": "module-03-network-operations", "lesson": "lesson-12-network-monitoring-tools-technologies" },
+    { "type": "scorm", "file": "scorm-lesson-13-disaster-recovery-concepts.zip", "module": "module-03-network-operations", "lesson": "lesson-13-disaster-recovery-concepts" },
+    { "type": "scorm", "file": "scorm-lesson-14-network-access-management.zip", "module": "module-03-network-operations", "lesson": "lesson-14-network-access-management" },
+    { "type": "scorm", "file": "scorm-lesson-15-network-security-principles.zip", "module": "module-04-network-security", "lesson": "lesson-15-network-security-principles" },
+    { "type": "scorm", "file": "scorm-lesson-16-types-of-network-attacks.zip", "module": "module-04-network-security", "lesson": "lesson-16-types-of-network-attacks" },
+    { "type": "scorm", "file": "scorm-lesson-17-network-defense-techniques.zip", "module": "module-04-network-security", "lesson": "lesson-17-network-defense-techniques" },
+    { "type": "scorm", "file": "scorm-lesson-18-securing-network-traffic-devices.zip", "module": "module-04-network-security", "lesson": "lesson-18-securing-network-traffic-devices" },
+    { "type": "scorm", "file": "scorm-lesson-19-troubleshooting-methodology.zip", "module": "module-05-network-troubleshooting", "lesson": "lesson-19-troubleshooting-methodology" },
+    { "type": "scorm", "file": "scorm-lesson-20-common-cabling-physical-issues.zip", "module": "module-05-network-troubleshooting", "lesson": "lesson-20-common-cabling-physical-issues" },
+    { "type": "scorm", "file": "scorm-lesson-21-troubleshooting-network-services.zip", "module": "module-05-network-troubleshooting", "lesson": "lesson-21-troubleshooting-network-services" },
+    { "type": "scorm", "file": "scorm-lesson-22-performance-issues-tools.zip", "module": "module-05-network-troubleshooting", "lesson": "lesson-22-performance-issues-tools" }
+  ]
 }
