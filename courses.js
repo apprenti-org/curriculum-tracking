@@ -1086,13 +1086,13 @@ const courseData = [
     "hours": 70,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "Syllabus: Safe Hybrid Development / Legacy Integration",
     "outline": true,
-    "note": "Cyber Developer Associate net-new 70h Phase 7 course. 6 modules, 28 lessons (capstone module = 4 standard activity-based lab lessons, no type:capstone). Primary owner of OJL 2.c: safely integrating new microservices into legacy monoliths without introducing hidden vulnerabilities ('booby traps') — legacy analysis, secure hybrid architecture patterns, secure service integration, and an end-to-end capstone build. Code-bearing: one shared Java 17 / Spring Boot 3 workspace (legacy monolith + new service + integration seam), 6 planted booby-trap classes. Design+outline (#1133) + lesson outlines (#1135) + lesson sources (#1137) + scaffolding (#1139) + code migration (#1145) + content/interactives 168/168 check.js (Row 7, #1147) + slides deferred (#1149, per #606) + SCORM 28 zips (Row 9, #1150) + deployment 3 private repos (Row 10, #1151) + instructor/pacing guide (Row 11, #1152) + starter asset audit (Row 12, #1153) complete. Pre-upload (Row 13, #1154); LMS upload (Row 14) pending. Onboarding meta #1132.",
+    "note": "Cyber Developer Associate net-new 70h Phase 7 course. 6 modules, 28 lessons (capstone module = 4 standard activity-based lab lessons, no type:capstone). Primary owner of OJL 2.c: safely integrating new microservices into legacy monoliths without introducing hidden vulnerabilities ('booby traps') — legacy analysis, secure hybrid architecture patterns, secure service integration, and an end-to-end capstone build. Code-bearing: one shared Java 17 / Spring Boot 3 workspace (legacy monolith + new service + integration seam), 6 planted booby-trap classes. Design+outline (#1133) + lesson outlines (#1135) + lesson sources (#1137) + scaffolding (#1139) + code migration (#1145) + content/interactives 168/168 check.js (Row 7, #1147) + slides deferred (#1149, per #606) + SCORM 28 zips (Row 9, #1150) + deployment 3 private repos (Row 10, #1151) + instructor/pacing guide (Row 11, #1152) + starter asset audit (Row 12, #1153) complete. Pre-upload (Row 13, #1154) READY 7/7; LMS upload (Row 14, #1155) complete — published in Absorb. Onboarding meta #1132.",
     "driveFolder": null,
-    "statusConfirmed": false,
+    "statusConfirmed": true,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
   },
   {
