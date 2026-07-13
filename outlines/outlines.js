@@ -11040,6 +11040,9 @@ const courseOutlines = {
             "topics": [
               "Python overview, key features, history",
               "PEPs and PEP8"
+            ],
+            "objects": [
+              "SCORM: Interactive — Introduction to Python (scorm-lesson-01-introduction-to-python.zip)"
             ]
           }
         ]
@@ -11051,7 +11054,10 @@ const courseOutlines = {
           {
             "title": "Variables and Strings in Python",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — Variables and Strings in Python (scorm-lesson-02-variables-and-strings-in-python.zip)"
+            ]
           }
         ]
       },
@@ -11062,22 +11068,34 @@ const courseOutlines = {
           {
             "title": "Arrays in Python",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — Arrays in Python (scorm-lesson-03-arrays-in-python.zip)"
+            ]
           },
           {
             "title": "Lists in Python",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — Lists in Python (scorm-lesson-04-lists-in-python.zip)"
+            ]
           },
           {
             "title": "Pseudocode",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — Pseudocode (scorm-lesson-05-pseudocode.zip)"
+            ]
           },
           {
             "title": "Flowcharting",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — Flowcharting (scorm-lesson-06-flowcharting.zip)"
+            ]
           }
         ]
       },
@@ -11088,7 +11106,10 @@ const courseOutlines = {
           {
             "title": "Functions",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — Functions (scorm-lesson-07-functions.zip)"
+            ]
           }
         ]
       },
@@ -11099,7 +11120,10 @@ const courseOutlines = {
           {
             "title": "Lists, Tuples, Sets and Dictionaries",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — Lists, Tuples, Sets and Dictionaries (scorm-lesson-08-lists-tuples-sets-and-dictionaries.zip)"
+            ]
           }
         ]
       },
@@ -11110,7 +11134,10 @@ const courseOutlines = {
           {
             "title": "File IO",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — File IO (scorm-lesson-09-file-io.zip)"
+            ]
           }
         ]
       },
@@ -11131,7 +11158,10 @@ const courseOutlines = {
           {
             "title": "Testing in Python",
             "hours": null,
-            "topics": []
+            "topics": [],
+            "objects": [
+              "SCORM: Interactive — Testing in Python (scorm-lesson-10-testing-in-python.zip)"
+            ]
           }
         ]
       }
