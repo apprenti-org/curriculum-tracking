@@ -1013,11 +1013,11 @@ const courseData = [
     "hours": 48,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": "Syllabus: Python Basics",
     "outline": "Course Outline: Python Basics",
-    "note": "Outline restructured 2026-04-26 to 9 modules / 10 lessons per design-doc course-outline (was 6 modules / 14 lessons reconstruction). Per-module hours are TBD pending design-doc#83 (40h syllabus vs 48h OSS target) and design-doc#90 (LO + content extraction). Deploy tree has 10 SCORM zips + 14 PDFs. Used in OSS Course 6, Area 3 and Software Developer Java curriculum.",
+    "note": "Outline restructured 2026-04-26 to 9 modules / 10 lessons per design-doc course-outline (was 6 modules / 14 lessons reconstruction). Per-module hours are TBD pending design-doc#83 (40h syllabus vs 48h OSS target) and design-doc#90 (LO + content extraction). Deploy tree has 10 SCORM zips + 14 PDFs. Used in OSS Course 6, Area 3 and Software Developer Java curriculum. Shipped: New Course Onboarding rows 1–14 complete; Row 13 pre-upload READY 7/7 (SCORM objects[] via curriculum-tracking#226); published in Absorb 2026-07-13 (meta design-documentation#639).",
     "driveFolder": "https://drive.google.com/drive/folders/1Nvu0H0nNcr1Cb1JHy3zPvVUVQxjmTfsL",
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
     "statusConfirmed": true
