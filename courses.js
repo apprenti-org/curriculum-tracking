@@ -757,11 +757,11 @@ const courseData = [
     "hours": 40,
     "status": {
       "design": "Complete",
-      "development": "Not Started"
+      "development": "In Progress"
     },
     "syllabus": null,
     "outline": "Course Outline: Java OOP",
-    "note": null,
+    "note": "Capture-mode reverse-engineered SWD Java course (base slug java-oop). 22 lessons + 5 labs + summative; 18 interactives + 22 SCORMs built; student/instructor code repos + consolidated instructor guides + pacing guide delivered. Targeted-legacy deploy tree (prose PDFs + SCORMs) staged; pending LMS upload.",
     "driveFolder": "https://drive.google.com/drive/folders/1tv8SLDEgmhaODtDeM1HTQVqCcult6DhU",
     "statusConfirmed": false
   },

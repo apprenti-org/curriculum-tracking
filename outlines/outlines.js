@@ -8735,7 +8735,141 @@ const courseOutlines = {
       "items": [
         "Summative Assessment: Shopping Cart"
       ]
-    }
+    },
+    "objects": [
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-01-procedural-vs-object-oriented-programming.zip",
+        "module": "01-fundamentals-of-object-oriented-programming",
+        "lesson": "01-procedural-vs-object-oriented-programming"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-02-classes-and-objects.zip",
+        "module": "01-fundamentals-of-object-oriented-programming",
+        "lesson": "02-classes-and-objects"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-03-pillars-of-oop.zip",
+        "module": "02-object-oriented-design",
+        "lesson": "03-pillars-of-oop"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-04-inheritance.zip",
+        "module": "02-object-oriented-design",
+        "lesson": "04-inheritance"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-05-composition.zip",
+        "module": "02-object-oriented-design",
+        "lesson": "05-composition"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-06-interfaces.zip",
+        "module": "02-object-oriented-design",
+        "lesson": "06-interfaces"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-07-maven.zip",
+        "module": "03-maven-and-interpreting-project-requirements",
+        "lesson": "07-maven"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-08-interpreting-requirements.zip",
+        "module": "03-maven-and-interpreting-project-requirements",
+        "lesson": "08-interpreting-requirements"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-09-class-design.zip",
+        "module": "04-class-design",
+        "lesson": "09-class-design"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-10-code-smells.zip",
+        "module": "05-code-smells",
+        "lesson": "10-code-smells"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-11-large-class-smell.zip",
+        "module": "05-code-smells",
+        "lesson": "11-large-class-smell"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-12-large-method-smell.zip",
+        "module": "05-code-smells",
+        "lesson": "12-large-method-smell"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-13-duplicated-code-smell.zip",
+        "module": "05-code-smells",
+        "lesson": "13-duplicated-code-smell"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-14-long-parameter-list-smell.zip",
+        "module": "05-code-smells",
+        "lesson": "14-long-parameter-list-smell"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-15-comment-smell.zip",
+        "module": "05-code-smells",
+        "lesson": "15-comment-smell"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-16-generics.zip",
+        "module": "06-collections",
+        "lesson": "16-generics"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-17-lists.zip",
+        "module": "06-collections",
+        "lesson": "17-lists"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-18-hash-based-collections.zip",
+        "module": "06-collections",
+        "lesson": "18-hash-based-collections"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-19-introduction-to-testing.zip",
+        "module": "07-testing",
+        "lesson": "19-introduction-to-testing"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-20-junit-and-stateless-testing.zip",
+        "module": "07-testing",
+        "lesson": "20-junit-and-stateless-testing"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-21-stateful-testing.zip",
+        "module": "07-testing",
+        "lesson": "21-stateful-testing"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-22-how-to-test-collections.zip",
+        "module": "07-testing",
+        "lesson": "22-how-to-test-collections"
+      }
+    ]
   },
   "JavaScript": {
     "course": "JavaScript",
