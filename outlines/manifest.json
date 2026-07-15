@@ -240,6 +240,11 @@
     "id": "java-oop"
   },
   {
+    "file": "java-oop-security-module.json",
+    "course": "Java OOP Secure",
+    "id": "java-oop-security-module"
+  },
+  {
     "file": "javascript.json",
     "course": "JavaScript",
     "id": "javascript"

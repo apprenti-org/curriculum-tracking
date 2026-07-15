@@ -8737,6 +8737,24 @@ const courseOutlines = {
       ]
     }
   },
+  "Java OOP Secure": {
+    "course": "Java OOP Secure",
+    "totalHours": 8,
+    "totalModules": 2,
+    "totalLessons": 0,
+    "modules": [
+      {
+        "name": "Secure Object-Oriented Programming",
+        "hours": null,
+        "lessons": []
+      },
+      {
+        "name": "Capstone Extension",
+        "hours": null,
+        "lessons": []
+      }
+    ]
+  },
   "JavaScript": {
     "course": "JavaScript",
     "totalHours": 16,
