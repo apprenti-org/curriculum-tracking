@@ -8741,17 +8741,127 @@ const courseOutlines = {
     "course": "Java OOP Secure",
     "totalHours": 8,
     "totalModules": 2,
-    "totalLessons": 0,
+    "totalLessons": 7,
     "modules": [
       {
         "name": "Secure Object-Oriented Programming",
         "hours": null,
-        "lessons": []
+        "description": "Secure object-oriented programming in Java: encapsulation as a defensive trust boundary, secure dependency injection, defensive functional style, secure data classes, security code smells, and adversarial input testing.",
+        "lessons": [
+          {
+            "title": "Encapsulation as Defense",
+            "hours": null,
+            "topics": [
+              "Private state and information hiding as a security boundary",
+              "Immutability for safe, tamper-resistant objects",
+              "Sealed classes to constrain the type hierarchy"
+            ]
+          },
+          {
+            "title": "Secure Dependency Injection Patterns",
+            "hours": null,
+            "topics": [
+              "Constructor injection over field injection",
+              "Avoiding injection of untrusted collaborators",
+              "Wiring dependencies without leaking trust"
+            ]
+          },
+          {
+            "title": "Lambdas & Functional Style for Defensive Code",
+            "hours": null,
+            "topics": [
+              "Lambda expressions and functional interfaces",
+              "Functional style for immutable, side-effect-free logic",
+              "Using functional idioms defensively"
+            ]
+          },
+          {
+            "title": "Data Classes & Secure Object Design",
+            "hours": null,
+            "topics": [
+              "Records / data classes with secure invariants",
+              "Validation at construction; keeping objects always-valid",
+              "Secure object design principles"
+            ]
+          },
+          {
+            "title": "Security Code Smells",
+            "hours": null,
+            "topics": [
+              "Recognizing insecure patterns as smells",
+              "Refactoring insecure OOP code toward secure design"
+            ]
+          },
+          {
+            "title": "Edge-Case & Adversarial Input Testing",
+            "hours": null,
+            "topics": [
+              "Boundary and edge-case testing",
+              "Adversarial / malicious input testing",
+              "Turning security assumptions into tests"
+            ]
+          }
+        ]
       },
       {
         "name": "Capstone Extension",
         "hours": null,
-        "lessons": []
+        "description": "A self-contained capstone that applies the module's secure-OOP practices to one integrated project — separate from and additive to the base Java OOP capstone.",
+        "lessons": [
+          {
+            "title": "Secure OOP Capstone Extension",
+            "hours": null,
+            "topics": [
+              "Applies the secure-OOP practices from Module 1 to one integrated, vulnerable-on-purpose funds-transfer service",
+              "Harden every class and turn an adversarial test suite from red to green",
+              "Separate, additive assessment (CBR + evidence map) from the base Java OOP capstone"
+            ]
+          }
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-01-encapsulation-as-defense.zip",
+        "module": "module-01-secure-object-oriented-programming",
+        "lesson": "lesson-01-encapsulation-as-defense"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-02-secure-dependency-injection-patterns.zip",
+        "module": "module-01-secure-object-oriented-programming",
+        "lesson": "lesson-02-secure-dependency-injection-patterns"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-03-lambdas-and-functional-style-for-defensive-code.zip",
+        "module": "module-01-secure-object-oriented-programming",
+        "lesson": "lesson-03-lambdas-and-functional-style-for-defensive-code"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-04-data-classes-and-secure-object-design.zip",
+        "module": "module-01-secure-object-oriented-programming",
+        "lesson": "lesson-04-data-classes-and-secure-object-design"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-05-security-code-smells.zip",
+        "module": "module-01-secure-object-oriented-programming",
+        "lesson": "lesson-05-security-code-smells"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-06-edge-case-and-adversarial-input-testing.zip",
+        "module": "module-01-secure-object-oriented-programming",
+        "lesson": "lesson-06-edge-case-and-adversarial-input-testing"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-07-secure-oop-capstone.zip",
+        "module": "module-02-capstone-extension",
+        "lesson": "lesson-07-secure-oop-capstone"
       }
     ]
   },
