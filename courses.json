@@ -764,21 +764,6 @@
       "statusConfirmed": false
     },
     {
-      "id": "java-oop-security-module",
-      "name": "Java OOP Secure (Cyber Developer Associate)",
-      "hours": 8,
-      "status": {
-        "design": "Complete",
-        "development": "In Progress"
-      },
-      "syllabus": null,
-      "outline": true,
-      "note": "Cyber Developer Associate net-new Phase 5 module — Java OOP Secure, the secure counterpart to base Java OOP (kept separate). One module: Secure Object-Oriented Programming (6 lessons: encapsulation as defense, secure dependency injection, lambdas/functional defensive code, data classes & secure object design, security code smells, edge-case & adversarial input testing) + a capstone extension. Row 4 lesson sources complete and passing the new check.js --type lesson-source gate (#1262/#1263). Hours (8) are the built-lesson figure; curriculum pacing handles compression vs the CDA outline's 40h Phase-5 line. Onboarding meta apprenti-org/design-documentation#1255; scaffolding #1266.",
-      "driveFolder": null,
-      "statusConfirmed": false,
-      "sourceRepo": "https://github.com/apprenti-org/design-documentation"
-    },
-    {
       "id": "javascript",
       "name": "JavaScript",
       "hours": 16,
