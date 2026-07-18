@@ -399,12 +399,12 @@ const courseData = [
     "name": "Compliance and Security Awareness",
     "hours": 4,
     "status": {
-      "design": "Not Started",
-      "development": "Not Started"
+      "design": "Complete",
+      "development": "In Progress"
     },
     "syllabus": null,
-    "outline": null,
-    "note": "Removed from OSS (Security & Professional Skills) per curriculum-tracking#162 / design-documentation#721. Now a Cyber Developer Associate (A-31) Phase 2 course, 4h — build pending (design/development Not Started). Standard-mapped to A-31 OJL 1.b, 2.b.",
+    "outline": true,
+    "note": "CDA Phase 2, 4h. Design Complete (course outline + 4 lesson outlines + 4 lesson sources); development In Progress (Row 5 content scaffolding). Removed from OSS per curriculum-tracking#162 / design-documentation#721; CDA-owned. Standard-mapped to A-31 OJL 1.b, 2.b.",
     "driveFolder": null,
     "statusConfirmed": true
   },

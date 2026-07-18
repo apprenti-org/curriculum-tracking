@@ -701,7 +701,7 @@ const manualMap = {
     'C# OOP': 'csharp-oop.html',
     'C++ Coding Booster Intensive': 'cpp-coding-booster.html',
     'CI/CD Pipeline Concepts': 'cicd-pipeline-concepts.html',
-    'Compliance and Security Awareness': 'compliance-security-awareness.html',
+    'Compliance and Security Awareness': 'compliance-and-security-awareness.html',
     'CompTIA A+': 'comptia-a-plus.html',
     'CompTIA Network+': 'comptia-network-plus.html',
     'Data Fundamentals — Data Literacy': 'data-literacy.html',

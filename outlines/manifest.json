@@ -120,6 +120,11 @@
     "id": "ctse-capstone"
   },
   {
+    "file": "compliance-and-security-awareness.json",
+    "course": "Compliance and Security Awareness",
+    "id": "compliance-and-security-awareness"
+  },
+  {
     "file": "comptia-a-plus.json",
     "course": "CompTIA A+",
     "id": "comptia-a-plus"
