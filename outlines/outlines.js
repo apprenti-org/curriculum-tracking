@@ -2799,7 +2799,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Regulatory and Compliance Frameworks for Software",
-              "Assessment: Quiz: Regulatory and Compliance Frameworks for Software"
+              "Assessment: Quiz: Regulatory and Compliance Frameworks for Software",
+              "SCORM: Interactive — Regulatory and Compliance Frameworks for Software (scorm-lesson-01-regulatory-and-compliance-frameworks-for-software.zip)"
             ]
           },
           {
@@ -2813,7 +2814,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: From Compliance Obligation to Code",
-              "Assessment: Quiz: From Compliance Obligation to Code"
+              "Assessment: Quiz: From Compliance Obligation to Code",
+              "SCORM: Interactive — From Compliance Obligation to Code (scorm-lesson-02-from-compliance-obligation-to-code.zip)"
             ]
           }
         ]
@@ -2833,7 +2835,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Responsible AI and Regulatory Compliance in AI Integration",
-              "Assessment: Quiz: Responsible AI and Regulatory Compliance in AI Integration"
+              "Assessment: Quiz: Responsible AI and Regulatory Compliance in AI Integration",
+              "SCORM: Interactive — Responsible AI and Regulatory Compliance in AI Integration (scorm-lesson-03-responsible-ai-and-regulatory-compliance-in-ai-integration.zip)"
             ]
           },
           {
@@ -2847,7 +2850,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Developer Security Awareness in Practice",
-              "Assessment: Quiz: Developer Security Awareness in Practice"
+              "Assessment: Quiz: Developer Security Awareness in Practice",
+              "SCORM: Interactive — Developer Security Awareness in Practice (scorm-lesson-04-developer-security-awareness-in-practice.zip)"
             ]
           }
         ]
