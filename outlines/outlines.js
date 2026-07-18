@@ -2778,6 +2778,82 @@ const courseOutlines = {
       }
     ]
   },
+  "Compliance and Security Awareness": {
+    "course": "Compliance and Security Awareness",
+    "totalHours": 4,
+    "totalModules": 2,
+    "totalLessons": 4,
+    "modules": [
+      {
+        "name": "Compliance Frameworks That Shape Software",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "Regulatory and Compliance Frameworks for Software",
+            "hours": 1,
+            "topics": [
+              "What GDPR, HIPAA, PCI-DSS, SOC 2, and SOX each govern, and the kinds of data and systems that trigger each",
+              "Determining which frameworks apply to a given system from the data it handles and the domain it operates in",
+              "The data-protection and privacy obligations behind the frameworks (personal data, health data, cardholder data)",
+              "Where compliance responsibility sits across cloud provider, organization, and developer (shared-responsibility view)"
+            ],
+            "objects": [
+              "Object: Lesson: Regulatory and Compliance Frameworks for Software",
+              "Assessment: Quiz: Regulatory and Compliance Frameworks for Software"
+            ]
+          },
+          {
+            "title": "From Compliance Obligation to Code",
+            "hours": 1,
+            "topics": [
+              "Translating a requirement into developer controls: data classification and handling",
+              "Encryption expectations in transit and at rest, and basic key-handling responsibilities",
+              "Access control, least privilege, and audit logging as compliance evidence",
+              "Data retention, minimization, and deletion — and treating compliance requirements as acceptance criteria"
+            ],
+            "objects": [
+              "Object: Lesson: From Compliance Obligation to Code",
+              "Assessment: Quiz: From Compliance Obligation to Code"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Responsible Practices and Security Awareness for Developers",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "Responsible AI and Regulatory Compliance in AI Integration",
+            "hours": 1,
+            "topics": [
+              "Identifying and mitigating bias in AI-assisted features",
+              "Protecting privacy when integrating AI: PII and sensitive data in prompts, model outputs, and logs",
+              "Maintaining regulatory compliance for AI use — data residency, consent, and auditability",
+              "Awareness of emerging AI governance: NIST AI Risk Management Framework and the EU AI Act at a high level"
+            ],
+            "objects": [
+              "Object: Lesson: Responsible AI and Regulatory Compliance in AI Integration",
+              "Assessment: Quiz: Responsible AI and Regulatory Compliance in AI Integration"
+            ]
+          },
+          {
+            "title": "Developer Security Awareness in Practice",
+            "hours": 1,
+            "topics": [
+              "Safe handling of secrets and credentials — no secrets in code or commit history; using secret managers",
+              "Phishing and social engineering aimed at developers — dependency lures, impersonated maintainers, credential capture",
+              "Safe data handling in day-to-day development — test data, screenshots, and shared channels",
+              "Recognizing a security incident and a developer's reporting responsibilities"
+            ],
+            "objects": [
+              "Object: Lesson: Developer Security Awareness in Practice",
+              "Assessment: Quiz: Developer Security Awareness in Practice"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "CompTIA A+": {
     "course": "CompTIA A+",
     "totalHours": 120,
