@@ -398,11 +398,11 @@
       "hours": 4,
       "status": {
         "design": "Complete",
-        "development": "In Progress"
+        "development": "Complete"
       },
       "syllabus": null,
       "outline": true,
-      "note": "CDA Phase 2, 4h. Design Complete (course outline + 4 lesson outlines + 4 lesson sources); development In Progress (Row 5 content scaffolding). Removed from OSS per curriculum-tracking#162 / design-documentation#721; CDA-owned. Standard-mapped to A-31 OJL 1.b, 2.b.",
+      "note": "CDA Phase 2, 4h. Built end-to-end and PUBLISHED IN ABSORB 2026-07-18 (onboarding meta design-documentation#1317, all 14 rows). 2 modules / 4 lessons; 4 SCORM interactives + quizzes; instructor repo compliance-and-security-awareness-instructor. Removed from OSS (curriculum-tracking#162); CDA-owned. Standard-mapped to A-31 OJL 1.b, 2.b.",
       "driveFolder": null,
       "statusConfirmed": true
     },
