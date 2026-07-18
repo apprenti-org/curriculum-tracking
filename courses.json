@@ -402,7 +402,7 @@
       },
       "syllabus": null,
       "outline": null,
-      "note": "OSS Course 14, Area 4 — existing content to be migrated/refined for OSS Security & Professional Skills area. 4h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #86).",
+      "note": "Removed from OSS (Security & Professional Skills) per curriculum-tracking#162 / design-documentation#721. Now a Cyber Developer Associate (A-31) Phase 2 course, 4h — build pending (design/development Not Started). Standard-mapped to A-31 OJL 1.b, 2.b.",
       "driveFolder": null,
       "statusConfirmed": true
     },
@@ -1004,20 +1004,6 @@
       "note": "OSS Area 4 (S&PS). 4h, 2 modules, 4 lessons + integrated capstone. Excel and PowerPoint for technical reporting. Design + content complete (design-documentation PRs #46, #48, #54, #58, #59). Ready for SCORM packaging.",
       "driveFolder": null,
       "sourceRepo": "https://github.com/apprenti-org/design-documentation",
-      "statusConfirmed": true
-    },
-    {
-      "id": "professional-communication",
-      "name": "Professional Communication",
-      "hours": 4,
-      "status": {
-        "design": "Not Started",
-        "development": "Not Started"
-      },
-      "syllabus": null,
-      "outline": null,
-      "note": "OSS Course 17, Area 4 — content to be extracted from CompTIA A+ for OSS Security & Professional Skills area. 4h. Active dev pipeline — design work beginning soon. Audit confirms Not Started baseline (per #88).",
-      "driveFolder": null,
       "statusConfirmed": true
     },
     {
@@ -1648,10 +1634,8 @@
           "hours": 16,
           "note": "RTI Area 4",
           "courses": [
-            "compliance-and-security-awareness",
             "technical-documentation",
-            "productivity-tools-reporting",
-            "professional-communication"
+            "productivity-tools-reporting"
           ]
         }
       ]
