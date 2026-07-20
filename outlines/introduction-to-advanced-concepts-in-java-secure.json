@@ -1,0 +1,90 @@
+{
+  "course": "Introduction to Advanced Concepts in Java — Secure Edition (Cyber Developer Associate)",
+  "totalHours": 10,
+  "totalLessons": 5,
+  "totalModules": 1,
+  "modules": [
+    {
+      "name": "Advanced Java Security",
+      "hours": 10,
+      "description": "The CDA secure delta over Introduction to Advanced Concepts in Java: securing multi-step transactions, encrypting data at rest, the repository as a security boundary, performant-and-safe resource handling, and an integrative secure lab. Grounded in A-31 Phase 5 (OJL 3.a/3.b, CIA 2.b).",
+      "lessons": [
+        {
+          "title": "Secure Transaction Processing in Java",
+          "hours": 2,
+          "topics": [
+            "ACID properties with an integrity focus; partial writes as an integrity vulnerability",
+            "Atomic multi-step operations (LedgerCore transfer = debit + credit)",
+            "JDBC transactions: setAutoCommit(false), commit(), rollback()",
+            "try/catch-rollback with try-with-resources; isolation levels at a high level"
+          ],
+          "objects": [
+            "Object: Lesson: Secure Transaction Processing in Java",
+            "Assessment: Quiz: Secure Transaction Processing in Java",
+            "SCORM: scorm-lesson-01-secure-transaction-processing"
+          ]
+        },
+        {
+          "title": "Data at Rest — Encryption Basics in Java",
+          "hours": 2,
+          "topics": [
+            "Data at rest vs. data in transit; what sensitive data needs at-rest protection",
+            "Hashing (one-way, passwords) vs. symmetric encryption (reversible, data)",
+            "AES-GCM encryption via javax.crypto with a fresh random IV",
+            "Key management: externalized keys (never hardcoded), rotation, common pitfalls"
+          ],
+          "objects": [
+            "Object: Lesson: Data at Rest — Encryption Basics in Java",
+            "Assessment: Quiz: Data at Rest — Encryption Basics in Java",
+            "SCORM: scorm-lesson-02-data-at-rest-encryption-basics"
+          ]
+        },
+        {
+          "title": "The Secure Repository Pattern",
+          "hours": 2,
+          "topics": [
+            "The repository/DAO as a single auditable security boundary",
+            "Centralizing parameterized access with PreparedStatement",
+            "Boundary input validation (allow-lists, type/range checks)",
+            "Secure exception handling: log internally, return a safe message; safe result mapping"
+          ],
+          "objects": [
+            "Object: Lesson: The Secure Repository Pattern",
+            "Assessment: Quiz: The Secure Repository Pattern",
+            "SCORM: scorm-lesson-03-the-secure-repository-pattern"
+          ]
+        },
+        {
+          "title": "Advanced Java for Performance, Securely",
+          "hours": 2,
+          "topics": [
+            "Buffered/streamed I/O for large data without exhausting memory",
+            "Resource leaks as an availability/DoS risk; try-with-resources everywhere",
+            "Bounding input size as a denial-of-service defense (reject, not truncate)",
+            "Safe-concurrency basics: immutability and thread-safe shared state"
+          ],
+          "objects": [
+            "Object: Lesson: Advanced Java for Performance, Securely",
+            "Assessment: Quiz: Advanced Java for Performance, Securely",
+            "SCORM: scorm-lesson-04-advanced-java-for-performance-securely"
+          ]
+        },
+        {
+          "title": "Secure Advanced Java Lab",
+          "hours": 2,
+          "topics": [
+            "Integrative secure refactor applying transactions, at-rest encryption, secure repository, and resource safety",
+            "Reading an insecure LedgerCore component adversarially (defect inventory)",
+            "Verifying atomicity, at-rest confidentiality, boundary validation, and no resource leaks",
+            "Graded lab: insecure starter → secured solution"
+          ],
+          "objects": [
+            "Object: Lesson: Secure Advanced Java Lab",
+            "Assessment: Quiz: Secure Advanced Java Lab",
+            "SCORM: scorm-lesson-05-secure-advanced-java-lab"
+          ]
+        }
+      ]
+    }
+  ]
+}

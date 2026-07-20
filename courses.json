@@ -591,6 +591,21 @@
       "statusConfirmed": false
     },
     {
+      "id": "introduction-to-advanced-concepts-in-java-secure",
+      "name": "Introduction to Advanced Concepts in Java — Secure Edition (Cyber Developer Associate)",
+      "hours": 30,
+      "status": {
+        "design": "Complete",
+        "development": "In Progress"
+      },
+      "syllabus": null,
+      "outline": true,
+      "note": "Cyber Developer Associate secure edition of Introduction to Advanced Concepts in Java. Delivered as the 40h base course plus a net-new 10h 'Advanced Java Security' secure module (5 lessons: Secure Transaction Processing; Data at Rest — Encryption Basics; The Secure Repository Pattern; Advanced Java for Performance, Securely; Secure Advanced Java Lab) that the operator adds to a duplicated base course in Absorb. A-31 Phase 5 Advanced Java secure strands (performance / secure transaction processing / securing data at rest); OJL 3.a/3.b + CIA 2.b. 30h reflects the CDA curriculum allocation. Design folder course-design/introduction-to-advanced-concepts-in-java-secure/. Onboarding meta apprenti-org/design-documentation#1412.",
+      "driveFolder": null,
+      "statusConfirmed": false,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+    },
+    {
       "id": "introduction-to-aws-cloud-platform",
       "name": "Introduction to AWS Cloud Platform",
       "hours": null,
@@ -1461,10 +1476,7 @@
               "name": "Java OOP — Secure-OOP",
               "hoursOverride": 40
             },
-            {
-              "name": "Introduction to Advanced Concepts in Java — Secure Edition",
-              "hoursOverride": 30
-            },
+            "introduction-to-advanced-concepts-in-java-secure",
             {
               "name": "Spring MVC Secure Coding",
               "hoursOverride": 10
