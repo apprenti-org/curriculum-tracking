@@ -582,11 +582,11 @@
       "hours": 40,
       "status": {
         "design": "Complete",
-        "development": "Not Started"
+        "development": "In Progress"
       },
       "syllabus": null,
       "outline": "Course Outline: Introduction to Advanced Concepts in Java",
-      "note": "Rich source content — 2 content modules, 16 lesson docs, 3 code-alongs, 10 exercises, 1 lab, 1 module assessment, 2 summative assessments (Sustainable Foraging, Airport Terminal Management System). Covers File I/O, design patterns (repository, domain, MVC), dependency injection, Spring DI (XML and annotations), BigDecimal, temporal types, lambdas, and streams.",
+      "note": "Rich source content — 2 content modules, 16 lesson docs, 3 code-alongs, 10 exercises, 1 lab, 1 module assessment, 2 summative assessments (Sustainable Foraging, Airport Terminal Management System). Covers File I/O, design patterns (repository, domain, MVC), dependency injection, Spring DI (XML and annotations), BigDecimal, temporal types, lambdas, and streams. [Development In Progress 2026-07-20: content pipeline resumed via onboarding #1182 — 16 lessons scaffolded from migrated source; content/interactives/SCORMs in production.]",
       "driveFolder": "https://drive.google.com/drive/folders/1XRc60zapZP8beSVim2PUVsuCBNGYZzkF",
       "statusConfirmed": false
     },
