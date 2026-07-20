@@ -185,6 +185,11 @@
     "id": "introduction-to-advanced-concepts-in-java"
   },
   {
+    "file": "introduction-to-advanced-concepts-in-java-secure.json",
+    "course": "Introduction to Advanced Concepts in Java — Secure Edition (Cyber Developer Associate)",
+    "id": "introduction-to-advanced-concepts-in-java-secure"
+  },
+  {
     "file": "intro-to-aws.json",
     "course": "Introduction to AWS Cloud Platform",
     "id": "introduction-to-aws-cloud-platform"
