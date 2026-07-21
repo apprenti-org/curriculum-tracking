@@ -6299,6 +6299,9 @@ const courseOutlines = {
               "BufferedReader and BufferedWriter",
               "Appending vs. overwriting files",
               "Exception handling with file operations"
+            ],
+            "objects": [
+              "SCORM: Interactive — File I/O (scorm-lesson-01-file-io.zip)"
             ]
           },
           {
@@ -6309,6 +6312,9 @@ const courseOutlines = {
               "Separating concerns: data, domain, UI",
               "Packages and layer organization",
               "Benefits of layered design for maintainability"
+            ],
+            "objects": [
+              "SCORM: Interactive — Application Layers (scorm-lesson-02-application-layers.zip)"
             ]
           },
           {
@@ -6319,6 +6325,9 @@ const courseOutlines = {
               "Abstracting data access with interfaces",
               "CRUD operations in a repository",
               "File-backed repository implementation"
+            ],
+            "objects": [
+              "SCORM: Interactive — The Repository Pattern (scorm-lesson-03-the-repository-pattern.zip)"
             ]
           },
           {
@@ -6329,6 +6338,9 @@ const courseOutlines = {
               "JUnit test setup for file-based repositories",
               "Arrange, Act, Assert pattern",
               "Testing CRUD operations"
+            ],
+            "objects": [
+              "SCORM: Interactive — Testing the Repository (scorm-lesson-04-testing-the-repository.zip)"
             ]
           },
           {
@@ -6339,6 +6351,9 @@ const courseOutlines = {
               "Business rules and validation",
               "Service classes and business logic",
               "Separating domain logic from data access"
+            ],
+            "objects": [
+              "SCORM: Interactive — The Domain Layer (scorm-lesson-05-the-domain-layer.zip)"
             ]
           },
           {
@@ -6349,6 +6364,9 @@ const courseOutlines = {
               "Isolating service tests from dependencies",
               "Testing business rules",
               "MemoryRepository as a test double"
+            ],
+            "objects": [
+              "SCORM: Interactive — Testing the Service (scorm-lesson-06-testing-the-service.zip)"
             ]
           },
           {
@@ -6359,6 +6377,9 @@ const courseOutlines = {
               "Controller coordination between view and model",
               "View responsibility for user interaction",
               "Separation of UI from business logic"
+            ],
+            "objects": [
+              "SCORM: Interactive — The MVC Pattern (scorm-lesson-07-the-mvc-pattern.zip)"
             ]
           },
           {
@@ -6369,6 +6390,9 @@ const courseOutlines = {
               "Loose coupling through abstractions",
               "Benefits of dependency injection",
               "Manual DI in Java applications"
+            ],
+            "objects": [
+              "SCORM: Interactive — Dependency Injection (scorm-lesson-08-dependency-injection.zip)"
             ]
           }
         ]
@@ -6387,6 +6411,9 @@ const courseOutlines = {
               "BigDecimal operations: add, subtract, multiply, divide",
               "Rounding modes and scale",
               "Comparing BigDecimal values"
+            ],
+            "objects": [
+              "SCORM: Interactive — BigDecimal (scorm-lesson-09-bigdecimal.zip)"
             ]
           },
           {
@@ -6398,6 +6425,9 @@ const courseOutlines = {
               "Extracting date parts: YEAR, MONTH, DAY",
               "Date calculation functions: DATEDIFF, DATEADD",
               "Date formatting across database systems"
+            ],
+            "objects": [
+              "SCORM: Interactive — Temporal Types in SQL (scorm-lesson-10-temporal-types-in-sql.zip)"
             ]
           },
           {
@@ -6409,6 +6439,9 @@ const courseOutlines = {
               "DateTimeFormatter and formatting patterns",
               "Culture-based date formats with Locale",
               "Date calculations with ChronoUnit"
+            ],
+            "objects": [
+              "SCORM: Interactive — Temporal Types in Java (scorm-lesson-11-temporal-types-in-java.zip)"
             ]
           },
           {
@@ -6420,6 +6453,9 @@ const courseOutlines = {
               "Spring dependency injection concepts",
               "Inversion of Control (IoC) container",
               "Bean lifecycle and scopes"
+            ],
+            "objects": [
+              "SCORM: Interactive — Spring (scorm-lesson-12-spring.zip)"
             ]
           },
           {
@@ -6431,6 +6467,9 @@ const courseOutlines = {
               "Constructor and property injection in XML",
               "ClassPathXmlApplicationContext",
               "Wiring a three-layer architecture with XML"
+            ],
+            "objects": [
+              "SCORM: Interactive — Spring DI with XML Configuration (scorm-lesson-13-spring-di-with-xml-configuration.zip)"
             ]
           },
           {
@@ -6442,6 +6481,9 @@ const courseOutlines = {
               "@ComponentScan configuration",
               "AnnotationConfigApplicationContext",
               "XML vs. annotation configuration comparison"
+            ],
+            "objects": [
+              "SCORM: Interactive — Three Layer Architecture DI with Annotations (scorm-lesson-14-three-layer-architecture-di-with-annotations.zip)"
             ]
           },
           {
@@ -6453,6 +6495,9 @@ const courseOutlines = {
               "Functional interfaces and Predicate<T>",
               "Method references: Type::methodName",
               "Passing methods as arguments"
+            ],
+            "objects": [
+              "SCORM: Interactive — Lambdas (scorm-lesson-15-lambdas.zip)"
             ]
           },
           {
@@ -6464,6 +6509,9 @@ const courseOutlines = {
               "Intermediate operations: filter, map, sorted",
               "Terminal operations: collect, forEach, reduce",
               "Streams vs. iteration for data processing"
+            ],
+            "objects": [
+              "SCORM: Interactive — Streams (scorm-lesson-16-streams.zip)"
             ]
           }
         ]
