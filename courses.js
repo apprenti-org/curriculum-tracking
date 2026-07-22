@@ -1112,6 +1112,21 @@ const courseData = [
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
   },
   {
+    "id": "secure-java-programming-supplement",
+    "name": "Secure Java Programming Capstone Review",
+    "hours": 102,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": null,
+    "outline": true,
+    "note": "Cyber Developer Associate curriculum-level capstone (capstone-design-process.md §3c), delivered between Phase 5 and Phase 6; attributed to RTI Area 3. Apprentices build VitalLedger, a secure clinical-records backend, from a provided design package (ERDs/flowcharts/API contract/security spec/issue backlog); assessed by a Competency-Based Rubric + apprentice evidence map + facilitation presentation milestones (no lectures/quizzes). One module, six type:capstone phase-lessons (Setup → Data+Encryption → Service → Spring MVC API → LLM/MCP → Audit+Evidence). Design→tracking: outline #1458, facilitation #1460, lesson outlines #1462, lesson sources #1464. Onboarding meta apprenti-org/design-documentation#1456. Record created new at Row 5 (CDA was structure-only); 800h CDA total preserved.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "secure-llm-api-integration",
     "name": "Secure LLM API Integration (Cyber Developer Associate)",
     "hours": 20,
@@ -1491,8 +1506,8 @@ const curriculaData = [
             "id": "ai-assisted-test-driven-development"
           },
           {
-            "name": "Secure Java Programming Supplement",
-            "hoursOverride": 102
+            "name": "Secure Java Programming Capstone Review",
+            "id": "secure-java-programming-supplement"
           }
         ]
       },
