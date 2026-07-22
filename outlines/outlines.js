@@ -12574,7 +12574,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Phase A — Setup & Secure Foundations",
-              "Assessment: Quiz: Phase A — Setup & Secure Foundations"
+              "Assessment: Quiz: Phase A — Setup & Secure Foundations",
+              "SCORM: Interactive — Phase A — Setup & Secure Foundations (scorm-lesson-01-setup-and-secure-foundations.zip)"
             ]
           },
           {
@@ -12588,7 +12589,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Phase B — Secure Domain Model & Data Layer",
-              "Assessment: Quiz: Phase B — Secure Domain Model & Data Layer"
+              "Assessment: Quiz: Phase B — Secure Domain Model & Data Layer",
+              "SCORM: Interactive — Phase B — Secure Domain Model & Data Layer (scorm-lesson-02-secure-domain-model-and-data-layer.zip)"
             ]
           },
           {
@@ -12602,7 +12604,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Phase C — Secure Service Layer",
-              "Assessment: Quiz: Phase C — Secure Service Layer"
+              "Assessment: Quiz: Phase C — Secure Service Layer",
+              "SCORM: Interactive — Phase C — Secure Service Layer (scorm-lesson-03-secure-service-layer.zip)"
             ]
           },
           {
@@ -12616,7 +12619,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Phase D — Spring MVC REST API & Access Control",
-              "Assessment: Quiz: Phase D — Spring MVC REST API & Access Control"
+              "Assessment: Quiz: Phase D — Spring MVC REST API & Access Control",
+              "SCORM: Interactive — Phase D — Spring MVC REST API & Access Control (scorm-lesson-04-spring-mvc-rest-api-and-access-control.zip)"
             ]
           },
           {
@@ -12630,7 +12634,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Phase E — Secure LLM Summarizer via MCP",
-              "Assessment: Quiz: Phase E — Secure LLM Summarizer via MCP"
+              "Assessment: Quiz: Phase E — Secure LLM Summarizer via MCP",
+              "SCORM: Interactive — Phase E — Secure LLM Summarizer via MCP (scorm-lesson-05-secure-llm-summarizer-via-mcp.zip)"
             ]
           },
           {
@@ -12644,7 +12649,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Phase F — Security Self-Audit, Tests & Evidence",
-              "Assessment: Quiz: Phase F — Security Self-Audit, Tests & Evidence"
+              "Assessment: Quiz: Phase F — Security Self-Audit, Tests & Evidence",
+              "SCORM: Interactive — Phase F — Security Self-Audit, Tests & Evidence (scorm-lesson-06-security-self-audit-tests-and-evidence.zip)"
             ]
           }
         ]
