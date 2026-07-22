@@ -1117,7 +1117,7 @@ const courseData = [
     "hours": 102,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": true,
