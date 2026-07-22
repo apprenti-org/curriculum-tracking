@@ -360,6 +360,11 @@
     "id": "safe-hybrid-development-legacy-integration"
   },
   {
+    "file": "secure-java-programming-supplement.json",
+    "course": "Secure Java Programming Capstone Review",
+    "id": "secure-java-programming-supplement"
+  },
+  {
     "file": "secure-llm-api-integration.json",
     "course": "Secure LLM API Integration",
     "id": "secure-llm-api-integration"

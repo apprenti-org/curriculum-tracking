@@ -1,0 +1,98 @@
+{
+  "course": "Secure Java Programming Capstone Review",
+  "totalHours": 102,
+  "totalModules": 1,
+  "totalLessons": 6,
+  "modules": [
+    {
+      "name": "Secure Clinical Records Capstone — VitalLedger",
+      "hours": 102,
+      "lessons": [
+        {
+          "title": "Phase A — Setup & Secure Foundations",
+          "hours": 10,
+          "topics": [
+            "Analyze the provided design package (ERDs, flowcharts, API contract, security requirements spec) to reconstruct the intended architecture and sequence the issue backlog.",
+            "Stand up the starter repo and a project board, and containerize the service with Docker as an isolation boundary.",
+            "Establish an AI-assisted, spec-first, version-controlled workflow (branch/PR/board discipline) for the build.",
+            "Present a build plan articulating how you read the design and how you will sequence the work."
+          ],
+          "objects": [
+            "Object: Lesson: Phase A — Setup & Secure Foundations",
+            "Assessment: Quiz: Phase A — Setup & Secure Foundations"
+          ]
+        },
+        {
+          "title": "Phase B — Secure Domain Model & Data Layer",
+          "hours": 25,
+          "topics": [
+            "Create an object-oriented domain model from the ERD that enforces reference security (no unguarded exposure of internal references to PHI).",
+            "Implement AES-GCM encryption at rest for the PHI fields the design package marks as sensitive.",
+            "Build a secure repository/DAO layer using parameterized access (PreparedStatement) so untrusted input can never alter query structure.",
+            "Evaluate the data layer against the security requirements spec for encryption coverage and injection resistance."
+          ],
+          "objects": [
+            "Object: Lesson: Phase B — Secure Domain Model & Data Layer",
+            "Assessment: Quiz: Phase B — Secure Domain Model & Data Layer"
+          ]
+        },
+        {
+          "title": "Phase C — Secure Service Layer",
+          "hours": 20,
+          "topics": [
+            "Enforce strict input validation at the service boundary for all untrusted input.",
+            "Apply injection-defense patterns and safe error handling that surfaces no sensitive system information.",
+            "Design correct, secure multi-step transaction handling (consistent state under partial failure).",
+            "Evaluate the service layer against the security spec for validation coverage and information-leak resistance."
+          ],
+          "objects": [
+            "Object: Lesson: Phase C — Secure Service Layer",
+            "Assessment: Quiz: Phase C — Secure Service Layer"
+          ]
+        },
+        {
+          "title": "Phase D — Spring MVC REST API & Access Control",
+          "hours": 20,
+          "topics": [
+            "Implement the REST API to the provided contract (endpoints, request/response schemas, status/error model).",
+            "Enforce authentication and role-based authorization (RBAC) so callers reach only what their role permits.",
+            "Apply secure response practices (secure headers, no-leak error responses) so the API surfaces nothing exploitable.",
+            "Evaluate the API against the contract and security spec for conformance and hardening."
+          ],
+          "objects": [
+            "Object: Lesson: Phase D — Spring MVC REST API & Access Control",
+            "Assessment: Quiz: Phase D — Spring MVC REST API & Access Control"
+          ]
+        },
+        {
+          "title": "Phase E — Secure LLM Summarizer via MCP",
+          "hours": 15,
+          "topics": [
+            "Integrate a secure LLM API call to summarize a clinical record, exposed/consumed through an MCP tool.",
+            "Apply PHI data-minimization (redaction/minimization before any model call) so the model never receives more than necessary.",
+            "Defend the summarizer against prompt injection from record content.",
+            "Evaluate the integration against the security spec for data minimization and injection resistance."
+          ],
+          "objects": [
+            "Object: Lesson: Phase E — Secure LLM Summarizer via MCP",
+            "Assessment: Quiz: Phase E — Secure LLM Summarizer via MCP"
+          ]
+        },
+        {
+          "title": "Phase F — Security Self-Audit, Tests & Evidence",
+          "hours": 12,
+          "topics": [
+            "Build a security-focused test suite using TDD, actively generating edge-case and boundary inputs (e.g., null/oversized/malformed) to test defenses against exploits.",
+            "Conduct an AI-assisted security self-audit of the full system and remediate the findings.",
+            "Author an evidence map linking each competency to concrete evidence (commits/PRs/files/tests/presentation).",
+            "Present the complete system end-to-end and defend the security decisions and evidence."
+          ],
+          "objects": [
+            "Object: Lesson: Phase F — Security Self-Audit, Tests & Evidence",
+            "Assessment: Quiz: Phase F — Security Self-Audit, Tests & Evidence"
+          ]
+        }
+      ]
+    }
+  ]
+}
