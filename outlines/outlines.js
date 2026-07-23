@@ -7450,6 +7450,345 @@ const courseOutlines = {
       ]
     }
   },
+  "Introduction to HTML & CSS — Secure (Cyber Developer Associate)": {
+    "course": "Introduction to HTML & CSS — Secure (Cyber Developer Associate)",
+    "totalHours": 40,
+    "totalModules": 5,
+    "totalLessons": 20,
+    "modules": [
+      {
+        "name": "HTML Foundations",
+        "hours": 10,
+        "lessons": [
+          {
+            "title": "Document Structure & Well-Formed Markup",
+            "hours": 2,
+            "topics": [
+              "The HTML document skeleton: `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`",
+              "Elements, tags, attributes, and nesting rules",
+              "Well-formed vs. malformed markup and why the parser's error recovery is not a safety net",
+              "`<head>` metadata: `<title>`, `<meta charset>`, viewport",
+              "Comments, whitespace, and readable source structure",
+              "Activity: guided exercise — build and validate a well-formed HTML page from scratch, fixing seeded markup errors."
+            ],
+            "objects": [
+              "Object: Lesson: Document Structure & Well-Formed Markup",
+              "Assessment: Quiz: Document Structure & Well-Formed Markup"
+            ]
+          },
+          {
+            "title": "Semantic Elements & Page Structure",
+            "hours": 2,
+            "topics": [
+              "Semantic sectioning: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`",
+              "Headings hierarchy (`<h1>`–`<h6>`) and document outline",
+              "`<div>`/`<span>` as non-semantic fallbacks — when they are appropriate",
+              "Why semantic structure aids accessibility, SEO, and maintainability",
+              "Activity: guided exercise — refactor a `<div>`-soup page into a semantically structured layout."
+            ],
+            "objects": [
+              "Object: Lesson: Semantic Elements & Page Structure",
+              "Assessment: Quiz: Semantic Elements & Page Structure"
+            ]
+          },
+          {
+            "title": "Text, Links & Media",
+            "hours": 2,
+            "topics": [
+              "Text-level elements: paragraphs, emphasis, `<strong>`, `<code>`, `<blockquote>`",
+              "Hyperlinks: relative vs. absolute URLs, fragment links, `mailto:`",
+              "Safe link practices: `target=\"_blank\"` with `rel=\"noopener noreferrer\"`",
+              "Images: `<img>`, `alt` text, and `<picture>`/responsive sources; embedding audio/video",
+              "Activity: guided exercise — build a content page with links and media, applying safe-link attributes."
+            ],
+            "objects": [
+              "Object: Lesson: Text, Links & Media",
+              "Assessment: Quiz: Text, Links & Media"
+            ]
+          },
+          {
+            "title": "Lists & Tables for Structured Data",
+            "hours": 2,
+            "topics": [
+              "Ordered, unordered, and description lists",
+              "Data tables: `<table>`, `<thead>`/`<tbody>`, `<th>` scope, `<caption>`",
+              "Tables for tabular data only — not for layout",
+              "Accessible table markup and header association",
+              "Activity: guided exercise — mark up a dataset as an accessible, well-structured data table."
+            ],
+            "objects": [
+              "Object: Lesson: Lists & Tables for Structured Data",
+              "Assessment: Quiz: Lists & Tables for Structured Data"
+            ]
+          },
+          {
+            "title": "Accessibility & Character Encoding Foundations",
+            "hours": 2,
+            "topics": [
+              "UTF-8 encoding and why declaring `charset` matters",
+              "HTML entities and character references (`&lt;`, `&amp;`, `&#...;`) — encoding vs. rendering",
+              "How the browser distinguishes markup from displayed text (foundation for later output-encoding thinking)",
+              "Accessibility basics: landmarks, `alt`, labels, focus order, ARIA in brief",
+              "Activity: guided exercise — audit and remediate a page for encoding correctness and basic accessibility."
+            ],
+            "objects": [
+              "Object: Lesson: Accessibility & Character Encoding Foundations",
+              "Assessment: Quiz: Accessibility & Character Encoding Foundations"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CSS Foundations",
+        "hours": 10,
+        "lessons": [
+          {
+            "title": "CSS Syntax, Selectors & the Cascade",
+            "hours": 2,
+            "topics": [
+              "Rulesets: selectors, properties, values; how CSS attaches to HTML (external, internal, inline)",
+              "Selector types: element, class, id, attribute, descendant, grouping",
+              "The cascade, specificity, and inheritance",
+              "Why external stylesheets and separation of concerns matter (structure vs. presentation)",
+              "Activity: guided exercise — style an existing HTML page using an external stylesheet and targeted selectors."
+            ],
+            "objects": [
+              "Object: Lesson: CSS Syntax, Selectors & the Cascade",
+              "Assessment: Quiz: CSS Syntax, Selectors & the Cascade"
+            ]
+          },
+          {
+            "title": "The Box Model & Spacing",
+            "hours": 2,
+            "topics": [
+              "Content, padding, border, margin; `box-sizing`",
+              "Block vs. inline vs. inline-block display",
+              "Margin collapse and controlling spacing predictably",
+              "Borders, outlines, and visual boundaries",
+              "Activity: guided exercise — reproduce a spacing/layout spec by controlling the box model."
+            ],
+            "objects": [
+              "Object: Lesson: The Box Model & Spacing",
+              "Assessment: Quiz: The Box Model & Spacing"
+            ]
+          },
+          {
+            "title": "Colors, Typography & Units",
+            "hours": 2,
+            "topics": [
+              "Color formats: named, hex, `rgb()`/`rgba()`, `hsl()`",
+              "Typography: font families, web-safe fonts, sizing, line height, weight",
+              "Units: `px`, `em`, `rem`, `%`, viewport units — absolute vs. relative",
+              "Readability and contrast basics",
+              "Activity: guided exercise — build a typographic style system with accessible color contrast."
+            ],
+            "objects": [
+              "Object: Lesson: Colors, Typography & Units",
+              "Assessment: Quiz: Colors, Typography & Units"
+            ]
+          },
+          {
+            "title": "Flexbox Layout",
+            "hours": 2,
+            "topics": [
+              "Flex container vs. flex items; main and cross axes",
+              "`justify-content`, `align-items`, `flex-wrap`, `gap`",
+              "`flex-grow`/`shrink`/`basis` and sizing behavior",
+              "Common one-dimensional layout patterns (nav bars, card rows)",
+              "Activity: guided exercise — build a responsive navigation bar and card row with Flexbox."
+            ],
+            "objects": [
+              "Object: Lesson: Flexbox Layout",
+              "Assessment: Quiz: Flexbox Layout"
+            ]
+          },
+          {
+            "title": "Responsive Design with Grid & Media Queries",
+            "hours": 2,
+            "topics": [
+              "CSS Grid: rows, columns, template areas, gaps",
+              "Grid vs. Flexbox — choosing the right tool",
+              "Media queries and mobile-first breakpoints",
+              "Fluid, responsive page layouts",
+              "Activity: guided exercise — build a responsive multi-section page layout with Grid and media queries."
+            ],
+            "objects": [
+              "Object: Lesson: Responsive Design with Grid & Media Queries",
+              "Assessment: Quiz: Responsive Design with Grid & Media Queries"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Secure Forms & Input-Validation Attributes",
+        "hours": 8,
+        "lessons": [
+          {
+            "title": "Form Structure & Input Controls",
+            "hours": 2,
+            "topics": [
+              "`<form>`, `<label>`, `<input>`, `<textarea>`, `<select>`, `<button>` and control association",
+              "Input types (`text`, `email`, `number`, `password`, `url`, `date`, etc.) and the semantics they carry",
+              "Grouping with `<fieldset>`/`<legend>`; name/value pairs and how data is submitted",
+              "Why correct control and type choice is the first input constraint",
+              "Activity: guided exercise — build a multi-field form with correctly typed, labeled controls."
+            ],
+            "objects": [
+              "Object: Lesson: Form Structure & Input Controls",
+              "Assessment: Quiz: Form Structure & Input Controls"
+            ]
+          },
+          {
+            "title": "Input-Validation Attributes as First-Line Defense",
+            "hours": 2,
+            "topics": [
+              "HTML5 validation attributes: `required`, `type`, `min`/`max`, `minlength`/`maxlength`, `pattern`, `step`",
+              "Constraining input at the source: narrowing accepted input reduces what downstream code must sanitize",
+              "Client-side validation as a UX and first-line-defense layer — never a substitute for server-side validation",
+              "Validation state, `:valid`/`:invalid` styling, and clear error messaging",
+              "Activity: guided exercise — add validation attributes to constrain a form's inputs, then verify rejection of malformed input."
+            ],
+            "objects": [
+              "Object: Lesson: Input-Validation Attributes as First-Line Defense",
+              "Assessment: Quiz: Input-Validation Attributes as First-Line Defense"
+            ]
+          },
+          {
+            "title": "Secure Form Methods & Submission",
+            "hours": 2,
+            "topics": [
+              "`GET` vs. `POST`: when each is appropriate and why sensitive data must not travel in a query string",
+              "`action`, `method`, `enctype`, and the `autocomplete` attribute for sensitive fields",
+              "HTTPS submission, mixed-content risks, and where form data goes",
+              "Introduction to CSRF risk and why form submission is a security-relevant boundary (conceptual; defense detailed downstream)",
+              "Activity: guided exercise — configure a form for secure submission (POST over HTTPS, correct method/enctype, sensitive-field handling)."
+            ],
+            "objects": [
+              "Object: Lesson: Secure Form Methods & Submission",
+              "Assessment: Quiz: Secure Form Methods & Submission"
+            ]
+          },
+          {
+            "title": "Accessible, Trustworthy Form UX",
+            "hours": 2,
+            "topics": [
+              "Accessible labeling, `aria-describedby`, and error announcement",
+              "Clear, honest validation feedback that guides correction without leaking system detail",
+              "Placeholder vs. label misuse; required-field and format cues",
+              "Building forms users can complete safely and confidently",
+              "Activity: guided exercise — remediate an inaccessible, confusing form into an accessible, clearly validated one."
+            ],
+            "objects": [
+              "Object: Lesson: Accessible, Trustworthy Form UX",
+              "Assessment: Quiz: Accessible, Trustworthy Form UX"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Content Security Policy & Web Security Headers",
+        "hours": 8,
+        "lessons": [
+          {
+            "title": "Why Client-Side Defense Needs Headers",
+            "hours": 2,
+            "topics": [
+              "The browser as an enforcement point: what a page is allowed to load and execute",
+              "Injection and clickjacking at a conceptual level — what markup alone cannot prevent",
+              "Defense-in-depth: input constraints (Module 3) plus browser-enforced policy (this module)",
+              "How response headers and the CSP meta tag reach the browser",
+              "Activity: guided exercise — inspect a page's headers/policy in browser dev tools and map each to the threat it mitigates."
+            ],
+            "objects": [
+              "Object: Lesson: Why Client-Side Defense Needs Headers",
+              "Assessment: Quiz: Why Client-Side Defense Needs Headers"
+            ]
+          },
+          {
+            "title": "Content Security Policy via Meta Tag",
+            "hours": 2,
+            "topics": [
+              "What CSP is and the threats it reduces (notably injected/inline script execution)",
+              "The `<meta http-equiv=\"Content-Security-Policy\">` tag and its role vs. the response header",
+              "Core directives: `default-src`, `script-src`, `style-src`, `img-src`, `object-src`",
+              "Why `'unsafe-inline'` undermines CSP, and moving toward external scripts/styles",
+              "Activity: guided exercise — add a restrictive CSP meta tag to a page and observe which resources are blocked/allowed."
+            ],
+            "objects": [
+              "Object: Lesson: Content Security Policy via Meta Tag",
+              "Assessment: Quiz: Content Security Policy via Meta Tag"
+            ]
+          },
+          {
+            "title": "Web Security Headers Primer — X-Frame-Options & HSTS",
+            "hours": 2,
+            "topics": [
+              "`X-Frame-Options` / `frame-ancestors` and clickjacking defense",
+              "`Strict-Transport-Security` (HSTS) and forcing HTTPS",
+              "Supporting headers in brief: `X-Content-Type-Options`, `Referrer-Policy`",
+              "Header vs. meta-tag delivery and their practical limits at the static/markup layer",
+              "Activity: guided exercise — document a recommended security-header set for a site and justify each header against a threat."
+            ],
+            "objects": [
+              "Object: Lesson: Web Security Headers Primer — X-Frame-Options & HSTS",
+              "Assessment: Quiz: Web Security Headers Primer — X-Frame-Options & HSTS"
+            ]
+          },
+          {
+            "title": "Applying a Security-Header Baseline to a Page",
+            "hours": 2,
+            "topics": [
+              "Assembling a coherent baseline: CSP + framing + transport + content-type protections",
+              "Testing policy with dev tools and reading violation reports",
+              "Iterating a policy from permissive to restrictive without breaking the page",
+              "Documenting the baseline as a reusable starting point",
+              "Activity: guided exercise — apply and tune a full security-header/CSP baseline on a sample page until it loads cleanly under policy."
+            ],
+            "objects": [
+              "Object: Lesson: Applying a Security-Header Baseline to a Page",
+              "Assessment: Quiz: Applying a Security-Header Baseline to a Page"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Secure Static-Site Build",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Planning & Building the Secure Static Site",
+            "hours": 2,
+            "topics": [
+              "Scoping a small multi-page static site (structure, pages, shared styles)",
+              "Building the pages with semantic HTML and responsive CSS from Modules 1–2",
+              "Adding a validated, securely-submitting form from Module 3",
+              "Organizing files and linking pages and stylesheets cleanly",
+              "Activity: build — assemble the multi-page static site skeleton with semantic markup, shared responsive CSS, and a validated form."
+            ],
+            "objects": [
+              "Object: Lesson: Planning & Building the Secure Static Site",
+              "Assessment: Quiz: Planning & Building the Secure Static Site"
+            ]
+          },
+          {
+            "title": "Hardening & Review",
+            "hours": 2,
+            "topics": [
+              "Applying the Module 4 CSP / security-header baseline across the site",
+              "Validating markup, checking accessibility and contrast, and confirming the form's validation and secure submission",
+              "Self-review against a foundations security checklist (encoding, safe links, input constraints, policy baseline)",
+              "Presenting the finished site and its security choices",
+              "Activity (summative build): harden and review the static site end to end — semantic HTML, responsive CSS, validated secure form, and applied CSP/header baseline — verified against the checklist."
+            ],
+            "objects": [
+              "Object: Lesson: Hardening & Review",
+              "Assessment: Quiz: Hardening & Review"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Introduction to Microsoft Teams": {
     "course": "Introduction to Microsoft Teams",
     "totalHours": null,

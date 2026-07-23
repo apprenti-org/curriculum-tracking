@@ -677,6 +677,21 @@
       "statusConfirmed": false
     },
     {
+      "id": "introduction-to-html-and-css-secure",
+      "name": "Introduction to HTML & CSS — Secure (Cyber Developer Associate)",
+      "hours": 40,
+      "status": {
+        "design": "Complete",
+        "development": "In Progress"
+      },
+      "syllabus": null,
+      "outline": true,
+      "note": "Cyber Developer Associate net-new foundational Phase-6 (Secure Web and Front-End Development) course. 5 modules, 20 lessons, 40h: HTML foundations → CSS foundations → secure forms & input-validation attributes → CSP & web security headers → integrative secure static-site build (summative). Owns no verbatim A-31 Phase-6 RTI topic by design (both Phase-6 RTI topics are JavaScript/JSON, owned by the downstream Phase-6 JS courses); this course is their prerequisite. Claims OJL 4.c at the foundations level only (secure forms / input-validation attributes + CSP/security-header baseline); does not claim 4.a/4.b or teach JavaScript. Design folder course-design/introduction-to-html-and-css-secure/. Rows 2–5 complete (course outline, lesson outlines, lesson sources, content scaffolding — 20/20 lessons); code-bearing (Row 6 secure static-site starter/solution repos next). Onboarding meta apprenti-org/design-documentation#1476; CDA build #981.",
+      "driveFolder": null,
+      "statusConfirmed": false,
+      "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+    },
+    {
       "id": "introduction-to-microsoft-teams",
       "name": "Introduction to Microsoft Teams",
       "hours": null,
