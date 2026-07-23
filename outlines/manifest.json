@@ -215,6 +215,11 @@
     "id": "introduction-to-html-and-css"
   },
   {
+    "file": "introduction-to-html-and-css-secure.json",
+    "course": "Introduction to HTML & CSS — Secure (Cyber Developer Associate)",
+    "id": "introduction-to-html-and-css-secure"
+  },
+  {
     "file": "intro-to-microsoft-teams.json",
     "course": "Introduction to Microsoft Teams",
     "id": "introduction-to-microsoft-teams"
