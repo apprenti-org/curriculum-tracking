@@ -7473,7 +7473,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Document Structure & Well-Formed Markup",
-              "Assessment: Quiz: Document Structure & Well-Formed Markup"
+              "Assessment: Quiz: Document Structure & Well-Formed Markup",
+              "SCORM: Interactive — Document Structure & Well-Formed Markup (scorm-lesson-01-document-structure-and-well-formed-markup.zip)"
             ]
           },
           {
@@ -7488,7 +7489,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Semantic Elements & Page Structure",
-              "Assessment: Quiz: Semantic Elements & Page Structure"
+              "Assessment: Quiz: Semantic Elements & Page Structure",
+              "SCORM: Interactive — Semantic Elements & Page Structure (scorm-lesson-02-semantic-elements-and-page-structure.zip)"
             ]
           },
           {
@@ -7503,7 +7505,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Text, Links & Media",
-              "Assessment: Quiz: Text, Links & Media"
+              "Assessment: Quiz: Text, Links & Media",
+              "SCORM: Interactive — Text, Links & Media (scorm-lesson-03-text-links-and-media.zip)"
             ]
           },
           {
@@ -7518,7 +7521,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Lists & Tables for Structured Data",
-              "Assessment: Quiz: Lists & Tables for Structured Data"
+              "Assessment: Quiz: Lists & Tables for Structured Data",
+              "SCORM: Interactive — Lists & Tables for Structured Data (scorm-lesson-04-lists-and-tables-for-structured-data.zip)"
             ]
           },
           {
@@ -7533,7 +7537,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Accessibility & Character Encoding Foundations",
-              "Assessment: Quiz: Accessibility & Character Encoding Foundations"
+              "Assessment: Quiz: Accessibility & Character Encoding Foundations",
+              "SCORM: Interactive — Accessibility & Character Encoding Foundations (scorm-lesson-05-accessibility-and-character-encoding-foundations.zip)"
             ]
           }
         ]
@@ -7554,7 +7559,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: CSS Syntax, Selectors & the Cascade",
-              "Assessment: Quiz: CSS Syntax, Selectors & the Cascade"
+              "Assessment: Quiz: CSS Syntax, Selectors & the Cascade",
+              "SCORM: Interactive — CSS Syntax, Selectors & the Cascade (scorm-lesson-06-css-syntax-selectors-and-the-cascade.zip)"
             ]
           },
           {
@@ -7569,7 +7575,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Box Model & Spacing",
-              "Assessment: Quiz: The Box Model & Spacing"
+              "Assessment: Quiz: The Box Model & Spacing",
+              "SCORM: Interactive — The Box Model & Spacing (scorm-lesson-07-the-box-model-and-spacing.zip)"
             ]
           },
           {
@@ -7584,7 +7591,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Colors, Typography & Units",
-              "Assessment: Quiz: Colors, Typography & Units"
+              "Assessment: Quiz: Colors, Typography & Units",
+              "SCORM: Interactive — Colors, Typography & Units (scorm-lesson-08-colors-typography-and-units.zip)"
             ]
           },
           {
@@ -7599,7 +7607,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Flexbox Layout",
-              "Assessment: Quiz: Flexbox Layout"
+              "Assessment: Quiz: Flexbox Layout",
+              "SCORM: Interactive — Flexbox Layout (scorm-lesson-09-flexbox-layout.zip)"
             ]
           },
           {
@@ -7614,7 +7623,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Responsive Design with Grid & Media Queries",
-              "Assessment: Quiz: Responsive Design with Grid & Media Queries"
+              "Assessment: Quiz: Responsive Design with Grid & Media Queries",
+              "SCORM: Interactive — Responsive Design with Grid & Media Queries (scorm-lesson-10-responsive-design-with-grid-and-media-queries.zip)"
             ]
           }
         ]
@@ -7635,7 +7645,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Form Structure & Input Controls",
-              "Assessment: Quiz: Form Structure & Input Controls"
+              "Assessment: Quiz: Form Structure & Input Controls",
+              "SCORM: Interactive — Form Structure & Input Controls (scorm-lesson-11-form-structure-and-input-controls.zip)"
             ]
           },
           {
@@ -7650,7 +7661,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Input-Validation Attributes as First-Line Defense",
-              "Assessment: Quiz: Input-Validation Attributes as First-Line Defense"
+              "Assessment: Quiz: Input-Validation Attributes as First-Line Defense",
+              "SCORM: Interactive — Input-Validation Attributes as First-Line Defense (scorm-lesson-12-input-validation-attributes-as-first-line-defense.zip)"
             ]
           },
           {
@@ -7665,7 +7677,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secure Form Methods & Submission",
-              "Assessment: Quiz: Secure Form Methods & Submission"
+              "Assessment: Quiz: Secure Form Methods & Submission",
+              "SCORM: Interactive — Secure Form Methods & Submission (scorm-lesson-13-secure-form-methods-and-submission.zip)"
             ]
           },
           {
@@ -7680,7 +7693,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Accessible, Trustworthy Form UX",
-              "Assessment: Quiz: Accessible, Trustworthy Form UX"
+              "Assessment: Quiz: Accessible, Trustworthy Form UX",
+              "SCORM: Interactive — Accessible, Trustworthy Form UX (scorm-lesson-14-accessible-trustworthy-form-ux.zip)"
             ]
           }
         ]
@@ -7701,7 +7715,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Why Client-Side Defense Needs Headers",
-              "Assessment: Quiz: Why Client-Side Defense Needs Headers"
+              "Assessment: Quiz: Why Client-Side Defense Needs Headers",
+              "SCORM: Interactive — Why Client-Side Defense Needs Headers (scorm-lesson-15-why-client-side-defense-needs-headers.zip)"
             ]
           },
           {
@@ -7716,7 +7731,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Content Security Policy via Meta Tag",
-              "Assessment: Quiz: Content Security Policy via Meta Tag"
+              "Assessment: Quiz: Content Security Policy via Meta Tag",
+              "SCORM: Interactive — Content Security Policy via Meta Tag (scorm-lesson-16-content-security-policy-via-meta-tag.zip)"
             ]
           },
           {
@@ -7731,7 +7747,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Web Security Headers Primer — X-Frame-Options & HSTS",
-              "Assessment: Quiz: Web Security Headers Primer — X-Frame-Options & HSTS"
+              "Assessment: Quiz: Web Security Headers Primer — X-Frame-Options & HSTS",
+              "SCORM: Interactive — Web Security Headers Primer — X-Frame-Options & HSTS (scorm-lesson-17-web-security-headers-primer-x-frame-options-and-hsts.zip)"
             ]
           },
           {
@@ -7746,7 +7763,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Applying a Security-Header Baseline to a Page",
-              "Assessment: Quiz: Applying a Security-Header Baseline to a Page"
+              "Assessment: Quiz: Applying a Security-Header Baseline to a Page",
+              "SCORM: Interactive — Applying a Security-Header Baseline to a Page (scorm-lesson-18-applying-a-security-header-baseline-to-a-page.zip)"
             ]
           }
         ]
@@ -7767,7 +7785,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Planning & Building the Secure Static Site",
-              "Assessment: Quiz: Planning & Building the Secure Static Site"
+              "Assessment: Quiz: Planning & Building the Secure Static Site",
+              "SCORM: Interactive — Planning & Building the Secure Static Site (scorm-lesson-19-planning-and-building-the-secure-static-site.zip)"
             ]
           },
           {
@@ -7782,7 +7801,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Hardening & Review",
-              "Assessment: Quiz: Hardening & Review"
+              "Assessment: Quiz: Hardening & Review",
+              "SCORM: Interactive — Hardening & Review (scorm-lesson-20-hardening-and-review.zip)"
             ]
           }
         ]
