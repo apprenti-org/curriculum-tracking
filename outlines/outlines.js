@@ -9721,6 +9721,56 @@ const courseOutlines = {
           }
         ]
       }
+    ],
+    "objects": [
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-01-javascript-essentials-for-the-browser.zip",
+        "module": "module-01-javascript-foundations-for-secure-dom-work",
+        "lesson": "lesson-01-javascript-essentials-for-the-browser"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-02-the-dom-and-untrusted-data.zip",
+        "module": "module-01-javascript-foundations-for-secure-dom-work",
+        "lesson": "lesson-02-the-dom-and-untrusted-data"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-03-how-xss-happens-injection-sinks.zip",
+        "module": "module-02-safe-dom-manipulation-the-core-xss-defense",
+        "lesson": "lesson-03-how-xss-happens-injection-sinks"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-04-writing-text-safely-textcontent.zip",
+        "module": "module-02-safe-dom-manipulation-the-core-xss-defense",
+        "lesson": "lesson-04-writing-text-safely-textcontent"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-05-building-dom-safely-createelement.zip",
+        "module": "module-02-safe-dom-manipulation-the-core-xss-defense",
+        "lesson": "lesson-05-building-dom-safely-createelement"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-06-avoiding-eval-dynamic-execution.zip",
+        "module": "module-03-dangerous-dynamic-execution-and-insecure-object-handling",
+        "lesson": "lesson-06-avoiding-eval-dynamic-execution"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-07-json-parse-prototype-pollution.zip",
+        "module": "module-03-dangerous-dynamic-execution-and-insecure-object-handling",
+        "lesson": "lesson-07-json-parse-prototype-pollution"
+      },
+      {
+        "type": "scorm",
+        "file": "scorm-lesson-08-input-sanitization-defense-in-depth.zip",
+        "module": "module-04-actively-preventing-xss",
+        "lesson": "lesson-08-input-sanitization-defense-in-depth"
+      }
     ]
   },
   "JavaScript Coding Booster Intensive": {
