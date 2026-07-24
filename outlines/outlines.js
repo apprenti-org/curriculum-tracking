@@ -9571,6 +9571,158 @@ const courseOutlines = {
       }
     ]
   },
+  "JavaScript — XSS Edition (Cyber Developer Associate)": {
+    "course": "JavaScript — XSS Edition",
+    "totalHours": 16,
+    "totalModules": 4,
+    "totalLessons": 8,
+    "modules": [
+      {
+        "name": "JavaScript Foundations for Secure DOM Work",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "JavaScript Essentials for the Browser",
+            "hours": 2,
+            "topics": [
+              "Variables, types, functions, and objects — the minimum JS the course relies on",
+              "The browser runtime: where scripts run, the global `window`, and script execution order",
+              "Strings and template literals — how text becomes page content",
+              "How user-supplied data first arrives in JavaScript (URL, forms, storage, fetch responses)",
+              "Truthiness, equality, and common footguns that lead to unsafe assumptions about input"
+            ],
+            "objects": [
+              "Object: Lesson: JavaScript Essentials for the Browser",
+              "Assessment: Quiz: JavaScript Essentials for the Browser"
+            ]
+          },
+          {
+            "title": "The DOM and How Untrusted Data Reaches It",
+            "hours": 2,
+            "topics": [
+              "The DOM tree: elements, nodes, attributes, and text nodes",
+              "Selecting and reading nodes (`querySelector`, `getElementById`), event listeners, and handling input events",
+              "Sources of untrusted input: URL/query params, form fields, `localStorage`, and server responses",
+              "The distinction between *data* and *markup* — the root idea behind every XSS defense",
+              "First look at how untrusted data reaching the DOM as markup becomes script execution"
+            ],
+            "objects": [
+              "Object: Lesson: The DOM and How Untrusted Data Reaches It",
+              "Assessment: Quiz: The DOM and How Untrusted Data Reaches It"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Safe DOM Manipulation — the Core XSS Defense",
+        "hours": 6,
+        "lessons": [
+          {
+            "title": "How XSS Happens — innerHTML and Injection Sinks",
+            "hours": 2,
+            "topics": [
+              "Reflected, stored, and DOM-based XSS — what differs and what they share",
+              "Dangerous DOM sinks: `innerHTML`, `outerHTML`, `document.write`, `insertAdjacentHTML`",
+              "Demonstrating an injection: how a crafted string becomes executing script through a sink",
+              "Why \"it's just displaying text\" is the assumption attackers exploit",
+              "Mapping sinks in existing code as the first step of remediation"
+            ],
+            "objects": [
+              "Object: Lesson: How XSS Happens — innerHTML and Injection Sinks",
+              "Assessment: Quiz: How XSS Happens — innerHTML and Injection Sinks"
+            ]
+          },
+          {
+            "title": "Writing Text Safely — textContent and Safe Rendering",
+            "hours": 2,
+            "topics": [
+              "`textContent` vs `innerHTML`: when the browser treats a value as text vs. as markup",
+              "Rendering user-supplied data as text so payloads are displayed, not executed",
+              "`innerText` and node-level text APIs — differences and correct use",
+              "Output encoding/escaping concepts and where they belong",
+              "Choosing the safe API by default and reserving markup APIs for trusted, developer-authored content"
+            ],
+            "objects": [
+              "Object: Lesson: Writing Text Safely — textContent and Safe Rendering",
+              "Assessment: Quiz: Writing Text Safely — textContent and Safe Rendering"
+            ]
+          },
+          {
+            "title": "Building DOM Safely — createElement, setAttribute, and Attribute Risks",
+            "hours": 2,
+            "topics": [
+              "Constructing nodes with `createElement` / `append` / `appendChild` instead of HTML strings",
+              "Setting attributes safely with `setAttribute`, and why some attributes are still dangerous",
+              "Attribute-based injection: `javascript:` URLs, inline event-handler attributes (`onclick`, `onerror`), and `src`/`href` sinks",
+              "Validating and allow-listing URL and attribute values before assignment",
+              "Safely composing dynamic, data-driven UI without string concatenation of markup"
+            ],
+            "objects": [
+              "Object: Lesson: Building DOM Safely — createElement, setAttribute, and Attribute Risks",
+              "Assessment: Quiz: Building DOM Safely — createElement, setAttribute, and Attribute Risks"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dangerous Dynamic Execution and Insecure Object Handling",
+        "hours": 4,
+        "lessons": [
+          {
+            "title": "Avoiding eval() and Insecure Dynamic Execution",
+            "hours": 2,
+            "topics": [
+              "Why `eval()` turns any untrusted string into executing code",
+              "Hidden dynamic-execution sinks: `new Function`, and string arguments to `setTimeout`/`setInterval`",
+              "`javascript:` URLs and inline handlers as dynamic execution (tie-back to Lesson 5)",
+              "Safe alternatives: data structures and lookup tables instead of evaluated code",
+              "Recognizing and removing dynamic execution during code review"
+            ],
+            "objects": [
+              "Object: Lesson: Avoiding eval() and Insecure Dynamic Execution",
+              "Assessment: Quiz: Avoiding eval() and Insecure Dynamic Execution"
+            ]
+          },
+          {
+            "title": "JSON.parse Risks and Prototype-Pollution Awareness",
+            "hours": 2,
+            "topics": [
+              "`JSON.parse` vs. using `eval` to parse — why `JSON.parse` is the safe parser",
+              "Insecure object handling: trusting the shape and keys of parsed untrusted objects",
+              "Prototype pollution: how `__proto__` / `constructor` keys in untrusted JSON corrupt object state",
+              "Defensive parsing: validating shape, rejecting dangerous keys, using null-prototype objects and `Object.hasOwn`",
+              "Where parsed data still becomes a DOM/XSS risk if it is later written as markup"
+            ],
+            "objects": [
+              "Object: Lesson: JSON.parse Risks and Prototype-Pollution Awareness",
+              "Assessment: Quiz: JSON.parse Risks and Prototype-Pollution Awareness"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Actively Preventing XSS",
+        "hours": 2,
+        "lessons": [
+          {
+            "title": "Client-Side Input Sanitization and XSS Defense in Depth",
+            "hours": 2,
+            "topics": [
+              "Sanitizing and validating input before it is processed or rendered",
+              "Escaping/encoding vs. sanitizing markup — choosing the right tool for the context",
+              "Allow-list sanitization and the role of a vetted sanitizer library",
+              "Defense-in-depth awareness: Content Security Policy and Trusted Types as backstops (concepts)",
+              "Integrative secure refactor: text rendering, safe DOM construction, no dynamic execution, safe JSON handling"
+            ],
+            "objects": [
+              "Object: Lesson: Client-Side Input Sanitization and XSS Defense in Depth",
+              "Assessment: Quiz: Client-Side Input Sanitization and XSS Defense in Depth"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "JavaScript Coding Booster Intensive": {
     "course": "JavaScript Coding Booster Intensive",
     "totalHours": 8,

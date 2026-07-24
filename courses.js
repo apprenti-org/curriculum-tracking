@@ -825,6 +825,21 @@ const courseData = [
     "statusConfirmed": false
   },
   {
+    "id": "javascript-secure",
+    "name": "JavaScript — XSS Edition (Cyber Developer Associate)",
+    "hours": 16,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": null,
+    "outline": true,
+    "note": "Cyber Developer Associate net-new Phase-6 (Secure Web and Front-End Development) course — JavaScript taught through the XSS-defense lens. 4 modules, 8 lessons, 16h: JavaScript foundations for secure DOM work → safe DOM manipulation (textContent, createElement/setAttribute) → dangerous dynamic execution & insecure object handling (eval, JSON.parse/prototype pollution) → integrative client-side input sanitization & XSS defense-in-depth (summative). Owns the A-31 Phase-6 JavaScript / XSS RTI topic and OJL 4.a; touches 4.b (L7 JSON) and 4.c (L8 sanitization) narrowly without claiming them. Design folder course-design/javascript-secure/. Rows 2–5 complete (course outline, lesson outlines, lesson sources, content scaffolding — 8/8 lessons); code-bearing (Row 6 secure JS starter/solution repos next). Onboarding meta apprenti-org/design-documentation#1477; CDA build #981.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "javascript-coding-booster-intensive",
     "name": "JavaScript Coding Booster Intensive",
     "hours": 8,

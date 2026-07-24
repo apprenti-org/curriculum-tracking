@@ -265,6 +265,11 @@
     "id": "javascript"
   },
   {
+    "file": "javascript-secure.json",
+    "course": "JavaScript — XSS Edition (Cyber Developer Associate)",
+    "id": "javascript-secure"
+  },
+  {
     "file": "javascript-coding-booster.json",
     "course": "JavaScript Coding Booster Intensive",
     "id": "javascript-coding-booster-intensive"
