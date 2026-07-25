@@ -1343,6 +1343,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "web-development-with-javascript-secure",
+    "name": "Web Development with JavaScript — Secure-by-Design (Cyber Developer Associate)",
+    "hours": 40,
+    "status": {
+      "design": "Complete",
+      "development": "In Progress"
+    },
+    "syllabus": null,
+    "outline": true,
+    "note": "Cyber Developer Associate net-new Phase-6 (Secure Web and Front-End Development) course — secure client-side JavaScript application development. 4 modules, 20 lessons, 40h: Content Security Policy for client-side apps → robust client-side input sanitization → secure data fetching & API consumption → secure JSON parsing & object handling (integrative graded lab, summative). Owns the A-31 Phase-6 Secure Data Parsing RTI topic (Module 4) and OJL 4.b (primary); OJL 4.c primary in Module 2, reinforced by Modules 1 and 3. Does not claim 4.a (owned by the JavaScript — XSS Edition prerequisite). Prerequisites: HTML/CSS — Secure Edition and JavaScript — XSS Edition. Design folder course-design/web-development-with-javascript-secure/. Rows 2–5 complete (course outline, lesson outlines, lesson sources, content scaffolding — 20/20 lessons); development In Progress, code-bearing (Row 6 secure JS starter/solution repos next). Onboarding meta apprenti-org/design-documentation#1478; CDA build #981.",
+    "driveFolder": null,
+    "statusConfirmed": true,
+    "sourceRepo": "https://github.com/apprenti-org/design-documentation"
+  },
+  {
     "id": "xss-defense-secure-data-parsing-lab",
     "name": "XSS Defense & Secure Data Parsing Lab (Cyber Developer Associate)",
     "hours": 24,

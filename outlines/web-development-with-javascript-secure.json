@@ -1,0 +1,352 @@
+{
+  "course": "Web Development with JavaScript — Secure-by-Design",
+  "totalHours": 40,
+  "totalModules": 4,
+  "totalLessons": 20,
+  "modules": [
+    {
+      "name": "Content Security Policy for Client-Side Apps",
+      "hours": 10,
+      "lessons": [
+        {
+          "title": "The Browser as a Policy Enforcer — CSP Fundamentals",
+          "hours": 2,
+          "topics": [
+            "What Content Security Policy is and the class of attacks it mitigates (injected/inline script, data exfiltration)",
+            "How the browser receives and enforces a policy (the `Content-Security-Policy` response header vs. the `<meta>` element)",
+            "The source-list model: how a directive allow-lists origins for a resource type",
+            "`default-src` as the fallback and why an explicit, restrictive baseline matters",
+            "Defense-in-depth: CSP as a second line behind sanitization, not a replacement for it",
+            "Reading a violation in the browser console"
+          ],
+          "objects": [
+            "Object: Lesson: The Browser as a Policy Enforcer — CSP Fundamentals",
+            "Assessment: Quiz: The Browser as a Policy Enforcer — CSP Fundamentals"
+          ]
+        },
+        {
+          "title": "Writing and Deploying a Content Security Policy",
+          "hours": 2,
+          "topics": [
+            "The core fetch directives: `script-src`, `style-src`, `img-src`, `font-src`, `connect-src`",
+            "Delivering the policy via response header vs. `<meta http-equiv>` and the trade-offs",
+            "Why `'unsafe-inline'` and `'unsafe-eval'` defeat the policy's purpose",
+            "Scoping origins tightly (specific hosts over wildcards)",
+            "`object-src 'none'`, `base-uri`, and `form-action` as high-value hardening directives",
+            "Ordering of work: build the app to the policy, not the policy to the app"
+          ],
+          "objects": [
+            "Object: Lesson: Writing and Deploying a Content Security Policy",
+            "Assessment: Quiz: Writing and Deploying a Content Security Policy"
+          ]
+        },
+        {
+          "title": "Eliminating Inline Script — Nonces, Hashes, and Refactoring",
+          "hours": 2,
+          "topics": [
+            "Why inline `<script>` and inline event handlers are the hardest CSP problem",
+            "Refactoring inline handlers to `addEventListener` in external files",
+            "Nonce-based script authorization (`'nonce-…'`) and the per-response uniqueness requirement",
+            "Hash-based authorization (`'sha256-…'`) for static inline snippets",
+            "Externalizing configuration and data out of inline script",
+            "Verifying no `'unsafe-inline'` remains after refactor"
+          ],
+          "objects": [
+            "Object: Lesson: Eliminating Inline Script — Nonces, Hashes, and Refactoring",
+            "Assessment: Quiz: Eliminating Inline Script — Nonces, Hashes, and Refactoring"
+          ]
+        },
+        {
+          "title": "CSP for Dynamic and Third-Party Content",
+          "hours": 2,
+          "topics": [
+            "`connect-src` for `fetch`/XHR/WebSocket endpoints (the bridge to Module 3)",
+            "Allow-listing trusted CDNs and third-party origins deliberately",
+            "`frame-src` / `frame-ancestors` for embedding and clickjacking defense",
+            "`img-src`/`media-src` for user- or API-supplied media",
+            "`strict-dynamic` and when it helps vs. when it overreaches",
+            "The maintenance cost of every added origin — keeping the allow-list minimal"
+          ],
+          "objects": [
+            "Object: Lesson: CSP for Dynamic and Third-Party Content",
+            "Assessment: Quiz: CSP for Dynamic and Third-Party Content"
+          ]
+        },
+        {
+          "title": "Reporting, Testing, and Iterating a Policy",
+          "hours": 2,
+          "topics": [
+            "`Content-Security-Policy-Report-Only` for safe staged rollout",
+            "`report-to` / `report-uri` and reading collected violation reports",
+            "Diagnosing a broken feature from a violation report",
+            "Iterating from a permissive draft to a strict enforced policy",
+            "Testing the policy across the app's real resource surface",
+            "Recognizing when a violation is an attack signal vs. a misconfiguration"
+          ],
+          "objects": [
+            "Object: Lesson: Reporting, Testing, and Iterating a Policy",
+            "Assessment: Quiz: Reporting, Testing, and Iterating a Policy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Robust Client-Side Input Sanitization",
+      "hours": 10,
+      "lessons": [
+        {
+          "title": "The Client-Side Trust Boundary — Sanitize Before You Process",
+          "hours": 2,
+          "topics": [
+            "Sources of untrusted client-side input: form fields, URL/query params, `localStorage`, `postMessage`, API responses",
+            "The difference between sanitization, validation, and output encoding",
+            "\"Sanitize before processing\" — cleaning input at the boundary rather than at render time only",
+            "Sinks that turn data into behavior (`innerHTML`, attributes, `href`/`src`, DOM APIs)",
+            "How this layer relates to CSP (Module 1) and to XSS prevention taught in the prerequisite",
+            "Choosing the right defense for the context (HTML body vs. attribute vs. URL vs. JS)"
+          ],
+          "objects": [
+            "Object: Lesson: The Client-Side Trust Boundary — Sanitize Before You Process",
+            "Assessment: Quiz: The Client-Side Trust Boundary — Sanitize Before You Process"
+          ]
+        },
+        {
+          "title": "Manual Sanitization — Encoding, Escaping, and Allow-Lists",
+          "hours": 2,
+          "topics": [
+            "HTML-entity encoding for text destined for the DOM",
+            "Attribute and URL encoding, and why context determines the encoding",
+            "Allow-list validation (accept known-good) over deny-list filtering (block known-bad)",
+            "Validating and normalizing structured values (numbers, dates, identifiers, enums)",
+            "Why naive regex \"stripping\" of tags fails against real payloads",
+            "Failing closed: rejecting or neutralizing input that cannot be safely represented"
+          ],
+          "objects": [
+            "Object: Lesson: Manual Sanitization — Encoding, Escaping, and Allow-Lists",
+            "Assessment: Quiz: Manual Sanitization — Encoding, Escaping, and Allow-Lists"
+          ]
+        },
+        {
+          "title": "DOMPurify — Library-Based HTML Sanitization",
+          "hours": 2,
+          "topics": [
+            "What DOMPurify does and the threat model it addresses",
+            "`DOMPurify.sanitize()` and returning safe HTML for insertion",
+            "Configuring allowed tags and attributes (`ALLOWED_TAGS`, `ALLOWED_ATTR`)",
+            "Hooks and profiles for constraining output further",
+            "Keeping the sanitizer current and trusting maintained libraries over hand-rolled parsers",
+            "Integrating DOMPurify under a strict CSP (loading it as an allow-listed source)"
+          ],
+          "objects": [
+            "Object: Lesson: DOMPurify — Library-Based HTML Sanitization",
+            "Assessment: Quiz: DOMPurify — Library-Based HTML Sanitization"
+          ]
+        },
+        {
+          "title": "Safe Dynamic UI Construction",
+          "hours": 2,
+          "topics": [
+            "`textContent` / `createTextNode` vs. `innerHTML` for untrusted values",
+            "`createElement` + `setAttribute` and the attributes that are unsafe to set from input (`href`, `src`, `on*`, `style`)",
+            "Safe insertion of user-supplied URLs (scheme allow-listing, rejecting `javascript:`)",
+            "Templating untrusted data into the DOM without string concatenation",
+            "Rendering lists/collections from API data safely",
+            "Where `innerHTML` is acceptable — only with sanitized output from Lesson 3"
+          ],
+          "objects": [
+            "Object: Lesson: Safe Dynamic UI Construction",
+            "Assessment: Quiz: Safe Dynamic UI Construction"
+          ]
+        },
+        {
+          "title": "Sanitizing Structured and Rich Input",
+          "hours": 2,
+          "topics": [
+            "URL sanitization: scheme allow-lists, blocking `javascript:`/`data:` where inappropriate, relative-vs-absolute handling",
+            "Attribute-context injection and safe attribute assignment",
+            "Markdown and rich-text input: render-then-sanitize pipelines",
+            "Sanitizing structured/nested data (objects, arrays) field by field",
+            "Consistency between client-side and server-side expectations (never trust client sanitization alone)",
+            "Building a reusable sanitization utility for the app"
+          ],
+          "objects": [
+            "Object: Lesson: Sanitizing Structured and Rich Input",
+            "Assessment: Quiz: Sanitizing Structured and Rich Input"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Secure Data Fetching and API Consumption",
+      "hours": 10,
+      "lessons": [
+        {
+          "title": "The fetch() API and the Same-Origin Model",
+          "hours": 2,
+          "topics": [
+            "The `fetch()` request/response model and promises",
+            "The same-origin policy: what it protects and what it restricts",
+            "Request configuration: method, headers, body, `mode`, `credentials`",
+            "Reading responses safely (`response.ok`, status codes, `response.json()`)",
+            "Why `credentials: 'include'` is a deliberate, security-relevant choice",
+            "Errors, network failures, and timeouts as first-class cases"
+          ],
+          "objects": [
+            "Object: Lesson: The fetch() API and the Same-Origin Model",
+            "Assessment: Quiz: The fetch() API and the Same-Origin Model"
+          ]
+        },
+        {
+          "title": "CORS — How Cross-Origin Requests Are Governed",
+          "hours": 2,
+          "topics": [
+            "Why the browser blocks cross-origin reads by default",
+            "The CORS handshake: `Origin`, `Access-Control-Allow-Origin`, and preflight `OPTIONS`",
+            "Simple vs. preflighted requests and what triggers a preflight",
+            "Credentialed CORS and why `Access-Control-Allow-Origin: *` cannot be combined with credentials",
+            "Reading and diagnosing CORS failures from the console/network panel",
+            "Why disabling CORS or proxying around it is a security anti-pattern",
+            "How `connect-src` (Module 1) and CORS interact for a locked-down client"
+          ],
+          "objects": [
+            "Object: Lesson: CORS — How Cross-Origin Requests Are Governed",
+            "Assessment: Quiz: CORS — How Cross-Origin Requests Are Governed"
+          ]
+        },
+        {
+          "title": "Authentication for Client-Side API Calls",
+          "hours": 2,
+          "topics": [
+            "Bearer tokens and the `Authorization` header",
+            "Cookie-based auth and the `SameSite` / `HttpOnly` / `Secure` attributes",
+            "Token storage trade-offs: `localStorage` vs. in-memory vs. `HttpOnly` cookie, and the XSS exposure of each",
+            "Never hardcoding secrets or API keys in client-side code",
+            "Refreshing/expiring tokens and handling `401`/`403` responses",
+            "Avoiding token leakage through logs, URLs, and third-party scripts"
+          ],
+          "objects": [
+            "Object: Lesson: Authentication for Client-Side API Calls",
+            "Assessment: Quiz: Authentication for Client-Side API Calls"
+          ]
+        },
+        {
+          "title": "Validating and Handling API Responses",
+          "hours": 2,
+          "topics": [
+            "Why a response is untrusted even from \"your own\" API",
+            "Checking `Content-Type` and not assuming a body is JSON",
+            "Validating response shape and types before use (guarding against missing/extra/wrong-typed fields)",
+            "Not rendering response fields into the DOM without the sanitization from Module 2",
+            "Handling error bodies without leaking internal detail to the UI",
+            "Failing safe when a response does not match expectations"
+          ],
+          "objects": [
+            "Object: Lesson: Validating and Handling API Responses",
+            "Assessment: Quiz: Validating and Handling API Responses"
+          ]
+        },
+        {
+          "title": "Building a Secure API-Client Layer",
+          "hours": 2,
+          "topics": [
+            "Centralizing `fetch` behind a single wrapper/module",
+            "Injecting auth, base URLs, and default headers in one place",
+            "Enforcing response validation for every call through the wrapper",
+            "Uniform timeout, retry, and error handling",
+            "Keeping the endpoint list aligned with the CSP `connect-src` allow-list",
+            "Surfacing failures to the UI without leaking sensitive detail"
+          ],
+          "objects": [
+            "Object: Lesson: Building a Secure API-Client Layer",
+            "Assessment: Quiz: Building a Secure API-Client Layer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Secure JSON Parsing and Object Handling",
+      "hours": 10,
+      "lessons": [
+        {
+          "title": "JSON.parse and JSON.stringify — Risks and Safe Use",
+          "hours": 2,
+          "topics": [
+            "What `JSON.parse` and `JSON.stringify` do, and their round-trip guarantees and limits",
+            "Why `eval()`-based \"parsing\" of JSON is a critical vulnerability, and why `JSON.parse` exists",
+            "Handling parse failures (malformed input throws) — parsing untrusted strings inside `try/catch`",
+            "Data that does not survive JSON (functions, `undefined`, dates as strings, `NaN`/`Infinity`)",
+            "`JSON.stringify` replacers and controlling what is serialized (avoiding leaking sensitive fields)",
+            "Treating a parsed value as untrusted data, not a trusted object"
+          ],
+          "objects": [
+            "Object: Lesson: JSON.parse and JSON.stringify — Risks and Safe Use",
+            "Assessment: Quiz: JSON.parse and JSON.stringify — Risks and Safe Use"
+          ]
+        },
+        {
+          "title": "Reviver Functions — Controlling Deserialization",
+          "hours": 2,
+          "topics": [
+            "The reviver signature `(key, value)` and the bottom-up traversal order",
+            "Transforming values during parse (e.g., ISO strings → `Date`) safely",
+            "Filtering/dropping unexpected or dangerous keys by returning `undefined`",
+            "Rejecting or coercing wrong-typed values at parse time",
+            "The reviver as the first place to strip dangerous keys (bridge to Lesson 3)",
+            "Limits of revivers and when to move validation to a schema (Lesson 4)"
+          ],
+          "objects": [
+            "Object: Lesson: Reviver Functions — Controlling Deserialization",
+            "Assessment: Quiz: Reviver Functions — Controlling Deserialization"
+          ]
+        },
+        {
+          "title": "Prototype Pollution and Insecure Object Handling",
+          "hours": 2,
+          "topics": [
+            "What prototype pollution is and how `__proto__` / `constructor` / `prototype` keys enable it",
+            "How merging/cloning parsed JSON into objects spreads pollution",
+            "Concrete impact: privilege/logic bypass, denial of service, gadget-driven escalation",
+            "Defenses: rejecting dangerous keys (reviver from Lesson 2), `Object.create(null)`, `Map` for untrusted key/value data",
+            "`Object.freeze`/`Object.hasOwn` and avoiding unsafe recursive-merge patterns",
+            "Safe deep-clone/merge choices for parsed data"
+          ],
+          "objects": [
+            "Object: Lesson: Prototype Pollution and Insecure Object Handling",
+            "Assessment: Quiz: Prototype Pollution and Insecure Object Handling"
+          ]
+        },
+        {
+          "title": "Schema Validation of Parsed Data",
+          "hours": 2,
+          "topics": [
+            "Why a successful parse does not mean valid data",
+            "Defining an explicit schema/contract for expected data (shape, types, required fields, ranges)",
+            "Validating parsed objects field by field before processing",
+            "Rejecting extra/unexpected fields (defense against smuggled keys)",
+            "Normalizing/coercing to safe types after validation passes",
+            "Where validation belongs relative to the reviver, the API-client layer (Module 3), and rendering (Module 2)"
+          ],
+          "objects": [
+            "Object: Lesson: Schema Validation of Parsed Data",
+            "Assessment: Quiz: Schema Validation of Parsed Data"
+          ]
+        },
+        {
+          "title": "Secure Client-Side App — Integrative Graded Lab",
+          "hours": 2,
+          "topics": [
+            "Serve the app under a strict, `'unsafe-*'`-free Content Security Policy (Module 1)",
+            "Sanitize all user input before processing/rendering with safe DOM construction (Module 2)",
+            "Consume a remote API through a secure client with auth handling and response validation (Module 3)",
+            "Parse API/JSON data with a guarded `JSON.parse`, a filtering reviver, prototype-pollution defenses, and schema validation (Module 4)",
+            "Verify: injection payloads are inert, hostile responses are rejected, a `__proto__` payload cannot pollute state, and no policy violations remain"
+          ],
+          "objects": [
+            "Object: Lesson: Secure Client-Side App — Integrative Graded Lab",
+            "Assessment: Quiz: Secure Client-Side App — Integrative Graded Lab"
+          ]
+        }
+      ]
+    }
+  ]
+}
