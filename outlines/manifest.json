@@ -433,5 +433,10 @@
     "file": "web-dev-javascript-react.json",
     "course": "Web Development with JavaScript",
     "id": "web-development-with-javascript"
+  },
+  {
+    "file": "web-development-with-javascript-secure.json",
+    "course": "Web Development with JavaScript — Secure-by-Design (Cyber Developer Associate)",
+    "id": "web-development-with-javascript-secure"
   }
 ]
