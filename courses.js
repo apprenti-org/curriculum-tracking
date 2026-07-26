@@ -1348,11 +1348,11 @@ const courseData = [
     "hours": 40,
     "status": {
       "design": "Complete",
-      "development": "In Progress"
+      "development": "Complete"
     },
     "syllabus": null,
     "outline": true,
-    "note": "Cyber Developer Associate net-new Phase-6 (Secure Web and Front-End Development) course — secure client-side JavaScript application development. 4 modules, 20 lessons, 40h: Content Security Policy for client-side apps → robust client-side input sanitization → secure data fetching & API consumption → secure JSON parsing & object handling (integrative graded lab, summative). Owns the A-31 Phase-6 Secure Data Parsing RTI topic (Module 4) and OJL 4.b (primary); OJL 4.c primary in Module 2, reinforced by Modules 1 and 3. Does not claim 4.a (owned by the JavaScript — XSS Edition prerequisite). Prerequisites: HTML/CSS — Secure Edition and JavaScript — XSS Edition. Design folder course-design/web-development-with-javascript-secure/. Rows 2–5 complete (course outline, lesson outlines, lesson sources, content scaffolding — 20/20 lessons); development In Progress, code-bearing (Row 6 secure JS starter/solution repos next). Onboarding meta apprenti-org/design-documentation#1478; CDA build #981.",
+    "note": "Cyber Developer Associate net-new Phase-6 (Secure Web and Front-End Development) course — secure client-side JavaScript application development. 4 modules, 20 lessons, 40h: Content Security Policy for client-side apps → robust client-side input sanitization → secure data fetching & API consumption → secure JSON parsing & object handling (integrative graded lab, summative). Owns the A-31 Phase-6 Secure Data Parsing RTI topic (Module 4) and OJL 4.b (primary); OJL 4.c primary in Module 2, reinforced by Modules 1 & 3. Prerequisites: HTML/CSS — Secure Edition and JavaScript — XSS Edition. Full 14-row New Course Onboarding chain complete (design + development Complete): 20 SCORM 1.2 packages + PDFs deployed, Published in Absorb and added to the CDA curriculum. Delivery repos: -content (LMS), -instructor (IGs + pacing + code-alongs), -student (starter code). Per-lesson instructor code-alongs added (20 pairs). Onboarding meta apprenti-org/design-documentation#1478; CDA build #981.",
     "driveFolder": null,
     "statusConfirmed": true,
     "sourceRepo": "https://github.com/apprenti-org/design-documentation"
