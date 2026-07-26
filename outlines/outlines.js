@@ -14904,7 +14904,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Browser as a Policy Enforcer — CSP Fundamentals",
-              "Assessment: Quiz: The Browser as a Policy Enforcer — CSP Fundamentals"
+              "Assessment: Quiz: The Browser as a Policy Enforcer — CSP Fundamentals",
+              "SCORM: Interactive — The Browser as a Policy Enforcer — CSP Fundamentals (scorm-lesson-01-the-browser-as-a-policy-enforcer-csp-fundamentals.zip)"
             ]
           },
           {
@@ -14920,7 +14921,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Writing and Deploying a Content Security Policy",
-              "Assessment: Quiz: Writing and Deploying a Content Security Policy"
+              "Assessment: Quiz: Writing and Deploying a Content Security Policy",
+              "SCORM: Interactive — Writing and Deploying a Content Security Policy (scorm-lesson-02-writing-and-deploying-a-content-security-policy.zip)"
             ]
           },
           {
@@ -14936,7 +14938,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Eliminating Inline Script — Nonces, Hashes, and Refactoring",
-              "Assessment: Quiz: Eliminating Inline Script — Nonces, Hashes, and Refactoring"
+              "Assessment: Quiz: Eliminating Inline Script — Nonces, Hashes, and Refactoring",
+              "SCORM: Interactive — Eliminating Inline Script — Nonces, Hashes, and Refactoring (scorm-lesson-03-eliminating-inline-script-nonces-hashes-and-refactoring.zip)"
             ]
           },
           {
@@ -14952,7 +14955,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: CSP for Dynamic and Third-Party Content",
-              "Assessment: Quiz: CSP for Dynamic and Third-Party Content"
+              "Assessment: Quiz: CSP for Dynamic and Third-Party Content",
+              "SCORM: Interactive — CSP for Dynamic and Third-Party Content (scorm-lesson-04-csp-for-dynamic-and-third-party-content.zip)"
             ]
           },
           {
@@ -14968,7 +14972,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Reporting, Testing, and Iterating a Policy",
-              "Assessment: Quiz: Reporting, Testing, and Iterating a Policy"
+              "Assessment: Quiz: Reporting, Testing, and Iterating a Policy",
+              "SCORM: Interactive — Reporting, Testing, and Iterating a Policy (scorm-lesson-05-reporting-testing-and-iterating-a-policy.zip)"
             ]
           }
         ]
@@ -14990,7 +14995,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The Client-Side Trust Boundary — Sanitize Before You Process",
-              "Assessment: Quiz: The Client-Side Trust Boundary — Sanitize Before You Process"
+              "Assessment: Quiz: The Client-Side Trust Boundary — Sanitize Before You Process",
+              "SCORM: Interactive — The Client-Side Trust Boundary — Sanitize Before You Process (scorm-lesson-06-the-client-side-trust-boundary-sanitize-before-you-process.zip)"
             ]
           },
           {
@@ -15006,7 +15012,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Manual Sanitization — Encoding, Escaping, and Allow-Lists",
-              "Assessment: Quiz: Manual Sanitization — Encoding, Escaping, and Allow-Lists"
+              "Assessment: Quiz: Manual Sanitization — Encoding, Escaping, and Allow-Lists",
+              "SCORM: Interactive — Manual Sanitization — Encoding, Escaping, and Allow-Lists (scorm-lesson-07-manual-sanitization-encoding-escaping-and-allow-lists.zip)"
             ]
           },
           {
@@ -15022,7 +15029,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: DOMPurify — Library-Based HTML Sanitization",
-              "Assessment: Quiz: DOMPurify — Library-Based HTML Sanitization"
+              "Assessment: Quiz: DOMPurify — Library-Based HTML Sanitization",
+              "SCORM: Interactive — DOMPurify — Library-Based HTML Sanitization (scorm-lesson-08-dompurify-library-based-html-sanitization.zip)"
             ]
           },
           {
@@ -15038,7 +15046,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Safe Dynamic UI Construction",
-              "Assessment: Quiz: Safe Dynamic UI Construction"
+              "Assessment: Quiz: Safe Dynamic UI Construction",
+              "SCORM: Interactive — Safe Dynamic UI Construction (scorm-lesson-09-safe-dynamic-ui-construction.zip)"
             ]
           },
           {
@@ -15054,7 +15063,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Sanitizing Structured and Rich Input",
-              "Assessment: Quiz: Sanitizing Structured and Rich Input"
+              "Assessment: Quiz: Sanitizing Structured and Rich Input",
+              "SCORM: Interactive — Sanitizing Structured and Rich Input (scorm-lesson-10-sanitizing-structured-and-rich-input.zip)"
             ]
           }
         ]
@@ -15076,7 +15086,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: The fetch() API and the Same-Origin Model",
-              "Assessment: Quiz: The fetch() API and the Same-Origin Model"
+              "Assessment: Quiz: The fetch() API and the Same-Origin Model",
+              "SCORM: Interactive — The fetch() API and the Same-Origin Model (scorm-lesson-11-the-fetch-api-and-the-same-origin-model.zip)"
             ]
           },
           {
@@ -15093,7 +15104,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: CORS — How Cross-Origin Requests Are Governed",
-              "Assessment: Quiz: CORS — How Cross-Origin Requests Are Governed"
+              "Assessment: Quiz: CORS — How Cross-Origin Requests Are Governed",
+              "SCORM: Interactive — CORS — How Cross-Origin Requests Are Governed (scorm-lesson-12-cors-how-cross-origin-requests-are-governed.zip)"
             ]
           },
           {
@@ -15109,7 +15121,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Authentication for Client-Side API Calls",
-              "Assessment: Quiz: Authentication for Client-Side API Calls"
+              "Assessment: Quiz: Authentication for Client-Side API Calls",
+              "SCORM: Interactive — Authentication for Client-Side API Calls (scorm-lesson-13-authentication-for-client-side-api-calls.zip)"
             ]
           },
           {
@@ -15125,7 +15138,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Validating and Handling API Responses",
-              "Assessment: Quiz: Validating and Handling API Responses"
+              "Assessment: Quiz: Validating and Handling API Responses",
+              "SCORM: Interactive — Validating and Handling API Responses (scorm-lesson-14-validating-and-handling-api-responses.zip)"
             ]
           },
           {
@@ -15141,7 +15155,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Building a Secure API-Client Layer",
-              "Assessment: Quiz: Building a Secure API-Client Layer"
+              "Assessment: Quiz: Building a Secure API-Client Layer",
+              "SCORM: Interactive — Building a Secure API-Client Layer (scorm-lesson-15-building-a-secure-api-client-layer.zip)"
             ]
           }
         ]
@@ -15163,7 +15178,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: JSON.parse and JSON.stringify — Risks and Safe Use",
-              "Assessment: Quiz: JSON.parse and JSON.stringify — Risks and Safe Use"
+              "Assessment: Quiz: JSON.parse and JSON.stringify — Risks and Safe Use",
+              "SCORM: Interactive — JSON.parse and JSON.stringify — Risks and Safe Use (scorm-lesson-16-json-parse-and-json-stringify-risks-and-safe-use.zip)"
             ]
           },
           {
@@ -15179,7 +15195,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Reviver Functions — Controlling Deserialization",
-              "Assessment: Quiz: Reviver Functions — Controlling Deserialization"
+              "Assessment: Quiz: Reviver Functions — Controlling Deserialization",
+              "SCORM: Interactive — Reviver Functions — Controlling Deserialization (scorm-lesson-17-reviver-functions-controlling-deserialization.zip)"
             ]
           },
           {
@@ -15195,7 +15212,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Prototype Pollution and Insecure Object Handling",
-              "Assessment: Quiz: Prototype Pollution and Insecure Object Handling"
+              "Assessment: Quiz: Prototype Pollution and Insecure Object Handling",
+              "SCORM: Interactive — Prototype Pollution and Insecure Object Handling (scorm-lesson-18-prototype-pollution-and-insecure-object-handling.zip)"
             ]
           },
           {
@@ -15211,7 +15229,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Schema Validation of Parsed Data",
-              "Assessment: Quiz: Schema Validation of Parsed Data"
+              "Assessment: Quiz: Schema Validation of Parsed Data",
+              "SCORM: Interactive — Schema Validation of Parsed Data (scorm-lesson-19-schema-validation-of-parsed-data.zip)"
             ]
           },
           {
@@ -15226,7 +15245,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Secure Client-Side App — Integrative Graded Lab",
-              "Assessment: Quiz: Secure Client-Side App — Integrative Graded Lab"
+              "Assessment: Quiz: Secure Client-Side App — Integrative Graded Lab",
+              "SCORM: Interactive — Secure Client-Side App — Integrative Graded Lab (scorm-lesson-20-secure-client-side-app-integrative-graded-lab.zip)"
             ]
           }
         ]
