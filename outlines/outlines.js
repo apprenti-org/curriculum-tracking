@@ -1268,7 +1268,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Your First AI-Assisted Program",
-              "Assessment: Quiz: Your First AI-Assisted Program"
+              "Assessment: Quiz: Your First AI-Assisted Program",
+              "SCORM: scorm-lesson-01-your-first-ai-assisted-program.zip"
             ]
           },
           {
@@ -1282,7 +1283,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Prompting AI Effectively for Code",
-              "Assessment: Quiz: Prompting AI Effectively for Code"
+              "Assessment: Quiz: Prompting AI Effectively for Code",
+              "SCORM: scorm-lesson-02-prompting-ai-effectively-for-code.zip"
             ]
           }
         ]
@@ -1302,7 +1304,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Debugging and Refactoring with AI",
-              "Assessment: Quiz: Debugging and Refactoring with AI"
+              "Assessment: Quiz: Debugging and Refactoring with AI",
+              "SCORM: scorm-lesson-03-debugging-and-refactoring-with-ai.zip"
             ]
           },
           {
@@ -1316,7 +1319,8 @@ const courseOutlines = {
             ],
             "objects": [
               "Object: Lesson: Reviewing AI-Generated Code for Security and Accuracy",
-              "Assessment: Quiz: Reviewing AI-Generated Code for Security and Accuracy"
+              "Assessment: Quiz: Reviewing AI-Generated Code for Security and Accuracy",
+              "SCORM: scorm-lesson-04-reviewing-ai-generated-code-for-security-and-accuracy.zip"
             ]
           }
         ]
