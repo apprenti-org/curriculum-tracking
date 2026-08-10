@@ -1,0 +1,229 @@
+{
+  "course": "Compressed Cybersecurity Fundamentals — Secure Edition",
+  "totalHours": 60,
+  "totalModules": 7,
+  "totalLessons": 18,
+  "modules": [
+    {
+      "name": "Introduction to Cybersecurity Concepts",
+      "hours": 13.5,
+      "lessons": [
+        {
+          "title": "Introduction to Cybersecurity & Industry Relevance",
+          "topics": [
+            "What cybersecurity covers, and the evolution of cyber threats",
+            "Key domains of cybersecurity and their real-world applications",
+            "Cybersecurity roles and industry-recognized certifications",
+            "Workforce demand and current job trends"
+          ]
+        },
+        {
+          "title": "Understanding Security Controls",
+          "topics": [
+            "The three types of security controls",
+            "The five control functions, and how type and function combine",
+            "Layering controls together: defense in depth",
+            "Evaluating control effectiveness against real breaches",
+            "Common pitfalls and best practices"
+          ]
+        },
+        {
+          "title": "Core Security Principles & Risk Management",
+          "topics": [
+            "The Confidentiality, Integrity, and Availability triad",
+            "Least privilege and separation of duties",
+            "The four building blocks of risk: threat, vulnerability, impact, likelihood",
+            "Assessing risk in four steps, and building a risk matrix",
+            "Four ways to respond to a risk",
+            "Change management as a security control"
+          ]
+        },
+        {
+          "title": "Cryptographic Concepts & Applications",
+          "topics": [
+            "Why cryptography matters, and the vocabulary of encryption",
+            "Symmetric and asymmetric encryption compared",
+            "Common algorithms and their use cases",
+            "Encryption versus hashing",
+            "Matching a cryptographic technique to a business need",
+            "Where cryptography falls short, and key management"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Threats, Vulnerabilities, and Mitigations",
+      "hours": 10,
+      "lessons": [
+        {
+          "title": "Threat Actors, Vectors & Attack Surfaces",
+          "topics": [
+            "Who launches attacks, and what motivates them",
+            "Common attack vectors",
+            "Attack surfaces and how they are categorized",
+            "Advanced persistent threats compared with cybercriminals",
+            "Tracing a vector to the surface it reaches"
+          ]
+        },
+        {
+          "title": "Vulnerabilities & Indicators of Malicious Activity",
+          "topics": [
+            "Types of vulnerabilities and their impact",
+            "Indicators of compromise in systems and logs",
+            "Behavioral signs of malicious activity",
+            "The exploit lifecycle from discovery to compromise",
+            "Case study: tracing an exploit chain",
+            "Detection challenges and practical detection strategies"
+          ]
+        },
+        {
+          "title": "Mitigation Techniques & Vulnerability Response",
+          "topics": [
+            "Mitigation compared with remediation",
+            "Enterprise mitigation strategies: patching, least privilege, segmentation",
+            "Risk-based prioritization of vulnerabilities",
+            "The vulnerability handling lifecycle",
+            "Documentation, escalation, and communication during response"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Security Architecture",
+      "hours": 7,
+      "lessons": [
+        {
+          "title": "Architecture Models and Their Security Implications",
+          "topics": [
+            "On-premise, cloud, hybrid, and edge architecture models",
+            "Zero trust compared with perimeter-based design",
+            "Virtualization and container security",
+            "Evaluating security trade-offs in design decisions",
+            "Cloud service models and shared responsibility"
+          ]
+        },
+        {
+          "title": "Data Protection Strategies",
+          "topics": [
+            "Data classification, categories, and labeling",
+            "Encryption in transit and at rest, and key management",
+            "Hashing, tokenization, and data masking",
+            "Data loss prevention strategies and tools",
+            "How HIPAA, GDPR, and PCI-DSS shape data protection"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Security Operations",
+      "hours": 7,
+      "lessons": [
+        {
+          "title": "Securing Computing Resources & Asset Management",
+          "topics": [
+            "Security hardening techniques",
+            "Secure configuration, baselines, and patch management",
+            "Asset lifecycle management from acquisition to disposal",
+            "Asset classification and prioritization",
+            "Endpoint detection and response",
+            "The shadow IT challenge"
+          ]
+        },
+        {
+          "title": "Identity and Access Management (IAM)",
+          "topics": [
+            "IAM core principles: least privilege, role-based and attribute-based access control",
+            "Multi-factor authentication",
+            "The identity lifecycle from onboarding to offboarding",
+            "Authentication compared with authorization",
+            "Identity providers, single sign-on, and federation",
+            "Directory services"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Security Program Management and Oversight",
+      "hours": 13.5,
+      "lessons": [
+        {
+          "title": "Foundations of Security Governance",
+          "topics": [
+            "What security governance is, and what it is for",
+            "Key governance frameworks",
+            "Security leadership roles and responsibilities",
+            "The policy hierarchy: policies, standards, guidelines, procedures"
+          ]
+        },
+        {
+          "title": "Risk Management Fundamentals",
+          "topics": [
+            "The language of risk",
+            "The risk assessment process",
+            "Four risk response strategies and when each applies",
+            "The risk register as a tracking and prioritization tool",
+            "Governing risk"
+          ]
+        },
+        {
+          "title": "Third-Party Risk and Vendor Management",
+          "topics": [
+            "Why supply chain security matters, and the expanding threat landscape",
+            "Vendor security assessments, third-party audits, and certifications",
+            "Contractual protections in vendor agreements",
+            "Ongoing monitoring and breach alert services"
+          ]
+        },
+        {
+          "title": "Compliance, Audits, and Security Awareness",
+          "topics": [
+            "Regulatory compliance and its reach",
+            "Types of audits and their purpose",
+            "The audit lifecycle from planning to follow-up",
+            "Security awareness training",
+            "Creating and sustaining a security culture"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Incident Response and Management",
+      "hours": 3,
+      "lessons": [
+        {
+          "title": "Understanding Attack Methodologies & Frameworks",
+          "topics": [
+            "The Cyber Kill Chain and the phases of an attack",
+            "MITRE ATT&CK compared with the Cyber Kill Chain",
+            "Tactics, techniques, and procedures",
+            "Common attack types and how they map to frameworks"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reporting and Communication",
+      "hours": 6,
+      "lessons": [
+        {
+          "title": "Fundamentals of Security Communication",
+          "topics": [
+            "Why communication determines security outcomes",
+            "Stakeholder audiences and their differing needs",
+            "Types of security communication",
+            "Timing, tone, and channel selection"
+          ]
+        },
+        {
+          "title": "Vulnerability Management Reporting",
+          "topics": [
+            "The purpose and structure of a vulnerability report",
+            "The components that make a report actionable",
+            "Risk-based prioritization frameworks",
+            "Using visuals for technical and non-technical audiences"
+          ]
+        }
+      ]
+    }
+  ]
+}

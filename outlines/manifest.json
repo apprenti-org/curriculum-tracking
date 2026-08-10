@@ -125,6 +125,11 @@
     "id": "compliance-and-security-awareness"
   },
   {
+    "file": "security-and-cybersecurity-fundamentals-secure.json",
+    "course": "Compressed Cybersecurity Fundamentals — Secure Edition",
+    "id": "security-and-cybersecurity-fundamentals-secure"
+  },
+  {
     "file": "comptia-a-plus.json",
     "course": "CompTIA A+",
     "id": "comptia-a-plus"
