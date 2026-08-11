@@ -495,7 +495,7 @@ const courseData = [
   {
     "id": "databases-in-java",
     "name": "Databases in Java",
-    "hours": 40,
+    "hours": 36,
     "status": {
       "design": "Complete",
       "development": "Not Started"
