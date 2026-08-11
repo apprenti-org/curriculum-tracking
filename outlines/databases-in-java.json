@@ -1,31 +1,9 @@
 {
   "course": "Databases in Java",
-  "totalHours": 40,
-  "totalLessons": 23,
-  "totalModules": 10,
+  "totalHours": 36,
+  "totalLessons": 22,
+  "totalModules": 9,
   "modules": [
-    {
-      "name": "Virtualization, Containers, and Docker",
-      "hours": 4,
-      "description": "Introduction to virtualization concepts, container technology, Docker fundamentals, and core Docker CLI commands for containerized development environments.",
-      "lessons": [
-        {
-          "title": "Introduction to Containers",
-          "hours": 1,
-          "topics": ["Virtualization concepts and history", "What containers are and how they work", "Container vs. virtual machine comparison", "Container use cases in development"]
-        },
-        {
-          "title": "Introduction to Docker",
-          "hours": 1,
-          "topics": ["What Docker is and its purpose", "Running containers locally and in the cloud", "Docker architecture and components", "Docker Desktop installation"]
-        },
-        {
-          "title": "Docker Commands Core",
-          "hours": 2,
-          "topics": ["Docker artifacts: images, containers, registries, tags", "Core image commands: pull, build, rmi", "Core container commands: ps, start, stop, rm", "Running and executing commands in containers"]
-        }
-      ]
-    },
     {
       "name": "Databases",
       "hours": 2,
