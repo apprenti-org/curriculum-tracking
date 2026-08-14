@@ -409,6 +409,21 @@ const courseData = [
     "statusConfirmed": true
   },
   {
+    "id": "security-and-cybersecurity-fundamentals-secure",
+    "name": "Compressed Cybersecurity Fundamentals — Secure Edition (Cyber Developer Associate)",
+    "hours": 60,
+    "status": {
+      "design": "Complete",
+      "development": "Complete"
+    },
+    "syllabus": "Syllabus: Compressed Cybersecurity Fundamentals — Secure Edition",
+    "outline": true,
+    "note": "Cyber Developer Associate Phase 2 — the developer-relevant compression of Security and Cybersecurity Fundamentals. 7 modules / 18 lessons / 60h. Framing is developer-relevant security awareness and secure-by-design mindset, NOT CompTIA Security+ certification prep. Built by clone-and-subtract in Absorb (18 of 36 lessons retained) rather than through the content pipeline, so lesson content ships as SCORM interactives only — no learner lesson PDFs, no standalone quizzes, no activity files; assessment is the embedded knowledge checks. Live in Absorb 2026-07-18. Carries A-31 Phase-2 required topics CIA Triad, threat actors & attack vectors, and modern security compliance standards, plus OJL 2.a (conceptual) and 2.b. Hours settled at 60 by operator decision 2026-08-10; coverage depth is instructor-calibrated with some topics delivered as surveys. Course root artifacts (outline, syllabus + R8 PDF, manifest, 7 module overviews) and the Row 11 instructor package (18 consolidated guides + pacing guide) built 2026-08-09/10. Build issue apprenti-org/design-documentation#1313; remediation #1575.",
+    "driveFolder": null,
+    "statusConfirmed": false,
+    "sourceRepo": "https://github.com/apprenti-org/security-and-cybersecurity-fundamentals-secure-instructor"
+  },
+  {
     "id": "comptia-a-plus",
     "name": "CompTIA A+",
     "hours": 120,
