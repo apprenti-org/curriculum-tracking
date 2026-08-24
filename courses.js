@@ -746,7 +746,7 @@ const courseData = [
     },
     "syllabus": "itil-foundations",
     "outline": true,
-    "note": "20 hours, 7 modules, 19 lessons. ITIL 4 Foundation certification prep.",
+    "note": "20 hours, 7 modules, 20 lessons. ITIL 4 Foundation certification prep. IT Asset and Service Configuration Management added to Module 5 (2026-08-24) to close the two practices examined by the sample papers but taught nowhere in the course — IT asset management (syllabus 6.1.d) and service configuration management (6.1.g). Published length held at 20h with no existing lesson trimmed, so scheduled content runs ~21h and the instructor absorbs the difference; guidance is in the lesson instructor guide. Live in Absorb 2026-08-24.",
     "driveFolder": "https://drive.google.com/drive/folders/1aljEOFGVRecJDz1QsGRCNTjBs-i81esw",
     "deployRepo": "https://github.com/apprenti-org/itil-foundations-content",
     "sourceRepo": "https://github.com/apprenti-org/design-documentation",
