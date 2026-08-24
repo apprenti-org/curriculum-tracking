@@ -1,7 +1,7 @@
 {
   "course": "ITIL Foundations",
   "totalHours": 20,
-  "totalLessons": 19,
+  "totalLessons": 20,
   "totalModules": 7,
   "modules": [
     {
@@ -23,10 +23,10 @@
           ],
           "objects": [
             "Object: Lesson: What is IT Service Management (ITSM)?",
-            "SCORM: Interactive \u2014 What is IT Service Management (ITSM)?",
-            "Assessment: Quiz \u2014 What is IT Service Management (ITSM)?",
-            "Object: Activity \u2014 Exercise: Identify Services in Your Daily Life",
-            "Object: Activity \u2014 Exercise: Map the Service Relationship"
+            "SCORM: Interactive — What is IT Service Management (ITSM)?",
+            "Assessment: Quiz — What is IT Service Management (ITSM)?",
+            "Object: Activity — Exercise: Identify Services in Your Daily Life",
+            "Object: Activity — Exercise: Map the Service Relationship"
           ]
         },
         {
@@ -36,15 +36,15 @@
             "History and evolution of ITIL to ITIL 4",
             "ITIL 4 structure and certification pathway",
             "Key terminology: outcome, output, cost, risk",
-            "Utility (\"fit for purpose\") vs warranty (\"fit for use\") \u2014 exam-critical distinction",
+            "Utility (\"fit for purpose\") vs warranty (\"fit for use\") — exam-critical distinction",
             "Service offerings: goods, access to resources, service actions",
             "How external factors (PESTLE) affect the four dimensions"
           ],
           "objects": [
             "Object: Lesson: Overview of the ITIL Framework",
-            "SCORM: Interactive \u2014 Overview of the ITIL Framework",
-            "Assessment: Quiz \u2014 Overview of the ITIL Framework",
-            "Object: Activity \u2014 Exercise: Utility vs Warranty Challenge"
+            "SCORM: Interactive — Overview of the ITIL Framework",
+            "Assessment: Quiz — Overview of the ITIL Framework",
+            "Object: Activity — Exercise: Utility vs Warranty Challenge"
           ]
         }
       ]
@@ -58,15 +58,15 @@
           "hours": 1.5,
           "topics": [
             "What is the Service Value System?",
-            "Inputs (opportunity and demand) \u2192 Outputs \u2192 Value",
+            "Inputs (opportunity and demand) → Outputs → Value",
             "Components of the SVS: guiding principles, governance, service value chain, practices, continual improvement",
             "How the components interact"
           ],
           "objects": [
             "Object: Lesson: The Service Value System (SVS)",
-            "SCORM: Interactive \u2014 The Service Value System (SVS)",
-            "Assessment: Quiz \u2014 The Service Value System (SVS)",
-            "Object: Activity \u2014 Exercise: Label and Connect the SVS Diagram"
+            "SCORM: Interactive — The Service Value System (SVS)",
+            "Assessment: Quiz — The Service Value System (SVS)",
+            "Object: Activity — Exercise: Label and Connect the SVS Diagram"
           ]
         },
         {
@@ -80,9 +80,9 @@
           ],
           "objects": [
             "Object: Lesson: Governance and the SVS in Action",
-            "SCORM: Interactive \u2014 Governance and the SVS in Action",
-            "Assessment: Quiz \u2014 Governance and the SVS in Action",
-            "Object: Activity \u2014 Exercise: Diagram a Real-World Service Using the SVS"
+            "SCORM: Interactive — Governance and the SVS in Action",
+            "Assessment: Quiz — Governance and the SVS in Action",
+            "Object: Activity — Exercise: Diagram a Real-World Service Using the SVS"
           ]
         }
       ]
@@ -92,7 +92,7 @@
       "hours": 3,
       "lessons": [
         {
-          "title": "Guiding Principles 1\u20134",
+          "title": "Guiding Principles 1–4",
           "hours": 1.5,
           "topics": [
             "Focus on value",
@@ -101,29 +101,29 @@
             "Collaborate and promote visibility"
           ],
           "objects": [
-            "Object: Lesson: Guiding Principles 1\u20134",
-            "SCORM: Interactive \u2014 Guiding Principles 1\u20134",
-            "Assessment: Quiz \u2014 Guiding Principles 1\u20134",
-            "Object: Activity \u2014 Exercise: Principle Application Scenarios"
+            "Object: Lesson: Guiding Principles 1–4",
+            "SCORM: Interactive — Guiding Principles 1–4",
+            "Assessment: Quiz — Guiding Principles 1–4",
+            "Object: Activity — Exercise: Principle Application Scenarios"
           ]
         },
         {
-          "title": "Guiding Principles 5\u20137 and Application",
+          "title": "Guiding Principles 5–7 and Application",
           "hours": 1.5,
           "topics": [
             "Think and work holistically",
             "Keep it simple and practical",
             "Optimize and automate",
             "How principles interact and support each other",
-            "Case study: broken IT system \u2192 apply guiding principles",
+            "Case study: broken IT system → apply guiding principles",
             "Group discussion: which principles are violated?"
           ],
           "objects": [
-            "Object: Lesson: Guiding Principles 5\u20137 and Application",
-            "SCORM: Interactive \u2014 Guiding Principles 5\u20137 and Application",
-            "Assessment: Quiz \u2014 Guiding Principles 5\u20137 and Application",
-            "Object: Activity \u2014 Exercise: Case Study \u2014 Broken IT System",
-            "Object: Activity \u2014 Exercise: Principle Identification \u2014 Quick Scenarios"
+            "Object: Lesson: Guiding Principles 5–7 and Application",
+            "SCORM: Interactive — Guiding Principles 5–7 and Application",
+            "Assessment: Quiz — Guiding Principles 5–7 and Application",
+            "Object: Activity — Exercise: Case Study — Broken IT System",
+            "Object: Activity — Exercise: Principle Identification — Quick Scenarios"
           ]
         }
       ]
@@ -146,9 +146,9 @@
           ],
           "objects": [
             "Object: Lesson: The 6 Value Chain Activities",
-            "SCORM: Interactive \u2014 The 6 Value Chain Activities",
-            "Assessment: Quiz \u2014 The 6 Value Chain Activities",
-            "Object: Activity \u2014 Exercise: Match Inputs and Outputs"
+            "SCORM: Interactive — The 6 Value Chain Activities",
+            "Assessment: Quiz — The 6 Value Chain Activities",
+            "Object: Activity — Exercise: Match Inputs and Outputs"
           ]
         },
         {
@@ -160,24 +160,24 @@
             "Example value streams: incident resolution, service request fulfillment, new service deployment",
             "Mapping workflows through the value chain",
             "Identifying bottlenecks and optimization opportunities",
-            "Map a help desk ticket through the value chain \u2014 trace inputs/outputs between activities",
+            "Map a help desk ticket through the value chain — trace inputs/outputs between activities",
             "Map a service request through the value chain",
             "Identify bottlenecks and propose improvements"
           ],
           "objects": [
             "Object: Lesson: Value Streams and Workflow",
-            "SCORM: Interactive \u2014 Value Streams and Workflow",
-            "Assessment: Quiz \u2014 Value Streams and Workflow",
-            "Object: Activity \u2014 Exercise: Identify Bottlenecks and Propose Improvements",
-            "Object: Activity \u2014 Exercise: Map a Help Desk Ticket Through the Value Chain",
-            "Object: Activity \u2014 Exercise: Map a Service Request Through the Value Chain"
+            "SCORM: Interactive — Value Streams and Workflow",
+            "Assessment: Quiz — Value Streams and Workflow",
+            "Object: Activity — Exercise: Identify Bottlenecks and Propose Improvements",
+            "Object: Activity — Exercise: Map a Help Desk Ticket Through the Value Chain",
+            "Object: Activity — Exercise: Map a Service Request Through the Value Chain"
           ]
         }
       ]
     },
     {
       "name": "ITIL Practices",
-      "hours": 5,
+      "hours": 6,
       "lessons": [
         {
           "title": "Incident Management",
@@ -191,16 +191,16 @@
           ],
           "objects": [
             "Object: Lesson: Incident Management",
-            "SCORM: Interactive \u2014 Incident Management",
-            "Assessment: Quiz \u2014 Incident Management",
-            "Object: Activity \u2014 Exercise: Incident Prioritization"
+            "SCORM: Interactive — Incident Management",
+            "Assessment: Quiz — Incident Management",
+            "Object: Activity — Exercise: Incident Prioritization"
           ]
         },
         {
           "title": "Problem Management",
           "hours": 1.0,
           "topics": [
-            "Key terms: problem vs incident vs known error \u2014 exam-critical distinctions",
+            "Key terms: problem vs incident vs known error — exam-critical distinctions",
             "Problem identification and logging",
             "Root cause analysis (RCA) techniques",
             "Known errors and workarounds",
@@ -208,9 +208,9 @@
           ],
           "objects": [
             "Object: Lesson: Problem Management",
-            "SCORM: Interactive \u2014 Problem Management",
-            "Assessment: Quiz \u2014 Problem Management",
-            "Object: Activity \u2014 Exercise: Incident vs. Problem vs. Known Error Classification"
+            "SCORM: Interactive — Problem Management",
+            "Assessment: Quiz — Problem Management",
+            "Object: Activity — Exercise: Incident vs. Problem vs. Known Error Classification"
           ]
         },
         {
@@ -225,9 +225,9 @@
           ],
           "objects": [
             "Object: Lesson: Change Enablement and Release Management",
-            "SCORM: Interactive \u2014 Change Enablement and Release Management",
-            "Assessment: Quiz \u2014 Change Enablement and Release Management",
-            "Object: Activity \u2014 Exercise: Change Classification"
+            "SCORM: Interactive — Change Enablement and Release Management",
+            "Assessment: Quiz — Change Enablement and Release Management",
+            "Object: Activity — Exercise: Change Classification"
           ]
         },
         {
@@ -235,16 +235,16 @@
           "hours": 1.0,
           "topics": [
             "Key terms: SLA, SLO, OLA, service review",
-            "Service level agreements (SLAs) \u2014 structure and content",
+            "Service level agreements (SLAs) — structure and content",
             "Service level objectives (SLOs) and operational level agreements (OLAs)",
             "Measuring and reporting service performance against uptime targets",
             "Service reviews and customer feedback"
           ],
           "objects": [
             "Object: Lesson: Service Level Management",
-            "SCORM: Interactive \u2014 Service Level Management",
-            "Assessment: Quiz \u2014 Service Level Management",
-            "Object: Activity \u2014 Exercise: Design an SLA"
+            "SCORM: Interactive — Service Level Management",
+            "Assessment: Quiz — Service Level Management",
+            "Object: Activity — Exercise: Design an SLA"
           ]
         },
         {
@@ -257,10 +257,27 @@
           ],
           "objects": [
             "Object: Lesson: Service Desk, Service Request Management, and Supporting Practices",
-            "SCORM: Interactive \u2014 Service Desk, Service Request Management, and Supporting Practices",
-            "Assessment: Quiz \u2014 Service Desk, Service Request Management, and Supporting Practices",
-            "Object: Activity \u2014 Exercise: Build a Service Request Workflow",
-            "Object: Activity \u2014 Exercise: Simulate a Help Desk Scenario"
+            "SCORM: Interactive — Service Desk, Service Request Management, and Supporting Practices",
+            "Assessment: Quiz — Service Desk, Service Request Management, and Supporting Practices",
+            "Object: Activity — Exercise: Build a Service Request Workflow",
+            "Object: Activity — Exercise: Simulate a Help Desk Scenario"
+          ]
+        },
+        {
+          "title": "IT Asset and Service Configuration Management",
+          "hours": 1.0,
+          "topics": [
+            "Purpose of IT asset management — planning and managing the full lifecycle of all IT assets",
+            "Purpose of service configuration management — accurate, reliable configuration information available when and where needed",
+            "Key terms: IT asset, asset lifecycle, asset register",
+            "Key terms: configuration item (CI), configuration management database (CMDB), configuration record",
+            "Distinguishing an IT asset from a configuration item, including components that are both"
+          ],
+          "objects": [
+            "Object: Lesson: IT Asset and Service Configuration Management",
+            "SCORM: Interactive — IT Asset and Service Configuration Management",
+            "Assessment: Quiz — IT Asset and Service Configuration Management",
+            "Object: Activity — Exercise: Asset, Configuration Item, or Both?"
           ]
         }
       ]
@@ -280,10 +297,10 @@
           ],
           "objects": [
             "Object: Lesson: The Continual Improvement Model",
-            "SCORM: Interactive \u2014 The Continual Improvement Model",
-            "Assessment: Quiz \u2014 The Continual Improvement Model",
-            "Object: Activity \u2014 Exercise: Memorization Drill \u2014 Order the Steps",
-            "Object: Activity \u2014 Exercise: Quick-Fire Recall Checkpoint"
+            "SCORM: Interactive — The Continual Improvement Model",
+            "Assessment: Quiz — The Continual Improvement Model",
+            "Object: Activity — Exercise: Memorization Drill — Order the Steps",
+            "Object: Activity — Exercise: Quick-Fire Recall Checkpoint"
           ]
         },
         {
@@ -298,9 +315,9 @@
           ],
           "objects": [
             "Object: Lesson: Applying Continual Improvement",
-            "SCORM: Interactive \u2014 Applying Continual Improvement",
-            "Assessment: Quiz \u2014 Applying Continual Improvement",
-            "Object: Activity \u2014 Exercise: Evaluate and Improve a Broken Process"
+            "SCORM: Interactive — Applying Continual Improvement",
+            "Assessment: Quiz — Applying Continual Improvement",
+            "Object: Activity — Exercise: Evaluate and Improve a Broken Process"
           ]
         }
       ]
@@ -314,15 +331,15 @@
           "hours": 0.5,
           "topics": [
             "ITIL in help desk and support roles",
-            "ITIL in DevOps and Agile environments \u2014 how they work together",
+            "ITIL in DevOps and Agile environments — how they work together",
             "Tools: ServiceNow, Jira Service Management",
             "Mapping ITIL concepts to real job postings"
           ],
           "objects": [
             "Object: Lesson: ITIL in Practice",
-            "SCORM: Interactive \u2014 ITIL in Practice",
-            "Assessment: Quiz \u2014 ITIL in Practice",
-            "Object: Activity \u2014 Exercise: Map ITIL to Real Job Postings"
+            "SCORM: Interactive — ITIL in Practice",
+            "Assessment: Quiz — ITIL in Practice",
+            "Object: Activity — Exercise: Map ITIL to Real Job Postings"
           ]
         },
         {
@@ -335,8 +352,8 @@
           ],
           "objects": [
             "Object: Lesson: Comprehensive Review",
-            "SCORM: Interactive \u2014 Comprehensive Review",
-            "Assessment: Quiz \u2014 Comprehensive Review"
+            "SCORM: Interactive — Comprehensive Review",
+            "Assessment: Quiz — Comprehensive Review"
           ]
         },
         {
@@ -349,9 +366,9 @@
           ],
           "objects": [
             "Object: Lesson: Practice Exam",
-            "SCORM: Interactive \u2014 Practice Exam",
-            "Assessment: Quiz \u2014 Practice Exam",
-            "Object: Activity \u2014 Exercise: Timed Practice Exam"
+            "SCORM: Interactive — Practice Exam",
+            "Assessment: Quiz — Practice Exam",
+            "Object: Activity — Exercise: Timed Practice Exam"
           ]
         },
         {
@@ -371,10 +388,10 @@
           ],
           "objects": [
             "Object: Lesson: Case Study and Final Review",
-            "SCORM: Interactive \u2014 Case Study and Final Review",
-            "Assessment: Quiz \u2014 Case Study and Final Review",
-            "Object: Activity \u2014 Exercise: Role-Play \u2014 Service Desk vs Developer vs Manager",
-            "Object: Activity \u2014 Exercise: TechServe Case Study Analysis"
+            "SCORM: Interactive — Case Study and Final Review",
+            "Assessment: Quiz — Case Study and Final Review",
+            "Object: Activity — Exercise: Role-Play — Service Desk vs Developer vs Manager",
+            "Object: Activity — Exercise: TechServe Case Study Analysis"
           ]
         }
       ]

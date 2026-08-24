@@ -8355,7 +8355,7 @@ const courseOutlines = {
   "ITIL Foundations": {
     "course": "ITIL Foundations",
     "totalHours": 20,
-    "totalLessons": 19,
+    "totalLessons": 20,
     "totalModules": 7,
     "modules": [
       {
@@ -8531,7 +8531,7 @@ const courseOutlines = {
       },
       {
         "name": "ITIL Practices",
-        "hours": 5,
+        "hours": 6,
         "lessons": [
           {
             "title": "Incident Management",
@@ -8615,6 +8615,23 @@ const courseOutlines = {
               "Assessment: Quiz — Service Desk, Service Request Management, and Supporting Practices",
               "Object: Activity — Exercise: Build a Service Request Workflow",
               "Object: Activity — Exercise: Simulate a Help Desk Scenario"
+            ]
+          },
+          {
+            "title": "IT Asset and Service Configuration Management",
+            "hours": 1,
+            "topics": [
+              "Purpose of IT asset management — planning and managing the full lifecycle of all IT assets",
+              "Purpose of service configuration management — accurate, reliable configuration information available when and where needed",
+              "Key terms: IT asset, asset lifecycle, asset register",
+              "Key terms: configuration item (CI), configuration management database (CMDB), configuration record",
+              "Distinguishing an IT asset from a configuration item, including components that are both"
+            ],
+            "objects": [
+              "Object: Lesson: IT Asset and Service Configuration Management",
+              "SCORM: Interactive — IT Asset and Service Configuration Management",
+              "Assessment: Quiz — IT Asset and Service Configuration Management",
+              "Object: Activity — Exercise: Asset, Configuration Item, or Both?"
             ]
           }
         ]
