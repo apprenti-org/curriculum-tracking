@@ -203,7 +203,7 @@ const courseData = [
     },
     "syllabus": null,
     "outline": true,
-    "note": "Net-new 2h course for Software Developer (JVFD). 1 module, 2 lessons: Red-Green-Refactor with AI (1h); Test Doubles, Mocks, and Coverage (1h). Both SCORM zips deployed to Absorb; starter/solution repos provisioned at apprenti-org/ai-assisted-test-driven-development-student and -instructor. RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
+    "note": "Net-new 2h course serving two curricula: Cyber Developer Associate (course 11 of 29, Secure Java Language Fundamentals phase) and Software Development Java (JVFD). 1 module, 2 lessons: Red-Green-Refactor with AI (1h); Test Doubles, Mocks, and Coverage (1h). Both SCORM zips deployed to Absorb; starter/solution repos at apprenti-org/ai-assisted-test-driven-development-student and -instructor, hierarchical layout per code-migration-process.md §4.1 (design-documentation#1617). JVFD RTI/OJL alignment deferred — JVFD curriculum design folder not yet created.",
     "driveFolder": null,
     "statusConfirmed": true
   },
