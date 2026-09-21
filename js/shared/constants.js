@@ -61,6 +61,7 @@ var syllabiMap = {
     'Data Fundamentals — Excel for Data Analysts': 'excel-for-data-analysts.html',
     'Data Fundamentals — SQL for Data': 'sql-for-data.html',
     'Databases in Java': 'databases-in-java.html',
+    'Docker Container Isolation (Cyber Developer Associate)': 'docker-container-isolation.html',
     'Helpdesk Software Fundamentals': 'helpdesk-software-fundamentals.html',
     'HTTP Services': 'http-services.html',
     'Infrastructure as Code Fundamentals': 'infrastructure-as-code.html',

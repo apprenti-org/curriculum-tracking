@@ -318,7 +318,18 @@ code {
         </div>
         <section>
             <h2><i class="fa-solid fa-book-open"></i> Course Description</h2>
-            <p>Course description pending.</p>
+            <p>Docker Container Isolation teaches you to use containers as a security boundary, not just a packaging convenience. You start from what a container actually isolates — filesystem, network, and process view — and how that differs from a virtual machine, then work toward a single practical problem: standing up a database environment that is genuinely contained.</p>
+            <p>Along the way you build and run isolated database containers, keep credentials out of images, scope network reachability to only what the application needs, and run as a non-root user. Each hardening step is one you can defend: what it contains, what it does not, and what an attacker still reaches if something else fails.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2><i class="fa-solid fa-trophy"></i> Summative Assessment: Capstone Lab — Secure Isolated Database Environment</h2>
+            <div class="assessment-box">
+                <p>The course is assessed by a hands-on capstone lab. You assemble a complete isolated database environment — a non-root, network-isolated, volume-backed database container with credentials kept out of the image — then demonstrate that the isolation boundary holds and defend the choices you made.</p>
+                <p>Assessment is competency-based against a rubric, with an evidence map you author yourself recording where each competency was demonstrated. There is no written exam: the running environment and your defence of it are the deliverable.</p>
+            </div>
         </section>
 
         <hr class="divider">
@@ -368,139 +379,30 @@ code {
 
         <hr class="divider">
 
+        <hr class="divider">
+
         <section>
-            <h2><i class="fa-solid fa-sitemap"></i> Course Outline</h2>
+            <h2><i class="fa-solid fa-laptop-code"></i> Labs &amp; Practical Exercises</h2>
+            <ul class="labs-list">
+                <li>Inspect a running container's namespaces to see the isolated filesystem, network, and process view for yourself</li>
+                <li>Pull, verify, and pin trusted base images, and read what a registry tag actually guarantees</li>
+                <li>Build and run a database container with a volume that survives the container, and prove it does</li>
+                <li>Put a database on its own network so only the application container can reach it</li>
+                <li>Move credentials out of the image and out of the build history</li>
+                <li>Drop the container off root and confirm what the process can no longer do</li>
+                <li>Capstone lab: assemble the whole isolated database environment and defend it</li>
+            </ul>
+        </section>
 
-            <div class="module">
-                <div class="module-head">
-                    <span class="module-num">1</span>
-                    <span class="module-title">Container Isolation Fundamentals</span>
-                    <span class="module-hours">4 hours</span>
-                </div>
-                <div class="module-body">
-                    <div class="lesson-heading">Lesson: 1: Why Containers — Isolation as a Security Boundary (1h)</div>
-                    <ul class="topic-list">
-                        <li>Virtual machines versus containers, and what "isolation" actually means</li>
-                        <li>What isolation buys you for security: blast-radius containment, reproducibility, least exposure</li>
-                        <li>The course's central problem: secure, isolated database environments</li>
-                        <li>Activity type: demonstration</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 2: The Anatomy of Container Isolation (1h)</div>
-                    <ul class="topic-list">
-                        <li>Namespaces, control groups (cgroups), and the isolated filesystem/network/process view</li>
-                        <li>What is isolated by default — and what is not</li>
-                        <li>How the host mediates the boundary the container sees</li>
-                        <li>Activity type: demonstration</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 3: Images, Registries, and Trusted Base Images (1h)</div>
-                    <ul class="topic-list">
-                        <li>Images as templates; tags and image digests</li>
-                        <li>Registries and image provenance; choosing a trusted base image</li>
-                        <li>Base-image selection as a supply-chain security decision</li>
-                        <li>Activity type: exercise</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 4: Core Docker CLI for Isolated Environments (1h)</div>
-                    <ul class="topic-list">
-                        <li>`run` / `create` / `start` / `stop` / `ps` / `inspect` / `rm`</li>
-                        <li>Observing the isolation boundary directly (processes, mounts, network from inside vs. outside)</li>
-                        <li>Reading container state when something looks missing</li>
-                        <li>Activity type: code-along</li>
-                    </ul>
-                </div>
-            </div>
+        <hr class="divider">
 
-            <div class="module">
-                <div class="module-head">
-                    <span class="module-num">2</span>
-                    <span class="module-title">Building &amp; Running Isolated Database Environments</span>
-                    <span class="module-hours">5 hours</span>
-                </div>
-                <div class="module-body">
-                    <div class="lesson-heading">Lesson: 5: Running a Database in a Container (1h)</div>
-                    <ul class="topic-list">
-                        <li>Pulling and running a database image</li>
-                        <li>Ephemeral versus persistent containers</li>
-                        <li>Port publishing as attack surface — expose only what is needed</li>
-                        <li>Activity type: code-along</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 6: Authoring a Dockerfile for a Hardened DB Image (1.5h)</div>
-                    <ul class="topic-list">
-                        <li>`FROM` / `COPY` / `RUN` / `CMD` / `WORKDIR` and the build/tag lifecycle</li>
-                        <li>Minimal, purpose-scoped layers; `COPY` over `ADD`; why fewer instructions means less to exploit</li>
-                        <li>Building a database image scoped to exactly one job</li>
-                        <li>Activity types: code-along, exercise</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 7: Persisting Data Securely with Volumes (1h)</div>
-                    <ul class="topic-list">
-                        <li>Named volumes versus bind mounts; the data lifecycle independent of the container</li>
-                        <li>Protecting data at rest in isolated storage; backups and ownership</li>
-                        <li>Activity type: code-along</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 8: Network Isolation for Database Environments (1.5h)</div>
-                    <ul class="topic-list">
-                        <li>User-defined networks versus the default bridge</li>
-                        <li>Restricting reachability so only the application that needs the database can reach it</li>
-                        <li>Never exposing the database port to the host/world by default</li>
-                        <li>Activity types: code-along, exercise</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="module">
-                <div class="module-head">
-                    <span class="module-num">3</span>
-                    <span class="module-title">Hardening &amp; Securing Information Through Isolation</span>
-                    <span class="module-hours">5 hours</span>
-                </div>
-                <div class="module-body">
-                    <div class="lesson-heading">Lesson: 9: Least-Privilege Containers — Non-Root and Capabilities (1h)</div>
-                    <ul class="topic-list">
-                        <li>Running as a non-root user; dropping Linux capabilities</li>
-                        <li>Read-only root filesystems and `no-new-privileges`</li>
-                        <li>Why a container that escapes should land somewhere harmless</li>
-                        <li>Activity types: code-along, exercise</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 10: Secrets Management — Keeping Credentials Out of Images (1.5h)</div>
-                    <ul class="topic-list">
-                        <li>Why credentials must never live in an image or its layers (layer history is forever)</li>
-                        <li>Injecting DB credentials at run time; Docker secrets and environment-injection patterns</li>
-                        <li>Detecting a credential that leaked into a build</li>
-                        <li>Activity types: code-along, exercise</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 11: Hardening Images — Minimal Base, Scanning, and Updates (1.5h)</div>
-                    <ul class="topic-list">
-                        <li>Minimal and distroless base images to shrink attack surface</li>
-                        <li>Image scanning for known vulnerabilities</li>
-                        <li>A patch/rebuild cadence that keeps an image current</li>
-                        <li>Activity types: code-along, exercise</li>
-                    </ul>
-                    <div class="lesson-heading">Lesson: 12: Maintaining Isolated Environments Over Time (1h)</div>
-                    <ul class="topic-list">
-                        <li>The "maintain" half of OJL 5.a: rebuilds, image refreshes, and drift</li>
-                        <li>Log hygiene and inspecting a long-running environment</li>
-                        <li>Safe decommissioning — removing containers, volumes, and secrets</li>
-                        <li>Activity type: exercise</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="module">
-                <div class="module-head">
-                    <span class="module-num">4</span>
-                    <span class="module-title">Capstone</span>
-                    <span class="module-hours">2 hours</span>
-                </div>
-                <div class="module-body">
-                    <div class="lesson-heading">Lesson: 13: Capstone Lab — Secure Isolated Database Environment (2h)</div>
-                    <ul class="topic-list">
-                        <li>Assemble a complete isolated database environment: a non-root, network-isolated, volume-backed database container with credentials kept out of the image</li>
-                        <li>Demonstrate the isolation boundary holds — no unintended reachability, no secrets in the image, least privilege in effect</li>
-                        <li>Defend the isolation and hardening choices made</li>
-                        <li>Activity type: hands-on capstone lab (adapted capstone structure per `capstone-design-process.md`)</li>
-                    </ul>
-                </div>
-            </div>
-
+        <section>
+            <h2><i class="fa-solid fa-laptop-code"></i> Software Requirements</h2>
+            <ul class="software-list">
+                <li>Docker Desktop, or Docker Engine on Linux</li>
+                <li>A terminal and a text editor</li>
+                <li>Roughly 5 GB of free disk space for images and volumes</li>
+            </ul>
         </section>
 
     </div>
