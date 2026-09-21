@@ -527,7 +527,7 @@
         "design": "Complete",
         "development": "Complete"
       },
-      "syllabus": null,
+      "syllabus": "syllabi/docker-container-isolation.html",
       "outline": true,
       "note": "Cyber Developer Associate net-new 16h Phase 4 (Secure Data Management) course. 4 modules, 13 lessons (L13 capstone). Built and deployed: content (apprenti-org/docker-container-isolation-content), student starters (docker-container-isolation-student), instructor solutions + guides + pacing (docker-container-isolation-instructor); 13 SCORM packages. Security by construction — container isolation as a security boundary; secure, isolated database environment. OJL 5.a. Uploaded and published to Absorb (Row 14 complete). Onboarding meta apprenti-org/design-documentation#983.",
       "driveFolder": null,
